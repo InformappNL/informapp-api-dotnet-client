@@ -1,0 +1,2139 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InformSystem.WebApi.Client</name>
+    </assembly>
+    <members>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Arguments.Argument">
+            <summary>
+            Static class with methods to ensure conditions for arguments are true
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Arguments.Argument.Required``1(``0,System.String)">
+            <summary>
+            Ensure an instance is not null
+            </summary>
+            <typeparam name="T">Type of object to check</typeparam>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <returns>The instance</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Arguments.Argument.NotNull``1(``0,System.String)">
+            <summary>
+            Ensure a reference type instance is not null
+            </summary>
+            <typeparam name="T">Type of object to check</typeparam>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <returns>The instance</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Arguments.Argument.NotNull``1(System.Nullable{``0},System.String)">
+            <summary>
+            Ensure an nullable value type instance is not null
+            </summary>
+            <typeparam name="T">Type of object to check</typeparam>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <returns>The instance</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Arguments.Argument.NotNullOrEmpty(System.String,System.String)">
+            <summary>
+            Ensure a string is not null or empty
+            </summary>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <returns>The instance</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="instance"/> is empty</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Arguments.Argument.NotNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0},System.String)">
+            <summary>
+            Ensure a collection is not null or empty
+            </summary>
+            <typeparam name="T">Type of objects in the collection</typeparam>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <returns>The instance</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="instance"/> is empty</exception>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProvider">
+            <summary>
+            Static factory class for creating instances of <see cref="T:Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProvider`2"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProvider.SetFactory(Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProviderFactory)">
+            <summary>
+            Set the factory to use to create instances
+            </summary>
+            <param name="factory">The factory</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProvider.Create``2(System.Boolean)">
+            <summary>
+            Create instance of <see cref="T:Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProvider`2"/>
+            </summary>
+            <typeparam name="TType">The type</typeparam>
+            <typeparam name="TAttribute">The attribute type</typeparam>
+            <param name="inherit">true to search the inheritance chain to find the attributes; otherwise, false</param>
+            <returns>A new provider</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProvider`2">
+            <summary>
+            Generic provider interface to retrieve class level attributes
+            </summary>
+            <typeparam name="TType">The type</typeparam>
+            <typeparam name="TAttribute">The attribute type</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProvider`2.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProvider`2"/> class.
+            </summary>
+            <param name="inherit">true to search the inheritance chain to find the attributes; otherwise, false</param>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProvider`2.Count">
+            <summary>
+            The number of attributes
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProvider`2.Attribute">
+            <summary>
+            The first attribute
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProvider`2.GetAttributes">
+            <summary>
+            All attributes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProviderExtensions">
+            <summary>
+            Static class with extension methods for <see cref="T:Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProvider`2"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProviderExtensions.Any``2(Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProvider{``0,``1})">
+            <summary>
+            Determines whether <paramref name="provider"/> contains any attributes
+            </summary>
+            <typeparam name="TType">The type</typeparam>
+            <typeparam name="TAttribute">The attribute type</typeparam>
+            <param name="provider">The provider</param>
+            <returns>true if the <paramref name="provider"/> contains any attributes; otherwise, false</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProviderExtensions.ThrowIfMultiple``2(Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProvider{``0,``1})">
+            <summary>
+            Throws <see cref="T:System.InvalidOperationException"/> when <paramref name="provider"/> contains multiple attributes
+            </summary>
+            <typeparam name="TType">The type</typeparam>
+            <typeparam name="TAttribute">The attribute type</typeparam>
+            <param name="provider">The provider</param>
+            <returns>The provider</returns>
+            <exception cref="T:System.InvalidOperationException"><paramref name="provider"/> contains multiple attributes</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProviderExtensions.ThrowIfNone``2(Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProvider{``0,``1})">
+            <summary>
+            Throws <see cref="T:System.InvalidOperationException"/> when <paramref name="provider"/> contains no attributes
+            </summary>
+            <typeparam name="TType">The type</typeparam>
+            <typeparam name="TAttribute">The attribute type</typeparam>
+            <param name="provider">The provider</param>
+            <returns>The provider</returns>
+            <exception cref="T:System.InvalidOperationException"><paramref name="provider"/> contains no attributes</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProviderExtensions.ThrowIfAny``2(Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProvider{``0,``1})">
+            <summary>
+            Throws <see cref="T:System.InvalidOperationException"/> when <paramref name="provider"/> contains any attributes
+            </summary>
+            <typeparam name="TType">The type</typeparam>
+            <typeparam name="TAttribute">The attribute type</typeparam>
+            <param name="provider">The provider</param>
+            <returns>The provider</returns>
+            <exception cref="T:System.InvalidOperationException"><paramref name="provider"/> contains any attributes</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProviderExtensions.ThrowIfOne``2(Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProvider{``0,``1})">
+            <summary>
+            Throws <see cref="T:System.InvalidOperationException"/> when <paramref name="provider"/> contains one attributes
+            </summary>
+            <typeparam name="TType">The type</typeparam>
+            <typeparam name="TAttribute">The attribute type</typeparam>
+            <param name="provider">The provider</param>
+            <returns>The provider</returns>
+            <exception cref="T:System.InvalidOperationException"><paramref name="provider"/> contains one attributes</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProviderExtensions.ThrowIfNotOne``2(Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProvider{``0,``1})">
+            <summary>
+            Throws <see cref="T:System.InvalidOperationException"/> when <paramref name="provider"/> contains not one attributes
+            </summary>
+            <typeparam name="TType">The type</typeparam>
+            <typeparam name="TAttribute">The attribute type</typeparam>
+            <param name="provider">The provider</param>
+            <returns>The provider</returns>
+            <exception cref="T:System.InvalidOperationException"><paramref name="provider"/> contains not one attributes</exception>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProviderFactory">
+            <summary>
+            Factory class to create instances of <see cref="T:Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProvider`2"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProviderFactory.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProviderFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProviderFactory.Create``2(System.Boolean)">
+            <summary>
+            Create instance of <see cref="T:Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProvider`2"/>
+            </summary>
+            <typeparam name="TType">The type</typeparam>
+            <typeparam name="TAttribute">The attribute type</typeparam>
+            <param name="inherit">true to search the inheritance chain to find the attributes; otherwise, false</param>
+            <returns>The attribute provider</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProvider`2">
+            <summary>
+            Generic provider interface to retrieve class level attributes
+            </summary>
+            <typeparam name="TType">The type</typeparam>
+            <typeparam name="TAttribute">The attribute type</typeparam>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProvider`2.Count">
+            <summary>
+            The number of attributes
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProvider`2.Attribute">
+            <summary>
+            The first attribute
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProvider`2.GetAttributes">
+            <summary>
+            All attributes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProviderFactory">
+            <summary>
+            Factory interface to create instances of <see cref="T:Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProvider`2"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProviderFactory.Create``2(System.Boolean)">
+            <summary>
+            Create instance of <see cref="T:Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProvider`2"/>
+            </summary>
+            <typeparam name="TType">The type</typeparam>
+            <typeparam name="TAttribute">The attribute type</typeparam>
+            <param name="inherit">true to search the inheritance chain to find the attributes; otherwise, false</param>
+            <returns>The attribute provider</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.ApiRequestToBearerTokenKeyConverter">
+            <summary>
+            Converter class to convert <see cref="T:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest"/> to <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.ApiRequestToBearerTokenKeyConverter.Convert(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest)">
+            <summary>
+            Convert value
+            </summary>
+            <param name="source">The source</param>
+            <returns>They bearer token key</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenCache">
+            <summary>
+            Cache bearer tokens
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenCache.#ctor(Informapp.InformSystem.WebApi.Client.Caches.ICache{Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey,Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenResponse})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenCache"/> class.
+            </summary>
+            <param name="cache">The cache instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey">
+            <summary>
+            DTO class to act as key for caching bearer tokens
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey.#ctor(System.Uri,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey"/> class.
+            </summary>
+            <param name="endPoint">The endpoint</param>
+            <param name="username">The username</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="endPoint"/> is null</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="username"/> is null</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="username"/> is empty</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey.#ctor(System.Uri,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey"/> class.
+            </summary>
+            <param name="endPoint">The endpoint</param>
+            <param name="username">The username</param>
+            <param name="environment">The environment</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="endPoint"/> is null</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="username"/> is null</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="username"/> is empty</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="environment"/> is null</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="environment"/> is empty</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey.#ctor(System.Uri,System.String,System.String,System.Nullable{System.Guid})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey"/> class.
+            </summary>
+            <param name="endPoint">The endpoint</param>
+            <param name="username">The username</param>
+            <param name="environment">The environment</param>
+            <param name="impersonateUserId">The user id to impersonate</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="endPoint"/> is null</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="username"/> is null</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="username"/> is empty</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="environment"/> is null</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="environment"/> is empty</exception>
+            <exception cref="T:System.ArgumentNullException"><paramref name="impersonateUserId"/> is null</exception>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey.EndPoint">
+            <summary>
+            The end point
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey.UserName">
+            <summary>
+            The username
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey.Environment">
+            <summary>
+            The environment
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey.ImpersonateUserId">
+            <summary>
+            The user id to impersonate
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKeyEqualityComparer">
+            <summary>
+            Represents a <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey"/> comparison operation
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKeyEqualityComparer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKeyEqualityComparer"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKeyEqualityComparer.Equals(Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey,Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey)">
+            <summary>
+            Indicates whether two <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey"/> instances are equal.
+            </summary>
+            <param name="x">A <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey"/> to compare to <paramref name="y"/></param>
+            <param name="y">A <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey"/> to compare to <paramref name="x"/></param>
+            <returns>true if x and y refer to the same object, or x and y are equal, or x and y are null; otherwise, false.</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKeyEqualityComparer.GetHashCode(Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey)">
+            <summary>
+            Gets the hash code for the specified <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey"/>.
+            </summary>
+            <param name="obj">The <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey"/> for which a hash code is to be returned.</param>
+            <returns>A hash code for the specified object.</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="obj"/> is null</exception>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenResponse">
+            <summary>
+            Bearer token model class
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenResponse.Response">
+            <summary>
+            Response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenResponse.AccessToken">
+            <summary>
+            The access token
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenResponse.TokenType">
+            <summary>
+            Token type
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenResponse.ExpiresIn">
+            <summary>
+            Token lifetime in seconds
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenResponse.Username">
+            <summary>
+            Username
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenResponse.Issued">
+            <summary>
+            Date and time the token is issued
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenResponse.Expires">
+            <summary>
+            Expiry date and time of the token
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenV1Provider">
+            <summary>
+            Provider class for bearer tokens
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenV1Provider.#ctor(System.Lazy{Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.OAuth2Token.OAuth2TokenV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.OAuth2Token.OAuth2TokenV1Response}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenV1Provider"/> class.
+            </summary>
+            <param name="client">The client to use to obtain tokens</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenV1Provider.GetToken(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest,System.Threading.CancellationToken)">
+            <summary>
+            Get bearer token
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The token response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators.CacheBearerTokenProviderDecorator`1">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.IBearerTokenProvider`1"/> to cache bearer tokens
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators.CacheBearerTokenProviderDecorator`1.#ctor(Informapp.InformSystem.WebApi.Client.BearerTokenProviders.IBearerTokenProvider{`0},Informapp.InformSystem.WebApi.Client.BearerTokenProviders.IBearerTokenCache,Informapp.InformSystem.WebApi.Client.DateTimeProviders.IDateTimeProvider,Informapp.InformSystem.WebApi.Client.Converters.IConverter{Informapp.InformSystem.WebApi.Client.Requests.ApiRequest,Informapp.InformSystem.WebApi.Client.BearerTokenProviders.BearerTokenKey})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators.CacheBearerTokenProviderDecorator`1"/> class.
+            </summary>
+            <param name="bearerTokenProvider">The instance to decorate</param>
+            <param name="cache"></param>
+            <param name="dateTimeProvider"></param>
+            <param name="converter"></param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators.CacheBearerTokenProviderDecorator`1.GetToken(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest,System.Threading.CancellationToken)">
+            <summary>
+            Get bearer token, from cache or request new
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The token response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators.EnsureSuccessBearerTokenProviderDecorator`1">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.IBearerTokenProvider`1"/> to ensure an access token is returned
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators.EnsureSuccessBearerTokenProviderDecorator`1.#ctor(Informapp.InformSystem.WebApi.Client.BearerTokenProviders.IBearerTokenProvider{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators.EnsureSuccessBearerTokenProviderDecorator`1"/> class.
+            </summary>
+            <param name="bearerTokenProvider">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators.EnsureSuccessBearerTokenProviderDecorator`1.GetToken(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest,System.Threading.CancellationToken)">
+            <summary>
+            Get bearer token and ensure an access token is returned
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The token response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators.ExpiresBearerTokenProviderDecorator`1">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.IBearerTokenProvider`1"/> to adjust expiration of bearer tokens to our idea of time
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators.ExpiresBearerTokenProviderDecorator`1.#ctor(Informapp.InformSystem.WebApi.Client.BearerTokenProviders.IBearerTokenProvider{`0},Informapp.InformSystem.WebApi.Client.DateTimeProviders.IDateTimeProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators.ExpiresBearerTokenProviderDecorator`1"/> class.
+            </summary>
+            <param name="bearerTokenProvider">The instance to decorate</param>
+            <param name="dateTimeProvider"></param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators.ExpiresBearerTokenProviderDecorator`1.GetToken(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest,System.Threading.CancellationToken)">
+            <summary>
+            Get bearer token and adjust expiration of bearer tokens to our idea of time
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The token response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.EnvironmentBearerTokenV1Provider">
+            <summary>
+            Provider class for bearer tokens
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.EnvironmentBearerTokenV1Provider.#ctor(System.Lazy{Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.EnvironmentOAuth2Token.EnvironmentOAuth2TokenV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.EnvironmentOAuth2Token.EnvironmentOAuth2TokenV1Response}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.EnvironmentBearerTokenV1Provider"/> class.
+            </summary>
+            <param name="client">The client to use to obtain tokens</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.EnvironmentBearerTokenV1Provider.GetToken(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest,System.Threading.CancellationToken)">
+            <summary>
+            Get bearer token
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The token response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.IBearerTokenCache">
+            <summary>
+            Cache bearer tokens
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.IBearerTokenProvider`1">
+            <summary>
+            Provider generic interface for bearer tokens
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.IBearerTokenProvider`1.GetToken(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest,System.Threading.CancellationToken)">
+            <summary>
+            Get bearer token
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The token response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Caches.CacheBase`2">
+            <summary>
+            Cache base
+            </summary>
+            <typeparam name="TKey">The type used as key</typeparam>
+            <typeparam name="TValue">The type of objects to store</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Caches.CacheBase`2.#ctor(Informapp.InformSystem.WebApi.Client.Caches.ICache{`0,`1})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Caches.CacheBase`2"/> class.
+            </summary>
+            <param name="cache">The cache instance to use</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Caches.CacheBase`2.Add(`0,`1)">
+            <summary>
+            Adds an element with the provided key and value to the cache"/>
+            </summary>
+            <param name="key">The object to use as the key of the element to add.</param>
+            <param name="value">The object to use as the value of the element to add.</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Caches.CacheBase`2.Remove(`0)">
+            <summary>
+            Removes the element with the specified key from the cache"/>
+            </summary>
+            <param name="key">The key of the element to remove.</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Caches.CacheBase`2.TryGetValue(`0,`1@)">
+            <summary>
+            Gets the value associated with the specified key.
+            </summary>
+            <param name="key">The key whose value to get.</param>
+            <param name="value">
+            When this method returns, the value associated with the specified key, if the
+            key is found; otherwise, the default value for the type of the value parameter.
+            This parameter is passed uninitialized.</param>
+            <returns>true if the cache contains an element with the specified key; otherwise, false.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Caches.CacheExtensions">
+            <summary>
+            Extensions for <see cref="T:Informapp.InformSystem.WebApi.Client.Caches.ICache`2"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Caches.CacheExtensions.GetOrAdd``2(Informapp.InformSystem.WebApi.Client.Caches.ICache{``0,``1},``0,System.Func{``1})">
+            <summary>
+            Get value from cache, create and add if it does not exist
+            </summary>
+            <typeparam name="TKey">The type of key</typeparam>
+            <typeparam name="TValue">The type of value</typeparam>
+            <param name="cache"></param>
+            <param name="key">The key</param>
+            <param name="creator">The delegate to create the value</param>
+            <returns>The value</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Caches.CacheExtensions.GetOrAddAsync``2(Informapp.InformSystem.WebApi.Client.Caches.ICache{``0,``1},``0,System.Func{System.Threading.Tasks.Task{``1}})">
+            <summary>
+            Get value from cache, create and add if it does not exist
+            </summary>
+            <typeparam name="TKey">The type of key</typeparam>
+            <typeparam name="TValue">The type of value</typeparam>
+            <param name="cache"></param>
+            <param name="key">The key</param>
+            <param name="creator">The delegate to create the value</param>
+            <returns>The value</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Caches.DictionaryCache`2">
+            <summary>
+            Generic class to cache objects using <see cref="T:System.Collections.Generic.IDictionary`2"/>
+            </summary>
+            <typeparam name="TKey">The type used as key</typeparam>
+            <typeparam name="TValue">The type of objects to store</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Caches.DictionaryCache`2.#ctor(System.Collections.Generic.IDictionary{`0,`1})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Caches.DictionaryCache`2"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Caches.DictionaryCache`2.Add(`0,`1)">
+            <summary>
+            Adds an element with the provided key and value to the cache"/>
+            </summary>
+            <param name="key">The object to use as the key of the element to add.</param>
+            <param name="value">The object to use as the value of the element to add.</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Caches.DictionaryCache`2.Remove(`0)">
+            <summary>
+            Removes the element with the specified key from the cache"/>
+            </summary>
+            <param name="key">The key of the element to remove.</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Caches.DictionaryCache`2.TryGetValue(`0,`1@)">
+            <summary>
+            Gets the value associated with the specified key.
+            </summary>
+            <param name="key">The key whose value to get.</param>
+            <param name="value">
+            When this method returns, the value associated with the specified key, if the
+            key is found; otherwise, the default value for the type of the value parameter.
+            This parameter is passed uninitialized.</param>
+            <returns>true if the cache contains an element with the specified key; otherwise, false.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Caches.ICache`2">
+            <summary>
+            Generic interface for caching objects
+            </summary>
+            <typeparam name="TKey">The type used as key</typeparam>
+            <typeparam name="TValue">The type of objects to store</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Caches.ICache`2.Add(`0,`1)">
+            <summary>
+            Adds an element with the provided key and value to the <see cref="T:Informapp.InformSystem.WebApi.Client.Caches.ICache`2"/>
+            </summary>
+            <param name="key">The object to use as the key of the element to add.</param>
+            <param name="value">The object to use as the value of the element to add.</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Caches.ICache`2.Remove(`0)">
+            <summary>
+            Removes the element with the specified key from the <see cref="T:Informapp.InformSystem.WebApi.Client.Caches.ICache`2"/>
+            </summary>
+            <param name="key">The key of the element to remove.</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Caches.ICache`2.TryGetValue(`0,`1@)">
+            <summary>
+            Gets the value associated with the specified key.
+            </summary>
+            <param name="key">The key whose value to get.</param>
+            <param name="value">
+            When this method returns, the value associated with the specified key, if the
+            key is found; otherwise, the default value for the type of the value parameter.
+            This parameter is passed uninitialized.</param>
+            <returns>true if the object that implements <see cref="T:Informapp.InformSystem.WebApi.Client.Caches.ICache`2"/> contains
+            an element with the specified key; otherwise, false.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.ApiClientExtensions">
+            <summary>
+            Extension methods for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.ApiClientExtensions.Execute``2(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{``0,``1},``0,System.Threading.CancellationToken)">
+            <summary>
+            Execute request without having to explicitly create an instance of <see cref="T:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest`1"/>
+            </summary>
+            <typeparam name="TRequest">Request type</typeparam>
+            <typeparam name="TResponse">Response type</typeparam>
+            <param name="client">The api client</param>
+            <param name="model">The request model</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.AnonymousApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set anonymous on request
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.AnonymousApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.AnonymousApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.AnonymousApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Set anonymous and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ArgumentNullApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to ensure request is not null
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ArgumentNullApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ArgumentNullApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ArgumentNullApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Ensure request is not null and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.BearerTokenApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set bearer token on request
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.BearerTokenApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Informapp.InformSystem.WebApi.Client.BearerTokenProviders.IBearerTokenProvider{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.OAuth2Token.OAuth2TokenV1Request})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.BearerTokenApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+            <param name="bearerTokenProvider"></param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.BearerTokenApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Set bearer token and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ContentModelApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set content model
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ContentModelApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ContentModelApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ContentModelApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Execute request and set content model
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ContentTypeApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set content type on request
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ContentTypeApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ContentTypeApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ContentTypeApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Set content type and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.CredentialsApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set credentials on request
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.CredentialsApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Informapp.InformSystem.WebApi.Client.CredentialsProviders.ICredentialsProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.CredentialsApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+            <param name="credentialsProvider"></param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.CredentialsApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Set credentials and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ElapsedApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set elapsed time on response
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ElapsedApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ElapsedApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ElapsedApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Execute request and set elapsed time on response
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.EndPointApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set endpoint on request
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.EndPointApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Informapp.InformSystem.WebApi.Client.EndPointProviders.IEndPointProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.EndPointApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+            <param name="endPointProvider"></param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.EndPointApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Set endpoint and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.EnsureSuccessApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> ensure request is successful
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.EnsureSuccessApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.EnsureSuccessApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.EnsureSuccessApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Execute request and throw exception if request is not successful
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.EnvironmentBearerTokenV1ApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set bearer token on request
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.EnvironmentBearerTokenV1ApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Informapp.InformSystem.WebApi.Client.BearerTokenProviders.IBearerTokenProvider{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.EnvironmentOAuth2Token.EnvironmentOAuth2TokenV1Request})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.EnvironmentBearerTokenV1ApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+            <param name="bearerTokenProvider"></param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.EnvironmentBearerTokenV1ApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Set bearer token and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.MethodApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set method on request
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.MethodApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Informapp.InformSystem.WebApi.Client.MethodProviders.IMethodProvider{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.MethodApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+            <param name="methodProvider"></param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.MethodApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Set method on request and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.MethodeOverrideApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to override HTTP method
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.MethodeOverrideApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.MethodeOverrideApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.MethodeOverrideApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Override HTTP method and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.PathApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set path on request
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.PathApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Informapp.InformSystem.WebApi.Client.PathProviders.IPathProvider{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.PathApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+            <param name="pathProvider"></param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.PathApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Set path on request and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.QueryApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set query on request
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.QueryApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Informapp.InformSystem.WebApi.Client.QueryStringProviders.IQueryProvider{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.QueryApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+            <param name="queryProvider"></param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.QueryApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Set query on request and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.RequestIdApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set request id on response
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.RequestIdApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Informapp.InformSystem.WebApi.Client.Converters.IConverter{System.String,System.Nullable{System.Guid}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.RequestIdApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+            <param name="converter"></param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.RequestIdApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Execute request and set request id on response
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.RequireHttpsApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to ensure the use of HTTPS
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.RequireHttpsApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.RequireHttpsApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.RequireHttpsApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Ensure use of HTTPS and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ResultNullApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to ensure response is not null
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ResultNullApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ResultNullApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ResultNullApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Execute request and ensure response is not null
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.TotalCountApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set request total count on response
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.TotalCountApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.TotalCountApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.TotalCountApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Execute request and set total count on response
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateBearerTokenApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to validate request bearer token
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateBearerTokenApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Informapp.InformSystem.WebApi.Client.Validators.IValidator{Informapp.InformSystem.WebApi.Client.Requests.ApiBearerToken})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateCredentialsApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+            <param name="validator"></param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateBearerTokenApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Validate request bearer token and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateCredentialsApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to validate request credentials
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateCredentialsApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Informapp.InformSystem.WebApi.Client.Validators.IValidator{Informapp.InformSystem.WebApi.Client.Requests.ApiCredentials})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateCredentialsApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+            <param name="validator"></param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateCredentialsApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Validate request credentials and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateRequestContextApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to validate request context
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateRequestContextApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Informapp.InformSystem.WebApi.Client.Validators.IValidator{Informapp.InformSystem.WebApi.Client.Requests.RequestContext})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateRequestContextApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+            <param name="validator"></param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateRequestContextApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Validate request context and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateRequestModelApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to validate request model
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateRequestModelApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Informapp.InformSystem.WebApi.Client.Validators.IValidator{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateRequestModelApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+            <param name="validator"></param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateRequestModelApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Validate request model and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateResponseModelApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to validate response model
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateResponseModelApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Informapp.InformSystem.WebApi.Client.Validators.IValidator{`1})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateResponseModelApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+            <param name="validator"></param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateResponseModelApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Execute request and validate response model
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2">
+            <summary>
+            Generic interface for API client
+            </summary>
+            <typeparam name="TRequest">Request type</typeparam>
+            <typeparam name="TResponse">Response type</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult">
+            <summary>
+            Static class aiding in creation of <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> objects
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult.From``1(``0,System.Boolean)">
+            <summary>
+            Create <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> for any type
+            </summary>
+            <typeparam name="T">The type converted to</typeparam>
+            <param name="value">The value</param>
+            <param name="hasValue">true if <paramref name="value"/> is considered a valid value; else false</param>
+            <returns>new instance of <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/></returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult.FromReference``1(``0)">
+            <summary>
+            Create <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> for reference type
+            </summary>
+            <typeparam name="T">The type converted to</typeparam>
+            <param name="value">The value</param>
+            <returns>A new instance of <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/></returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult.FromValue``1(``0)">
+            <summary>
+            Create <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> for value type
+            </summary>
+            <typeparam name="T">The type converted to</typeparam>
+            <param name="value">The value</param>
+            <returns>A new instance of <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/></returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult.FromValue``1(System.Nullable{``0})">
+            <summary>
+            Create <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> for value type
+            </summary>
+            <typeparam name="T">The type converted to</typeparam>
+            <param name="value">The value</param>
+            <returns>A new instance of <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/></returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult.FromNullable``1(``0)">
+            <summary>
+            Create <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> for nullable value type
+            </summary>
+            <typeparam name="T">The type converted to</typeparam>
+            <param name="value">The value</param>
+            <returns>A new instance of <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/></returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult.FromNullable``1(System.Nullable{``0})">
+            <summary>
+            Create <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> for nullable value type
+            </summary>
+            <typeparam name="T">The type converted to</typeparam>
+            <param name="value">The value</param>
+            <returns>A new instance of <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/></returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult.Empty``1">
+            <summary>
+            Create empty <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> 
+            </summary>
+            <typeparam name="T">The type converted to</typeparam>
+            <returns>A new instance of <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/></returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult.Empty``1(``0)">
+            <summary>
+            Create empty <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> 
+            </summary>
+            <typeparam name="T">The type converted to</typeparam>
+            <param name="value">The value</param>
+            <returns>A new instance of <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/></returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1">
+            <summary>
+            Gerneric class representing the result of a conversion
+            </summary>
+            <typeparam name="T">The type converted to</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1.#ctor(`0,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> class.
+            </summary>
+            <param name="value">The value</param>
+            <param name="hasValue">true if <paramref name="value"/> is considered a valid value; else false</param>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1.Value">
+            <summary>
+            Gets the value
+            </summary>
+            <returns>The value</returns>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1.HasValue">
+            <summary>
+            Gets a value indicating whether the current <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> object holds a valid value.
+            </summary>
+            <returns>true if the current <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> object has a value; false if the current <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> object has no value.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResultExtensions">
+            <summary>
+            Static class holding extensions for <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Converters.ConvertResultExtensions.ThrowIfNoValue``1(Informapp.InformSystem.WebApi.Client.Converters.ConvertResult{``0})">
+            <summary>
+            Throw exception when a <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> holds no value
+            </summary>
+            <typeparam name="T">The type converted to</typeparam>
+            <param name="convertResult">The converted result</param>
+            <returns>The converted result</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="convertResult"/> is null.</exception>
+            <exception cref="T:System.InvalidOperationException">The <see cref="P:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1.HasValue"/> property is false.</exception>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Converters.IConverter`2">
+            <summary>
+            Generic interface for converting values to another type
+            </summary>
+            <typeparam name="TSource">Convert from type</typeparam>
+            <typeparam name="TResult">Convert to type</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Converters.IConverter`2.Convert(`0)">
+            <summary>
+            Convert value
+            </summary>
+            <param name="source">The source value</param>
+            <returns>The convert result</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Converters.StringToGuidConverter">
+            <summary>
+            Implementation of <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.IConverter`2"/>
+            to convert <see cref="T:System.String"/> to <see cref="T:System.Guid"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Converters.StringToGuidConverter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.StringToGuidConverter"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Converters.StringToGuidConverter.Convert(System.String)">
+            <summary>
+            Convert <see cref="T:System.String"/> to <see cref="T:System.Guid"/>
+            </summary>
+            <param name="source">The source value</param>
+            <returns>The <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> containing the converted value</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider">
+            <summary>
+            Implementation of <see cref="T:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ICredentialsProvider"/> to retrieve credentials from app settings.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider.GetUserName">
+            <summary>
+            Get the username
+            </summary>
+            <returns>The username</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider.GetPassword">
+            <summary>
+            Get the password
+            </summary>
+            <returns>The password</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ICredentialsProvider">
+            <summary>
+            Interface to provide credentials for the api
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ICredentialsProvider.GetUserName">
+            <summary>
+            Get the username
+            </summary>
+            <returns>The username</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ICredentialsProvider.GetPassword">
+            <summary>
+            Get the password
+            </summary>
+            <returns>The password</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.DataAnnotations.AbsoluteUriAttribute">
+            <summary>
+            Specifies that a string or URI field must be an absolute URI.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.DataAnnotations.AbsoluteUriAttribute.#ctor">
+            <summary>Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.DataAnnotations.AbsoluteUriAttribute"/> class.</summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.DataAnnotations.AbsoluteUriAttribute.IsValid(System.Object)">
+            <summary>
+            Determines whether the specified value of the object is valid.
+            </summary>
+            <param name="value">The value of the object to validate.</param>
+            <returns>true if the specified value is valid; otherwise, false.</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.DataAnnotations.AbsoluteUriAttribute.FormatErrorMessage(System.String)">
+            <summary>
+            Applies formatting to an error message, based on the data field where the error occurred.
+            </summary>
+            <param name="name">The name to include in the formatted message.</param>
+            <returns>An instance of the formatted error message.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.DataAnnotations.RelativeUriAttribute">
+            <summary>
+            Specifies that a string or URI field must be a relative URI.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.DataAnnotations.RelativeUriAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.DataAnnotations.RelativeUriAttribute"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.DataAnnotations.RelativeUriAttribute.IsValid(System.Object)">
+            <summary>
+            Determines whether the specified value of the object is valid.
+            </summary>
+            <param name="value">The value of the object to validate.</param>
+            <returns>true if the specified value is valid; otherwise, false.</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.DataAnnotations.RelativeUriAttribute.FormatErrorMessage(System.String)">
+            <summary>
+            Applies formatting to an error message, based on the data field where the error occurred.
+            </summary>
+            <param name="name">The name to include in the formatted message.</param>
+            <returns>An instance of the formatted error message.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.DateTimeProviders.DateTimeProvider">
+            <summary>
+            Implementation of <see cref="T:Informapp.InformSystem.WebApi.Client.DateTimeProviders.IDateTimeProvider"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.DateTimeProviders.DateTimeProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.DateTimeProviders.DateTimeProvider"/> class.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.DateTimeProviders.DateTimeProvider.UtcNow">
+            <summary>
+            Gets a <see cref="T:System.DateTimeOffset"/> object whose date and time are set to the current
+            Coordinated Universal Time (UTC) date and time and whose offset is <see cref="F:System.TimeSpan.Zero"/>.
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.DateTimeProviders.IDateTimeProvider">
+            <summary>
+            Interface to provide date and time
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.DateTimeProviders.IDateTimeProvider.UtcNow">
+            <summary>
+            Gets a <see cref="T:System.DateTimeOffset"/> object whose date and time are set to the current
+            Coordinated Universal Time (UTC) date and time and whose offset is <see cref="F:System.TimeSpan.Zero"/>.
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Decorators.Decorator`1">
+            <summary>
+            Generic class for decorators
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Decorators.Decorator`1.#ctor(`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Decorators.Decorator`1"/> class.
+            </summary>
+            <param name="decorated">The instance being decorated</param>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Decorators.Decorator`1.Decorating">
+            <summary>
+            The instance being decorated
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Decorators.IDecorator">
+            <summary>
+            Base interface for decorators
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Decorators.IDecorator`1">
+            <summary>
+            Generic Interface for decorators
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Decorators.IDecorator`1.Decorating">
+            <summary>
+            The instance being decorated
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.DictionaryBuilders.DictionaryBuilder`2">
+            <summary>
+            Build a dictionary from an object
+            </summary>
+            <typeparam name="TModel">The model</typeparam>
+            <typeparam name="TAttribute">Only consider properties marked with this attribute</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.DictionaryBuilders.DictionaryBuilder`2.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.DictionaryBuilders.DictionaryBuilder`2"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.DictionaryBuilders.DictionaryBuilder`2.GetDictionary(`0)">
+            <summary>
+            Get dictionary containing property names and their values
+            </summary>
+            <param name="model">The model to build a dictionary</param>
+            <returns>Dictionary of properties</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="model"/></exception>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.DictionaryBuilders.IDictionaryBuilder`2">
+            <summary>
+            Generic interface to build a dictionary from an object
+            </summary>
+            <typeparam name="TModel">The model</typeparam>
+            <typeparam name="TAttribute">Only consider properties marked with this attribute</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.DictionaryBuilders.IDictionaryBuilder`2.GetDictionary(`0)">
+            <summary>
+            Get dictionary containing property names and their values
+            </summary>
+            <param name="model">The model to build a dictionary</param>
+            <returns>Dictionary of properties</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.DictionaryBuilders.IQueryDictionaryBuilder`1">
+            <summary>
+            Generic interface to build a dictionary of query string values from an object
+            </summary>
+            <typeparam name="T">The model</typeparam>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.DictionaryBuilders.QueryDictionaryBuilder`1">
+            <summary>
+            Build a dictionary of query string values from an object
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.DictionaryBuilders.QueryDictionaryBuilder`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.DictionaryBuilders.QueryDictionaryBuilder`1"/> class.
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.EndPointProviders.ConfigurationEndPointProvider">
+            <summary>
+            Implementation of <see cref="T:Informapp.InformSystem.WebApi.Client.EndPointProviders.IEndPointProvider"/> to retrieve endpoint from app settings.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.EndPointProviders.ConfigurationEndPointProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.EndPointProviders.ConfigurationEndPointProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.EndPointProviders.ConfigurationEndPointProvider.GetEndPoint">
+            <summary>
+            Get endpoint
+            </summary>
+            <returns>The endpoint</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.EndPointProviders.IEndPointProvider">
+            <summary>
+            Interface to provider endpoint for the api
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.EndPointProviders.IEndPointProvider.GetEndPoint">
+            <summary>
+            Get endpoint
+            </summary>
+            <returns>The endpoint</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.EqualityComparers.DefaultEqualityComparer`1">
+            <summary>
+            Generic class for default equality comparer
+            </summary>
+            <typeparam name="T">The type of objects to compar</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.EqualityComparers.DefaultEqualityComparer`1.Equals(`0,`0)">
+            <summary>
+            Determines whether the specified objects are equal.
+            </summary>
+            <param name="x">The first object of type T to compare.</param>
+            <param name="y">The second object of type T to compare.</param>
+            <returns>true if the specified objects are equal; otherwise, false.</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.EqualityComparers.DefaultEqualityComparer`1.GetHashCode(`0)">
+            <summary>
+            Returns a hash code for the specified object.
+            </summary>
+            <param name="obj">The <see cref="T:System.Object"/> for which a hash code is to be returned.</param>
+            <returns>A hash code for the specified object.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.EqualityComparers.IDefaultEqualityComparer`1">
+            <summary>
+            Generic interface for default equality comparer
+            </summary>
+            <typeparam name="T">The type of objects to compar</typeparam>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Exceptions.ApiClientException">
+            <summary>
+            Represents errors that occur during API requests
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Exceptions.ApiClientException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Exceptions.ApiClientException"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Exceptions.ApiClientException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Exceptions.ApiClientException"/> class with a specified error.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Exceptions.ApiClientException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Exceptions.ApiClientException"/> with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Exceptions.ApiClientException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Exceptions.ApiClientException"/> class with serialized data.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo"/> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext"/> that contains contextual information about the source or destination.</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.MethodProviders.IMethodProvider`1">
+            <summary>
+            Generic interface to retrieve method from a class
+            </summary>
+            <typeparam name="T">Type to get method from</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.MethodProviders.IMethodProvider`1.GetMethod">
+            <summary>
+            Get method
+            </summary>
+            <returns>The method</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.MethodProviders.MethodProvider`1">
+            <summary>
+            Retrieve method from a class
+            </summary>
+            <typeparam name="T">Type to get method from</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.MethodProviders.MethodProvider`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.MethodProviders.MethodProvider`1"/> class.
+            </summary>
+            <exception cref="T:System.InvalidOperationException"><typeparamref name="T"/> is missing <see cref="T:Informapp.InformSystem.WebApi.Models.Http.HttpMethodAttribute"/></exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.MethodProviders.MethodProvider`1.GetMethod">
+            <summary>
+            Get method
+            </summary>
+            <returns>The method</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.PathProviders.IPathProvider`1">
+            <summary>
+            Generic interface to retrieve path for a class
+            </summary>
+            <typeparam name="T">Type to get path from</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.PathProviders.IPathProvider`1.GetPath(`0)">
+            <summary>
+            Get path for the given instance
+            </summary>
+            <param name="instance">Fill path with values from this object</param>
+            <returns>The path</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.PathProviders.PathProvider`1">
+            <summary>
+            Retrieve path for a class
+            </summary>
+            <typeparam name="T">Type to get path from</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.PathProviders.PathProvider`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.PathProviders.PathProvider`1"/> class.
+            </summary>
+            <exception cref="T:System.InvalidOperationException"><typeparamref name="T"/> is missing <see cref="T:Informapp.InformSystem.WebApi.Models.Http.PathAttribute"/></exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.PathProviders.PathProvider`1.GetPath(`0)">
+            <summary>
+            Get path for the given instance
+            </summary>
+            <param name="instance">Fill path with values from this object</param>
+            <returns>The path</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.QueryStringProviders.IQueryProvider`1">
+            <summary>
+            Generic interface to retrieve query string for a class
+            </summary>
+            <typeparam name="T">Type to get query string from</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.QueryStringProviders.IQueryProvider`1.GetQueryString(`0)">
+            <summary>
+            Get query string for the given instance
+            </summary>
+            <param name="instance">Make query string from this object</param>
+            <returns>The query string</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.QueryStringProviders.QueryProvider`1">
+            <summary>
+            Retrieve query string for a class
+            </summary>
+            <typeparam name="T">Type to get query string from</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.QueryStringProviders.QueryProvider`1.#ctor(Informapp.InformSystem.WebApi.Client.DictionaryBuilders.IQueryDictionaryBuilder{`0},Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilderFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.QueryStringProviders.QueryProvider`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.QueryStringProviders.QueryProvider`1.GetQueryString(`0)">
+            <summary>
+            Get query string for the given instance
+            </summary>
+            <param name="instance">Make query string from this object</param>
+            <returns>The query string</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilder">
+            <summary>
+            Interface for query string builder
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilder.Add(System.String,System.String)">
+            <summary>
+            Add key and value to the query string
+            </summary>
+            <param name="key">The key</param>
+            <param name="value">The value</param>
+            <returns>The query string builder</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilder.Add(System.Object)">
+            <summary>
+            Add object to the query string
+            </summary>
+            <param name="obj">The object to add to the query string</param>
+            <returns>The query string builder</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilder.ToString">
+            <summary>
+            Convert the build query string to a <see cref="T:System.String"/>
+            </summary>
+            <returns>The query string</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilderFactory">
+            <summary>
+            Interface to construct <see cref="T:Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilder"/> instances
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilderFactory.Create">
+            <summary>
+            Create instance of <see cref="T:Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilder"/>
+            </summary>
+            <returns>The constructed <see cref="T:Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilder"/> instance</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilderFactory.Create(System.String)">
+            <summary>
+            Create instance of <see cref="T:Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilder"/>
+            </summary>
+            <param name="query">The query string to parse.</param>
+            <returns>The constructed <see cref="T:Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilder"/> instance</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.QueryStrings.QueryStringBuilder">
+            <summary>
+            Build a query string
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.QueryStrings.QueryStringBuilder.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.QueryStrings.QueryStringBuilder"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.QueryStrings.QueryStringBuilder.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.QueryStrings.QueryStringBuilder"/> class.
+            </summary>
+            <param name="query">The query string to parse.</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.QueryStrings.QueryStringBuilder.Add(System.String,System.String)">
+            <summary>
+            Add key and value to the query string
+            </summary>
+            <param name="key">The key</param>
+            <param name="value">The value</param>
+            <returns>The query string builder</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.QueryStrings.QueryStringBuilder.Add(System.Object)">
+            <summary>
+            Add object to the query string
+            </summary>
+            <param name="obj">The object to add to the query string</param>
+            <returns>The query string builder</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.QueryStrings.QueryStringBuilder.GetDictionary(System.Object)">
+            <summary>
+            Build dictionary with key and values from an object
+            </summary>
+            Source: http://geeklearning.io/serialize-an-object-to-an-url-encoded-string-in-csharp/
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.QueryStrings.QueryStringBuilder.ToString">
+            <summary>
+            Convert the build query string to a <see cref="T:System.String"/>
+            </summary>
+            <returns>The query string</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.QueryStrings.QueryStringBuilderFactory">
+            <summary>
+            Factory class to construct <see cref="T:Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilder"/> instances
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.QueryStrings.QueryStringBuilderFactory.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.QueryStrings.QueryStringBuilderFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.QueryStrings.QueryStringBuilderFactory.Create">
+            <summary>
+            Create instance of <see cref="T:Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilder"/>
+            </summary>
+            <returns>The constructed <see cref="T:Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilder"/> instance</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.QueryStrings.QueryStringBuilderFactory.Create(System.String)">
+            <summary>
+            Create instance of <see cref="T:Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilder"/>
+            </summary>
+            <param name="query">The query string to parse.</param>
+            <returns>The constructed <see cref="T:Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilder"/> instance</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Requests.ApiBearerToken">
+            <summary>
+            DTO class for bearer token
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiBearerToken.HasToken">
+            <summary>
+            Returns true when a token is set, null otherwise
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiBearerToken.Token">
+            <summary>
+            The bearer token
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Requests.ApiBearerToken.GetToken">
+            <summary>
+            Get the bearer token
+            </summary>
+            <returns>The bearer token</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Requests.ApiCredentials">
+            <summary>
+            Api credentials
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiCredentials.Username">
+            <summary>
+            The username
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiCredentials.HasPassword">
+            <summary>
+            Returns true when a password is set, null otherwise
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiCredentials.Password">
+            <summary>
+            The password
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Requests.ApiCredentials.GetPassword">
+            <summary>
+            Get password
+            </summary>
+            <returns>The password</returns>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiCredentials.Environment">
+            <summary>
+            The environment
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiCredentials.ImpersonateUserId">
+            <summary>
+            Impersonate user id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiCredentials.Kind">
+            <summary>
+            Kind
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Requests.ApiCredentials.Validate(System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            Determines whether the specified object is valid.
+            </summary>
+            <param name="validationContext">The validation context.</param>
+            <returns>A collection that holds failed-validation information.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest">
+            <summary>
+            DTO class for API request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest.Context">
+            <summary>
+            The request context
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest.Anonymous">
+            <summary>
+            Execute anonmymous request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest.Credentials">
+            <summary>
+            The credentials
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest.BearerToken">
+            <summary>
+            The bearer token
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest.Create``1(``0)">
+            <summary>
+            Create generic <see cref="T:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest`1"/> from request
+            </summary>
+            <typeparam name="T">Type of request</typeparam>
+            <param name="request">The request model</param>
+            <returns>Request object</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest`1">
+            <summary>
+            Generic DTO class for API requests
+            </summary>
+            <typeparam name="T">Type of request</typeparam>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest`1.Model">
+            <summary>
+            The model
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Requests.ApiRequestExtensions">
+            <summary>
+            Extensions for <see cref="T:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Requests.ApiRequestExtensions.Head``1(``0)">
+            <summary>
+            Set method to <see cref="F:Informapp.InformSystem.WebApi.Models.Http.HttpMethod.Head"/>
+            </summary>
+            <typeparam name="T">The type deriving from <see cref="T:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest"/></typeparam>
+            <param name="request">The request</param>
+            <returns>The request</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Requests.CredentialsKind">
+            <summary>
+            Credentials kind
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Client.Requests.CredentialsKind.Default">
+            <summary>
+            Default
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Client.Requests.CredentialsKind.Environment">
+            <summary>
+            Environment
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Client.Requests.CredentialsKind.Impersonate">
+            <summary>
+            Impersonate
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Requests.RequestContext">
+            <summary>
+            Request context class
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.RequestContext.EndPoint">
+            <summary>
+            The endpoint
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.RequestContext.Method">
+            <summary>
+            The HTTP method
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.RequestContext.MethodOverride">
+            <summary>
+            Use X-HTTP-Method-Override
+            
+            supported for Delete, Head, Patch, and Put
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.RequestContext.Path">
+            <summary>
+            The path
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.RequestContext.Query">
+            <summary>
+            The query string
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.RequestContext.ContentType">
+            <summary>
+            Content type
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Requires.Require">
+            <summary>
+            Static class with methods to ensure conditions are true
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Requires.Require.Required``1(``0,System.String)">
+            <summary>
+            Ensure an instance is not null
+            </summary>
+            <typeparam name="T">Type of object to check</typeparam>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <returns>The instance</returns>
+            <exception cref="T:System.InvalidOperationException"><paramref name="instance"/> is null</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Requires.Require.NotNull``1(``0,System.String)">
+            <summary>
+            Ensure a reference type instance is not null
+            </summary>
+            <typeparam name="T">Type of object to check</typeparam>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <returns>The instance</returns>
+            <exception cref="T:System.InvalidOperationException"><paramref name="instance"/> is null</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Requires.Require.NotNull``1(System.Nullable{``0},System.String)">
+            <summary>
+            Ensure an nullable value type instance is not null
+            </summary>
+            <typeparam name="T">Type of object to check</typeparam>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <returns>The instance</returns>
+            <exception cref="T:System.InvalidOperationException"><paramref name="instance"/> is null</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Requires.Require.Assignable``2">
+            <summary>
+            Determines whether an instance of type <typeparamref name="TSource"/> can be assigned to an instance of type <typeparamref name="TTarget"/>.
+            </summary>
+            <typeparam name="TSource"></typeparam>
+            <typeparam name="TTarget"></typeparam>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse">
+            <summary>
+            DTO class for API response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse.Elapsed">
+            <summary>
+            Elapsed time
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse.StatusCode">
+            <summary>
+            Status code
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse.ResponseStatus">
+            <summary>
+            Response status
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse.Content">
+            <summary>
+            Content
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse.ContentType">
+            <summary>
+            Content type
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse.ContentModel">
+            <summary>
+            Content model
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse.IsSuccessful">
+            <summary>
+            Success
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse.RequestId">
+            <summary>
+            Request id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse.TotalCount">
+            <summary>
+            Total count
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse.Headers">
+            <summary>
+            Headers
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse`1">
+            <summary>
+            Generic DTO class for API response
+            </summary>
+            <typeparam name="T">The type of response</typeparam>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse`1.Model">
+            <summary>
+            The model
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Responses.ApiResponseExtensions">
+            <summary>
+            Extensions for <see cref="T:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Responses.ApiResponseExtensions.ThrowIfFailed``1(``0)">
+            <summary>
+            Throw exception if the api request failed
+            </summary>
+            <typeparam name="T">The type deriving from <see cref="T:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse"/></typeparam>
+            <param name="response">The response</param>
+            <returns>The response</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Responses.ApiResponseExtensions.ThrowIfFailed``1(System.Threading.Tasks.Task{``0})">
+            <summary>
+            Throw exception if the api request failed
+            </summary>
+            <typeparam name="T">The type deriving from <see cref="T:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse"/></typeparam>
+            <param name="response">The response</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeader">
+            <summary>
+            Response header class
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeader.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeader.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Responses.ResponseStatusCode">
+            <summary>
+            Response status codes
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Client.Responses.ResponseStatusCode.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Client.Responses.ResponseStatusCode.Completed">
+            <summary>
+            Completed
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Client.Responses.ResponseStatusCode.Error">
+            <summary>
+            Error
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Client.Responses.ResponseStatusCode.TimedOut">
+            <summary>
+            TimedOut
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Client.Responses.ResponseStatusCode.Aborted">
+            <summary>
+            Aborted
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Validators.IValidator`1">
+            <summary>
+            Validator interface
+            </summary>
+            <typeparam name="T">The type of object to validate</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.IValidator`1.ValidateObject(`0)">
+            <summary>
+            Validate object
+            </summary>
+            <param name="instance">The instance to validate</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Validators.Validator`1">
+            <summary>
+            Validator class
+            </summary>
+            <typeparam name="T">The type of object to validate</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.Validator`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.Validator"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.Validator`1.ValidateObject(`0)">
+            <summary>
+            Validate object
+            </summary>
+            <param name="instance">The instance to validate</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.WebApiClientProject">
+            <summary>
+            Dummy class to reference this assembly
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.WebApiClientProject.Load">
+            <summary>
+            Dummy method, calling this will load its assembly
+            </summary>
+        </member>
+    </members>
+</doc>

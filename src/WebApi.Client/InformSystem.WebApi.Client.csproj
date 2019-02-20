@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="..\cleanup.config" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A6B89D51-0541-4236-9A0C-3AF9C5300E52}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Informapp.InformSystem.WebApi.Client</RootNamespace>
+    <AssemblyName>InformSystem.WebApi.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>WebApi.Client.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>WebApi.Client.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arguments\Argument.cs" />
+    <Compile Include="AttributeProviders\AttributeProvider.cs" />
+    <Compile Include="AttributeProviders\AttributeProvider.T2.cs" />
+    <Compile Include="AttributeProviders\AttributeProviderExtensions.cs" />
+    <Compile Include="AttributeProviders\AttributeProviderFactory.cs" />
+    <Compile Include="AttributeProviders\IAttributeProvider.T2.cs" />
+    <Compile Include="AttributeProviders\IAttributeProviderFactory.cs" />
+    <Compile Include="BearerTokenProviders\ApiRequestToBearerTokenKeyConverter.cs" />
+    <Compile Include="BearerTokenProviders\BearerTokenCache.cs" />
+    <Compile Include="BearerTokenProviders\BearerTokenKey.cs" />
+    <Compile Include="BearerTokenProviders\BearerTokenKeyEqualityComparer.cs" />
+    <Compile Include="BearerTokenProviders\BearerTokenResponse.cs" />
+    <Compile Include="BearerTokenProviders\BearerTokenV1Provider.cs" />
+    <Compile Include="BearerTokenProviders\Decorators\CacheBearerTokenProviderDecorator.T1.cs" />
+    <Compile Include="BearerTokenProviders\Decorators\EnsureSuccessBearerTokenProviderDecorator.T1.cs" />
+    <Compile Include="BearerTokenProviders\Decorators\ExpiresBearerTokenProviderDecorator.T1.cs" />
+    <Compile Include="BearerTokenProviders\EnvironmentBearerTokenV1Provider.cs" />
+    <Compile Include="BearerTokenProviders\IBearerTokenCache.cs" />
+    <Compile Include="BearerTokenProviders\IBearerTokenProvider.T1.cs" />
+    <Compile Include="Caches\CacheBase.T2.cs" />
+    <Compile Include="Caches\CacheExtensions.cs" />
+    <Compile Include="Caches\DictionaryCache.T2.cs" />
+    <Compile Include="Caches\ICache.T2.cs" />
+    <Compile Include="Clients\ApiClientExtensions.cs" />
+    <Compile Include="Clients\Decorators\AnonymousApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\ArgumentNullApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\BearerTokenV1ApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\ContentModelApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\ContentTypeApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\CredentialsApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\ElapsedApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\EndPointApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\EnsureSuccessApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\EnvironmentBearerTokenV1ApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\MethodApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\MethodeOverrideApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\PathApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\QueryApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\RequestIdApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\RequireHttpsApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\ResultNullApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\TotalCountApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\ValidateBearerTokenApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\ValidateCredentialsApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\ValidateRequestContextApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\ValidateRequestModelApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\ValidateResponseModelApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\IApiClient.T2.cs" />
+    <Compile Include="Converters\ConvertResult.cs" />
+    <Compile Include="Converters\ConvertResult.T1.cs" />
+    <Compile Include="Converters\ConvertResultExtensions.cs" />
+    <Compile Include="Converters\IConverter.T2.cs" />
+    <Compile Include="Converters\StringToGuidConverter.cs" />
+    <Compile Include="CredentialsProviders\ConfigurationCredentialsProvider.cs" />
+    <Compile Include="CredentialsProviders\ICredentialsProvider.cs" />
+    <Compile Include="DataAnnotations\AbsoluteUriAttribute.cs" />
+    <Compile Include="DataAnnotations\RelativeUriAttribute.cs" />
+    <Compile Include="DateTimeProviders\DateTimeProvider.cs" />
+    <Compile Include="DateTimeProviders\IDateTimeProvider.cs" />
+    <Compile Include="Decorators\Decorator.T1.cs" />
+    <Compile Include="Decorators\IDecorator.cs" />
+    <Compile Include="Decorators\IDecorator.T1.cs" />
+    <Compile Include="DictionaryBuilders\DictionaryBuilder.T2.cs" />
+    <Compile Include="DictionaryBuilders\IDictionaryBuilder.T2.cs" />
+    <Compile Include="DictionaryBuilders\IQueryDictionaryBuilder.T1.cs" />
+    <Compile Include="DictionaryBuilders\QueryDictionaryBuilder.T1.cs" />
+    <Compile Include="EndPointProviders\ConfigurationEndPointProvider.cs" />
+    <Compile Include="EndPointProviders\IEndPointProvider.cs" />
+    <Compile Include="EqualityComparers\DefaultEqualityComparer.T1.cs" />
+    <Compile Include="EqualityComparers\IDefaultEqualityComparer.T1.cs" />
+    <Compile Include="Exceptions\ApiClientException.cs" />
+    <Compile Include="HashCodes\HashCodeHelper.cs" />
+    <Compile Include="MethodProviders\IMethodProvider.T1.cs" />
+    <Compile Include="MethodProviders\MethodProvider.T1.cs" />
+    <Compile Include="PathProviders\IPathProvider.T1.cs" />
+    <Compile Include="PathProviders\PathProvider.T1.cs" />
+    <Compile Include="PathProviders\PropertyFuncFactory.T1.cs" />
+    <Compile Include="PathProviders\PropertyFuncModel.T1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryProviders\IQueryProvider.T1.cs" />
+    <Compile Include="QueryProviders\QueryProvider.T1.cs" />
+    <Compile Include="QueryStrings\IQueryStringBuilder.cs" />
+    <Compile Include="QueryStrings\IQueryStringBuilderFactory.cs" />
+    <Compile Include="QueryStrings\QueryStringBuilder.cs" />
+    <Compile Include="QueryStrings\QueryStringBuilderFactory.cs" />
+    <Compile Include="Requests\ApiBearerToken.cs" />
+    <Compile Include="Requests\ApiCredentials.cs" />
+    <Compile Include="Requests\ApiRequest.cs" />
+    <Compile Include="Requests\ApiRequest.T1.cs" />
+    <Compile Include="Requests\ApiRequestExtensions.cs" />
+    <Compile Include="Requests\CredentialsKind.cs" />
+    <Compile Include="Requests\RequestContext.cs" />
+    <Compile Include="Requires\Require.cs" />
+    <Compile Include="Responses\ApiResponse.cs" />
+    <Compile Include="Responses\ApiResponse.T1.cs" />
+    <Compile Include="Responses\ApiResponseExtensions.cs" />
+    <Compile Include="Responses\ResponseHeader.cs" />
+    <Compile Include="Responses\ResponseStatusCode.cs" />
+    <Compile Include="Validators\IValidator.T1.cs" />
+    <Compile Include="Validators\Validator.T1.cs" />
+    <Compile Include="WebApiClientProject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebApi.Models\InformSystem.WebApi.Models.csproj">
+      <Project>{7cf0120c-2f63-408c-b761-0f4946f0e0d7}</Project>
+      <Name>BaseSystem.WebApi.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WebApi.Client.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

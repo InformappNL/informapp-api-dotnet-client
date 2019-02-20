@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InformSystem.WebApi.Client.Sample</name>
+    </assembly>
+    <members>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Arguments.Argument">
+            <summary>
+            Static class with methods to ensure conditions for arguments are true
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Arguments.Argument.Required``1(``0,System.String)">
+            <summary>
+            Ensure an instance is not null
+            </summary>
+            <typeparam name="T">Type of object to check</typeparam>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <returns>The instance</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Arguments.Argument.NotNull``1(``0,System.String)">
+            <summary>
+            Ensure a reference type instance is not null
+            </summary>
+            <typeparam name="T">Type of object to check</typeparam>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <returns>The instance</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Arguments.Argument.NotNull``1(System.Nullable{``0},System.String)">
+            <summary>
+            Ensure an nullable value type instance is not null
+            </summary>
+            <typeparam name="T">Type of object to check</typeparam>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <returns>The instance</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Arguments.Argument.NotNullOrEmpty(System.String,System.String)">
+            <summary>
+            Ensure a string is not null or empty
+            </summary>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <returns>The instance</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="instance"/> is empty</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Arguments.Argument.NotNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0},System.String)">
+            <summary>
+            Ensure a collection is not null or empty
+            </summary>
+            <typeparam name="T">Type of objects in the collection</typeparam>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <returns>The instance</returns>
+            <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="instance"/> is empty</exception>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.AutofacContainerFactory">
+            <summary>
+            Autofac container factory class
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.AutofacContainerFactory.Create">
+            <summary>
+            Create Autofac container
+            </summary>
+            <returns>The container</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.AutofacContainerFactory.GetRegistrations">
+            <summary>
+            Get collection of registrations to register with Autofac
+            </summary>
+            <returns>Collection of registrations</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.IAutofacRegistration">
+            <summary>
+            Interface to register dependencies with Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.IAutofacRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies
+            </summary>
+            <param name="builder">The builder instance to add registrations to</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.ApiClientRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.ApiClientRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.BearerTokenCacheRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.BearerTokenCacheRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.BearerTokenProviderRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.BearerTokenProviderRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.ClientCacheRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.ClientCacheRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.ClientFactoryRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.ClientFactoryRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.ConverterRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.ConverterRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.CredentialsProviderRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.CredentialsProviderRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.DateTimeProviderRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.DateTimeProviderRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.DefaultEqualityComparerRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.DefaultEqualityComparerRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.EndPointProviderRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.EndPointProviderRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.EqualityComparerRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.EqualityComparerRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.ExampleRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.ExampleRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.JsonDeserializerRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.JsonDeserializerRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.JsonSerializerRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.JsonSerializerRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.MethodProviderRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.MethodProviderRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.PathProviderRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.PathProviderRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.QueryDictionaryBuilderRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.QueryDictionaryBuilderRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.QueryProviderRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.QueryProviderRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.QueryStringBuilderFactoryRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.QueryStringBuilderFactoryRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.RequestFactoryRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.RequestFactoryRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.ValidatorRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.ValidatorRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.BearerTokenProviders.LogToConsoleBearerTokenProviderDecorator`1">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.IBearerTokenProvider`1"/> to log to console
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.BearerTokenProviders.LogToConsoleBearerTokenProviderDecorator`1.#ctor(Informapp.InformSystem.WebApi.Client.BearerTokenProviders.IBearerTokenProvider{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.BearerTokenProviders.LogToConsoleBearerTokenProviderDecorator`1"/> class.
+            </summary>
+            <param name="bearerTokenProvider">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.BearerTokenProviders.LogToConsoleBearerTokenProviderDecorator`1.GetToken(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest,System.Threading.CancellationToken)">
+            <summary>
+            Get bearer token and ensure an access token is returned
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The token response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Clients.ApiClient">
+            <summary>
+            Base class for api client facade providing access to factory instance
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Clients.ApiClient.SetFactory(Informapp.InformSystem.WebApi.Client.Sample.Clients.IApiClientFactory)">
+            <summary>
+            Set factory to use
+            </summary>
+            <param name="factory">The factory</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Clients.ApiClient`2">
+            <summary>
+            Api client facade class
+            </summary>
+            <typeparam name="TRequest">The request type</typeparam>
+            <typeparam name="TResponse">The response type</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Clients.ApiClient`2.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Clients.ApiClient`2"/> class and act on a client created by the static factory
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Clients.ApiClient`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Clients.ApiClient`2"/> class and act on the provided client
+            </summary>
+            <param name="client">The client to use</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Clients.ApiClient`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Clients.ApiClientFactory">
+            <summary>
+            Factory class to create instances of <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Clients.ApiClientFactory.Create``2">
+            <summary>
+            Create instace of <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/>
+            </summary>
+            <typeparam name="TRequest">The request type</typeparam>
+            <typeparam name="TResponse">The response type</typeparam>
+            <returns>An instance of <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/></returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Clients.IApiClientFactory">
+            <summary>
+            Factory interface to create instances of <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Clients.IApiClientFactory.Create``2">
+            <summary>
+            Create instace of <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/>
+            </summary>
+            <typeparam name="TRequest">The request type</typeparam>
+            <typeparam name="TResponse">The response type</typeparam>
+            <returns>An instance of <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/></returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Clients.LogToConsoleApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to log to console
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Clients.LogToConsoleApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Clients.LogToConsoleApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Clients.LogToConsoleApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Ensure request is not null and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients.ApiClientExample">
+            <summary>
+            Example using the api client facade
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients.ApiClientFactoryExample">
+            <summary>
+            Example using the factory
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Requires.Require">
+            <summary>
+            Static class with methods to ensure conditions are true
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Requires.Require.Required``1(``0,System.String)">
+            <summary>
+            Ensure an instance is not null
+            </summary>
+            <typeparam name="T">Type of object to check</typeparam>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <returns>The instance</returns>
+            <exception cref="T:System.InvalidOperationException"><paramref name="instance"/> is null</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Requires.Require.NotNull``1(``0,System.String)">
+            <summary>
+            Ensure a reference type instance is not null
+            </summary>
+            <typeparam name="T">Type of object to check</typeparam>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <returns>The instance</returns>
+            <exception cref="T:System.InvalidOperationException"><paramref name="instance"/> is null</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Requires.Require.NotNull``1(System.Nullable{``0},System.String)">
+            <summary>
+            Ensure an nullable value type instance is not null
+            </summary>
+            <typeparam name="T">Type of object to check</typeparam>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <returns>The instance</returns>
+            <exception cref="T:System.InvalidOperationException"><paramref name="instance"/> is null</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Requires.Require.Assignable``2">
+            <summary>
+            Determines whether an instance of type <typeparamref name="TSource"/> can be assigned to an instance of type <typeparamref name="TTarget"/>.
+            </summary>
+            <typeparam name="TSource"></typeparam>
+            <typeparam name="TTarget"></typeparam>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.WebApiClientSampleProject">
+            <summary>
+            Dummy class to reference this assembly
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.WebApiClientSampleProject.Load">
+            <summary>
+            Dummy method, calling this will load its assembly
+            </summary>
+        </member>
+    </members>
+</doc>
