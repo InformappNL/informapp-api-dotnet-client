@@ -13,6 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformSystem.WebApi.Client.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C5E76A68-26DB-481E-9470-22A29DECE90B}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		.tfignore = .tfignore
 		samples\cleanup.config = samples\cleanup.config
 		src\cleanup.config = src\cleanup.config
