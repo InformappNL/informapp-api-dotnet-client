@@ -120,8 +120,6 @@
     <Compile Include="DictionaryBuilders\QueryDictionaryBuilder.T1.cs" />
     <Compile Include="EndPointProviders\ConfigurationEndPointProvider.cs" />
     <Compile Include="EndPointProviders\IEndPointProvider.cs" />
-    <Compile Include="EqualityComparers\DefaultEqualityComparer.T1.cs" />
-    <Compile Include="EqualityComparers\IDefaultEqualityComparer.T1.cs" />
     <Compile Include="Exceptions\ApiClientException.cs" />
     <Compile Include="HashCodes\HashCodeHelper.cs" />
     <Compile Include="MethodProviders\IMethodProvider.T1.cs" />

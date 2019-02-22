@@ -1475,33 +1475,6 @@
             </summary>
             <returns>The endpoint</returns>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.EqualityComparers.DefaultEqualityComparer`1">
-            <summary>
-            Generic class for default equality comparer
-            </summary>
-            <typeparam name="T">The type of objects to compar</typeparam>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.EqualityComparers.DefaultEqualityComparer`1.Equals(`0,`0)">
-            <summary>
-            Determines whether the specified objects are equal.
-            </summary>
-            <param name="x">The first object of type T to compare.</param>
-            <param name="y">The second object of type T to compare.</param>
-            <returns>true if the specified objects are equal; otherwise, false.</returns>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.EqualityComparers.DefaultEqualityComparer`1.GetHashCode(`0)">
-            <summary>
-            Returns a hash code for the specified object.
-            </summary>
-            <param name="obj">The <see cref="T:System.Object"/> for which a hash code is to be returned.</param>
-            <returns>A hash code for the specified object.</returns>
-        </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.EqualityComparers.IDefaultEqualityComparer`1">
-            <summary>
-            Generic interface for default equality comparer
-            </summary>
-            <typeparam name="T">The type of objects to compar</typeparam>
-        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Exceptions.ApiClientException">
             <summary>
             Represents errors that occur during API requests
