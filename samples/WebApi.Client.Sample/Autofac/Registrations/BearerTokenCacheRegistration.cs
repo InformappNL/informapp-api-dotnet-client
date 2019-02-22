@@ -19,32 +19,24 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            builder.RegisterType<AutofacBearerTokenCache>()
+            builder.Register(x => new BearerTokenCache(GetCache()))
                 .As<IBearerTokenCache>()
                 .SingleInstance();
         }
 
-        private class AutofacBearerTokenCache : BearerTokenCache
+        private static ICache<BearerTokenKey, BearerTokenResponse> GetCache()
         {
-            private static ICache<BearerTokenKey, BearerTokenResponse> GetCache()
-            {
-                int concurrencyLevel = 4;
+            int concurrencyLevel = 4;
 
-                int capacity = 10;
+            int capacity = 10;
 
-                var comparer = new BearerTokenKeyEqualityComparer();
+            var comparer = new BearerTokenKeyEqualityComparer();
 
-                var dictionary = new ConcurrentDictionary<BearerTokenKey, BearerTokenResponse>(concurrencyLevel, capacity, comparer);
+            var dictionary = new ConcurrentDictionary<BearerTokenKey, BearerTokenResponse>(concurrencyLevel, capacity, comparer);
 
-                ICache<BearerTokenKey, BearerTokenResponse> cache = new DictionaryCache<BearerTokenKey, BearerTokenResponse>(dictionary);
+            ICache<BearerTokenKey, BearerTokenResponse> cache = new DictionaryCache<BearerTokenKey, BearerTokenResponse>(dictionary);
 
-                return cache;
-            }
-
-            public AutofacBearerTokenCache() : base(GetCache())
-            {
-
-            }
+            return cache;
         }
     }
 }

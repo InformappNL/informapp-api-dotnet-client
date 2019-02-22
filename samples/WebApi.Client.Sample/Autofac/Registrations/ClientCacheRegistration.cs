@@ -22,32 +22,24 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            builder.RegisterType<AutofacClientCache>()
+            builder.Register(x => new ClientCache(GetCache()))
                 .As<IClientCache>()
                 .SingleInstance();
         }
 
-        private class AutofacClientCache : ClientCache
+        private static ICache<Uri, IRestClient> GetCache()
         {
-            private static ICache<Uri, IRestClient> GetCache()
-            {
-                int concurrencyLevel = 4;
+            int concurrencyLevel = 4;
 
-                int capacity = 10;
+            int capacity = 10;
 
-                var dictionary = new ConcurrentDictionary<Uri, IRestClient>(concurrencyLevel, capacity);
+            var dictionary = new ConcurrentDictionary<Uri, IRestClient>(concurrencyLevel, capacity);
 
-                ICache<Uri, IRestClient> cache = new DictionaryCache<Uri, IRestClient>(dictionary);
+            ICache<Uri, IRestClient> cache = new DictionaryCache<Uri, IRestClient>(dictionary);
 
-                cache = new DisposableCacheDecorator<Uri, IRestClient>(cache);
+            cache = new DisposableCacheDecorator<Uri, IRestClient>(cache);
 
-                return cache;
-            }
-
-            public AutofacClientCache() : base(GetCache())
-            {
-
-            }
+            return cache;
         }
     }
 }
