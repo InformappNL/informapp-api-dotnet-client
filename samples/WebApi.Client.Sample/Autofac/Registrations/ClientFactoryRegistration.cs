@@ -19,13 +19,15 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
+            var serviceType = typeof(IClientFactory);
+
             /* 
              * The decorators to apply, from inner to outer
              * the first decorator acts directly on ClientFactory
              * the last decorator is the one you get when resolving an instance of IClientFactory
              * 
              */
-            var decorators = new Type[]
+            var decoratorTypes = new Type[]
             {
                 typeof(JsonDeserializerClientFactoryDecorator),
                 typeof(RequireHttpsClientFactoryDecorator),
@@ -36,9 +38,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
                 .As<IClientFactory>()
                 .InstancePerLifetimeScope();
 
-            foreach (var decorator in decorators)
+            foreach (var decoratorType in decoratorTypes)
             {
-                builder.RegisterDecorator(decorator, typeof(IClientFactory));
+                builder.RegisterDecorator(decoratorType, serviceType);
             }
         }
     }

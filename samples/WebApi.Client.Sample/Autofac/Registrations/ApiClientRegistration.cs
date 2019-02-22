@@ -21,7 +21,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            var decoratorType = typeof(IApiClient<,>);
+            var serviceType = typeof(IApiClient<,>);
 
             /* 
              * The decorators to apply, from inner to outer
@@ -29,7 +29,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
              * the last decorator is the one you get when resolving an instance of IApiClient<,>
              * 
              */
-            var decorators = new Type[]
+            var decoratorTypes = new Type[]
             {
                 typeof(ContentModelApiClientDecorator<,>),
                 typeof(LogToConsoleApiClientDecorator<,>),
@@ -61,9 +61,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
                 .As(typeof(IApiClient<,>))
                 .InstancePerLifetimeScope();
 
-            foreach (var decorator in decorators)
+            foreach (var decoratorType in decoratorTypes)
             {
-                builder.RegisterGenericDecorator(decorator, decoratorType);
+                builder.RegisterGenericDecorator(decoratorType, serviceType);
             }
         }
     }

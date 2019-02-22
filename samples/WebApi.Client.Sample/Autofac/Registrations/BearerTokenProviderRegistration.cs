@@ -20,13 +20,15 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
+            var serviceType = typeof(IBearerTokenProvider<>);
+
             /* 
              * The decorators to apply, from inner to outer
              * the first decorator acts directly on BearerTokenProvider
              * the last decorator is the one you get when resolving an instance of IBearerTokenProvider
              * 
              */
-            var decorators = new Type[]
+            var decoratorTypes = new Type[]
             {
                 typeof(ExpiresBearerTokenProviderDecorator<>),
                 typeof(LogToConsoleBearerTokenProviderDecorator<>),
@@ -35,12 +37,12 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
             };
 
             builder.RegisterAssemblyTypes(AppDomain.CurrentDomain.GetAssemblies())
-                .AsClosedTypesOf(typeof(IBearerTokenProvider<>))
+                .AsClosedTypesOf(serviceType)
                 .InstancePerLifetimeScope();
 
-            foreach (var decorator in decorators)
+            foreach (var decoratorType in decoratorTypes)
             {
-                builder.RegisterGenericDecorator(decorator, typeof(IBearerTokenProvider<>));
+                builder.RegisterGenericDecorator(decoratorType, serviceType);
             }
         }
     }
