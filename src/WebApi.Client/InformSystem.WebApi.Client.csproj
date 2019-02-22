@@ -73,6 +73,7 @@
     <Compile Include="BearerTokenProviders\IBearerTokenProvider.T1.cs" />
     <Compile Include="Caches\CacheBase.T2.cs" />
     <Compile Include="Caches\CacheExtensions.cs" />
+    <Compile Include="Caches\Decorators\DisposableCacheDecorator.T2.cs" />
     <Compile Include="Caches\DictionaryCache.T2.cs" />
     <Compile Include="Caches\ICache.T2.cs" />
     <Compile Include="Clients\ApiClientExtensions.cs" />
