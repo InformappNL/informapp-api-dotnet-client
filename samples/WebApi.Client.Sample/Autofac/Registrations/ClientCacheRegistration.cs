@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using Informapp.InformSystem.WebApi.Client.Caches;
+using Informapp.InformSystem.WebApi.Client.Caches.Decorators;
 using Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using RestSharp;
@@ -37,6 +38,8 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
                 var dictionary = new ConcurrentDictionary<Uri, IRestClient>(concurrencyLevel, capacity);
 
                 ICache<Uri, IRestClient> cache = new DictionaryCache<Uri, IRestClient>(dictionary);
+
+                cache = new DisposableCacheDecorator<Uri, IRestClient>(cache);
 
                 return cache;
             }
