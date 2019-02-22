@@ -162,7 +162,7 @@
   <ItemGroup>
     <ProjectReference Include="..\WebApi.Models\InformSystem.WebApi.Models.csproj">
       <Project>{7cf0120c-2f63-408c-b761-0f4946f0e0d7}</Project>
-      <Name>BaseSystem.WebApi.Models</Name>
+      <Name>InformSystem.WebApi.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

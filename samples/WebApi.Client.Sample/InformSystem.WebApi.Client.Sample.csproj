@@ -134,15 +134,15 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\WebApi.Client.RestSharp\InformSystem.WebApi.Client.RestSharp.csproj">
       <Project>{c5eb5b12-420f-47fd-9089-2b2ec188f7cf}</Project>
-      <Name>BaseSystem.WebApi.Client.RestSharp</Name>
+      <Name>InformSystem.WebApi.Client.RestSharp</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\src\WebApi.Client\InformSystem.WebApi.Client.csproj">
       <Project>{a6b89d51-0541-4236-9a0c-3af9c5300e52}</Project>
-      <Name>BaseSystem.WebApi.Client</Name>
+      <Name>InformSystem.WebApi.Client</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\src\WebApi.Models\InformSystem.WebApi.Models.csproj">
       <Project>{7CF0120C-2F63-408C-B761-0F4946F0E0D7}</Project>
-      <Name>BaseSystem.WebApi.Models</Name>
+      <Name>InformSystem.WebApi.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
