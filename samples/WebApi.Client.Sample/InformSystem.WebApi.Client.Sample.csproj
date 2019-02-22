@@ -69,9 +69,7 @@
     <Compile Include="Autofac\Registrations\ConverterRegistration.cs" />
     <Compile Include="Autofac\Registrations\CredentialsProviderRegistration.cs" />
     <Compile Include="Autofac\Registrations\DateTimeProviderRegistration.cs" />
-    <Compile Include="Autofac\Registrations\DefaultEqualityComparerRegistration.cs" />
     <Compile Include="Autofac\Registrations\EndPointProviderRegistration.cs" />
-    <Compile Include="Autofac\Registrations\EqualityComparerRegistration.cs" />
     <Compile Include="Autofac\Registrations\ExampleRegistration.cs" />
     <Compile Include="Autofac\Registrations\JsonDeserializerRegistration.cs" />
     <Compile Include="Autofac\Registrations\JsonSerializerRegistration.cs" />

@@ -176,34 +176,12 @@
             </summary>
             <param name="builder">The builder</param>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.DefaultEqualityComparerRegistration">
-            <summary>
-            Register dependencies in Autofac
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.DefaultEqualityComparerRegistration.Register(Autofac.ContainerBuilder)">
-            <summary>
-            Register dependencies in Autofac
-            </summary>
-            <param name="builder">The builder</param>
-        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.EndPointProviderRegistration">
             <summary>
             Register dependencies in Autofac
             </summary>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.EndPointProviderRegistration.Register(Autofac.ContainerBuilder)">
-            <summary>
-            Register dependencies in Autofac
-            </summary>
-            <param name="builder">The builder</param>
-        </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.EqualityComparerRegistration">
-            <summary>
-            Register dependencies in Autofac
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.EqualityComparerRegistration.Register(Autofac.ContainerBuilder)">
             <summary>
             Register dependencies in Autofac
             </summary>
