@@ -511,6 +511,11 @@
             </summary>
             <param name="cache">The cache instance to use</param>
         </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Caches.CacheBase`2.Items">
+            <summary>
+            The cached items
+            </summary>
+        </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Caches.CacheBase`2.Add(`0,`1)">
             <summary>
             Adds an element with the provided key and value to the cache"/>
@@ -574,6 +579,11 @@
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Caches.DictionaryCache`2"/> class.
             </summary>
         </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Caches.DictionaryCache`2.Items">
+            <summary>
+            The cached items
+            </summary>
+        </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Caches.DictionaryCache`2.Add(`0,`1)">
             <summary>
             Adds an element with the provided key and value to the cache"/>
@@ -604,6 +614,11 @@
             </summary>
             <typeparam name="TKey">The type used as key</typeparam>
             <typeparam name="TValue">The type of objects to store</typeparam>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Caches.ICache`2.Items">
+            <summary>
+            The cached items
+            </summary>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Caches.ICache`2.Add(`0,`1)">
             <summary>

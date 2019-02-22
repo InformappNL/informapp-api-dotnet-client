@@ -1,4 +1,5 @@
-﻿
+﻿using System.Collections.Generic;
+
 namespace Informapp.InformSystem.WebApi.Client.Caches
 {
     /// <summary>
@@ -8,6 +9,11 @@ namespace Informapp.InformSystem.WebApi.Client.Caches
     /// <typeparam name="TValue">The type of objects to store</typeparam>
     public interface ICache<TKey, TValue>
     {
+        /// <summary>
+        /// The cached items
+        /// </summary>
+        IEnumerable<KeyValuePair<TKey, TValue>> Items { get; }
+
         /// <summary>
         /// Adds an element with the provided key and value to the <see cref="ICache{TKey, TValue}"/>
         /// </summary>

@@ -1,4 +1,5 @@
 ﻿using Informapp.InformSystem.WebApi.Client.Arguments;
+using System.Collections.Generic;
 
 namespace Informapp.InformSystem.WebApi.Client.Caches
 {
@@ -22,6 +23,11 @@ namespace Informapp.InformSystem.WebApi.Client.Caches
 
             _cache = cache;
         }
+
+        /// <summary>
+        /// The cached items
+        /// </summary>
+        public IEnumerable<KeyValuePair<TKey, TValue>> Items { get { return _cache.Items; } }
 
         /// <summary>
         /// Adds an element with the provided key and value to the cache"/>
