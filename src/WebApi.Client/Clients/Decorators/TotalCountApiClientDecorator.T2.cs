@@ -40,7 +40,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
         /// <param name="request">The request</param>
         /// <param name="cancellationToken">The cancellation token</param>
         /// <returns>The response</returns>
-        public async Task<ApiResponse<TResponse>> Execute(ApiRequest<TRequest> request, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<ApiResponse<TResponse>> Execute(ApiRequest<TRequest> request, CancellationToken cancellationToken)
         {
             Argument.NotNull(request, nameof(request));
 

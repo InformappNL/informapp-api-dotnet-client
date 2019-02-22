@@ -698,6 +698,26 @@
             Extension methods for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/>
             </summary>
         </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.ApiClientExtensions.Execute``2(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{``0,``1},Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{``0})">
+            <summary>
+            Execute request without cancellation token
+            </summary>
+            <typeparam name="TRequest">Request type</typeparam>
+            <typeparam name="TResponse">Response type</typeparam>
+            <param name="client">The api client</param>
+            <param name="request">The request</param>
+            <returns>The response</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.ApiClientExtensions.Execute``2(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{``0,``1},``0)">
+            <summary>
+            Execute request without having to explicitly create an instance of <see cref="T:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest`1"/>
+            </summary>
+            <typeparam name="TRequest">Request type</typeparam>
+            <typeparam name="TResponse">Response type</typeparam>
+            <param name="client">The api client</param>
+            <param name="model">The request model</param>
+            <returns>The response</returns>
+        </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Clients.ApiClientExtensions.Execute``2(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{``0,``1},``0,System.Threading.CancellationToken)">
             <summary>
             Execute request without having to explicitly create an instance of <see cref="T:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest`1"/>

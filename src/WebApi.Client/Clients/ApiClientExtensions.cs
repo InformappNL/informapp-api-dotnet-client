@@ -13,6 +13,48 @@ namespace Informapp.InformSystem.WebApi.Client.Clients
     public static class ApiClientExtensions
     {
         /// <summary>
+        /// Execute request without cancellation token
+        /// </summary>
+        /// <typeparam name="TRequest">Request type</typeparam>
+        /// <typeparam name="TResponse">Response type</typeparam>
+        /// <param name="client">The api client</param>
+        /// <param name="request">The request</param>
+        /// <returns>The response</returns>
+        public static Task<ApiResponse<TResponse>> Execute<TRequest, TResponse>(
+            this IApiClient<TRequest, TResponse> client,
+            ApiRequest<TRequest> request)
+
+            where TRequest : class, IRequest<TResponse>
+            where TResponse : class
+        {
+            Argument.NotNull(client, nameof(client));
+            Argument.NotNull(request, nameof(request));
+
+            return client.Execute(request, default(CancellationToken));
+        }
+
+        /// <summary>
+        /// Execute request without having to explicitly create an instance of <see cref="ApiRequest{T}"/>
+        /// </summary>
+        /// <typeparam name="TRequest">Request type</typeparam>
+        /// <typeparam name="TResponse">Response type</typeparam>
+        /// <param name="client">The api client</param>
+        /// <param name="model">The request model</param>
+        /// <returns>The response</returns>
+        public static Task<ApiResponse<TResponse>> Execute<TRequest, TResponse>(
+            this IApiClient<TRequest, TResponse> client, 
+            TRequest model)
+
+            where TRequest : class, IRequest<TResponse>
+            where TResponse : class
+        {
+            Argument.NotNull(client, nameof(client));
+            Argument.NotNull(model, nameof(model));
+
+            return Execute(client, model, default(CancellationToken));
+        }
+
+        /// <summary>
         /// Execute request without having to explicitly create an instance of <see cref="ApiRequest{T}"/>
         /// </summary>
         /// <typeparam name="TRequest">Request type</typeparam>
@@ -22,9 +64,9 @@ namespace Informapp.InformSystem.WebApi.Client.Clients
         /// <param name="cancellationToken">The cancellation token</param>
         /// <returns>The response</returns>
         public static Task<ApiResponse<TResponse>> Execute<TRequest, TResponse>(
-            this IApiClient<TRequest, TResponse> client, 
+            this IApiClient<TRequest, TResponse> client,
             TRequest model,
-            CancellationToken cancellationToken = default(CancellationToken))
+            CancellationToken cancellationToken)
 
             where TRequest : class, IRequest<TResponse>
             where TResponse : class

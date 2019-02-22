@@ -21,6 +21,6 @@ namespace Informapp.InformSystem.WebApi.Client.Clients
         /// <param name="request">The request</param>
         /// <param name="cancellationToken">The cancellation token</param>
         /// <returns>The response</returns>
-        Task<ApiResponse<TResponse>> Execute(ApiRequest<TRequest> request, CancellationToken cancellationToken = default(CancellationToken));
+        Task<ApiResponse<TResponse>> Execute(ApiRequest<TRequest> request, CancellationToken cancellationToken);
     }
 }
