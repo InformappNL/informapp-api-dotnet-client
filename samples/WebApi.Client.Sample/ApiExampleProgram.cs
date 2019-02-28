@@ -2,7 +2,6 @@
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups;
-using Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.BusinessGroupCredits;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.BusinessGroups;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients;
@@ -47,11 +46,6 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
             await Run<EditAppGroupV1Example>(false);
             await Run<GetAppGroupV1Example>(true);
             await Run<ListAppGroupV1Example>(true);
-
-            await Run<CreateAppUserV1Example>(false);
-            await Run<DeleteAppUserV1Example>(false);
-            await Run<GetAppUserV1Example>(false);
-            await Run<ListAppUserV1Example>(false);
 
             await Run<AddAppGroupMemberV1Example>(false);
             await Run<ListAppGroupMemberV1Example>(true);
