@@ -45,6 +45,14 @@ namespace Informapp.InformSystem.WebApi.Client.BearerTokenProviders
                 Password = request.Credentials.GetPassword(),
             });
 
+            if (request.Context != null)
+            {
+                tokenRequest.Context = new RequestContext
+                {
+                    EndPoint = request.Context.EndPoint
+                };
+            }
+
             var apiResponse = await _client.Value.Execute(tokenRequest, cancellationToken);
 
             var response = new BearerTokenResponse
