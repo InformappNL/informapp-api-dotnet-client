@@ -45,7 +45,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorat
 
             var client = _clientFactory.Create(request);
 
-            client.AddHandler(ContentTypeConstants.Application.Json, _jsonDeserializer);
+            client.AddHandler(ContentTypeConstants.Application.Json, () => _jsonDeserializer);
 
             return client;
         }

@@ -62,7 +62,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
 
             var client = new RestClient(endPoint);
 
-            client.AddHandler(ContentTypeConstants.Application.Json, new NewtonSoftJsonDeserializer());
+            client.AddHandler(ContentTypeConstants.Application.Json, () => new NewtonSoftJsonDeserializer());
 
             string accessToken = await GetToken(client);
 
