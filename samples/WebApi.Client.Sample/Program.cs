@@ -1,11 +1,28 @@
 ﻿using Informapp.InformSystem.WebApi.Client.Sample.Autofac;
 using System;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample
 {
     internal static class Program
     {
+        private const int BufferSize = 1024;
+
+        static Program()
+        {
+            SetBufferSize(BufferSize);
+        }
+
+        private static void SetBufferSize(int bufferSize)
+        {
+            var stream = Console.OpenStandardInput(bufferSize);
+
+            var reader = new StreamReader(stream, Console.InputEncoding, false, bufferSize);
+
+            Console.SetIn(reader);
+        }
+
         private static void Main(string[] args)
         {
             MainAsync(args)
