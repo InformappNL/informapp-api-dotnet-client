@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("InformSystem.WebApi.Client.Sample")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Sample project how to use the API client")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Informapp B.V.")]
 [assembly: AssemblyProduct("InformSystem.WebApi.Client.Sample")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyCopyright("Copyright ©  2018 Informapp B.V.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
