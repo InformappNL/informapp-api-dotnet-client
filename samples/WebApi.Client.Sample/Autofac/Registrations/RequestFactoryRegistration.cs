@@ -31,7 +31,6 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
             {
                 typeof(BearerTokenRequestFactoryDecorator),
                 typeof(MethodOverrideRequestFactoryDecorator),
-                typeof(JsonSerializerRequestFactoryDecorator),
             };
 
             builder.RegisterType<RequestFactory>()

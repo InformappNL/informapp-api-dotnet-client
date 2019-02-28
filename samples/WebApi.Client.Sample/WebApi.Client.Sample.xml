@@ -198,28 +198,6 @@
             </summary>
             <param name="builder">The builder</param>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.JsonDeserializerRegistration">
-            <summary>
-            Register dependencies in Autofac
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.JsonDeserializerRegistration.Register(Autofac.ContainerBuilder)">
-            <summary>
-            Register dependencies in Autofac
-            </summary>
-            <param name="builder">The builder</param>
-        </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.JsonSerializerRegistration">
-            <summary>
-            Register dependencies in Autofac
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.JsonSerializerRegistration.Register(Autofac.ContainerBuilder)">
-            <summary>
-            Register dependencies in Autofac
-            </summary>
-            <param name="builder">The builder</param>
-        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.MethodProviderRegistration">
             <summary>
             Register dependencies in Autofac
@@ -281,6 +259,17 @@
             </summary>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.RequestFactoryRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.SerializerRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.SerializerRegistration.Register(Autofac.ContainerBuilder)">
             <summary>
             Register dependencies in Autofac
             </summary>

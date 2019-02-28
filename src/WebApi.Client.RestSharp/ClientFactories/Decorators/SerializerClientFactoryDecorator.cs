@@ -1,37 +1,36 @@
 ﻿using Informapp.InformSystem.WebApi.Client.Decorators;
 using Informapp.InformSystem.WebApi.Client.Requests;
 using Informapp.InformSystem.WebApi.Client.RestSharp.Arguments;
-using Informapp.InformSystem.WebApi.Client.RestSharp.Deserializers;
-using Informapp.InformSystem.WebApi.Models.Http;
 using RestSharp;
+using RestSharp.Serialization;
 
 namespace Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators
 {
     /// <summary>
-    /// Decorator class for <see cref="IClientFactory"/> to set JSON deserializer
+    /// Decorator class for <see cref="IClientFactory"/> to set serializer
     /// </summary>
-    public class JsonDeserializerClientFactoryDecorator : Decorator<IClientFactory>,
+    public class SerializerClientFactoryDecorator : Decorator<IClientFactory>,
         IClientFactory
     {
         private readonly IClientFactory _clientFactory;
 
-        private readonly IJsonDeserializer _jsonDeserializer;
+        private readonly IRestSerializer _serializer;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="JsonDeserializerClientFactoryDecorator"/> class.
+        /// Initializes a new instance of the <see cref="SerializerClientFactoryDecorator"/> class.
         /// </summary>
         /// <param name="clientFactory">The instance to decorate</param>
-        /// <param name="jsonDeserializer"></param>
-        public JsonDeserializerClientFactoryDecorator(
+        /// <param name="serializer">The serializer</param>
+        public SerializerClientFactoryDecorator(
             IClientFactory clientFactory,
-            IJsonDeserializer jsonDeserializer) : base(clientFactory)
+            IRestSerializer serializer) : base(clientFactory)
         {
             Argument.NotNull(clientFactory, nameof(clientFactory));
-            Argument.NotNull(jsonDeserializer, nameof(jsonDeserializer));
+            Argument.NotNull(serializer, nameof(serializer));
 
             _clientFactory = clientFactory;
 
-            _jsonDeserializer = jsonDeserializer;
+            _serializer = serializer;
         }
 
         /// <summary>
@@ -45,7 +44,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorat
 
             var client = _clientFactory.Create(request);
 
-            client.AddHandler(ContentTypeConstants.Application.Json, () => _jsonDeserializer);
+            client.UseSerializer(_serializer);
 
             return client;
         }

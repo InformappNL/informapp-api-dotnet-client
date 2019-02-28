@@ -18,7 +18,6 @@ using Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories;
 using Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators;
 using Informapp.InformSystem.WebApi.Client.RestSharp.Clients;
 using Informapp.InformSystem.WebApi.Client.RestSharp.Converters;
-using Informapp.InformSystem.WebApi.Client.RestSharp.Deserializers;
 using Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories;
 using Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators;
 using Informapp.InformSystem.WebApi.Client.RestSharp.Serializers;
@@ -171,7 +170,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
         {
             IClientFactory clientFactory = new ClientFactory();
 
-            clientFactory = new JsonDeserializerClientFactoryDecorator(clientFactory, GetJsonDeserializer());
+            clientFactory = new SerializerClientFactoryDecorator(clientFactory, new JsonNetSerializer());
 
             clientFactory = new RequireHttpsClientFactoryDecorator(clientFactory);
 
@@ -198,16 +197,6 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
         private static IConverter<HttpMethod?, Method?> GetHttpVerbConverter()
         {
             return new HttpMethodConverter();
-        }
-
-        private static IJsonDeserializer GetJsonDeserializer()
-        {
-            return new NewtonSoftJsonDeserializer();
-        }
-
-        private static IJsonSerializer GetJsonSerializer()
-        {
-            return new NewtonSoftJsonSerializer();
         }
 
         private static IMethodProvider<T> GetMethodProvider<T>()
@@ -248,8 +237,6 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
             requestFactory = new BearerTokenRequestFactoryDecorator(requestFactory);
 
             requestFactory = new MethodOverrideRequestFactoryDecorator(requestFactory);
-
-            requestFactory = new JsonSerializerRequestFactoryDecorator(requestFactory, GetJsonSerializer());
 
             return requestFactory;
         }

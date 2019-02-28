@@ -29,7 +29,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
              */
             var decoratorTypes = new Type[]
             {
-                typeof(JsonDeserializerClientFactoryDecorator),
+                typeof(SerializerClientFactoryDecorator),
                 typeof(RequireHttpsClientFactoryDecorator),
                 typeof(CacheClientFactoryDecorator)
             };

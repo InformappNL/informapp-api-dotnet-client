@@ -71,14 +71,13 @@
     <Compile Include="Autofac\Registrations\DateTimeProviderRegistration.cs" />
     <Compile Include="Autofac\Registrations\EndPointProviderRegistration.cs" />
     <Compile Include="Autofac\Registrations\ExampleRegistration.cs" />
-    <Compile Include="Autofac\Registrations\JsonDeserializerRegistration.cs" />
-    <Compile Include="Autofac\Registrations\JsonSerializerRegistration.cs" />
     <Compile Include="Autofac\Registrations\MethodProviderRegistration.cs" />
     <Compile Include="Autofac\Registrations\PathProviderRegistration.cs" />
     <Compile Include="Autofac\Registrations\QueryDictionaryBuilderRegistration.cs" />
     <Compile Include="Autofac\Registrations\QueryProviderRegistration.cs" />
     <Compile Include="Autofac\Registrations\QueryStringBuilderFactoryRegistration.cs" />
     <Compile Include="Autofac\Registrations\RequestFactoryRegistration.cs" />
+    <Compile Include="Autofac\Registrations\SerializerRegistration.cs" />
     <Compile Include="Autofac\Registrations\ValidatorRegistration.cs" />
     <Compile Include="BearerTokenProviders\LogToConsoleBearerTokenProviderDecorator.cs" />
     <Compile Include="Clients\ApiClient.cs" />

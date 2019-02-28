@@ -107,25 +107,6 @@
             <param name="request">The request to create a client for</param>
             <returns>The created instance of <see cref="T:RestSharp.IRestClient"/></returns>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.JsonDeserializerClientFactoryDecorator">
-            <summary>
-            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory"/> to set JSON deserializer
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.JsonDeserializerClientFactoryDecorator.#ctor(Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory,Informapp.InformSystem.WebApi.Client.RestSharp.Deserializers.IJsonDeserializer)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.JsonDeserializerClientFactoryDecorator"/> class.
-            </summary>
-            <param name="clientFactory">The instance to decorate</param>
-            <param name="jsonDeserializer"></param>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.JsonDeserializerClientFactoryDecorator.Create(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest)">
-            <summary>
-            Create instance of <see cref="T:RestSharp.IRestClient"/> and set JSON deserializer
-            </summary>
-            <param name="request">The request to create a client for</param>
-            <returns>The created instance of <see cref="T:RestSharp.IRestClient"/></returns>
-        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.RequireHttpsClientFactoryDecorator">
             <summary>
             Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory"/> to require the use of HTTPS
@@ -140,6 +121,25 @@
         <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.RequireHttpsClientFactoryDecorator.Create(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest)">
             <summary>
             Create instance of <see cref="T:RestSharp.IRestClient"/> after ensuring HTTPS is used
+            </summary>
+            <param name="request">The request to create a client for</param>
+            <returns>The created instance of <see cref="T:RestSharp.IRestClient"/></returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.SerializerClientFactoryDecorator">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory"/> to set serializer
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.SerializerClientFactoryDecorator.#ctor(Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory,RestSharp.Serialization.IRestSerializer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.SerializerClientFactoryDecorator"/> class.
+            </summary>
+            <param name="clientFactory">The instance to decorate</param>
+            <param name="serializer">The serializer</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.SerializerClientFactoryDecorator.Create(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest)">
+            <summary>
+            Create instance of <see cref="T:RestSharp.IRestClient"/> and set JSON deserializer
             </summary>
             <param name="request">The request to create a client for</param>
             <returns>The created instance of <see cref="T:RestSharp.IRestClient"/></returns>
@@ -221,44 +221,6 @@
             <returns>The <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> containing the converted value</returns>
             <exception cref="T:System.ArgumentException">Unsupported value</exception>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.Deserializers.IJsonDeserializer">
-            <summary>
-            Interface for JSON deserializer
-            </summary>
-        </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.Deserializers.NewtonSoftJsonDeserializer">
-            <summary>
-            NewtonSoft JSON Implementation of <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.Deserializers.IJsonDeserializer"/>
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Deserializers.NewtonSoftJsonDeserializer.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.Deserializers.NewtonSoftJsonDeserializer"/> class.
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Client.RestSharp.Deserializers.NewtonSoftJsonDeserializer.RootElement">
-            <summary>
-            Root element
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Client.RestSharp.Deserializers.NewtonSoftJsonDeserializer.Namespace">
-            <summary>
-            Namespace
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Client.RestSharp.Deserializers.NewtonSoftJsonDeserializer.DateFormat">
-            <summary>
-            Date format
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Deserializers.NewtonSoftJsonDeserializer.Deserialize``1(RestSharp.IRestResponse)">
-            <summary>
-            Deserialize response
-            </summary>
-            <typeparam name="T">Deserialize response into this type</typeparam>
-            <param name="response">The response instance to deserialize</param>
-            <returns>The deserialized object</returns>
-        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.BearerTokenRequestFactoryDecorator">
             <summary>
             Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory"/> to set bearer token
@@ -273,25 +235,6 @@
         <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.BearerTokenRequestFactoryDecorator.Create(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest)">
             <summary>
             Create instance of <see cref="T:RestSharp.IRestRequest"/> and set bearer token
-            </summary>
-            <param name="request">The request instance</param>
-            <returns>The constructed <see cref="T:RestSharp.IRestRequest"/> instance</returns>
-        </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.JsonSerializerRequestFactoryDecorator">
-            <summary>
-            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory"/> to set JSON serializer
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.JsonSerializerRequestFactoryDecorator.#ctor(Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory,Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.IJsonSerializer)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.JsonSerializerRequestFactoryDecorator"/> class.
-            </summary>
-            <param name="requestFactory">The instance to decorate</param>
-            <param name="jsonSerializer"></param>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.JsonSerializerRequestFactoryDecorator.Create(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest)">
-            <summary>
-            Create instance of <see cref="T:RestSharp.IRestRequest"/> and set JSON serializer
             </summary>
             <param name="request">The request instance</param>
             <returns>The constructed <see cref="T:RestSharp.IRestRequest"/> instance</returns>
@@ -403,47 +346,52 @@
             The RestSharp <see cref="T:RestSharp.IRestResponse`1"/> instance
             </summary>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.IJsonSerializer">
+        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer">
             <summary>
-            Interface for JSON serializer
+            Newtonsoft.Json implementation of <see cref="T:RestSharp.Serialization.IRestSerializer"/>
             </summary>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.NewtonSoftJsonSerializer">
+        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.#ctor">
             <summary>
-            NewtonSoft JSON Implementation of <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.IJsonSerializer"/>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer"/> class.
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.NewtonSoftJsonSerializer.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.NewtonSoftJsonSerializer"/> class.
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.NewtonSoftJsonSerializer.RootElement">
-            <summary>
-            Root element
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.NewtonSoftJsonSerializer.Namespace">
-            <summary>
-            Namespace
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.NewtonSoftJsonSerializer.DateFormat">
-            <summary>
-            Date format
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.NewtonSoftJsonSerializer.ContentType">
-            <summary>
-            Content type
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.NewtonSoftJsonSerializer.Serialize(System.Object)">
+        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.Serialize(System.Object)">
             <summary>
             Serialize object
             </summary>
             <param name="obj">The object to serialize</param>
-            <returns>The object serialized as JSON string</returns>
+            <returns>The serialized string</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.Serialize(RestSharp.Parameter)">
+            <summary>
+            Serialize parameter
+            </summary>
+            <param name="parameter">The parameter to serialize</param>
+            <returns>The serialized string</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.Deserialize``1(RestSharp.IRestResponse)">
+            <summary>
+            Deserialize response
+            </summary>
+            <typeparam name="T">The type of model</typeparam>
+            <param name="response">The response</param>
+            <returns>The deserialized model</returns>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.SupportedContentTypes">
+            <summary>
+            Supported content types
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.ContentType">
+            <summary>
+            Content type
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.DataFormat">
+            <summary>
+            Data format
+            </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.WebApiClientRestSharpProject">
             <summary>

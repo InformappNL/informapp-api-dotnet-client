@@ -4,7 +4,6 @@ using Informapp.InformSystem.WebApi.Client.EndPointProviders;
 using Informapp.InformSystem.WebApi.Client.PathProviders;
 using Informapp.InformSystem.WebApi.Client.QueryStringProviders;
 using Informapp.InformSystem.WebApi.Client.QueryStrings;
-using Informapp.InformSystem.WebApi.Client.RestSharp.Deserializers;
 using Informapp.InformSystem.WebApi.Client.RestSharp.Serializers;
 using Informapp.InformSystem.WebApi.Models.Http;
 using Informapp.InformSystem.WebApi.Models.Requests;
@@ -62,7 +61,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
 
             var client = new RestClient(endPoint);
 
-            client.AddHandler(ContentTypeConstants.Application.Json, () => new NewtonSoftJsonDeserializer());
+            client.UseSerializer(() => new JsonNetSerializer());
 
             string accessToken = await GetToken(client);
 
@@ -71,7 +70,6 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
             var request = new RestRequest(resource, Method.GET);
 
             request.RequestFormat = DataFormat.Json;
-            request.JsonSerializer = new NewtonSoftJsonSerializer();
 
             var response = await client.ExecuteTaskAsync<TResponse>(request);
 

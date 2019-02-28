@@ -1,13 +1,14 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.RestSharp.Deserializers;
+using Informapp.InformSystem.WebApi.Client.RestSharp.Serializers;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
+using RestSharp.Serialization;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
 {
     /// <summary>
     /// Register dependencies in Autofac
     /// </summary>
-    internal class JsonDeserializerRegistration : IAutofacRegistration
+    internal class SerializerRegistration : IAutofacRegistration
     {
         /// <summary>
         /// Register dependencies in Autofac
@@ -17,8 +18,8 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            builder.RegisterType<NewtonSoftJsonDeserializer>()
-                .As<IJsonDeserializer>()
+            builder.RegisterType<JsonNetSerializer>()
+                .As<IRestSerializer>()
                 .InstancePerLifetimeScope();
         }
     }
