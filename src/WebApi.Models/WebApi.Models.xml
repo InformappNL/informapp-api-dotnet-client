@@ -4989,6 +4989,16 @@
             Four
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Errors.BadGatewayV1Response">
+            <summary>
+            Version 1 bad gateway response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Errors.BadGatewayV1Response.Message">
+            <summary>
+            Message
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Errors.BadRequestV1Response">
             <summary>
             Version 1 bad request response
@@ -5618,6 +5628,16 @@
         <member name="F:Informapp.InformSystem.WebApi.Models.Version2.EndPoints.OAuth2.OAuth2V2Constants.Parameters.ErrorUri">
             <summary>
             ErrorUri
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version2.Errors.BadGatewayV2Response">
+            <summary>
+            Version 2 bad gateway response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Errors.BadGatewayV2Response.Message">
+            <summary>
+            Message
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version2.Errors.BadRequestV2Response">

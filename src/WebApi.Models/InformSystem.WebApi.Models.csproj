@@ -261,6 +261,7 @@
     <Compile Include="Version1\EndPoints\Tests\Values\TestValues\TestValuesV1Response.Example.cs" />
     <Compile Include="Version1\EndPoints\Tests\Values\ValuesKind.cs" />
     <Compile Include="Version1\EndPoints\Tests\Values\ValuesV1Constants.cs" />
+    <Compile Include="Version1\Errors\BadGatewayV1Response.cs" />
     <Compile Include="Version1\Errors\BadRequestV1Response.cs" />
     <Compile Include="Version1\Errors\BadRequestV1Response.Example.cs" />
     <Compile Include="Version1\Errors\ForbiddenV1Response.cs" />
@@ -294,6 +295,7 @@
     <Compile Include="Version2\EndPoints\OAuth2\OAuth2Token\OAuth2TokenV2Response.cs" />
     <Compile Include="Version2\EndPoints\OAuth2\OAuth2Token\OAuth2TokenV2ResponseBadRequest.cs" />
     <Compile Include="Version2\EndPoints\OAuth2\OAuth2V2Constants.cs" />
+    <Compile Include="Version2\Errors\BadGatewayV2Response.cs" />
     <Compile Include="Version2\Errors\BadRequestV2Response.cs" />
     <Compile Include="Version2\Errors\BadRequestV2Response.Example.cs" />
     <Compile Include="Version2\Errors\ForbiddenV2Response.cs" />
