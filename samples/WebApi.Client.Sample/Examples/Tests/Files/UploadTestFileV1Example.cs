@@ -31,26 +31,23 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
         {
             using (var request = GetInMemoryFileRequest())
             //using (var request = GetFileFromFileSystem())
+#pragma warning disable CA1508 // Avoid dead conditional code
+#pragma warning disable CA5351 // Do Not Use Broken Cryptographic Algorithms
+            using (var hashAlgorithm = MD5.Create())
+#pragma warning restore CA5351 // Do Not Use Broken Cryptographic Algorithms
+            using (var stream = new CryptoStream(request.File, hashAlgorithm, CryptoStreamMode.Read))
+#pragma warning restore CA1508 // Avoid dead conditional code
             {
+                request.File = stream;
+
                 var response = await _client
                     .Execute(request, cancellationToken)
                     .ThrowIfFailed()
                     .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
 
-                request.File.Position = 0L;
+                var hash = hashAlgorithm.Hash;
 
-                byte[] md5hash;
-
-#pragma warning disable CA1508 // Avoid dead conditional code
-#pragma warning disable CA5351 // Do Not Use Broken Cryptographic Algorithms
-                using (var algorithm = MD5.Create())
-#pragma warning restore CA5351 // Do Not Use Broken Cryptographic Algorithms
-#pragma warning restore CA1508 // Avoid dead conditional code
-                {
-                    md5hash = algorithm.ComputeHash(request.File);
-                }
-
-                bool hashEquals = Equals(response.Model.MD5Checksum, md5hash);
+                bool hashEquals = Equals(response.Model.MD5Checksum, hash);
 
                 if (hashEquals == false)
                 {
