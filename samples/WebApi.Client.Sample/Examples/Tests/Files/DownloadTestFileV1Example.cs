@@ -11,6 +11,8 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
 {
     internal class DownloadTestFileV1Example : IExample
     {
+        private const int BufferSize = 1024 * 16;
+
         private readonly IApiClient<DownloadTestFileV1Request, DownloadTestFileV1Response> _client;
 
         public DownloadTestFileV1Example(
@@ -48,10 +50,10 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
             using (response.Model)
             using (var stream = response.Model.File)
 #pragma warning disable CA1508 // Avoid dead conditional code
-            using (var fileStream = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None))
+            using (var fileStream = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None, BufferSize, true))
 #pragma warning restore CA1508 // Avoid dead conditional code
             {
-                byte[] buffer = new byte[16 * 1024];
+                byte[] buffer = new byte[BufferSize];
 
                 int read;
 

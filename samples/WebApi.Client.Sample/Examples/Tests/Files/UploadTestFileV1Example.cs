@@ -13,6 +13,8 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
 {
     internal class UploadTestFileV1Example : IExample
     {
+        private const int BufferSize = 1024 * 16;
+
         private const string PathToFile = "C:/Path/To/File.txt"; // Set path + filename here to upload file from file system
 
         private readonly IApiClient<UploadTestFileV1Request, UploadTestFileV1Response> _client;
@@ -62,11 +64,13 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
             }
         }
 
+#pragma warning disable IDE0051 // Remove unused private members
         private static UploadTestFileV1Request GetInMemoryFileRequest()
+#pragma warning restore IDE0051 // Remove unused private members
         {
             var stream = new MemoryStream();
 
-            using (var writer = new StreamWriter(stream, Encoding.UTF8, 1024, true))
+            using (var writer = new StreamWriter(stream, Encoding.UTF8, BufferSize, true))
             {
                 writer.WriteLine("example");
             }
@@ -85,9 +89,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
             return request;
         }
 
-        protected static UploadTestFileV1Request GetFileFromFileSystem()
+#pragma warning disable IDE0051 // Remove unused private members
+        private static UploadTestFileV1Request GetFileFromFileSystem()
+#pragma warning restore IDE0051 // Remove unused private members
         {
-            var stream = File.OpenRead(PathToFile);
+            var stream = new FileStream(PathToFile, FileMode.Open, FileAccess.Read, FileShare.Read, BufferSize, true);
 
             string fileName = Path.GetFileName(PathToFile);
 
