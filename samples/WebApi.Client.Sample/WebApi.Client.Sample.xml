@@ -16,7 +16,6 @@
             <typeparam name="T">Type of object to check</typeparam>
             <param name="instance">The instance to check</param>
             <param name="parameterName">The name of the parameter</param>
-            <returns>The instance</returns>
             <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Arguments.Argument.NotNull``1(``0,System.String)">
@@ -26,7 +25,6 @@
             <typeparam name="T">Type of object to check</typeparam>
             <param name="instance">The instance to check</param>
             <param name="parameterName">The name of the parameter</param>
-            <returns>The instance</returns>
             <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Arguments.Argument.NotNull``1(System.Nullable{``0},System.String)">
@@ -36,7 +34,6 @@
             <typeparam name="T">Type of object to check</typeparam>
             <param name="instance">The instance to check</param>
             <param name="parameterName">The name of the parameter</param>
-            <returns>The instance</returns>
             <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Arguments.Argument.NotNullOrEmpty(System.String,System.String)">
@@ -45,7 +42,6 @@
             </summary>
             <param name="instance">The instance to check</param>
             <param name="parameterName">The name of the parameter</param>
-            <returns>The instance</returns>
             <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
             <exception cref="T:System.ArgumentException"><paramref name="instance"/> is empty</exception>
         </member>
@@ -56,7 +52,6 @@
             <typeparam name="T">Type of objects in the collection</typeparam>
             <param name="instance">The instance to check</param>
             <param name="parameterName">The name of the parameter</param>
-            <returns>The instance</returns>
             <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
             <exception cref="T:System.ArgumentException"><paramref name="instance"/> is empty</exception>
         </member>
