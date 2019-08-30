@@ -138,6 +138,8 @@ The Id values may only contain: a-z, A-Z, 0-9, and the character -";
         public void Dispose()
         {
             _request.Dispose();
+
+            GC.SuppressFinalize(this);
         }
     }
 }
