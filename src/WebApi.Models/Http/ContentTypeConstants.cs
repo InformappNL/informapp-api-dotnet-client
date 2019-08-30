@@ -27,9 +27,25 @@ namespace Informapp.InformSystem.WebApi.Models.Http
             public const string Json = "application/json";
 
             /// <summary>
+            /// application/octet-stream
+            /// </summary>
+            public const string OctetStream = "application/octet-stream";
+
+            /// <summary>
             /// application/xml
             /// </summary>
             public const string Xml = "application/xml";
+        }
+
+        /// <summary>
+        /// Multipart content
+        /// </summary>
+        public static class MultiPart
+        {
+            /// <summary>
+            /// multipart/form-data
+            /// </summary>
+            public const string FormData = "multipart/form-data";
         }
     }
 }

@@ -788,9 +788,24 @@
             application/json
             </summary>
         </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.ContentTypeConstants.Application.OctetStream">
+            <summary>
+            application/octet-stream
+            </summary>
+        </member>
         <member name="F:Informapp.InformSystem.WebApi.Models.Http.ContentTypeConstants.Application.Xml">
             <summary>
             application/xml
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Http.ContentTypeConstants.MultiPart">
+            <summary>
+            Multipart content
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.ContentTypeConstants.MultiPart.FormData">
+            <summary>
+            multipart/form-data
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Http.HttpMethod">
