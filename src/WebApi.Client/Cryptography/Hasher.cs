@@ -60,7 +60,8 @@ namespace Informapp.InformSystem.WebApi.Client.Cryptography
                 int read;
 
                 while ((read = await cryptoStream
-                    .ReadAsync(buffer, 0, buffer.Length, cancellationToken)) > 0)
+                    .ReadAsync(buffer, 0, buffer.Length, cancellationToken)
+                    .ConfigureAwait(Await.Default)) > 0)
                 {
 
                 }

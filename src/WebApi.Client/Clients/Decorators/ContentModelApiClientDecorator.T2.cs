@@ -53,7 +53,9 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
         {
             Argument.NotNull(request, nameof(request));
 
-            var response = await _apiClient.Execute(request, cancellationToken);
+            var response = await _apiClient
+                .Execute(request, cancellationToken)
+                .ConfigureAwait(Await.Default);
 
             SetContentModel(response);
 

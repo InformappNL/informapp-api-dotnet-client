@@ -82,7 +82,9 @@ namespace Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators
 
             if (tokenResponse == null)
             {
-                tokenResponse = await _bearerTokenProvider.GetToken(request, cancellationToken);
+                tokenResponse = await _bearerTokenProvider
+                    .GetToken(request, cancellationToken)
+                    .ConfigureAwait(Await.Default);
 
                 if (tokenResponse.Response.IsSuccessful == true)
                 {

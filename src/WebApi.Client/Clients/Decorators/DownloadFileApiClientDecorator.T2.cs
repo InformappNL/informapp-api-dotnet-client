@@ -65,7 +65,9 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
                 request.IsFileDownload = isFileDownload;
             }
 
-            var response = await _apiClient.Execute(request, cancellationToken);
+            var response = await _apiClient
+                .Execute(request, cancellationToken)
+                .ConfigureAwait(Await.Default);
 
             Require.NotNull(response, nameof(response));
 

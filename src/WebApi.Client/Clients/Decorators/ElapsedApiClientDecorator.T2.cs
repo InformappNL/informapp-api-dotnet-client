@@ -44,7 +44,9 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
 
             var stopWatch = Stopwatch.StartNew();
 
-            var response = await _apiClient.Execute(request, cancellationToken);
+            var response = await _apiClient
+                .Execute(request, cancellationToken)
+                .ConfigureAwait(Await.Default);
 
             stopWatch.Stop();
 

@@ -60,7 +60,9 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
 
                 if (request.BearerToken.HasToken != true)
                 {
-                    var tokenResponse = await _bearerTokenProvider.GetToken(request, cancellationToken);
+                    var tokenResponse = await _bearerTokenProvider
+                        .GetToken(request, cancellationToken)
+                        .ConfigureAwait(Await.Default);
 
                     if (tokenResponse.Response.IsSuccessful == true)
                     {
@@ -69,7 +71,9 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
                 }
             }
 
-            var response = await _apiClient.Execute(request, cancellationToken);
+            var response = await _apiClient
+                .Execute(request, cancellationToken)
+                .ConfigureAwait(Await.Default);
 
             return response;
         }

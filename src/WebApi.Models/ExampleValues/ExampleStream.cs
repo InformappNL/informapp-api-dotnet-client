@@ -26,11 +26,15 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
 
         public override async Task CopyToAsync(Stream destination, int bufferSize, CancellationToken cancellationToken)
         {
-            await _semaphoreSlim.WaitAsync();
+            await _semaphoreSlim
+                .WaitAsync()
+                .ConfigureAwait(Await.Default);
 
             try
             {
-                await _stream.CopyToAsync(destination, bufferSize, cancellationToken);
+                await _stream
+                    .CopyToAsync(destination, bufferSize, cancellationToken)
+                    .ConfigureAwait(Await.Default);
 
                 // Restore position so using the stream for the next example works
                 _stream.Position = 0L;

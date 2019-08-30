@@ -42,7 +42,8 @@ namespace Informapp.InformSystem.WebApi.Client.Responses
                 throw new ArgumentNullException(nameof(response));
             }
 
-            var result = await response;
+            var result = await response
+                .ConfigureAwait(Await.Default);
 
             return ThrowIfFailed(result);
         }

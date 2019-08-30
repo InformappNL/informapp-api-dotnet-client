@@ -53,7 +53,9 @@ namespace Informapp.InformSystem.WebApi.Client.BearerTokenProviders
                 };
             }
 
-            var apiResponse = await _client.Value.Execute(tokenRequest, cancellationToken);
+            var apiResponse = await _client.Value
+                .Execute(tokenRequest, cancellationToken)
+                .ConfigureAwait(Await.Default);
 
             var response = new BearerTokenResponse
             {

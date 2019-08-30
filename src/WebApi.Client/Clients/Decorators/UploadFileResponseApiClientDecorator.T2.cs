@@ -75,7 +75,9 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
         {
             Argument.NotNull(request, nameof(request));
 
-            var response = await _apiClient.Execute(request, cancellationToken);
+            var response = await _apiClient
+                .Execute(request, cancellationToken)
+                .ConfigureAwait(Await.Default);
 
             Require.NotNull(response, nameof(response));
 
@@ -124,7 +126,9 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
                                 .ThrowIfNoValue()
                                 .Value)
                         {
-                            var hash = await _hasher.ComputeHashAsync(algorithm, file, cancellationToken);
+                            var hash = await _hasher
+                                .ComputeHashAsync(algorithm, file, cancellationToken)
+                                .ConfigureAwait(Await.Default);
 
                             request.UploadFile.Algorithm = response.UploadFile.Algorithm;
                             request.UploadFile.Hash = hash;

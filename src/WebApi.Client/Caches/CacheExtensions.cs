@@ -51,7 +51,9 @@ namespace Informapp.InformSystem.WebApi.Client.Caches
 
             if (cache.TryGetValue(key, out var value) == false)
             {
-                value = await creator.Invoke();
+                value = await creator
+                    .Invoke()
+                    .ConfigureAwait(Await.Default);
 
                 cache.Add(key, value);
             }
