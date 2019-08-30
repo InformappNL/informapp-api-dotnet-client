@@ -5,6 +5,7 @@ using Informapp.InformSystem.WebApi.Client.PathProviders;
 using Informapp.InformSystem.WebApi.Client.QueryStringProviders;
 using Informapp.InformSystem.WebApi.Client.QueryStrings;
 using Informapp.InformSystem.WebApi.Client.RestSharp.Serializers;
+using Informapp.InformSystem.WebApi.Client.Sample.Requires;
 using Informapp.InformSystem.WebApi.Models.Http;
 using Informapp.InformSystem.WebApi.Models.Requests;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2;
@@ -29,10 +30,18 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
         public async Task Run(CancellationToken cancellationToken)
         {
             var getValuesRequest = new GetValuesV1Request();
-            var getValuesResponse = await Run<GetValuesV1Request, GetValuesV1Response>(getValuesRequest, cancellationToken);
+            var getValuesResponse = await Run<GetValuesV1Request, GetValuesV1Response>(getValuesRequest, cancellationToken)
+                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+
+            Require.NotNull(getValuesResponse, nameof(getValuesResponse));
+
+
 
             var putValuesRequest = new TestValuesV1Request();
-            var putValuesResponse = await Run<TestValuesV1Request, TestValuesV1Response>(putValuesRequest, cancellationToken);
+            var putValuesResponse = await Run<TestValuesV1Request, TestValuesV1Response>(putValuesRequest, cancellationToken)
+                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+
+            Require.NotNull(putValuesResponse, nameof(putValuesResponse));
         }
 
         public async Task<IRestResponse<TResponse>> Run<TRequest, TResponse>(TRequest model, CancellationToken cancellationToken)
@@ -60,19 +69,22 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
                 resource = new Uri(path.ToString() + '?' + query, UriKind.Relative);
             }
 
-            var client = new RestClient(endPoint);
+            var client = new RestClient(endPoint)
+                .UseSerializer(() => new JsonNetSerializer());
 
-            client.UseSerializer(() => new JsonNetSerializer());
-
-            string accessToken = await GetToken(client, cancellationToken);
+            string accessToken = await GetToken(client, cancellationToken)
+                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
 
             client.Authenticator = new JwtAuthenticator(accessToken);
 
-            var request = new RestRequest(resource, Method.GET);
+            var request = new RestRequest(resource, Method.GET)
+            {
+                RequestFormat = DataFormat.Json
+            };
 
-            request.RequestFormat = DataFormat.Json;
-
-            var response = await client.ExecuteTaskAsync<TResponse>(request, cancellationToken);
+            var response = await client
+                .ExecuteTaskAsync<TResponse>(request, cancellationToken)
+                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
 
             return response;
         }
@@ -109,19 +121,21 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
 
             var factory = new QueryStringBuilderFactory();
 
-            request.AddHeader("cache-control", "no-cache");
+            _ = request.AddHeader("cache-control", "no-cache");
 
             string encoded = factory.Create()
                 .Add(model)
                 .ToString();
 
-            request.AddParameter(
+            _ = request.AddParameter(
                 ContentTypeConstants.Application.FormUrlEncoded,
                 encoded,
                 ContentTypeConstants.Application.FormUrlEncoded,
                 ParameterType.RequestBody);
 
-            var response = await client.ExecuteTaskAsync<OAuth2TokenV1Response>(request, cancellationToken);
+            var response = await client
+                .ExecuteTaskAsync<OAuth2TokenV1Response>(request, cancellationToken)
+                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
 
             if (response.IsSuccessful == true)
             {

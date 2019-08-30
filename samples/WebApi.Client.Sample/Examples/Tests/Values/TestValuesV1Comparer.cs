@@ -9,6 +9,8 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
     {
         public bool Equals(TestValuesV1Request request, TestValuesV1Response response)
         {
+            bool equals = true;
+
             if ((request.Boolean == response.Boolean &&
                 request.Byte == response.Byte &&
                 request.Char == response.Char &&
@@ -30,16 +32,16 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
                 request.Uri == response.Uri &&
                 request.Uuid == response.Uuid) == false)
             {
-                return false;
+                equals = false;
             }
 
-            if ((Equals(request.Array, response.Array) &&
+            else if ((Equals(request.Array, response.Array) &&
                 Equals(request.Dictionary, response.Dictionary)) == false)
             {
-                return false;
+                equals = false;
             }
 
-            return true;
+            return equals;
         }
 
         private bool Equals<T>(IEnumerable<T> x, IEnumerable<T> y)
@@ -52,16 +54,6 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
 
             if (x == null || y == null)
             {
-                if (x == null && y.Any() == false)
-                {
-                    return true;
-                }
-
-                if (y == null && x.Any() == false)
-                {
-                    return true;
-                }
-
                 return false;
             }
 
@@ -94,16 +86,6 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
 
             if (x == null || y == null)
             {
-                if (x == null && y.Count == 0)
-                {
-                    return true;
-                }
-
-                if (y == null && x.Count == 0)
-                {
-                    return true;
-                }
-
                 return false;
             }
 

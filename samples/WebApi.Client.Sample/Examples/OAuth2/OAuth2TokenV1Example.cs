@@ -2,6 +2,7 @@
 using Informapp.InformSystem.WebApi.Client.CredentialsProviders;
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
+using Informapp.InformSystem.WebApi.Client.Sample.Requires;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.OAuth2Token;
 using System.Threading;
@@ -39,8 +40,12 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2
                 Password = password,
             };
 
-            var response = await _client.Execute(request, cancellationToken)
-                .ThrowIfFailed();
+            var response = await _client
+                .Execute(request, cancellationToken)
+                .ThrowIfFailed()
+                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+
+            Require.NotNull(response, nameof(response));
         }
     }
 }

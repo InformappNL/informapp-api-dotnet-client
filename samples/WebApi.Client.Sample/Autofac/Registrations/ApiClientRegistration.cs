@@ -62,7 +62,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
                 //typeof(ArgumentNullApiClientDecorator<,>),
             };
 
-            builder.RegisterGeneric(typeof(RestSharpApiClient<,>))
+            _ = builder.RegisterGeneric(typeof(RestSharpApiClient<,>))
                 .As(typeof(IApiClient<,>))
                 .InstancePerLifetimeScope();
 

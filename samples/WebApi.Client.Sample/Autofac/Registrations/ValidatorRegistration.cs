@@ -17,7 +17,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            builder.RegisterGeneric(typeof(Validator<>))
+            _ = builder.RegisterGeneric(typeof(Validator<>))
                 .As(typeof(IValidator<>))
                 .InstancePerLifetimeScope();
         }

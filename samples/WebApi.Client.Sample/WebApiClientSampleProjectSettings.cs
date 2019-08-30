@@ -1,5 +1,5 @@
 ﻿
-namespace ConnectedDevelopment.BaseSystem.WebApi.Client.Sample
+namespace Informapp.InformSystem.WebApi.Client.Sample
 {
     internal static class WebApiClientSampleProjectSettings
     {

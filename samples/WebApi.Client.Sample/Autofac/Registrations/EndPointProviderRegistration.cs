@@ -17,7 +17,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            builder.RegisterType<ConfigurationEndPointProvider>()
+            _ = builder.RegisterType<ConfigurationEndPointProvider>()
                 .As<IEndPointProvider>()
                 .InstancePerLifetimeScope();
         }

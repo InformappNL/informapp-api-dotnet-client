@@ -34,7 +34,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
                 typeof(MethodOverrideRequestFactoryDecorator),
             };
 
-            builder.RegisterType<RequestFactory>()
+            _ = builder.RegisterType<RequestFactory>()
                 .As<IRequestFactory>()
                 .InstancePerLifetimeScope();
 

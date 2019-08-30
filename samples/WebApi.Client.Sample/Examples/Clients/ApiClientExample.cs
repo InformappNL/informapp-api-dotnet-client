@@ -1,6 +1,7 @@
 ﻿using Informapp.InformSystem.WebApi.Client.Requests;
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Client.Sample.Clients;
+using Informapp.InformSystem.WebApi.Client.Sample.Requires;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues;
 using System.Threading;
 using System.Threading.Tasks;
@@ -23,8 +24,12 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
 
             var request = ApiRequest.Create(new GetValuesV1Request());
 
-            var response = await client.Execute(request, cancellationToken)
-                .ThrowIfFailed();
+            var response = await client
+                .Execute(request, cancellationToken)
+                .ThrowIfFailed()
+                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+
+            Require.NotNull(response, nameof(response));
         }
     }
 }

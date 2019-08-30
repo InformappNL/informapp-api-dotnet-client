@@ -2,6 +2,7 @@
 using Informapp.InformSystem.WebApi.Client.Requests;
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
+using Informapp.InformSystem.WebApi.Client.Sample.Requires;
 using Informapp.InformSystem.WebApi.Models.Http;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.GetAppGroup;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.ListAppGroup;
@@ -33,14 +34,17 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
         public async Task Run(CancellationToken cancellationToken)
         {
             // Obtain an app group id using a list request
-            var appGroupId = await GetAppGroupId(cancellationToken);
+            var appGroupId = await GetAppGroupId(cancellationToken)
+                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
 
             if (appGroupId.HasValue == true)
             {
                 // Use it to execute a GET and HEAD request
-                await Get(appGroupId, cancellationToken);
+                await Get(appGroupId, cancellationToken)
+                    .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
 
-                await Head(appGroupId, cancellationToken);
+                await Head(appGroupId, cancellationToken)
+                    .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
             }
         }
 
@@ -52,7 +56,10 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
             };
 
             var response = await _getClient.Execute(request, cancellationToken)
-                .ThrowIfFailed();
+                .ThrowIfFailed()
+                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+
+            Require.NotNull(response, nameof(response));
         }
 
         private async Task Head(Guid? appGroupId, CancellationToken cancellationToken)
@@ -68,7 +75,10 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
             };
 
             var response = await _getClient.Execute(request, cancellationToken)
-                .ThrowIfFailed();
+                .ThrowIfFailed()
+                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+
+            Require.NotNull(response, nameof(response));
         }
 
         private async Task<Guid?> GetAppGroupId(CancellationToken cancellationToken)
@@ -81,7 +91,8 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
             };
 
             var response = await _listClient.Execute(request, cancellationToken)
-                .ThrowIfFailed();
+                .ThrowIfFailed()
+                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
 
             if (response.IsSuccessful == true && response.Model.Total > 1)
             {

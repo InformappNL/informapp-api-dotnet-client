@@ -17,7 +17,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            builder.RegisterGeneric(typeof(PathProvider<>))
+            _ = builder.RegisterGeneric(typeof(PathProvider<>))
                 .As(typeof(IPathProvider<>))
                 .InstancePerLifetimeScope();
         }

@@ -1,5 +1,5 @@
 ﻿
-namespace ConnectedDevelopment.BaseSystem.WebApi.Client.RestSharp
+namespace Informapp.InformSystem.WebApi.Client.RestSharp
 {
     internal static class WebApiClientRestSharpProjectSettings
     {

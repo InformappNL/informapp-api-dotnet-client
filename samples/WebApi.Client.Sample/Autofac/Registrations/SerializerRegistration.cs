@@ -18,7 +18,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            builder.RegisterType<JsonNetSerializer>()
+            _ = builder.RegisterType<JsonNetSerializer>()
                 .As<IRestSerializer>()
                 .InstancePerLifetimeScope();
         }

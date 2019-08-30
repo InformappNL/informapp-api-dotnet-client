@@ -34,7 +34,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
                 typeof(CacheClientFactoryDecorator)
             };
 
-            builder.RegisterType<ClientFactory>()
+            _ = builder.RegisterType<ClientFactory>()
                 .As<IClientFactory>()
                 .InstancePerLifetimeScope();
 

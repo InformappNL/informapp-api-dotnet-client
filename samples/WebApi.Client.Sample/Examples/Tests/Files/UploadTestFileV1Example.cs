@@ -24,34 +24,38 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
 
             _client = client;
         }
-        
+
         public async Task Run(CancellationToken cancellationToken)
         {
             using (var request = GetInMemoryFileRequest())
             //using (var request = GetFileFromFileSystem())
             {
-                var response = await _client.Execute(request, cancellationToken)
-                    .ThrowIfFailed();
+                var response = await _client
+                    .Execute(request, cancellationToken)
+                    .ThrowIfFailed()
+                    .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
 
                 request.File.Position = 0L;
 
                 byte[] md5hash;
 
+#pragma warning disable CA5351 // Broken cryptographic algorithm MD5 - not an issue, used to compare local and remote hash of uploaded file
                 using (var algorithm = MD5.Create())
+#pragma warning restore CA5351
                 {
                     md5hash = algorithm.ComputeHash(request.File);
                 }
 
-                bool equals = Equals(response.Model.MD5Checksum, md5hash);
+                bool hashEquals = Equals(response.Model.MD5Checksum, md5hash);
 
-                if (equals == false)
+                if (hashEquals == false)
                 {
-                    throw new Exception("file upload failed.");
+                    throw new InvalidOperationException("file upload failed, hashes differ.");
                 }
 
                 if (response.Model.Size != request.File.Length)
                 {
-                    throw new Exception("file upload failed.");
+                    throw new InvalidOperationException("file upload failed, file sizes differ.");
                 }
             }
         }
@@ -78,7 +82,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
             return request;
         }
 
-        private UploadTestFileV1Request GetFileFromFileSystem()
+        protected static UploadTestFileV1Request GetFileFromFileSystem()
         {
             var stream = File.OpenRead(PathToFile);
 

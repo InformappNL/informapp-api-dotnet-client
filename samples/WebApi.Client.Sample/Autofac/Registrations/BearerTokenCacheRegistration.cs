@@ -19,7 +19,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            builder.Register(x => new BearerTokenCache(GetCache()))
+            _ = builder.Register(x => new BearerTokenCache(GetCache()))
                 .As<IBearerTokenCache>()
                 .SingleInstance();
         }

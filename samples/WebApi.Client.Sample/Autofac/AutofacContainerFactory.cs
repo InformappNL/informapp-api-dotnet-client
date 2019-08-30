@@ -37,7 +37,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac
         {
             var builder = new ContainerBuilder();
 
-            builder.RegisterAssemblyTypes(AppDomain.CurrentDomain.GetAssemblies())
+            _ = builder.RegisterAssemblyTypes(AppDomain.CurrentDomain.GetAssemblies())
                 .AssignableTo(typeof(IAutofacRegistration))
                 .As<IAutofacRegistration>()
                 .InstancePerDependency();

@@ -4,6 +4,7 @@ using Informapp.InformSystem.WebApi.Client.Requests;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using System;
 using System.Diagnostics;
+using System.Globalization;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -41,13 +42,14 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.BearerTokenProviders
         {
             Argument.NotNull(request, nameof(request));
 
-            var context = new
-            {
+            var context = (
                 request.Credentials.Username,
-                request.Context.EndPoint,
-            };
+                request.Context.EndPoint
+            );
 
-            string message = string.Format("{0} {1}",
+            string message = string.Format(
+                CultureInfo.InvariantCulture,
+                "{0} {1}",
                 nameof(GetToken),
                 context);
 
@@ -55,7 +57,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.BearerTokenProviders
 
             Debug.WriteLine(message);
 
-            var tokenResponse = await _bearerTokenProvider.GetToken(request, cancellationToken);
+            var tokenResponse = await _bearerTokenProvider
+                .GetToken(request, cancellationToken)
+                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
 
             return tokenResponse;
         }

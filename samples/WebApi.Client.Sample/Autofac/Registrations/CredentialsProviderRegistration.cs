@@ -17,7 +17,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            builder.RegisterType<ConfigurationCredentialsProvider>()
+            _ = builder.RegisterType<ConfigurationCredentialsProvider>()
                 .As<ICredentialsProvider>()
                 .InstancePerLifetimeScope();
         }

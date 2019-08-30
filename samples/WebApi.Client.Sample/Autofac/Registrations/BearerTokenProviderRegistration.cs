@@ -36,7 +36,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
                 typeof(EnsureSuccessBearerTokenProviderDecorator<>),
             };
 
-            builder.RegisterAssemblyTypes(AppDomain.CurrentDomain.GetAssemblies())
+            _ = builder.RegisterAssemblyTypes(AppDomain.CurrentDomain.GetAssemblies())
                 .AsClosedTypesOf(serviceType)
                 .InstancePerLifetimeScope();
 

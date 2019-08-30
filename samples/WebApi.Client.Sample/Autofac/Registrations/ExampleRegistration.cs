@@ -18,7 +18,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            builder.RegisterAssemblyTypes(AppDomain.CurrentDomain.GetAssemblies())
+            _ = builder.RegisterAssemblyTypes(AppDomain.CurrentDomain.GetAssemblies())
                 .AssignableTo<IExample>()
                 .InstancePerLifetimeScope();
         }

@@ -28,32 +28,40 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
                 Kind = DownloadTestFileV1RequestKind.Pdf,
             };
 
-            var response = await _client.Execute(request, cancellationToken)
-                .ThrowIfFailed();
+            var response = await _client
+                .Execute(request, cancellationToken)
+                .ThrowIfFailed()
+                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
 
             string directory = Path.GetTempPath();
 
             directory = Path.Combine(directory, nameof(DownloadTestFileV1Example));
 
-            Directory.CreateDirectory(directory);
+            _ = Directory.CreateDirectory(directory);
 
             string filename = Path.GetRandomFileName() + '_' + response.Model.FileName;
 
             string path = Path.Combine(directory, filename);
 
-            long bytesWritten = 0;
+            long bytesWritten = 0L;
 
             using (response.Model)
             using (var stream = response.Model.File)
+#pragma warning disable CA1508 // '...' is never 'null'. Remove or refactor the condition(s) to avoid dead code. - make no sense and cannot be complied with.
             using (var fileStream = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None))
+#pragma warning restore CA1508
             {
                 byte[] buffer = new byte[16 * 1024];
 
                 int read;
 
-                while ((read = await stream.ReadAsync(buffer, 0, buffer.Length, cancellationToken)) > 0)
+                while ((read = await stream
+                    .ReadAsync(buffer, 0, buffer.Length, cancellationToken)
+                    .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait)) > 0)
                 {
-                    await fileStream.WriteAsync(buffer, 0, read, cancellationToken);
+                    await fileStream
+                        .WriteAsync(buffer, 0, read, cancellationToken)
+                        .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
 
                     bytesWritten += read;
                 }
@@ -63,7 +71,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
 
             if (response.Headers.ContentLength != bytesWritten)
             {
-                throw new Exception("Number of bytes written not equal to content length");
+                throw new InvalidOperationException("Number of bytes written not equal to content length");
             }
         }
     }

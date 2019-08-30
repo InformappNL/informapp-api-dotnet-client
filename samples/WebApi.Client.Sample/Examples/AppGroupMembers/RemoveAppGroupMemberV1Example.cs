@@ -1,6 +1,7 @@
 ﻿using Informapp.InformSystem.WebApi.Client.Clients;
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
+using Informapp.InformSystem.WebApi.Client.Sample.Requires;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMembers.RemoveAppGroupMember;
 using System.Threading;
 using System.Threading.Tasks;
@@ -42,7 +43,10 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers
             };
 
             var response = await _client.Execute(request, cancellationToken)
-                .ThrowIfFailed();
+                .ThrowIfFailed()
+                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+
+            Require.NotNull(response, nameof(response));
         }
     }
 }

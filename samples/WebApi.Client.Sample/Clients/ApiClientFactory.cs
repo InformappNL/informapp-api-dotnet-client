@@ -31,12 +31,14 @@ using RestSharp;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
 {
     /// <summary>
     /// Factory class to create instances of <see cref="IApiClient{TRequest, TResponse}"/>
     /// </summary>
+    [SuppressMessage("", "CA1506:AvoidExcessiveClassCoupling", Justification = "Just an example of how bad it would be to use this without dependency injection framework. I do not recommend using this.")]
     internal class ApiClientFactory : IApiClientFactory
     {
         /// <summary>
@@ -59,9 +61,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
             where TResponse : class, new()
         {
             IApiClient<TRequest, TResponse> apiClient = new RestSharpApiClient<TRequest, TResponse>(
-                GetClientFactory(), 
-                GetRequestFactory(), 
-                GetQueryStringBuilderFactory(), 
+                GetClientFactory(),
+                GetRequestFactory(),
+                GetQueryStringBuilderFactory(),
                 GetResponseStatusConverter());
 
             apiClient = new DownloadFileApiClientDecorator<TRequest, TResponse>(apiClient, GetDownloadFileMappers<TRequest, TResponse>());
@@ -242,7 +244,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
             where T : class
         {
             return new QueryProvider<T>(
-                GetQueryDictionaryBuilder<T>(), 
+                GetQueryDictionaryBuilder<T>(),
                 GetQueryStringBuilderFactory());
         }
 

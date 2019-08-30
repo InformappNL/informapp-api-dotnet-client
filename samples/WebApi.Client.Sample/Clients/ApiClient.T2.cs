@@ -53,7 +53,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
         /// <param name="cancellationToken">The cancellation token</param>
         /// <returns>The response</returns>
         public Task<ApiResponse<TResponse>> Execute(
-            ApiRequest<TRequest> request, 
+            ApiRequest<TRequest> request,
             CancellationToken cancellationToken)
         {
             return _client.Execute(request, cancellationToken);

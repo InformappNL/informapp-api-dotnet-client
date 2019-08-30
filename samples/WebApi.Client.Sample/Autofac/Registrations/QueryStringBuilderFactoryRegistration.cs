@@ -17,7 +17,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            builder.RegisterType<QueryStringBuilderFactory>()
+            _ = builder.RegisterType<QueryStringBuilderFactory>()
                 .As<IQueryStringBuilderFactory>()
                 .InstancePerLifetimeScope();
         }

@@ -22,7 +22,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            builder.Register(x => new ClientCache(GetCache()))
+            _ = builder.Register(x => new ClientCache(GetCache()))
                 .As<IClientCache>()
                 .SingleInstance();
         }

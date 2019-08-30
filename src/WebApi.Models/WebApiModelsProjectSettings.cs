@@ -1,5 +1,5 @@
 ﻿
-namespace ConnectedDevelopment.BaseSystem.WebApi.Models
+namespace Informapp.InformSystem.WebApi.Models
 {
     internal static class WebApiModelsProjectSettings
     {

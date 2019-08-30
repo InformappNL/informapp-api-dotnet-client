@@ -24,6 +24,25 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
 
         public async Task Run(CancellationToken cancellationToken)
         {
+            var request = CreateRequest();
+
+            var response = await _client
+                .Execute(request, cancellationToken)
+                .ThrowIfFailed()
+                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+
+            var comparer = new TestValuesV1Comparer();
+
+            bool equals = comparer.Equals(request, response.Model);
+
+            if (equals == false)
+            {
+                throw new InvalidOperationException("Request values do not match response values!");
+            }
+        }
+
+        private static TestValuesV1Request CreateRequest()
+        {
             var request = new TestValuesV1Request
             {
                 Boolean = true,
@@ -46,7 +65,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
                 UnsignedInt64 = 64,
                 Uri = new Uri("https://localhost:12345/Home/Index"),
                 Uuid = Guid.NewGuid(),
-                Array = new[] { 1, 2 ,3 },
+                Array = new[] { 1, 2, 3 },
                 Dictionary = new Dictionary<int, int>
                 {
                     { 1, 10 },
@@ -55,17 +74,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
                 },
             };
 
-            var response = await _client.Execute(request, cancellationToken)
-                .ThrowIfFailed();
-
-            var comparer = new TestValuesV1Comparer();
-
-            bool equals = comparer.Equals(request, response.Model);
-
-            if (equals == false)
-            {
-                throw new InvalidOperationException("Request values do not match response values!");
-            }
+            return request;
         }
     }
 }

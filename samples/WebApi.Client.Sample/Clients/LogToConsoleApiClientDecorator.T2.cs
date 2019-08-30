@@ -6,6 +6,7 @@ using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Models.Requests;
 using System;
 using System.Diagnostics;
+using System.Globalization;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -44,7 +45,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
         {
             Argument.NotNull(request, nameof(request));
 
-            string message = string.Format("{0} {1} {2} {3} {4}",
+            string message = string.Format(
+                CultureInfo.InvariantCulture,
+                "{0} {1} {2} {3} {4}",
                 nameof(Execute),
                 request.Context.Method,
                 request.Context.EndPoint,

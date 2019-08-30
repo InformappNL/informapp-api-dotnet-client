@@ -10,35 +10,37 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
     {
         private const int BufferSize = 1024;
 
-        private static CancellationTokenSource _cancellationTokenSource = new CancellationTokenSource();
+        private static readonly StreamReader _reader = GetReader(BufferSize);
 
-        private static bool isCancellationRequested = false;
-
-        static Program()
-        {
-            SetBufferSize(BufferSize);
-        }
-
-        private static void SetBufferSize(int bufferSize)
+        private static StreamReader GetReader(int bufferSize)
         {
             var stream = Console.OpenStandardInput(bufferSize);
 
             var reader = new StreamReader(stream, Console.InputEncoding, false, bufferSize);
 
-            Console.SetIn(reader);
+            return reader;
         }
 
-        private static void Main(string[] args)
+        private static readonly CancellationTokenSource _cancellationTokenSource = new CancellationTokenSource();
+
+        private static bool isCancellationRequested = false;
+
+        static Program()
         {
-            MainAsync(args)
+            Console.SetIn(_reader);
+        }
+
+        private static void Main()
+        {
+            MainAsync()
                 .GetAwaiter()
                 .GetResult();
         }
 
-        private static async Task MainAsync(string[] args)
+        private static async Task MainAsync()
         {
             Console.WriteLine("Press enter to run examples");
-            Console.ReadLine();
+            _ = Console.ReadLine();
 
             Console.CancelKeyPress += ConsoleCancelKeyPress;
 
@@ -49,15 +51,18 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
                 using (var container = AutofacContainerFactory.Create())
                 {
                     var program = new ApiExampleProgram(container);
-                    
-                    await program.Start(cancellationToken);
+
+                    await program.Start(cancellationToken)
+                        .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
                 }
             }
-            catch (TaskCanceledException ex) when (isCancellationRequested == true)
+            catch (TaskCanceledException) when (isCancellationRequested == true)
             {
                 Console.WriteLine("Cancelled.");
             }
+#pragma warning disable CA1031 // General exceptions should not be caught. - Exception is caught, logged, and program terminates.
             catch (Exception ex)
+#pragma warning restore CA1031
             {
                 Console.WriteLine("An exception was thrown:");
                 Console.WriteLine(ex);
@@ -69,7 +74,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
 
             Console.WriteLine();
             Console.WriteLine("Press enter to exit");
-            Console.ReadLine();
+            _ = Console.ReadLine();
         }
 
         private static void ConsoleCancelKeyPress(object sender, ConsoleCancelEventArgs e)
@@ -81,7 +86,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
                 Console.WriteLine("Cancellation requested");
 
                 isCancellationRequested = true;
-                
+
                 _cancellationTokenSource.Cancel();
             }
         }

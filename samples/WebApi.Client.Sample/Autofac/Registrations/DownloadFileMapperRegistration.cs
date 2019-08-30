@@ -17,11 +17,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            builder.RegisterGeneric(typeof(DownloadFileV1Mapper<,>))
+            _ = builder.RegisterGeneric(typeof(DownloadFileV1Mapper<,>))
                 .As(typeof(IDownloadFileMapper<,>))
                 .InstancePerLifetimeScope();
-            
-            builder.RegisterGeneric(typeof(DownloadFileV2Mapper<,>))
+
+            _ = builder.RegisterGeneric(typeof(DownloadFileV2Mapper<,>))
                 .As(typeof(IDownloadFileMapper<,>))
                 .InstancePerLifetimeScope();
         }
