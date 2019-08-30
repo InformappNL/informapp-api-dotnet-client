@@ -19,6 +19,14 @@ namespace Informapp.InformSystem.WebApi.Client.Responses
         /// </summary>
         public string Value { get; set; }
 
+        /// <summary>
+        /// Has value
+        /// </summary>
+        public bool HasValue
+        {
+            get { return string.IsNullOrEmpty(Value) == false; }
+        }
+
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private string DebuggerDisplay
         {
