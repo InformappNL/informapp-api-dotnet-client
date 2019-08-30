@@ -237,6 +237,12 @@
     <Compile Include="Version1\EndPoints\Forms\ListForm\ListFormV1ResponseForm.cs" />
     <Compile Include="Version1\EndPoints\Forms\ListForm\ListFormV1Select.cs" />
     <Compile Include="Version1\EndPoints\Forms\ListForm\ListFormV1Sort.cs" />
+    <Compile Include="Version1\EndPoints\Logs\CreateLog\CreateLogV1Request.cs" />
+    <Compile Include="Version1\EndPoints\Logs\CreateLog\CreateLogV1RequestLog.cs" />
+    <Compile Include="Version1\EndPoints\Logs\CreateLog\CreateLogV1Response.cs" />
+    <Compile Include="Version1\EndPoints\Logs\LogV1Constants.cs" />
+    <Compile Include="Version1\EndPoints\Logs\LogV1Level.cs" />
+    <Compile Include="Version1\EndPoints\Logs\LogV1Source.cs" />
     <Compile Include="Version1\EndPoints\OAuth2\EnvironmentOAuth2Token\EnvironmentOAuth2TokenV1Request.cs" />
     <Compile Include="Version1\EndPoints\OAuth2\EnvironmentOAuth2Token\EnvironmentOAuth2TokenV1Response.cs" />
     <Compile Include="Version1\EndPoints\OAuth2\EnvironmentOAuth2Token\EnvironmentOAuth2TokenV1ResponseBadRequest.cs" />

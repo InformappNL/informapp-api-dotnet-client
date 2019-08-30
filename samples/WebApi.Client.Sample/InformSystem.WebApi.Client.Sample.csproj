@@ -134,6 +134,7 @@
     <Compile Include="Examples\FormRegistrations\ListFormRegistrationV1Example.cs" />
     <Compile Include="Examples\Forms\ListFormV1Example.cs" />
     <Compile Include="Examples\IExample.cs" />
+    <Compile Include="Examples\Logs\CreateLogV1Example.cs" />
     <Compile Include="Examples\OAuth2\EnvironmentOAuth2TokenV1Example.cs" />
     <Compile Include="Examples\OAuth2\OAuth2TokenV1Example.cs" />
     <Compile Include="Examples\OAuth2\OAuth2TokenV2Example.cs" />

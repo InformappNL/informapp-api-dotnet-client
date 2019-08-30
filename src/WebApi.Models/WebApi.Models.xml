@@ -4478,6 +4478,106 @@
             Sort by last update date descending
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog.CreateLogV1Request">
+            <summary>
+            Create log request
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog.CreateLogV1RequestLog">
+            <summary>
+            Create log
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog.CreateLogV1RequestLog.Source">
+            <summary>
+            Source
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog.CreateLogV1RequestLog.CreateDate">
+            <summary>
+            Create date
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog.CreateLogV1RequestLog.Thread">
+            <summary>
+            Thread
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog.CreateLogV1RequestLog.Level">
+            <summary>
+            Log level
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog.CreateLogV1RequestLog.Name">
+            <summary>
+            Log name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog.CreateLogV1RequestLog.Message">
+            <summary>
+            Message
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog.CreateLogV1RequestLog.Exception">
+            <summary>
+            Exception
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog.CreateLogV1Response">
+            <summary>
+            Create log response
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.LogV1Level">
+            <summary>
+            Log level
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.LogV1Level.Off">
+            <summary>
+            Off
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.LogV1Level.Fatal">
+            <summary>
+            Fatal
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.LogV1Level.Error">
+            <summary>
+            Error
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.LogV1Level.Warn">
+            <summary>
+            Warn
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.LogV1Level.Info">
+            <summary>
+            Info
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.LogV1Level.Debug">
+            <summary>
+            Debug
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.LogV1Source">
+            <summary>
+            Application kind
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.LogV1Source.WebUI">
+            <summary>
+            Web UI
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.LogV1Source.WebApi">
+            <summary>
+            Web Api
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.EnvironmentOAuth2Token.EnvironmentOAuth2TokenV1Request">
             <summary>
             Environment OAuth token request

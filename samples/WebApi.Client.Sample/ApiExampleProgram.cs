@@ -12,6 +12,7 @@ using Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationEmail
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrations;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationStats;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Forms;
+using Informapp.InformSystem.WebApi.Client.Sample.Examples.Logs;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Pings;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files;
@@ -57,6 +58,8 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
                 Create<OAuth2TokenV1Example>(true),
                 Create<EnvironmentOAuth2TokenV1Example>(true),
                 Create<OAuth2TokenV2Example>(false),
+
+                Create<CreateLogV1Example>(true),
 
                 Create<PingV1Example>(true),
 
