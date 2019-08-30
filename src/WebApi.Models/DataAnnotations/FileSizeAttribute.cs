@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 using System.IO;
 
 namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
@@ -67,8 +68,10 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         /// <returns>An instance of the formatted error message.</returns>
         public override string FormatErrorMessage(string name)
         {
-            string message = string.Format("The file size must not exceed {1} bytes",
-                name, Size);
+            string message = string.Format(
+                CultureInfo.InvariantCulture,
+                "The file size must not exceed {0} bytes",
+                Size);
 
             return message;
         }

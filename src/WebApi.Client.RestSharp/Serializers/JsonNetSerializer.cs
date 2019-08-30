@@ -1,4 +1,5 @@
-﻿using Informapp.InformSystem.WebApi.Models.Http;
+﻿using Informapp.InformSystem.WebApi.Client.RestSharp.Arguments;
+using Informapp.InformSystem.WebApi.Models.Http;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using RestSharp;
@@ -46,6 +47,8 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Serializers
         /// <returns>The serialized string</returns>
         public string Serialize(Parameter parameter)
         {
+            Argument.NotNull(parameter, nameof(parameter));
+
             return JsonConvert.SerializeObject(parameter.Value, _settings);
         }
 
@@ -57,6 +60,8 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Serializers
         /// <returns>The deserialized model</returns>
         public T Deserialize<T>(IRestResponse response)
         {
+            Argument.NotNull(response, nameof(response));
+
             return JsonConvert.DeserializeObject<T>(response.Content, _settings);
         }
 

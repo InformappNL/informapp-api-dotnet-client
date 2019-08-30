@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 
 namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
 {
@@ -106,13 +107,17 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
 
             if (MinimumLength > 0)
             {
-                message = string.Format("The file name must be between {1} and {2} characters in length",
-                    name, MinimumLength, MaximumLength);
+                message = string.Format(
+                    CultureInfo.InvariantCulture,
+                    "The file name must be between {1} and {2} characters in length",
+                    MinimumLength, MaximumLength);
             }
             else
             {
-                message = string.Format("The file name must not exceed {2} characters in length",
-                    name, MinimumLength, MaximumLength);
+                message = string.Format(
+                    CultureInfo.InvariantCulture,
+                    "The file name must not exceed {0} characters in length",
+                    MaximumLength);
             }
 
             return message;

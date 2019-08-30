@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 
@@ -94,13 +95,17 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
             {
                 string formattedExtensions = string.Join(", ", _extensions);
 
-                message = string.Format("The file extension must be one of '{1}'",
-                    name, formattedExtensions);
+                message = string.Format(
+                    CultureInfo.InvariantCulture,
+                    "The file extension must be one of '{0}'",
+                    formattedExtensions);
             }
             else
             {
-                message = string.Format("The file extension must be {1}",
-                    name, _extensions[0]);
+                message = string.Format(
+                    CultureInfo.InvariantCulture,
+                    "The file extension must be {0}",
+                    _extensions[0]);
             }
 
             return message;
