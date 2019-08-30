@@ -4709,6 +4709,11 @@
             Array
             </summary>
         </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.Bytes">
+            <summary>
+            Bytes
+            </summary>
+        </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.Dictionary">
             <summary>
             Dictionary
@@ -4824,6 +4829,11 @@
             Array
             </summary>
         </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.Bytes">
+            <summary>
+            Bytes
+            </summary>
+        </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.Dictionary">
             <summary>
             Dictionary
@@ -4937,6 +4947,11 @@
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.Array">
             <summary>
             Array
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.Bytes">
+            <summary>
+            Bytes
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.Dictionary">

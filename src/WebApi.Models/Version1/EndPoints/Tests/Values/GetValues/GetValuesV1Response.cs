@@ -278,6 +278,14 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.G
         public IEnumerable<int> Array { get; set; } = new[] { 1, 2, 3, };
 
         /// <summary>
+        /// Bytes
+        /// </summary>
+        [DataMember]
+        [ExampleCollection(ExampleCollectionKind.Array, new byte[] { 1, 2, 3 })]
+        [Required]
+        public byte[] Bytes { get; set; } = new byte[] { 1, 2, 3 };
+
+        /// <summary>
         /// Dictionary
         /// </summary>
         [DataMember]

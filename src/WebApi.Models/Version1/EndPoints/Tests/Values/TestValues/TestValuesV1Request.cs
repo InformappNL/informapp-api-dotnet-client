@@ -204,6 +204,15 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.T
         public IEnumerable<int> Array { get; set; }
 
         /// <summary>
+        /// Bytes
+        /// </summary>
+        [BodyParameter]
+        [DataMember]
+        [ExampleCollection(ExampleCollectionKind.Array, new byte[] { 1, 2, 3 })]
+        [MaxItems(3)]
+        public byte[] Bytes { get; set; }
+
+        /// <summary>
         /// Dictionary
         /// </summary>
         [BodyParameter]

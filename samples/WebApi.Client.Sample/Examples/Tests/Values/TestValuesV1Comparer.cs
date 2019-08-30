@@ -36,6 +36,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
             }
 
             else if ((Equals(request.Array, response.Array) &&
+                Equals(request.Bytes, response.Bytes) &&
                 Equals(request.Dictionary, response.Dictionary)) == false)
             {
                 equals = false;
