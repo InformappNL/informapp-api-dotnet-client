@@ -83,7 +83,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.Up
         /// File
         /// </summary>
         [ExampleMemberProvider(typeof(UploadTestFileV1Request), nameof(File))]
-        //[FileSize(MaxFileSize)]
         [IgnoreDataMember]
         [Required]
         public Stream File
