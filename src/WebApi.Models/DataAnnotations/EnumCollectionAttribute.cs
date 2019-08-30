@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Informapp.InformSystem.WebApi.Models.Arguments;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
@@ -34,14 +35,11 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         /// <param name="allowNull">allow null values</param>
         internal EnumCollectionAttribute(Type type, bool allowNull = false)
         {
-            if (type == null)
-            {
-                throw new ArgumentNullException(nameof(type));
-            }
+            Argument.NotNull(type, nameof(type));
 
             if (type.IsEnum == false)
             {
-                throw new InvalidOperationException("The type must be an enum");
+                throw new ArgumentException("The type must be an enum", nameof(type));
             }
 
             Type = type;
