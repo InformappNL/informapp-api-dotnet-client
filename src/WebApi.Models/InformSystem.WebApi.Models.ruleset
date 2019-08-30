@@ -387,14 +387,8 @@
     <Rule Id="CA2244" Action="None" />
   </Rules>
   <Rules AnalyzerId="Microsoft.CodeQuality.CSharp.Analyzers" RuleNamespace="Microsoft.CodeQuality.CSharp.Analyzers">
-    <Rule Id="CA1001" Action="None" />
-    <Rule Id="CA1032" Action="None" />
-    <Rule Id="CA1065" Action="None" />
-    <Rule Id="CA1200" Action="None" />
-    <Rule Id="CA1507" Action="None" />
-    <Rule Id="CA1821" Action="None" />
-    <Rule Id="CA2200" Action="None" />
-    <Rule Id="CA2234" Action="None" />
+    <Rule Id="CA1003" Action="Warning" />
+    <Rule Id="CA1019" Action="Warning" />
   </Rules>
   <Rules AnalyzerId="Microsoft.NetCore.Analyzers" RuleNamespace="Microsoft.NetCore.Analyzers">
     <Rule Id="CA1303" Action="None" />
