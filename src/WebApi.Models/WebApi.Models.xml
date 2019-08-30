@@ -4469,6 +4469,21 @@
             Head method response
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Methods.OptionsMethod.OptionsMethodV1Request">
+            <summary>
+            Options method request
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Methods.OptionsMethod.OptionsMethodV1Response">
+            <summary>
+            Options method response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Methods.OptionsMethod.OptionsMethodV1Response.Method">
+            <summary>
+            Method
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Methods.PatchMethod.PatchMethodV1Request">
             <summary>
             Patch method request

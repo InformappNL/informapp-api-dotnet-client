@@ -8,6 +8,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Methods
         internal const string DeleteRoute = Route;
         internal const string GetRoute = Route;
         internal const string HeadRoute = Route;
+        internal const string OptionsRoute = Route;
         internal const string PatchRoute = Route;
         internal const string PostRoute = Route;
         internal const string PutRoute = Route;

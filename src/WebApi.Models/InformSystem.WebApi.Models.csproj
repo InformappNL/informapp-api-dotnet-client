@@ -244,6 +244,8 @@
     <Compile Include="Version1\EndPoints\Tests\Methods\HeadMethod\HeadMethodV1Request.cs" />
     <Compile Include="Version1\EndPoints\Tests\Methods\HeadMethod\HeadMethodV1Response.cs" />
     <Compile Include="Version1\EndPoints\Tests\Methods\MethodV1Constants.cs" />
+    <Compile Include="Version1\EndPoints\Tests\Methods\OptionsMethod\OptionsMethodV1Request.cs" />
+    <Compile Include="Version1\EndPoints\Tests\Methods\OptionsMethod\OptionsMethodV1Response.cs" />
     <Compile Include="Version1\EndPoints\Tests\Methods\PatchMethod\PatchMethodV1Request.cs" />
     <Compile Include="Version1\EndPoints\Tests\Methods\PatchMethod\PatchMethodV1Response.cs" />
     <Compile Include="Version1\EndPoints\Tests\Methods\PostMethod\PostMethodV1Request.cs" />
