@@ -73,7 +73,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
 
             var apiRequest = _requestFactory.Create(request);
 
-            apiRequest.AddHeader("cache-control", "no-cache");
+            apiRequest.AddHeader(HttpRequestHeaderConstants.CacheControl, "no-cache");
 
             AddBody(request, apiRequest);
 

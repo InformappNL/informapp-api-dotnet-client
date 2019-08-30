@@ -92,6 +92,8 @@
     <Compile Include="Http\HttpMethodAttribute.cs" />
     <Compile Include="Http\HttpMethodHelper.cs" />
     <Compile Include="Http\HttpMethodOverride.cs" />
+    <Compile Include="Http\HttpRequestHeaderConstants.cs" />
+    <Compile Include="Http\HttpResponseHeaderConstants.cs" />
     <Compile Include="Http\PathAttribute.cs" />
     <Compile Include="Http\PathParameterAttribute.cs" />
     <Compile Include="Http\QueryParameterAttribute.cs" />

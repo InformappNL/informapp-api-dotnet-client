@@ -12,8 +12,6 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories
     /// </summary>
     public class RequestFactory : IRequestFactory
     {
-        private const string AcceptHeaderName = "Accept";
-
         private readonly IConverter<HttpMethod?, Method?> _converter;
 
         /// <summary>
@@ -52,7 +50,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories
             var apiRequest = new RestRequest(resource, method.Value);
 
             // Set default content type to JSON, override using a decorator and AddOrUpdateParameter method
-            apiRequest.AddHeader(AcceptHeaderName, ContentTypeConstants.Application.Json);
+            apiRequest.AddHeader(HttpRequestHeaderConstants.Accept, ContentTypeConstants.Application.Json);
 
             return apiRequest;
         }

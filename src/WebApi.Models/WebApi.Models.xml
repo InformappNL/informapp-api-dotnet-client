@@ -905,6 +905,211 @@
             <returns>true if overridable, else false.</returns>
             <exception cref="T:System.ArgumentException"><paramref name="method"/> unsupported value</exception>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants">
+            <summary>
+            Contains the standard set of headers applicable to an HTTP request.
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.Accept">
+            <summary>Content-Types that are acceptable</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.AcceptCharset">
+            <summary>Character sets that are acceptable</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.AcceptEncoding">
+            <summary>Acceptable encodings. See HTTP compression.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.AcceptLanguage">
+            <summary>Acceptable languages for response</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.AcceptDatetime">
+            <summary>Acceptable version in time</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.Authorization">
+            <summary>Authentication credentials for HTTP authentication</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.CacheControl">
+            <summary>Used to specify directives that MUST be obeyed by all caching mechanisms along the request/response chain</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.Connection">
+            <summary>What type of connection the user-agent would prefer</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.Cookie">
+            <summary>an HTTP cookie previously sent by the server with Set-Cookie (below)</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.ContentLength">
+            <summary>The length of the request body in octets (8-bit bytes)</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.ContentMD5">
+            <summary>A Base64-encoded binary MD5 sum of the content of the request body</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.ContentType">
+            <summary>The MIME type of the body of the request (used with POST and PUT requests)</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.Date">
+            <summary>The date and time that the message was sent</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.Expect">
+            <summary>Indicates that particular server behaviors are required by the client</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.From">
+            <summary>The email address of the user making the request</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.Host">
+            <summary>The domain name of the server (for virtual hosting), mandatory since HTTP/1.1. Although domain name are specified as case-insensitive[5][6], it is not specified whether the contents of the Host field should be interpreted in a case-insensitive manner[7] and in practice some implementations of virtual hosting interpret the contents of the Host field in a case-sensitive manner.[citation needed]</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.IfMatch">
+            <summary>Only perform the action if the client supplied entity matches the same entity on the server. This is mainly for methods like PUT to only update a resource if it has not been modified since the user last updated it.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.IfModifiedSince">
+            <summary>Allows a 304 Not Modified to be returned if content is unchanged</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.IfNoneMatch">
+            <summary>Allows a 304 Not Modified to be returned if content is unchanged, see HTTP ETag</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.IfRange">
+            <summary>If the entity is unchanged, send me the part(s) that I am missing; otherwise, send me the entire new entity</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.IfUnmodifiedSince">
+            <summary>Only send the response if the entity has not been modified since a specific time.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.MaxForwards">
+            <summary>Limit the number of times the message can be forwarded through proxies or gateways.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.Pragma">
+            <summary>Implementation-specific headers that may have various effects anywhere along the request-response chain.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.ProxyAuthorization">
+            <summary>Authorization credentials for connecting to a proxy.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.Range">
+            <summary>Request only part of an entity. Bytes are numbered from 0.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.Referersic">
+            <summary>This is the address of the previous web page from which a link to the currently requested page was followed. (The word “referrer” is misspelled in the RFC as well as in most implementations.)</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.TE">
+            <summary>The transfer encodings the user agent is willing to accept: the same values as for the response header Transfer-Encoding can be used, plus the trailers value (related to the chunked transfer method) to notify the server it expects to receive additional headers (the trailers) after the last, zero-sized, chunk.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.Upgrade">
+            <summary>Ask the server to upgrade to another protocol.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.UserAgent">
+            <summary>The user agent string of the user agent</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.Via">
+            <summary>Informs the server of proxies through which the request was sent.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.Warning">
+            <summary>A general warning about possible problems with the entity body.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpRequestHeaderConstants.XForwardedFor">
+            <summary>Contains the original source address of the request.</summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants">
+            <summary>
+            Contains the standard set of headers applicable to an HTTP response.
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.AcceptRanges">
+            <summary>What partial content range types this server supports</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.Age">
+            <summary>The age the object has been in a proxy cache in seconds</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.Allow">
+            <summary>Valid actions for a specified resource. To be used for a 405 Method not allowed</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.CacheControl">
+            <summary>Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.Connection">
+            <summary>Options that are desired for the connection[17]</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.ContentEncoding">
+            <summary>The type of encoding used on the data. See HTTP compression.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.ContentLanguage">
+            <summary>The language the content is in</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.ContentLength">
+            <summary>The length of the response body in octets (8-bit bytes)</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.ContentLocation">
+            <summary>An alternate location for the returned data</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.ContentMD5">
+            <summary>A Base64-encoded binary MD5 sum of the content of the response</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.ContentDisposition">
+            <summary>An opportunity to raise a File Download dialogue box for a known MIME type with binary format or suggest a filename for dynamic content. Quotes are necessary with special characters.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.ContentRange">
+            <summary>Where in a full body message this partial message belongs</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.ContentType">
+            <summary>The MIME type of this content</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.Date">
+            <summary>The date and time that the message was sent</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.ETag">
+            <summary>An identifier for a specific version of a resource, often a message digest</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.Expires">
+            <summary>Gives the date/time after which the response is considered stale</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.LastModified">
+            <summary>The last modified date for the requested object, inRFC 2822 format</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.Link">
+            <summary>Used to express a typed relationship with another resource, where the relation type is defined by RFC 5988</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.Location">
+            <summary>Used in redirection, or when a new resource has been created.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.P3P">
+            <summary>This header is supposed to set P3P policy, in the form of P3P:CP=your_compact_policy. However, P3P did not take off,[22] most browsers have never fully implemented it, a lot of websites set this header with fake policy text, that was enough to fool browsers the existence of P3P policy and grant permissions for third party cookies.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.Pragma">
+            <summary>Implementation-specific headers that may have various effects anywhere along the request-response chain.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.ProxyAuthenticate">
+            <summary>Request authentication to access the proxy.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.Refresh">
+            <summary>Used in redirection, or when a new resource has been created. This refresh redirects after 5 seconds. This is a proprietary, non-standard header extension introduced by Netscape and supported by most web browsers.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.RetryAfter">
+            <summary>If an entity is temporarily unavailable, this instructs the client to try again after a specified period of time (seconds).</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.Server">
+            <summary>A name for the server</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.SetCookie">
+            <summary>an HTTP cookie</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.StrictTransportSecurity">
+            <summary>A HSTS Policy informing the HTTP client how long to cache the HTTPS only policy and whether this applies to subdomains.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.Trailer">
+            <summary>The Trailer general field value indicates that the given set of header fields is present in the trailer of a message encoded with chunked transfer-coding.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.TransferEncoding">
+            <summary>The form of encoding used to safely transfer the entity to the user. Currently defined methods are:chunked, compress, deflate, gzip, identity.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.Vary">
+            <summary>Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.Via">
+            <summary>Informs the client of proxies through which the response was sent.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.Warning">
+            <summary>A general warning about possible problems with the entity body.</summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.HttpResponseHeaderConstants.WWWAuthenticate">
+            <summary>Indicates the authentication scheme that should be used to access the requested entity.</summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Http.PathAttribute">
             <summary>
             Set path for a request class
