@@ -48,7 +48,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
 
             try
             {
+#pragma warning disable CA1508 // Avoid dead conditional code. - Faulty rule?
                 using (var container = AutofacContainerFactory.Create())
+#pragma warning restore CA1508
                 {
                     var program = new ApiExampleProgram(container);
 
