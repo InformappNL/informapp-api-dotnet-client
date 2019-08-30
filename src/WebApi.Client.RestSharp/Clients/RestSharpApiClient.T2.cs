@@ -91,7 +91,6 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
                     .Value,
 
                 Content = apiResponse.Content,
-                ContentType = apiResponse.ContentType,
             };
 
             if (apiResponse.IsSuccessful == true)
@@ -102,7 +101,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
 
             if (apiResponse.Headers != null)
             {
-                response.Headers = apiResponse.Headers
+                var headers = apiResponse.Headers
                     .Where(x => x.Type == ParameterType.HttpHeader)
                     .Where(x => x.Value is string)
                     .Select(x => new ResponseHeader
@@ -111,6 +110,12 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
                         Value = x.Value as string
                     })
                     .ToList();
+
+                response.Headers = new ResponseHeaders(headers);
+
+                response.Headers.ContentLength = apiResponse.ContentLength;
+
+                response.Headers.ContentType = apiResponse.ContentType;
             }
 
             return response;

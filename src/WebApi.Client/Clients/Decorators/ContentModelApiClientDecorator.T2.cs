@@ -65,9 +65,10 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
             if (response.ContentModel == null &&
                 response.StatusCode.HasValue == true &&
                 string.IsNullOrEmpty(response.Content) == false &&
-                string.IsNullOrEmpty(response.ContentType) == false)
+                response.Headers != null &&
+                string.IsNullOrEmpty(response.Headers.ContentType) == false)
             {
-                var contentTypes = response.ContentType
+                var contentTypes = response.Headers.ContentType
                     .Split(ContentTypeConstants.ResponseHeaderSeparator);
 
                 bool isJsonContentType = contentTypes

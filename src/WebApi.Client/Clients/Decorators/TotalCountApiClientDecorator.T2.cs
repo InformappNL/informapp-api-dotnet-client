@@ -49,15 +49,15 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
 
             if (response.Headers != null)
             {
-                var header = response.Headers
+                var header = response.Headers.Headers
                     .Where(x => string.Equals(x.Name, ResponseHeaderConstants.TotalCountHeaderName, StringComparison.OrdinalIgnoreCase))
-                    .FirstOrDefault();
+                    .SingleOrDefault();
 
-                if (header != null)
+                if (header != null && string.IsNullOrEmpty(header.Value) == false)
                 {
                     if (int.TryParse(header.Value, NumberStyles.None, CultureInfo.InvariantCulture, out int totalCount))
                     {
-                        response.TotalCount = totalCount;
+                        response.Headers.TotalCount = totalCount;
                     }
                 }
             }

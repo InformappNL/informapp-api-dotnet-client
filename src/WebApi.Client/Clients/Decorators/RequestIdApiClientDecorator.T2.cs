@@ -56,16 +56,16 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
 
             if (response.Headers != null)
             {
-                var header = response.Headers
+                var header = response.Headers.Headers
                     .Where(x => string.Equals(x.Name, ResponseHeaderConstants.RequestIdHeaderName))
                     .FirstOrDefault();
 
-                if (header != null && header.Value is string value)
+                if (header != null && string.IsNullOrEmpty(header.Value) == false)
                 {
-                    var requestId = _converter.Convert(value)
+                    var requestId = _converter.Convert(header.Value)
                         .Value;
 
-                    response.RequestId = requestId;
+                    response.Headers.RequestId = requestId;
                 }
             }
 

@@ -30,11 +30,6 @@ namespace Informapp.InformSystem.WebApi.Client.Responses
         public string Content { get; set; }
 
         /// <summary>
-        /// Content type
-        /// </summary>
-        public string ContentType { get; set; }
-
-        /// <summary>
         /// Content model
         /// </summary>
         public object ContentModel { get; set; }
@@ -45,18 +40,8 @@ namespace Informapp.InformSystem.WebApi.Client.Responses
         public bool IsSuccessful { get; set; }
 
         /// <summary>
-        /// Request id
-        /// </summary>
-        public Guid? RequestId { get; set; }
-
-        /// <summary>
-        /// Total count
-        /// </summary>
-        public int? TotalCount { get; set; }
-
-        /// <summary>
         /// Headers
         /// </summary>
-        public IEnumerable<ResponseHeader> Headers { get; set; }
+        public ResponseHeaders Headers { get; set; }
     }
 }
