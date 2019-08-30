@@ -14,7 +14,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version2.Filters
     /// <typeparam name="T"></typeparam>
     [DataContract(Namespace = Version2Constants.Namespace)]
     public partial class EnumV2Filter<T>
-        where T : struct, IComparable, IFormattable, IConvertible
+        where T : struct, Enum, IComparable, IFormattable, IConvertible
     {
         /// <summary>
         /// Kind

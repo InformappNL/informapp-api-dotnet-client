@@ -9,7 +9,7 @@ namespace Informapp.InformSystem.WebApi.Models.Sorting
     /// </summary>
     /// <typeparam name="T">Enum type to compare</typeparam>
     internal class SortEqualityComparer<T> : IEqualityComparer<T>
-        where T : struct, IComparable, IFormattable, IConvertible
+        where T : struct, Enum, IComparable, IFormattable, IConvertible
     {
         private static readonly IDictionary<T, string> _dictionary;
 
