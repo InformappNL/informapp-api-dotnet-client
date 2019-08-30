@@ -460,8 +460,4 @@
     <Rule Id="CA3075" Action="None" />
     <Rule Id="CA3147" Action="None" />
   </Rules>
-  <Rules AnalyzerId="Microsoft.NetFramework.CSharp.Analyzers" RuleNamespace="Microsoft.NetFramework.CSharp.Analyzers">
-    <Rule Id="CA3076" Action="None" />
-    <Rule Id="CA3077" Action="None" />
-  </Rules>
 </RuleSet>
