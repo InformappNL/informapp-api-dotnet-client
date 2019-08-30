@@ -321,14 +321,17 @@
     <Rule Id="RE0001WithoutSuggestion" Action="None" />
   </Rules>
   <Rules AnalyzerId="Microsoft.CodeAnalysis.Features" RuleNamespace="Microsoft.CodeAnalysis.Features">
-    <Rule Id="IDE0010" Action="None" />
-    <Rule Id="IDE0010WithoutSuggestion" Action="None" />
-    <Rule Id="IDE0033" Action="None" />
-    <Rule Id="IDE0033WithoutSuggestion" Action="None" />
-    <Rule Id="IDE0044" Action="None" />
-    <Rule Id="IDE0044WithoutSuggestion" Action="None" />
-    <Rule Id="IDE0055" Action="None" />
-    <Rule Id="IDE0055WithoutSuggestion" Action="None" />
+    <Rule Id="IDE0010" Action="Warning" />
+    <Rule Id="IDE0010WithoutSuggestion" Action="Warning" />
+    <Rule Id="IDE0033" Action="Warning" />
+    <Rule Id="IDE0033WithoutSuggestion" Action="Warning" />
+    <Rule Id="IDE0044" Action="Warning" />
+    <Rule Id="IDE0044WithoutSuggestion" Action="Warning" />
+    <Rule Id="IDE0055" Action="Warning" />
+    <Rule Id="IDE0055WithoutSuggestion" Action="Warning" />
+    <Rule Id="IDE0067" Action="Warning" />
+    <Rule Id="IDE0068" Action="Warning" />
+    <Rule Id="IDE0069" Action="Warning" />
   </Rules>
   <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
     <Rule Id="CA1000" Action="None" />
