@@ -4,6 +4,7 @@ using Informapp.InformSystem.WebApi.Client.Requests;
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Models.Requests;
 using Informapp.InformSystem.WebApi.Models.Responses;
+using System;
 using System.Globalization;
 using System.Linq;
 using System.Threading;
@@ -49,7 +50,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
             if (response.Headers != null)
             {
                 var header = response.Headers
-                    .Where(x => string.Equals(x.Name, ResponseHeaderConstants.TotalCountHeaderName))
+                    .Where(x => string.Equals(x.Name, ResponseHeaderConstants.TotalCountHeaderName, StringComparison.OrdinalIgnoreCase))
                     .FirstOrDefault();
 
                 if (header != null && header.Value is string value)
