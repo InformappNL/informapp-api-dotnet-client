@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Globalization;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Requires
@@ -6,6 +7,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Requires
     /// <summary>
     /// Static class with methods to ensure conditions are true
     /// </summary>
+    [DebuggerStepThrough]
     internal static class Require
     {
         /// <summary>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Arguments
@@ -7,6 +8,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Arguments
     /// <summary>
     /// Static class with methods to ensure conditions for arguments are true
     /// </summary>
+    [DebuggerStepThrough]
     internal static class Argument
     {
         /// <summary>
