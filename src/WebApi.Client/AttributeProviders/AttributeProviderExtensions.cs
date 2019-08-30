@@ -147,6 +147,8 @@ namespace Informapp.InformSystem.WebApi.Client.AttributeProviders
 
             where TAttribute : Attribute
         {
+            _ = provider;
+
             string message = string.Format(
                 CultureInfo.InvariantCulture,
                 format,

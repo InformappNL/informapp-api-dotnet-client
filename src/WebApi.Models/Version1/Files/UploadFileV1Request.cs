@@ -13,6 +13,8 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.Files
         public static IUploadFileV1Request Create<T>(T request)
             where T : class, IDisposable
         {
+            _ = request;
+
             return new UploadFileV1Request<T>();
         }
     }

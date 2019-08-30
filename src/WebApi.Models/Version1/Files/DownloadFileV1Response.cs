@@ -13,6 +13,8 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.Files
         public static IDownloadFileV1Response Create<T>(T response)
             where T : class, IDisposable
         {
+            _ = response;
+
             return new DownloadFileV1Response<T>();
         }
     }
