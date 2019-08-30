@@ -147,6 +147,7 @@
     <Compile Include="Files\IUploadFileMapper.T2.cs" />
     <Compile Include="Files\UploadFileV1Mapper.T2.cs" />
     <Compile Include="Files\UploadFileV2Mapper.T2.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="HashCodes\HashCodeHelper.cs" />
     <Compile Include="MethodProviders\IMethodProvider.T1.cs" />
     <Compile Include="MethodProviders\MethodProvider.T1.cs" />

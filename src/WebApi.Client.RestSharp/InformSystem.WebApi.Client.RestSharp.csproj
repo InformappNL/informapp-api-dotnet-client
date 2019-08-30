@@ -76,6 +76,7 @@
     <Compile Include="Clients\RestSharpApiClient.T2.cs" />
     <Compile Include="Converters\HttpMethodConverter.cs" />
     <Compile Include="Converters\ResponseStatusConverter.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestFactories\Decorators\AcceptContentTypeRequestFactoryDecorator.cs" />
     <Compile Include="RequestFactories\Decorators\BearerTokenRequestFactoryDecorator.cs" />
