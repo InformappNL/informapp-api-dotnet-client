@@ -89,14 +89,14 @@ namespace Informapp.InformSystem.WebApi.Client.PathProviders
 
                     builder.Replace('{' + property.Name + '}', pathValue);
                 }
-                
+
                 path = builder.ToString();
             }
             else
             {
                 path = _attribute.Pattern;
             }
-            
+
             return new Uri(path, UriKind.Relative);
         }
     }

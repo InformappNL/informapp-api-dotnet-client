@@ -28,7 +28,7 @@ namespace Informapp.InformSystem.WebApi.Models.Responses
                 throw new ArgumentException("Unsupported value", nameof(statusCode));
             }
 
-            StatusCode = statusCode; 
+            StatusCode = statusCode;
 
             Model = model ?? throw new ArgumentNullException(nameof(model));
         }

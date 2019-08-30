@@ -15,7 +15,7 @@ namespace Informapp.InformSystem.WebApi.Client.Converters
         {
 
         }
-        
+
         /// <summary>
         /// Convert <see cref="string"/> to <see cref="Guid"/>
         /// </summary>

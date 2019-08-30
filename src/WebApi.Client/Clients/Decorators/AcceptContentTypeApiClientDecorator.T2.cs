@@ -33,7 +33,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
             IApiClient<TRequest, TResponse> apiClient) : base(apiClient)
         {
             Argument.NotNull(apiClient, nameof(apiClient));
-            
+
             _apiClient = apiClient;
         }
 

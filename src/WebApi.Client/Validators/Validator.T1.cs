@@ -100,7 +100,7 @@ namespace Informapp.InformSystem.WebApi.Client.Validators
                 .Where(x => x.PropertyType.IsEnum == false)
                 .Where(x => x.PropertyType.IsValueType == false)
                 .ToList();
-            
+
             foreach (var property in properties)
             {
                 var value = property.GetValue(instance);
@@ -122,7 +122,7 @@ namespace Informapp.InformSystem.WebApi.Client.Validators
             {
                 return;
             }
-            
+
             var fields = type.GetFields(BindingFlags.Instance | BindingFlags.Public)
                 .Where(x => x.FieldType.IsClass == true)
                 .Where(x => x.FieldType != typeof(string))

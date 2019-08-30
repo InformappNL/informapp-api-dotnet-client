@@ -16,7 +16,7 @@ namespace Informapp.InformSystem.WebApi.Client.BearerTokenProviders
         /// <exception cref="ArgumentNullException"><paramref name="endPoint"/> is null</exception>
         /// <exception cref="ArgumentNullException"><paramref name="username"/> is null</exception>
         /// <exception cref="ArgumentException"><paramref name="username"/> is empty</exception>
-        public BearerTokenKey(Uri endPoint, string username )
+        public BearerTokenKey(Uri endPoint, string username)
         {
             Argument.NotNull(endPoint, nameof(endPoint));
             Argument.NotNullOrEmpty(username, nameof(username));

@@ -24,7 +24,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorat
         /// <param name="cache">The instance to cache client instances</param>
         public CacheClientFactoryDecorator(
             IClientFactory clientFactory,
-            IClientCache cache) : base(clientFactory)   
+            IClientCache cache) : base(clientFactory)
         {
             Argument.NotNull(clientFactory, nameof(clientFactory));
             Argument.NotNull(cache, nameof(cache));

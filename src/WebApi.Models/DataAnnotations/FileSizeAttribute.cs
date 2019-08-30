@@ -70,7 +70,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         /// <returns>An instance of the formatted error message.</returns>
         public override string FormatErrorMessage(string name)
         {
-            string message = string.Format("The file size must not exceed {1} bytes", 
+            string message = string.Format("The file size must not exceed {1} bytes",
                 name, Size);
 
             return message;

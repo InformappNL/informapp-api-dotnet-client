@@ -39,7 +39,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decora
 
             var method = request.Context.Method;
 
-            if (request.Context.MethodOverride == true && 
+            if (request.Context.MethodOverride == true &&
                 method.HasValue == true &&
                 HttpMethodOverride.IsOverridable(method.Value) == true)
             {

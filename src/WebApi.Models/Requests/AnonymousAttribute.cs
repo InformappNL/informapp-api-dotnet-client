@@ -13,7 +13,7 @@ namespace Informapp.InformSystem.WebApi.Models.Requests
         /// </summary>
         internal AnonymousAttribute()
         {
-            
+
         }
     }
 }

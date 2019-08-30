@@ -26,7 +26,7 @@ namespace Informapp.InformSystem.WebApi.Client.AttributeProviders
             _attributes = attributes;
 
             Count = attributes.Length;
-            
+
             Attribute = attributes.FirstOrDefault();
         }
 

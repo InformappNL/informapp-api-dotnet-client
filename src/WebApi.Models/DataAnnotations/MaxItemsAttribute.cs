@@ -82,7 +82,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
 
                 if (count <= Count) { return true; }
             }
-            
+
             else
             {
                 throw new InvalidOperationException("Unable to convert value to " + nameof(IEnumerable));

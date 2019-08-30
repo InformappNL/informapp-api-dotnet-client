@@ -35,7 +35,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.Up
 
                 stream.Position = 0L;
             }
-            
+
             var file = new ExampleStream(stream);
 
             return file;

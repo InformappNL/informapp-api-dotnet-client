@@ -18,7 +18,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories
         /// Initializes a new instance of the <see cref="RequestFactory"/> class.
         /// </summary>
         /// <param name="converter"></param>
-        public RequestFactory(            
+        public RequestFactory(
             IConverter<HttpMethod?, Method?> converter)
         {
             Argument.NotNull(converter, nameof(converter));

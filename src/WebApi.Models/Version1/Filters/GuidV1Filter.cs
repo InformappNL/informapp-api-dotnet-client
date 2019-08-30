@@ -21,7 +21,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.Filters
         [DefaultValue(true)]
         [ExampleValue(true)]
         public bool? ValuesContains { get; set; } = true;
-        
+
         /// <summary>
         /// Values
         /// </summary>

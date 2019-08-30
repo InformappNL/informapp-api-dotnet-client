@@ -42,7 +42,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients
         /// <param name="model">The request model</param>
         /// <returns>The response</returns>
         public static Task<ApiResponse<TResponse>> Execute<TRequest, TResponse>(
-            this IApiClient<TRequest, TResponse> client, 
+            this IApiClient<TRequest, TResponse> client,
             TRequest model)
 
             where TRequest : class, IRequest<TResponse>

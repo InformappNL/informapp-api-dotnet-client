@@ -121,7 +121,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.G
         [ExampleValue(char.MaxValue)]
         [Required]
         public char? CharMaxValue { get; set; } = char.MaxValue;
-        
+
         /// <summary>
         /// Uri
         /// </summary>

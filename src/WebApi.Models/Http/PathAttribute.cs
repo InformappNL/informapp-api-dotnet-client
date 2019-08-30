@@ -11,12 +11,12 @@ namespace Informapp.InformSystem.WebApi.Models.Http
         /// <summary>
         /// Path pattern
         /// </summary>
-        public string Pattern { get;  }
+        public string Pattern { get; }
 
         /// <summary>
         /// Path arguments
         /// </summary>
-        private string[] Arguments { get; } 
+        private string[] Arguments { get; }
             = Array.Empty<string>();
 
         /// <summary>

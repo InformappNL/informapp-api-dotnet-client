@@ -102,12 +102,12 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
             else
             {
                 client.ConfigureWebRequest(x => x.AllowWriteStreamBuffering = true);
-                
+
                 AddBody(request, apiRequest);
             }
 
             var apiResponse = await client.ExecuteTaskAsync<TResponse>(apiRequest, cancellationToken);
-            
+
             var response = new RestSharpApiResponse<TResponse>
             {
                 RestRequest = apiRequest,
@@ -146,7 +146,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
                 response.Headers.ContentLength = apiResponse.ContentLength;
 
                 response.Headers.ContentType = apiResponse.ContentType;
-                
+
                 SetContentDispositionHeader(response);
             }
 

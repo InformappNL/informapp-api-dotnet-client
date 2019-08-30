@@ -58,12 +58,12 @@ namespace Informapp.InformSystem.WebApi.Client.Requests
         {
             get
             {
-                return string.Format(CultureInfo.InvariantCulture, "Credentials: {0} = {1}, {2} = {3}", 
-                    nameof(Username), Username, 
+                return string.Format(CultureInfo.InvariantCulture, "Credentials: {0} = {1}, {2} = {3}",
+                    nameof(Username), Username,
                     nameof(HasPassword), HasPassword);
             }
         }
-   
+
         /// <summary>
         /// Determines whether the specified object is valid.
         /// </summary>

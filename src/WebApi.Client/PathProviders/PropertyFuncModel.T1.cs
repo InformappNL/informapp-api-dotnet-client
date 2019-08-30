@@ -24,6 +24,6 @@ namespace Informapp.InformSystem.WebApi.Client.PathProviders
 
         public bool IsReferenceType { get; }
 
-        public Func<T, object> Func { get;  }
+        public Func<T, object> Func { get; }
     }
 }

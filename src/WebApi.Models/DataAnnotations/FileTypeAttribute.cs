@@ -94,12 +94,12 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
             {
                 string formattedExtensions = string.Join(", ", _extensions);
 
-                message = string.Format("The file extension must be one of '{1}'", 
+                message = string.Format("The file extension must be one of '{1}'",
                     name, formattedExtensions);
             }
             else
             {
-                message = string.Format("The file extension must be {1}", 
+                message = string.Format("The file extension must be {1}",
                     name, _extensions[0]);
             }
 

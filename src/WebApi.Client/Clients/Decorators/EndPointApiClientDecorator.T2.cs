@@ -12,7 +12,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
     /// <summary>
     /// Decorator class for <see cref="IApiClient{TRequest, TResponse}"/> to set endpoint on request
     /// </summary>
-    public class EndPointApiClientDecorator<TRequest, TResponse> : Decorator<IApiClient<TRequest, TResponse>>, 
+    public class EndPointApiClientDecorator<TRequest, TResponse> : Decorator<IApiClient<TRequest, TResponse>>,
         IApiClient<TRequest, TResponse>
 
         where TRequest : class, IRequest<TResponse>

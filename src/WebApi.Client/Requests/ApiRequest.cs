@@ -69,10 +69,10 @@ namespace Informapp.InformSystem.WebApi.Client.Requests
         {
             get
             {
-                return string.Format(CultureInfo.InvariantCulture, 
-                    "Request: {0} {1}{2}", 
-                    Context?.Method, 
-                    Context?.EndPoint, 
+                return string.Format(CultureInfo.InvariantCulture,
+                    "Request: {0} {1}{2}",
+                    Context?.Method,
+                    Context?.EndPoint,
                     Context?.Path);
             }
         }
