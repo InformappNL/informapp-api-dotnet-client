@@ -1,9 +1,9 @@
 ﻿using Informapp.InformSystem.WebApi.Client.Clients;
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
+using Informapp.InformSystem.WebApi.Client.Sample.Comparers;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
@@ -48,7 +48,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
 
                 var hash = hashAlgorithm.Hash;
 
-                bool hashEquals = HashEquals(response.Model.MD5Checksum, hash);
+                var comparer = new CollectionEqualityComparer();
+
+                bool hashEquals = comparer.CollectionEquals(response.Model.MD5Checksum, hash);
 
                 if (hashEquals == false)
                 {
@@ -103,36 +105,6 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
             };
 
             return request;
-        }
-
-        private static bool HashEquals(IReadOnlyList<byte> left, IReadOnlyList<byte> right)
-        {
-            if (left == null && right == null)
-            {
-                return true;
-            }
-
-            if (left == null || right == null)
-            {
-                return false;
-            }
-
-            if (left.Count != right.Count)
-            {
-                return false;
-            }
-
-            int length = left.Count;
-
-            for (int i = 0; i < length; i++)
-            {
-                if (left[i] != right[i])
-                {
-                    return false;
-                }
-            }
-
-            return true;
         }
     }
 }

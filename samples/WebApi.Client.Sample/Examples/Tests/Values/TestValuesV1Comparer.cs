@@ -1,6 +1,5 @@
-﻿using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues;
-using System;
-using System.Collections.Generic;
+﻿using Informapp.InformSystem.WebApi.Client.Sample.Comparers;
+using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
 {
@@ -8,6 +7,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
     {
         public bool Equals(TestValuesV1Request request, TestValuesV1Response response)
         {
+            var collectionEqualityComparer = new CollectionEqualityComparer();
+            var dictionaryEqualityComparer = new DictionaryEqualityComparer();
+
             bool equals = true;
 
             if ((request.Boolean == response.Boolean &&
@@ -34,77 +36,14 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
                 equals = false;
             }
 
-            else if ((CollectionEquals(request.Array, response.Array) &&
-                CollectionEquals(request.Bytes, response.Bytes) &&
-                DictionaryEquals(request.Dictionary, response.Dictionary)) == false)
+            else if ((collectionEqualityComparer.CollectionEquals(request.Array, response.Array) &&
+                collectionEqualityComparer.CollectionEquals(request.Bytes, response.Bytes) &&
+                dictionaryEqualityComparer.DictionaryEquals(request.Dictionary, response.Dictionary)) == false)
             {
                 equals = false;
             }
 
             return equals;
-        }
-
-        private static bool CollectionEquals<T>(IReadOnlyList<T> left, IReadOnlyList<T> right)
-            where T : struct, IEquatable<T>
-        {
-            if (left == null && right == null)
-            {
-                return true;
-            }
-
-            if (left == null || right == null)
-            {
-                return false;
-            }
-
-            if (left.Count != right.Count)
-            {
-                return false;
-            }
-
-            for (int i = 0; i < left.Count; i++)
-            {
-                if (left[i].Equals(right[i]) == false)
-                {
-                    return false;
-                }
-            }
-
-            return true;
-        }
-
-        private static bool DictionaryEquals<T>(IReadOnlyDictionary<T, T> left, IReadOnlyDictionary<T, T> right)
-            where T : struct, IEquatable<T>
-        {
-            if (left == null && right == null)
-            {
-                return true;
-            }
-
-            if (left == null || right == null)
-            {
-                return false;
-            }
-
-            if (left.Count != right.Count)
-            {
-                return false;
-            }
-
-            foreach (var pair in left)
-            {
-                if (right.TryGetValue(pair.Key, out var value) == false)
-                {
-                    return false;
-                }
-
-                if (pair.Value.Equals(value) == false)
-                {
-                    return false;
-                }
-            }
-
-            return true;
         }
     }
 }
