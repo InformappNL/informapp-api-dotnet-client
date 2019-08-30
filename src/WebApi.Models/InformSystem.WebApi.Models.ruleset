@@ -152,7 +152,7 @@
     <Rule Id="CS8009" Action="None" />
     <Rule Id="CS8012" Action="None" />
     <Rule Id="CS8018" Action="None" />
-    <Rule Id="CS8019" Action="None" />
+    <Rule Id="CS8019" Action="Warning" />
     <Rule Id="CS8020" Action="None" />
     <Rule Id="CS8021" Action="None" />
     <Rule Id="CS8029" Action="None" />
