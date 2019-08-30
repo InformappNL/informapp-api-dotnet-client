@@ -305,7 +305,6 @@
     <Compile Include="Version1\Files\UploadFileV1Request.T1.cs" />
     <Compile Include="Version1\Filters\BooleanV1Filter.cs" />
     <Compile Include="Version1\Filters\DateTimeOffsetV1Filter.cs" />
-    <Compile Include="Version1\Filters\DateTimeV1Filter.cs" />
     <Compile Include="Version1\Filters\EnumV1Filter.T1.cs" />
     <Compile Include="Version1\Filters\EnumV1Filter.T1.Example.cs" />
     <Compile Include="Version1\Filters\EnumV1FilterKind.cs" />
@@ -341,7 +340,6 @@
     <Compile Include="Version2\Files\UploadFileV2Request.T1.cs" />
     <Compile Include="Version2\Filters\BooleanV2Filter.cs" />
     <Compile Include="Version2\Filters\DateTimeOffsetV2Filter.cs" />
-    <Compile Include="Version2\Filters\DateTimeV2Filter.cs" />
     <Compile Include="Version2\Filters\EnumV2Filter.T1.cs" />
     <Compile Include="Version2\Filters\EnumV2Filter.T1.Example.cs" />
     <Compile Include="Version2\Filters\EnumV2FilterKind.cs" />

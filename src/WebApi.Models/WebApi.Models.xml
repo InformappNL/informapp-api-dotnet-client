@@ -5993,36 +5993,6 @@
             Has value
             </summary>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Filters.DateTimeV1Filter">
-            <summary>
-            DateTime filter
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.DateTimeV1Filter.GreaterThan">
-            <summary>
-            Greater than
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.DateTimeV1Filter.GreaterThanOrEqual">
-            <summary>
-            Greater than or equal
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.DateTimeV1Filter.LessThan">
-            <summary>
-            Less than
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.DateTimeV1Filter.LessThanOrEqual">
-            <summary>
-            Less than or equal
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.DateTimeV1Filter.HasValue">
-            <summary>
-            Has value
-            </summary>
-        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Filters.EnumV1Filter`1">
             <summary>
             Enum filter
@@ -6710,36 +6680,6 @@
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.DateTimeOffsetV2Filter.HasValue">
-            <summary>
-            Has value
-            </summary>
-        </member>
-        <member name="T:Informapp.InformSystem.WebApi.Models.Version2.Filters.DateTimeV2Filter">
-            <summary>
-            DateTime filter
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.DateTimeV2Filter.GreaterThan">
-            <summary>
-            Greater than
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.DateTimeV2Filter.GreaterThanOrEqual">
-            <summary>
-            Greater than or equal
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.DateTimeV2Filter.LessThan">
-            <summary>
-            Less than
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.DateTimeV2Filter.LessThanOrEqual">
-            <summary>
-            Less than or equal
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.DateTimeV2Filter.HasValue">
             <summary>
             Has value
             </summary>
