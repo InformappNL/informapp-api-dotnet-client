@@ -17,7 +17,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
     /// <summary>
     /// Decorator class for <see cref="IApiClient{TRequest, TResponse}"/> to set the upload file on the request
     /// </summary>
-    public class UploadFileApiClientDecorator<TRequest, TResponse> : Decorator<IApiClient<TRequest, TResponse>>,
+    public class UploadFileRequestApiClientDecorator<TRequest, TResponse> : Decorator<IApiClient<TRequest, TResponse>>,
         IApiClient<TRequest, TResponse>
 
         where TRequest : class, IRequest<TResponse>
@@ -29,15 +29,15 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
 
         private readonly IApiClient<TRequest, TResponse> _apiClient;
 
-        private readonly IEnumerable<IUploadFileMapper<TRequest, TResponse>> _mappers;
+        private readonly IEnumerable<IUploadFileRequestMapper<TRequest, TResponse>> _mappers;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="UploadFileApiClientDecorator{TRequest, TResponse}"/> class.
+        /// Initializes a new instance of the <see cref="UploadFileRequestApiClientDecorator{TRequest, TResponse}"/> class.
         /// </summary>
         /// <param name="apiClient">The instance to decorate</param>
-        public UploadFileApiClientDecorator(
+        public UploadFileRequestApiClientDecorator(
             IApiClient<TRequest, TResponse> apiClient,
-            IEnumerable<IUploadFileMapper<TRequest, TResponse>> mappers) : base(apiClient)
+            IEnumerable<IUploadFileRequestMapper<TRequest, TResponse>> mappers) : base(apiClient)
         {
             Argument.NotNull(apiClient, nameof(apiClient));
             Argument.NotNullOrEmpty(mappers, nameof(mappers));

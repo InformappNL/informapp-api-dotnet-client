@@ -1,11 +1,9 @@
 ﻿using Informapp.InformSystem.WebApi.Client.Clients;
+using Informapp.InformSystem.WebApi.Client.Requests;
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
-using Informapp.InformSystem.WebApi.Client.Sample.Comparers;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile;
-using System;
 using System.IO;
-using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -30,37 +28,15 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
 
         public async Task Execute(CancellationToken cancellationToken)
         {
-            using (var request = GetInMemoryFileRequest())
-            //using (var request = GetFileFromFileSystem())
-#pragma warning disable CA1508 // Avoid dead conditional code
-#pragma warning disable CA5351 // Do Not Use Broken Cryptographic Algorithms
-            using (var hashAlgorithm = MD5.Create())
-#pragma warning restore CA5351 // Do Not Use Broken Cryptographic Algorithms
-            using (var stream = new CryptoStream(request.File, hashAlgorithm, CryptoStreamMode.Read))
-#pragma warning restore CA1508 // Avoid dead conditional code
+            using (var model = GetInMemoryFileRequest())
+            //using (var model = GetFileFromFileSystem())
             {
-                request.File = stream;
+                var request = ApiRequest.Create(model);
 
                 var response = await _client
                     .Execute(request, cancellationToken)
                     .ThrowIfFailed()
                     .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
-
-                var hash = hashAlgorithm.Hash;
-
-                var comparer = new CollectionEqualityComparer();
-
-                bool hashEquals = comparer.CollectionEquals(response.Model.MD5Checksum, hash);
-
-                if (hashEquals == false)
-                {
-                    throw new InvalidOperationException("file upload failed, hashes differ.");
-                }
-
-                if (response.Model.Size != request.Size)
-                {
-                    throw new InvalidOperationException("file upload failed, file sizes differ.");
-                }
             }
         }
 

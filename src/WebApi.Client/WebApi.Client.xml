@@ -1150,20 +1150,39 @@
             <param name="cancellationToken">The cancellation token</param>
             <returns>The response</returns>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileApiClientDecorator`2">
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileRequestApiClientDecorator`2">
             <summary>
             Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set the upload file on the request
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},System.Collections.Generic.IEnumerable{Informapp.InformSystem.WebApi.Client.Files.IUploadFileMapper{`0,`1}})">
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileRequestApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},System.Collections.Generic.IEnumerable{Informapp.InformSystem.WebApi.Client.Files.IUploadFileRequestMapper{`0,`1}})">
             <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileApiClientDecorator`2"/> class.
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileRequestApiClientDecorator`2"/> class.
             </summary>
             <param name="apiClient">The instance to decorate</param>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileRequestApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
             <summary>
             Set the upload file on the request and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileResponseApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set upload file on the response
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileResponseApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},System.Collections.Generic.IEnumerable{Informapp.InformSystem.WebApi.Client.Files.IUploadFileResponseMapper{`0,`1}},Informapp.InformSystem.WebApi.Client.Converters.IConverter{System.Nullable{Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind},System.Security.Cryptography.HashAlgorithm},Informapp.InformSystem.WebApi.Client.Cryptography.IHasher)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileResponseApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileResponseApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Execute request and set upload file on the response
             </summary>
             <param name="request">The request</param>
             <param name="cancellationToken">The cancellation token</param>
@@ -1264,6 +1283,25 @@
         <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateResponseModelApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
             <summary>
             Execute request and validate response model
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateUploadFileResponseApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to validate the uploaded file
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateUploadFileResponseApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateUploadFileResponseApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ValidateUploadFileResponseApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Execute request and validate the uploaded file
             </summary>
             <param name="request">The request</param>
             <param name="cancellationToken">The cancellation token</param>
@@ -1424,6 +1462,114 @@
             </summary>
             <param name="source">The source value</param>
             <returns>The <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> containing the converted value</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmConverter">
+            <summary>
+            Implementation of <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.IConverter`2"/>
+            to convert <see cref="T:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind"/> to <see cref="T:System.Security.Cryptography.HashAlgorithm"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmConverter.Convert(System.Nullable{Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind})">
+            <summary>
+            Convert <see cref="T:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind"/> to <see cref="T:System.Security.Cryptography.HashAlgorithm"/>
+            </summary>
+            <param name="source">The source value</param>
+            <returns>The <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> containing the converted value</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind">
+            <summary>
+            Cryptographic hash algorithms
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind.MD5">
+            <summary>
+            MD5
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind.RIPEMD160">
+            <summary>
+            RIPEMD160
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind.SHA1">
+            <summary>
+            SHA1
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind.SHA256">
+            <summary>
+            SHA256
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind.SHA384">
+            <summary>
+            SHA384
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind.SHA512">
+            <summary>
+            SHA512
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Cryptography.Hasher">
+            <summary>
+            Class to compute hash codes
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Cryptography.Hasher.ComputeHash(System.Security.Cryptography.HashAlgorithm,System.IO.Stream)">
+            <summary>
+            Computes the hash value for the specified <see cref="T:System.IO.Stream"/> object.
+            </summary>
+            <param name="hashAlgorithm">The cryptographic hash algorithm.</param>
+            <param name="stream">The input to compute the hash code for.</param>
+            <returns>The computed hash code.</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Cryptography.Hasher.ComputeHashAsync(System.Security.Cryptography.HashAlgorithm,System.IO.Stream)">
+            <summary>
+            Computes the hash value for the specified <see cref="T:System.IO.Stream"/> object asynchronously.
+            </summary>
+            <param name="hashAlgorithm">The cryptographic hash algorithm.</param>
+            <param name="stream">The input to compute the hash code for.</param>
+            <returns>A task that represents the asynchronous compute operation. The value of the task's <see cref="P:System.Threading.Tasks.Task`1.Result"/> parameter contains the computed hash code.</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Cryptography.Hasher.ComputeHashAsync(System.Security.Cryptography.HashAlgorithm,System.IO.Stream,System.Threading.CancellationToken)">
+            <summary>
+            Computes the hash value for the specified <see cref="T:System.IO.Stream"/> object asynchronously.
+            </summary>
+            <param name="hashAlgorithm">The cryptographic hash algorithm.</param>
+            <param name="stream">The input to compute the hash code for.</param>
+            <param name="cancellationToken">The token to monitor for cancellation requests.</param>
+            <returns>A task that represents the asynchronous compute operation. The value of the task's <see cref="P:System.Threading.Tasks.Task`1.Result"/> parameter contains the computed hash code.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Cryptography.IHasher">
+            <summary>
+            Interface to compute hash codes
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Cryptography.IHasher.ComputeHash(System.Security.Cryptography.HashAlgorithm,System.IO.Stream)">
+            <summary>
+            Computes the hash value for the specified <see cref="T:System.IO.Stream"/> object.
+            </summary>
+            <param name="hashAlgorithm">The cryptographic hash algorithm.</param>
+            <param name="stream">The input to compute the hash code for.</param>
+            <returns>The computed hash code.</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Cryptography.IHasher.ComputeHashAsync(System.Security.Cryptography.HashAlgorithm,System.IO.Stream)">
+            <summary>
+            Computes the hash value for the specified <see cref="T:System.IO.Stream"/> object asynchronously.
+            </summary>
+            <param name="hashAlgorithm">The cryptographic hash algorithm.</param>
+            <param name="stream">The input to compute the hash code for.</param>
+            <returns>A task that represents the asynchronous compute operation. The value of the task's <see cref="P:System.Threading.Tasks.Task`1.Result"/> parameter contains the computed hash code.</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Cryptography.IHasher.ComputeHashAsync(System.Security.Cryptography.HashAlgorithm,System.IO.Stream,System.Threading.CancellationToken)">
+            <summary>
+            Computes the hash value for the specified <see cref="T:System.IO.Stream"/> object asynchronously.
+            </summary>
+            <param name="hashAlgorithm">The cryptographic hash algorithm.</param>
+            <param name="stream">The input to compute the hash code for.</param>
+            <param name="cancellationToken">The token to monitor for cancellation requests.</param>
+            <returns>A task that represents the asynchronous compute operation. The value of the task's <see cref="P:System.Threading.Tasks.Task`1.Result"/> parameter contains the computed hash code.</returns>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider">
             <summary>
@@ -1793,6 +1939,32 @@
             <param name="request">The request</param>
             <returns>true if the upload file was converted successfully mapped to the response; otherwise, false.</returns>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Files.FileV1HashAlgorithmConverter">
+            <summary>
+            Implementation of <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.IConverter`2"/> 
+            to convert <see cref="T:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm"/> to <see cref="T:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.FileV1HashAlgorithmConverter.Convert(System.Nullable{Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm})">
+            <summary>
+            Convert <see cref="T:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm"/> to <see cref="T:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind"/>
+            </summary>
+            <param name="source">The source value</param>
+            <returns>The <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> containing the converted value</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Files.FileV2HashAlgorithmConverter">
+            <summary>
+            Implementation of <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.IConverter`2"/> 
+            to convert <see cref="T:Informapp.InformSystem.WebApi.Models.Version2.Files.FileV2HashAlgorithm"/> to <see cref="T:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.FileV2HashAlgorithmConverter.Convert(System.Nullable{Informapp.InformSystem.WebApi.Models.Version2.Files.FileV2HashAlgorithm})">
+            <summary>
+            Convert <see cref="T:Informapp.InformSystem.WebApi.Models.Version2.Files.FileV2HashAlgorithm"/> to <see cref="T:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind"/>
+            </summary>
+            <param name="source">The source value</param>
+            <returns>The <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> containing the converted value</returns>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Files.IDownloadFileMapper`2">
             <summary>
             Download file mapper interface
@@ -1807,57 +1979,110 @@
             <param name="request">The request</param>
             <returns>true if the upload file was converted successfully mapped to the response; otherwise, false.</returns>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.Files.IUploadFileMapper`2">
+        <member name="T:Informapp.InformSystem.WebApi.Client.Files.IUploadFileRequestMapper`2">
             <summary>
-            Upload file mapper interface
+            Upload file request mapper interface
             </summary>
             <typeparam name="TRequest">The type of request</typeparam>
             <typeparam name="TResponse">The type of response</typeparam>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Files.IUploadFileMapper`2.Map(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0})">
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.IUploadFileRequestMapper`2.Map(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0})">
             <summary>
             Map upload file to the request
             </summary>
             <param name="request">The request</param>
-            <returns>true if the upload file was converted successfully mapped to the request; otherwise, false.</returns>
+            <returns>true if the upload file was successfully mapped to the request; otherwise, false.</returns>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.Files.UploadFileV1Mapper`2">
+        <member name="T:Informapp.InformSystem.WebApi.Client.Files.IUploadFileResponseMapper`2">
             <summary>
-            Upload file mapper class for version 1 upload requests
+            Upload file response mapper interface
             </summary>
             <typeparam name="TRequest">The type of request</typeparam>
             <typeparam name="TResponse">The type of response</typeparam>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Files.UploadFileV1Mapper`2.#ctor">
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.IUploadFileResponseMapper`2.Map(Informapp.InformSystem.WebApi.Client.Responses.ApiResponse{`1})">
             <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Files.UploadFileV1Mapper`2"/> class.
+            Map response to the upload file response
             </summary>
+            <param name="response">The response</param>
+            <returns>true if the source response was successfully mapped to the destination response; otherwise, false.</returns>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Files.UploadFileV1Mapper`2.Map(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0})">
+        <member name="T:Informapp.InformSystem.WebApi.Client.Files.UploadFileV1RequestMapper`2">
             <summary>
-            Map upload file to the request
-            </summary>
-            <param name="request">The request</param>
-            <returns>true if the upload file was converted successfully mapped to the request; otherwise, false.</returns>
-        </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.Files.UploadFileV2Mapper`2">
-            <summary>
-            Upload file mapper class for version 2 upload requests
+            Upload file request mapper class for version 1 upload requests
             </summary>
             <typeparam name="TRequest">The type of request</typeparam>
             <typeparam name="TResponse">The type of response</typeparam>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Files.UploadFileV2Mapper`2.#ctor">
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.UploadFileV1RequestMapper`2.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Files.UploadFileV2Mapper`2"/> class.
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Files.UploadFileV1RequestMapper`2"/> class.
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Files.UploadFileV2Mapper`2.Map(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0})">
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.UploadFileV1RequestMapper`2.Map(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0})">
             <summary>
             Map upload file to the request
             </summary>
             <param name="request">The request</param>
-            <returns>true if the upload file was converted successfully mapped to the request; otherwise, false.</returns>
+            <returns>true if the upload file was successfully mapped to the request; otherwise, false.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Files.UploadFileV1ResponseMapper`2">
+            <summary>
+            Upload file response mapper class for version 1 upload responses
+            </summary>
+            <typeparam name="TRequest">The type of request</typeparam>
+            <typeparam name="TResponse">The type of response</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.UploadFileV1ResponseMapper`2.#ctor(Informapp.InformSystem.WebApi.Client.Converters.IConverter{System.Nullable{Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm},System.Nullable{Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Files.UploadFileV1ResponseMapper`2"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.UploadFileV1ResponseMapper`2.Map(Informapp.InformSystem.WebApi.Client.Responses.ApiResponse{`1})">
+            <summary>
+            Map response to the upload file response
+            </summary>
+            <param name="response">The response</param>
+            <returns>true if the source response was successfully mapped to the destination response; otherwise, false.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Files.UploadFileV2RequestMapper`2">
+            <summary>
+            Upload file request mapper class for version 2 upload requests
+            </summary>
+            <typeparam name="TRequest">The type of request</typeparam>
+            <typeparam name="TResponse">The type of response</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.UploadFileV2RequestMapper`2.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Files.UploadFileV2RequestMapper`2"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.UploadFileV2RequestMapper`2.Map(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0})">
+            <summary>
+            Map upload file to the request
+            </summary>
+            <param name="request">The request</param>
+            <returns>true if the upload file was successfully mapped to the request; otherwise, false.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Files.UploadFileV2ResponseMapper`2">
+            <summary>
+            Upload file response mapper class for version 2 upload responses
+            </summary>
+            <typeparam name="TRequest">The type of request</typeparam>
+            <typeparam name="TResponse">The type of response</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.UploadFileV2ResponseMapper`2.#ctor(Informapp.InformSystem.WebApi.Client.Converters.IConverter{System.Nullable{Informapp.InformSystem.WebApi.Models.Version2.Files.FileV2HashAlgorithm},System.Nullable{Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Files.UploadFileV2ResponseMapper`2"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.UploadFileV2ResponseMapper`2.Map(Informapp.InformSystem.WebApi.Client.Responses.ApiResponse{`1})">
+            <summary>
+            Map response to the upload file response
+            </summary>
+            <param name="response">The response</param>
+            <param name="destination">The destination file response</param>
+            <returns>true if the source response was successfully mapped to the destination response; otherwise, false.</returns>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.MethodProviders.IMethodProvider`1">
             <summary>
@@ -2212,6 +2437,11 @@
             Api upload file request
             </summary>
         </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiUploadFileRequest.Algorithm">
+            <summary>
+            Algorithm
+            </summary>
+        </member>
         <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiUploadFileRequest.ContentType">
             <summary>
             Content-Type
@@ -2225,6 +2455,16 @@
         <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiUploadFileRequest.FileName">
             <summary>
             File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiUploadFileRequest.Hash">
+            <summary>
+            Hash
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiUploadFileRequest.HashBase64">
+            <summary>
+            Hash encoded in Base64
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiUploadFileRequest.Size">
@@ -2408,6 +2648,11 @@
             The download file
             </summary>
         </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse.UploadFile">
+            <summary>
+            The upload file
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse`1">
             <summary>
             Generic DTO class for API response
@@ -2440,6 +2685,31 @@
             <param name="response">The response</param>
             <returns>The response</returns>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Responses.ApiUploadFileResponse">
+            <summary>
+            Api upload file response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiUploadFileResponse.Algorithm">
+            <summary>
+            Algorithm
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiUploadFileResponse.Hash">
+            <summary>
+            Hash
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiUploadFileResponse.HashBase64">
+            <summary>
+            Hash encoded in Base64
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiUploadFileResponse.Size">
+            <summary>
+            Size
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Responses.ContentDispositionHeader">
             <summary>
             Content-Disposition header
@@ -2466,6 +2736,26 @@
             Returns a <see cref="T:System.String"/> representation of this instance.
             </summary>
             <returns>A <see cref="T:System.String"/> that contains the property values for this instance.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeader">
+            <summary>
+            Response header class
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeader.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeader.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeader.HasValue">
+            <summary>
+            Has value
+            </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeaders">
             <summary>
@@ -2507,26 +2797,6 @@
         <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeaders.ContentDisposition">
             <summary>
             Content-Disposition
-            </summary>
-        </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeader">
-            <summary>
-            Response header class
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeader.Name">
-            <summary>
-            Name
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeader.Value">
-            <summary>
-            Value
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeader.HasValue">
-            <summary>
-            Has value
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Responses.ResponseStatusCode">

@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using Informapp.InformSystem.WebApi.Client.Cryptography;
+using System.IO;
 
 namespace Informapp.InformSystem.WebApi.Client.Requests
 {
@@ -7,6 +8,11 @@ namespace Informapp.InformSystem.WebApi.Client.Requests
     /// </summary>
     public class ApiUploadFileRequest
     {
+        /// <summary>
+        /// Algorithm
+        /// </summary>
+        public HashAlgorithmKind? Algorithm { get; set; }
+
         /// <summary>
         /// Content-Type
         /// </summary>
@@ -21,6 +27,16 @@ namespace Informapp.InformSystem.WebApi.Client.Requests
         /// File name
         /// </summary>
         public string FileName { get; set; }
+
+        /// <summary>
+        /// Hash
+        /// </summary>
+        public byte[] Hash { get; set; }
+
+        /// <summary>
+        /// Hash encoded in Base64
+        /// </summary>
+        public string HashBase64 { get; set; }
 
         /// <summary>
         /// Size

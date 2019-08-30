@@ -5,6 +5,7 @@ using Informapp.InformSystem.WebApi.Client.Clients;
 using Informapp.InformSystem.WebApi.Client.Clients.Decorators;
 using Informapp.InformSystem.WebApi.Client.Converters;
 using Informapp.InformSystem.WebApi.Client.CredentialsProviders;
+using Informapp.InformSystem.WebApi.Client.Cryptography;
 using Informapp.InformSystem.WebApi.Client.DateTimeProviders;
 using Informapp.InformSystem.WebApi.Client.DictionaryBuilders;
 using Informapp.InformSystem.WebApi.Client.EndPointProviders;
@@ -32,6 +33,7 @@ using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.Security.Cryptography;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
 {
@@ -68,7 +70,15 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
 
             apiClient = new DownloadFileApiClientDecorator<TRequest, TResponse>(apiClient, GetDownloadFileMappers<TRequest, TResponse>());
 
-            apiClient = new UploadFileApiClientDecorator<TRequest, TResponse>(apiClient, GetUploadFileMappers<TRequest, TResponse>());
+            apiClient = new UploadFileResponseApiClientDecorator<TRequest, TResponse>(
+                apiClient,
+                GetUploadFileResponseMappers<TRequest, TResponse>(),
+                GetHashAlgorithmConverter(),
+                GetHasher());
+
+            apiClient = new ValidateUploadFileResponseApiClientDecorator<TRequest, TResponse>(apiClient);
+
+            apiClient = new UploadFileRequestApiClientDecorator<TRequest, TResponse>(apiClient, GetUploadFileRequestMappers<TRequest, TResponse>());
 
             apiClient = new ContentModelApiClientDecorator<TRequest, TResponse>(apiClient);
 
@@ -217,6 +227,16 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
             return new ConfigurationEndPointProvider();
         }
 
+        private static IConverter<HashAlgorithmKind?, HashAlgorithm> GetHashAlgorithmConverter()
+        {
+            return new HashAlgorithmConverter();
+        }
+
+        private static IHasher GetHasher()
+        {
+            return new Hasher();
+        }
+
         private static IConverter<HttpMethod?, Method?> GetHttpVerbConverter()
         {
             return new HttpMethodConverter();
@@ -276,14 +296,27 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
             return new StringToGuidConverter();
         }
 
-        private static IEnumerable<IUploadFileMapper<TRequest, TResponse>> GetUploadFileMappers<TRequest, TResponse>()
+        private static IEnumerable<IUploadFileRequestMapper<TRequest, TResponse>> GetUploadFileRequestMappers<TRequest, TResponse>()
             where TRequest : class, IRequest<TResponse>
             where TResponse : class, new()
         {
-            var mappers = new IUploadFileMapper<TRequest, TResponse>[]
+            var mappers = new IUploadFileRequestMapper<TRequest, TResponse>[]
             {
-                new UploadFileV1Mapper<TRequest, TResponse>(),
-                new UploadFileV2Mapper<TRequest, TResponse>(),
+                new UploadFileV1RequestMapper<TRequest, TResponse>(),
+                new UploadFileV2RequestMapper<TRequest, TResponse>(),
+            };
+
+            return mappers;
+        }
+
+        private static IEnumerable<IUploadFileResponseMapper<TRequest, TResponse>> GetUploadFileResponseMappers<TRequest, TResponse>()
+            where TRequest : class, IRequest<TResponse>
+            where TResponse : class, new()
+        {
+            var mappers = new IUploadFileResponseMapper<TRequest, TResponse>[]
+            {
+                new UploadFileV1ResponseMapper<TRequest, TResponse>(new FileV1HashAlgorithmConverter()),
+                new UploadFileV2ResponseMapper<TRequest, TResponse>(new FileV2HashAlgorithmConverter()),
             };
 
             return mappers;

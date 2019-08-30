@@ -109,6 +109,7 @@
     <Compile Include="Http\PathParameterAttribute.cs" />
     <Compile Include="Http\QueryParameterAttribute.cs" />
     <Compile Include="Http\UploadFileRequestAttribute.cs" />
+    <Compile Include="Http\UploadFileResponseAttribute.cs" />
     <Compile Include="OAuth2\AOuth2Constants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Requests\AnonymousAttribute.cs" />
@@ -274,6 +275,8 @@
     <Compile Include="Version1\Files\DownloadFileV1Response.T1.cs" />
     <Compile Include="Version1\Files\IDownloadFileV1Response.cs" />
     <Compile Include="Version1\Files\IUploadFileV1Request.cs" />
+    <Compile Include="Version1\Files\IUploadFileV1Response.cs" />
+    <Compile Include="Version1\Files\FileV1HashAlgorithm.cs" />
     <Compile Include="Version1\Files\UploadFileV1Request.cs" />
     <Compile Include="Version1\Files\UploadFileV1Request.T1.cs" />
     <Compile Include="Version1\Filters\BooleanV1Filter.cs" />
@@ -306,8 +309,10 @@
     <Compile Include="Version2\Errors\UnauthorizedV2Response.cs" />
     <Compile Include="Version2\Files\DownloadFileV2Response.cs" />
     <Compile Include="Version2\Files\DownloadFileV2Response.T1.cs" />
+    <Compile Include="Version2\Files\FileV2HashAlgorithm.cs" />
     <Compile Include="Version2\Files\IDownloadFileV2Response.cs" />
     <Compile Include="Version2\Files\IUploadFileV2Request.cs" />
+    <Compile Include="Version2\Files\IUploadFileV2Response.cs" />
     <Compile Include="Version2\Files\UploadFileV2Request.cs" />
     <Compile Include="Version2\Files\UploadFileV2Request.T1.cs" />
     <Compile Include="Version2\Filters\BooleanV2Filter.cs" />

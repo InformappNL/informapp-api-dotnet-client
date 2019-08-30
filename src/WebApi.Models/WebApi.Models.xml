@@ -1397,6 +1397,16 @@
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.Http.UploadFileRequestAttribute"/> class.
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Http.UploadFileResponseAttribute">
+            <summary>
+            Indicates a file upload response
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Http.UploadFileResponseAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.Http.UploadFileResponseAttribute"/> class.
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.OAuth2.AOuth2Constants">
             <summary>
             OAUTH2 constants
@@ -4511,14 +4521,19 @@
             Upload test file response
             </summary>
         </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Response.Algorithm">
+            <summary>
+            Algorithm
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Response.Hash">
+            <summary>
+            Hash
+            </summary>
+        </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Response.Size">
             <summary>
             Size
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Response.MD5Checksum">
-            <summary>
-            MD5 checksum
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Methods.DeleteMethod.DeleteMethodV1Request">
@@ -5186,6 +5201,66 @@
             Size
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Files.IUploadFileV1Response">
+            <summary>
+            Upload file response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Files.IUploadFileV1Response.Algorithm">
+            <summary>
+            Algorithm
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Files.IUploadFileV1Response.Hash">
+            <summary>
+            Hash
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Files.IUploadFileV1Response.Size">
+            <summary>
+            Size
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm">
+            <summary>
+            File hash algorithm
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.MD5">
+            <summary>
+            MD5
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.RIPEMD160">
+            <summary>
+            RIPEMD160
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.SHA1">
+            <summary>
+            SHA1
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.SHA256">
+            <summary>
+            SHA256
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.SHA384">
+            <summary>
+            SHA384
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.SHA512">
+            <summary>
+            SHA512
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Filters.BooleanV1Filter">
             <summary>
             Boolean filter
@@ -5797,6 +5872,46 @@
             Message
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version2.Files.FileV2HashAlgorithm">
+            <summary>
+            File hash algorithm
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version2.Files.FileV2HashAlgorithm.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version2.Files.FileV2HashAlgorithm.MD5">
+            <summary>
+            MD5
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version2.Files.FileV2HashAlgorithm.RIPEMD160">
+            <summary>
+            RIPEMD160
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version2.Files.FileV2HashAlgorithm.SHA1">
+            <summary>
+            SHA1
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version2.Files.FileV2HashAlgorithm.SHA256">
+            <summary>
+            SHA256
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version2.Files.FileV2HashAlgorithm.SHA384">
+            <summary>
+            SHA384
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version2.Files.FileV2HashAlgorithm.SHA512">
+            <summary>
+            SHA512
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version2.Files.IDownloadFileV2Response">
             <summary>
             Download file response
@@ -5843,6 +5958,26 @@
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Files.IUploadFileV2Request.Size">
+            <summary>
+            Size
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version2.Files.IUploadFileV2Response">
+            <summary>
+            Upload file response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Files.IUploadFileV2Response.Algorithm">
+            <summary>
+            Algorithm
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Files.IUploadFileV2Response.Hash">
+            <summary>
+            Hash
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Files.IUploadFileV2Response.Size">
             <summary>
             Size
             </summary>

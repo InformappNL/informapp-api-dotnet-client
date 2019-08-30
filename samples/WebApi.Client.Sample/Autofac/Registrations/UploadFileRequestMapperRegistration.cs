@@ -7,7 +7,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
     /// <summary>
     /// Register dependencies in Autofac
     /// </summary>
-    internal class UploadFileMapperRegistration : IAutofacRegistration
+    internal class UploadFileRequestMapperRegistration : IAutofacRegistration
     {
         /// <summary>
         /// Register dependencies in Autofac
@@ -17,12 +17,12 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            _ = builder.RegisterGeneric(typeof(UploadFileV1Mapper<,>))
-                .As(typeof(IUploadFileMapper<,>))
+            _ = builder.RegisterGeneric(typeof(UploadFileV1RequestMapper<,>))
+                .As(typeof(IUploadFileRequestMapper<,>))
                 .InstancePerLifetimeScope();
 
-            _ = builder.RegisterGeneric(typeof(UploadFileV2Mapper<,>))
-                .As(typeof(IUploadFileMapper<,>))
+            _ = builder.RegisterGeneric(typeof(UploadFileV2RequestMapper<,>))
+                .As(typeof(IUploadFileRequestMapper<,>))
                 .InstancePerLifetimeScope();
         }
     }

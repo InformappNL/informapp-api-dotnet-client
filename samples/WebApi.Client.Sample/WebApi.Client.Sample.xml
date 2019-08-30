@@ -215,6 +215,17 @@
             </summary>
             <param name="builder">The builder</param>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.HasherRegisteration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.HasherRegisteration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.MethodProviderRegistration">
             <summary>
             Register dependencies in Autofac
@@ -292,12 +303,23 @@
             </summary>
             <param name="builder">The builder</param>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.UploadFileMapperRegistration">
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.UploadFileRequestMapperRegistration">
             <summary>
             Register dependencies in Autofac
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.UploadFileMapperRegistration.Register(Autofac.ContainerBuilder)">
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.UploadFileRequestMapperRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.UploadFileResponseMapperRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.UploadFileResponseMapperRegistration.Register(Autofac.ContainerBuilder)">
             <summary>
             Register dependencies in Autofac
             </summary>
