@@ -33,7 +33,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
             var response = await _client
                 .Execute(request, cancellationToken)
                 .ThrowIfFailed()
-                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                .ConfigureAwait(Await.Default);
 
             string directory = Path.GetTempPath();
 
@@ -59,11 +59,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
 
                 while ((read = await stream
                     .ReadAsync(buffer, 0, buffer.Length, cancellationToken)
-                    .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait)) > 0)
+                    .ConfigureAwait(Await.Default)) > 0)
                 {
                     await fileStream
                         .WriteAsync(buffer, 0, read, cancellationToken)
-                        .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                        .ConfigureAwait(Await.Default);
 
                     bytesWritten += read;
                 }

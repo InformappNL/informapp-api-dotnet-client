@@ -31,7 +31,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
         {
             var getValuesRequest = new GetValuesV1Request();
             var getValuesResponse = await Run<GetValuesV1Request, GetValuesV1Response>(getValuesRequest, cancellationToken)
-                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                .ConfigureAwait(Await.Default);
 
             Require.NotNull(getValuesResponse, nameof(getValuesResponse));
 
@@ -39,7 +39,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
 
             var putValuesRequest = new TestValuesV1Request();
             var putValuesResponse = await Run<TestValuesV1Request, TestValuesV1Response>(putValuesRequest, cancellationToken)
-                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                .ConfigureAwait(Await.Default);
 
             Require.NotNull(putValuesResponse, nameof(putValuesResponse));
         }
@@ -73,7 +73,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
                 .UseSerializer(() => new JsonNetSerializer());
 
             string accessToken = await GetToken(client, cancellationToken)
-                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                .ConfigureAwait(Await.Default);
 
             client.Authenticator = new JwtAuthenticator(accessToken);
 
@@ -84,7 +84,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
 
             var response = await client
                 .ExecuteTaskAsync<TResponse>(request, cancellationToken)
-                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                .ConfigureAwait(Await.Default);
 
             return response;
         }
@@ -135,7 +135,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
 
             var response = await client
                 .ExecuteTaskAsync<OAuth2TokenV1Response>(request, cancellationToken)
-                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                .ConfigureAwait(Await.Default);
 
             if (response.IsSuccessful == true)
             {

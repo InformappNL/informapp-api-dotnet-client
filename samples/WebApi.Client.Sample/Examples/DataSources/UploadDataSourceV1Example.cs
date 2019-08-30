@@ -36,7 +36,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources
 
                 var response = await _client.Execute(request, cancellationToken)
                     .ThrowIfFailed()
-                    .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                    .ConfigureAwait(Await.Default);
 
                 Require.NotNull(response, nameof(response));
             }

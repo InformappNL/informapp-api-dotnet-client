@@ -59,7 +59,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.BearerTokenProviders
 
             var tokenResponse = await _bearerTokenProvider
                 .GetToken(request, cancellationToken)
-                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                .ConfigureAwait(Await.Default);
 
             return tokenResponse;
         }

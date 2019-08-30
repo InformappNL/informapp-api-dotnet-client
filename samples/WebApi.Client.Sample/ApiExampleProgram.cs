@@ -39,7 +39,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
                 {
                     await example.Task
                         .Invoke(cancellationToken)
-                        .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                        .ConfigureAwait(Await.Default);
                 }
             }
         }

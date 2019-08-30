@@ -34,16 +34,16 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
         {
             // Obtain an app group id using a list request
             var appGroupId = await GetAppGroupId(cancellationToken)
-                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                .ConfigureAwait(Await.Default);
 
             if (appGroupId.HasValue == true)
             {
                 // Use it to execute a GET and HEAD request
                 await Get(appGroupId, cancellationToken)
-                    .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                    .ConfigureAwait(Await.Default);
 
                 await Head(appGroupId, cancellationToken)
-                    .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                    .ConfigureAwait(Await.Default);
             }
         }
 
@@ -56,7 +56,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
 
             var response = await _getClient.Execute(request, cancellationToken)
                 .ThrowIfFailed()
-                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                .ConfigureAwait(Await.Default);
 
             Require.NotNull(response, nameof(response));
         }
@@ -75,7 +75,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
 
             var response = await _getClient.Execute(request, cancellationToken)
                 .ThrowIfFailed()
-                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                .ConfigureAwait(Await.Default);
 
             Require.NotNull(response, nameof(response));
         }
@@ -91,7 +91,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
 
             var response = await _listClient.Execute(request, cancellationToken)
                 .ThrowIfFailed()
-                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                .ConfigureAwait(Await.Default);
 
             if (response.IsSuccessful == true && response.Model.Total > 1)
             {

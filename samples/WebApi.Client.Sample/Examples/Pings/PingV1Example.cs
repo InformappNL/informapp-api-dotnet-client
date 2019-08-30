@@ -25,7 +25,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Pings
 
             var response = await _client
                 .Execute(request, cancellationToken)
-                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                .ConfigureAwait(Await.Default);
 
             Require.NotNull(response, nameof(response));
         }

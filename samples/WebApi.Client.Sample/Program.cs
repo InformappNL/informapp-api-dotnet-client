@@ -55,7 +55,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
                     var program = new ApiExampleProgram(container);
 
                     await program.Start(cancellationToken)
-                        .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                        .ConfigureAwait(Await.Default);
                 }
             }
             catch (TaskCanceledException) when (isCancellationRequested == true)

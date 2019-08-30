@@ -30,7 +30,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
 
             var response = await _client.Execute(request, cancellationToken)
                 .ThrowIfFailed()
-                .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                .ConfigureAwait(Await.Default);
 
             Require.NotNull(response, nameof(response));
         }
