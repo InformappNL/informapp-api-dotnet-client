@@ -2938,7 +2938,7 @@
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.DownloadDataSource.DownloadDataSourceV1Response.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="!:DownloadTestFileV1Response"/> class.
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.DownloadDataSource.DownloadDataSourceV1Response"/> class.
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.DownloadDataSource.DownloadDataSourceV1Response.ContentType">
