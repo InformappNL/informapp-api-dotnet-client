@@ -330,9 +330,6 @@
     <Rule Id="IDE0055" Action="None" />
     <Rule Id="IDE0055WithoutSuggestion" Action="None" />
   </Rules>
-  <Rules AnalyzerId="Microsoft.CodeAnalysis.VersionCheckAnalyzer" RuleNamespace="Microsoft.CodeAnalysis.VersionCheckAnalyzer">
-    <Rule Id="CA9999" Action="None" />
-  </Rules>
   <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
     <Rule Id="CA1000" Action="None" />
     <Rule Id="CA1010" Action="None" />
