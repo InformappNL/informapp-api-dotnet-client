@@ -1,4 +1,5 @@
-﻿using Informapp.InformSystem.WebApi.Models.ExampleValues;
+﻿using Informapp.InformSystem.WebApi.Models.DataAnnotations;
+using Informapp.InformSystem.WebApi.Models.ExampleValues;
 using Informapp.InformSystem.WebApi.Models.Requests;
 using Informapp.InformSystem.WebApi.Models.Version1.Constants;
 using System;
@@ -148,6 +149,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.T
         /// Enum
         /// </summary>
         [DataMember]
+        [EnumValidation(typeof(ValuesV1Kind))]
         [ExampleValue(ValuesV1Kind.Zero)]
         public ValuesV1Kind? Enum { get; set; }
 

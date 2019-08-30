@@ -1,4 +1,5 @@
-﻿using Informapp.InformSystem.WebApi.Models.ExampleValues;
+﻿using Informapp.InformSystem.WebApi.Models.DataAnnotations;
+using Informapp.InformSystem.WebApi.Models.ExampleValues;
 using Informapp.InformSystem.WebApi.Models.Http;
 using Informapp.InformSystem.WebApi.Models.Requests;
 using Informapp.InformSystem.WebApi.Models.Version1.Constants;
@@ -20,6 +21,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.Up
         /// Algorithm
         /// </summary>
         [DataMember]
+        [EnumValidation(typeof(FileV1HashAlgorithm))]
         [ExampleValue(FileV1HashAlgorithm.SHA512)]
         public FileV1HashAlgorithm? Algorithm { get; set; }
 

@@ -1,4 +1,5 @@
-﻿using Informapp.InformSystem.WebApi.Models.ExampleValues;
+﻿using Informapp.InformSystem.WebApi.Models.DataAnnotations;
+using Informapp.InformSystem.WebApi.Models.ExampleValues;
 using Informapp.InformSystem.WebApi.Models.Version1.Constants;
 using System;
 using System.ComponentModel.DataAnnotations;
@@ -16,6 +17,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog
         /// Source
         /// </summary>
         [DataMember]
+        [EnumValidation(typeof(LogV1Source))]
         [ExampleValue(LogV1Source.WebUI)]
         [Required]
         public LogV1Source? Source { get; set; }
@@ -40,6 +42,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog
         /// Log level
         /// </summary>
         [DataMember]
+        [EnumValidation(typeof(LogV1Level))]
         [ExampleValue(LogV1Level.Error)]
         [Required]
         public LogV1Level? Level { get; set; }
