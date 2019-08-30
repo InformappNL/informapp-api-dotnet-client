@@ -14,16 +14,13 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Requires
         /// <typeparam name="T">Type of object to check</typeparam>
         /// <param name="instance">The instance to check</param>
         /// <param name="parameterName">The name of the parameter</param>
-        /// <returns>The instance</returns>
         /// <exception cref="InvalidOperationException"><paramref name="instance"/> is null</exception>
-        public static T Required<T>(T instance, string parameterName)
+        public static void Required<T>(T instance, string parameterName)
         {
             if (IsNull(instance) == true)
             {
                 ThrowNull(parameterName);
             }
-
-            return instance;
         }
 
         /// <summary>
@@ -32,17 +29,14 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Requires
         /// <typeparam name="T">Type of object to check</typeparam>
         /// <param name="instance">The instance to check</param>
         /// <param name="parameterName">The name of the parameter</param>
-        /// <returns>The instance</returns>
         /// <exception cref="InvalidOperationException"><paramref name="instance"/> is null</exception>
-        public static T NotNull<T>(T instance, string parameterName)
+        public static void NotNull<T>(T instance, string parameterName)
             where T : class
         {
             if (instance is null)
             {
                 ThrowNull(parameterName);
             }
-
-            return instance;
         }
 
         /// <summary>
@@ -51,17 +45,14 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Requires
         /// <typeparam name="T">Type of object to check</typeparam>
         /// <param name="instance">The instance to check</param>
         /// <param name="parameterName">The name of the parameter</param>
-        /// <returns>The instance</returns>
         /// <exception cref="InvalidOperationException"><paramref name="instance"/> is null</exception>
-        public static T? NotNull<T>(T? instance, string parameterName)
+        public static void NotNull<T>(T? instance, string parameterName)
             where T : struct
         {
             if (instance.HasValue == false)
             {
                 ThrowNull(parameterName);
             }
-
-            return instance;
         }
 
         /// <summary>

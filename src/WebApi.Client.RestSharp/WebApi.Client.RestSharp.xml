@@ -318,7 +318,6 @@
             <typeparam name="T">Type of object to check</typeparam>
             <param name="instance">The instance to check</param>
             <param name="parameterName">The name of the parameter</param>
-            <returns>The instance</returns>
             <exception cref="T:System.InvalidOperationException"><paramref name="instance"/> is null</exception>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Requires.Require.NotNull``1(``0,System.String)">
@@ -328,7 +327,6 @@
             <typeparam name="T">Type of object to check</typeparam>
             <param name="instance">The instance to check</param>
             <param name="parameterName">The name of the parameter</param>
-            <returns>The instance</returns>
             <exception cref="T:System.InvalidOperationException"><paramref name="instance"/> is null</exception>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Requires.Require.NotNull``1(System.Nullable{``0},System.String)">
@@ -338,7 +336,6 @@
             <typeparam name="T">Type of object to check</typeparam>
             <param name="instance">The instance to check</param>
             <param name="parameterName">The name of the parameter</param>
-            <returns>The instance</returns>
             <exception cref="T:System.InvalidOperationException"><paramref name="instance"/> is null</exception>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Requires.Require.Assignable``2">
