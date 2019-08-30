@@ -31,7 +31,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
             _getClient = getClient;
         }
 
-        public async Task Run(CancellationToken cancellationToken)
+        public async Task Execute(CancellationToken cancellationToken)
         {
             // Obtain an app group id using a list request
             var appGroupId = await GetAppGroupId(cancellationToken)

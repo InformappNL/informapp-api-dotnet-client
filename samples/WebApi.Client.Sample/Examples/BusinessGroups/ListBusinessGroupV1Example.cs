@@ -20,7 +20,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.BusinessGroups
             _client = client;
         }
 
-        public async Task Run(CancellationToken cancellationToken)
+        public async Task Execute(CancellationToken cancellationToken)
         {
             var request = new ListBusinessGroupV1Request
             {

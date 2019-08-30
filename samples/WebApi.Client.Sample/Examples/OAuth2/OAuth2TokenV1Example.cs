@@ -28,7 +28,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2
             _provider = provider;
         }
 
-        public async Task Run(CancellationToken cancellationToken)
+        public async Task Execute(CancellationToken cancellationToken)
         {
             string username = _provider.GetUserName();
             string password = _provider.GetPassword();

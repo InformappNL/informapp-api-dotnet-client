@@ -25,7 +25,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
             _client = client;
         }
 
-        public async Task Run(CancellationToken cancellationToken)
+        public async Task Execute(CancellationToken cancellationToken)
         {
             using (var request = GetInMemoryFileRequest())
             //using (var request = GetFileFromFileSystem())

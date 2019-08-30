@@ -18,7 +18,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
 
         }
 
-        public async Task Run(CancellationToken cancellationToken)
+        public async Task Execute(CancellationToken cancellationToken)
         {
             var factory = new ApiClientFactory();
 

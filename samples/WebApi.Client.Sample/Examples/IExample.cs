@@ -5,6 +5,6 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples
 {
     internal interface IExample
     {
-        Task Run(CancellationToken cancellationToken);
+        Task Execute(CancellationToken cancellationToken);
     }
 }

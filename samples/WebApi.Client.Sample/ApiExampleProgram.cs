@@ -2,6 +2,8 @@
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups;
+using Informapp.InformSystem.WebApi.Client.Sample.Examples.BusinessGroupCredits;
+using Informapp.InformSystem.WebApi.Client.Sample.Examples.BusinessGroups;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Customers;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationData;
@@ -13,6 +15,7 @@ using Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Pings;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values;
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -27,54 +30,68 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
 
         public async Task Start(CancellationToken cancellationToken)
         {
-            var c = cancellationToken;
+            var examples = GetExamples();
 
-            var tasks = new[]
+            foreach (var example in examples)
             {
-                Run<ApiClientExample>(true, c),
-                Run<ApiClientFactoryExample>(true, c),
-                Run<DependencyInjectionExample>(true, c),
-                Run<RestSharpExample>(true, c),
+                if (example.Execute == true)
+                {
+                    await example.Task
+                        .Invoke(cancellationToken)
+                        .ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
+                }
+            }
+        }
 
-                Run<OAuth2TokenV1Example>(true, c),
-                Run<EnvironmentOAuth2TokenV1Example>(true, c),
-                Run<OAuth2TokenV2Example>(false, c),
+        private IEnumerable<ExampleExecutionModel> GetExamples()
+        {
+            // Set the examples to run, true to enable, false to disable
+            var examples = new[]
+            {
+                Create<ApiClientExample>(true),
+                Create<ApiClientFactoryExample>(true),
+                Create<DependencyInjectionExample>(true),
+                Create<RestSharpExample>(true),
 
-                Run<PingV1Example>(true, c),
+                Create<OAuth2TokenV1Example>(true),
+                Create<EnvironmentOAuth2TokenV1Example>(true),
+                Create<OAuth2TokenV2Example>(false),
 
-                Run<GetValuesV1Example>(true, c),
-                Run<TestValuesV1Example>(true, c),
+                Create<PingV1Example>(true),
 
-                Run<DownloadTestFileV1Example>(true, c),
-                Run<UploadTestFileV1Example>(true, c),
+                Create<GetValuesV1Example>(true),
+                Create<TestValuesV1Example>(true),
 
-                Run<CreateAppGroupV1Example>(false, c),
-                Run<DeleteAppGroupV1Example>(false, c),
-                Run<EditAppGroupV1Example>(false, c),
-                Run<GetAppGroupV1Example>(true, c),
-                Run<ListAppGroupV1Example>(true, c),
+                Create<DownloadTestFileV1Example>(true),
+                Create<UploadTestFileV1Example>(true),
 
-                Run<AddAppGroupMemberV1Example>(false, c),
-                Run<ListAppGroupMemberV1Example>(true, c),
-                Run<RemoveAppGroupMemberV1Example>(false, c),
+                Create<CreateAppGroupV1Example>(false),
+                Create<DeleteAppGroupV1Example>(false),
+                Create<EditAppGroupV1Example>(false),
+                Create<GetAppGroupV1Example>(true),
+                Create<ListAppGroupV1Example>(true),
 
-                Run<ListCustomerV1Example>(true, c),
+                Create<AddAppGroupMemberV1Example>(false),
+                Create<ListAppGroupMemberV1Example>(true),
+                Create<RemoveAppGroupMemberV1Example>(false),
 
-                Run<ListFormV1Example>(true, c),
+                Create<ListBusinessGroupV1Example>(true),
+                Create<ListBusinessGroupCreditCreditV1Example>(true),
 
-                Run<ListFormRegistrationStatsV1Example>(true, c),
+                Create<ListCustomerV1Example>(true),
 
-                Run<ListFormRegistrationV1Example>(true, c),
+                Create<ListFormV1Example>(true),
 
-                Run<ListFormRegistrationEmailV1Example>(true, c),
+                Create<ListFormRegistrationStatsV1Example>(true),
 
-                Run<ListFormRegistrationDataV1Example>(true, c),
+                Create<ListFormRegistrationV1Example>(true),
+
+                Create<ListFormRegistrationEmailV1Example>(true),
+
+                Create<ListFormRegistrationDataV1Example>(true),
             };
 
-            foreach (var task in tasks)
-            {
-                await task.ConfigureAwait(WebApiClientSampleProjectSettings.ConfigureAwait);
-            }
+            return examples;
         }
     }
 }

@@ -27,7 +27,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
 
         }
 
-        public async Task Run(CancellationToken cancellationToken)
+        public async Task Execute(CancellationToken cancellationToken)
         {
             var getValuesRequest = new GetValuesV1Request();
             var getValuesResponse = await Run<GetValuesV1Request, GetValuesV1Response>(getValuesRequest, cancellationToken)

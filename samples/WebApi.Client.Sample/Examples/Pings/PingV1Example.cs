@@ -19,7 +19,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Pings
             _client = client;
         }
 
-        public async Task Run(CancellationToken cancellationToken)
+        public async Task Execute(CancellationToken cancellationToken)
         {
             var request = new PingV1Request();
 

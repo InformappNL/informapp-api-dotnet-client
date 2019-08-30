@@ -20,7 +20,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
             _client = client;
         }
 
-        public async Task Run(CancellationToken cancellationToken)
+        public async Task Execute(CancellationToken cancellationToken)
         {
             var request = new GetValuesV1Request();
 
