@@ -1,4 +1,5 @@
 ﻿using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.DeleteAppGroup;
+using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.EditAppGroup;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.GetAppGroup;
 
 namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups
@@ -9,7 +10,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups
 
         internal const string CreateRoute = Route;
         internal const string DeleteRoute = Route + "/{" + nameof(DeleteAppGroupV1Request.AppGroupId) + "}";
-        internal const string EditRoute = Route + "/{" + nameof(DeleteAppGroupV1Request.AppGroupId) + "}";
+        internal const string EditRoute = Route + "/{" + nameof(EditAppGroupV1Request.AppGroupId) + "}";
         internal const string GetRoute = Route + "/{" + nameof(GetAppGroupV1Request.AppGroupId) + "}";
         internal const string ListRoute = Route;
 
