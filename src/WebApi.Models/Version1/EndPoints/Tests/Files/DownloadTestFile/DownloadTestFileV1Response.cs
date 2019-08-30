@@ -76,6 +76,8 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.Do
         public void Dispose()
         {
             _response.Dispose();
+
+            GC.SuppressFinalize(this);
         }
     }
 }

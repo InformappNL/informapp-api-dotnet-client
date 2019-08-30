@@ -124,6 +124,8 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.Up
         public void Dispose()
         {
             _request.Dispose();
+
+            GC.SuppressFinalize(this);
         }
     }
 }

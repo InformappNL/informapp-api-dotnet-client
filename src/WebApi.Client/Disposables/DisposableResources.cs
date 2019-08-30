@@ -73,6 +73,8 @@ namespace Informapp.InformSystem.WebApi.Client.Disposables
 
                 IsDisposed = true;
             }
+
+            GC.SuppressFinalize(this);
         }
     }
 }

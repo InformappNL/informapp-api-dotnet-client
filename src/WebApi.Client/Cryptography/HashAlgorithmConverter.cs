@@ -21,6 +21,7 @@ namespace Informapp.InformSystem.WebApi.Client.Cryptography
 
             if (source.HasValue == true)
             {
+#pragma warning disable CA2000 // Dispose objects before losing scope
                 switch (source)
                 {
                     case HashAlgorithmKind.MD5:
@@ -44,6 +45,7 @@ namespace Informapp.InformSystem.WebApi.Client.Cryptography
                     default:
                         throw new ArgumentException("Unsupported value", nameof(source));
                 }
+#pragma warning restore CA2000 // Dispose objects before losing scope
             }
 
             return ConvertResult.FromReference(hashAlgorithm);
