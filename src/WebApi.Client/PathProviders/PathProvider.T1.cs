@@ -21,15 +21,17 @@ namespace Informapp.InformSystem.WebApi.Client.PathProviders
             .ThrowIfMultiple()
             .Attribute;
 
-        private static readonly IList<PropertyFuncModel<T>> _properties;
+        private static readonly IList<PropertyFuncModel<T>> _properties = GetProperties();
 
-        static PathProvider()
+        private static IList<PropertyFuncModel<T>> GetProperties()
         {
+            IList<PropertyFuncModel<T>> properties = null;
+
             if (_attribute != null)
             {
                 var factory = new PropertyFuncFactory<T>();
 
-                var properties = typeof(T)
+                properties = typeof(T)
                     .GetProperties(BindingFlags.Public | BindingFlags.Instance)
                     .Where(x => x.CanRead)
                     .Where(x => _attribute.Pattern.Contains('{' + x.Name + '}'))
@@ -39,9 +41,9 @@ namespace Informapp.InformSystem.WebApi.Client.PathProviders
                         x.PropertyType.IsClass || x.PropertyType.IsInterface,
                         factory.Create(x)))
                     .ToList();
-
-                _properties = properties;
             }
+
+            return properties;
         }
 
         /// <summary>

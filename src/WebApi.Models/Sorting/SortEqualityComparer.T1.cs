@@ -11,9 +11,9 @@ namespace Informapp.InformSystem.WebApi.Models.Sorting
     internal class SortEqualityComparer<T> : IEqualityComparer<T>
         where T : struct, Enum, IComparable, IFormattable, IConvertible
     {
-        private static readonly IDictionary<T, string> _dictionary;
+        private static readonly IDictionary<T, string> _dictionary = GetDictionary();
 
-        static SortEqualityComparer()
+        private static IDictionary<T, string> GetDictionary()
         {
             if (typeof(T).IsEnum == false)
             {
@@ -41,7 +41,7 @@ namespace Informapp.InformSystem.WebApi.Models.Sorting
                 throw new InvalidOperationException(typeof(T).Name + " has members without " + nameof(SortNameAttribute));
             }
 
-            _dictionary = values
+            return values
                 .ToDictionary(x => x.Value, x => x.Attribute.Name);
         }
 

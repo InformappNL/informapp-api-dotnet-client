@@ -118,15 +118,15 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
 
         private class Set<T>
         {
-            private static readonly HashSet<T> _hashSet;
+            private static readonly HashSet<T> _hashSet = GetHashSet();
 
-            static Set()
+            private static HashSet<T> GetHashSet()
             {
                 var values = (T[])Enum.GetValues(typeof(T));
 
                 var hashSet = new HashSet<T>(values);
 
-                _hashSet = hashSet;
+                return hashSet;
             }
 
             public bool Contains(T key)

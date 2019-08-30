@@ -16,9 +16,9 @@ namespace Informapp.InformSystem.WebApi.Client.DictionaryBuilders
         where TModel : class
         where TAttribute : Attribute
     {
-        private static readonly IEnumerable<Property> _properties;
+        private static readonly IEnumerable<Property> _properties = GetProperties();
 
-        static DictionaryBuilder()
+        private static IEnumerable<Property> GetProperties()
         {
             var properties = typeof(TModel).GetProperties(BindingFlags.Public | BindingFlags.Instance)
                 .Where(x => x.CanRead)
@@ -30,7 +30,7 @@ namespace Informapp.InformSystem.WebApi.Client.DictionaryBuilders
                 })
                 .ToList();
 
-            _properties = properties;
+            return properties;
         }
 
         private class Property
