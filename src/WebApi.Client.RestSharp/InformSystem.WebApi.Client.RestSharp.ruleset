@@ -2,6 +2,10 @@
 <RuleSet Name="Rules for BaseSystem.WebApi.Client.RestSharp" Description="Code analysis rules for BaseSystem.WebApi.Client.RestSharp.csproj." ToolsVersion="16.0">
   <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
     <Rule Id="CA1801" Action="Warning" />
+    <Rule Id="CA2000" Action="Warning" />
+    <Rule Id="CA2202" Action="Warning" />
+    <Rule Id="CA2213" Action="Warning" />
+    <Rule Id="CA2215" Action="Warning" />
   </Rules>
   <Rules AnalyzerId="Microsoft.CodeAnalysis.CSharp" RuleNamespace="Microsoft.CodeAnalysis.CSharp">
     <Rule Id="AD0001" Action="None" />
@@ -383,17 +387,14 @@
     <Rule Id="CA1307" Action="None" />
     <Rule Id="CA1308" Action="None" />
     <Rule Id="CA1401" Action="None" />
-    <Rule Id="CA1816" Action="None" />
     <Rule Id="CA1820" Action="None" />
     <Rule Id="CA1826" Action="None" />
-    <Rule Id="CA2000" Action="None" />
     <Rule Id="CA2002" Action="None" />
     <Rule Id="CA2008" Action="None" />
     <Rule Id="CA2009" Action="None" />
     <Rule Id="CA2100" Action="None" />
     <Rule Id="CA2101" Action="None" />
     <Rule Id="CA2208" Action="None" />
-    <Rule Id="CA2213" Action="None" />
     <Rule Id="CA2216" Action="None" />
     <Rule Id="CA2229" Action="None" />
     <Rule Id="CA2235" Action="None" />
