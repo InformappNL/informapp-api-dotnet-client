@@ -11,20 +11,20 @@ using System.ComponentModel.DataAnnotations;
 using System.Net;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues
+namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues
 {
     /// <summary>
-    /// Test values request
+    /// Test body values request
     /// </summary>
     [DataContract(Namespace = Version1Constants.Namespace)]
     [HttpMethod(HttpMethod.Put)]
-    [Path(ValuesV1Constants.TestRoute)]
+    [Path(ValuesV1Constants.TestBodyRoute)]
     [Response(HttpStatusCode.BadRequest, typeof(BadRequestV1Response))]
     [Response(HttpStatusCode.Forbidden, typeof(ForbiddenV1Response))]
     [Response(HttpStatusCode.InternalServerError, typeof(InternalServerErrorV1Response))]
     [Response(HttpStatusCode.Unauthorized, typeof(UnauthorizedV1Response))]
-    public partial class TestValuesV1Request : BaseRequest,
-        IRequest<TestValuesV1Response>
+    public partial class TestBodyValuesV1Request : BaseRequest,
+        IRequest<TestBodyValuesV1Response>
     {
         private const int StringMaxLength = 20;
         private const int UriMaxLength = 120;
@@ -108,7 +108,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.T
         /// </summary>
         [BodyParameter]
         [DataMember]
-        [ExampleLocalizedUri(ValuesV1Constants.TestRoute)]
+        [ExampleLocalizedUri(ValuesV1Constants.TestBodyRoute)]
         [MaxUriLength(UriMaxLength)]
         public Uri Uri { get; set; }
 
@@ -162,14 +162,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.T
         public TimeSpan? TimeSpan { get; set; }
 
         /// <summary>
-        /// DateTime
-        /// </summary>
-        [BodyParameter]
-        [DataMember]
-        [ExampleConstant(ExampleConstantKind.DateTimeNow)]
-        public DateTime? DateTime { get; set; }
-
-        /// <summary>
         /// DateTimeOffset
         /// </summary>
         [BodyParameter]
@@ -217,7 +209,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.T
         /// </summary>
         [BodyParameter]
         [DataMember]
-        [ExampleMemberProvider(typeof(TestValuesV1Request), nameof(Dictionary))]
+        [ExampleMemberProvider(typeof(TestBodyValuesV1Request), nameof(Dictionary))]
         [MaxItems(3)]
         public IReadOnlyDictionary<int, int> Dictionary { get; set; }
     }

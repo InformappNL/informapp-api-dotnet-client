@@ -11,7 +11,7 @@ using Informapp.InformSystem.WebApi.Models.Requests;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.OAuth2Token;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues;
+using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues;
 using RestSharp;
 using RestSharp.Authenticators;
 using System;
@@ -37,8 +37,8 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
 
 
 
-            var putValuesRequest = new TestValuesV1Request();
-            var putValuesResponse = await Run<TestValuesV1Request, TestValuesV1Response>(putValuesRequest, cancellationToken)
+            var putValuesRequest = new TestBodyValuesV1Request();
+            var putValuesResponse = await Run<TestBodyValuesV1Request, TestBodyValuesV1Response>(putValuesRequest, cancellationToken)
                 .ConfigureAwait(Await.Default);
 
             Require.NotNull(putValuesResponse, nameof(putValuesResponse));

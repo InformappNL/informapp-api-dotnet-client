@@ -1,8 +1,9 @@
 ﻿using Informapp.InformSystem.WebApi.Client.Clients;
+using Informapp.InformSystem.WebApi.Client.Requests;
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues;
+using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues;
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -10,12 +11,14 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
 {
-    internal class TestValuesV1Example : IExample
+    internal class TestBodyValuesV1Example : IExample
     {
-        private readonly IApiClient<TestValuesV1Request, TestValuesV1Response> _client;
+        private readonly TestBodyValuesV1Comparer _comparer = new TestBodyValuesV1Comparer();
 
-        public TestValuesV1Example(
-            IApiClient<TestValuesV1Request, TestValuesV1Response> client)
+        private readonly IApiClient<TestBodyValuesV1Request, TestBodyValuesV1Response> _client;
+
+        public TestBodyValuesV1Example(
+            IApiClient<TestBodyValuesV1Request, TestBodyValuesV1Response> client)
         {
             Argument.NotNull(client, nameof(client));
 
@@ -24,16 +27,16 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
 
         public async Task Execute(CancellationToken cancellationToken)
         {
-            var request = CreateRequest();
+            var model = CreateRequest();
+
+            var request = ApiRequest.Create(model);
 
             var response = await _client
                 .Execute(request, cancellationToken)
                 .ThrowIfFailed()
                 .ConfigureAwait(Await.Default);
 
-            var comparer = new TestValuesV1Comparer();
-
-            bool equals = comparer.Equals(request, response.Model);
+            bool equals = _comparer.Equals(request.Model, response.Model);
 
             if (equals == false)
             {
@@ -41,14 +44,13 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
             }
         }
 
-        private static TestValuesV1Request CreateRequest()
+        private static TestBodyValuesV1Request CreateRequest()
         {
-            var request = new TestValuesV1Request
+            var request = new TestBodyValuesV1Request
             {
                 Boolean = true,
                 Byte = 7,
                 Char = 'F',
-                DateTime = DateTime.UtcNow,
                 DateTimeOffset = DateTimeOffset.Now,
                 Decimal = 123.456M,
                 Double = 123.456D,
@@ -68,11 +70,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
                 Array = new[] { 1, 2, 3 },
                 Bytes = new byte[] { 1, 2, 3 },
                 Dictionary = new Dictionary<int, int>
-                {
-                    { 1, 10 },
-                    { 2, 20 },
-                    { 3, 30 },
-                },
+                    {
+                        { 1, 10 },
+                        { 2, 20 },
+                        { 3, 30 },
+                    },
             };
 
             return request;

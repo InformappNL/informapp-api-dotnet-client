@@ -1,12 +1,16 @@
-﻿using Informapp.InformSystem.WebApi.Client.Sample.Comparers;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues;
+﻿using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
+using Informapp.InformSystem.WebApi.Client.Sample.Comparers;
+using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
 {
-    internal class TestValuesV1Comparer
+    internal class TestBodyValuesV1Comparer
     {
-        public bool Equals(TestValuesV1Request request, TestValuesV1Response response)
+        public bool Equals(TestBodyValuesV1Request request, TestBodyValuesV1Response response)
         {
+            Argument.NotNull(request, nameof(request));
+            Argument.NotNull(response, nameof(response));
+
             var collectionEqualityComparer = new CollectionEqualityComparer();
             var dictionaryEqualityComparer = new DictionaryEqualityComparer();
 
@@ -15,7 +19,6 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
             if ((request.Boolean == response.Boolean &&
                 request.Byte == response.Byte &&
                 request.Char == response.Char &&
-                request.DateTime == response.DateTime &&
                 request.DateTimeOffset == response.DateTimeOffset &&
                 request.Decimal == response.Decimal &&
                 request.Double == response.Double &&

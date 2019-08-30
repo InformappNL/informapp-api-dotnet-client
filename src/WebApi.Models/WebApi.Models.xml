@@ -5283,242 +5283,232 @@
             Dictionary
             </summary>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request">
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request">
             <summary>
-            Test values request
+            Test body values request
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.Int16">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.Int16">
             <summary>
             Integer (16 bits)
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.Int32">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.Int32">
             <summary>
             Integer (32 bits)
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.Int64">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.Int64">
             <summary>
             Integer (64 bits)
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.UnsignedInt16">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.UnsignedInt16">
             <summary>
             Unsigned integer (16 bits)
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.UnsignedInt32">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.UnsignedInt32">
             <summary>
             Unsigned integer (32 bits)
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.UnsignedInt64">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.UnsignedInt64">
             <summary>
             Unsigned integer (64 bits)
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.Byte">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.Byte">
             <summary>
             Byte
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.SignedByte">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.SignedByte">
             <summary>
             Signed byte
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.Char">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.Char">
             <summary>
             Char
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.Uri">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.Uri">
             <summary>
             Uri
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.Single">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.Single">
             <summary>
             Single
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.Double">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.Double">
             <summary>
             Double
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.Decimal">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.Decimal">
             <summary>
             Decimal
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.String">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.String">
             <summary>
             String
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.Uuid">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.Uuid">
             <summary>
             Universally unique identifier (UUID)
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.TimeSpan">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.TimeSpan">
             <summary>
             TimeSpan
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.DateTime">
-            <summary>
-            DateTime
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.DateTimeOffset">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.DateTimeOffset">
             <summary>
             DateTimeOffset
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.Boolean">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.Boolean">
             <summary>
             Boolean
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.Enum">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.Enum">
             <summary>
             Enum
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.Array">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.Array">
             <summary>
             Array
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.Bytes">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.Bytes">
             <summary>
             Bytes
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Request.Dictionary">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request.Dictionary">
             <summary>
             Dictionary
             </summary>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response">
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response">
             <summary>
-            Test values response
+            Test body values response
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.Int16">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.Int16">
             <summary>
             Integer (16 bits)
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.Int32">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.Int32">
             <summary>
             Integer (32 bits)
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.Int64">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.Int64">
             <summary>
             Integer (64 bits)
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.UnsignedInt16">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.UnsignedInt16">
             <summary>
             Unsigned integer (16 bits)
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.UnsignedInt32">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.UnsignedInt32">
             <summary>
             Unsigned integer (32 bits)
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.UnsignedInt64">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.UnsignedInt64">
             <summary>
             Unsigned integer (64 bits)
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.Byte">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.Byte">
             <summary>
             Byte
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.SignedByte">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.SignedByte">
             <summary>
             Signed byte
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.Char">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.Char">
             <summary>
             Char
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.Uri">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.Uri">
             <summary>
             Uri
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.Single">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.Single">
             <summary>
             Single
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.Double">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.Double">
             <summary>
             Double
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.Decimal">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.Decimal">
             <summary>
             Decimal
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.String">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.String">
             <summary>
             String
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.Uuid">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.Uuid">
             <summary>
             Universally unique identifier (UUID)
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.TimeSpan">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.TimeSpan">
             <summary>
             TimeSpan
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.DateTime">
-            <summary>
-            DateTime
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.DateTimeOffset">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.DateTimeOffset">
             <summary>
             DateTimeOffset
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.Boolean">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.Boolean">
             <summary>
             Boolean
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.Enum">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.Enum">
             <summary>
             Enum
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.Array">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.Array">
             <summary>
             Array
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.Bytes">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.Bytes">
             <summary>
             Bytes
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues.TestValuesV1Response.Dictionary">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response.Dictionary">
             <summary>
             Dictionary
             </summary>

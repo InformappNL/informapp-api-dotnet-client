@@ -6,13 +6,13 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues
+namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues
 {
     /// <summary>
-    /// Test values response
+    /// Test body values response
     /// </summary>
     [DataContract(Namespace = Version1Constants.Namespace)]
-    public partial class TestValuesV1Response : BaseResponse
+    public partial class TestBodyValuesV1Response : BaseResponse
     {
         private const int StringMaxLength = 20;
 
@@ -84,7 +84,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.T
         /// Uri
         /// </summary>
         [DataMember]
-        [ExampleLocalizedUri(ValuesV1Constants.TestRoute)]
+        [ExampleLocalizedUri(ValuesV1Constants.TestBodyRoute)]
         public Uri Uri { get; set; }
 
         /// <summary>
@@ -131,13 +131,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.T
         public TimeSpan? TimeSpan { get; set; }
 
         /// <summary>
-        /// DateTime
-        /// </summary>
-        [DataMember]
-        [ExampleConstant(ExampleConstantKind.DateTimeNow)]
-        public DateTime? DateTime { get; set; }
-
-        /// <summary>
         /// DateTimeOffset
         /// </summary>
         [DataMember]
@@ -176,7 +169,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.T
         /// Dictionary
         /// </summary>
         [DataMember]
-        [ExampleMemberProvider(typeof(TestValuesV1Response), nameof(Dictionary))]
+        [ExampleMemberProvider(typeof(TestBodyValuesV1Response), nameof(Dictionary))]
         public IReadOnlyDictionary<int, int> Dictionary { get; set; }
     }
 }
