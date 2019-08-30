@@ -22,6 +22,8 @@ namespace Informapp.InformSystem.WebApi.Models.Http
             {
                 case Accept.OctetStream:
                     break;
+                case Accept.Json:
+                    throw new ArgumentException("Unsupported value", nameof(accept));
                 default:
                     throw new ArgumentException("Unsupported value", nameof(accept));
             }
