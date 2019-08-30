@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Informapp.InformSystem.WebApi.Models.Arguments;
+using System;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
@@ -6,6 +7,7 @@ using System.Threading.Tasks;
 namespace Informapp.InformSystem.WebApi.Models.ExampleValues
 {
     internal class ExampleStream : ExampleStreamBase,
+        IExampleStream,
         IDisposable
     {
         private readonly SemaphoreSlim _semaphoreSlim = new SemaphoreSlim(1, 1);
@@ -15,8 +17,12 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
         public ExampleStream(
             MemoryStream stream) : base()
         {
+            Argument.NotNull(stream, nameof(stream));
+
             _stream = stream;
         }
+
+        public override long Length => _stream.Length;
 
         public override async Task CopyToAsync(Stream destination, int bufferSize, CancellationToken cancellationToken)
         {
@@ -33,6 +39,21 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
             {
                 _semaphoreSlim.Release();
             }
+        }
+
+        public override bool Equals(object obj)
+        {
+            return _stream.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return _stream.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return _stream.ToString();
         }
 
         public void Dispose()

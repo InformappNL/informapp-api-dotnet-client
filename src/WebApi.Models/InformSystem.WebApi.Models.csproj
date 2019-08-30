@@ -90,6 +90,7 @@
     <Compile Include="ExampleValues\ExampleValueAttribute.cs" />
     <Compile Include="ExampleValues\ExampleValuesContainer.cs" />
     <Compile Include="ExampleValues\IExampleMemberProvider.cs" />
+    <Compile Include="ExampleValues\IExampleStream.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Http\Accept.cs" />
     <Compile Include="Http\AcceptAttribute.cs" />
