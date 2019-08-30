@@ -63,19 +63,6 @@
     <Rule Id="CS1066" Action="None" />
     <Rule Id="CS1072" Action="None" />
     <Rule Id="CS1522" Action="None" />
-    <Rule Id="CS1570" Action="None" />
-    <Rule Id="CS1571" Action="None" />
-    <Rule Id="CS1572" Action="None" />
-    <Rule Id="CS1573" Action="None" />
-    <Rule Id="CS1574" Action="None" />
-    <Rule Id="CS1580" Action="None" />
-    <Rule Id="CS1581" Action="None" />
-    <Rule Id="CS1584" Action="None" />
-    <Rule Id="CS1587" Action="None" />
-    <Rule Id="CS1589" Action="None" />
-    <Rule Id="CS1590" Action="None" />
-    <Rule Id="CS1591" Action="None" />
-    <Rule Id="CS1592" Action="None" />
     <Rule Id="CS1616" Action="None" />
     <Rule Id="CS1633" Action="None" />
     <Rule Id="CS1634" Action="None" />
@@ -93,15 +80,9 @@
     <Rule Id="CS1700" Action="None" />
     <Rule Id="CS1701" Action="None" />
     <Rule Id="CS1702" Action="None" />
-    <Rule Id="CS1710" Action="None" />
-    <Rule Id="CS1711" Action="None" />
-    <Rule Id="CS1712" Action="None" />
     <Rule Id="CS1717" Action="None" />
     <Rule Id="CS1718" Action="None" />
     <Rule Id="CS1720" Action="None" />
-    <Rule Id="CS1723" Action="None" />
-    <Rule Id="CS1734" Action="None" />
-    <Rule Id="CS1735" Action="None" />
     <Rule Id="CS1762" Action="None" />
     <Rule Id="CS1927" Action="None" />
     <Rule Id="CS1956" Action="None" />
@@ -420,6 +401,7 @@
     <Rule Id="CA2241" Action="None" />
     <Rule Id="CA2242" Action="None" />
     <Rule Id="CA2243" Action="None" />
+    <Rule Id="CA3009" Action="Warning" />
     <Rule Id="CA3061" Action="None" />
     <Rule Id="CA5350" Action="None" />
     <Rule Id="CA5351" Action="None" />
@@ -429,12 +411,7 @@
     <Rule Id="CA5363" Action="None" />
     <Rule Id="CA5364" Action="None" />
     <Rule Id="CA5365" Action="None" />
-    <Rule Id="CA5366" Action="None" />
     <Rule Id="CA5368" Action="None" />
-    <Rule Id="CA5369" Action="None" />
-    <Rule Id="CA5370" Action="None" />
-    <Rule Id="CA5371" Action="None" />
-    <Rule Id="CA5372" Action="None" />
     <Rule Id="CA5373" Action="None" />
     <Rule Id="CA5374" Action="None" />
     <Rule Id="CA5376" Action="None" />
