@@ -6,7 +6,6 @@ using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Models.Requests;
 using Informapp.InformSystem.WebApi.Models.Responses;
 using System;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 

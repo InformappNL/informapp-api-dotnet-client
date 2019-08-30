@@ -1,5 +1,4 @@
-﻿using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Client.Requests;
+﻿using Informapp.InformSystem.WebApi.Client.Requests;
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Client.Sample.Clients;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues;

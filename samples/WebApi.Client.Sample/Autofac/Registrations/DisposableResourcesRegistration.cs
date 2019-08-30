@@ -1,11 +1,6 @@
 ﻿using Autofac;
 using Informapp.InformSystem.WebApi.Client.Disposables;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
 {

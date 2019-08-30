@@ -4,10 +4,6 @@ using Informapp.InformSystem.WebApi.Client.RestSharp.Arguments;
 using Informapp.InformSystem.WebApi.Models.Http;
 using RestSharp;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators
 {

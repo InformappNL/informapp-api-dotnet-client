@@ -1,10 +1,5 @@
 ﻿using Informapp.InformSystem.WebApi.Models.Version1.Constants;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile
 {

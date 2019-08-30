@@ -1,10 +1,7 @@
 ﻿using Informapp.InformSystem.WebApi.Client.Arguments;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Responses
 {

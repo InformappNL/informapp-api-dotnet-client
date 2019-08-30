@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Informapp.InformSystem.WebApi.Models.Http
+﻿namespace Informapp.InformSystem.WebApi.Models.Http
 {
     // Source: https://stackoverflow.com/questions/11037004/are-there-any-constants-for-the-default-http-headers
     /// <summary>
