@@ -25,7 +25,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients
             ApiRequest<TRequest> request)
 
             where TRequest : class, IRequest<TResponse>
-            where TResponse : class
+            where TResponse : class, new()
         {
             Argument.NotNull(client, nameof(client));
             Argument.NotNull(request, nameof(request));
@@ -46,7 +46,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients
             TRequest model)
 
             where TRequest : class, IRequest<TResponse>
-            where TResponse : class
+            where TResponse : class, new()
         {
             Argument.NotNull(client, nameof(client));
             Argument.NotNull(model, nameof(model));
@@ -69,7 +69,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients
             CancellationToken cancellationToken)
 
             where TRequest : class, IRequest<TResponse>
-            where TResponse : class
+            where TResponse : class, new()
         {
             Argument.NotNull(client, nameof(client));
             Argument.NotNull(model, nameof(model));

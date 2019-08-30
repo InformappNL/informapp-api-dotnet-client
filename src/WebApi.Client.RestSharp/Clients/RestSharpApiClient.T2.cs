@@ -22,7 +22,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
     /// </summary>
     public class RestSharpApiClient<TRequest, TResponse> : IApiClient<TRequest, TResponse>
         where TRequest : class, IRequest<TResponse>
-        where TResponse : class
+        where TResponse : class, new()
     {
         private readonly IClientFactory _clientFactory;
 

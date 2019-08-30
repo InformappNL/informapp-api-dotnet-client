@@ -18,7 +18,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
         IApiClient<TRequest, TResponse>
 
         where TRequest : class, IRequest<TResponse>
-        where TResponse : class
+        where TResponse : class, new()
     {
         private readonly IApiClient<TRequest, TResponse> _apiClient;
 

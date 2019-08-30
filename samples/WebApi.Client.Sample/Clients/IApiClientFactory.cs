@@ -16,6 +16,6 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
         /// <returns>An instance of <see cref="IApiClient{TRequest, TResponse}"/></returns>
         IApiClient<TRequest, TResponse> Create<TRequest, TResponse>()
             where TRequest : class, IRequest<TResponse>
-            where TResponse : class;
+            where TResponse : class, new();
     }
 }

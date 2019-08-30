@@ -16,7 +16,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
         IApiClient<TRequest, TResponse>
 
         where TRequest : class, IRequest<TResponse>
-        where TResponse : class
+        where TResponse : class, new()
     {
         private static readonly AnonymousAttribute _attribute = AttributeProvider.Create<TRequest, AnonymousAttribute>(true)
             .ThrowIfMultiple()

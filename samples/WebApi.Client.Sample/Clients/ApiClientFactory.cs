@@ -45,7 +45,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
         /// <returns>An instance of <see cref="IApiClient{TRequest, TResponse}"/></returns>
         public IApiClient<TRequest, TResponse> Create<TRequest, TResponse>()
             where TRequest : class, IRequest<TResponse>
-            where TResponse : class
+            where TResponse : class, new()
         {
             var apiClient = GetApiClient<TRequest, TResponse>();
 
@@ -54,7 +54,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
 
         private static IApiClient<TRequest, TResponse> GetApiClient<TRequest, TResponse>()
             where TRequest : class, IRequest<TResponse>
-            where TResponse : class
+            where TResponse : class, new()
         {
             IApiClient<TRequest, TResponse> apiClient = new RestSharpApiClient<TRequest, TResponse>(
                 GetClientFactory(), 
@@ -113,7 +113,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
 
         private static Lazy<IApiClient<TRequest, TResponse>> GetLazyApiClient<TRequest, TResponse>()
             where TRequest : class, IRequest<TResponse>
-            where TResponse : class
+            where TResponse : class, new()
         {
             return new Lazy<IApiClient<TRequest, TResponse>>(() => GetApiClient<TRequest, TResponse>());
         }

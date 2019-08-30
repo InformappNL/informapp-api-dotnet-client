@@ -13,7 +13,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients
     /// <typeparam name="TResponse">Response type</typeparam>
     public interface IApiClient<TRequest, TResponse>
         where TRequest : class, IRequest<TResponse>
-        where TResponse : class
+        where TResponse : class, new()
     {
         /// <summary>
         /// Execute request

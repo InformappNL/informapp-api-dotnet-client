@@ -18,7 +18,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
         IApiClient<TRequest, TResponse>
 
         where TRequest : class, IRequest<TResponse>
-        where TResponse : class
+        where TResponse : class, new()
     {
         private readonly IApiClient<TRequest, TResponse> _client;
 
