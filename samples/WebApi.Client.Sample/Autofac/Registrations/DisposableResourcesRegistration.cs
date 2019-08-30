@@ -24,7 +24,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
 
             builder.RegisterType<DisposableResources>()
                 .As<IDisposableResources>()
-                .InstancePerRequest();
+                .InstancePerDependency();
         }
     }
 }
