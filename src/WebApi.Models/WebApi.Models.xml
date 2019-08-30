@@ -4480,9 +4480,10 @@
             Max file size in bytes
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.ContentType">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.Informapp#InformSystem#WebApi#Models#Version1#Files#IUploadFileV1Request#ContentType">
             <summary>
             Content type
+            Explicitly implemented as this field is not required but used internally
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.File">

@@ -69,11 +69,11 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.Up
 
         /// <summary>
         /// Content type
+        /// Explicitly implemented as this field is not required but used internally
         /// </summary>
         [ExampleValue("text/plain")]
         [IgnoreDataMember]
-        //[Required]
-        public string ContentType
+        string IUploadFileV1Request.ContentType
         {
             get => _request.ContentType;
             set => _request.ContentType = value;
