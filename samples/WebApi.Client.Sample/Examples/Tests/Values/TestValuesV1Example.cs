@@ -66,7 +66,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
                 Uri = new Uri("https://localhost:12345/Home/Index"),
                 Uuid = Guid.NewGuid(),
                 Array = new[] { 1, 2, 3 },
-                Bytes = new byte[] { 1, 2, 3},
+                Bytes = new byte[] { 1, 2, 3 },
                 Dictionary = new Dictionary<int, int>
                 {
                     { 1, 10 },
