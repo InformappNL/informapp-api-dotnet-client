@@ -23,12 +23,12 @@ namespace Informapp.InformSystem.WebApi.Models.Http
             switch (method)
             {
                 case HttpMethod.Delete:
-                case HttpMethod.Head:
                 case HttpMethod.Patch:
                 case HttpMethod.Put:
                     return true;
 
                 case HttpMethod.Get:
+                case HttpMethod.Head:
                 case HttpMethod.Post:
                 case HttpMethod.Options:
                 case HttpMethod.Merge:
