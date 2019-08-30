@@ -93,6 +93,8 @@
     <Compile Include="Clients\Decorators\ContentModelApiClientDecorator.T2.cs" />
     <Compile Include="Clients\Decorators\ContentTypeApiClientDecorator.T2.cs" />
     <Compile Include="Clients\Decorators\CredentialsApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\DisposableRequestApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\DisposableResponseApiClientDecorator.T2.cs" />
     <Compile Include="Clients\Decorators\ElapsedApiClientDecorator.T2.cs" />
     <Compile Include="Clients\Decorators\EndPointApiClientDecorator.T2.cs" />
     <Compile Include="Clients\Decorators\EnsureSuccessApiClientDecorator.T2.cs" />
@@ -129,6 +131,9 @@
     <Compile Include="DictionaryBuilders\IDictionaryBuilder.T2.cs" />
     <Compile Include="DictionaryBuilders\IQueryDictionaryBuilder.T1.cs" />
     <Compile Include="DictionaryBuilders\QueryDictionaryBuilder.T1.cs" />
+    <Compile Include="Disposables\DisposableResources.cs" />
+    <Compile Include="Disposables\DisposableResourcesExtensions.cs" />
+    <Compile Include="Disposables\IDisposableResources.cs" />
     <Compile Include="EndPointProviders\ConfigurationEndPointProvider.cs" />
     <Compile Include="EndPointProviders\IEndPointProvider.cs" />
     <Compile Include="Exceptions\ApiClientException.cs" />

@@ -845,6 +845,44 @@
             <param name="cancellationToken">The cancellation token</param>
             <returns>The response</returns>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.DisposableRequestApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to register the request object for disposal
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.DisposableRequestApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Informapp.InformSystem.WebApi.Client.Disposables.IDisposableResources)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.DisposableRequestApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.DisposableRequestApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Register the request object for disposal and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.DisposableResponseApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to register the response object for disposal
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.DisposableResponseApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Informapp.InformSystem.WebApi.Client.Disposables.IDisposableResources)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.DisposableResponseApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.DisposableResponseApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Execute request and register the response object for disposal
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.ElapsedApiClientDecorator`2">
             <summary>
             Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set elapsed time on response
@@ -1529,6 +1567,83 @@
         <member name="M:Informapp.InformSystem.WebApi.Client.DictionaryBuilders.QueryDictionaryBuilder`1.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.DictionaryBuilders.QueryDictionaryBuilder`1"/> class.
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Disposables.DisposableResources">
+            <summary>
+            Represents a collection of <see cref="T:System.IDisposable"/> resources
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Disposables.DisposableResources.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Disposables.DisposableResources"/> class.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Disposables.DisposableResources.IsDisposed">
+            <summary>
+            Indicates whether this object has been disposed
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Disposables.DisposableResources.RegisterForDisposal(System.IDisposable)">
+            <summary>
+            Register the <see cref="T:System.IDisposable"/> resource for disposal
+            </summary>
+            <param name="resource">The resource</param>
+            <exception cref="T:System.ObjectDisposedException">This instance has been disposed</exception>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="resource"/> is null</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Disposables.DisposableResources.ThrowIfDisposed">
+            <summary>
+            Throws <see cref="T:System.ObjectDisposedException"/> when this instance has been disposed
+            </summary>
+            <returns>This instance</returns>
+            <exception cref="T:System.ObjectDisposedException">This instance has been disposed</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Disposables.DisposableResources.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Disposables.DisposableResourcesExtensions">
+            <summary>
+            Extension methods for <see cref="T:Informapp.InformSystem.WebApi.Client.Disposables.IDisposableResources"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Disposables.DisposableResourcesExtensions.TryRegisterForDisposal``1(Informapp.InformSystem.WebApi.Client.Disposables.IDisposableResources,``0)">
+            <summary>
+            Try to register a resource for disposal
+            </summary>
+            <typeparam name="T">Type of resource</typeparam>
+            <param name="disposableResources">The instance of <see cref="T:Informapp.InformSystem.WebApi.Client.Disposables.IDisposableResources"/> to use</param>
+            <param name="resource">The resource to register for disposal</param>
+            <returns>true when the <paramref name="resource"/> has been registered for disposal; otherwise false</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Disposables.DisposableResourcesExtensions.ThrowIfDisposed(Informapp.InformSystem.WebApi.Client.Disposables.IDisposableResources)">
+            <summary>
+            Throws <see cref="T:System.ObjectDisposedException"/> when the <paramref name="disposableResources"/> instance has been disposed
+            </summary>
+            <param name="disposableResources">The instance of <see cref="T:Informapp.InformSystem.WebApi.Client.Disposables.IDisposableResources"/> to use</param>
+            <returns>The <paramref name="disposableResources"/> instance</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Disposables.IDisposableResources">
+            <summary>
+            Represents a collection of <see cref="T:System.IDisposable"/> resources
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Disposables.IDisposableResources.IsDisposed">
+            <summary>
+            Indicates whether this object has been disposed
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Disposables.IDisposableResources.RegisterForDisposal(System.IDisposable)">
+            <summary>
+            Register the <see cref="T:System.IDisposable"/> resource for disposal
+            </summary>
+            <param name="resource">The resource</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Disposables.IDisposableResources.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.EndPointProviders.ConfigurationEndPointProvider">

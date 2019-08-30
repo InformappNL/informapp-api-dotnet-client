@@ -79,6 +79,7 @@
     <Compile Include="Autofac\Registrations\ConverterRegistration.cs" />
     <Compile Include="Autofac\Registrations\CredentialsProviderRegistration.cs" />
     <Compile Include="Autofac\Registrations\DateTimeProviderRegistration.cs" />
+    <Compile Include="Autofac\Registrations\DisposableResourcesRegistration.cs" />
     <Compile Include="Autofac\Registrations\EndPointProviderRegistration.cs" />
     <Compile Include="Autofac\Registrations\ExampleRegistration.cs" />
     <Compile Include="Autofac\Registrations\MethodProviderRegistration.cs" />
