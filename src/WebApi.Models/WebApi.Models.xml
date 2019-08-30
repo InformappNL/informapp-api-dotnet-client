@@ -5513,6 +5513,236 @@
             Dictionary
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request">
+            <summary>
+            Test query values request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.Int16">
+            <summary>
+            Integer (16 bits)
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.Int32">
+            <summary>
+            Integer (32 bits)
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.Int64">
+            <summary>
+            Integer (64 bits)
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.UnsignedInt16">
+            <summary>
+            Unsigned integer (16 bits)
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.UnsignedInt32">
+            <summary>
+            Unsigned integer (32 bits)
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.UnsignedInt64">
+            <summary>
+            Unsigned integer (64 bits)
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.Byte">
+            <summary>
+            Byte
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.SignedByte">
+            <summary>
+            Signed byte
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.Char">
+            <summary>
+            Char
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.Uri">
+            <summary>
+            Uri
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.Single">
+            <summary>
+            Single
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.Double">
+            <summary>
+            Double
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.Decimal">
+            <summary>
+            Decimal
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.String">
+            <summary>
+            String
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.Uuid">
+            <summary>
+            Universally unique identifier (UUID)
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.TimeSpan">
+            <summary>
+            TimeSpan
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.DateTimeOffset">
+            <summary>
+            DateTimeOffset
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.Boolean">
+            <summary>
+            Boolean
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.Enum">
+            <summary>
+            Enum
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.Array">
+            <summary>
+            Array
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.Bytes">
+            <summary>
+            Bytes
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request.Dictionary">
+            <summary>
+            Dictionary
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response">
+            <summary>
+            Test query values response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.Int16">
+            <summary>
+            Integer (16 bits)
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.Int32">
+            <summary>
+            Integer (32 bits)
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.Int64">
+            <summary>
+            Integer (64 bits)
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.UnsignedInt16">
+            <summary>
+            Unsigned integer (16 bits)
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.UnsignedInt32">
+            <summary>
+            Unsigned integer (32 bits)
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.UnsignedInt64">
+            <summary>
+            Unsigned integer (64 bits)
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.Byte">
+            <summary>
+            Byte
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.SignedByte">
+            <summary>
+            Signed byte
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.Char">
+            <summary>
+            Char
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.Uri">
+            <summary>
+            Uri
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.Single">
+            <summary>
+            Single
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.Double">
+            <summary>
+            Double
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.Decimal">
+            <summary>
+            Decimal
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.String">
+            <summary>
+            String
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.Uuid">
+            <summary>
+            Universally unique identifier (UUID)
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.TimeSpan">
+            <summary>
+            TimeSpan
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.DateTimeOffset">
+            <summary>
+            DateTimeOffset
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.Boolean">
+            <summary>
+            Boolean
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.Enum">
+            <summary>
+            Enum
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.Array">
+            <summary>
+            Array
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.Bytes">
+            <summary>
+            Bytes
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response.Dictionary">
+            <summary>
+            Dictionary
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ValuesV1Kind">
             <summary>
             Values kind

@@ -144,6 +144,8 @@
     <Compile Include="Examples\Tests\Values\ListValuesV1Example.cs" />
     <Compile Include="Examples\Tests\Values\TestBodyValuesV1Comparer.cs" />
     <Compile Include="Examples\Tests\Values\TestBodyValuesV1Example.cs" />
+    <Compile Include="Examples\Tests\Values\TestQueryValuesV1Comparer.cs" />
+    <Compile Include="Examples\Tests\Values\TestQueryValuesV1Example.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

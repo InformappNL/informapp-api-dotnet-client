@@ -65,6 +65,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
 
                 Create<ListValuesV1Example>(true),
                 Create<TestBodyValuesV1Example>(true),
+                Create<TestQueryValuesV1Example>(true),
 
                 Create<DownloadTestFileV1Example>(true),
                 Create<UploadTestFileV1Example>(true),

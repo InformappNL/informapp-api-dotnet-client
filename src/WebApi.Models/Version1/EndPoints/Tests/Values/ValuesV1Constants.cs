@@ -7,5 +7,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values
 
         internal const string ListRoute = Route;
         internal const string TestBodyRoute = Route + "/body";
+        internal const string TestQueryRoute = Route + "/query";
     }
 }
