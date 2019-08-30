@@ -33,6 +33,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMember
         [MinItems(AppGroupMemberV1Constants.RemoveMinItems)]
         [Required]
         [UniqueItems(typeof(RemoveAppGroupMemberV1RequestAppGroupMember), typeof(RemoveAppGroupMemberV1RequestAppGroupMemberEqualityComparer))]
-        public IEnumerable<RemoveAppGroupMemberV1RequestAppGroupMember> Members { get; set; }
+        public IReadOnlyList<RemoveAppGroupMemberV1RequestAppGroupMember> Members { get; set; }
     }
 }

@@ -43,7 +43,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         [ExampleCollection(ExampleCollectionKind.List, typeof(ListFormRegistrationDataV1Select), new object[] { ListFormRegistrationDataV1Select.Name, ListFormRegistrationDataV1Select.ValueText })]
         [QueryParameter]
         [UniqueItems(typeof(ListFormRegistrationDataV1Select))]
-        public IEnumerable<ListFormRegistrationDataV1Select> Select { get; set; } = new[] { ListFormRegistrationDataV1Select.All };
+        public IReadOnlyList<ListFormRegistrationDataV1Select> Select { get; set; } = new[] { ListFormRegistrationDataV1Select.All };
 
         /// <summary>
         /// Sort records
@@ -57,7 +57,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         [MaxItems(Version1PageSortConstants.MaxItems)]
         [QueryParameter]
         [UniqueItems(typeof(ListFormRegistrationDataV1Sort), typeof(SortEqualityComparer<ListFormRegistrationDataV1Sort>), ErrorMessage = SortConstants.ErrorMessage)]
-        public IEnumerable<ListFormRegistrationDataV1Sort> Sort { get; set; } = new[] { ListFormRegistrationDataV1Sort.SerialNumber };
+        public IReadOnlyList<ListFormRegistrationDataV1Sort> Sort { get; set; } = new[] { ListFormRegistrationDataV1Sort.SerialNumber };
 
         /// <summary>
         /// Page number

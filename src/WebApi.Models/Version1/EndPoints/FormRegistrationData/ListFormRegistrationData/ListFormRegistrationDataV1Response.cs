@@ -1,9 +1,9 @@
 ﻿using Informapp.InformSystem.WebApi.Models.ExampleValues;
 using Informapp.InformSystem.WebApi.Models.Requests;
 using Informapp.InformSystem.WebApi.Models.Version1.Constants;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
 using System.Runtime.Serialization;
 
 namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData
@@ -18,8 +18,8 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         /// List of form registration data element
         /// </summary>
         [DataMember]
-        public IEnumerable<ListFormRegistrationDataV1ResponseElement> FormRegistrationDataElements { get; set; }
-            = Enumerable.Empty<ListFormRegistrationDataV1ResponseElement>();
+        public IReadOnlyList<ListFormRegistrationDataV1ResponseElement> FormRegistrationDataElements { get; set; }
+            = Array.Empty<ListFormRegistrationDataV1ResponseElement>();
 
         /// <summary>
         /// Total number of records matching the request

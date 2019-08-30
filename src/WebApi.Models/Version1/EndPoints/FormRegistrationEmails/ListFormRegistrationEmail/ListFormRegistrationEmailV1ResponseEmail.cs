@@ -32,6 +32,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         /// Email recipients
         /// </summary>
         [DataMember]
-        public IEnumerable<ListFormRegistrationEmailV1ResponseRecipient> EmailRecipients { get; set; }
+        public IReadOnlyList<ListFormRegistrationEmailV1ResponseRecipient> EmailRecipients { get; set; }
     }
 }

@@ -1,9 +1,9 @@
 ﻿using Informapp.InformSystem.WebApi.Models.ExampleValues;
 using Informapp.InformSystem.WebApi.Models.Requests;
 using Informapp.InformSystem.WebApi.Models.Version1.Constants;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
 using System.Runtime.Serialization;
 
 namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Forms.ListForm
@@ -18,8 +18,8 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Forms.ListForm
         /// List of forms
         /// </summary>
         [DataMember]
-        public IEnumerable<ListFormV1ResponseForm> Forms { get; set; }
-            = Enumerable.Empty<ListFormV1ResponseForm>();
+        public IReadOnlyList<ListFormV1ResponseForm> Forms { get; set; }
+            = Array.Empty<ListFormV1ResponseForm>();
 
         /// <summary>
         /// Total number of records matching the request

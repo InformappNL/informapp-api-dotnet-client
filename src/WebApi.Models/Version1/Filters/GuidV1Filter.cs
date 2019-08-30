@@ -29,7 +29,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.Filters
         [ExampleMemberProvider(typeof(GuidV1Filter), nameof(Values))]
         [MaxItems(10)]
         [UniqueItems(typeof(Guid))]
-        public IEnumerable<Guid> Values { get; set; }
+        public IReadOnlyList<Guid> Values { get; set; }
 
         /// <summary>
         /// Has value

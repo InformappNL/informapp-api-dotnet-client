@@ -43,7 +43,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMember
         [ExampleCollection(ExampleCollectionKind.List, typeof(ListAppGroupMemberV1Select), new object[] { ListAppGroupMemberV1Select.CreateDate })]
         [QueryParameter]
         [UniqueItems(typeof(ListAppGroupMemberV1Select))]
-        public IEnumerable<ListAppGroupMemberV1Select> Select { get; set; } = new[] { ListAppGroupMemberV1Select.All };
+        public IReadOnlyList<ListAppGroupMemberV1Select> Select { get; set; } = new[] { ListAppGroupMemberV1Select.All };
 
         /// <summary>
         /// Sort records
@@ -57,7 +57,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMember
         [MaxItems(Version1PageSortConstants.MaxItems)]
         [QueryParameter]
         [UniqueItems(typeof(ListAppGroupMemberV1Sort), typeof(SortEqualityComparer<ListAppGroupMemberV1Sort>), ErrorMessage = SortConstants.ErrorMessage)]
-        public IEnumerable<ListAppGroupMemberV1Sort> Sort { get; set; } = new[] { ListAppGroupMemberV1Sort.CreateDate };
+        public IReadOnlyList<ListAppGroupMemberV1Sort> Sort { get; set; } = new[] { ListAppGroupMemberV1Sort.CreateDate };
 
         /// <summary>
         /// Page number

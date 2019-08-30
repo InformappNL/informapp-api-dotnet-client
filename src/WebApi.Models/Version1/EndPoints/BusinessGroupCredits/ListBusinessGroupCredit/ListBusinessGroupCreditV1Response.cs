@@ -1,9 +1,9 @@
 ﻿using Informapp.InformSystem.WebApi.Models.ExampleValues;
 using Informapp.InformSystem.WebApi.Models.Requests;
 using Informapp.InformSystem.WebApi.Models.Version1.Constants;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
 using System.Runtime.Serialization;
 
 namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit
@@ -18,8 +18,8 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupC
         /// List of business group credits
         /// </summary>
         [DataMember]
-        public IEnumerable<ListBusinessGroupCreditV1ResponseBusinessGroupCredit> BusinessGroupCredits { get; set; }
-            = Enumerable.Empty<ListBusinessGroupCreditV1ResponseBusinessGroupCredit>();
+        public IReadOnlyList<ListBusinessGroupCreditV1ResponseBusinessGroupCredit> BusinessGroupCredits { get; set; }
+            = Array.Empty<ListBusinessGroupCreditV1ResponseBusinessGroupCredit>();
 
         /// <summary>
         /// Total number of records matching the request

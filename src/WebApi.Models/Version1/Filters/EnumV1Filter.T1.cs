@@ -31,7 +31,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.Filters
         [DataMember]
         [ExampleMember]
         [MaxItems(20)]
-        public IEnumerable<T> Values { get; set; }
+        public IReadOnlyList<T> Values { get; set; }
 
         /// <summary>
         /// Has value

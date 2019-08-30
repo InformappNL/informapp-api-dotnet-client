@@ -17,6 +17,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMember
         /// </summary>
         [DataMember]
         [Required]
-        public IEnumerable<AddAppGroupMemberV1ResponseAppGroupMember> AddedMembers { get; set; }
+        public IReadOnlyList<AddAppGroupMemberV1ResponseAppGroupMember> AddedMembers { get; set; }
     }
 }

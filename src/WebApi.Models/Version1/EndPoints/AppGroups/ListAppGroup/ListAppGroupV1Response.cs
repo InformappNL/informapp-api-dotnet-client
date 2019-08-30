@@ -1,9 +1,9 @@
 ﻿using Informapp.InformSystem.WebApi.Models.ExampleValues;
 using Informapp.InformSystem.WebApi.Models.Requests;
 using Informapp.InformSystem.WebApi.Models.Version1.Constants;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
 using System.Runtime.Serialization;
 
 namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.ListAppGroup
@@ -18,8 +18,8 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.List
         /// List of app groups
         /// </summary>
         [DataMember]
-        public IEnumerable<ListAppGroupV1ResponseAppGroup> AppGroups { get; set; }
-            = Enumerable.Empty<ListAppGroupV1ResponseAppGroup>();
+        public IReadOnlyList<ListAppGroupV1ResponseAppGroup> AppGroups { get; set; }
+            = Array.Empty<ListAppGroupV1ResponseAppGroup>();
 
         /// <summary>
         /// Total number of records matching the request

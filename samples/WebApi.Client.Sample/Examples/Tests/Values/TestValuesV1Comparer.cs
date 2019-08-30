@@ -1,7 +1,6 @@
 ﻿using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
 {
@@ -45,30 +44,27 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
             return equals;
         }
 
-        private bool Equals<T>(IEnumerable<T> x, IEnumerable<T> y)
+        private bool Equals<T>(IReadOnlyList<T> left, IReadOnlyList<T> right)
             where T : struct, IEquatable<T>
         {
-            if (x == null && y == null)
+            if (left == null && right == null)
             {
                 return true;
             }
 
-            if (x == null || y == null)
+            if (left == null || right == null)
             {
                 return false;
             }
 
-            var arrayX = x.ToArray();
-            var arrayY = y.ToArray();
-
-            if (arrayX.Length != arrayY.Length)
+            if (left.Count != right.Count)
             {
                 return false;
             }
 
-            for (int i = 0; i < arrayX.Length; i++)
+            for (int i = 0; i < left.Count; i++)
             {
-                if (arrayX[i].Equals(arrayY[i]) == false)
+                if (left[i].Equals(right[i]) == false)
                 {
                     return false;
                 }
@@ -77,27 +73,27 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
             return true;
         }
 
-        private bool Equals<T>(IDictionary<T, T> x, IDictionary<T, T> y)
+        private bool Equals<T>(IReadOnlyDictionary<T, T> left, IReadOnlyDictionary<T, T> right)
             where T : struct, IEquatable<T>
         {
-            if (x == null && y == null)
+            if (left == null && right == null)
             {
                 return true;
             }
 
-            if (x == null || y == null)
+            if (left == null || right == null)
             {
                 return false;
             }
 
-            if (x.Count != y.Count)
+            if (left.Count != right.Count)
             {
                 return false;
             }
 
-            foreach (var pair in x)
+            foreach (var pair in left)
             {
-                if (y.TryGetValue(pair.Key, out var value) == false)
+                if (right.TryGetValue(pair.Key, out var value) == false)
                 {
                     return false;
                 }

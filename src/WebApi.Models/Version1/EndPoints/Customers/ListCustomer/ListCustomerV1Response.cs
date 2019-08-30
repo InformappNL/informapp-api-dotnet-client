@@ -1,9 +1,9 @@
 ﻿using Informapp.InformSystem.WebApi.Models.ExampleValues;
 using Informapp.InformSystem.WebApi.Models.Requests;
 using Informapp.InformSystem.WebApi.Models.Version1.Constants;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
 using System.Runtime.Serialization;
 
 namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Customers.ListCustomer
@@ -18,8 +18,8 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Customers.List
         /// List of customers
         /// </summary>
         [DataMember]
-        public IEnumerable<ListCustomerV1ResponseCustomer> Customers { get; set; }
-            = Enumerable.Empty<ListCustomerV1ResponseCustomer>();
+        public IReadOnlyList<ListCustomerV1ResponseCustomer> Customers { get; set; }
+            = Array.Empty<ListCustomerV1ResponseCustomer>();
 
         /// <summary>
         /// Total number of records matching the request

@@ -199,9 +199,9 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.T
         /// </summary>
         [BodyParameter]
         [DataMember]
-        [ExampleCollection(ExampleCollectionKind.List, new[] { 1, 2, 3 })]
+        [ExampleCollection(ExampleCollectionKind.Array, new[] { 1, 2, 3 })]
         [MaxItems(3)]
-        public IEnumerable<int> Array { get; set; }
+        public IReadOnlyList<int> Array { get; set; }
 
         /// <summary>
         /// Bytes
@@ -219,6 +219,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.T
         [DataMember]
         [ExampleMemberProvider(typeof(TestValuesV1Request), nameof(Dictionary))]
         [MaxItems(3)]
-        public IDictionary<int, int> Dictionary { get; set; }
+        public IReadOnlyDictionary<int, int> Dictionary { get; set; }
     }
 }

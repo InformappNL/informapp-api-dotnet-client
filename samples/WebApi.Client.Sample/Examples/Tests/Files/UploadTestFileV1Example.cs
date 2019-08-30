@@ -3,6 +3,7 @@ using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
@@ -104,7 +105,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
             return request;
         }
 
-        private static bool Equals(byte[] left, byte[] right)
+        private static bool Equals(IReadOnlyList<byte> left, IReadOnlyList<byte> right)
         {
             if (left == null && right == null)
             {
@@ -116,12 +117,12 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
                 return false;
             }
 
-            if (left.Length != right.Length)
+            if (left.Count != right.Count)
             {
                 return false;
             }
 
-            int length = left.Length;
+            int length = left.Count;
 
             for (int i = 0; i < length; i++)
             {

@@ -23,6 +23,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version2.Errors
         /// </summary>
         [DataMember]
         [ExampleMemberProvider(typeof(BadRequestV2Response), nameof(ModelState))]
-        public IDictionary<string, IEnumerable<string>> ModelState { get; set; }
+        public IReadOnlyDictionary<string, IEnumerable<string>> ModelState { get; set; }
     }
 }

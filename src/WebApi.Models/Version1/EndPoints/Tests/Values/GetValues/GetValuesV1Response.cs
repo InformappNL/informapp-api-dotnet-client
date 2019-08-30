@@ -275,7 +275,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.G
         [DataMember]
         [ExampleCollection(ExampleCollectionKind.List, new[] { 1, 2, 3, })]
         [Required]
-        public IEnumerable<int> Array { get; set; } = new[] { 1, 2, 3, };
+        public IReadOnlyList<int> Array { get; set; } = new[] { 1, 2, 3, };
 
         /// <summary>
         /// Bytes
@@ -291,7 +291,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.G
         [DataMember]
         [ExampleMemberProvider(typeof(GetValuesV1Response), nameof(Dictionary))]
         [Required]
-        public IDictionary<int, int> Dictionary { get; set; }
+        public IReadOnlyDictionary<int, int> Dictionary { get; set; }
             = new Dictionary<int, int> { { 1, 10 }, { 2, 20 }, { 3, 30 } };
     }
 }

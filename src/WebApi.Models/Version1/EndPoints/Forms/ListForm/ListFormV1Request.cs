@@ -45,7 +45,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Forms.ListForm
         [ExampleCollection(ExampleCollectionKind.List, typeof(ListFormV1Select), new object[] { ListFormV1Select.Name, ListFormV1Select.Description })]
         [QueryParameter]
         [UniqueItems(typeof(ListFormV1Select))]
-        public IEnumerable<ListFormV1Select> Select { get; set; } = new[] { ListFormV1Select.All };
+        public IReadOnlyList<ListFormV1Select> Select { get; set; } = new[] { ListFormV1Select.All };
 
         /// <summary>
         /// Sort records
@@ -59,7 +59,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Forms.ListForm
         [MaxItems(Version1PageSortConstants.MaxItems)]
         [QueryParameter]
         [UniqueItems(typeof(ListFormV1Sort), typeof(SortEqualityComparer<ListFormV1Sort>), ErrorMessage = SortConstants.ErrorMessage)]
-        public IEnumerable<ListFormV1Sort> Sort { get; set; } = new[] { ListFormV1Sort.Name };
+        public IReadOnlyList<ListFormV1Sort> Sort { get; set; } = new[] { ListFormV1Sort.Name };
 
         /// <summary>
         /// Page number

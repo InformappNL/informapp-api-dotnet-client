@@ -43,7 +43,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupC
         [ExampleCollection(ExampleCollectionKind.List, typeof(ListBusinessGroupCreditV1Select), new object[] { ListBusinessGroupCreditV1Select.TotalRegistrationCount, ListBusinessGroupCreditV1Select.TotalCreditsOfNonEmptyBundles })]
         [QueryParameter]
         [UniqueItems(typeof(ListBusinessGroupCreditV1Select))]
-        public IEnumerable<ListBusinessGroupCreditV1Select> Select { get; set; } = new[] { ListBusinessGroupCreditV1Select.All };
+        public IReadOnlyList<ListBusinessGroupCreditV1Select> Select { get; set; } = new[] { ListBusinessGroupCreditV1Select.All };
 
         /// <summary>
         /// Sort records
@@ -57,7 +57,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupC
         [MaxItems(Version1PageSortConstants.MaxItems)]
         [QueryParameter]
         [UniqueItems(typeof(ListBusinessGroupCreditV1Sort), typeof(SortEqualityComparer<ListBusinessGroupCreditV1Sort>), ErrorMessage = SortConstants.ErrorMessage)]
-        public IEnumerable<ListBusinessGroupCreditV1Sort> Sort { get; set; } = new[] { ListBusinessGroupCreditV1Sort.CreateDate };
+        public IReadOnlyList<ListBusinessGroupCreditV1Sort> Sort { get; set; } = new[] { ListBusinessGroupCreditV1Sort.CreateDate };
 
         /// <summary>
         /// Page number
