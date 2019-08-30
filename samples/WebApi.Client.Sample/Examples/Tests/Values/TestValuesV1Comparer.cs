@@ -34,9 +34,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
                 equals = false;
             }
 
-            else if ((Equals(request.Array, response.Array) &&
-                Equals(request.Bytes, response.Bytes) &&
-                Equals(request.Dictionary, response.Dictionary)) == false)
+            else if ((CollectionEquals(request.Array, response.Array) &&
+                CollectionEquals(request.Bytes, response.Bytes) &&
+                DictionaryEquals(request.Dictionary, response.Dictionary)) == false)
             {
                 equals = false;
             }
@@ -44,7 +44,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
             return equals;
         }
 
-        private bool Equals<T>(IReadOnlyList<T> left, IReadOnlyList<T> right)
+        private static bool CollectionEquals<T>(IReadOnlyList<T> left, IReadOnlyList<T> right)
             where T : struct, IEquatable<T>
         {
             if (left == null && right == null)
@@ -73,7 +73,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
             return true;
         }
 
-        private bool Equals<T>(IReadOnlyDictionary<T, T> left, IReadOnlyDictionary<T, T> right)
+        private static bool DictionaryEquals<T>(IReadOnlyDictionary<T, T> left, IReadOnlyDictionary<T, T> right)
             where T : struct, IEquatable<T>
         {
             if (left == null && right == null)
