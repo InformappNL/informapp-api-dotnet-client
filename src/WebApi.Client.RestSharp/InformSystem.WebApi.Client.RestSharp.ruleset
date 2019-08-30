@@ -454,10 +454,4 @@
     <Rule Id="CA2010" Action="None" />
     <Rule Id="CA2207" Action="None" />
   </Rules>
-  <Rules AnalyzerId="Microsoft.NetFramework.Analyzers" RuleNamespace="Microsoft.NetFramework.Analyzers">
-    <Rule Id="CA1058" Action="None" />
-    <Rule Id="CA2153" Action="None" />
-    <Rule Id="CA3075" Action="None" />
-    <Rule Id="CA3147" Action="None" />
-  </Rules>
 </RuleSet>
