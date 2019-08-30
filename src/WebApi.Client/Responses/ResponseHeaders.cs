@@ -10,6 +10,10 @@ namespace Informapp.InformSystem.WebApi.Client.Responses
     /// </summary>
     public class ResponseHeaders
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ResponseHeaders"/> class.
+        /// </summary>
+        /// <param name="headers">The response headers</param>
         public ResponseHeaders(
             IEnumerable<ResponseHeader> headers)
         {

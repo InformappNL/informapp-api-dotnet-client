@@ -37,6 +37,8 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
         /// Initializes a new instance of the <see cref="UploadFileRequestApiClientDecorator{TRequest, TResponse}"/> class.
         /// </summary>
         /// <param name="apiClient">The instance to decorate</param>
+        /// <param name="mappers">The upload file mappers</param>
+        /// <param name="mimeMapper">The mime mapper</param>
         public UploadFileRequestApiClientDecorator(
             IApiClient<TRequest, TResponse> apiClient,
             IEnumerable<IUploadFileRequestMapper<TRequest, TResponse>> mappers,

@@ -36,7 +36,6 @@ namespace Informapp.InformSystem.WebApi.Client.Files
         /// Map response to the upload file response
         /// </summary>
         /// <param name="response">The response</param>
-        /// <param name="destination">The destination file response</param>
         /// <returns>true if the source response was successfully mapped to the destination response; otherwise, false.</returns>
         public bool Map(ApiResponse<TResponse> response)
         {

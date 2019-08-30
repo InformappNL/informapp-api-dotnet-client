@@ -35,6 +35,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
         /// Initializes a new instance of the <see cref="DownloadFileApiClientDecorator{TRequest, TResponse}"/> class.
         /// </summary>
         /// <param name="apiClient">The instance to decorate</param>
+        /// <param name="mappers">The download file mappers</param>
         public DownloadFileApiClientDecorator(
             IApiClient<TRequest, TResponse> apiClient,
             IEnumerable<IDownloadFileMapper<TRequest, TResponse>> mappers) : base(apiClient)

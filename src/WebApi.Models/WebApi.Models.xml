@@ -4483,6 +4483,11 @@
             Create log request
             </summary>
         </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog.CreateLogV1Request.Logs">
+            <summary>
+            Log entries
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog.CreateLogV1RequestLog">
             <summary>
             Create log

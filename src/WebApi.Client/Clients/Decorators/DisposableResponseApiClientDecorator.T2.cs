@@ -27,6 +27,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
         /// Initializes a new instance of the <see cref="DisposableResponseApiClientDecorator{TRequest, TResponse}"/> class.
         /// </summary>
         /// <param name="apiClient">The instance to decorate</param>
+        /// <param name="disposableResources">The disposable resources</param>
         public DisposableResponseApiClientDecorator(
             IApiClient<TRequest, TResponse> apiClient,
             IDisposableResources disposableResources) : base(apiClient)

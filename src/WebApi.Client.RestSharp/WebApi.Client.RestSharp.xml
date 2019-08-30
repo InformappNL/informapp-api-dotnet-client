@@ -165,10 +165,11 @@
             <summary>
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.Clients.RestSharpApiClient`2"/> class.
             </summary>
-            <param name="clientFactory"></param>
-            <param name="requestFactory"></param>
-            <param name="queryStringBuilderFactory"></param>
-            <param name="converter"></param>
+            <param name="clientFactory">The client factory</param>
+            <param name="requestFactory">The request factory</param>
+            <param name="queryStringBuilderFactory">The query string factory</param>
+            <param name="converter">The converter</param>
+            <param name="mimeMapper">The mime mapper</param>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Clients.RestSharpApiClient`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
             <summary>

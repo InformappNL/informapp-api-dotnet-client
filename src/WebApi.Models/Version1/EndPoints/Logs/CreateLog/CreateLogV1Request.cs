@@ -27,6 +27,9 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog
         internal const int MaxItems = 10;
         internal const int MinItems = 1;
 
+        /// <summary>
+        /// Log entries
+        /// </summary>
         [BodyParameter]
         [DataMember]
         [MaxItems(MaxItems)]

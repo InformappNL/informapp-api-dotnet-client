@@ -869,6 +869,7 @@
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.DisposableRequestApiClientDecorator`2"/> class.
             </summary>
             <param name="apiClient">The instance to decorate</param>
+            <param name="disposableResources">The disposable resources</param>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.DisposableRequestApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
             <summary>
@@ -888,6 +889,7 @@
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.DisposableResponseApiClientDecorator`2"/> class.
             </summary>
             <param name="apiClient">The instance to decorate</param>
+            <param name="disposableResources">The disposable resources</param>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.DisposableResponseApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
             <summary>
@@ -907,6 +909,7 @@
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.DownloadFileApiClientDecorator`2"/> class.
             </summary>
             <param name="apiClient">The instance to decorate</param>
+            <param name="mappers">The download file mappers</param>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.DownloadFileApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
             <summary>
@@ -1160,6 +1163,8 @@
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileRequestApiClientDecorator`2"/> class.
             </summary>
             <param name="apiClient">The instance to decorate</param>
+            <param name="mappers">The upload file mappers</param>
+            <param name="mimeMapper">The mime mapper</param>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileRequestApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
             <summary>
@@ -1179,6 +1184,9 @@
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileResponseApiClientDecorator`2"/> class.
             </summary>
             <param name="apiClient">The instance to decorate</param>
+            <param name="mappers">The upload file mappers</param>
+            <param name="converter">The converter</param>
+            <param name="hasher">The hasher</param>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileResponseApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
             <summary>
@@ -1917,7 +1925,7 @@
             <summary>
             Map download file to the response
             </summary>
-            <param name="request">The request</param>
+            <param name="response">The response</param>
             <returns>true if the upload file was converted successfully mapped to the response; otherwise, false.</returns>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Files.DownloadFileV2Mapper`2">
@@ -1936,7 +1944,7 @@
             <summary>
             Map download file to the response
             </summary>
-            <param name="request">The request</param>
+            <param name="response">The response</param>
             <returns>true if the upload file was converted successfully mapped to the response; otherwise, false.</returns>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Files.FileV1HashAlgorithmConverter">
@@ -1976,7 +1984,7 @@
             <summary>
             Map download file to the response
             </summary>
-            <param name="request">The request</param>
+            <param name="response">The response</param>
             <returns>true if the upload file was converted successfully mapped to the response; otherwise, false.</returns>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Files.IUploadFileRequestMapper`2">
@@ -2081,7 +2089,6 @@
             Map response to the upload file response
             </summary>
             <param name="response">The response</param>
-            <param name="destination">The destination file response</param>
             <returns>true if the source response was successfully mapped to the destination response; otherwise, false.</returns>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.MethodProviders.IMethodProvider`1">
@@ -2785,6 +2792,12 @@
             <summary>
             Collection of response headers
             </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeaders.#ctor(System.Collections.Generic.IEnumerable{Informapp.InformSystem.WebApi.Client.Responses.ResponseHeader})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeaders"/> class.
+            </summary>
+            <param name="headers">The response headers</param>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeaders.GetHeader(System.String)">
             <summary>

@@ -15,7 +15,7 @@ namespace Informapp.InformSystem.WebApi.Client.Files
         /// <summary>
         /// Map download file to the response
         /// </summary>
-        /// <param name="request">The request</param>
+        /// <param name="response">The response</param>
         /// <returns>true if the upload file was converted successfully mapped to the response; otherwise, false.</returns>
         bool Map(ApiResponse<TResponse> response);
     }

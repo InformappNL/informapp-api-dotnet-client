@@ -40,10 +40,11 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
         /// <summary>
         /// Initializes a new instance of the <see cref="RestSharpApiClient{TRequest, TResponse}"/> class.
         /// </summary>
-        /// <param name="clientFactory"></param>
-        /// <param name="requestFactory"></param>
-        /// <param name="queryStringBuilderFactory"></param>
-        /// <param name="converter"></param>
+        /// <param name="clientFactory">The client factory</param>
+        /// <param name="requestFactory">The request factory</param>
+        /// <param name="queryStringBuilderFactory">The query string factory</param>
+        /// <param name="converter">The converter</param>
+        /// <param name="mimeMapper">The mime mapper</param>
         public RestSharpApiClient(
             IClientFactory clientFactory,
             IRequestFactory requestFactory,
