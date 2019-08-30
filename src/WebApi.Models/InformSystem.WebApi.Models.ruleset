@@ -365,7 +365,6 @@
     <Rule Id="CA1819" Action="None" />
     <Rule Id="CA1822" Action="None" />
     <Rule Id="CA1823" Action="None" />
-    <Rule Id="CA2007" Action="None" />
     <Rule Id="CA2119" Action="None" />
     <Rule Id="CA2211" Action="None" />
     <Rule Id="CA2214" Action="None" />
@@ -389,7 +388,6 @@
     <Rule Id="CA1401" Action="None" />
     <Rule Id="CA1820" Action="None" />
     <Rule Id="CA2002" Action="None" />
-    <Rule Id="CA2008" Action="None" />
     <Rule Id="CA2009" Action="None" />
     <Rule Id="CA2100" Action="None" />
     <Rule Id="CA2101" Action="None" />
