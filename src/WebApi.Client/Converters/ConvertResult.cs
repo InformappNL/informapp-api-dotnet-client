@@ -39,7 +39,7 @@ namespace Informapp.InformSystem.WebApi.Client.Converters
         public static ConvertResult<T> FromValue<T>(T value)
             where T : struct
         {
-            return new ConvertResult<T>(value, true);
+            return new ConvertResult<T>(value, hasValue: true);
         }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace Informapp.InformSystem.WebApi.Client.Converters
         public static ConvertResult<T?> FromNullable<T>(T value)
             where T : struct
         {
-            return new ConvertResult<T?>(value, true);
+            return new ConvertResult<T?>(value, hasValue: true);
         }
 
         /// <summary>
@@ -85,7 +85,7 @@ namespace Informapp.InformSystem.WebApi.Client.Converters
         /// <returns>A new instance of <see cref="ConvertResult{T}"/></returns>
         public static ConvertResult<T> Empty<T>()
         {
-            return new ConvertResult<T>(default(T), false);
+            return new ConvertResult<T>(default(T), hasValue: false);
         }
 
         /// <summary>
@@ -96,7 +96,7 @@ namespace Informapp.InformSystem.WebApi.Client.Converters
         /// <returns>A new instance of <see cref="ConvertResult{T}"/></returns>
         public static ConvertResult<T> Empty<T>(T value)
         {
-            return new ConvertResult<T>(value, false);
+            return new ConvertResult<T>(value, hasValue: false);
         }
     }
 }

@@ -22,7 +22,7 @@ namespace Informapp.InformSystem.WebApi.Client.DictionaryBuilders
         {
             var properties = typeof(TModel).GetProperties(BindingFlags.Public | BindingFlags.Instance)
                 .Where(x => x.CanRead)
-                .Where(x => x.GetCustomAttribute<TAttribute>(false) != null)
+                .Where(x => x.GetCustomAttribute<TAttribute>(inherit: false) != null)
                 .Select(x => new Property
                 {
                     Name = x.Name,

@@ -11,7 +11,7 @@ namespace Informapp.InformSystem.WebApi.Client.MethodProviders
     public class MethodProvider<T> : IMethodProvider<T>
         where T : class
     {
-        private static readonly HttpMethodAttribute _attribute = AttributeProvider.Create<T, HttpMethodAttribute>(true)
+        private static readonly HttpMethodAttribute _attribute = AttributeProvider.Create<T, HttpMethodAttribute>(inherit: true)
             .ThrowIfMultiple()
             .Attribute;
 

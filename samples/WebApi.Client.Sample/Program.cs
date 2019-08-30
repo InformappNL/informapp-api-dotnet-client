@@ -16,7 +16,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
         {
             var stream = Console.OpenStandardInput(bufferSize);
 
-            var reader = new StreamReader(stream, Console.InputEncoding, false, bufferSize);
+            var reader = new StreamReader(stream, Console.InputEncoding, detectEncodingFromByteOrderMarks: false, bufferSize);
 
             return reader;
         }

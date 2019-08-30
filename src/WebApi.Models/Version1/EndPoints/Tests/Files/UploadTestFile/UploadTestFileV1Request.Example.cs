@@ -27,7 +27,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.Up
         {
             var stream = new MemoryStream();
 
-            using (var writer = new StreamWriter(stream, Encoding.UTF8, 1024, true))
+            using (var writer = new StreamWriter(stream, Encoding.UTF8, 1024, leaveOpen: true))
             {
                 writer.Write("This is an example text file");
 

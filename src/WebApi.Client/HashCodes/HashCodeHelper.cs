@@ -33,13 +33,13 @@ namespace Informapp.InformSystem.WebApi.Client.HashCodes
             return hashCode;
         }
 
-        [Obsolete("Use " + nameof(AddString), true)]
+        [Obsolete("Use " + nameof(AddString), error: true)]
         public static int AddRef(int hashCode, string instance)
         {
             throw new NotImplementedException();
         }
 
-        [Obsolete("Use " + nameof(AddString), true)]
+        [Obsolete("Use " + nameof(AddString), error: true)]
         public static int AddRef(int hashCode, int multiplication, string instance)
         {
             throw new NotImplementedException();

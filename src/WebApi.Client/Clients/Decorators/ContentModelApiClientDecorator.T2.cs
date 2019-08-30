@@ -25,7 +25,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
         where TRequest : class, IRequest<TResponse>
         where TResponse : class, new()
     {
-        private static readonly IDictionary<HttpStatusCode, Type> _models = AttributeProvider.Create<TRequest, ResponseAttribute>(true)
+        private static readonly IDictionary<HttpStatusCode, Type> _models = AttributeProvider.Create<TRequest, ResponseAttribute>(inherit: true)
             .GetAttributes()
             .ToDictionary(x => x.StatusCode, x => x.Model);
 

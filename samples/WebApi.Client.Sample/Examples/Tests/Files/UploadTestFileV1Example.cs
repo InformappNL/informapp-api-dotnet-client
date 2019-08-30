@@ -68,7 +68,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
         {
             var stream = new MemoryStream();
 
-            using (var writer = new StreamWriter(stream, Encoding.UTF8, BufferSize, true))
+            using (var writer = new StreamWriter(stream, Encoding.UTF8, BufferSize, leaveOpen: true))
             {
                 writer.WriteLine("example");
             }
@@ -91,7 +91,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
         private static UploadTestFileV1Request GetFileFromFileSystem()
 #pragma warning restore IDE0051 // Remove unused private members
         {
-            var stream = new FileStream(PathToFile, FileMode.Open, FileAccess.Read, FileShare.Read, BufferSize, true);
+            var stream = new FileStream(PathToFile, FileMode.Open, FileAccess.Read, FileShare.Read, BufferSize, useAsync: true);
 
             string fileName = Path.GetFileName(PathToFile);
 

@@ -23,7 +23,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
         where TRequest : class, IRequest<TResponse>
         where TResponse : class, new()
     {
-        private static readonly UploadFileRequestAttribute _attribute = AttributeProvider.Create<TRequest, UploadFileRequestAttribute>(true)
+        private static readonly UploadFileRequestAttribute _attribute = AttributeProvider.Create<TRequest, UploadFileRequestAttribute>(inherit: true)
             .ThrowIfMultiple()
             .Attribute;
 

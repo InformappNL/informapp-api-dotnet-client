@@ -17,7 +17,7 @@ namespace Informapp.InformSystem.WebApi.Client.PathProviders
     public class PathProvider<T> : IPathProvider<T>
         where T : class
     {
-        private static readonly PathAttribute _attribute = AttributeProvider.Create<T, PathAttribute>(true)
+        private static readonly PathAttribute _attribute = AttributeProvider.Create<T, PathAttribute>(inherit: true)
             .ThrowIfMultiple()
             .Attribute;
 
@@ -35,7 +35,7 @@ namespace Informapp.InformSystem.WebApi.Client.PathProviders
                     .GetProperties(BindingFlags.Public | BindingFlags.Instance)
                     .Where(x => x.CanRead)
                     .Where(x => _attribute.Pattern.Contains('{' + x.Name + '}'))
-                    .Where(x => x.GetCustomAttributes<PathParameterAttribute>(false).Any() == true)
+                    .Where(x => x.GetCustomAttributes<PathParameterAttribute>(inherit: false).Any() == true)
                     .Select(x => new PropertyFuncModel<T>(
                         x.Name,
                         x.PropertyType.IsClass || x.PropertyType.IsInterface,

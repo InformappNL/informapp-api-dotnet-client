@@ -19,7 +19,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
         where TRequest : class, IRequest<TResponse>
         where TResponse : class, new()
     {
-        private static readonly AcceptAttribute _attribute = AttributeProvider.Create<TRequest, AcceptAttribute>(true)
+        private static readonly AcceptAttribute _attribute = AttributeProvider.Create<TRequest, AcceptAttribute>(inherit: true)
             .ThrowIfMultiple()
             .Attribute;
 

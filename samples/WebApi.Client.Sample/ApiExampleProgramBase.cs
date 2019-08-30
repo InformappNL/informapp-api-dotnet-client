@@ -23,7 +23,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
         protected Task Execute<T>(CancellationToken cancellationToken)
             where T : class, IExample
         {
-            return Execute<T>(true, cancellationToken);
+            return Execute<T>(execute: true, cancellationToken);
         }
 
         protected Task Execute<T>(bool execute, CancellationToken cancellationToken)

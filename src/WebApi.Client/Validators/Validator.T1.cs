@@ -68,7 +68,7 @@ namespace Informapp.InformSystem.WebApi.Client.Validators
             var context = new ValidationContext(instance, null, null);
 
             // Throws an exception when instance is invalid.
-            Validator.ValidateObject(instance, context, true);
+            Validator.ValidateObject(instance, context, validateAllProperties: true);
         }
 
         private void ValidateCollection(IEnumerable collection, int nextDepth, int maxDepth)

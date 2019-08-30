@@ -27,7 +27,7 @@ namespace Informapp.InformSystem.WebApi.Models.Sorting
                     Attribute = (SortNameAttribute)typeof(T)
                         .GetMember(x.ToString())
                         .First()
-                        .GetCustomAttributes(typeof(SortNameAttribute), false)
+                        .GetCustomAttributes(typeof(SortNameAttribute), inherit: false)
                         .SingleOrDefault()
                 })
                 .ToList();
