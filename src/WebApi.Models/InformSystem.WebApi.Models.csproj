@@ -317,6 +317,7 @@
     <Compile Include="Version2\Filters\StringV2Filter.cs" />
     <Compile Include="Version2\Filters\TimeSpanV2Filter.cs" />
     <Compile Include="WebApiModelsProject.cs" />
+    <Compile Include="WebApiModelsProjectSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="WebApi.Models.xml" />

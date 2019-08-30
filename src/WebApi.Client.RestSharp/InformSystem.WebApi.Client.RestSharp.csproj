@@ -85,6 +85,7 @@
     <Compile Include="Responses\RestSharpApiResponse.T1.cs" />
     <Compile Include="Serializers\JsonNetSerializer.cs" />
     <Compile Include="WebApiClientRestSharpProject.cs" />
+    <Compile Include="WebApiClientRestSharpProjectSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WebApi.Client\InformSystem.WebApi.Client.csproj">
