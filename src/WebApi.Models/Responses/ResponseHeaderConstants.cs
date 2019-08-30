@@ -9,11 +9,11 @@ namespace Informapp.InformSystem.WebApi.Models.Responses
         /// <summary>
         /// Request id header name
         /// </summary>
-        public const string RequestIdHeaderName = "x-cd-requestid";
+        public const string RequestIdHeaderName = "X-Request-Id";
 
         /// <summary>
         /// Total count header name
         /// </summary>
-        public const string TotalCountHeaderName = "x-total-count";
+        public const string TotalCountHeaderName = "X-Total-Count";
     }
 }
