@@ -6,20 +6,20 @@ using Informapp.InformSystem.WebApi.Models.Version1.Errors;
 using System.Net;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues
+namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues
 {
     /// <summary>
-    /// Values request
+    /// List values request
     /// </summary>
     [DataContract(Namespace = Version1Constants.Namespace)]
     [HttpMethod(HttpMethod.Get)]
-    [Path(ValuesV1Constants.GetRoute)]
+    [Path(ValuesV1Constants.ListRoute)]
     [Response(HttpStatusCode.BadRequest, typeof(BadRequestV1Response))]
     [Response(HttpStatusCode.Forbidden, typeof(ForbiddenV1Response))]
     [Response(HttpStatusCode.InternalServerError, typeof(InternalServerErrorV1Response))]
     [Response(HttpStatusCode.Unauthorized, typeof(UnauthorizedV1Response))]
-    public class GetValuesV1Request : BaseRequest,
-        IRequest<GetValuesV1Response>
+    public class ListValuesV1Request : BaseRequest,
+        IRequest<ListValuesV1Response>
     {
 
     }

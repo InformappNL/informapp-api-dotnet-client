@@ -141,7 +141,7 @@
     <Compile Include="Examples\Pings\PingV1Example.cs" />
     <Compile Include="Examples\Tests\Files\DownloadTestFileV1Example.cs" />
     <Compile Include="Examples\Tests\Files\UploadTestFileV1Example.cs" />
-    <Compile Include="Examples\Tests\Values\GetValuesV1Example.cs" />
+    <Compile Include="Examples\Tests\Values\ListValuesV1Example.cs" />
     <Compile Include="Examples\Tests\Values\TestValuesV1Comparer.cs" />
     <Compile Include="Examples\Tests\Values\TestValuesV1Example.cs" />
     <Compile Include="GlobalSuppressions.cs" />

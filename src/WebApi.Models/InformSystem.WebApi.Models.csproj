@@ -276,9 +276,9 @@
     <Compile Include="Version1\EndPoints\Tests\Methods\PostMethod\PostMethodV1Response.cs" />
     <Compile Include="Version1\EndPoints\Tests\Methods\PutMethod\PutMethodV1Request.cs" />
     <Compile Include="Version1\EndPoints\Tests\Methods\PutMethod\PutMethodV1Response.cs" />
-    <Compile Include="Version1\EndPoints\Tests\Values\GetValues\GetValuesV1Request.cs" />
-    <Compile Include="Version1\EndPoints\Tests\Values\GetValues\GetValuesV1Response.cs" />
-    <Compile Include="Version1\EndPoints\Tests\Values\GetValues\GetValuesV1Response.Example.cs" />
+    <Compile Include="Version1\EndPoints\Tests\Values\ListValues\ListValuesV1Request.cs" />
+    <Compile Include="Version1\EndPoints\Tests\Values\ListValues\ListValuesV1Response.cs" />
+    <Compile Include="Version1\EndPoints\Tests\Values\ListValues\ListValuesV1Response.Example.cs" />
     <Compile Include="Version1\EndPoints\Tests\Values\TestValues\TestValuesV1Request.cs" />
     <Compile Include="Version1\EndPoints\Tests\Values\TestValues\TestValuesV1Request.Example.cs" />
     <Compile Include="Version1\EndPoints\Tests\Values\TestValues\TestValuesV1Response.cs" />

@@ -2,7 +2,7 @@
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Client.Sample.Clients;
 using Informapp.InformSystem.WebApi.Client.Sample.Requires;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues;
+using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -20,9 +20,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
 
         public async Task Execute(CancellationToken cancellationToken)
         {
-            var client = new ApiClient<GetValuesV1Request, GetValuesV1Response>();
+            var client = new ApiClient<ListValuesV1Request, ListValuesV1Response>();
 
-            var request = ApiRequest.Create(new GetValuesV1Request());
+            var request = ApiRequest.Create(new ListValuesV1Request());
 
             var response = await client
                 .Execute(request, cancellationToken)

@@ -6,13 +6,13 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues
+namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues
 {
     /// <summary>
-    /// Values response
+    /// List values response
     /// </summary>
     [DataContract(Namespace = Version1Constants.Namespace)]
-    public partial class GetValuesV1Response : BaseResponse
+    public partial class ListValuesV1Response : BaseResponse
     {
         /// <summary>
         /// Integer (16 bits) min value
@@ -126,7 +126,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.G
         /// Uri
         /// </summary>
         [DataMember]
-        [ExampleLocalizedUri(ValuesV1Constants.GetRoute)]
+        [ExampleLocalizedUri(ValuesV1Constants.ListRoute)]
         [Required]
         public Uri Uri { get; set; }
 
@@ -134,9 +134,9 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.G
         /// Relative Uri
         /// </summary>
         [DataMember]
-        [ExampleString(ExampleStringKind.RelativeUri, ValuesV1Constants.GetRoute)]
+        [ExampleString(ExampleStringKind.RelativeUri, ValuesV1Constants.ListRoute)]
         [Required]
-        public Uri RelativeUri { get; set; } = new Uri(ValuesV1Constants.GetRoute, UriKind.Relative);
+        public Uri RelativeUri { get; set; } = new Uri(ValuesV1Constants.ListRoute, UriKind.Relative);
 
         /// <summary>
         /// Single min value
@@ -289,7 +289,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.G
         /// Dictionary
         /// </summary>
         [DataMember]
-        [ExampleMemberProvider(typeof(GetValuesV1Response), nameof(Dictionary))]
+        [ExampleMemberProvider(typeof(ListValuesV1Response), nameof(Dictionary))]
         [Required]
         public IReadOnlyDictionary<int, int> Dictionary { get; set; }
             = new Dictionary<int, int> { { 1, 10 }, { 2, 20 }, { 3, 30 } };

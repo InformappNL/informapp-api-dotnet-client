@@ -2,7 +2,7 @@
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Client.Sample.Requires;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues;
+using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -10,10 +10,10 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
 {
     internal class DependencyInjectionExample : IExample
     {
-        private readonly IApiClient<GetValuesV1Request, GetValuesV1Response> _client;
+        private readonly IApiClient<ListValuesV1Request, ListValuesV1Response> _client;
 
         public DependencyInjectionExample(
-            IApiClient<GetValuesV1Request, GetValuesV1Response> client)
+            IApiClient<ListValuesV1Request, ListValuesV1Response> client)
         {
             Argument.NotNull(client, nameof(client));
 
@@ -22,7 +22,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
 
         public async Task Execute(CancellationToken cancellationToken)
         {
-            var request = new GetValuesV1Request();
+            var request = new ListValuesV1Request();
 
             var response = await _client
                 .Execute(request, cancellationToken)

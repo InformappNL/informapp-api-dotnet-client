@@ -63,7 +63,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
 
                 Create<PingV1Example>(true),
 
-                Create<GetValuesV1Example>(true),
+                Create<ListValuesV1Example>(true),
                 Create<TestValuesV1Example>(true),
 
                 Create<DownloadTestFileV1Example>(true),

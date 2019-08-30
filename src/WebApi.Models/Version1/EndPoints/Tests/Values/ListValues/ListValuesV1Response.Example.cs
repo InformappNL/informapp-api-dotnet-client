@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues
+namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues
 {
-    public partial class GetValuesV1Response : IExampleMemberProvider
+    public partial class ListValuesV1Response : IExampleMemberProvider
     {
-        static GetValuesV1Response()
+        static ListValuesV1Response()
         {
             if (ExampleAttributeConfiguration.Enabled == true)
             {
@@ -17,7 +17,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.G
                     { 3, 30 },
                 };
 
-                var example = new GetValuesV1Response
+                var example = new ListValuesV1Response
                 {
                     Dictionary = dictionary,
                 };

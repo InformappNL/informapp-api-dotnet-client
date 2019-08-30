@@ -10,7 +10,7 @@ using Informapp.InformSystem.WebApi.Models.Http;
 using Informapp.InformSystem.WebApi.Models.Requests;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.OAuth2Token;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues;
+using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues;
 using RestSharp;
 using RestSharp.Authenticators;
@@ -29,8 +29,8 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
 
         public async Task Execute(CancellationToken cancellationToken)
         {
-            var getValuesRequest = new GetValuesV1Request();
-            var getValuesResponse = await Run<GetValuesV1Request, GetValuesV1Response>(getValuesRequest, cancellationToken)
+            var getValuesRequest = new ListValuesV1Request();
+            var getValuesResponse = await Run<ListValuesV1Request, ListValuesV1Response>(getValuesRequest, cancellationToken)
                 .ConfigureAwait(Await.Default);
 
             Require.NotNull(getValuesResponse, nameof(getValuesResponse));

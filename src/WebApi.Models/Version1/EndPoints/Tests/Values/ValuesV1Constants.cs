@@ -5,7 +5,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values
     {
         private const string Route = "api/v1/tests/values";
 
-        internal const string GetRoute = Route;
+        internal const string ListRoute = Route;
         internal const string TestRoute = Route;
     }
 }

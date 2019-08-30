@@ -5093,192 +5093,192 @@
             Method
             </summary>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Request">
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Request">
             <summary>
-            Values request
+            List values request
             </summary>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response">
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response">
             <summary>
-            Values response
+            List values response
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.Int16MinValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.Int16MinValue">
             <summary>
             Integer (16 bits) min value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.Int16MaxValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.Int16MaxValue">
             <summary>
             Integer (16 bits) max value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.Int32MinValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.Int32MinValue">
             <summary>
             Integer (32 bits) min value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.Int32MaxValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.Int32MaxValue">
             <summary>
             Integer (32 bits) max value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.Int64MinValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.Int64MinValue">
             <summary>
             Integer (64 bits) min value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.Int64MaxValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.Int64MaxValue">
             <summary>
             Integer (64 bits) max value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.UnsignedInt16MaxValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.UnsignedInt16MaxValue">
             <summary>
             Unsigned integer (16 bits) max value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.UnsignedInt32MaxValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.UnsignedInt32MaxValue">
             <summary>
             Unsigned integer (32 bits) max value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.UnsignedInt64MaxValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.UnsignedInt64MaxValue">
             <summary>
             Unsigned integer (64 bits) max value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.ByteMaxValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.ByteMaxValue">
             <summary>
             Byte max value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.SignedByteMinValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.SignedByteMinValue">
             <summary>
             Signed byte min value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.SignedByteMaxValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.SignedByteMaxValue">
             <summary>
             Signed byte max value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.CharMinValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.CharMinValue">
             <summary>
             Char min value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.CharMaxValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.CharMaxValue">
             <summary>
             Char max value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.Uri">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.Uri">
             <summary>
             Uri
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.RelativeUri">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.RelativeUri">
             <summary>
             Relative Uri
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.SingleMinValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.SingleMinValue">
             <summary>
             Single min value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.SingleMaxValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.SingleMaxValue">
             <summary>
             Single max value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.DoubleMinValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.DoubleMinValue">
             <summary>
             Double min value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.DoubleMaxValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.DoubleMaxValue">
             <summary>
             Double max value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.DecimalMinValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.DecimalMinValue">
             <summary>
             Decimal min value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.DecimalMaxValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.DecimalMaxValue">
             <summary>
             Decimal max value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.String">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.String">
             <summary>
             String
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.Uuid">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.Uuid">
             <summary>
             Universally unique identifier (UUID)
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.TimeSpanMinValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.TimeSpanMinValue">
             <summary>
             TimeSpan min value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.TimeSpanMaxValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.TimeSpanMaxValue">
             <summary>
             TimeSpan max value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.DateTimeMinValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.DateTimeMinValue">
             <summary>
             DateTime min value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.DateTimeMaxValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.DateTimeMaxValue">
             <summary>
             DateTime max value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.DateTimeOffsetMinValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.DateTimeOffsetMinValue">
             <summary>
             DateTimeOffset min value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.DateTimeOffsetMaxValue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.DateTimeOffsetMaxValue">
             <summary>
             DateTimeOffset max value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.BooleanFalse">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.BooleanFalse">
             <summary>
             Boolean false value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.BooleanTrue">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.BooleanTrue">
             <summary>
             Boolean true value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.Enum">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.Enum">
             <summary>
             Enum
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.Array">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.Array">
             <summary>
             Array
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.Bytes">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.Bytes">
             <summary>
             Bytes
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.Dictionary">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.Dictionary">
             <summary>
             Dictionary
             </summary>
