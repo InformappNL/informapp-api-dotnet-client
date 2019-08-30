@@ -237,6 +237,17 @@
             </summary>
             <param name="builder">The builder</param>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.MimeMapperRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.MimeMapperRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.PathProviderRegistration">
             <summary>
             Register dependencies in Autofac

@@ -162,6 +162,8 @@
     <Compile Include="HashCodes\HashCodeHelper.cs" />
     <Compile Include="MethodProviders\IMethodProvider.T1.cs" />
     <Compile Include="MethodProviders\MethodProvider.T1.cs" />
+    <Compile Include="MimeMappers\IMimeMapper.cs" />
+    <Compile Include="MimeMappers\MimeMapper.cs" />
     <Compile Include="PathProviders\IPathProvider.T1.cs" />
     <Compile Include="PathProviders\PathProvider.T1.cs" />
     <Compile Include="PathProviders\PropertyFuncFactory.T1.cs" />

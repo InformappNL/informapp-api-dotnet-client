@@ -1155,7 +1155,7 @@
             Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set the upload file on the request
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileRequestApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},System.Collections.Generic.IEnumerable{Informapp.InformSystem.WebApi.Client.Files.IUploadFileRequestMapper{`0,`1}})">
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileRequestApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},System.Collections.Generic.IEnumerable{Informapp.InformSystem.WebApi.Client.Files.IUploadFileRequestMapper{`0,`1}},Informapp.InformSystem.WebApi.Client.MimeMappers.IMimeMapper)">
             <summary>
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileRequestApiClientDecorator`2"/> class.
             </summary>
@@ -2113,6 +2113,30 @@
             Get method
             </summary>
             <returns>The method</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.MimeMappers.IMimeMapper">
+            <summary>
+            Maps document extensions to content MIME types.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.MimeMappers.IMimeMapper.GetMimeMapping(System.String)">
+            <summary>
+            Returns the MIME mapping for the specified file name.
+            </summary>
+            <param name="fileName">The file name that is used to determine the MIME type.</param>
+            <returns>Returns the MIME mapping for the specified file name.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.MimeMappers.MimeMapper">
+            <summary>
+            Maps document extensions to content MIME types.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.MimeMappers.MimeMapper.GetMimeMapping(System.String)">
+            <summary>
+            Returns the MIME mapping for the specified file name.
+            </summary>
+            <param name="fileName">The file name that is used to determine the MIME type.</param>
+            <returns>Returns the MIME mapping for the specified file name.</returns>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.PathProviders.IPathProvider`1">
             <summary>

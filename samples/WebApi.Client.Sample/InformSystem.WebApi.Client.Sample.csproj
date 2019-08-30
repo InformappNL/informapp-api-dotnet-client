@@ -85,6 +85,7 @@
     <Compile Include="Autofac\Registrations\ExampleRegistration.cs" />
     <Compile Include="Autofac\Registrations\HasherRegisteration.cs" />
     <Compile Include="Autofac\Registrations\MethodProviderRegistration.cs" />
+    <Compile Include="Autofac\Registrations\MimeMapperRegistration.cs" />
     <Compile Include="Autofac\Registrations\PathProviderRegistration.cs" />
     <Compile Include="Autofac\Registrations\QueryDictionaryBuilderRegistration.cs" />
     <Compile Include="Autofac\Registrations\QueryProviderRegistration.cs" />

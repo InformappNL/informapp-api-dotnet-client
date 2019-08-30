@@ -2,6 +2,7 @@
 using Informapp.InformSystem.WebApi.Client.AttributeProviders;
 using Informapp.InformSystem.WebApi.Client.Decorators;
 using Informapp.InformSystem.WebApi.Client.Files;
+using Informapp.InformSystem.WebApi.Client.MimeMappers;
 using Informapp.InformSystem.WebApi.Client.Requests;
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Models.Http;
@@ -10,7 +11,6 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Web;
 
 namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
 {
@@ -31,20 +31,26 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
 
         private readonly IEnumerable<IUploadFileRequestMapper<TRequest, TResponse>> _mappers;
 
+        private readonly IMimeMapper _mimeMapper;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="UploadFileRequestApiClientDecorator{TRequest, TResponse}"/> class.
         /// </summary>
         /// <param name="apiClient">The instance to decorate</param>
         public UploadFileRequestApiClientDecorator(
             IApiClient<TRequest, TResponse> apiClient,
-            IEnumerable<IUploadFileRequestMapper<TRequest, TResponse>> mappers) : base(apiClient)
+            IEnumerable<IUploadFileRequestMapper<TRequest, TResponse>> mappers,
+            IMimeMapper mimeMapper) : base(apiClient)
         {
             Argument.NotNull(apiClient, nameof(apiClient));
             Argument.NotNullOrEmpty(mappers, nameof(mappers));
+            Argument.NotNull(mimeMapper, nameof(mimeMapper));
 
             _apiClient = apiClient;
 
             _mappers = mappers;
+
+            _mimeMapper = mimeMapper;
         }
 
         /// <summary>
@@ -84,7 +90,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
                 if (string.IsNullOrEmpty(request.UploadFile.ContentType) == true &&
                     string.IsNullOrEmpty(request.UploadFile.FileName) == false)
                 {
-                    request.UploadFile.ContentType = MimeMapping.GetMimeMapping(request.UploadFile.FileName);
+                    request.UploadFile.ContentType = _mimeMapper.GetMimeMapping(request.UploadFile.FileName);
                 }
 
                 request.UploadFile.ParameterName = _attribute.FileParameterName;

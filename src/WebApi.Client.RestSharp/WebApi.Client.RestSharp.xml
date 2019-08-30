@@ -161,7 +161,7 @@
              Generic RestSharp implementation for API client class
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Clients.RestSharpApiClient`2.#ctor(Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory,Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory,Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilderFactory,Informapp.InformSystem.WebApi.Client.Converters.IConverter{System.Nullable{RestSharp.ResponseStatus},System.Nullable{Informapp.InformSystem.WebApi.Client.Responses.ResponseStatusCode}})">
+        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Clients.RestSharpApiClient`2.#ctor(Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory,Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory,Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilderFactory,Informapp.InformSystem.WebApi.Client.Converters.IConverter{System.Nullable{RestSharp.ResponseStatus},System.Nullable{Informapp.InformSystem.WebApi.Client.Responses.ResponseStatusCode}},Informapp.InformSystem.WebApi.Client.MimeMappers.IMimeMapper)">
             <summary>
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.Clients.RestSharpApiClient`2"/> class.
             </summary>

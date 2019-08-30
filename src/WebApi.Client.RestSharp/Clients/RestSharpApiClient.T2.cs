@@ -1,5 +1,6 @@
 ﻿using Informapp.InformSystem.WebApi.Client.Clients;
 using Informapp.InformSystem.WebApi.Client.Converters;
+using Informapp.InformSystem.WebApi.Client.MimeMappers;
 using Informapp.InformSystem.WebApi.Client.QueryStrings;
 using Informapp.InformSystem.WebApi.Client.Requests;
 using Informapp.InformSystem.WebApi.Client.Responses;
@@ -16,7 +17,6 @@ using System.Linq;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Web;
 
 namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
 {
@@ -35,6 +35,8 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
 
         private readonly IConverter<ResponseStatus?, ResponseStatusCode?> _converter;
 
+        private readonly IMimeMapper _mimeMapper;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="RestSharpApiClient{TRequest, TResponse}"/> class.
         /// </summary>
@@ -46,12 +48,14 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
             IClientFactory clientFactory,
             IRequestFactory requestFactory,
             IQueryStringBuilderFactory queryStringBuilderFactory,
-            IConverter<ResponseStatus?, ResponseStatusCode?> converter)
+            IConverter<ResponseStatus?, ResponseStatusCode?> converter,
+            IMimeMapper mimeMapper)
         {
             Argument.NotNull(clientFactory, nameof(clientFactory));
             Argument.NotNull(requestFactory, nameof(requestFactory));
             Argument.NotNull(queryStringBuilderFactory, nameof(queryStringBuilderFactory));
             Argument.NotNull(converter, nameof(converter));
+            Argument.NotNull(mimeMapper, nameof(mimeMapper));
 
             _clientFactory = clientFactory;
 
@@ -60,6 +64,8 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
             _queryStringBuilderFactory = queryStringBuilderFactory;
 
             _converter = converter;
+
+            _mimeMapper = mimeMapper;
         }
 
         /// <summary>
@@ -205,7 +211,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
             }
         }
 
-        private static void SetContentDispositionHeader(ApiResponse response, IRestResponse<TResponse> restResponse)
+        private void SetContentDispositionHeader(ApiResponse response, IRestResponse<TResponse> restResponse)
         {
             var header = response.Headers.GetHeader(HttpResponseHeaderConstants.ContentDisposition);
 
@@ -218,7 +224,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
                 if (response.DownloadFile != null)
                 {
                     string fileName = contentDisposition.FileName;
-                    string contentType = MimeMapping.GetMimeMapping(fileName);
+                    string contentType = _mimeMapper.GetMimeMapping(fileName);
 
                     response.DownloadFile.ContentType = contentType;
                     response.DownloadFile.FileName = fileName;

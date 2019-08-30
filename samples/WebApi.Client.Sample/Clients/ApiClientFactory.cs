@@ -11,6 +11,7 @@ using Informapp.InformSystem.WebApi.Client.DictionaryBuilders;
 using Informapp.InformSystem.WebApi.Client.EndPointProviders;
 using Informapp.InformSystem.WebApi.Client.Files;
 using Informapp.InformSystem.WebApi.Client.MethodProviders;
+using Informapp.InformSystem.WebApi.Client.MimeMappers;
 using Informapp.InformSystem.WebApi.Client.PathProviders;
 using Informapp.InformSystem.WebApi.Client.QueryStringProviders;
 using Informapp.InformSystem.WebApi.Client.QueryStrings;
@@ -66,7 +67,8 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
                 GetClientFactory(),
                 GetRequestFactory(),
                 GetQueryStringBuilderFactory(),
-                GetResponseStatusConverter());
+                GetResponseStatusConverter(),
+                GetMimeMapper());
 
             apiClient = new DownloadFileApiClientDecorator<TRequest, TResponse>(apiClient, GetDownloadFileMappers<TRequest, TResponse>());
 
@@ -78,7 +80,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
 
             apiClient = new ValidateUploadFileResponseApiClientDecorator<TRequest, TResponse>(apiClient);
 
-            apiClient = new UploadFileRequestApiClientDecorator<TRequest, TResponse>(apiClient, GetUploadFileRequestMappers<TRequest, TResponse>());
+            apiClient = new UploadFileRequestApiClientDecorator<TRequest, TResponse>(apiClient,
+                GetUploadFileRequestMappers<TRequest, TResponse>(),
+                GetMimeMapper());
 
             apiClient = new ContentModelApiClientDecorator<TRequest, TResponse>(apiClient);
 
@@ -246,6 +250,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
             where T : class
         {
             return new MethodProvider<T>();
+        }
+
+        private static IMimeMapper GetMimeMapper()
+        {
+            return new MimeMapper();
         }
 
         private static IPathProvider<T> GetPathProvider<T>()
