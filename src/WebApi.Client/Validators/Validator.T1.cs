@@ -90,8 +90,8 @@ namespace Informapp.InformSystem.WebApi.Client.Validators
             }
 
             var properties = type.GetProperties(BindingFlags.Instance | BindingFlags.Public)
-                .Where(x => x.CanRead)
-                .Where(x => x.PropertyType.IsClass == true)
+                .Where(x => x.CanRead == true)
+                .Where(x => x.PropertyType.IsClass == true || x.PropertyType.IsInterface == true)
                 .Where(x => x.PropertyType != typeof(string))
                 .Where(x => x.PropertyType != typeof(Uri))
                 .Where(x => x.PropertyType.IsPrimitive == false)
@@ -122,7 +122,7 @@ namespace Informapp.InformSystem.WebApi.Client.Validators
             }
 
             var fields = type.GetFields(BindingFlags.Instance | BindingFlags.Public)
-                .Where(x => x.FieldType.IsClass == true)
+                .Where(x => x.FieldType.IsClass == true || x.FieldType.IsInterface == true)
                 .Where(x => x.FieldType != typeof(string))
                 .Where(x => x.FieldType != typeof(Uri))
                 .Where(x => x.FieldType.IsPrimitive == false)
@@ -145,9 +145,7 @@ namespace Informapp.InformSystem.WebApi.Client.Validators
 
         private void ValidatePropertyValue(object instance, int nextDepth, int maxDepth)
         {
-            var collection = (instance as IEnumerable);
-
-            if (collection != null)
+            if (instance is IEnumerable collection)
             {
                 foreach (var item in collection)
                 {
