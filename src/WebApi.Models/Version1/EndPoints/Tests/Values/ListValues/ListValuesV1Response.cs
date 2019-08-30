@@ -217,21 +217,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.L
         public TimeSpan? TimeSpanMaxValue { get; set; } = TimeSpan.MaxValue;
 
         /// <summary>
-        /// DateTime min value
-        /// </summary>
-        [DataMember]
-        [ExampleConstant(ExampleConstantKind.DateTimeMinValue)]
-        [Required]
-        public DateTime? DateTimeMinValue { get; set; } = DateTime.MinValue;
-        /// <summary>
-        /// DateTime max value
-        /// </summary>
-        [DataMember]
-        [ExampleConstant(ExampleConstantKind.DateTimeMaxValue)]
-        [Required]
-        public DateTime? DateTimeMaxValue { get; set; } = DateTime.MaxValue;
-
-        /// <summary>
         /// DateTimeOffset min value
         /// </summary>
         [DataMember]

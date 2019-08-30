@@ -5233,16 +5233,6 @@
             TimeSpan max value
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.DateTimeMinValue">
-            <summary>
-            DateTime min value
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.DateTimeMaxValue">
-            <summary>
-            DateTime max value
-            </summary>
-        </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response.DateTimeOffsetMinValue">
             <summary>
             DateTimeOffset min value
