@@ -7,7 +7,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
     /// The kind of data
     /// </summary>
     [DataContract(Namespace = Version1Constants.Namespace)]
-    public enum FormRegistrationDataKind
+    public enum FormRegistrationDataV1Kind
     {
         /// <summary>
         /// Object

@@ -185,8 +185,22 @@
     <Compile Include="Version1\EndPoints\Customers\ListCustomer\ListCustomerV1ResponseCustomer.cs" />
     <Compile Include="Version1\EndPoints\Customers\ListCustomer\ListCustomerV1Select.cs" />
     <Compile Include="Version1\EndPoints\Customers\ListCustomer\ListCustomerV1Sort.cs" />
-    <Compile Include="Version1\EndPoints\FormRegistrationData\FormRegistrationDataKind.cs" />
+    <Compile Include="Version1\EndPoints\DataSources\DataSourceV1Constants.cs" />
+    <Compile Include="Version1\EndPoints\DataSources\DataSourceV1Kind.cs" />
+    <Compile Include="Version1\EndPoints\DataSources\DownloadDataSource\DownloadDataSourceV1Request.cs" />
+    <Compile Include="Version1\EndPoints\DataSources\DownloadDataSource\DownloadDataSourceV1Response.cs" />
+    <Compile Include="Version1\EndPoints\DataSources\DownloadDataSource\DownloadDataSourceV1Response.Example.cs" />
+    <Compile Include="Version1\EndPoints\DataSources\ListDataSource\ListDataSourceV1Filter.cs" />
+    <Compile Include="Version1\EndPoints\DataSources\ListDataSource\ListDataSourceV1Request.cs" />
+    <Compile Include="Version1\EndPoints\DataSources\ListDataSource\ListDataSourceV1Response.cs" />
+    <Compile Include="Version1\EndPoints\DataSources\ListDataSource\ListDataSourceV1ResponseDataSource.cs" />
+    <Compile Include="Version1\EndPoints\DataSources\ListDataSource\ListDataSourceV1Select.cs" />
+    <Compile Include="Version1\EndPoints\DataSources\ListDataSource\ListDataSourceV1Sort.cs" />
+    <Compile Include="Version1\EndPoints\DataSources\UploadDataSource\UploadDataSourceV1Request.cs" />
+    <Compile Include="Version1\EndPoints\DataSources\UploadDataSource\UploadDataSourceV1Request.Example.cs" />
+    <Compile Include="Version1\EndPoints\DataSources\UploadDataSource\UploadDataSourceV1Response.cs" />
     <Compile Include="Version1\EndPoints\FormRegistrationData\FormRegistrationDataV1Constants.cs" />
+    <Compile Include="Version1\EndPoints\FormRegistrationData\FormRegistrationDataV1Kind.cs" />
     <Compile Include="Version1\EndPoints\FormRegistrationData\ListFormRegistrationData\ListFormRegistrationDataV1Filter.cs" />
     <Compile Include="Version1\EndPoints\FormRegistrationData\ListFormRegistrationData\ListFormRegistrationDataV1Request.cs" />
     <Compile Include="Version1\EndPoints\FormRegistrationData\ListFormRegistrationData\ListFormRegistrationDataV1Response.cs" />
@@ -349,6 +363,7 @@
     <Analyzer Include="..\..\packages\Microsoft.NetFramework.Analyzers.2.9.4\analyzers\dotnet\cs\Microsoft.NetFramework.Analyzers.dll" />
     <Analyzer Include="..\..\packages\Microsoft.NetFramework.Analyzers.2.9.4\analyzers\dotnet\cs\Microsoft.NetFramework.CSharp.Analyzers.dll" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

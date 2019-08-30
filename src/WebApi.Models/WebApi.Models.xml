@@ -2911,22 +2911,379 @@
             Sort by last update date descending
             </summary>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.FormRegistrationDataKind">
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.DataSourceV1Kind">
+            <summary>
+            The kind of data source
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.DataSourceV1Kind.File">
+            <summary>
+            File
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.DownloadDataSource.DownloadDataSourceV1Request">
+            <summary>
+            Download data source file request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.DownloadDataSource.DownloadDataSourceV1Request.DataSourceId">
+            <summary>
+            Data source Id
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.DownloadDataSource.DownloadDataSourceV1Response">
+            <summary>
+            Download data source file response
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.DownloadDataSource.DownloadDataSourceV1Response.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="!:DownloadTestFileV1Response"/> class.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.DownloadDataSource.DownloadDataSourceV1Response.ContentType">
+            <summary>
+            Content type
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.DownloadDataSource.DownloadDataSourceV1Response.File">
+            <summary>
+            File
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.DownloadDataSource.DownloadDataSourceV1Response.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.DownloadDataSource.DownloadDataSourceV1Response.Size">
+            <summary>
+            Size
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.DownloadDataSource.DownloadDataSourceV1Response.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Filter">
+            <summary>
+            List data source request filter
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Filter.Name">
+            <summary>
+            Filter records by name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Filter.Description">
+            <summary>
+            Filter records by description
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Filter.BusinessGroupId">
+            <summary>
+            Filter records by business group id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Filter.CanBeUploaded">
+            <summary>
+            Filter records by whether a file can be uploaded
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Filter.CreateDate">
+            <summary>
+            Filter records by create date
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Filter.LastUpdateDate">
+            <summary>
+            Filter records by last update date
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Request">
+            <summary>
+            List data source request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Request.Filter">
+            <summary>
+            Filter records
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Request.Select">
+            <summary>
+            Select columns
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Request.Sort">
+            <summary>
+            Sort records
+            
+            Sort by the first column, then by the second column, and so on
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Request.PageNumber">
+            <summary>
+            Page number
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Request.PageSize">
+            <summary>
+            Number of records per page
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Response">
+            <summary>
+            List data source response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Response.DataSources">
+            <summary>
+            List of data sources
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Response.Total">
+            <summary>
+            Total number of records matching the request
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1ResponseDataSource">
+            <summary>
+            Data source
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1ResponseDataSource.DataSourceId">
+            <summary>
+            Data source Id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1ResponseDataSource.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1ResponseDataSource.Description">
+            <summary>
+            Description
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1ResponseDataSource.Kind">
+            <summary>
+            Kind
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1ResponseDataSource.BusinessGroupId">
+            <summary>
+            Business group Id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1ResponseDataSource.CanBeUploaded">
+            <summary>
+            Indicates whether a file can be uploaded to the datasource
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1ResponseDataSource.CreateDate">
+            <summary>
+            Create date
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1ResponseDataSource.LastUpdateDate">
+            <summary>
+            Last update date
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Select">
+            <summary>
+            Select columns
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Select.All">
+            <summary>
+            All
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Select.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Select.Description">
+            <summary>
+            Description
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Select.Kind">
+            <summary>
+            Kind
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Select.BusinessGroupId">
+            <summary>
+            BusinessGroupId
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Select.CanBeUploaded">
+            <summary>
+            CanBeUploaded
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Select.CreateDate">
+            <summary>
+            CreateDate
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Select.LastUpdateDate">
+            <summary>
+            LastUpdateDate
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Sort">
+            <summary>
+            Sort data sources
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Sort.Name">
+            <summary>
+            Sort by name ascending
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Sort.NameDesc">
+            <summary>
+            Sort by name descending
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Sort.Description">
+            <summary>
+            Sort by description ascending
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Sort.DescriptionDesc">
+            <summary>
+            Sort by description descending
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Sort.CreateDate">
+            <summary>
+            Sort by create date ascending
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Sort.CreateDateDesc">
+            <summary>
+            Sort by create date descending
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Sort.LastUpdateDate">
+            <summary>
+            Sort by last update date ascending
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Sort.LastUpdateDateDesc">
+            <summary>
+            Sort by last update date descending
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Request">
+            <summary>
+            Upload data source file request
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Request.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Request"/> class.
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Request.FileParameterName">
+            <summary>
+            File parameter name
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Request.FileParamaterDescription">
+            <summary>
+            File parameter description
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Request.AllowedFileTypes">
+            <summary>
+            Allowed file types
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Request.MaxFileNameLength">
+            <summary>
+            Max file name length
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Request.MaxFileSize">
+            <summary>
+            Max file size in bytes
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Request.DataSourceId">
+            <summary>
+            Data source Id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Request.Informapp#InformSystem#WebApi#Models#Version1#Files#IUploadFileV1Request#ContentType">
+            <summary>
+            Content type
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Request.File">
+            <summary>
+            File
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Request.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Request.Size">
+            <summary>
+            Size
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Request.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Response">
+            <summary>
+            Upload data source file response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Response.Algorithm">
+            <summary>
+            Algorithm
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Response.Hash">
+            <summary>
+            Hash
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Response.Size">
+            <summary>
+            Size
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.FormRegistrationDataV1Kind">
             <summary>
             The kind of data
             </summary>
         </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.FormRegistrationDataKind.Object">
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.FormRegistrationDataV1Kind.Object">
             <summary>
             Object
             </summary>
         </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.FormRegistrationDataKind.Array">
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.FormRegistrationDataV1Kind.Array">
             <summary>
             Array
             </summary>
         </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.FormRegistrationDataKind.Value">
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.FormRegistrationDataV1Kind.Value">
             <summary>
             Value
             </summary>
