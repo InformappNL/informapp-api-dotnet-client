@@ -49,9 +49,7 @@ namespace Informapp.InformSystem.WebApi.Client.Validators
 
             var nextDepth = depth + 1;
 
-            var instances = (instance as IEnumerable);
-
-            if (instances != null)
+            if (instance is IEnumerable instances)
             {
                 ValidateCollection(instances, nextDepth, maxDepth);
             }
