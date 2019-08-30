@@ -76,6 +76,7 @@
     <Compile Include="Converters\HttpMethodConverter.cs" />
     <Compile Include="Converters\ResponseStatusConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestFactories\Decorators\AcceptContentTypeRequestFactoryDecorator.cs" />
     <Compile Include="RequestFactories\Decorators\BearerTokenRequestFactoryDecorator.cs" />
     <Compile Include="RequestFactories\Decorators\MethodOverrideRequestFactoryDecorator.cs" />
     <Compile Include="RequestFactories\IRequestFactory.cs" />

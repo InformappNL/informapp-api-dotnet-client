@@ -43,5 +43,10 @@ namespace Informapp.InformSystem.WebApi.Client.Responses
         /// Headers
         /// </summary>
         public ResponseHeaders Headers { get; set; }
+
+        /// <summary>
+        /// The download file
+        /// </summary>
+        public ApiDownloadFileResponse DownloadFile { get; set; }
     }
 }

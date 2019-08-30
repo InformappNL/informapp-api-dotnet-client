@@ -50,6 +50,11 @@ namespace Informapp.InformSystem.WebApi.Client.Requests
         /// </summary>
         public ContentType? ContentType { get; set; }
 
+        /// <summary>
+        /// Accept content type
+        /// </summary>
+        public Accept? Accept { get; set; }
+
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private string DebuggerDisplay
         {

@@ -22,11 +22,6 @@ namespace Informapp.InformSystem.WebApi.Client.Responses
         }
 
         /// <summary>
-        /// Headers
-        /// </summary>
-        public IEnumerable<ResponseHeader> Headers { get; }
-
-        /// <summary>
         /// Get header by name
         /// </summary>
         /// <param name="headerName">The header name</param>
@@ -41,6 +36,11 @@ namespace Informapp.InformSystem.WebApi.Client.Responses
 
             return header;
         }
+
+        /// <summary>
+        /// Headers
+        /// </summary>
+        public IEnumerable<ResponseHeader> Headers { get; }
 
         /// <summary>
         /// Content-Length
@@ -61,5 +61,10 @@ namespace Informapp.InformSystem.WebApi.Client.Responses
         /// Total count
         /// </summary>
         public int? TotalCount { get; set; }
+
+        /// <summary>
+        /// Content-Disposition
+        /// </summary>
+        public ContentDispositionHeader ContentDisposition { get; set; }
     }
 }

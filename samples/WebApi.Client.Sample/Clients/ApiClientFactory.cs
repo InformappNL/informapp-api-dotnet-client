@@ -8,6 +8,7 @@ using Informapp.InformSystem.WebApi.Client.CredentialsProviders;
 using Informapp.InformSystem.WebApi.Client.DateTimeProviders;
 using Informapp.InformSystem.WebApi.Client.DictionaryBuilders;
 using Informapp.InformSystem.WebApi.Client.EndPointProviders;
+using Informapp.InformSystem.WebApi.Client.Files;
 using Informapp.InformSystem.WebApi.Client.MethodProviders;
 using Informapp.InformSystem.WebApi.Client.PathProviders;
 using Informapp.InformSystem.WebApi.Client.QueryStringProviders;
@@ -29,6 +30,7 @@ using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.OAuth2Token
 using RestSharp;
 using System;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
 {
@@ -62,6 +64,10 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
                 GetQueryStringBuilderFactory(), 
                 GetResponseStatusConverter());
 
+            apiClient = new DownloadFileApiClientDecorator<TRequest, TResponse>(apiClient, GetDownloadFileMappers<TRequest, TResponse>());
+
+            apiClient = new UploadFileApiClientDecorator<TRequest, TResponse>(apiClient, GetUploadFileMappers<TRequest, TResponse>());
+
             apiClient = new ContentModelApiClientDecorator<TRequest, TResponse>(apiClient);
 
             apiClient = new LogToConsoleApiClientDecorator<TRequest, TResponse>(apiClient);
@@ -87,6 +93,8 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
             apiClient = new ValidateRequestContextApiClientDecorator<TRequest, TResponse>(apiClient, GetValidator<RequestContext>());
 
             //apiClient = new MethodeOverrideApiClientDecorator<TRequest, TResponse>(apiClient);
+
+            apiClient = new AcceptContentTypeApiClientDecorator<TRequest, TResponse>(apiClient);
 
             apiClient = new ContentTypeApiClientDecorator<TRequest, TResponse>(apiClient);
 
@@ -189,6 +197,19 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
             return new DateTimeProvider();
         }
 
+        private static IEnumerable<IDownloadFileMapper<TRequest, TResponse>> GetDownloadFileMappers<TRequest, TResponse>()
+            where TRequest : class, IRequest<TResponse>
+            where TResponse : class, new()
+        {
+            var mappers = new IDownloadFileMapper<TRequest, TResponse>[]
+            {
+                new DownloadFileV1Mapper<TRequest, TResponse>(),
+                new DownloadFileV2Mapper<TRequest, TResponse>(),
+            };
+
+            return mappers;
+        }
+
         private static IEndPointProvider GetEndPointProvider()
         {
             return new ConfigurationEndPointProvider();
@@ -234,6 +255,8 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
         {
             IRequestFactory requestFactory = new RequestFactory(GetHttpVerbConverter());
 
+            requestFactory = new AcceptContentTypeRequestFactoryDecorator(requestFactory);
+
             requestFactory = new BearerTokenRequestFactoryDecorator(requestFactory);
 
             requestFactory = new MethodOverrideRequestFactoryDecorator(requestFactory);
@@ -249,6 +272,19 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
         private static IConverter<string, Guid?> GetStringToGuidConverter()
         {
             return new StringToGuidConverter();
+        }
+
+        private static IEnumerable<IUploadFileMapper<TRequest, TResponse>> GetUploadFileMappers<TRequest, TResponse>()
+            where TRequest : class, IRequest<TResponse>
+            where TResponse : class, new()
+        {
+            var mappers = new IUploadFileMapper<TRequest, TResponse>[]
+            {
+                new UploadFileV1Mapper<TRequest, TResponse>(),
+                new UploadFileV2Mapper<TRequest, TResponse>(),
+            };
+
+            return mappers;
         }
 
         private static IValidator<T> GetValidator<T>()

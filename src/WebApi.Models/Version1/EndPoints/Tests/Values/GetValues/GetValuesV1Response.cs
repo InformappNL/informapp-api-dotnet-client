@@ -193,7 +193,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.G
         private const string _string = "string";
 
         /// <summary>
-        /// Universally unique identifier  (UUID)
+        /// Universally unique identifier (UUID)
         /// </summary>
         [DataMember]
         [ExampleString(ExampleStringKind.Guid, _guid)]

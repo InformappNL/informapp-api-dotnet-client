@@ -31,8 +31,10 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
              */
             var decoratorTypes = new Type[]
             {
-                typeof(DisposableRequestApiClientDecorator<,>),
+                typeof(DownloadFileApiClientDecorator<,>),
                 typeof(DisposableResponseApiClientDecorator<,>),
+                typeof(DisposableRequestApiClientDecorator<,>),
+                typeof(UploadFileApiClientDecorator<,>),
                 typeof(ContentModelApiClientDecorator<,>),
                 typeof(LogToConsoleApiClientDecorator<,>),
                 typeof(ResultNullApiClientDecorator<,>),
@@ -47,6 +49,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
                 typeof(CredentialsApiClientDecorator<,>),
                 typeof(ValidateRequestContextApiClientDecorator<,>),
                 //typeof(MethodeOverrideApiClientDecorator<,>),
+                typeof(AcceptContentTypeApiClientDecorator<,>),
                 typeof(ContentTypeApiClientDecorator<,>),
                 typeof(AnonymousApiClientDecorator<,>),
                 typeof(MethodApiClientDecorator<,>),

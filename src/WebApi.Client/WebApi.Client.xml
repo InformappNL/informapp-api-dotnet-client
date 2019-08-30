@@ -729,6 +729,25 @@
             <param name="cancellationToken">The cancellation token</param>
             <returns>The response</returns>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.AcceptContentTypeApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set accept content type on request
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.AcceptContentTypeApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.AcceptContentTypeApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.AcceptContentTypeApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Set accept content type and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.AnonymousApiClientDecorator`2">
             <summary>
             Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set anonymous on request
@@ -878,6 +897,25 @@
         <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.DisposableResponseApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
             <summary>
             Execute request and register the response object for disposal
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.DownloadFileApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set the download file on the response model
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.DownloadFileApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},System.Collections.Generic.IEnumerable{Informapp.InformSystem.WebApi.Client.Files.IDownloadFileMapper{`0,`1}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.DownloadFileApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.DownloadFileApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Execute request and set the download file on the response model
             </summary>
             <param name="request">The request</param>
             <param name="cancellationToken">The cancellation token</param>
@@ -1112,6 +1150,25 @@
         <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.TotalCountApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
             <summary>
             Execute request and set total count on response
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set the upload file on the request
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},System.Collections.Generic.IEnumerable{Informapp.InformSystem.WebApi.Client.Files.IUploadFileMapper{`0,`1}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.UploadFileApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Set the upload file on the request and execute request
             </summary>
             <param name="request">The request</param>
             <param name="cancellationToken">The cancellation token</param>
@@ -1703,6 +1760,110 @@
             <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo"/> that holds the serialized object data about the exception being thrown.</param>
             <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext"/> that contains contextual information about the source or destination.</param>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Files.DownloadFileV1Mapper`2">
+            <summary>
+            Download file mapper class for version 1 responses
+            </summary>
+            <typeparam name="TRequest">The type of request</typeparam>
+            <typeparam name="TResponse">The type of response</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.DownloadFileV1Mapper`2.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Files.DownloadFileV1Mapper`2"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.DownloadFileV1Mapper`2.Map(Informapp.InformSystem.WebApi.Client.Responses.ApiResponse{`1})">
+            <summary>
+            Map download file to the response
+            </summary>
+            <param name="request">The request</param>
+            <returns>true if the upload file was converted successfully mapped to the response; otherwise, false.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Files.DownloadFileV2Mapper`2">
+            <summary>
+            Download file mapper class for version 2 responses
+            </summary>
+            <typeparam name="TRequest">The type of request</typeparam>
+            <typeparam name="TResponse">The type of response</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.DownloadFileV2Mapper`2.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Files.DownloadFileV2Mapper`2"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.DownloadFileV2Mapper`2.Map(Informapp.InformSystem.WebApi.Client.Responses.ApiResponse{`1})">
+            <summary>
+            Map download file to the response
+            </summary>
+            <param name="request">The request</param>
+            <returns>true if the upload file was converted successfully mapped to the response; otherwise, false.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Files.IDownloadFileMapper`2">
+            <summary>
+            Download file mapper interface
+            </summary>
+            <typeparam name="TRequest">The type of request</typeparam>
+            <typeparam name="TResponse">The type of response</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.IDownloadFileMapper`2.Map(Informapp.InformSystem.WebApi.Client.Responses.ApiResponse{`1})">
+            <summary>
+            Map download file to the response
+            </summary>
+            <param name="request">The request</param>
+            <returns>true if the upload file was converted successfully mapped to the response; otherwise, false.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Files.IUploadFileMapper`2">
+            <summary>
+            Upload file mapper interface
+            </summary>
+            <typeparam name="TRequest">The type of request</typeparam>
+            <typeparam name="TResponse">The type of response</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.IUploadFileMapper`2.Map(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0})">
+            <summary>
+            Map upload file to the request
+            </summary>
+            <param name="request">The request</param>
+            <returns>true if the upload file was converted successfully mapped to the request; otherwise, false.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Files.UploadFileV1Mapper`2">
+            <summary>
+            Upload file mapper class for version 1 upload requests
+            </summary>
+            <typeparam name="TRequest">The type of request</typeparam>
+            <typeparam name="TResponse">The type of response</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.UploadFileV1Mapper`2.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Files.UploadFileV1Mapper`2"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.UploadFileV1Mapper`2.Map(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0})">
+            <summary>
+            Map upload file to the request
+            </summary>
+            <param name="request">The request</param>
+            <returns>true if the upload file was converted successfully mapped to the request; otherwise, false.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Files.UploadFileV2Mapper`2">
+            <summary>
+            Upload file mapper class for version 2 upload requests
+            </summary>
+            <typeparam name="TRequest">The type of request</typeparam>
+            <typeparam name="TResponse">The type of response</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.UploadFileV2Mapper`2.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Files.UploadFileV2Mapper`2"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Files.UploadFileV2Mapper`2.Map(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0})">
+            <summary>
+            Map upload file to the request
+            </summary>
+            <param name="request">The request</param>
+            <returns>true if the upload file was converted successfully mapped to the request; otherwise, false.</returns>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.MethodProviders.IMethodProvider`1">
             <summary>
             Generic interface to retrieve method from a class
@@ -2004,6 +2165,21 @@
             The bearer token
             </summary>
         </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest.IsFileDownload">
+            <summary>
+            The response is a file download
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest.IsFileUpload">
+            <summary>
+            The request is a file upload
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest.UploadFile">
+            <summary>
+            The file to upload
+            </summary>
+        </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest.Create``1(``0)">
             <summary>
             Create generic <see cref="T:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest`1"/> from request
@@ -2035,6 +2211,31 @@
             <typeparam name="T">The type deriving from <see cref="T:Informapp.InformSystem.WebApi.Client.Requests.ApiRequest"/></typeparam>
             <param name="request">The request</param>
             <returns>The request</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Requests.ApiUploadFileRequest">
+            <summary>
+            Api upload file request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiUploadFileRequest.ContentType">
+            <summary>
+            The Content-Type
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiUploadFileRequest.File">
+            <summary>
+            The file to upload
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiUploadFileRequest.FileName">
+            <summary>
+            The filename
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiUploadFileRequest.FileParameterName">
+            <summary>
+            The parameter name of the file in the api request
+            </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Requests.CredentialsKind">
             <summary>
@@ -2093,6 +2294,11 @@
             Content type
             </summary>
         </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.RequestContext.Accept">
+            <summary>
+            Accept content type
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Requires.Require">
             <summary>
             Static class with methods to ensure conditions are true
@@ -2135,6 +2341,21 @@
             <typeparam name="TSource"></typeparam>
             <typeparam name="TTarget"></typeparam>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Responses.ApiDownloadFileResponse">
+            <summary>
+            Api download file response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiDownloadFileResponse.File">
+            <summary>
+            The file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiDownloadFileResponse.FileName">
+            <summary>
+            The filename
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse">
             <summary>
             DTO class for API response
@@ -2175,6 +2396,11 @@
             Headers
             </summary>
         </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse.DownloadFile">
+            <summary>
+            The download file
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse`1">
             <summary>
             Generic DTO class for API response
@@ -2207,14 +2433,36 @@
             <param name="response">The response</param>
             <returns>The response</returns>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Responses.ContentDispositionHeader">
+            <summary>
+            Content-Disposition header
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Responses.ContentDispositionHeader.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Responses.ContentDispositionHeader"/> class.
+            </summary>
+            <param name="disposition">A <see cref="T:System.Net.Mime.DispositionTypeNames"/> value that contains the disposition.</param>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ContentDispositionHeader.DispositionType">
+            <summary>
+            Disposition type
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ContentDispositionHeader.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Responses.ContentDispositionHeader.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> representation of this instance.
+            </summary>
+            <returns>A <see cref="T:System.String"/> that contains the property values for this instance.</returns>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeaders">
             <summary>
             Collection of response headers
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeaders.Headers">
-            <summary>
-            Headers
             </summary>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeaders.GetHeader(System.String)">
@@ -2223,6 +2471,11 @@
             </summary>
             <param name="headerName">The header name</param>
             <returns>The response header, null of not found</returns>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeaders.Headers">
+            <summary>
+            Headers
+            </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeaders.ContentLength">
             <summary>
@@ -2242,6 +2495,11 @@
         <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeaders.TotalCount">
             <summary>
             Total count
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeaders.ContentDisposition">
+            <summary>
+            Content-Disposition
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeader">

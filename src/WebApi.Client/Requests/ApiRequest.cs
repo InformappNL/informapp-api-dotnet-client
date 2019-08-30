@@ -31,6 +31,21 @@ namespace Informapp.InformSystem.WebApi.Client.Requests
         public ApiBearerToken BearerToken { get; set; }
 
         /// <summary>
+        /// The response is a file download
+        /// </summary>
+        public bool? IsFileDownload { get; set; }
+
+        /// <summary>
+        /// The request is a file upload
+        /// </summary>
+        public bool? IsFileUpload { get; set; }
+
+        /// <summary>
+        /// The file to upload
+        /// </summary>
+        public ApiUploadFileRequest UploadFile { get; set; }
+
+        /// <summary>
         /// Create generic <see cref="ApiRequest{T}"/> from request
         /// </summary>
         /// <typeparam name="T">Type of request</typeparam>

@@ -29,6 +29,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
              */
             var decoratorTypes = new Type[]
             {
+                typeof(AcceptContentTypeRequestFactoryDecorator),
                 typeof(BearerTokenRequestFactoryDecorator),
                 typeof(MethodOverrideRequestFactoryDecorator),
             };

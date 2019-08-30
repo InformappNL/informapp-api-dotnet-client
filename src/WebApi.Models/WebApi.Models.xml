@@ -204,6 +204,108 @@
             <param name="value">The value of the object to validate.</param>
             <returns>true if the specified value is valid; otherwise, false.</returns>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileNameLengthAttribute">
+            <summary>
+            File name validation attribute class
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileNameLengthAttribute.MaximumLength">
+            <summary>
+            Gets the maximum length of a file name.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileNameLengthAttribute.MinimumLength">
+            <summary>
+            Gets the minimum length of a file name.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileNameLengthAttribute.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileNameLengthAttribute"/> class.
+            </summary>
+            <param name="maximumLength">The maximum length of a file name</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileNameLengthAttribute.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileNameLengthAttribute"/> class.
+            </summary>
+            <param name="minimumLength">The minimum length of a string</param>
+            <param name="maximumLength">The maximum length of a string</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileNameLengthAttribute.IsValid(System.Object)">
+            <summary>
+            Determines whether the specified value of the object is valid.
+            </summary>
+            <param name="value">The value of the object to validate.</param>
+            <returns>true if the specified value is valid; otherwise, false.</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileNameLengthAttribute.FormatErrorMessage(System.String)">
+            <summary>
+            Applies formatting to an error message, based on the data field where the error occurred.
+            </summary>
+            <param name="name">The name to include in the formatted message.</param>
+            <returns>An instance of the formatted error message.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileSizeAttribute">
+            <summary>
+            File size validation attribute class
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileSizeAttribute.Size">
+            <summary>
+            Size
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileSizeAttribute.#ctor(System.Int64)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileSizeAttribute"/> class.
+            </summary>
+            <param name="size"></param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileSizeAttribute.IsValid(System.Object)">
+            <summary>
+            Determines whether the specified value of the object is valid.
+            </summary>
+            <param name="value">The value of the object to validate.</param>
+            <returns>true if the specified value is valid; otherwise, false.</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileSizeAttribute.FormatErrorMessage(System.String)">
+            <summary>
+            Applies formatting to an error message, based on the data field where the error occurred.
+            </summary>
+            <param name="name">The name to include in the formatted message.</param>
+            <returns>An instance of the formatted error message.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileTypeAttribute">
+            <summary>
+            File type validation attribute class
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileTypeAttribute.Extensions">
+            <summary>
+            The allowed file extensions
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileTypeAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileNameLengthAttribute"/> class.
+            </summary>
+            <param name="extensions">The allowed file extensions, separated by space</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileTypeAttribute.IsValid(System.Object)">
+            <summary>
+            Determines whether the specified value of the object is valid.
+            </summary>
+            <param name="value">The value of the object to validate.</param>
+            <returns>true if the specified value is valid; otherwise, false.</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.DataAnnotations.FileTypeAttribute.FormatErrorMessage(System.String)">
+            <summary>
+            Applies formatting to an error message, based on the data field where the error occurred.
+            </summary>
+            <param name="name">The name to include in the formatted message.</param>
+            <returns>An instance of the formatted error message.</returns>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.DataAnnotations.MaxItemsAttribute">
             <summary>
             Specifies the maximum number of items in an <see cref="T:System.Collections.IEnumerable"/> allowed in a property or field.
@@ -635,6 +737,11 @@
         <member name="M:Informapp.InformSystem.WebApi.Models.ExampleValues.ExampleMemberProviderAttribute.#ctor(System.Type,System.String)">
             <summary>Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.ExampleValues.ExampleMemberProviderAttribute"/> class.</summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.ExampleValues.ExampleStreamBase">
+            <summary>
+            Base class for example stream, everything throws NotImplementedException to ensure nothing of base class Stream is used.
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.ExampleValues.ExampleStringAttribute">
             <summary>
             Example string attribute
@@ -723,6 +830,36 @@
             <param name="name">name of member to get example for</param>
             <returns>the example object, null if no example was found</returns>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Http.Accept">
+            <summary>
+            Accept content types
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.Accept.Json">
+            <summary>
+            JSON
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Http.Accept.OctetStream">
+            <summary>
+            Octet stream
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Http.AcceptAttribute">
+            <summary>
+            Indicates the content type to use in ACCEPT header for a request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Http.AcceptAttribute.Accept">
+            <summary>
+            Content type to accept
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Http.AcceptAttribute.#ctor(Informapp.InformSystem.WebApi.Models.Http.Accept)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.Http.AcceptAttribute"/> class.
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Http.BodyParameterAttribute">
             <summary>
             Marks a property as body parameter
@@ -806,6 +943,16 @@
         <member name="F:Informapp.InformSystem.WebApi.Models.Http.ContentTypeConstants.MultiPart.FormData">
             <summary>
             multipart/form-data
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Http.DownloadFileRequestAttribute">
+            <summary>
+            Indicates a file download request
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Http.DownloadFileRequestAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.Http.DownloadFileRequestAttribute"/> class.
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Http.HttpMethod">
@@ -1162,6 +1309,21 @@
         <member name="M:Informapp.InformSystem.WebApi.Models.Http.QueryParameterAttribute.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.Http.QueryParameterAttribute"/> class.
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Http.UploadFileRequestAttribute">
+            <summary>
+            Indicates a file upload request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Http.UploadFileRequestAttribute.FileParameterName">
+            <summary>
+            The file parameter name
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Http.UploadFileRequestAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.Http.UploadFileRequestAttribute"/> class.
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.OAuth2.AOuth2Constants">
@@ -4142,6 +4304,131 @@
             Ping response
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1Request">
+            <summary>
+            Download test file request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1Request.Kind">
+            <summary>
+            Kind
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1RequestKind">
+            <summary>
+            File kind
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1RequestKind.Docx">
+            <summary>
+            Docx
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1RequestKind.Pdf">
+            <summary>
+            Pdf
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1RequestKind.Txt">
+            <summary>
+            Txt
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1RequestKind.Xlsx">
+            <summary>
+            Xlsx
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1Response">
+            <summary>
+            Download test file response
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1Response.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1Response"/> class.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1Response.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1Response.File">
+            <summary>
+            File
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1Response.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request">
+            <summary>
+            Upload test file request
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request"/> class.
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.FileParameterName">
+            <summary>
+            File parameter name
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.FileParamaterDescription">
+            <summary>
+            File parameter description
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.AllowedFileTypes">
+            <summary>
+            Allowed file types
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.MaxFileNameLength">
+            <summary>
+            Max file name length
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.MaxFileSize">
+            <summary>
+            Max file size in bytes
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.File">
+            <summary>
+            File
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Response">
+            <summary>
+            Upload test file response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Response.Size">
+            <summary>
+            Size
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Response.MD5Checksum">
+            <summary>
+            MD5 checksum
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Methods.DeleteMethod.DeleteMethodV1Request">
             <summary>
             Delete method request
@@ -4354,7 +4641,7 @@
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.Uuid">
             <summary>
-            Universally unique identifier  (UUID)
+            Universally unique identifier (UUID)
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.GetValues.GetValuesV1Response.TimeSpanMinValue">
@@ -4715,6 +5002,36 @@
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Errors.UnauthorizedV1Response.Message">
             <summary>
             Message
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Files.IDownloadFileV1Response">
+            <summary>
+            Download file response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Files.IDownloadFileV1Response.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Files.IDownloadFileV1Response.File">
+            <summary>
+            File
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Files.IUploadFileV1Request">
+            <summary>
+            Upload file request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Files.IUploadFileV1Request.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Files.IUploadFileV1Request.File">
+            <summary>
+            File
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Filters.BooleanV1Filter">
@@ -5316,6 +5633,36 @@
         <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Errors.UnauthorizedV2Response.Message">
             <summary>
             Message
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version2.Files.IDownloadFileV2Response">
+            <summary>
+            Download file response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Files.IDownloadFileV2Response.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Files.IDownloadFileV2Response.File">
+            <summary>
+            File
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version2.Files.IUploadFileV2Request">
+            <summary>
+            Upload file request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Files.IUploadFileV2Request.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Files.IUploadFileV2Request.File">
+            <summary>
+            File
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version2.Filters.BooleanV2Filter">

@@ -187,6 +187,17 @@
             </summary>
             <param name="builder">The builder</param>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.DownloadFileMapperRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.DownloadFileMapperRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.EndPointProviderRegistration">
             <summary>
             Register dependencies in Autofac
@@ -281,6 +292,17 @@
             </summary>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.SerializerRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.UploadFileMapperRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.UploadFileMapperRegistration.Register(Autofac.ContainerBuilder)">
             <summary>
             Register dependencies in Autofac
             </summary>

@@ -11,7 +11,10 @@ using Informapp.InformSystem.WebApi.Models.Http;
 using Informapp.InformSystem.WebApi.Models.Requests;
 using RestSharp;
 using System;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Mime;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -73,12 +76,39 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
 
             var apiRequest = _requestFactory.Create(request);
 
+            ApiDownloadFileResponse downloadFile = null;
+
+            if (request.IsFileDownload == true)
+            {
+                client.ConfigureWebRequest(x => x.AllowReadStreamBuffering = false);
+
+                downloadFile = new ApiDownloadFileResponse();
+
+                apiRequest.AdvancedResponseWriter = (stream, httpResponse) => SetDownloadFile(downloadFile, stream, httpResponse);
+            }
+
             apiRequest.AddHeader(HttpRequestHeaderConstants.CacheControl, "no-cache");
 
-            AddBody(request, apiRequest);
+            if (request.IsFileUpload == true)
+            {
+                client.ConfigureWebRequest(x => x.AllowWriteStreamBuffering = false);
+
+                apiRequest.AddFile(
+                    request.UploadFile.FileParameterName,
+                    request.UploadFile.File.CopyTo,
+                    request.UploadFile.FileName,
+                    request.UploadFile.File.Length,
+                    request.UploadFile.ContentType);
+            }
+            else
+            {
+                client.ConfigureWebRequest(x => x.AllowWriteStreamBuffering = true);
+                
+                AddBody(request, apiRequest);
+            }
 
             var apiResponse = await client.ExecuteTaskAsync<TResponse>(apiRequest, cancellationToken);
-
+            
             var response = new RestSharpApiResponse<TResponse>
             {
                 RestRequest = apiRequest,
@@ -91,6 +121,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
                     .Value,
 
                 Content = apiResponse.Content,
+                DownloadFile = downloadFile,
             };
 
             if (apiResponse.IsSuccessful == true)
@@ -116,6 +147,8 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
                 response.Headers.ContentLength = apiResponse.ContentLength;
 
                 response.Headers.ContentType = apiResponse.ContentType;
+                
+                SetContentDispositionHeader(response);
             }
 
             return response;
@@ -129,10 +162,10 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
                 switch (request.Context.ContentType)
                 {
                     case null:
-                    case ContentType.Json:
+                    case Models.Http.ContentType.Json:
                         apiRequest.AddJsonBody(request.Model);
                         break;
-                    case ContentType.FormUrlEncoded:
+                    case Models.Http.ContentType.FormUrlEncoded:
                         AddFormUrlEncodedBody(request, apiRequest);
                         break;
                     default:
@@ -152,6 +185,41 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
                 encoded,
                 ContentTypeConstants.Application.FormUrlEncoded,
                 ParameterType.RequestBody);
+        }
+
+        private static void SetDownloadFile(ApiDownloadFileResponse downloadFile, Stream stream, IHttpResponse response)
+        {
+            Argument.NotNull(downloadFile, nameof(downloadFile));
+            Argument.NotNull(stream, nameof(stream));
+            Argument.NotNull(response, nameof(response));
+
+            if (response.StatusCode == HttpStatusCode.OK)
+            {
+                var file = new MemoryStream();
+
+                stream.CopyTo(file);
+
+                file.Position = 0L;
+
+                downloadFile.File = file;
+            }
+        }
+
+        private static void SetContentDispositionHeader(ApiResponse response)
+        {
+            var header = response.Headers.GetHeader(HttpResponseHeaderConstants.ContentDisposition);
+
+            if (header != null && header.HasValue == true)
+            {
+                var contentDisposition = new ContentDispositionHeader(header.Value);
+
+                response.Headers.ContentDisposition = contentDisposition;
+
+                if (response.DownloadFile != null)
+                {
+                    response.DownloadFile.FileName = contentDisposition.FileName;
+                }
+            }
         }
     }
 }

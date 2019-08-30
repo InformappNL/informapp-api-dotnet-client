@@ -221,6 +221,24 @@
             <returns>The <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> containing the converted value</returns>
             <exception cref="T:System.ArgumentException">Unsupported value</exception>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.AcceptContentTypeRequestFactoryDecorator">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory"/> to set accept header
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.AcceptContentTypeRequestFactoryDecorator.#ctor(Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.AcceptContentTypeRequestFactoryDecorator"/> class.
+            </summary>
+            <param name="requestFactory">The instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.AcceptContentTypeRequestFactoryDecorator.Create(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest)">
+            <summary>
+            Create instance of <see cref="T:RestSharp.IRestRequest"/> and set accept header
+            </summary>
+            <param name="request">The request instance</param>
+            <returns>The constructed <see cref="T:RestSharp.IRestRequest"/> instance</returns>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.BearerTokenRequestFactoryDecorator">
             <summary>
             Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory"/> to set bearer token

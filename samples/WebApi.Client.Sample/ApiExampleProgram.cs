@@ -13,6 +13,7 @@ using Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationStats
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Forms;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Pings;
+using Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values;
 using System.Threading.Tasks;
 
@@ -40,6 +41,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
 
             await Run<GetValuesV1Example>(true);
             await Run<TestValuesV1Example>(true);
+
+            await Run<DownloadTestFileV1Example>(true);
+            await Run<UploadTestFileV1Example>(true);
 
             await Run<CreateAppGroupV1Example>(false);
             await Run<DeleteAppGroupV1Example>(false);

@@ -88,6 +88,7 @@
     <Compile Include="Caches\DictionaryCache.T2.cs" />
     <Compile Include="Caches\ICache.T2.cs" />
     <Compile Include="Clients\ApiClientExtensions.cs" />
+    <Compile Include="Clients\Decorators\AcceptContentTypeApiClientDecorator.T2.cs" />
     <Compile Include="Clients\Decorators\AnonymousApiClientDecorator.T2.cs" />
     <Compile Include="Clients\Decorators\ArgumentNullApiClientDecorator.T2.cs" />
     <Compile Include="Clients\Decorators\BearerTokenV1ApiClientDecorator.T2.cs" />
@@ -96,6 +97,7 @@
     <Compile Include="Clients\Decorators\CredentialsApiClientDecorator.T2.cs" />
     <Compile Include="Clients\Decorators\DisposableRequestApiClientDecorator.T2.cs" />
     <Compile Include="Clients\Decorators\DisposableResponseApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\DownloadFileApiClientDecorator.T2.cs" />
     <Compile Include="Clients\Decorators\ElapsedApiClientDecorator.T2.cs" />
     <Compile Include="Clients\Decorators\EndPointApiClientDecorator.T2.cs" />
     <Compile Include="Clients\Decorators\EnsureSuccessApiClientDecorator.T2.cs" />
@@ -108,6 +110,7 @@
     <Compile Include="Clients\Decorators\RequireHttpsApiClientDecorator.T2.cs" />
     <Compile Include="Clients\Decorators\ResultNullApiClientDecorator.T2.cs" />
     <Compile Include="Clients\Decorators\TotalCountApiClientDecorator.T2.cs" />
+    <Compile Include="Clients\Decorators\UploadFileApiClientDecorator.T2.cs" />
     <Compile Include="Clients\Decorators\ValidateBearerTokenApiClientDecorator.T2.cs" />
     <Compile Include="Clients\Decorators\ValidateCredentialsApiClientDecorator.T2.cs" />
     <Compile Include="Clients\Decorators\ValidateRequestContextApiClientDecorator.T2.cs" />
@@ -138,6 +141,12 @@
     <Compile Include="EndPointProviders\ConfigurationEndPointProvider.cs" />
     <Compile Include="EndPointProviders\IEndPointProvider.cs" />
     <Compile Include="Exceptions\ApiClientException.cs" />
+    <Compile Include="Files\DownloadFileV1Mapper.T2.cs" />
+    <Compile Include="Files\DownloadFileV2Mapper.T2.cs" />
+    <Compile Include="Files\IDownloadFileMapper.T2.cs" />
+    <Compile Include="Files\IUploadFileMapper.T2.cs" />
+    <Compile Include="Files\UploadFileV1Mapper.T2.cs" />
+    <Compile Include="Files\UploadFileV2Mapper.T2.cs" />
     <Compile Include="HashCodes\HashCodeHelper.cs" />
     <Compile Include="MethodProviders\IMethodProvider.T1.cs" />
     <Compile Include="MethodProviders\MethodProvider.T1.cs" />
@@ -157,12 +166,15 @@
     <Compile Include="Requests\ApiRequest.cs" />
     <Compile Include="Requests\ApiRequest.T1.cs" />
     <Compile Include="Requests\ApiRequestExtensions.cs" />
+    <Compile Include="Requests\ApiUploadFileRequest.cs" />
     <Compile Include="Requests\CredentialsKind.cs" />
     <Compile Include="Requests\RequestContext.cs" />
     <Compile Include="Requires\Require.cs" />
+    <Compile Include="Responses\ApiDownloadFileResponse.cs" />
     <Compile Include="Responses\ApiResponse.cs" />
     <Compile Include="Responses\ApiResponse.T1.cs" />
     <Compile Include="Responses\ApiResponseExtensions.cs" />
+    <Compile Include="Responses\ContentDispositionHeader.cs" />
     <Compile Include="Responses\ResponseHeaders.cs" />
     <Compile Include="Responses\ResponseHeader.cs" />
     <Compile Include="Responses\ResponseStatusCode.cs" />
