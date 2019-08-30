@@ -48,7 +48,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
 
                 var hash = hashAlgorithm.Hash;
 
-                bool hashEquals = Equals(response.Model.MD5Checksum, hash);
+                bool hashEquals = HashEquals(response.Model.MD5Checksum, hash);
 
                 if (hashEquals == false)
                 {
@@ -105,7 +105,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
             return request;
         }
 
-        private static bool Equals(IReadOnlyList<byte> left, IReadOnlyList<byte> right)
+        private static bool HashEquals(IReadOnlyList<byte> left, IReadOnlyList<byte> right)
         {
             if (left == null && right == null)
             {
