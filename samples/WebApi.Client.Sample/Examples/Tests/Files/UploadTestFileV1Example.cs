@@ -55,7 +55,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
                     throw new InvalidOperationException("file upload failed, hashes differ.");
                 }
 
-                if (response.Model.Size != request.File.Length)
+                if (response.Model.Size != request.Size)
                 {
                     throw new InvalidOperationException("file upload failed, file sizes differ.");
                 }
