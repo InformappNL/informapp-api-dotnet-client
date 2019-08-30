@@ -7,7 +7,6 @@ using Informapp.InformSystem.WebApi.Models.Http;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.GetAppGroup;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.ListAppGroup;
 using System;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -96,7 +95,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
 
             if (response.IsSuccessful == true && response.Model.Total > 1)
             {
-                var appGroupId = response.Model.AppGroups.First().AppGroupId;
+                var appGroupId = response.Model.AppGroups[0].AppGroupId;
 
                 return appGroupId;
             }
