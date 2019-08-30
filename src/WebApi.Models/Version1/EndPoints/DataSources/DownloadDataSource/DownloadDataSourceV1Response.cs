@@ -19,7 +19,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.Do
         private readonly IDownloadFileV1Response _response;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DownloadTestFileV1Response"/> class.
+        /// Initializes a new instance of the <see cref="DownloadDataSourceV1Response"/> class.
         /// </summary>
         public DownloadDataSourceV1Response()
         {
