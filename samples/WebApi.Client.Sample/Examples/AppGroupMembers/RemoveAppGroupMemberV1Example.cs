@@ -2,6 +2,7 @@
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMembers.RemoveAppGroupMember;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers
@@ -18,7 +19,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers
             _client = client;
         }
 
-        public async Task Run()
+        public async Task Run(CancellationToken cancellationToken)
         {
             var members = new[]
             {
@@ -40,7 +41,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers
                 Members = members
             };
 
-            var response = await _client.Execute(request)
+            var response = await _client.Execute(request, cancellationToken)
                 .ThrowIfFailed();
         }
     }

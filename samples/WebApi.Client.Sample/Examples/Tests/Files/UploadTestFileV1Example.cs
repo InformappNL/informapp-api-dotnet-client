@@ -8,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
@@ -26,12 +27,12 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
             _client = client;
         }
         
-        public async Task Run()
+        public async Task Run(CancellationToken cancellationToken)
         {
             using (var request = GetInMemoryFileRequest())
             //using (var request = GetFileFromFileSystem())
             {
-                var response = await _client.Execute(request)
+                var response = await _client.Execute(request, cancellationToken)
                     .ThrowIfFailed();
 
                 request.File.Position = 0L;

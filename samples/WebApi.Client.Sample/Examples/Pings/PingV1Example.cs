@@ -1,6 +1,7 @@
 ﻿using Informapp.InformSystem.WebApi.Client.Clients;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Pings;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Pings
@@ -17,11 +18,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Pings
             _client = client;
         }
 
-        public async Task Run()
+        public async Task Run(CancellationToken cancellationToken)
         {
             var request = new PingV1Request();
 
-            var response = await _client.Execute(request);
+            var response = await _client.Execute(request, cancellationToken);
         }
     }
 }

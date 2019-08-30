@@ -5,6 +5,7 @@ using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestValues;
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
@@ -21,7 +22,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
             _client = client;
         }
 
-        public async Task Run()
+        public async Task Run(CancellationToken cancellationToken)
         {
             var request = new TestValuesV1Request
             {
@@ -54,7 +55,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
                 },
             };
 
-            var response = await _client.Execute(request)
+            var response = await _client.Execute(request, cancellationToken)
                 .ThrowIfFailed();
 
             var comparer = new TestValuesV1Comparer();

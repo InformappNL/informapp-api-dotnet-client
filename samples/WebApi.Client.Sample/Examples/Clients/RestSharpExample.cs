@@ -14,6 +14,7 @@ using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestV
 using RestSharp;
 using RestSharp.Authenticators;
 using System;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
@@ -25,16 +26,16 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
 
         }
 
-        public async Task Run()
+        public async Task Run(CancellationToken cancellationToken)
         {
             var getValuesRequest = new GetValuesV1Request();
-            var getValuesResponse = await Run<GetValuesV1Request, GetValuesV1Response>(getValuesRequest);
+            var getValuesResponse = await Run<GetValuesV1Request, GetValuesV1Response>(getValuesRequest, cancellationToken);
 
             var putValuesRequest = new TestValuesV1Request();
-            var putValuesResponse = await Run<TestValuesV1Request, TestValuesV1Response>(putValuesRequest);
+            var putValuesResponse = await Run<TestValuesV1Request, TestValuesV1Response>(putValuesRequest, cancellationToken);
         }
 
-        public async Task<IRestResponse<TResponse>> Run<TRequest, TResponse>(TRequest model)
+        public async Task<IRestResponse<TResponse>> Run<TRequest, TResponse>(TRequest model, CancellationToken cancellationToken)
             where TRequest : class, IRequest<TResponse>
             where TResponse : class
         {
@@ -63,7 +64,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
 
             client.UseSerializer(() => new JsonNetSerializer());
 
-            string accessToken = await GetToken(client);
+            string accessToken = await GetToken(client, cancellationToken);
 
             client.Authenticator = new JwtAuthenticator(accessToken);
 
@@ -71,14 +72,14 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
 
             request.RequestFormat = DataFormat.Json;
 
-            var response = await client.ExecuteTaskAsync<TResponse>(request);
+            var response = await client.ExecuteTaskAsync<TResponse>(request, cancellationToken);
 
             return response;
         }
 
         private OAuth2TokenV1Response _token;
 
-        private async Task<string> GetToken(IRestClient client)
+        private async Task<string> GetToken(IRestClient client, CancellationToken cancellationToken)
         {
             var now = DateTimeOffset.UtcNow;
 
@@ -120,7 +121,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
                 ContentTypeConstants.Application.FormUrlEncoded,
                 ParameterType.RequestBody);
 
-            var response = await client.ExecuteTaskAsync<OAuth2TokenV1Response>(request);
+            var response = await client.ExecuteTaskAsync<OAuth2TokenV1Response>(request, cancellationToken);
 
             if (response.IsSuccessful == true)
             {

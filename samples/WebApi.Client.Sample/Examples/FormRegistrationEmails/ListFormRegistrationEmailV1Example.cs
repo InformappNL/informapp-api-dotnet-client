@@ -2,6 +2,7 @@
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmails.ListFormRegistrationEmail;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationEmails
@@ -18,7 +19,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationE
             _client = client;
         }
 
-        public async Task Run()
+        public async Task Run(CancellationToken cancellationToken)
         {
             var request = new ListFormRegistrationEmailV1Request
             {
@@ -27,7 +28,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationE
                 PageSize = 50
             };
 
-            var response = await _client.Execute(request)
+            var response = await _client.Execute(request, cancellationToken)
                 .ThrowIfFailed();
         }
     }

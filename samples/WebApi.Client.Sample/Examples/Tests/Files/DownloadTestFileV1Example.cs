@@ -10,6 +10,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
@@ -26,14 +27,14 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
             _client = client;
         }
 
-        public async Task Run()
+        public async Task Run(CancellationToken cancellationToken)
         {
             var request = new DownloadTestFileV1Request
             {
                 Kind = DownloadTestFileV1RequestKind.Pdf,
             };
 
-            var response = await _client.Execute(request)
+            var response = await _client.Execute(request, cancellationToken)
                 .ThrowIfFailed();
 
             string directory = Path.GetTempPath();
@@ -56,9 +57,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
 
                 int read;
 
-                while ((read = await stream.ReadAsync(buffer, 0, buffer.Length)) > 0)
+                while ((read = await stream.ReadAsync(buffer, 0, buffer.Length, cancellationToken)) > 0)
                 {
-                    await fileStream.WriteAsync(buffer, 0, read);
+                    await fileStream.WriteAsync(buffer, 0, read, cancellationToken);
 
                     bytesWritten += read;
                 }

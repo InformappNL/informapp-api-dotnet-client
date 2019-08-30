@@ -3,6 +3,7 @@ using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.EditAppGroup;
 using System;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
@@ -19,7 +20,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
             _client = client;
         }
 
-        public async Task Run()
+        public async Task Run(CancellationToken cancellationToken)
         {
             var request = new EditAppGroupV1Request
             {
@@ -28,7 +29,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
                 Description = null
             };
 
-            var response = await _client.Execute(request)
+            var response = await _client.Execute(request, cancellationToken)
                 .ThrowIfFailed();
         }
     }

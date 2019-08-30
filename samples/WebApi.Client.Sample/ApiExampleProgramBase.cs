@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample
@@ -17,20 +18,22 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
             _container = container;
         }
 
-        protected Task Run<T>()
+        protected Task Run<T>(CancellationToken cancellationToken)
             where T : class, IExample
         {
-            return Run<T>(true);
+            return Run<T>(true, cancellationToken);
         }
 
-        protected Task Run<T>(bool run)
+        protected Task Run<T>(bool run, CancellationToken cancellationToken)
             where T : class, IExample
         {
+            cancellationToken.ThrowIfCancellationRequested();
+
             if (run == true)
             {
                 var example = _container.Resolve<T>();
 
-                return example.Run();
+                return example.Run(cancellationToken);
             }
 
             return Task.CompletedTask;

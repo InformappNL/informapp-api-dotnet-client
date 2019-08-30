@@ -1,9 +1,10 @@
-﻿using System.Threading.Tasks;
+﻿using System.Threading;
+using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples
 {
     internal interface IExample
     {
-        Task Run();
+        Task Run(CancellationToken cancellationToken);
     }
 }

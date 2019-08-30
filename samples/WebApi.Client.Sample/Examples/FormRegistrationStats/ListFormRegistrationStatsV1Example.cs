@@ -2,6 +2,7 @@
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationStats
@@ -18,7 +19,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationS
             _client = client;
         }
 
-        public async Task Run()
+        public async Task Run(CancellationToken cancellationToken)
         {
             var request = new ListFormRegistrationStatsV1Request
             {
@@ -27,7 +28,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationS
                 PageSize = 10
             };
 
-            var response = await _client.Execute(request)
+            var response = await _client.Execute(request, cancellationToken)
                 .ThrowIfFailed();
         }
     }

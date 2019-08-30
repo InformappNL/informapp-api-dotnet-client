@@ -2,6 +2,7 @@
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Forms.ListForm;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Forms
@@ -18,7 +19,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Forms
             _client = client;
         }
 
-        public async Task Run()
+        public async Task Run(CancellationToken cancellationToken)
         {
             var request = new ListFormV1Request
             {
@@ -27,7 +28,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Forms
                 PageSize = 10
             };
 
-            var response = await _client.Execute(request)
+            var response = await _client.Execute(request, cancellationToken)
                 .ThrowIfFailed();
         }
     }

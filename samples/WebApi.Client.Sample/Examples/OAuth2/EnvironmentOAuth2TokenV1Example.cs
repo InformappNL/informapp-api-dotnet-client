@@ -5,6 +5,7 @@ using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.EnvironmentOAuth2Token;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2
@@ -27,7 +28,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2
             _provider = provider;
         }
 
-        public async Task Run()
+        public async Task Run(CancellationToken cancellationToken)
         {
             string username = _provider.GetUserName();
             string password = _provider.GetPassword();
@@ -40,7 +41,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2
                 Password = password,
             });
 
-            var response = await _client.Execute(request)
+            var response = await _client.Execute(request, cancellationToken)
                 .ThrowIfFailed();
         }
     }

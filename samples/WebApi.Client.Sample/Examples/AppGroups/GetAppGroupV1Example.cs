@@ -7,6 +7,7 @@ using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.GetAppGr
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.ListAppGroup;
 using System;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
@@ -29,32 +30,32 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
             _getClient = getClient;
         }
 
-        public async Task Run()
+        public async Task Run(CancellationToken cancellationToken)
         {
             // Obtain an app group id using a list request
-            var appGroupId = await GetAppGroupId();
+            var appGroupId = await GetAppGroupId(cancellationToken);
 
             if (appGroupId.HasValue == true)
             {
                 // Use it to execute a GET and HEAD request
-                await Get(appGroupId);
+                await Get(appGroupId, cancellationToken);
 
-                await Head(appGroupId);
+                await Head(appGroupId, cancellationToken);
             }
         }
 
-        private async Task Get(Guid? appGroupId)
+        private async Task Get(Guid? appGroupId, CancellationToken cancellationToken)
         {
             var request = new GetAppGroupV1Request
             {
                 AppGroupId = appGroupId
             };
 
-            var response = await _getClient.Execute(request)
+            var response = await _getClient.Execute(request, cancellationToken)
                 .ThrowIfFailed();
         }
 
-        private async Task Head(Guid? appGroupId)
+        private async Task Head(Guid? appGroupId, CancellationToken cancellationToken)
         {
             var request = ApiRequest.Create(new GetAppGroupV1Request
             {
@@ -66,11 +67,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
                 Method = HttpMethod.Head
             };
 
-            var response = await _getClient.Execute(request)
+            var response = await _getClient.Execute(request, cancellationToken)
                 .ThrowIfFailed();
         }
 
-        private async Task<Guid?> GetAppGroupId()
+        private async Task<Guid?> GetAppGroupId(CancellationToken cancellationToken)
         {
             var request = new ListAppGroupV1Request
             {
@@ -79,7 +80,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
                 PageSize = 1
             };
 
-            var response = await _listClient.Execute(request)
+            var response = await _listClient.Execute(request, cancellationToken)
                 .ThrowIfFailed();
 
             if (response.IsSuccessful == true && response.Model.Total > 1)

@@ -15,6 +15,7 @@ using Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Pings;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample
@@ -25,50 +26,52 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
         {
             Argument.NotNull(container, nameof(container));
         }
-
-        public async Task Start()
+        
+        public async Task Start(CancellationToken cancellationToken)
         {
-            await Run<ApiClientExample>(true);
-            await Run<ApiClientFactoryExample>(true);
-            await Run<DependencyInjectionExample>(true);
-            await Run<RestSharpExample>(true);
+            var c = cancellationToken;
 
-            await Run<OAuth2TokenV1Example>(true);
-            await Run<EnvironmentOAuth2TokenV1Example>(true);
-            await Run<OAuth2TokenV2Example>(false);
+            await Run<ApiClientExample>(true, c);
+            await Run<ApiClientFactoryExample>(true, c);
+            await Run<DependencyInjectionExample>(true, c);
+            await Run<RestSharpExample>(true, c);
 
-            await Run<PingV1Example>(true);
+            await Run<OAuth2TokenV1Example>(true, c);
+            await Run<EnvironmentOAuth2TokenV1Example>(true, c);
+            await Run<OAuth2TokenV2Example>(false, c);
 
-            await Run<GetValuesV1Example>(true);
-            await Run<TestValuesV1Example>(true);
+            await Run<PingV1Example>(true, c);
 
-            await Run<DownloadTestFileV1Example>(true);
-            await Run<UploadTestFileV1Example>(true);
+            await Run<GetValuesV1Example>(true, c);
+            await Run<TestValuesV1Example>(true, c);
 
-            await Run<CreateAppGroupV1Example>(false);
-            await Run<DeleteAppGroupV1Example>(false);
-            await Run<EditAppGroupV1Example>(false);
-            await Run<GetAppGroupV1Example>(true);
-            await Run<ListAppGroupV1Example>(true);
+            await Run<DownloadTestFileV1Example>(true, c);
+            await Run<UploadTestFileV1Example>(true, c);
 
-            await Run<AddAppGroupMemberV1Example>(false);
-            await Run<ListAppGroupMemberV1Example>(true);
-            await Run<RemoveAppGroupMemberV1Example>(false);
+            await Run<CreateAppGroupV1Example>(false, c);
+            await Run<DeleteAppGroupV1Example>(false, c);
+            await Run<EditAppGroupV1Example>(false, c);
+            await Run<GetAppGroupV1Example>(true, c);
+            await Run<ListAppGroupV1Example>(true, c);
 
-            await Run<ListBusinessGroupV1Example>(true);
-            await Run<ListBusinessGroupCreditCreditV1Example>(true);
+            await Run<AddAppGroupMemberV1Example>(false, c);
+            await Run<ListAppGroupMemberV1Example>(true, c);
+            await Run<RemoveAppGroupMemberV1Example>(false, c);
 
-            await Run<ListCustomerV1Example>(true);
+            await Run<ListBusinessGroupV1Example>(true, c);
+            await Run<ListBusinessGroupCreditCreditV1Example>(true, c);
 
-            await Run<ListFormV1Example>(true);
+            await Run<ListCustomerV1Example>(true, c);
 
-            await Run<ListFormRegistrationStatsV1Example>(true);
+            await Run<ListFormV1Example>(true, c);
 
-            await Run<ListFormRegistrationV1Example>(true);
+            await Run<ListFormRegistrationStatsV1Example>(true, c);
 
-            await Run<ListFormRegistrationEmailV1Example>(true);
+            await Run<ListFormRegistrationV1Example>(true, c);
 
-            await Run<ListFormRegistrationDataV1Example>(true);
+            await Run<ListFormRegistrationEmailV1Example>(true, c);
+
+            await Run<ListFormRegistrationDataV1Example>(true, c);
         }
     }
 }
