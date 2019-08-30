@@ -161,7 +161,6 @@
     <Rule Id="CS8383" Action="None" />
     <Rule Id="CS8387" Action="None" />
     <Rule Id="CS8402" Action="None" />
-    <Rule Id="CS8424" Action="None" />
     <Rule Id="CS8509" Action="None" />
     <Rule Id="CS8512" Action="None" />
     <Rule Id="CS8513" Action="None" />
@@ -389,7 +388,6 @@
     <Rule Id="CA1308" Action="None" />
     <Rule Id="CA1401" Action="None" />
     <Rule Id="CA1820" Action="None" />
-    <Rule Id="CA1826" Action="None" />
     <Rule Id="CA2002" Action="None" />
     <Rule Id="CA2008" Action="None" />
     <Rule Id="CA2009" Action="None" />
