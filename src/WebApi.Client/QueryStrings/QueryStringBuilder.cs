@@ -1,5 +1,7 @@
 ﻿using Informapp.InformSystem.WebApi.Client.Arguments;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
@@ -14,7 +16,21 @@ namespace Informapp.InformSystem.WebApi.Client.QueryStrings
     /// </summary>
     public class QueryStringBuilder : IQueryStringBuilder
     {
-        private static readonly IEqualityComparer<string> _comparer = StringComparer.OrdinalIgnoreCase;
+        private static readonly JsonSerializer _serializer = GetSerializer();
+
+        private static JsonSerializer GetSerializer()
+        {
+            var serializer = new JsonSerializer();
+
+            serializer.NullValueHandling = NullValueHandling.Ignore;
+            serializer.DateParseHandling = DateParseHandling.None;
+
+            serializer.ContractResolver = new QueryStringContractResolver();
+
+            return serializer;
+        }
+
+        private static readonly IEqualityComparer<string> _comparer = new Comparer();
 
         private readonly NameValueCollection _collection;
 
@@ -90,7 +106,7 @@ namespace Informapp.InformSystem.WebApi.Client.QueryStrings
 
             if (jToken == null)
             {
-                var jObject = JObject.FromObject(obj);
+                var jObject = JObject.FromObject(obj, _serializer);
 
                 return GetDictionary(jObject);
             }
@@ -125,11 +141,15 @@ namespace Informapp.InformSystem.WebApi.Client.QueryStrings
                 return null;
             }
 
-            var value = jValue.Type == JTokenType.Date ?
+            var dictionary = new Dictionary<string, string>(_comparer);
+
+            string value = jValue.Type == JTokenType.Date ?
                 jValue.ToString("o", CultureInfo.InvariantCulture) :
                 jValue.ToString(CultureInfo.InvariantCulture);
 
-            return new Dictionary<string, string>(_comparer) { { jToken.Path, value } };
+            dictionary.Add(jToken.Path, value);
+
+            return dictionary;
         }
 
         /// <summary>
@@ -139,6 +159,32 @@ namespace Informapp.InformSystem.WebApi.Client.QueryStrings
         public override string ToString()
         {
             return _collection.ToString();
+        }
+
+        private class Comparer : IEqualityComparer<string>
+        {
+            public bool Equals(string x, string y)
+            {
+                return false;
+            }
+
+            public int GetHashCode(string obj)
+            {
+                return obj.GetHashCode();
+            }
+        }
+
+        private class QueryStringContractResolver : DefaultContractResolver
+        {
+            protected override JsonContract CreateContract(Type objectType)
+            {
+                if (objectType == typeof(byte[]))
+                {
+                    return CreateArrayContract(objectType);
+                }
+
+                return base.CreateContract(objectType);
+            }
         }
     }
 }
