@@ -53,9 +53,9 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
                     .Where(x => string.Equals(x.Name, ResponseHeaderConstants.TotalCountHeaderName, StringComparison.OrdinalIgnoreCase))
                     .FirstOrDefault();
 
-                if (header != null && header.Value is string value)
+                if (header != null)
                 {
-                    if (int.TryParse(value, NumberStyles.None, CultureInfo.InvariantCulture, out int totalCount))
+                    if (int.TryParse(header.Value, NumberStyles.None, CultureInfo.InvariantCulture, out int totalCount))
                     {
                         response.TotalCount = totalCount;
                     }
