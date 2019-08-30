@@ -230,7 +230,7 @@
     <Rule Id="IDE0003WithoutSuggestion" Action="None" />
     <Rule Id="IDE0004" Action="None" />
     <Rule Id="IDE0004WithoutSuggestion" Action="None" />
-    <Rule Id="IDE0005" Action="None" />
+    <Rule Id="IDE0005" Action="Warning" />
     <Rule Id="IDE0007" Action="None" />
     <Rule Id="IDE0007WithoutSuggestion" Action="None" />
     <Rule Id="IDE0008" Action="None" />
