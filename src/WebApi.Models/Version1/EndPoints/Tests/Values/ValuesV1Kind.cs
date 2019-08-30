@@ -7,7 +7,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values
     /// Values kind
     /// </summary>
     [DataContract(Namespace = Version1Constants.Namespace)]
-    public enum ValuesKind
+    public enum ValuesV1Kind
     {
         /// <summary>
         /// Zero

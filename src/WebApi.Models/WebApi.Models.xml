@@ -5523,32 +5523,32 @@
             Dictionary
             </summary>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ValuesKind">
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ValuesV1Kind">
             <summary>
             Values kind
             </summary>
         </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ValuesKind.Zero">
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ValuesV1Kind.Zero">
             <summary>
             Zero
             </summary>
         </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ValuesKind.One">
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ValuesV1Kind.One">
             <summary>
             One
             </summary>
         </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ValuesKind.Two">
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ValuesV1Kind.Two">
             <summary>
             Two
             </summary>
         </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ValuesKind.Three">
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ValuesV1Kind.Three">
             <summary>
             Three
             </summary>
         </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ValuesKind.Four">
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ValuesV1Kind.Four">
             <summary>
             Four
             </summary>
@@ -5606,6 +5606,46 @@
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Errors.UnauthorizedV1Response.Message">
             <summary>
             Message
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm">
+            <summary>
+            File hash algorithm
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.MD5">
+            <summary>
+            MD5
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.RIPEMD160">
+            <summary>
+            RIPEMD160
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.SHA1">
+            <summary>
+            SHA1
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.SHA256">
+            <summary>
+            SHA256
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.SHA384">
+            <summary>
+            SHA384
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.SHA512">
+            <summary>
+            SHA512
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Files.IDownloadFileV1Response">
@@ -5676,46 +5716,6 @@
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Files.IUploadFileV1Response.Size">
             <summary>
             Size
-            </summary>
-        </member>
-        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm">
-            <summary>
-            File hash algorithm
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.None">
-            <summary>
-            None
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.MD5">
-            <summary>
-            MD5
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.RIPEMD160">
-            <summary>
-            RIPEMD160
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.SHA1">
-            <summary>
-            SHA1
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.SHA256">
-            <summary>
-            SHA256
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.SHA384">
-            <summary>
-            SHA384
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.SHA512">
-            <summary>
-            SHA512
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Filters.BooleanV1Filter">

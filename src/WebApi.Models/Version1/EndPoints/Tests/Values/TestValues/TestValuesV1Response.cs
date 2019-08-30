@@ -155,8 +155,8 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.T
         /// Enum
         /// </summary>
         [DataMember]
-        [ExampleValue(ValuesKind.Zero)]
-        public ValuesKind? Enum { get; set; }
+        [ExampleValue(ValuesV1Kind.Zero)]
+        public ValuesV1Kind? Enum { get; set; }
 
         /// <summary>
         /// Array

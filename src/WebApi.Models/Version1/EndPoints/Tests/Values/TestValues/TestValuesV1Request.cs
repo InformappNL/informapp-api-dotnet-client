@@ -190,9 +190,9 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.T
         /// </summary>
         [BodyParameter]
         [DataMember]
-        [EnumValidation(typeof(ValuesKind))]
-        [ExampleValue(ValuesKind.Zero)]
-        public ValuesKind? Enum { get; set; }
+        [EnumValidation(typeof(ValuesV1Kind))]
+        [ExampleValue(ValuesV1Kind.Zero)]
+        public ValuesV1Kind? Enum { get; set; }
 
         /// <summary>
         /// Array

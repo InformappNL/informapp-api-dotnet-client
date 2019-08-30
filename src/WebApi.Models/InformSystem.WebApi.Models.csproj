@@ -283,8 +283,8 @@
     <Compile Include="Version1\EndPoints\Tests\Values\TestValues\TestValuesV1Request.Example.cs" />
     <Compile Include="Version1\EndPoints\Tests\Values\TestValues\TestValuesV1Response.cs" />
     <Compile Include="Version1\EndPoints\Tests\Values\TestValues\TestValuesV1Response.Example.cs" />
-    <Compile Include="Version1\EndPoints\Tests\Values\ValuesKind.cs" />
     <Compile Include="Version1\EndPoints\Tests\Values\ValuesV1Constants.cs" />
+    <Compile Include="Version1\EndPoints\Tests\Values\ValuesV1Kind.cs" />
     <Compile Include="Version1\Errors\BadGatewayV1Response.cs" />
     <Compile Include="Version1\Errors\BadRequestV1Response.cs" />
     <Compile Include="Version1\Errors\BadRequestV1Response.Example.cs" />
@@ -293,10 +293,10 @@
     <Compile Include="Version1\Errors\UnauthorizedV1Response.cs" />
     <Compile Include="Version1\Files\DownloadFileV1Response.cs" />
     <Compile Include="Version1\Files\DownloadFileV1Response.T1.cs" />
+    <Compile Include="Version1\Files\FileV1HashAlgorithm.cs" />
     <Compile Include="Version1\Files\IDownloadFileV1Response.cs" />
     <Compile Include="Version1\Files\IUploadFileV1Request.cs" />
     <Compile Include="Version1\Files\IUploadFileV1Response.cs" />
-    <Compile Include="Version1\Files\FileV1HashAlgorithm.cs" />
     <Compile Include="Version1\Files\UploadFileV1Request.cs" />
     <Compile Include="Version1\Files\UploadFileV1Request.T1.cs" />
     <Compile Include="Version1\Filters\BooleanV1Filter.cs" />

@@ -52,7 +52,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
                 DateTimeOffset = DateTimeOffset.Now,
                 Decimal = 123.456M,
                 Double = 123.456D,
-                Enum = ValuesKind.Three,
+                Enum = ValuesV1Kind.Three,
                 Int16 = 16,
                 Int32 = 32,
                 Int64 = 64,
