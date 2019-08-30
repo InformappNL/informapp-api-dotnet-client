@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arguments\Argument.cs" />
     <Compile Include="DataAnnotations\AbsoluteUriAttribute.cs" />
     <Compile Include="DataAnnotations\AllowedValuesAttribute.cs" />
     <Compile Include="DataAnnotations\EnumCollectionAttribute.cs" />

@@ -4,6 +4,57 @@
         <name>InformSystem.WebApi.Models</name>
     </assembly>
     <members>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Argument">
+            <summary>
+            Static class with methods to ensure conditions for arguments are true
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Argument.Required``1(``0,System.String)">
+            <summary>
+            Ensure an instance is not null
+            </summary>
+            <typeparam name="T">Type of object to check</typeparam>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Argument.NotNull``1(``0,System.String)">
+            <summary>
+            Ensure a reference type instance is not null
+            </summary>
+            <typeparam name="T">Type of object to check</typeparam>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Argument.NotNull``1(System.Nullable{``0},System.String)">
+            <summary>
+            Ensure an nullable value type instance is not null
+            </summary>
+            <typeparam name="T">Type of object to check</typeparam>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Argument.NotNullOrEmpty(System.String,System.String)">
+            <summary>
+            Ensure a string is not null or empty
+            </summary>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="instance"/> is empty</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Argument.NotNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0},System.String)">
+            <summary>
+            Ensure a collection is not null or empty
+            </summary>
+            <typeparam name="T">Type of objects in the collection</typeparam>
+            <param name="instance">The instance to check</param>
+            <param name="parameterName">The name of the parameter</param>
+            <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
+            <exception cref="T:System.ArgumentException"><paramref name="instance"/> is empty</exception>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.DataAnnotations.AbsoluteUriAttribute">
             <summary>
             Specifies that a string or URI field must be an absolute URI.
