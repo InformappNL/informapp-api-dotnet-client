@@ -53,7 +53,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.Up
         /// <summary>
         /// Allowed file types
         /// </summary>
-        public const string AllowedFileTypes = ".docx .pdf .txt .xlsx";
+        public const string AllowedFileTypes = "docx pdf txt xlsx";
 
         /// <summary>
         /// Max file name length

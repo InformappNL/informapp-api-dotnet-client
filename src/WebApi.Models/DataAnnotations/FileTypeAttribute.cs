@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
+using System.Linq;
 
 namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
 {
@@ -60,24 +61,18 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
                 }
                 else
                 {
-                    var fileExtension = Path.GetExtension(fileName);
+                    string extension = Path.GetExtension(fileName);
 
                     // No extension
-                    if (string.IsNullOrEmpty(fileExtension) == true)
+                    if (string.IsNullOrEmpty(extension) == true ||
+                        extension.Length == 1)
                     {
                         return false;
                     }
 
-                    foreach (var extension in _extensions)
-                    {
-                        if (fileName.EndsWith(extension) == true)
-                        {
-                            return true;
-                        }
-                    }
+                    extension = extension.Substring(1);
 
-                    // Extension not allowed
-                    return false;
+                    return _extensions.Contains(extension, StringComparer.OrdinalIgnoreCase);
                 }
             }
             else
