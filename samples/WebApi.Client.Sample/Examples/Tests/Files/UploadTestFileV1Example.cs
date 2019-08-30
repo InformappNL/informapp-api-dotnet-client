@@ -39,11 +39,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
 
                 byte[] md5hash;
 
-#pragma warning disable CA1508 // Avoid dead conditional code. - Faulty rule?
-#pragma warning disable CA5351 // Broken cryptographic algorithm MD5 - not an issue, used to compare local and remote hash of uploaded file
+#pragma warning disable CA1508 // Avoid dead conditional code
+#pragma warning disable CA5351 // Do Not Use Broken Cryptographic Algorithms
                 using (var algorithm = MD5.Create())
-#pragma warning restore CA5351
-#pragma warning restore CA1508
+#pragma warning restore CA5351 // Do Not Use Broken Cryptographic Algorithms
+#pragma warning restore CA1508 // Avoid dead conditional code
                 {
                     md5hash = algorithm.ComputeHash(request.File);
                 }

@@ -47,9 +47,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
 
             using (response.Model)
             using (var stream = response.Model.File)
-#pragma warning disable CA1508 // '...' is never 'null'. Remove or refactor the condition(s) to avoid dead code. - make no sense and cannot be complied with.
+#pragma warning disable CA1508 // Avoid dead conditional code
             using (var fileStream = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None))
-#pragma warning restore CA1508
+#pragma warning restore CA1508 // Avoid dead conditional code
             {
                 byte[] buffer = new byte[16 * 1024];
 

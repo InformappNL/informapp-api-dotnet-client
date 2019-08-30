@@ -48,9 +48,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
 
             try
             {
-#pragma warning disable CA1508 // Avoid dead conditional code. - Faulty rule?
+#pragma warning disable CA1508 // Avoid dead conditional code
                 using (var container = AutofacContainerFactory.Create())
-#pragma warning restore CA1508
+#pragma warning restore CA1508 // Avoid dead conditional code
                 {
                     var program = new ApiExampleProgram(container);
 
@@ -62,9 +62,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
             {
                 Console.WriteLine("Cancelled.");
             }
-#pragma warning disable CA1031 // General exceptions should not be caught. - Exception is caught, logged, and program terminates.
+#pragma warning disable CA1031 // Do not catch general exception types
             catch (Exception ex)
-#pragma warning restore CA1031
+#pragma warning restore CA1031 // Do not catch general exception types
             {
                 Console.WriteLine("An exception was thrown:");
                 Console.WriteLine(ex);

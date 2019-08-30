@@ -101,9 +101,7 @@ namespace Informapp.InformSystem.WebApi.Models
 
         private static bool IsNull<T>(T instance)
         {
-#pragma warning disable IDE0041 // Null check can be simplified -- avoiding == operator in case type T has an overload.
             return ReferenceEquals(null, instance);
-#pragma warning restore IDE0041
         }
 
         private static void ThrowNull(string parameterName)
