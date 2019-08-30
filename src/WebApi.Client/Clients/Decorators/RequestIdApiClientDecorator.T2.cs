@@ -56,9 +56,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
 
             if (response.Headers != null)
             {
-                var header = response.Headers.Headers
-                    .Where(x => string.Equals(x.Name, ResponseHeaderConstants.RequestIdHeaderName, StringComparison.OrdinalIgnoreCase))
-                    .SingleOrDefault();
+                var header = response.Headers.GetHeader(ResponseHeaderConstants.RequestIdHeaderName);
 
                 if (header != null && header.HasValue == true)
                 {

@@ -27,6 +27,22 @@ namespace Informapp.InformSystem.WebApi.Client.Responses
         public IEnumerable<ResponseHeader> Headers { get; }
 
         /// <summary>
+        /// Get header by name
+        /// </summary>
+        /// <param name="headerName">The header name</param>
+        /// <returns>The response header, null of not found</returns>
+        public ResponseHeader GetHeader(string headerName)
+        {
+            Argument.NotNullOrEmpty(headerName, nameof(headerName));
+
+            var header = Headers
+                .Where(x => string.Equals(headerName, x.Name, StringComparison.OrdinalIgnoreCase))
+                .SingleOrDefault();
+
+            return header;
+        }
+
+        /// <summary>
         /// Content-Length
         /// </summary>
         public long ContentLength { get; set; }

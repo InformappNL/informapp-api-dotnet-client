@@ -2217,6 +2217,13 @@
             Headers
             </summary>
         </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeaders.GetHeader(System.String)">
+            <summary>
+            Get header by name
+            </summary>
+            <param name="headerName">The header name</param>
+            <returns>The response header, null of not found</returns>
+        </member>
         <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ResponseHeaders.ContentLength">
             <summary>
             Content-Length
