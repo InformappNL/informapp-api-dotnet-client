@@ -45,21 +45,18 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
             {
                 if (stream.CanSeek == false)
                 {
-                    throw new InvalidOperationException("The stream must support seek operations.");
+                    throw new ArgumentException("The stream must support seek operations.", nameof(value));
                 }
 
-                if (stream.Length > Size)
-                {
-                    return false;
-                }
-                else
-                {
-                    return true;
-                }
+                return stream.Length <= Size;
+            }
+            if (value is long longValue)
+            {
+                return longValue <= Size;
             }
             else
             {
-                throw new InvalidOperationException("The object to validate is not a " + nameof(Stream));
+                throw new ArgumentException("The object to validate is not a Stream or Int64.", nameof(value));
             }
         }
 

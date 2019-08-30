@@ -8,23 +8,28 @@ namespace Informapp.InformSystem.WebApi.Client.Requests
     public class ApiUploadFileRequest
     {
         /// <summary>
-        /// The Content-Type
+        /// Content-Type
         /// </summary>
         public string ContentType { get; set; }
 
         /// <summary>
-        /// The file to upload
+        /// File
         /// </summary>
         public Stream File { get; set; }
 
         /// <summary>
-        /// The filename
+        /// File name
         /// </summary>
         public string FileName { get; set; }
 
         /// <summary>
+        /// Size
+        /// </summary>
+        public long? Size { get; set; }
+
+        /// <summary>
         /// The parameter name of the file in the api request
         /// </summary>
-        public string FileParameterName { get; set; }
+        public string ParameterName { get; set; }
     }
 }

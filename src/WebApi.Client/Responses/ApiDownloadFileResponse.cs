@@ -8,13 +8,23 @@ namespace Informapp.InformSystem.WebApi.Client.Responses
     public class ApiDownloadFileResponse
     {
         /// <summary>
-        /// The file
+        /// Content type
+        /// </summary>
+        public string ContentType { get; set; }
+
+        /// <summary>
+        /// File
         /// </summary>
         public Stream File { get; set; }
 
         /// <summary>
-        /// The filename
+        /// File name
         /// </summary>
         public string FileName { get; set; }
+
+        /// <summary>
+        /// Size
+        /// </summary>
+        public long? Size { get; set; }
     }
 }

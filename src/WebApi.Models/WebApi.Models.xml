@@ -4349,14 +4349,24 @@
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1Response"/> class.
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1Response.FileName">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1Response.ContentType">
             <summary>
-            File name
+            Content type
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1Response.File">
             <summary>
             File
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1Response.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1Response.Size">
+            <summary>
+            Size
             </summary>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1Response.Dispose">
@@ -4399,14 +4409,24 @@
             Max file size in bytes
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.FileName">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.ContentType">
             <summary>
-            File name
+            Content type
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.File">
             <summary>
             File
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.Size">
+            <summary>
+            Size
             </summary>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.Dispose">
@@ -5049,9 +5069,9 @@
             Download file response
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Files.IDownloadFileV1Response.FileName">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Files.IDownloadFileV1Response.ContentType">
             <summary>
-            File name
+            Content type
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Files.IDownloadFileV1Response.File">
@@ -5059,9 +5079,29 @@
             File
             </summary>
         </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Files.IDownloadFileV1Response.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Files.IDownloadFileV1Response.Size">
+            <summary>
+            Size
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Files.IUploadFileV1Request">
             <summary>
             Upload file request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Files.IUploadFileV1Request.ContentType">
+            <summary>
+            ContentType
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Files.IUploadFileV1Request.File">
+            <summary>
+            File
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Files.IUploadFileV1Request.FileName">
@@ -5069,9 +5109,9 @@
             File name
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Files.IUploadFileV1Request.File">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Files.IUploadFileV1Request.Size">
             <summary>
-            File
+            Size
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Filters.BooleanV1Filter">
@@ -5690,9 +5730,9 @@
             Download file response
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Files.IDownloadFileV2Response.FileName">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Files.IDownloadFileV2Response.ContentType">
             <summary>
-            File name
+            Content type
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Files.IDownloadFileV2Response.File">
@@ -5700,9 +5740,29 @@
             File
             </summary>
         </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Files.IDownloadFileV2Response.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Files.IDownloadFileV2Response.Size">
+            <summary>
+            Size
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version2.Files.IUploadFileV2Request">
             <summary>
             Upload file request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Files.IUploadFileV2Request.ContentType">
+            <summary>
+            ContentType
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Files.IUploadFileV2Request.File">
+            <summary>
+            File
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Files.IUploadFileV2Request.FileName">
@@ -5710,9 +5770,9 @@
             File name
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Files.IUploadFileV2Request.File">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Files.IUploadFileV2Request.Size">
             <summary>
-            File
+            Size
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version2.Filters.BooleanV2Filter">

@@ -2214,20 +2214,25 @@
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiUploadFileRequest.ContentType">
             <summary>
-            The Content-Type
+            Content-Type
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiUploadFileRequest.File">
             <summary>
-            The file to upload
+            File
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiUploadFileRequest.FileName">
             <summary>
-            The filename
+            File name
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiUploadFileRequest.FileParameterName">
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiUploadFileRequest.Size">
+            <summary>
+            Size
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Requests.ApiUploadFileRequest.ParameterName">
             <summary>
             The parameter name of the file in the api request
             </summary>
@@ -2338,14 +2343,24 @@
             Api download file response
             </summary>
         </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiDownloadFileResponse.ContentType">
+            <summary>
+            Content type
+            </summary>
+        </member>
         <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiDownloadFileResponse.File">
             <summary>
-            The file
+            File
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiDownloadFileResponse.FileName">
             <summary>
-            The filename
+            File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiDownloadFileResponse.Size">
+            <summary>
+            Size
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse">

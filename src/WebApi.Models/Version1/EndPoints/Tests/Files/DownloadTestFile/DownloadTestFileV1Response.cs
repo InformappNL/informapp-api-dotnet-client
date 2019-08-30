@@ -27,14 +27,14 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.Do
         }
 
         /// <summary>
-        /// File name
+        /// Content type
         /// </summary>
-        [ExampleValue("example.txt")]
+        [ExampleValue("text/plain")]
         [IgnoreDataMember]
-        public string FileName
+        public string ContentType
         {
-            get { return _response.FileName; }
-            set { _response.FileName = value; }
+            get => _response.ContentType;
+            set => _response.ContentType = value;
         }
 
         /// <summary>
@@ -44,8 +44,30 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.Do
         [IgnoreDataMember]
         public Stream File
         {
-            get { return _response.File; }
-            set { _response.File = value; }
+            get => _response.File;
+            set => _response.File = value;
+        }
+
+        /// <summary>
+        /// File name
+        /// </summary>
+        [ExampleValue("example.txt")]
+        [IgnoreDataMember]
+        public string FileName
+        {
+            get => _response.FileName;
+            set => _response.FileName = value;
+        }
+
+        /// <summary>
+        /// Size
+        /// </summary>
+        [ExampleValue(42L)]
+        [IgnoreDataMember]
+        public long? Size
+        {
+            get => _response.Size;
+            set => _response.Size = value;
         }
 
         /// <summary>

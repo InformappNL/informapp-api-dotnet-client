@@ -80,9 +80,14 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
                     throw new InvalidOperationException("Failed to map upload file request");
                 }
 
-                request.UploadFile.ContentType = MimeMapping.GetMimeMapping(request.UploadFile.FileName);
+                // Set Content-Type if empty
+                if (string.IsNullOrEmpty(request.UploadFile.ContentType) == true &&
+                    string.IsNullOrEmpty(request.UploadFile.FileName) == false)
+                {
+                    request.UploadFile.ContentType = MimeMapping.GetMimeMapping(request.UploadFile.FileName);
+                }
 
-                request.UploadFile.FileParameterName = _attribute.FileParameterName;
+                request.UploadFile.ParameterName = _attribute.FileParameterName;
             }
 
             return _apiClient.Execute(request, cancellationToken);

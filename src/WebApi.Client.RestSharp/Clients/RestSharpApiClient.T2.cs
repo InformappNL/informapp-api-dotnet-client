@@ -16,6 +16,7 @@ using System.Linq;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
 {
@@ -93,10 +94,10 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
                 client.ConfigureWebRequest(x => x.AllowWriteStreamBuffering = false);
 
                 apiRequest.AddFile(
-                    request.UploadFile.FileParameterName,
+                    request.UploadFile.ParameterName,
                     request.UploadFile.File.CopyTo,
                     request.UploadFile.FileName,
-                    request.UploadFile.File.Length,
+                    request.UploadFile.Size.Value,
                     request.UploadFile.ContentType);
             }
             else
@@ -147,7 +148,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
 
                 response.Headers.ContentType = apiResponse.ContentType;
 
-                SetContentDispositionHeader(response);
+                SetContentDispositionHeader(response, apiResponse);
             }
 
             return response;
@@ -204,7 +205,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
             }
         }
 
-        private static void SetContentDispositionHeader(ApiResponse response)
+        private static void SetContentDispositionHeader(ApiResponse response, IRestResponse<TResponse> restResponse)
         {
             var header = response.Headers.GetHeader(HttpResponseHeaderConstants.ContentDisposition);
 
@@ -216,7 +217,12 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
 
                 if (response.DownloadFile != null)
                 {
-                    response.DownloadFile.FileName = contentDisposition.FileName;
+                    string fileName = contentDisposition.FileName;
+                    string contentType = MimeMapping.GetMimeMapping(fileName);
+
+                    response.DownloadFile.ContentType = contentType;
+                    response.DownloadFile.FileName = fileName;
+                    response.DownloadFile.Size = restResponse.ContentLength;
                 }
             }
         }

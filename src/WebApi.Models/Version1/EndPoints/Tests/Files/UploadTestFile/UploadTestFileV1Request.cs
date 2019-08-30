@@ -67,6 +67,30 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.Up
 
 
 
+        /// <summary>
+        /// Content type
+        /// </summary>
+        [ExampleValue("text/plain")]
+        [IgnoreDataMember]
+        //[Required]
+        public string ContentType
+        {
+            get => _request.ContentType;
+            set => _request.ContentType = value;
+        }
+
+        /// <summary>
+        /// File
+        /// </summary>
+        [ExampleMemberProvider(typeof(UploadTestFileV1Request), nameof(File))]
+        //[FileSize(MaxFileSize)]
+        [IgnoreDataMember]
+        [Required]
+        public Stream File
+        {
+            get => _request.File;
+            set => _request.File = value;
+        }
 
         /// <summary>
         /// File name
@@ -78,21 +102,21 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.Up
         [Required]
         public string FileName
         {
-            get { return _request.FileName; }
-            set { _request.FileName = value; }
+            get => _request.FileName;
+            set => _request.FileName = value;
         }
 
         /// <summary>
-        /// File
+        /// Size
         /// </summary>
-        [ExampleMemberProvider(typeof(UploadTestFileV1Request), nameof(File))]
+        [ExampleValue(42L)]
         [FileSize(MaxFileSize)]
         [IgnoreDataMember]
         [Required]
-        public Stream File
+        public long? Size
         {
-            get { return _request.File; }
-            set { _request.File = value; }
+            get => _request.Size;
+            set => _request.Size = value;
         }
 
         /// <summary>

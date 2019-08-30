@@ -8,20 +8,19 @@ namespace Informapp.InformSystem.WebApi.Models.Version2.Files
     {
         private bool _isDisposed = false;
 
-        private string _fileName;
         private Stream _file;
 
-        public string FileName
-        {
-            get { return ThrowIfDisposed(_fileName); }
-            set { _fileName = ThrowIfDisposed(value); }
-        }
+        public string ContentType { get; set; }
 
         public Stream File
         {
-            get { return ThrowIfDisposed(_file); }
-            set { _file = ThrowIfDisposed(value); }
+            get => ThrowIfDisposed(_file);
+            set => _file = ThrowIfDisposed(value);
         }
+
+        public string FileName { get; set; }
+
+        public long? Size { get; set; }
 
         public void Dispose()
         {
@@ -33,8 +32,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version2.Files
 
                     _file = null;
                 }
-
-                _fileName = null;
 
                 _isDisposed = true;
             }

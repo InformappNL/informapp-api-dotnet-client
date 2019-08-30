@@ -9,13 +9,23 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.Files
     public interface IDownloadFileV1Response : IDisposable
     {
         /// <summary>
-        /// File name
+        /// Content type
         /// </summary>
-        string FileName { get; set; }
+        string ContentType { get; set; }
 
         /// <summary>
         /// File
         /// </summary>
         Stream File { get; set; }
+
+        /// <summary>
+        /// File name
+        /// </summary>
+        string FileName { get; set; }
+
+        /// <summary>
+        /// Size
+        /// </summary>
+        long? Size { get; set; }
     }
 }

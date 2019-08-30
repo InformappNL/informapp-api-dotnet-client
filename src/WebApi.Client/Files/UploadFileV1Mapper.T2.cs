@@ -47,8 +47,10 @@ namespace Informapp.InformSystem.WebApi.Client.Files
 
                 Require.NotNull(model, nameof(model));
 
+                request.UploadFile.ContentType = model.ContentType;
                 request.UploadFile.File = model.File;
                 request.UploadFile.FileName = model.FileName;
+                request.UploadFile.Size = model.Size;
 
                 mapped = true;
             }

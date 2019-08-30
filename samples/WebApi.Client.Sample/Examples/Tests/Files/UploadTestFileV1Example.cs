@@ -79,6 +79,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
             {
                 File = stream,
                 FileName = fileName,
+                Size = stream.Length,
             };
 
             return request;
@@ -94,6 +95,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
             {
                 File = stream,
                 FileName = fileName,
+                Size = stream.Length,
             };
 
             return request;

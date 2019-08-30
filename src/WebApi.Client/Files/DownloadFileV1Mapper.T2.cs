@@ -49,8 +49,10 @@ namespace Informapp.InformSystem.WebApi.Client.Files
 
                 var model = response.Model as IDownloadFileV1Response;
 
+                model.ContentType = response.DownloadFile.ContentType;
                 model.File = response.DownloadFile.File;
                 model.FileName = response.DownloadFile.FileName;
+                model.Size = response.DownloadFile.Size;
 
                 mapped = true;
             }
