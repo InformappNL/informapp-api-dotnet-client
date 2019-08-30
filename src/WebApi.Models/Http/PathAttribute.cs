@@ -16,7 +16,8 @@ namespace Informapp.InformSystem.WebApi.Models.Http
         /// <summary>
         /// Path arguments
         /// </summary>
-        private string[] Arguments { get; } = new string[0];
+        private string[] Arguments { get; } 
+            = Array.Empty<string>();
 
         /// <summary>
         /// Create instance with the specified pattern
