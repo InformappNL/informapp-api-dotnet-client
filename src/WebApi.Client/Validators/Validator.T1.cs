@@ -39,7 +39,7 @@ namespace Informapp.InformSystem.WebApi.Client.Validators
         {
             if (depth >= maxDepth)
             {
-                throw new Exception("Validation exceeding maximum allowed depth " + maxDepth);
+                throw new ArgumentException("Validation exceeding maximum allowed depth " + maxDepth, nameof(instance));
             }
 
             if (instance is string)
