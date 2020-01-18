@@ -21,6 +21,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
 
             var types = AppDomain.CurrentDomain.GetAssemblies()
                 .SelectMany(x => x.GetTypes())
+                .Where(x => x.IsClass == true)
                 .Where(x => x.IsGenericType == false)
                 .SelectMany(x => x.GetInterfaces(), (i, s) => (Implementor: i, Service: s))
                 .Where(x => x.Service.IsGenericType == true)
