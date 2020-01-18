@@ -18,7 +18,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.Do
     [DataContract(Namespace = Version1Constants.Namespace)]
     [DownloadFileRequest]
     [HttpMethod(HttpMethod.Get)]
-    [Path(TestFileV1Constants.GetRoute)]
+    [Path(TestFileV1Constants.DownloadRoute)]
     [Response(HttpStatusCode.BadRequest, typeof(BadRequestV1Response))]
     [Response(HttpStatusCode.Forbidden, typeof(ForbiddenV1Response))]
     [Response(HttpStatusCode.InternalServerError, typeof(InternalServerErrorV1Response))]

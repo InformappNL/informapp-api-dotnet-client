@@ -19,7 +19,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.Up
     /// </summary>
     [DataContract(Namespace = Version1Constants.Namespace)]
     [HttpMethod(HttpMethod.Post)]
-    [Path(TestFileV1Constants.GetRoute)]
+    [Path(TestFileV1Constants.UploadRoute)]
     [Response(HttpStatusCode.BadRequest, typeof(BadRequestV1Response))]
     [Response(HttpStatusCode.Forbidden, typeof(ForbiddenV1Response))]
     [Response(HttpStatusCode.InternalServerError, typeof(InternalServerErrorV1Response))]

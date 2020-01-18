@@ -4,6 +4,7 @@
     {
         private const string Route = "api/v1/tests/files";
 
-        internal const string GetRoute = Route;
+        internal const string DownloadRoute = Route;
+        internal const string UploadRoute = Route;
     }
 }
