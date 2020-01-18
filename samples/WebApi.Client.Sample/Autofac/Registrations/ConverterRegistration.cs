@@ -2,6 +2,7 @@
 using Informapp.InformSystem.WebApi.Client.Converters;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using System;
+using System.Linq;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
 {
@@ -18,9 +19,21 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            _ = builder.RegisterAssemblyTypes(AppDomain.CurrentDomain.GetAssemblies())
-                .AsClosedTypesOf(typeof(IConverter<,>))
-                .InstancePerLifetimeScope();
+            var types = AppDomain.CurrentDomain.GetAssemblies()
+                .SelectMany(x => x.GetTypes())
+                .Where(x => x.IsGenericType == false)
+                .SelectMany(x => x.GetInterfaces(), (i, s) => (Implementor: i, Service: s))
+                .Where(x => x.Service.IsGenericType == true)
+                .Where(x => x.Service.ContainsGenericParameters == false)
+                .Where(x => x.Service.GetGenericTypeDefinition() == typeof(IConverter<,>))
+                .ToList();
+
+            foreach (var (implementor, service) in types)
+            {
+                _ = builder.RegisterType(implementor)
+                    .As(service)
+                    .InstancePerLifetimeScope();
+            }
         }
     }
 }

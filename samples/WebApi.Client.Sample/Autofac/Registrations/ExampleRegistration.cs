@@ -2,6 +2,7 @@
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples;
 using System;
+using System.Linq;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
 {
@@ -18,9 +19,20 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            _ = builder.RegisterAssemblyTypes(AppDomain.CurrentDomain.GetAssemblies())
-                .AssignableTo<IExample>()
-                .InstancePerLifetimeScope();
+            var types = AppDomain.CurrentDomain.GetAssemblies()
+                .SelectMany(x => x.GetTypes())
+                .Where(x => x.IsClass == true)
+                .Where(x => x.GetInterfaces()
+                    .Where(i => i == typeof(IExample))
+                    .Any() == true)
+                .ToList();
+
+            foreach (var type in types)
+            {
+                _ = builder.RegisterType(type)
+                    .As<IExample>()
+                    .InstancePerLifetimeScope();
+            }
         }
     }
 }

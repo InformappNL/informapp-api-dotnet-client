@@ -4,6 +4,7 @@ using Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Client.Sample.BearerTokenProviders;
 using System;
+using System.Linq;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
 {
@@ -36,9 +37,21 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
                 typeof(EnsureSuccessBearerTokenProviderDecorator<>),
             };
 
-            _ = builder.RegisterAssemblyTypes(AppDomain.CurrentDomain.GetAssemblies())
-                .AsClosedTypesOf(serviceType)
-                .InstancePerLifetimeScope();
+            var types = AppDomain.CurrentDomain.GetAssemblies()
+                .SelectMany(x => x.GetTypes())
+                .Where(x => x.IsGenericType == false)
+                .SelectMany(x => x.GetInterfaces(), (i, s) => (Implementor: i, Service: s))
+                .Where(x => x.Service.IsGenericType == true)
+                .Where(x => x.Service.ContainsGenericParameters == false)
+                .Where(x => x.Service.GetGenericTypeDefinition() == typeof(IBearerTokenProvider<>))
+                .ToList();
+
+            foreach (var (implementor, service) in types)
+            {
+                _ = builder.RegisterType(implementor)
+                    .As(service)
+                    .InstancePerLifetimeScope();
+            }
 
             foreach (var decoratorType in decoratorTypes)
             {

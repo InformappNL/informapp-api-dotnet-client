@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac
 {
@@ -37,10 +38,19 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac
         {
             var builder = new ContainerBuilder();
 
-            _ = builder.RegisterAssemblyTypes(AppDomain.CurrentDomain.GetAssemblies())
-                .AssignableTo(typeof(IAutofacRegistration))
-                .As<IAutofacRegistration>()
-                .InstancePerDependency();
+            var types = AppDomain.CurrentDomain.GetAssemblies()
+                .SelectMany(x => x.GetTypes())
+                .Where(x => x.GetInterfaces()
+                    .Where(i => i == typeof(IAutofacRegistration))
+                    .Any() == true)
+                .ToList();
+
+            foreach (var type in types)
+            {
+                _ = builder.RegisterType(type)
+                    .As<IAutofacRegistration>()
+                    .InstancePerLifetimeScope();
+            }
 
             using (var container = builder.Build())
             {
