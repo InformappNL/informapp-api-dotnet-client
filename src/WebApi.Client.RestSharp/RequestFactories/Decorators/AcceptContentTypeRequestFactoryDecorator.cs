@@ -54,7 +54,10 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decora
                         throw new InvalidOperationException("Unsupported value");
                 }
 
-                apiRequest.AddOrUpdateParameter(HttpRequestHeaderConstants.Accept, accept);
+                apiRequest.AddOrUpdateParameter(
+                    HttpRequestHeaderConstants.Accept,
+                    accept,
+                    ParameterType.HttpHeader);
             }
 
             return apiRequest;
