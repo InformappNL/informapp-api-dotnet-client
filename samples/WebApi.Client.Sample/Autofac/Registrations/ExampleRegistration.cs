@@ -30,7 +30,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
             foreach (var type in types)
             {
                 _ = builder.RegisterType(type)
-                    .As<IExample>()
+                    .AsSelf()
                     .InstancePerLifetimeScope();
             }
         }
