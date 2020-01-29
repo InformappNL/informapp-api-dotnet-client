@@ -115,7 +115,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
             }
 
             var apiResponse = await client
-                .ExecuteTaskAsync<TResponse>(apiRequest, cancellationToken)
+                .ExecuteAsync<TResponse>(apiRequest, cancellationToken)
                 .ConfigureAwait(Await.Default);
 
             var response = new RestSharpApiResponse<TResponse>

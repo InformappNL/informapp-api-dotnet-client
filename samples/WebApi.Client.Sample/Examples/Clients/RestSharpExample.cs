@@ -83,7 +83,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
             };
 
             var response = await client
-                .ExecuteTaskAsync<TResponse>(request, cancellationToken)
+                .ExecuteAsync<TResponse>(request, cancellationToken)
                 .ConfigureAwait(Await.Default);
 
             return response;
@@ -134,7 +134,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
                 ParameterType.RequestBody);
 
             var response = await client
-                .ExecuteTaskAsync<OAuth2TokenV1Response>(request, cancellationToken)
+                .ExecuteAsync<OAuth2TokenV1Response>(request, cancellationToken)
                 .ConfigureAwait(Await.Default);
 
             if (response.IsSuccessful == true)
