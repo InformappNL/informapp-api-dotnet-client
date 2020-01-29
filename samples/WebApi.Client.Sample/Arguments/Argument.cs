@@ -36,7 +36,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Arguments
         public static void NotNull<T>(T instance, string parameterName)
             where T : class
         {
-            if (instance is null)
+            if (IsNull(instance))
             {
                 ThrowNull(parameterName);
             }
@@ -101,9 +101,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Arguments
 
         private static bool IsNull<T>(T instance)
         {
-#pragma warning disable IDE0041 // Use 'is null' check
             return ReferenceEquals(null, instance);
-#pragma warning restore IDE0041 // Use 'is null' check
         }
 
         private static void ThrowNull(string parameterName)

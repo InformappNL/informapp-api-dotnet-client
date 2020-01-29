@@ -36,7 +36,7 @@ namespace Informapp.InformSystem.WebApi.Models.Arguments
         public static void NotNull<T>(T instance, string parameterName)
             where T : class
         {
-            if (instance is null)
+            if (IsNull(instance))
             {
                 ThrowNull(parameterName);
             }
