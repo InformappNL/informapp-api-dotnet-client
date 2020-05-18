@@ -72,6 +72,10 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources
 
                     bytesWritten += read;
                 }
+
+                await fileStream
+                    .FlushAsync(cancellationToken)
+                    .ConfigureAwait(Await.Default);
             }
 
             Console.WriteLine("Saved download file to {0} ({1:n0} bytes)", path, bytesWritten);
