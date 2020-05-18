@@ -29,38 +29,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupC
         public int? TotalRegistrationCount { get; set; }
 
         /// <summary>
-        /// Total available credits
-        /// </summary>
-        [DataMember]
-        [ExampleValue(100)]
-        [Range(BusinessGroupCreditV1Constants.TotalAvailableCreditsMin, BusinessGroupCreditV1Constants.TotalAvailableCreditsMax)]
-        public int? TotalAvailableCredits { get; set; }
-
-        /// <summary>
-        /// Total credits of non empty bundles
-        /// </summary>
-        [DataMember]
-        [ExampleValue(300)]
-        [Range(BusinessGroupCreditV1Constants.TotalCreditsOfNonEmptyBundlesMin, BusinessGroupCreditV1Constants.TotalCreditsOfNonEmptyBundlesMax)]
-        public int? TotalCreditsOfNonEmptyBundles { get; set; }
-
-        /// <summary>
-        /// Total credits
-        /// </summary>
-        [DataMember]
-        [ExampleValue(3000)]
-        [Range(BusinessGroupCreditV1Constants.TotalCreditsMin, BusinessGroupCreditV1Constants.TotalCreditsMax)]
-        public int? TotalCredits { get; set; }
-
-        /// <summary>
-        /// Total pending credits, purchased but not yet added
-        /// </summary>
-        [DataMember]
-        [ExampleValue(100)]
-        [Range(BusinessGroupCreditV1Constants.TotalPendingCreditsMin, BusinessGroupCreditV1Constants.TotalPendingCreditsMax)]
-        public int? TotalPendingCredits { get; set; }
-
-        /// <summary>
         /// Create date
         /// </summary>
         [DataMember]

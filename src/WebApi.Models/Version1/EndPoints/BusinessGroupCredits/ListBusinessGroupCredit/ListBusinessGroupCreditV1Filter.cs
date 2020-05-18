@@ -41,24 +41,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupC
         public Int32V1Filter TotalRegistrationCount { get; set; }
 
         /// <summary>
-        /// Filter records by total available credits
-        /// </summary>
-        [DataMember]
-        public Int32V1Filter TotalAvailableCredits { get; set; }
-
-        /// <summary>
-        /// Filter records by total credits of non empty bundles
-        /// </summary>
-        [DataMember]
-        public Int32V1Filter TotalCreditsOfNonEmptyBundles { get; set; }
-
-        /// <summary>
-        /// Filter records by total credit
-        /// </summary>
-        [DataMember]
-        public Int32V1Filter TotalCredits { get; set; }
-
-        /// <summary>
         /// Filter records by create date
         /// </summary>
         [DataMember]

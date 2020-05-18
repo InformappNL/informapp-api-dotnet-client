@@ -43,14 +43,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         public DateTimeOffset? RegistrationDate { get; set; }
 
         /// <summary>
-        /// Number of credits used for this registration
-        /// </summary>
-        [DataMember]
-        [ExampleValue(2)]
-        [Range(FormRegistrationV1Constants.CreditCountMin, FormRegistrationV1Constants.CreditCountMax)]
-        public int? CreditCount { get; set; }
-
-        /// <summary>
         /// Sent by user
         /// </summary>
         [DataMember]

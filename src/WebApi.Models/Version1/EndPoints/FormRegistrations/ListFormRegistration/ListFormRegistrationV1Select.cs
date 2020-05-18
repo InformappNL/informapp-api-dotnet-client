@@ -34,27 +34,21 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         RegistrationDate = 3,
 
         /// <summary>
-        /// CreditCount
-        /// </summary>
-        [EnumMember]
-        CreditCount = 4,
-
-        /// <summary>
         /// SentByUser
         /// </summary>
         [EnumMember]
-        SentByUser = 5,
+        SentByUser = 4,
 
         /// <summary>
         /// CreateDate
         /// </summary>
         [EnumMember]
-        CreateDate = 6,
+        CreateDate = 5,
 
         /// <summary>
         /// LastUpdateDate
         /// </summary>
         [EnumMember]
-        LastUpdateDate = 7,
+        LastUpdateDate = 6,
     }
 }

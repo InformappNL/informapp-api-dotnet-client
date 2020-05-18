@@ -40,7 +40,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupC
         [DataMember]
         [DefaultValue(new[] { ListBusinessGroupCreditV1Select.All })]
         [EnumCollection(typeof(ListBusinessGroupCreditV1Select))]
-        [ExampleCollection(ExampleCollectionKind.List, typeof(ListBusinessGroupCreditV1Select), new object[] { ListBusinessGroupCreditV1Select.TotalRegistrationCount, ListBusinessGroupCreditV1Select.TotalCreditsOfNonEmptyBundles })]
+        [ExampleCollection(ExampleCollectionKind.List, typeof(ListBusinessGroupCreditV1Select), new object[] { ListBusinessGroupCreditV1Select.TotalRegistrationCount, ListBusinessGroupCreditV1Select.LastUpdateDate })]
         [QueryParameter]
         [UniqueItems(typeof(ListBusinessGroupCreditV1Select))]
         public IReadOnlyList<ListBusinessGroupCreditV1Select> Select { get; set; } = new[] { ListBusinessGroupCreditV1Select.All };

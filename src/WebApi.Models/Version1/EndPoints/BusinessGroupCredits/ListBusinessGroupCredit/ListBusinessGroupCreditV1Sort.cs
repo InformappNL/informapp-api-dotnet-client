@@ -44,60 +44,12 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupC
         TotalRegistrationCountDesc = -TotalRegistrationCount,
 
         /// <summary>
-        /// Sort by total credits of non empty bundles ascending
-        /// </summary>
-        [EnumMember]
-        [SortDirection(SortDirection.Asc)]
-        [SortName(nameof(TotalCreditsOfNonEmptyBundles))]
-        TotalCreditsOfNonEmptyBundles = 3,
-
-        /// <summary>
-        /// Sort by total credits of non empty bundles descending
-        /// </summary>
-        [EnumMember]
-        [SortDirection(SortDirection.Desc)]
-        [SortName(nameof(TotalCreditsOfNonEmptyBundles))]
-        TotalCreditsOfNonEmptyBundlesDesc = -TotalCreditsOfNonEmptyBundles,
-
-        /// <summary>
-        /// Sort by total available credits descending
-        /// </summary>
-        [EnumMember]
-        [SortDirection(SortDirection.Asc)]
-        [SortName(nameof(TotalAvailableCredits))]
-        TotalAvailableCredits = 4,
-
-        /// <summary>
-        /// Sort by total available credits descending
-        /// </summary>
-        [EnumMember]
-        [SortDirection(SortDirection.Desc)]
-        [SortName(nameof(TotalAvailableCredits))]
-        TotalAvailableCreditsDesc = -TotalAvailableCredits,
-
-        /// <summary>
-        /// Sort by total credits descending
-        /// </summary>
-        [EnumMember]
-        [SortDirection(SortDirection.Asc)]
-        [SortName(nameof(TotalCredits))]
-        TotalCredits = 5,
-
-        /// <summary>
-        /// Sort by total credits descending
-        /// </summary>
-        [EnumMember]
-        [SortDirection(SortDirection.Desc)]
-        [SortName(nameof(TotalCredits))]
-        TotalCreditsDesc = -TotalCredits,
-
-        /// <summary>
         /// Sort by create date ascending
         /// </summary>
         [EnumMember]
         [SortDirection(SortDirection.Asc)]
         [SortName(nameof(CreateDate))]
-        CreateDate = 6,
+        CreateDate = 3,
 
         /// <summary>
         /// Sort by create date descending
@@ -113,7 +65,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupC
         [EnumMember]
         [SortDirection(SortDirection.Asc)]
         [SortName(nameof(LastUpdateDate))]
-        LastUpdateDate = 7,
+        LastUpdateDate = 4,
 
         /// <summary>
         /// Sort by last update date descending

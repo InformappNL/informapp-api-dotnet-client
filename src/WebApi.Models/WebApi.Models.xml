@@ -2507,21 +2507,6 @@
             Filter records by total registration count
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Filter.TotalAvailableCredits">
-            <summary>
-            Filter records by total available credits
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Filter.TotalCreditsOfNonEmptyBundles">
-            <summary>
-            Filter records by total credits of non empty bundles
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Filter.TotalCredits">
-            <summary>
-            Filter records by total credit
-            </summary>
-        </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Filter.CreateDate">
             <summary>
             Filter records by create date
@@ -2594,26 +2579,6 @@
             Total number of form registrations
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1ResponseBusinessGroupCredit.TotalAvailableCredits">
-            <summary>
-            Total available credits
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1ResponseBusinessGroupCredit.TotalCreditsOfNonEmptyBundles">
-            <summary>
-            Total credits of non empty bundles
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1ResponseBusinessGroupCredit.TotalCredits">
-            <summary>
-            Total credits
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1ResponseBusinessGroupCredit.TotalPendingCredits">
-            <summary>
-            Total pending credits, purchased but not yet added
-            </summary>
-        </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1ResponseBusinessGroupCredit.CreateDate">
             <summary>
             Create date
@@ -2637,26 +2602,6 @@
         <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Select.TotalRegistrationCount">
             <summary>
             TotalRegistrationCount
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Select.TotalCreditsOfNonEmptyBundles">
-            <summary>
-            TotalCreditsOfNonEmptyBundles
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Select.TotalAvailableCredits">
-            <summary>
-            TotalAvailableCredits
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Select.TotalCredits">
-            <summary>
-            TotalCredits
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Select.TotalPendingCredits">
-            <summary>
-            TotalPendingCredits
             </summary>
         </member>
         <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Select.CreateDate">
@@ -2692,36 +2637,6 @@
         <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Sort.TotalRegistrationCountDesc">
             <summary>
             Sort by total registration count descending
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Sort.TotalCreditsOfNonEmptyBundles">
-            <summary>
-            Sort by total credits of non empty bundles ascending
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Sort.TotalCreditsOfNonEmptyBundlesDesc">
-            <summary>
-            Sort by total credits of non empty bundles descending
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Sort.TotalAvailableCredits">
-            <summary>
-            Sort by total available credits descending
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Sort.TotalAvailableCreditsDesc">
-            <summary>
-            Sort by total available credits descending
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Sort.TotalCredits">
-            <summary>
-            Sort by total credits descending
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Sort.TotalCreditsDesc">
-            <summary>
-            Sort by total credits descending
             </summary>
         </member>
         <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Sort.CreateDate">
@@ -3897,16 +3812,6 @@
             Sort by registration date descending
             </summary>
         </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Sort.CreditCount">
-            <summary>
-            Sort by credit count ascending
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Sort.CreditCountDesc">
-            <summary>
-            Sort by credit count descending
-            </summary>
-        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmails.ListFormRegistrationEmail.ListFormRegistrationEmailV1Filter">
             <summary>
             List form registration email request filter
@@ -4052,16 +3957,6 @@
         <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmails.ListFormRegistrationEmail.ListFormRegistrationEmailV1Sort.RegistrationDateDesc">
             <summary>
              Sort by registration date descending
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmails.ListFormRegistrationEmail.ListFormRegistrationEmailV1Sort.CreditCount">
-            <summary>
-            Sort by credit count ascending
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmails.ListFormRegistrationEmail.ListFormRegistrationEmailV1Sort.CreditCountDesc">
-            <summary>
-            Sort by credit count descending
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1Filter">
@@ -4291,11 +4186,6 @@
             Filter records by registration date
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrations.ListFormRegistration.ListFormRegistrationV1Filter.CreditCount">
-            <summary>
-            Filter records by credit count
-            </summary>
-        </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrations.ListFormRegistration.ListFormRegistrationV1Filter.SentByUser">
             <summary>
             Filter records by sent by user
@@ -4383,11 +4273,6 @@
             Registration date
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrations.ListFormRegistration.ListFormRegistrationV1ResponseRegistration.CreditCount">
-            <summary>
-            Number of credits used for this registration
-            </summary>
-        </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrations.ListFormRegistration.ListFormRegistrationV1ResponseRegistration.SentByUser">
             <summary>
             Sent by user
@@ -4428,11 +4313,6 @@
             RegistrationDate
             </summary>
         </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrations.ListFormRegistration.ListFormRegistrationV1Select.CreditCount">
-            <summary>
-            CreditCount
-            </summary>
-        </member>
         <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrations.ListFormRegistration.ListFormRegistrationV1Select.SentByUser">
             <summary>
             SentByUser
@@ -4471,16 +4351,6 @@
         <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrations.ListFormRegistration.ListFormRegistrationV1Sort.RegistrationDateDesc">
             <summary>
             Sort by registration date descending
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrations.ListFormRegistration.ListFormRegistrationV1Sort.CreditCount">
-            <summary>
-            Sort by credit count ascending
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrations.ListFormRegistration.ListFormRegistrationV1Sort.CreditCountDesc">
-            <summary>
-            Sort by credit count descending
             </summary>
         </member>
         <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrations.ListFormRegistration.ListFormRegistrationV1Sort.SentByUser">

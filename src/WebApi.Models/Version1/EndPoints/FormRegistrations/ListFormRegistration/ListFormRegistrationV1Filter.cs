@@ -29,12 +29,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         public DateTimeOffsetV1Filter RegistrationDate { get; set; }
 
         /// <summary>
-        /// Filter records by credit count
-        /// </summary>
-        [DataMember]
-        public Int32V1Filter CreditCount { get; set; }
-
-        /// <summary>
         /// Filter records by sent by user
         /// </summary>
         [DataMember]

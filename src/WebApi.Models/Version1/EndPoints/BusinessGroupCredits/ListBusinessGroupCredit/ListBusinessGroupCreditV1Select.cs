@@ -22,39 +22,15 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupC
         TotalRegistrationCount = 1,
 
         /// <summary>
-        /// TotalCreditsOfNonEmptyBundles
-        /// </summary>
-        [EnumMember]
-        TotalCreditsOfNonEmptyBundles = 2,
-
-        /// <summary>
-        /// TotalAvailableCredits
-        /// </summary>
-        [EnumMember]
-        TotalAvailableCredits = 3,
-
-        /// <summary>
-        /// TotalCredits
-        /// </summary>
-        [EnumMember]
-        TotalCredits = 4,
-
-        /// <summary>
-        /// TotalPendingCredits
-        /// </summary>
-        [EnumMember]
-        TotalPendingCredits = 5,
-
-        /// <summary>
         /// CreateDate
         /// </summary>
         [EnumMember]
-        CreateDate = 6,
+        CreateDate = 2,
 
         /// <summary>
         /// LastUpdateDate
         /// </summary>
         [EnumMember]
-        LastUpdateDate = 7,
+        LastUpdateDate = 3,
     }
 }

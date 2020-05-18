@@ -44,22 +44,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         RegistrationDateDesc = -RegistrationDate,
 
         /// <summary>
-        /// Sort by credit count ascending
-        /// </summary>
-        [EnumMember]
-        [SortDirection(SortDirection.Asc)]
-        [SortName(nameof(CreditCount))]
-        CreditCount = 3,
-
-        /// <summary>
-        /// Sort by credit count descending
-        /// </summary>
-        [EnumMember]
-        [SortDirection(SortDirection.Desc)]
-        [SortName(nameof(CreditCount))]
-        CreditCountDesc = -CreditCount,
-
-        /// <summary>
         /// Sort by sent by user ascending
         /// </summary>
         [EnumMember]
