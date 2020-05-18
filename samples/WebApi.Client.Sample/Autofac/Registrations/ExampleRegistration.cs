@@ -22,9 +22,8 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
             var types = AppDomain.CurrentDomain.GetAssemblies()
                 .SelectMany(x => x.GetTypes())
                 .Where(x => x.IsClass == true)
-                .Where(x => x.GetInterfaces()
-                    .Where(i => i == typeof(IExample))
-                    .Any() == true)
+                .Where(x => x.IsAbstract == false)
+                .Where(x => typeof(IExample).IsAssignableFrom(x))
                 .ToList();
 
             foreach (var type in types)
