@@ -3273,9 +3273,9 @@
             The kind of data
             </summary>
         </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.FormRegistrationDataV1Kind.Object">
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.FormRegistrationDataV1Kind.Dictionary">
             <summary>
-            Object
+            Dictionary
             </summary>
         </member>
         <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.FormRegistrationDataV1Kind.Array">

@@ -66,7 +66,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         /// </summary>
         [DataMember]
         [EnumValidation(typeof(FormRegistrationDataV1Kind))]
-        [ExampleValue(FormRegistrationDataV1Kind.Object)]
+        [ExampleValue(FormRegistrationDataV1Kind.Dictionary)]
         public FormRegistrationDataV1Kind? Kind { get; set; }
 
         /// <summary>

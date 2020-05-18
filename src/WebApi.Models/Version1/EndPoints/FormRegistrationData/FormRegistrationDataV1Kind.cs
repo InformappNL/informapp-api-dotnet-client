@@ -10,10 +10,10 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
     public enum FormRegistrationDataV1Kind
     {
         /// <summary>
-        /// Object
+        /// Dictionary
         /// </summary>
         [EnumMember]
-        Object = 1,
+        Dictionary = 1,
 
         /// <summary>
         /// Array
