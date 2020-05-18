@@ -58,7 +58,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
                         .ConfigureAwait(Await.Default);
                 }
             }
-            catch (TaskCanceledException) when (isCancellationRequested == true)
+            catch (OperationCanceledException) when (isCancellationRequested == true)
             {
                 Console.WriteLine("Cancelled.");
             }
