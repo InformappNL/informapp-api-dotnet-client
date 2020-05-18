@@ -176,7 +176,6 @@
     <Rule Id="CS8603" Action="None" />
     <Rule Id="CS8605" Action="None" />
     <Rule Id="CS8606" Action="None" />
-    <Rule Id="CS8607" Action="None" />
     <Rule Id="CS8608" Action="None" />
     <Rule Id="CS8609" Action="None" />
     <Rule Id="CS8610" Action="None" />
