@@ -284,9 +284,7 @@
     <Compile Include="Version1\EndPoints\Tests\Values\TestBodyValues\TestBodyValuesV1Response.cs" />
     <Compile Include="Version1\EndPoints\Tests\Values\TestBodyValues\TestBodyValuesV1Response.Example.cs" />
     <Compile Include="Version1\EndPoints\Tests\Values\TestQueryValues\TestQueryValuesV1Request.cs" />
-    <Compile Include="Version1\EndPoints\Tests\Values\TestQueryValues\TestQueryValuesV1Request.Example.cs" />
     <Compile Include="Version1\EndPoints\Tests\Values\TestQueryValues\TestQueryValuesV1Response.cs" />
-    <Compile Include="Version1\EndPoints\Tests\Values\TestQueryValues\TestQueryValuesV1Response.Example.cs" />
     <Compile Include="Version1\EndPoints\Tests\Values\ValuesV1Constants.cs" />
     <Compile Include="Version1\EndPoints\Tests\Values\ValuesV1Kind.cs" />
     <Compile Include="Version1\Errors\BadGatewayV1Response.cs" />

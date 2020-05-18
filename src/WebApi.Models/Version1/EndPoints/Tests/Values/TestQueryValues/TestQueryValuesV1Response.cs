@@ -166,12 +166,5 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.T
         [DataMember]
         [ExampleCollection(ExampleCollectionKind.Array, new byte[] { 1, 2, 3 })]
         public byte[] Bytes { get; set; }
-
-        /// <summary>
-        /// Dictionary
-        /// </summary>
-        [DataMember]
-        [ExampleMemberProvider(typeof(TestQueryValuesV1Response), nameof(Dictionary))]
-        public IReadOnlyDictionary<int, int> Dictionary { get; set; }
     }
 }

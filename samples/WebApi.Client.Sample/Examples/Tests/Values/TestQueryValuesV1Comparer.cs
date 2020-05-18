@@ -12,7 +12,6 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
             Argument.NotNull(response, nameof(response));
 
             var collectionEqualityComparer = new CollectionEqualityComparer();
-            var dictionaryEqualityComparer = new DictionaryEqualityComparer();
 
             bool equals = true;
 
@@ -40,8 +39,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
             }
 
             else if ((collectionEqualityComparer.CollectionEquals(request.Array, response.Array) &&
-                collectionEqualityComparer.CollectionEquals(request.Bytes, response.Bytes) &&
-                dictionaryEqualityComparer.DictionaryEquals(request.Dictionary, response.Dictionary)) == false)
+                collectionEqualityComparer.CollectionEquals(request.Bytes, response.Bytes)) == false)
             {
                 equals = false;
             }

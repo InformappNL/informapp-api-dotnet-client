@@ -203,14 +203,5 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.T
         [MaxItems(3)]
         [QueryParameter]
         public byte[] Bytes { get; set; }
-
-        /// <summary>
-        /// Dictionary
-        /// </summary>
-        [DataMember]
-        [ExampleMemberProvider(typeof(TestQueryValuesV1Request), nameof(Dictionary))]
-        [MaxItems(3)]
-        [QueryParameter]
-        public IReadOnlyDictionary<int, int> Dictionary { get; set; }
     }
 }
