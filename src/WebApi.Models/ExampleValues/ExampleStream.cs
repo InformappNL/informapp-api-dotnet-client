@@ -47,7 +47,22 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
 
         public override bool Equals(object obj)
         {
-            return _stream.Equals(obj);
+            if (obj is null)
+            {
+                return false;
+            }
+
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+
+            if (obj is ExampleStream other)
+            {
+                return _stream.Equals(other._stream);
+            }
+
+            return false;
         }
 
         public override int GetHashCode()
