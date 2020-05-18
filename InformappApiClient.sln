@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.329
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformSystem.WebApi.Client", "src\WebApi.Client\InformSystem.WebApi.Client.csproj", "{A6B89D51-0541-4236-9A0C-3AF9C5300E52}"
 EndProject
@@ -18,6 +18,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		samples\cleanup.config = samples\cleanup.config
 		src\cleanup.config = src\cleanup.config
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D8C6774D-2C39-40F4-9BB3-5696F1CFC8AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{07CBDED1-DB37-42E9-B22F-B4B96097C332}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +48,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A6B89D51-0541-4236-9A0C-3AF9C5300E52} = {D8C6774D-2C39-40F4-9BB3-5696F1CFC8AF}
+		{C5EB5B12-420F-47FD-9089-2B2EC188F7CF} = {D8C6774D-2C39-40F4-9BB3-5696F1CFC8AF}
+		{7CF0120C-2F63-408C-B761-0F4946F0E0D7} = {D8C6774D-2C39-40F4-9BB3-5696F1CFC8AF}
+		{EC0ECB70-5F32-4F7A-B42E-63C82DAF08C0} = {07CBDED1-DB37-42E9-B22F-B4B96097C332}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2734AB51-3733-49D4-9C2A-3A160F53B8E6}
