@@ -207,11 +207,5 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
         {
             throw new NotImplementedException();
         }
-
-        [Obsolete(ObsoleteMessage, error: true)]
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -1847,11 +1847,6 @@
             </summary>
             <param name="resource">The resource</param>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Disposables.IDisposableResources.Dispose">
-            <summary>
-            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
-            </summary>
-        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.EndPointProviders.ConfigurationEndPointProvider">
             <summary>
             Implementation of <see cref="T:Informapp.InformSystem.WebApi.Client.EndPointProviders.IEndPointProvider"/> to retrieve endpoint from app settings.

@@ -60,7 +60,7 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
             return _stream.ToString();
         }
 
-        public void Dispose()
+        protected override void Dispose(bool disposing)
         {
             _semaphoreSlim.Dispose();
 
