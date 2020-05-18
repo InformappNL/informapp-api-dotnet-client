@@ -112,7 +112,6 @@
     <Rule Id="CS1957" Action="None" />
     <Rule Id="CS1974" Action="None" />
     <Rule Id="CS1981" Action="None" />
-    <Rule Id="CS1998" Action="None" />
     <Rule Id="CS2002" Action="None" />
     <Rule Id="CS2008" Action="None" />
     <Rule Id="CS2023" Action="None" />
