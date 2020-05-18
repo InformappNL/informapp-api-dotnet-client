@@ -75,7 +75,7 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
         }
 
         [Obsolete(ObsoleteMessage, error: true)]
-        public override async Task CopyToAsync(Stream destination, int bufferSize, CancellationToken cancellationToken)
+        public override Task CopyToAsync(Stream destination, int bufferSize, CancellationToken cancellationToken)
         {
             throw new NotImplementedException();
         }
