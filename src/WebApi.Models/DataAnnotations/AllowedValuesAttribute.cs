@@ -110,7 +110,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
         internal AllowedValuesAttribute(object[] values) { SetupObject(values); }
 
-        private void SetupClass<T>(IEnumerable<T> values)
+        private void SetupClass<T>(IReadOnlyList<T> values)
             where T : class
         {
             var set = Setup(values, EqualityComparer<T>.Default, typeof(T), null);
@@ -126,7 +126,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
             };
         }
 
-        private void SetupStruct<T>(IEnumerable<T> values)
+        private void SetupStruct<T>(IReadOnlyList<T> values)
             where T : struct
         {
             var set = Setup(values, EqualityComparer<T>.Default, typeof(T), null);
@@ -144,7 +144,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
             };
         }
 
-        private void SetupString(IEnumerable<string> values, bool ignoreCase)
+        private void SetupString(IReadOnlyList<string> values, bool ignoreCase)
         {
             var comparer = ignoreCase ? StringComparer.OrdinalIgnoreCase : StringComparer.Ordinal;
 
@@ -161,9 +161,12 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
             };
         }
 
-        private void SetupObject(IEnumerable<object> values)
+        private void SetupObject(IReadOnlyList<object> values)
         {
-            var type = values?.FirstOrDefault()?.GetType();
+            var type = values
+                .Where(x => x != null)
+                .Select(x => x.GetType())
+                .FirstOrDefault();
 
             var set = Setup(values, EqualityComparer<object>.Default, type, null);
 
@@ -182,14 +185,14 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
             };
         }
 
-        private ISet<T> Setup<T>(IEnumerable<T> values, IEqualityComparer<T> comparer, Type type, bool? ignoreCase)
+        private ISet<T> Setup<T>(IReadOnlyList<T> values, IEqualityComparer<T> comparer, Type type, bool? ignoreCase)
         {
             if (values == null)
             {
                 throw new ArgumentNullException(nameof(values));
             }
 
-            if (values.Any() == false)
+            if (values.Count == 0)
             {
                 throw new ArgumentException("Can not be empty", nameof(values));
             }
