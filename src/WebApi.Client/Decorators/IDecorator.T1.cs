@@ -5,7 +5,7 @@ namespace Informapp.InformSystem.WebApi.Client.Decorators
     /// Generic Interface for decorators
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public interface IDecorator<T> : IDecorator
+    public interface IDecorator<out T> : IDecorator
         where T : class
     {
         /// <summary>
