@@ -1,6 +1,6 @@
 ﻿using Informapp.InformSystem.WebApi.Client.Sample.Autofac;
+using Informapp.InformSystem.WebApi.Client.Sample.Consoles;
 using System;
-using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -8,26 +8,13 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
 {
     internal static class Program
     {
-        private const int BufferSize = 1024;
-
-        private static readonly StreamReader _reader = GetReader(BufferSize);
-
-        private static StreamReader GetReader(int bufferSize)
-        {
-            var stream = Console.OpenStandardInput(bufferSize);
-
-            var reader = new StreamReader(stream, Console.InputEncoding, detectEncodingFromByteOrderMarks: false, bufferSize);
-
-            return reader;
-        }
-
         private static readonly CancellationTokenSource _cancellationTokenSource = new CancellationTokenSource();
 
         private static bool isCancellationRequested = false;
 
         static Program()
         {
-            Console.SetIn(_reader);
+            ConsoleHelper.SetInputBufferSize(1024);
         }
 
         private static void Main()

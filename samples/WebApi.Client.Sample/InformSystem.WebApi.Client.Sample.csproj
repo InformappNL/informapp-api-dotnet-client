@@ -17,7 +17,7 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-	<Deterministic>true</Deterministic>
+    <Deterministic>true</Deterministic>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
@@ -121,6 +121,7 @@
     <Compile Include="Clients\LogToConsoleApiClientDecorator.T2.cs" />
     <Compile Include="Comparers\CollectionEqualityComparer.cs" />
     <Compile Include="Comparers\DictionaryEqualityComparer.cs" />
+    <Compile Include="Consoles\ConsoleHelper.cs" />
     <Compile Include="Examples\AppGroupMembers\AddAppGroupMemberV1Example.cs" />
     <Compile Include="Examples\AppGroupMembers\ListAppGroupMemberV1Example.cs" />
     <Compile Include="Examples\AppGroupMembers\RemoveAppGroupMemberV1Example.cs" />
