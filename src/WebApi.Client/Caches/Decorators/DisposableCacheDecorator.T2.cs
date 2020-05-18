@@ -100,9 +100,9 @@ namespace Informapp.InformSystem.WebApi.Client.Caches.Decorators
                 {
                     item.Dispose();
                 }
-            }
 
-            GC.SuppressFinalize(this);
+                GC.SuppressFinalize(this);
+            }
         }
     }
 }
