@@ -13,14 +13,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
             ConsoleHelper.SetInputBufferSize(1024);
         }
 
-        private static void Main()
-        {
-            MainAsync()
-                .GetAwaiter()
-                .GetResult();
-        }
-
-        private static async Task MainAsync()
+        private static async Task Main()
         {
             CancellationToken cancellationToken;
 

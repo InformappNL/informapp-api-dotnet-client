@@ -49,6 +49,10 @@
     <DocumentationFile>WebApi.Client.Sample.xml</DocumentationFile>
     <CodeAnalysisRuleSet>InformSystem.WebApi.Client.Sample.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Autofac, Version=5.1.2.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Autofac.5.1.2\lib\net461\Autofac.dll</HintPath>
