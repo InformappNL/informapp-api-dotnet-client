@@ -2,6 +2,7 @@
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups;
+using Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.BusinessGroupCredits;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.BusinessGroups;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients;
@@ -75,6 +76,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
                 Create<EditAppGroupV1Example>(false),
                 Create<GetAppGroupV1Example>(true),
                 Create<ListAppGroupV1Example>(true),
+
+                Create<CreateAppUserV1Example>(false),
+                Create<DeleteAppUserV1Example>(false),
+                Create<GetAppUserV1Example>(true),
+                Create<ListAppUserV1Example>(true),
 
                 Create<AddAppGroupMemberV1Example>(false),
                 Create<ListAppGroupMemberV1Example>(true),

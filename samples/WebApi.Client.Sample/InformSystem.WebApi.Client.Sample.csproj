@@ -128,6 +128,10 @@
     <Compile Include="Examples\AppGroups\EditAppGroupV1Example.cs" />
     <Compile Include="Examples\AppGroups\GetAppGroupV1Example.cs" />
     <Compile Include="Examples\AppGroups\ListAppGroupV1Example.cs" />
+    <Compile Include="Examples\AppUsers\CreateAppUserV1Example.cs" />
+    <Compile Include="Examples\AppUsers\DeleteAppUserV1Example.cs" />
+    <Compile Include="Examples\AppUsers\GetAppUserV1Example.cs" />
+    <Compile Include="Examples\AppUsers\ListAppUserV1Example.cs" />
     <Compile Include="Examples\BusinessGroupCredits\ListBusinessGroupCreditV1Example.cs" />
     <Compile Include="Examples\BusinessGroups\ListBusinessGroupV1Example.cs" />
     <Compile Include="Examples\Clients\ApiClientExample.cs" />
