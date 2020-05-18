@@ -30,7 +30,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients
             Argument.NotNull(client, nameof(client));
             Argument.NotNull(request, nameof(request));
 
-            return client.Execute(request, default(CancellationToken));
+            return client.Execute(request, CancellationToken.None);
         }
 
         /// <summary>
@@ -51,7 +51,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients
             Argument.NotNull(client, nameof(client));
             Argument.NotNull(model, nameof(model));
 
-            return Execute(client, model, default(CancellationToken));
+            return Execute(client, model, CancellationToken.None);
         }
 
         /// <summary>
