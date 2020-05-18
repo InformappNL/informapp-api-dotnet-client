@@ -196,10 +196,9 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
             throw new NotImplementedException();
         }
 
-        [Obsolete(ObsoleteMessage, error: true)]
         protected override void Dispose(bool disposing)
         {
-            throw new NotImplementedException();
+            base.Dispose(disposing);
         }
 
         [Obsolete(ObsoleteMessage, error: true)]

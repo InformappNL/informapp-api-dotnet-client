@@ -77,6 +77,8 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
 
         protected override void Dispose(bool disposing)
         {
+            base.Dispose(disposing);
+
             _semaphoreSlim.Dispose();
 
             _stream.Dispose();
