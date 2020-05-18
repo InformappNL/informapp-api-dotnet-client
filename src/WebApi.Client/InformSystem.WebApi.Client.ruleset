@@ -17,6 +17,7 @@
     <Rule Id="CA2215" Action="Warning" />
     <Rule Id="CA2230" Action="Warning" />
     <Rule Id="CA2241" Action="Warning" />
+    <Rule Id="CA5122" Action="Warning" />
   </Rules>
   <Rules AnalyzerId="Microsoft.CodeAnalysis.CSharp" RuleNamespace="Microsoft.CodeAnalysis.CSharp">
     <Rule Id="AD0001" Action="None" />
@@ -396,25 +397,29 @@
     <Rule Id="CA2330" Action="Warning" />
     <Rule Id="CA3009" Action="Warning" />
     <Rule Id="CA3061" Action="None" />
-    <Rule Id="CA5350" Action="None" />
-    <Rule Id="CA5351" Action="None" />
-    <Rule Id="CA5359" Action="None" />
-    <Rule Id="CA5360" Action="None" />
-    <Rule Id="CA5361" Action="None" />
-    <Rule Id="CA5363" Action="None" />
-    <Rule Id="CA5364" Action="None" />
-    <Rule Id="CA5365" Action="None" />
-    <Rule Id="CA5368" Action="None" />
-    <Rule Id="CA5373" Action="None" />
-    <Rule Id="CA5374" Action="None" />
-    <Rule Id="CA5376" Action="None" />
-    <Rule Id="CA5377" Action="None" />
-    <Rule Id="CA5378" Action="None" />
-    <Rule Id="CA5379" Action="None" />
-    <Rule Id="CA5380" Action="None" />
-    <Rule Id="CA5381" Action="None" />
-    <Rule Id="CA5384" Action="None" />
-    <Rule Id="CA5385" Action="None" />
+    <Rule Id="CA5358" Action="Warning" />
+    <Rule Id="CA5362" Action="Warning" />
+    <Rule Id="CA5367" Action="Warning" />
+    <Rule Id="CA5375" Action="Warning" />
+    <Rule Id="CA5382" Action="Warning" />
+    <Rule Id="CA5383" Action="Warning" />
+    <Rule Id="CA5386" Action="Warning" />
+    <Rule Id="CA5387" Action="Warning" />
+    <Rule Id="CA5388" Action="Warning" />
+    <Rule Id="CA5389" Action="Warning" />
+    <Rule Id="CA5390" Action="Warning" />
+    <Rule Id="CA5391" Action="Warning" />
+    <Rule Id="CA5392" Action="Warning" />
+    <Rule Id="CA5393" Action="Warning" />
+    <Rule Id="CA5394" Action="Warning" />
+    <Rule Id="CA5395" Action="Warning" />
+    <Rule Id="CA5396" Action="Warning" />
+    <Rule Id="CA5398" Action="Warning" />
+    <Rule Id="CA5399" Action="Warning" />
+    <Rule Id="CA5400" Action="Warning" />
+    <Rule Id="CA5401" Action="Warning" />
+    <Rule Id="CA5402" Action="Warning" />
+    <Rule Id="CA5403" Action="Warning" />
   </Rules>
   <Rules AnalyzerId="Microsoft.NetCore.CSharp.Analyzers" RuleNamespace="Microsoft.NetCore.CSharp.Analyzers">
     <Rule Id="CA1309" Action="Warning" />
