@@ -8,10 +8,6 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
 {
     internal static class Program
     {
-        private static readonly CancellationTokenSource _cancellationTokenSource = new CancellationTokenSource();
-
-        private static bool isCancellationRequested = false;
-
         static Program()
         {
             ConsoleHelper.SetInputBufferSize(1024);
@@ -26,26 +22,29 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
 
         private static async Task MainAsync()
         {
-            Console.WriteLine("Press enter to run examples");
-            _ = Console.ReadLine();
-
-            Console.CancelKeyPress += ConsoleCancelKeyPress;
-
-            var cancellationToken = _cancellationTokenSource.Token;
+            CancellationToken cancellationToken;
 
             try
             {
 #pragma warning disable CA1508 // Avoid dead conditional code
+                using (var source = new CancellationTokenSource())
+                using (var handler = new ConsoleCancellationEventHandler(source))
                 using (var container = AutofacContainerFactory.Create())
 #pragma warning restore CA1508 // Avoid dead conditional code
                 {
+                    Console.WriteLine("Press enter to run examples");
+                    _ = Console.ReadLine();
+
+                    cancellationToken = source.Token;
+
                     var program = new ApiExampleProgram(container);
 
-                    await program.Start(cancellationToken)
+                    await program
+                        .Start(cancellationToken)
                         .ConfigureAwait(Await.Default);
                 }
             }
-            catch (OperationCanceledException) when (isCancellationRequested == true)
+            catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested == true)
             {
                 Console.WriteLine("Cancelled.");
             }
@@ -56,28 +55,10 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
                 Console.WriteLine("An exception was thrown:");
                 Console.WriteLine(ex);
             }
-            finally
-            {
-                _cancellationTokenSource.Dispose();
-            }
 
             Console.WriteLine();
             Console.WriteLine("Press enter to exit");
             _ = Console.ReadLine();
-        }
-
-        private static void ConsoleCancelKeyPress(object sender, ConsoleCancelEventArgs e)
-        {
-            e.Cancel = true;
-
-            if (isCancellationRequested == false)
-            {
-                Console.WriteLine("Cancellation requested");
-
-                isCancellationRequested = true;
-
-                _cancellationTokenSource.Cancel();
-            }
         }
     }
 }

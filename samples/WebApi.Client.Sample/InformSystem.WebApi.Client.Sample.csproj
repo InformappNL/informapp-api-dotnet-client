@@ -121,6 +121,7 @@
     <Compile Include="Clients\LogToConsoleApiClientDecorator.T2.cs" />
     <Compile Include="Comparers\CollectionEqualityComparer.cs" />
     <Compile Include="Comparers\DictionaryEqualityComparer.cs" />
+    <Compile Include="Consoles\ConsoleCancellationEventHandler.cs" />
     <Compile Include="Consoles\ConsoleHelper.cs" />
     <Compile Include="Examples\AppGroupMembers\AddAppGroupMemberV1Example.cs" />
     <Compile Include="Examples\AppGroupMembers\ListAppGroupMemberV1Example.cs" />
