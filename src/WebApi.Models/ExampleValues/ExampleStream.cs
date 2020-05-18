@@ -27,7 +27,7 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
         public override async Task CopyToAsync(Stream destination, int bufferSize, CancellationToken cancellationToken)
         {
             await _semaphoreSlim
-                .WaitAsync()
+                .WaitAsync(cancellationToken)
                 .ConfigureAwait(Await.Default);
 
             try
