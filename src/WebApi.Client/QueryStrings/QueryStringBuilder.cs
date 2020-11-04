@@ -1,4 +1,5 @@
 ﻿using Informapp.InformSystem.WebApi.Client.Arguments;
+using Informapp.InformSystem.WebApi.Client.HashCodes;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
@@ -170,7 +171,12 @@ namespace Informapp.InformSystem.WebApi.Client.QueryStrings
 
             public int GetHashCode(string obj)
             {
-                return obj.GetHashCode();
+                if (obj != null)
+                {
+                    return obj.GetHashCode();
+                }
+
+                return HashCodeHelper.DefaultValue;
             }
         }
 

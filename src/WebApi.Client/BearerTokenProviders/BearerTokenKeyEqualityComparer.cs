@@ -1,5 +1,4 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
-using Informapp.InformSystem.WebApi.Client.HashCodes;
+﻿using Informapp.InformSystem.WebApi.Client.HashCodes;
 using System;
 using System.Collections.Generic;
 
@@ -35,7 +34,7 @@ namespace Informapp.InformSystem.WebApi.Client.BearerTokenProviders
 
             if (x == null || y == null)
             {
-                return false;
+                return (x == null && y == null);
             }
 
             if (x.EndPoint == y.EndPoint &&
@@ -45,8 +44,10 @@ namespace Informapp.InformSystem.WebApi.Client.BearerTokenProviders
             {
                 return true;
             }
-
-            return false;
+            else
+            {
+                return false;
+            }
         }
 
         /// <summary>
@@ -57,18 +58,19 @@ namespace Informapp.InformSystem.WebApi.Client.BearerTokenProviders
         /// <exception cref="ArgumentNullException"><paramref name="obj"/> is null</exception>
         public int GetHashCode(BearerTokenKey obj)
         {
-            Argument.NotNull(obj, nameof(obj));
+            if (obj != null)
+            {
+                int hashCode = HashCodeHelper.DefaultInitialValue;
 
-            var stringComparer = StringComparer.OrdinalIgnoreCase;
+                hashCode = HashCodeHelper.AddRef(hashCode, obj.EndPoint);
+                hashCode = HashCodeHelper.AddString(hashCode, obj.UserName, Comparison);
+                hashCode = HashCodeHelper.AddString(hashCode, obj.Environment, Comparison);
+                hashCode = HashCodeHelper.AddValue(hashCode, obj.ImpersonateUserId);
 
-            int hashCode = HashCodeHelper.DefaultInitialValue;
+                return hashCode;
+            }
 
-            hashCode = HashCodeHelper.AddRef(hashCode, obj.EndPoint);
-            hashCode = HashCodeHelper.AddString(hashCode, obj.UserName, Comparison);
-            hashCode = HashCodeHelper.AddString(hashCode, obj.Environment, Comparison);
-            hashCode = HashCodeHelper.AddValue(hashCode, obj.ImpersonateUserId);
-
-            return hashCode;
+            return HashCodeHelper.DefaultValue;
         }
     }
 }

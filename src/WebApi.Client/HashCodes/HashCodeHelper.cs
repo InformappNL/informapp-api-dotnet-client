@@ -6,6 +6,8 @@ namespace Informapp.InformSystem.WebApi.Client.HashCodes
 {
     internal static class HashCodeHelper
     {
+        public const int DefaultValue = 0;
+
         public const int DefaultInitialValue = 17;
 
         public const int DefaultMultiplication = 23;
