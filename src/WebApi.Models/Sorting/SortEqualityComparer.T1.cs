@@ -79,7 +79,7 @@ namespace Informapp.InformSystem.WebApi.Models.Sorting
         {
             if (_dictionary.TryGetValue(obj, out string value))
             {
-                return value.GetHashCode();
+                return StringComparer.Ordinal.GetHashCode(value);
             }
 
             return obj.GetHashCode();
