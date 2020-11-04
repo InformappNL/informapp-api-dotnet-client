@@ -45,7 +45,9 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Serializers
         /// </summary>
         /// <param name="parameter">The parameter to serialize</param>
         /// <returns>The serialized string</returns>
+#pragma warning disable CS0618 // Type or member is obsolete - defined by interface IRestSerializer
         public string Serialize(Parameter parameter)
+#pragma warning restore CS0618 // Type or member is obsolete
         {
             Argument.NotNull(parameter, nameof(parameter));
 
@@ -68,7 +70,9 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Serializers
         /// <summary>
         /// Supported content types
         /// </summary>
+#pragma warning disable CA1819 // Properties should not return arrays - defined by interface IRestSerializer
         public string[] SupportedContentTypes
+#pragma warning restore CA1819 // Properties should not return arrays
         {
             get
             {
