@@ -80,7 +80,7 @@ namespace Informapp.InformSystem.WebApi.Client.Caches.Decorators
             return _cache.TryGetValue(key, out value);
         }
 
-        private bool _disposed = false;
+        private bool _disposed;
 
         /// <summary>
         /// Dispose of cached items implementing <see cref="IDisposable"/>

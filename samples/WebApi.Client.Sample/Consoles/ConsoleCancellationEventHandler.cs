@@ -36,7 +36,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Consoles
 
         #region IDisposable
 
-        private bool disposed = false;
+        private bool disposed;
 
         protected virtual void Dispose(bool disposing)
         {

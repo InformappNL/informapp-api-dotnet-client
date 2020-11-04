@@ -6,7 +6,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.Files
     internal class UploadFileV1Request<T> : IUploadFileV1Request
         where T : class, IDisposable
     {
-        private bool _isDisposed = false;
+        private bool _isDisposed;
 
         private Stream _file;
 
