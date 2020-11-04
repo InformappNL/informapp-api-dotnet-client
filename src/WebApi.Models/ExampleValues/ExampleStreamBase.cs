@@ -20,6 +20,7 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
 
         }
 
+#pragma warning disable CS0809 // Obsolete member overrides non-obsolete member
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         [Obsolete(ObsoleteMessage, error: true)]
         public override bool CanRead => throw new NotImplementedException();
@@ -206,5 +207,7 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
         {
             throw new NotImplementedException();
         }
+
+#pragma warning restore CS0809 // Obsolete member overrides non-obsolete member
     }
 }
