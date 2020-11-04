@@ -10,6 +10,6 @@ namespace Informapp.InformSystem.WebApi.Models
 
     internal static class ProjectSettings
     {
-
+        public const string Name = nameof(WebApiModelsProject);
     }
 }

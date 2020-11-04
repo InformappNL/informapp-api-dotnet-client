@@ -10,6 +10,6 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp
 
     internal static class ProjectSettings
     {
-
+        public const string Name = nameof(WebApiClientRestSharpProject);
     }
 }
