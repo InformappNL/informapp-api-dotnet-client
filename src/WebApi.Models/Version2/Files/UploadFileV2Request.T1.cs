@@ -6,8 +6,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version2.Files
     internal class UploadFileV2Request<T> : IUploadFileV2Request
         where T : class, IDisposable
     {
-        private bool _isDisposed;
-
         private Stream _file;
 
         public string ContentType { get; set; }
@@ -22,21 +20,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version2.Files
 
         public long? Size { get; set; }
 
-        public void Dispose()
-        {
-            if (_isDisposed == false)
-            {
-                if (_file != null)
-                {
-                    _file.Dispose();
-
-                    _file = null;
-                }
-
-                _isDisposed = true;
-            }
-        }
-
         private TValue ThrowIfDisposed<TValue>(TValue value)
         {
             if (_isDisposed == true)
@@ -46,5 +29,36 @@ namespace Informapp.InformSystem.WebApi.Models.Version2.Files
 
             return value;
         }
+
+        #region IDisposable
+
+        private bool _isDisposed;
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (_isDisposed == false)
+            {
+                if (disposing)
+                {
+                    if (_file != null)
+                    {
+                        _file.Dispose();
+
+                        _file = null;
+                    }
+                }
+
+                _isDisposed = true;
+            }
+        }
+
+        public void Dispose()
+        {
+            Dispose(disposing: true);
+
+            GC.SuppressFinalize(this);
+        }
+
+        #endregion
     }
 }

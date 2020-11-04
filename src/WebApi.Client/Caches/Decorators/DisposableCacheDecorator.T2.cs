@@ -80,29 +80,46 @@ namespace Informapp.InformSystem.WebApi.Client.Caches.Decorators
             return _cache.TryGetValue(key, out value);
         }
 
-        private bool _disposed;
+        #region IDisposable
+
+        private bool _isDisposed;
 
         /// <summary>
-        /// Dispose of cached items implementing <see cref="IDisposable"/>
+        /// Releases the unmanaged resources used and optionally releases the managed resources.
+        /// </summary>
+        /// <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources</param>
+        protected virtual void Dispose(bool disposing)
+        {
+            if (_isDisposed == false)
+            {
+                if (disposing)
+                {
+                    // Dispose of cached items implementing
+                    var items = _cache.Items
+                        .Select(x => x.Value)
+                        .OfType<IDisposable>()
+                        .ToList();
+
+                    foreach (var item in items)
+                    {
+                        item.Dispose();
+                    }
+                }
+
+                _isDisposed = true;
+            }
+        }
+
+        /// <summary>
+        /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
         /// </summary>
         public void Dispose()
         {
-            if (_disposed == false)
-            {
-                _disposed = true;
+            Dispose(disposing: true);
 
-                var items = _cache.Items
-                    .Select(x => x.Value)
-                    .OfType<IDisposable>()
-                    .ToList();
-
-                foreach (var item in items)
-                {
-                    item.Dispose();
-                }
-
-                GC.SuppressFinalize(this);
-            }
+            GC.SuppressFinalize(this);
         }
+
+        #endregion
     }
 }

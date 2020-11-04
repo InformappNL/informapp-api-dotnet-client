@@ -605,9 +605,15 @@
             <returns>true if the object that implements <see cref="T:Informapp.InformSystem.WebApi.Client.Caches.ICache`2"/> contains
             an element with the specified key; otherwise, false.</returns>
         </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Caches.Decorators.DisposableCacheDecorator`2.Dispose(System.Boolean)">
+            <summary>
+            Releases the unmanaged resources used and optionally releases the managed resources.
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources</param>
+        </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Caches.Decorators.DisposableCacheDecorator`2.Dispose">
             <summary>
-            Dispose of cached items implementing <see cref="T:System.IDisposable"/>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Caches.DictionaryCache`2">
@@ -1804,6 +1810,12 @@
             </summary>
             <returns>This instance</returns>
             <exception cref="T:System.ObjectDisposedException">This instance has been disposed</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Disposables.DisposableResources.Dispose(System.Boolean)">
+            <summary>
+            Releases the unmanaged resources used and optionally releases the managed resources.
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources</param>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Disposables.DisposableResources.Dispose">
             <summary>

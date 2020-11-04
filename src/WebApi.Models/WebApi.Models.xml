@@ -5034,6 +5034,12 @@
             Size
             </summary>
         </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1Response.Dispose(System.Boolean)">
+            <summary>
+            Releases the unmanaged resources used and optionally releases the managed resources.
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources</param>
+        </member>
         <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1Response.Dispose">
             <summary>
             Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
@@ -5094,6 +5100,12 @@
             <summary>
             Size
             </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.Dispose(System.Boolean)">
+            <summary>
+            Releases the unmanaged resources used and optionally releases the managed resources.
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources</param>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request.Dispose">
             <summary>

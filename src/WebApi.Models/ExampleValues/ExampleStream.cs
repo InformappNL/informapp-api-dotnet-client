@@ -75,13 +75,27 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
             return _stream.ToString();
         }
 
+        #region IDisposable
+
+        private bool _isDisposed;
+
         protected override void Dispose(bool disposing)
         {
+            if (_isDisposed == false)
+            {
+                if (disposing == true)
+                {
+                    _semaphoreSlim.Dispose();
+
+                    _stream.Dispose();
+                }
+
+                _isDisposed = true;
+            }
+
             base.Dispose(disposing);
-
-            _semaphoreSlim.Dispose();
-
-            _stream.Dispose();
         }
+
+        #endregion
     }
 }

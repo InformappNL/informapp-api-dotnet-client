@@ -118,14 +118,37 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.Up
             set => _request.Size = value;
         }
 
+        #region IDisposable
+
+        private bool _isDisposed;
+
+        /// <summary>
+        /// Releases the unmanaged resources used and optionally releases the managed resources.
+        /// </summary>
+        /// <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources</param>
+        protected virtual void Dispose(bool disposing)
+        {
+            if (_isDisposed == false)
+            {
+                if (disposing)
+                {
+                    _request.Dispose();
+                }
+
+                _isDisposed = true;
+            }
+        }
+
         /// <summary>
         /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
         /// </summary>
         public void Dispose()
         {
-            _request.Dispose();
+            Dispose(disposing: true);
 
             GC.SuppressFinalize(this);
         }
+
+        #endregion
     }
 }

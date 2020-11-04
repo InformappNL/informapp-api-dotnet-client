@@ -36,11 +36,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Consoles
 
         #region IDisposable
 
-        private bool disposed;
+        private bool _isDisposed;
 
         protected virtual void Dispose(bool disposing)
         {
-            if (disposed == false)
+            if (_isDisposed == false)
             {
                 if (disposing == true)
                 {
@@ -55,13 +55,13 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Consoles
                     //Console.CancelKeyPress -= ConsoleCancelKeyPress;
                 }
 
-                disposed = true;
+                _isDisposed = true;
             }
         }
 
         public void Dispose()
         {
-            Dispose(true);
+            Dispose(disposing: true);
 
             GC.SuppressFinalize(this);
         }

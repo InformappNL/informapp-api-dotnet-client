@@ -57,24 +57,42 @@ namespace Informapp.InformSystem.WebApi.Client.Disposables
             return this;
         }
 
+        #region IDisposable
+
+        private bool _isDisposed;
+
+        /// <summary>
+        /// Releases the unmanaged resources used and optionally releases the managed resources.
+        /// </summary>
+        /// <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources</param>
+        protected virtual void Dispose(bool disposing)
+        {
+            if (_isDisposed == false)
+            {
+                if (disposing)
+                {
+                    foreach (var resource in _resources)
+                    {
+                        resource.Dispose();
+                    }
+
+                    _resources.Clear();
+                }
+
+                _isDisposed = true;
+            }
+        }
+
         /// <summary>
         /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
         /// </summary>
         public void Dispose()
         {
-            if (IsDisposed == false)
-            {
-                foreach (var resource in _resources)
-                {
-                    resource.Dispose();
-                }
-
-                _resources.Clear();
-
-                IsDisposed = true;
-            }
+            Dispose(disposing: true);
 
             GC.SuppressFinalize(this);
         }
+
+        #endregion
     }
 }
