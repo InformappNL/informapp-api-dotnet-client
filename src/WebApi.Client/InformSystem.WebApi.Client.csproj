@@ -12,7 +12,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Net" />
-    <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\SharedAssemblyInfo.cs">
