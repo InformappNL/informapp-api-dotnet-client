@@ -1,4 +1,5 @@
 ﻿using Informapp.InformSystem.WebApi.Client.Arguments;
+using Informapp.InformSystem.WebApi.Client.Streams;
 using System.IO;
 using System.Security.Cryptography;
 using System.Threading;
@@ -53,7 +54,8 @@ namespace Informapp.InformSystem.WebApi.Client.Cryptography
             Argument.NotNull(hashAlgorithm, nameof(hashAlgorithm));
             Argument.NotNull(stream, nameof(stream));
 
-            using (var cryptoStream = new CryptoStream(stream, hashAlgorithm, CryptoStreamMode.Read, leaveOpen: true))
+            using (var decoratedStream = new ControlDisposalStreamDecorator(stream, leaveOpen: true))
+            using (var cryptoStream = new CryptoStream(decoratedStream, hashAlgorithm, CryptoStreamMode.Read))
             {
                 byte[] buffer = new byte[BufferSize];
 
