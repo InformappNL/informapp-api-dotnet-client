@@ -109,7 +109,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
                 }
 
                 throw new InvalidOperationException(nameof(value) + " is not " + typeof(IEnumerable<TValue>).Name);
-            };
+            }
 
             return IsValid;
         }
