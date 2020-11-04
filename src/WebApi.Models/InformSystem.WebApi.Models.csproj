@@ -234,7 +234,7 @@
     <Compile Include="Version1\EndPoints\FormRegistrationStats\ListFormRegistrationStats\ListFormRegistrationStatsV1Filter.cs" />
     <Compile Include="Version1\EndPoints\FormRegistrationStats\ListFormRegistrationStats\ListFormRegistrationStatsV1Request.cs" />
     <Compile Include="Version1\EndPoints\FormRegistrationStats\ListFormRegistrationStats\ListFormRegistrationStatsV1Response.cs" />
-    <Compile Include="Version1\EndPoints\FormRegistrationStats\ListFormRegistrationStats\ListFormRegistrationStatsV1ResultFormRegistrationStats.cs" />
+    <Compile Include="Version1\EndPoints\FormRegistrationStats\ListFormRegistrationStats\ListFormRegistrationStatsV1ResponseFormRegistrationStats.cs" />
     <Compile Include="Version1\EndPoints\FormRegistrationStats\ListFormRegistrationStats\ListFormRegistrationStatsV1Select.cs" />
     <Compile Include="Version1\EndPoints\FormRegistrationStats\ListFormRegistrationStats\ListFormRegistrationStatsV1Sort.cs" />
     <Compile Include="Version1\EndPoints\FormRegistrations\FormRegistrationV1Constants.cs" />

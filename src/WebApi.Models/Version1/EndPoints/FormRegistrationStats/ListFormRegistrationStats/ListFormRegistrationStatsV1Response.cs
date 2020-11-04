@@ -18,8 +18,8 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         /// List of form registration stats
         /// </summary>
         [DataMember]
-        public IReadOnlyList<ListFormRegistrationStatsV1ResultFormRegistrationStats> FormRegistrationStats { get; set; }
-            = Array.Empty<ListFormRegistrationStatsV1ResultFormRegistrationStats>();
+        public IReadOnlyList<ListFormRegistrationStatsV1ResponseFormRegistrationStats> FormRegistrationStats { get; set; }
+            = Array.Empty<ListFormRegistrationStatsV1ResponseFormRegistrationStats>();
 
         /// <summary>
         /// Total number of records matching the request

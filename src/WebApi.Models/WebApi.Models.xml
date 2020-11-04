@@ -4051,37 +4051,37 @@
             Total number of records matching the request
             </summary>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1ResultFormRegistrationStats">
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1ResponseFormRegistrationStats">
             <summary>
             Form registration stats
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1ResultFormRegistrationStats.FormId">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1ResponseFormRegistrationStats.FormId">
             <summary>
             Form Id
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1ResultFormRegistrationStats.RegistrationCount">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1ResponseFormRegistrationStats.RegistrationCount">
             <summary>
             Registration count
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1ResultFormRegistrationStats.HighestSerialNumber">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1ResponseFormRegistrationStats.HighestSerialNumber">
             <summary>
             Highest serial number
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1ResultFormRegistrationStats.BusinessGroupId">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1ResponseFormRegistrationStats.BusinessGroupId">
             <summary>
             Business group id
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1ResultFormRegistrationStats.CreateDate">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1ResponseFormRegistrationStats.CreateDate">
             <summary>
             Create date
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1ResultFormRegistrationStats.LastUpdateDate">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1ResponseFormRegistrationStats.LastUpdateDate">
             <summary>
             Last update date
             </summary>

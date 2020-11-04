@@ -10,7 +10,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
     /// Form registration stats
     /// </summary>
     [DataContract(Namespace = Version1Constants.Namespace)]
-    public class ListFormRegistrationStatsV1ResultFormRegistrationStats
+    public class ListFormRegistrationStatsV1ResponseFormRegistrationStats
     {
         /// <summary>
         /// Form Id
