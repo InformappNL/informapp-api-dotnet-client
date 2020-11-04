@@ -1,9 +1,10 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
-using Informapp.InformSystem.WebApi.Client.CredentialsProviders;
+﻿using Informapp.InformSystem.WebApi.Client.Configuration;
+using Informapp.InformSystem.WebApi.Client.Arguments;
 using Informapp.InformSystem.WebApi.Client.Decorators;
 using Informapp.InformSystem.WebApi.Client.Requests;
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Models.Requests;
+using Microsoft.Extensions.Options;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -20,23 +21,23 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
     {
         private readonly IApiClient<TRequest, TResponse> _apiClient;
 
-        private readonly ICredentialsProvider _credentialsProvider;
+        private readonly IOptions<ApiConfiguration> _options;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CredentialsApiClientDecorator{TRequest, TResponse}"/> class.
         /// </summary>
         /// <param name="apiClient">The instance to decorate</param>
-        /// <param name="credentialsProvider"></param>
+        /// <param name="options">The options</param>
         public CredentialsApiClientDecorator(
             IApiClient<TRequest, TResponse> apiClient,
-            ICredentialsProvider credentialsProvider) : base(apiClient)
+            IOptions<ApiConfiguration> options) : base(apiClient)
         {
             Argument.NotNull(apiClient, nameof(apiClient));
-            Argument.NotNull(credentialsProvider, nameof(credentialsProvider));
+            Argument.NotNull(options, nameof(options));
 
             _apiClient = apiClient;
 
-            _credentialsProvider = credentialsProvider;
+            _options = options;
         }
 
         /// <summary>
@@ -61,8 +62,8 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
                 if (string.IsNullOrEmpty(credentials.Username) &&
                     string.IsNullOrEmpty(credentials.GetPassword()))
                 {
-                    credentials.Username = _credentialsProvider.GetUserName();
-                    credentials.Password = _credentialsProvider.GetPassword();
+                    credentials.Username = _options.Value.UserName;
+                    credentials.Password = _options.Value.Password;
                 }
             }
 

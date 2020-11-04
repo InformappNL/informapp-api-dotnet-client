@@ -1,10 +1,10 @@
-﻿using Informapp.InformSystem.WebApi.Client.CredentialsProviders;
+﻿using Informapp.InformSystem.WebApi.Client.Configuration;
 using Informapp.InformSystem.WebApi.Client.DictionaryBuilders;
-using Informapp.InformSystem.WebApi.Client.EndPointProviders;
 using Informapp.InformSystem.WebApi.Client.PathProviders;
 using Informapp.InformSystem.WebApi.Client.QueryStringProviders;
 using Informapp.InformSystem.WebApi.Client.QueryStrings;
 using Informapp.InformSystem.WebApi.Client.RestSharp.Serializers;
+using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Client.Sample.Requires;
 using Informapp.InformSystem.WebApi.Models.Http;
 using Informapp.InformSystem.WebApi.Models.Requests;
@@ -12,6 +12,7 @@ using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.OAuth2Token;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues;
+using Microsoft.Extensions.Options;
 using RestSharp;
 using RestSharp.Authenticators;
 using System;
@@ -22,9 +23,14 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
 {
     internal class RestSharpExample : IExample
     {
-        public RestSharpExample()
-        {
+        private readonly IOptions<ApiConfiguration> _options;
 
+        public RestSharpExample(
+            IOptions<ApiConfiguration> options)
+        {
+            Argument.NotNull(options, nameof(options));
+
+            _options = options;
         }
 
         public async Task Execute(CancellationToken cancellationToken)
@@ -48,9 +54,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
             where TRequest : class, IRequest<TResponse>
             where TResponse : class
         {
-            var endPointProvider = new ConfigurationEndPointProvider();
-
-            var endPoint = endPointProvider.GetEndPoint();
+            var endPoint = _options.Value.Endpoint;
 
             var pathProvider = new PathProvider<TRequest>();
 
@@ -101,10 +105,8 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
                 return _token.AccessToken;
             }
 
-            var credentialsProvider = new ConfigurationCredentialsProvider();
-
-            string username = credentialsProvider.GetUserName();
-            string password = credentialsProvider.GetPassword();
+            string username = _options.Value.UserName;
+            string password = _options.Value.Password;
 
             var model = new OAuth2TokenV1Request
             {

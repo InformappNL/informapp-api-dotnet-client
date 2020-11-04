@@ -23,9 +23,6 @@
     <None Include="..\ProjectRules.ruleset">
       <Link>ProjectRules.ruleset</Link>
     </None>
-    <None Update="AppSettings.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\WebApi.Client.RestSharp\InformSystem.WebApi.Client.RestSharp.csproj" />
@@ -33,6 +30,9 @@
     <ProjectReference Include="..\..\src\WebApi.Models\InformSystem.WebApi.Models.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="WebApi.Client.Sample.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -51,6 +51,11 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.9" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.9" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.9" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.9" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.9" />
     <PackageReference Include="RestSharp">
       <Version>106.11.7</Version>
     </PackageReference>

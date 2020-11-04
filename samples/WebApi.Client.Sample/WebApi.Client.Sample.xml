@@ -149,17 +149,6 @@
             </summary>
             <param name="builder">The builder</param>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.CredentialsProviderRegistration">
-            <summary>
-            Register dependencies in Autofac
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.CredentialsProviderRegistration.Register(Autofac.ContainerBuilder)">
-            <summary>
-            Register dependencies in Autofac
-            </summary>
-            <param name="builder">The builder</param>
-        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.DateTimeProviderRegistration">
             <summary>
             Register dependencies in Autofac
@@ -188,17 +177,6 @@
             </summary>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.DownloadFileMapperRegistration.Register(Autofac.ContainerBuilder)">
-            <summary>
-            Register dependencies in Autofac
-            </summary>
-            <param name="builder">The builder</param>
-        </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.EndPointProviderRegistration">
-            <summary>
-            Register dependencies in Autofac
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.EndPointProviderRegistration.Register(Autofac.ContainerBuilder)">
             <summary>
             Register dependencies in Autofac
             </summary>
@@ -243,6 +221,17 @@
             </summary>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.MimeMapperRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.OptionsRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.OptionsRegistration.Register(Autofac.ContainerBuilder)">
             <summary>
             Register dependencies in Autofac
             </summary>
@@ -366,17 +355,6 @@
             <param name="cancellationToken">The cancellation token</param>
             <returns>The token response</returns>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Clients.ApiClient">
-            <summary>
-            Base class for api client facade providing access to factory instance
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Clients.ApiClient.SetFactory(Informapp.InformSystem.WebApi.Client.Sample.Clients.IApiClientFactory)">
-            <summary>
-            Set factory to use
-            </summary>
-            <param name="factory">The factory</param>
-        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Clients.ApiClient`2">
             <summary>
             Api client facade class
@@ -384,7 +362,7 @@
             <typeparam name="TRequest">The request type</typeparam>
             <typeparam name="TResponse">The response type</typeparam>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Clients.ApiClient`2.#ctor">
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Clients.ApiClient`2.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.WebApi.Client.Configuration.ApiConfiguration})">
             <summary>
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Clients.ApiClient`2"/> class and act on a client created by the static factory
             </summary>

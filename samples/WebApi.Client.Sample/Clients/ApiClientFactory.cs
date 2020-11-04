@@ -1,14 +1,13 @@
-﻿using Informapp.InformSystem.WebApi.Client.BearerTokenProviders;
+﻿using Informapp.InformSystem.WebApi.Client.Configuration;
+using Informapp.InformSystem.WebApi.Client.BearerTokenProviders;
 using Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators;
 using Informapp.InformSystem.WebApi.Client.Caches;
 using Informapp.InformSystem.WebApi.Client.Clients;
 using Informapp.InformSystem.WebApi.Client.Clients.Decorators;
 using Informapp.InformSystem.WebApi.Client.Converters;
-using Informapp.InformSystem.WebApi.Client.CredentialsProviders;
 using Informapp.InformSystem.WebApi.Client.Cryptography;
 using Informapp.InformSystem.WebApi.Client.DateTimeProviders;
 using Informapp.InformSystem.WebApi.Client.DictionaryBuilders;
-using Informapp.InformSystem.WebApi.Client.EndPointProviders;
 using Informapp.InformSystem.WebApi.Client.Files;
 using Informapp.InformSystem.WebApi.Client.MethodProviders;
 using Informapp.InformSystem.WebApi.Client.MimeMappers;
@@ -24,11 +23,13 @@ using Informapp.InformSystem.WebApi.Client.RestSharp.Converters;
 using Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories;
 using Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators;
 using Informapp.InformSystem.WebApi.Client.RestSharp.Serializers;
+using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Client.Sample.BearerTokenProviders;
 using Informapp.InformSystem.WebApi.Client.Validators;
 using Informapp.InformSystem.WebApi.Models.Http;
 using Informapp.InformSystem.WebApi.Models.Requests;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.OAuth2Token;
+using Microsoft.Extensions.Options;
 using RestSharp;
 using System;
 using System.Collections.Concurrent;
@@ -44,6 +45,16 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
     [SuppressMessage("", "CA1506:AvoidExcessiveClassCoupling", Justification = "Just an example of how bad it would be to use this without dependency injection framework. I do not recommend using this.")]
     internal class ApiClientFactory : IApiClientFactory
     {
+        private readonly IOptions<ApiConfiguration> _options;
+
+        public ApiClientFactory(
+            IOptions<ApiConfiguration> options)
+        {
+            Argument.NotNull(options, nameof(options));
+
+            _options = options;
+        }
+
         /// <summary>
         /// Create instace of <see cref="IApiClient{TRequest, TResponse}"/>
         /// </summary>
@@ -59,7 +70,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
             return apiClient;
         }
 
-        private static IApiClient<TRequest, TResponse> GetApiClient<TRequest, TResponse>()
+        private IApiClient<TRequest, TResponse> GetApiClient<TRequest, TResponse>()
             where TRequest : class, IRequest<TResponse>
             where TResponse : class, new()
         {
@@ -104,7 +115,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
 
             apiClient = new ValidateCredentialsApiClientDecorator<TRequest, TResponse>(apiClient, GetValidator<ApiCredentials>());
 
-            apiClient = new CredentialsApiClientDecorator<TRequest, TResponse>(apiClient, GetCredentialsProvider());
+            apiClient = new CredentialsApiClientDecorator<TRequest, TResponse>(apiClient, _options);
 
             apiClient = new ValidateRequestContextApiClientDecorator<TRequest, TResponse>(apiClient, GetValidator<RequestContext>());
 
@@ -124,7 +135,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
 
             apiClient = new RequireHttpsApiClientDecorator<TRequest, TResponse>(apiClient);
 
-            apiClient = new EndPointApiClientDecorator<TRequest, TResponse>(apiClient, GetEndPointProvider());
+            apiClient = new EndPointApiClientDecorator<TRequest, TResponse>(apiClient, _options);
 
             //apiClient = new EnsureSuccessApiClientDecorator<TRequest, TResponse>(apiClient);
 
@@ -135,7 +146,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
             return apiClient;
         }
 
-        private static Lazy<IApiClient<TRequest, TResponse>> GetLazyApiClient<TRequest, TResponse>()
+        private Lazy<IApiClient<TRequest, TResponse>> GetLazyApiClient<TRequest, TResponse>()
             where TRequest : class, IRequest<TResponse>
             where TResponse : class, new()
         {
@@ -159,7 +170,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
             return new BearerTokenCache(cache);
         }
 
-        private static IBearerTokenProvider<OAuth2TokenV1Request> GetBearerTokenProvider()
+        private IBearerTokenProvider<OAuth2TokenV1Request> GetBearerTokenProvider()
         {
             IBearerTokenProvider<OAuth2TokenV1Request> tokenProvider = new BearerTokenV1Provider(
                 GetLazyApiClient<OAuth2TokenV1Request, OAuth2TokenV1Response>());
@@ -203,11 +214,6 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
             return clientFactory;
         }
 
-        private static ICredentialsProvider GetCredentialsProvider()
-        {
-            return new ConfigurationCredentialsProvider();
-        }
-
         private static IDateTimeProvider GetDateTimeProvider()
         {
             return new DateTimeProvider();
@@ -224,11 +230,6 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
             };
 
             return mappers;
-        }
-
-        private static IEndPointProvider GetEndPointProvider()
-        {
-            return new ConfigurationEndPointProvider();
         }
 
         private static IConverter<HashAlgorithmKind?, HashAlgorithm> GetHashAlgorithmConverter()

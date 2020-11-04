@@ -9,7 +9,7 @@
     <SccProvider>SAK</SccProvider>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <DocumentationFile>WebApi.Client.xml</DocumentationFile>
-  </PropertyGroup>
+</PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Net" />
   </ItemGroup>
@@ -38,6 +38,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.9" />
     <PackageReference Include="MimeMapping" Version="1.0.1.30" />
     <PackageReference Include="Newtonsoft.Json">
       <Version>12.0.3</Version>

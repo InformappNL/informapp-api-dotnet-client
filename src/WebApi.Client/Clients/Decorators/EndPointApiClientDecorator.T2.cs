@@ -1,9 +1,10 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
+﻿using Informapp.InformSystem.WebApi.Client.Configuration;
+using Informapp.InformSystem.WebApi.Client.Arguments;
 using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.WebApi.Client.EndPointProviders;
 using Informapp.InformSystem.WebApi.Client.Requests;
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Models.Requests;
+using Microsoft.Extensions.Options;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -20,23 +21,23 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
     {
         private readonly IApiClient<TRequest, TResponse> _apiClient;
 
-        private readonly IEndPointProvider _endPointProvider;
+        private readonly IOptions<ApiConfiguration> _options;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="EndPointApiClientDecorator{TRequest, TResponse}"/> class.
         /// </summary>
         /// <param name="apiClient">The instance to decorate</param>
-        /// <param name="endPointProvider"></param>
+        /// <param name="options">The options</param>
         public EndPointApiClientDecorator(
             IApiClient<TRequest, TResponse> apiClient,
-            IEndPointProvider endPointProvider) : base(apiClient)
+            IOptions<ApiConfiguration> options) : base(apiClient)
         {
             Argument.NotNull(apiClient, nameof(apiClient));
-            Argument.NotNull(endPointProvider, nameof(endPointProvider));
+            Argument.NotNull(options, nameof(options));
 
             _apiClient = apiClient;
 
-            _endPointProvider = endPointProvider;
+            _options = options;
         }
 
         /// <summary>
@@ -56,7 +57,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
 
             if (request.Context.EndPoint == null)
             {
-                request.Context.EndPoint = _endPointProvider.GetEndPoint();
+                request.Context.EndPoint = _options.Value.Endpoint;
             }
 
             return _apiClient.Execute(request, cancellationToken);

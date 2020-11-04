@@ -1,8 +1,11 @@
-﻿using Informapp.InformSystem.WebApi.Client.Requests;
+﻿using Informapp.InformSystem.WebApi.Client.Configuration;
+using Informapp.InformSystem.WebApi.Client.Requests;
 using Informapp.InformSystem.WebApi.Client.Responses;
+using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Client.Sample.Clients;
 using Informapp.InformSystem.WebApi.Client.Sample.Requires;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues;
+using Microsoft.Extensions.Options;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -13,14 +16,19 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
     /// </summary>
     internal class ApiClientExample : IExample
     {
-        public ApiClientExample()
-        {
+        private readonly IOptions<ApiConfiguration> _options;
 
+        public ApiClientExample(
+            IOptions<ApiConfiguration> options)
+        {
+            Argument.NotNull(options, nameof(options));
+
+            _options = options;
         }
 
         public async Task Execute(CancellationToken cancellationToken)
         {
-            var client = new ApiClient<ListValuesV1Request, ListValuesV1Response>();
+            var client = new ApiClient<ListValuesV1Request, ListValuesV1Response>(_options);
 
             var request = ApiRequest.Create(new ListValuesV1Request());
 

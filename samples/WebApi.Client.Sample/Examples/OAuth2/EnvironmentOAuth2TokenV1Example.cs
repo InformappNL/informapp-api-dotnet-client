@@ -1,11 +1,12 @@
-﻿using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Client.CredentialsProviders;
+﻿using Informapp.InformSystem.WebApi.Client.Configuration;
+using Informapp.InformSystem.WebApi.Client.Clients;
 using Informapp.InformSystem.WebApi.Client.Requests;
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Client.Sample.Requires;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.EnvironmentOAuth2Token;
+using Microsoft.Extensions.Options;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -15,24 +16,24 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2
     {
         private readonly IApiClient<EnvironmentOAuth2TokenV1Request, EnvironmentOAuth2TokenV1Response> _client;
 
-        private readonly ICredentialsProvider _provider;
+        private readonly IOptions<ApiConfiguration> _options;
 
         public EnvironmentOAuth2TokenV1Example(
             IApiClient<EnvironmentOAuth2TokenV1Request, EnvironmentOAuth2TokenV1Response> client,
-            ICredentialsProvider provider)
+            IOptions<ApiConfiguration> options)
         {
             Argument.NotNull(client, nameof(client));
-            Argument.NotNull(provider, nameof(provider));
+            Argument.NotNull(options, nameof(options));
 
             _client = client;
 
-            _provider = provider;
+            _options = options;
         }
 
         public async Task Execute(CancellationToken cancellationToken)
         {
-            string username = _provider.GetUserName();
-            string password = _provider.GetPassword();
+            string username = _options.Value.UserName;
+            string password = _options.Value.Password;
 
             var request = ApiRequest.Create(new EnvironmentOAuth2TokenV1Request
             {

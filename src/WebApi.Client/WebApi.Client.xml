@@ -850,12 +850,12 @@
             Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set credentials on request
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.CredentialsApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Informapp.InformSystem.WebApi.Client.CredentialsProviders.ICredentialsProvider)">
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.CredentialsApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.WebApi.Client.Configuration.ApiConfiguration})">
             <summary>
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.CredentialsApiClientDecorator`2"/> class.
             </summary>
             <param name="apiClient">The instance to decorate</param>
-            <param name="credentialsProvider"></param>
+            <param name="options">The options</param>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.CredentialsApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
             <summary>
@@ -949,12 +949,12 @@
             Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set endpoint on request
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.EndPointApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Informapp.InformSystem.WebApi.Client.EndPointProviders.IEndPointProvider)">
+        <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.EndPointApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.WebApi.Client.Configuration.ApiConfiguration})">
             <summary>
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.Decorators.EndPointApiClientDecorator`2"/> class.
             </summary>
             <param name="apiClient">The instance to decorate</param>
-            <param name="endPointProvider"></param>
+            <param name="options">The options</param>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Client.Clients.Decorators.EndPointApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
             <summary>
@@ -1336,6 +1336,42 @@
             <param name="cancellationToken">The cancellation token</param>
             <returns>The response</returns>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Configuration.ApiConfiguration">
+            <summary>
+            API configuration class
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Configuration.ApiConfiguration.Endpoint">
+            <summary>
+            The endpoint
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Configuration.ApiConfiguration.UserName">
+            <summary>
+            The username
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Configuration.ApiConfiguration.Password">
+            <summary>
+            The password
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Configuration.ValidateOptionsDecorator`1">
+            <summary>
+            Used to validate retrieve configured <typeparamref name="TOptions"/> instances.
+            </summary>
+            <typeparam name="TOptions">The type of options being requested.</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Configuration.ValidateOptionsDecorator`1.#ctor(Microsoft.Extensions.Options.IOptions{`0},Informapp.InformSystem.WebApi.Client.Validators.IValidator{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Configuration.ValidateOptionsDecorator`1"/> class.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Configuration.ValidateOptionsDecorator`1.Value">
+            <summary>
+            The default configured <typeparamref name="TOptions"/> instance
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult">
             <summary>
             Static class aiding in creation of <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> objects
@@ -1476,45 +1512,6 @@
             </summary>
             <param name="source">The source value</param>
             <returns>The <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> containing the converted value</returns>
-        </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider">
-            <summary>
-            Implementation of <see cref="T:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ICredentialsProvider"/> to retrieve credentials from app settings.
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider"/> class.
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider.GetUserName">
-            <summary>
-            Get the username
-            </summary>
-            <returns>The username</returns>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider.GetPassword">
-            <summary>
-            Get the password
-            </summary>
-            <returns>The password</returns>
-        </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ICredentialsProvider">
-            <summary>
-            Interface to provide credentials for the api
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ICredentialsProvider.GetUserName">
-            <summary>
-            Get the username
-            </summary>
-            <returns>The username</returns>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ICredentialsProvider.GetPassword">
-            <summary>
-            Get the password
-            </summary>
-            <returns>The password</returns>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmConverter">
             <summary>
@@ -1858,33 +1855,6 @@
             Register the <see cref="T:System.IDisposable"/> resource for disposal
             </summary>
             <param name="resource">The resource</param>
-        </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.EndPointProviders.ConfigurationEndPointProvider">
-            <summary>
-            Implementation of <see cref="T:Informapp.InformSystem.WebApi.Client.EndPointProviders.IEndPointProvider"/> to retrieve endpoint from app settings.
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.EndPointProviders.ConfigurationEndPointProvider.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.EndPointProviders.ConfigurationEndPointProvider"/> class.
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.EndPointProviders.ConfigurationEndPointProvider.GetEndPoint">
-            <summary>
-            Get endpoint
-            </summary>
-            <returns>The endpoint</returns>
-        </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.EndPointProviders.IEndPointProvider">
-            <summary>
-            Interface to provider endpoint for the api
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.EndPointProviders.IEndPointProvider.GetEndPoint">
-            <summary>
-            Get endpoint
-            </summary>
-            <returns>The endpoint</returns>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Exceptions.ApiClientException">
             <summary>
