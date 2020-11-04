@@ -24,7 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D8C6774D-2C3
 		src\SharedAssemblyInfo.cs = src\SharedAssemblyInfo.cs
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{07CBDED1-DB37-42E9-B22F-B4B96097C332}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{07CBDED1-DB37-42E9-B22F-B4B96097C332}"
 	ProjectSection(SolutionItems) = preProject
 		samples\cleanup.config = samples\cleanup.config
 		samples\ProjectRules.ruleset = samples\ProjectRules.ruleset
