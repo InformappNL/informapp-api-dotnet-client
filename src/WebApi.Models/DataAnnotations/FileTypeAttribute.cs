@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Informapp.InformSystem.WebApi.Models.Arguments;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
@@ -27,15 +28,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         /// <param name="extensions">The allowed file extensions, separated by space</param>
         internal FileTypeAttribute(string extensions)
         {
-            if (string.IsNullOrEmpty(extensions) == true)
-            {
-                if (extensions == null)
-                {
-                    throw new ArgumentNullException(nameof(extensions));
-                }
-
-                throw new ArgumentException("Must not be empty", nameof(extensions));
-            }
+            Argument.NotNullOrEmpty(extensions, nameof(extensions));
 
             _extensions = extensions.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
         }
@@ -56,7 +49,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
             if (value is string fileName)
             {
                 // Handled by RequiredAttribute
-                if (string.IsNullOrEmpty(fileName) == true)
+                if (fileName.Length == 0)
                 {
                     return true;
                 }

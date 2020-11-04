@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Informapp.InformSystem.WebApi.Models.Arguments;
+using System;
 
 namespace Informapp.InformSystem.WebApi.Models.Http
 {
@@ -18,15 +19,7 @@ namespace Informapp.InformSystem.WebApi.Models.Http
         /// </summary>
         internal UploadFileRequestAttribute(string fileParameterName)
         {
-            if (string.IsNullOrEmpty(fileParameterName) == true)
-            {
-                if (fileParameterName == null)
-                {
-                    throw new ArgumentNullException(nameof(fileParameterName));
-                }
-
-                throw new ArgumentException("Must not be empty", nameof(fileParameterName));
-            }
+            Argument.NotNullOrEmpty(fileParameterName, nameof(fileParameterName));
 
             FileParameterName = fileParameterName;
         }

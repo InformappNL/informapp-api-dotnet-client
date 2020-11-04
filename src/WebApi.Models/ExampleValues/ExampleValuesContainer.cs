@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Informapp.InformSystem.WebApi.Models.Arguments;
 using System.Collections.Generic;
 
 namespace Informapp.InformSystem.WebApi.Models.ExampleValues
@@ -9,20 +9,8 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
 
         public ExampleValuesContainer Add(string name, object value)
         {
-            if (name == null)
-            {
-                throw new ArgumentNullException(nameof(name));
-            }
-
-            if (string.IsNullOrEmpty(name) == true)
-            {
-                throw new ArgumentException("Must not be empty", nameof(name));
-            }
-
-            if (value == null)
-            {
-                throw new ArgumentNullException(nameof(value));
-            }
+            Argument.NotNullOrEmpty(name, nameof(name));
+            Argument.NotNull(value, nameof(value));
 
             _dictionary.Add(name, value);
 
@@ -31,15 +19,7 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
 
         public object GetExample(string name)
         {
-            if (name == null)
-            {
-                throw new ArgumentNullException(nameof(name));
-            }
-
-            if (string.IsNullOrEmpty(name) == true)
-            {
-                throw new ArgumentException("Must not be empty", nameof(name));
-            }
+            Argument.NotNullOrEmpty(name, nameof(name));
 
             if (_dictionary.TryGetValue(name, out var value) == true)
             {

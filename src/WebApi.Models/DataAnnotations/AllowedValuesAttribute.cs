@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Informapp.InformSystem.WebApi.Models.Arguments;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
@@ -187,15 +188,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
 
         private ISet<T> Setup<T>(IReadOnlyList<T> values, IEqualityComparer<T> comparer, Type type, bool? ignoreCase)
         {
-            if (values == null)
-            {
-                throw new ArgumentNullException(nameof(values));
-            }
-
-            if (values.Count == 0)
-            {
-                throw new ArgumentException("Can not be empty", nameof(values));
-            }
+            Argument.NotNullOrEmpty(values, nameof(values));
 
             bool containsNull = values
                 .Where(x => x == null)

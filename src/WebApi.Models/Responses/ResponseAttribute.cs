@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Informapp.InformSystem.WebApi.Models.Arguments;
+using System;
 using System.Net;
 
 namespace Informapp.InformSystem.WebApi.Models.Responses
@@ -23,6 +24,8 @@ namespace Informapp.InformSystem.WebApi.Models.Responses
             HttpStatusCode statusCode,
             Type model)
         {
+            Argument.NotNull(model, nameof(model));
+
             if (IsValid(statusCode) == false)
             {
                 throw new ArgumentException("Unsupported value", nameof(statusCode));
@@ -30,7 +33,7 @@ namespace Informapp.InformSystem.WebApi.Models.Responses
 
             StatusCode = statusCode;
 
-            Model = model ?? throw new ArgumentNullException(nameof(model));
+            Model = model;
         }
 
         private static bool IsValid(HttpStatusCode statusCode)

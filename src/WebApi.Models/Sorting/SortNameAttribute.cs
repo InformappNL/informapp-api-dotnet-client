@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Informapp.InformSystem.WebApi.Models.Arguments;
+using System;
 
 namespace Informapp.InformSystem.WebApi.Models.Sorting
 {
@@ -16,18 +17,9 @@ namespace Informapp.InformSystem.WebApi.Models.Sorting
         /// <summary>
         /// Initializes a new instance of the <see cref="SortNameAttribute"/> class.
         /// </summary>
-        internal SortNameAttribute(
-            string name)
+        internal SortNameAttribute(string name)
         {
-            if (string.IsNullOrEmpty(name) == true)
-            {
-                if (name == null)
-                {
-                    throw new ArgumentNullException(nameof(name));
-                }
-
-                throw new ArgumentException("Can not be empty", nameof(name));
-            }
+            Argument.NotNullOrEmpty(name, nameof(name));
 
             Name = name;
         }

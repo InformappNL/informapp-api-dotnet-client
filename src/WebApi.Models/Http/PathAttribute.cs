@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Informapp.InformSystem.WebApi.Models.Arguments;
+using System;
 
 namespace Informapp.InformSystem.WebApi.Models.Http
 {
@@ -27,15 +28,7 @@ namespace Informapp.InformSystem.WebApi.Models.Http
         /// <exception cref="ArgumentException"><paramref name="pattern"/> is empty</exception>
         internal PathAttribute(string pattern)
         {
-            if (pattern == null)
-            {
-                throw new ArgumentNullException(nameof(pattern));
-            }
-
-            if (string.IsNullOrEmpty(pattern) == true)
-            {
-                throw new ArgumentException("Can not be empty", nameof(pattern));
-            }
+            Argument.NotNullOrEmpty(pattern, nameof(pattern));
 
             Pattern = pattern;
         }
@@ -52,15 +45,7 @@ namespace Informapp.InformSystem.WebApi.Models.Http
         private PathAttribute(
             string pattern, params string[] arguments) : this(pattern)
         {
-            if (arguments == null)
-            {
-                throw new ArgumentNullException(nameof(arguments));
-            }
-
-            if (arguments.Length == 0)
-            {
-                throw new ArgumentException("Can not be empty", nameof(arguments));
-            }
+            Argument.NotNullOrEmpty(arguments, nameof(arguments));
 
             Arguments = arguments;
         }
