@@ -9,7 +9,7 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
         internal static bool Enabled { get; private set; }
 
         /// <summary>
-        /// Enabled example values
+        /// Enable example values
         /// </summary>
         public static void Enable()
         {

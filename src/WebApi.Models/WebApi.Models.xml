@@ -544,7 +544,7 @@
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Models.ExampleValues.ExampleAttributeConfiguration.Enable">
             <summary>
-            Enabled example values
+            Enable example values
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.ExampleValues.ExampleCollectionAttribute">
