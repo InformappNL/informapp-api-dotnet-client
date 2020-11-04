@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
-using System.Runtime.Remoting;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -99,12 +98,6 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
 
         [Obsolete(ObsoleteMessage, error: true)]
         public override void Close()
-        {
-            throw new NotImplementedException();
-        }
-
-        [Obsolete(ObsoleteMessage, error: true)]
-        public override ObjRef CreateObjRef(Type requestedType)
         {
             throw new NotImplementedException();
         }
