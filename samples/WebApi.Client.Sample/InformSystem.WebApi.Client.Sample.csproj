@@ -176,6 +176,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="AppSettings.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="InformSystem.WebApi.Client.Sample.ruleset" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
