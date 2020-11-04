@@ -1,5 +1,5 @@
 ﻿using Informapp.InformSystem.WebApi.Client.Arguments;
-using System.Web;
+using MimeMapping;
 
 namespace Informapp.InformSystem.WebApi.Client.MimeMappers
 {
@@ -17,7 +17,7 @@ namespace Informapp.InformSystem.WebApi.Client.MimeMappers
         {
             Argument.NotNullOrEmpty(fileName, nameof(fileName));
 
-            return MimeMapping.GetMimeMapping(fileName);
+            return MimeUtility.GetMimeMapping(fileName);
         }
     }
 }
