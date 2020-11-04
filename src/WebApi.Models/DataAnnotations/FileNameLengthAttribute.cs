@@ -24,7 +24,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         /// Initializes a new instance of the <see cref="FileNameLengthAttribute"/> class.
         /// </summary>
         /// <param name="maximumLength">The maximum length of a file name</param>
-        internal FileNameLengthAttribute(int maximumLength) : this(0, maximumLength)
+        public FileNameLengthAttribute(int maximumLength) : this(0, maximumLength)
         {
 
         }
@@ -34,7 +34,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         /// </summary>
         /// <param name="minimumLength">The minimum length of a string</param>
         /// <param name="maximumLength">The maximum length of a string</param>
-        internal FileNameLengthAttribute(int minimumLength, int maximumLength)
+        public FileNameLengthAttribute(int minimumLength, int maximumLength)
         {
             if (minimumLength < 0)
             {

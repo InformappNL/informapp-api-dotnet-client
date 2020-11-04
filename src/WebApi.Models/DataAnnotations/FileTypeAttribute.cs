@@ -26,7 +26,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         /// Initializes a new instance of the <see cref="FileNameLengthAttribute"/> class.
         /// </summary>
         /// <param name="extensions">The allowed file extensions, separated by space</param>
-        internal FileTypeAttribute(string extensions)
+        public FileTypeAttribute(string extensions)
         {
             Argument.NotNullOrEmpty(extensions, nameof(extensions));
 

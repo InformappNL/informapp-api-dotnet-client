@@ -12,7 +12,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         /// <summary>
         /// Initializes a new instance of the <see cref="RelativeUriAttribute"/> class.
         /// </summary>
-        internal RelativeUriAttribute()
+        public RelativeUriAttribute()
         {
 
         }

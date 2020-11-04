@@ -18,7 +18,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         public int Length { get; }
 
         /// <summary>Initializes a new instance of the <see cref="MaxUriLengthAttribute"/> class.</summary>
-        internal MaxUriLengthAttribute(int length)
+        public MaxUriLengthAttribute(int length)
         {
             if (length <= 0)
             {

@@ -20,7 +20,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         /// Initializes a new instance of the <see cref="FileSizeAttribute"/> class.
         /// </summary>
         /// <param name="size"></param>
-        internal FileSizeAttribute(long size)
+        public FileSizeAttribute(long size)
         {
             if (size < 0)
             {

@@ -17,7 +17,7 @@ namespace Informapp.InformSystem.WebApi.Models.Sorting
         /// <summary>
         /// Initializes a new instance of the <see cref="SortNameAttribute"/> class.
         /// </summary>
-        internal SortNameAttribute(string name)
+        public SortNameAttribute(string name)
         {
             Argument.NotNullOrEmpty(name, nameof(name));
 

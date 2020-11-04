@@ -19,7 +19,7 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
         public string StringValue { get; }
 
         /// <summary>Initializes a new instance of the <see cref="ExampleStringAttribute"/> class.</summary>
-        internal ExampleStringAttribute(ExampleStringKind kind, string stringValue)
+        public ExampleStringAttribute(ExampleStringKind kind, string stringValue)
         {
             Kind = kind;
 

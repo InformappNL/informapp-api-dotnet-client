@@ -20,7 +20,7 @@ namespace Informapp.InformSystem.WebApi.Models.Responses
         /// </summary>
         public Type Model { get; }
 
-        internal ResponseAttribute(
+        public ResponseAttribute(
             HttpStatusCode statusCode,
             Type model)
         {

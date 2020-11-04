@@ -19,7 +19,7 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
         public string JsonString { get; }
 
         /// <summary>Initializes a new instance of the <see cref="ExampleJsonAttribute"/> class.</summary>
-        internal ExampleJsonAttribute(Type modelType, string jsonString)
+        public ExampleJsonAttribute(Type modelType, string jsonString)
         {
             ModelType = modelType;
 

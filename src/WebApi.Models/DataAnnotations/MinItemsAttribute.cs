@@ -23,7 +23,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         /// Initializes a new instance of the <see cref="MinItemsAttribute"/> class.
         /// </summary>
         /// <param name="count"></param>
-        internal MinItemsAttribute(int count)
+        public MinItemsAttribute(int count)
         {
             if (count < 0)
             {

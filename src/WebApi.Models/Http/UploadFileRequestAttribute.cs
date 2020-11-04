@@ -17,7 +17,7 @@ namespace Informapp.InformSystem.WebApi.Models.Http
         /// <summary>
         /// Initializes a new instance of the <see cref="UploadFileRequestAttribute"/> class.
         /// </summary>
-        internal UploadFileRequestAttribute(string fileParameterName)
+        public UploadFileRequestAttribute(string fileParameterName)
         {
             Argument.NotNullOrEmpty(fileParameterName, nameof(fileParameterName));
 

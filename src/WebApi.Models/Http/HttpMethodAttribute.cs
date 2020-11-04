@@ -18,7 +18,7 @@ namespace Informapp.InformSystem.WebApi.Models.Http
         /// </summary>
         /// <param name="method">HTTP method</param>
         /// <exception cref="ArgumentException"><paramref name="method"/> unsupported value</exception>
-        internal HttpMethodAttribute(HttpMethod method)
+        public HttpMethodAttribute(HttpMethod method)
         {
             switch (method)
             {

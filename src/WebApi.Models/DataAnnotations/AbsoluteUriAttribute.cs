@@ -10,7 +10,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
     public sealed class AbsoluteUriAttribute : ValidationAttribute
     {
         /// <summary>Initializes a new instance of the <see cref="AbsoluteUriAttribute"/> class.</summary>
-        internal AbsoluteUriAttribute()
+        public AbsoluteUriAttribute()
         {
 
         }

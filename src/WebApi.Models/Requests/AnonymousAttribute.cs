@@ -11,7 +11,7 @@ namespace Informapp.InformSystem.WebApi.Models.Requests
         /// <summary>
         /// Initializes a new instance of the <see cref="AnonymousAttribute"/> class.
         /// </summary>
-        internal AnonymousAttribute()
+        public AnonymousAttribute()
         {
 
         }

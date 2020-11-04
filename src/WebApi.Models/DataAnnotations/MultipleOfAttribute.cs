@@ -20,7 +20,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         /// <summary>
         /// Initializes a new instance of the <see cref="MultipleOfAttribute"/> class.
         /// </summary>
-        internal MultipleOfAttribute(int value)
+        public MultipleOfAttribute(int value)
         {
             if (value <= 0)
             {

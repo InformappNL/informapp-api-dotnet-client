@@ -16,7 +16,7 @@ namespace Informapp.InformSystem.WebApi.Models.Sorting
         /// <summary>
         /// Initializes a new instance of the <see cref="SortDirectionAttribute"/> class.
         /// </summary>
-        internal SortDirectionAttribute(SortDirection direction)
+        public SortDirectionAttribute(SortDirection direction)
         {
             switch (direction)
             {

@@ -14,7 +14,7 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
         public object Value { get; }
 
         /// <summary>Initializes a new instance of the <see cref="ExampleValueAttribute"/> class.</summary>
-        internal ExampleValueAttribute(object value)
+        public ExampleValueAttribute(object value)
         {
             Value = value;
         }

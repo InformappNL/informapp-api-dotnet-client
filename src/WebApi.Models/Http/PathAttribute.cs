@@ -26,7 +26,7 @@ namespace Informapp.InformSystem.WebApi.Models.Http
         /// <param name="pattern">Path pattern</param>
         /// <exception cref="ArgumentNullException"><paramref name="pattern"/> is null</exception>
         /// <exception cref="ArgumentException"><paramref name="pattern"/> is empty</exception>
-        internal PathAttribute(string pattern)
+        public PathAttribute(string pattern)
         {
             Argument.NotNullOrEmpty(pattern, nameof(pattern));
 

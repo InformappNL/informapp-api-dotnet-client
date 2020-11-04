@@ -39,9 +39,9 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         }
 
         /// <summary>Initializes a new instance of the <see cref="UniqueItemsAttribute"/> class.</summary>
-        internal UniqueItemsAttribute(Type value) : this(value, default(bool?)) { }
+        public UniqueItemsAttribute(Type value) : this(value, default(bool?)) { }
         /// <summary>Initializes a new instance of the <see cref="UniqueItemsAttribute"/> class.</summary>
-        internal UniqueItemsAttribute(Type value, bool ignoreCase) : this(value, (bool?)ignoreCase) { }
+        public UniqueItemsAttribute(Type value, bool ignoreCase) : this(value, (bool?)ignoreCase) { }
 
 
 
@@ -57,14 +57,14 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         }
 
         /// <summary>Initializes a new instance of the <see cref="UniqueItemsAttribute"/> class.</summary>
-        internal UniqueItemsAttribute(Type value, Type comparer) : this(value, comparer, default(bool?)) { }
+        public UniqueItemsAttribute(Type value, Type comparer) : this(value, comparer, default(bool?)) { }
         /// <summary>Initializes a new instance of the <see cref="UniqueItemsAttribute"/> class.</summary>
-        internal UniqueItemsAttribute(Type value, Type comparer, bool ignoreCase) : this(value, comparer, (bool?)ignoreCase) { }
+        public UniqueItemsAttribute(Type value, Type comparer, bool ignoreCase) : this(value, comparer, (bool?)ignoreCase) { }
 
 
 
         /// <summary>Initializes a new instance of the <see cref="UniqueItemsAttribute"/> class.</summary>
-        internal UniqueItemsAttribute(StringComparison comparison) : this()
+        public UniqueItemsAttribute(StringComparison comparison) : this()
         {
             IEqualityComparer<string> comparer;
 

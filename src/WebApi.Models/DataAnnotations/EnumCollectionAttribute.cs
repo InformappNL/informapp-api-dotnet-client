@@ -33,7 +33,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         /// </summary>
         /// <param name="type">The enum type</param>
         /// <param name="allowNull">allow null values</param>
-        internal EnumCollectionAttribute(Type type, bool allowNull = false)
+        public EnumCollectionAttribute(Type type, bool allowNull = false)
         {
             Argument.NotNull(type, nameof(type));
 

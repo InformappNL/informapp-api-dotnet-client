@@ -27,7 +27,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         /// Initializes a new instance of the <see cref="EnumValidationAttribute"/> class.
         /// </summary>
         /// <param name="type">The enum type</param>
-        internal EnumValidationAttribute(Type type)
+        public EnumValidationAttribute(Type type)
         {
             Argument.NotNull(type, nameof(type));
 

@@ -19,7 +19,7 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
         public string MemberName { get; }
 
         /// <summary>Initializes a new instance of the <see cref="ExampleMemberProviderAttribute"/> class.</summary>
-        internal ExampleMemberProviderAttribute(Type providerType, string memberName)
+        public ExampleMemberProviderAttribute(Type providerType, string memberName)
         {
             ProviderType = providerType;
 

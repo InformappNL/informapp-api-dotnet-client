@@ -23,7 +23,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         /// Initializes a new instance of the <see cref="MaxItemsAttribute"/> class.
         /// </summary>
         /// <param name="count"></param>
-        internal MaxItemsAttribute(int count)
+        public MaxItemsAttribute(int count)
         {
             if (count < 0)
             {

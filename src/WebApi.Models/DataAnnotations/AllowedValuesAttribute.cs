@@ -39,77 +39,77 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         private string _errorMessageValues;
 
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(byte value) { SetupStruct(new[] { value }); }
+        public AllowedValuesAttribute(byte value) { SetupStruct(new[] { value }); }
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(byte[] values) { SetupStruct(values); }
+        public AllowedValuesAttribute(byte[] values) { SetupStruct(values); }
 
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(sbyte value) { SetupStruct(new[] { value }); }
+        public AllowedValuesAttribute(sbyte value) { SetupStruct(new[] { value }); }
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(sbyte[] values) { SetupStruct(values); }
+        public AllowedValuesAttribute(sbyte[] values) { SetupStruct(values); }
 
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(short value) { SetupStruct(new[] { value }); }
+        public AllowedValuesAttribute(short value) { SetupStruct(new[] { value }); }
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(short[] values) { SetupStruct(values); }
+        public AllowedValuesAttribute(short[] values) { SetupStruct(values); }
 
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(ushort value) { SetupStruct(new[] { value }); }
+        public AllowedValuesAttribute(ushort value) { SetupStruct(new[] { value }); }
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(ushort[] values) { SetupStruct(values); }
+        public AllowedValuesAttribute(ushort[] values) { SetupStruct(values); }
 
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(int value) { SetupStruct(new[] { value }); }
+        public AllowedValuesAttribute(int value) { SetupStruct(new[] { value }); }
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(int[] values) { SetupStruct(values); }
+        public AllowedValuesAttribute(int[] values) { SetupStruct(values); }
 
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(uint value) { SetupStruct(new[] { value }); }
+        public AllowedValuesAttribute(uint value) { SetupStruct(new[] { value }); }
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(uint[] values) { SetupStruct(values); }
+        public AllowedValuesAttribute(uint[] values) { SetupStruct(values); }
 
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(long value) { SetupStruct(new[] { value }); }
+        public AllowedValuesAttribute(long value) { SetupStruct(new[] { value }); }
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(long[] values) { SetupStruct(values); }
+        public AllowedValuesAttribute(long[] values) { SetupStruct(values); }
 
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(ulong value) { SetupStruct(new[] { value }); }
+        public AllowedValuesAttribute(ulong value) { SetupStruct(new[] { value }); }
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(ulong[] values) { SetupStruct(values); }
+        public AllowedValuesAttribute(ulong[] values) { SetupStruct(values); }
 
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(float value) { SetupStruct(new[] { value }); }
+        public AllowedValuesAttribute(float value) { SetupStruct(new[] { value }); }
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(float[] values) { SetupStruct(values); }
+        public AllowedValuesAttribute(float[] values) { SetupStruct(values); }
 
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(double value) { SetupStruct(new[] { value }); }
+        public AllowedValuesAttribute(double value) { SetupStruct(new[] { value }); }
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(double[] values) { SetupStruct(values); }
+        public AllowedValuesAttribute(double[] values) { SetupStruct(values); }
 
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(char value) { SetupStruct(new[] { value }); }
+        public AllowedValuesAttribute(char value) { SetupStruct(new[] { value }); }
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(char[] values) { SetupStruct(values); }
+        public AllowedValuesAttribute(char[] values) { SetupStruct(values); }
 
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(string value, bool ignoreCase = true) { SetupString(new[] { value }, ignoreCase); }
+        public AllowedValuesAttribute(string value, bool ignoreCase = true) { SetupString(new[] { value }, ignoreCase); }
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(string[] values, bool ignoreCase = true) { SetupString(values, ignoreCase); }
+        public AllowedValuesAttribute(string[] values, bool ignoreCase = true) { SetupString(values, ignoreCase); }
 
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(bool value) { SetupStruct(new[] { value }); }
+        public AllowedValuesAttribute(bool value) { SetupStruct(new[] { value }); }
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(bool value1, bool value2) { SetupStruct(new[] { value1, value2 }); }
+        public AllowedValuesAttribute(bool value1, bool value2) { SetupStruct(new[] { value1, value2 }); }
 
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(Type value) { SetupClass(new[] { value }); }
+        public AllowedValuesAttribute(Type value) { SetupClass(new[] { value }); }
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(Type[] values) { SetupClass(values); }
+        public AllowedValuesAttribute(Type[] values) { SetupClass(values); }
 
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
-        internal AllowedValuesAttribute(object[] values) { SetupObject(values); }
+        public AllowedValuesAttribute(object[] values) { SetupObject(values); }
 
         private void SetupClass<T>(IReadOnlyList<T> values)
             where T : class

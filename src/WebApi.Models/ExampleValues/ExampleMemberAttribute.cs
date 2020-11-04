@@ -9,7 +9,7 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
     public sealed class ExampleMemberAttribute : Attribute
     {
         /// <summary>Initializes a new instance of the <see cref="ExampleMemberAttribute"/> class.</summary>
-        internal ExampleMemberAttribute()
+        public ExampleMemberAttribute()
         {
 
         }

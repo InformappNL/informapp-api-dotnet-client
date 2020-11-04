@@ -14,7 +14,7 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
         public ExampleConstantKind Kind { get; }
 
         /// <summary>Initializes a new instance of the <see cref="ExampleConstantAttribute"/> class.</summary>
-        internal ExampleConstantAttribute(ExampleConstantKind kind)
+        public ExampleConstantAttribute(ExampleConstantKind kind)
         {
             Kind = kind;
         }

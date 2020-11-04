@@ -26,37 +26,37 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
 
 
         /// <summary>Initializes a new instance of the <see cref="ExampleCollectionAttribute"/> class.</summary>
-        internal ExampleCollectionAttribute(ExampleCollectionKind kind, byte[] values) { SetupCollection(kind, values); }
+        public ExampleCollectionAttribute(ExampleCollectionKind kind, byte[] values) { SetupCollection(kind, values); }
         /// <summary>Initializes a new instance of the <see cref="ExampleCollectionAttribute"/> class.</summary>
-        internal ExampleCollectionAttribute(ExampleCollectionKind kind, sbyte[] values) { SetupCollection(kind, values); }
+        public ExampleCollectionAttribute(ExampleCollectionKind kind, sbyte[] values) { SetupCollection(kind, values); }
         /// <summary>Initializes a new instance of the <see cref="ExampleCollectionAttribute"/> class.</summary>
-        internal ExampleCollectionAttribute(ExampleCollectionKind kind, short[] values) { SetupCollection(kind, values); }
+        public ExampleCollectionAttribute(ExampleCollectionKind kind, short[] values) { SetupCollection(kind, values); }
         /// <summary>Initializes a new instance of the <see cref="ExampleCollectionAttribute"/> class.</summary>
-        internal ExampleCollectionAttribute(ExampleCollectionKind kind, ushort[] values) { SetupCollection(kind, values); }
+        public ExampleCollectionAttribute(ExampleCollectionKind kind, ushort[] values) { SetupCollection(kind, values); }
         /// <summary>Initializes a new instance of the <see cref="ExampleCollectionAttribute"/> class.</summary>
-        internal ExampleCollectionAttribute(ExampleCollectionKind kind, float[] values) { SetupCollection(kind, values); }
+        public ExampleCollectionAttribute(ExampleCollectionKind kind, float[] values) { SetupCollection(kind, values); }
         /// <summary>Initializes a new instance of the <see cref="ExampleCollectionAttribute"/> class.</summary>
-        internal ExampleCollectionAttribute(ExampleCollectionKind kind, double[] values) { SetupCollection(kind, values); }
+        public ExampleCollectionAttribute(ExampleCollectionKind kind, double[] values) { SetupCollection(kind, values); }
         /// <summary>Initializes a new instance of the <see cref="ExampleCollectionAttribute"/> class.</summary>
-        internal ExampleCollectionAttribute(ExampleCollectionKind kind, int[] values) { SetupCollection(kind, values); }
+        public ExampleCollectionAttribute(ExampleCollectionKind kind, int[] values) { SetupCollection(kind, values); }
         /// <summary>Initializes a new instance of the <see cref="ExampleCollectionAttribute"/> class.</summary>
-        internal ExampleCollectionAttribute(ExampleCollectionKind kind, uint[] values) { SetupCollection(kind, values); }
+        public ExampleCollectionAttribute(ExampleCollectionKind kind, uint[] values) { SetupCollection(kind, values); }
         /// <summary>Initializes a new instance of the <see cref="ExampleCollectionAttribute"/> class.</summary>
-        internal ExampleCollectionAttribute(ExampleCollectionKind kind, long[] values) { SetupCollection(kind, values); }
+        public ExampleCollectionAttribute(ExampleCollectionKind kind, long[] values) { SetupCollection(kind, values); }
         /// <summary>Initializes a new instance of the <see cref="ExampleCollectionAttribute"/> class.</summary>
-        internal ExampleCollectionAttribute(ExampleCollectionKind kind, ulong[] values) { SetupCollection(kind, values); }
+        public ExampleCollectionAttribute(ExampleCollectionKind kind, ulong[] values) { SetupCollection(kind, values); }
         /// <summary>Initializes a new instance of the <see cref="ExampleCollectionAttribute"/> class.</summary>
-        internal ExampleCollectionAttribute(ExampleCollectionKind kind, char[] values) { SetupCollection(kind, values); }
+        public ExampleCollectionAttribute(ExampleCollectionKind kind, char[] values) { SetupCollection(kind, values); }
         /// <summary>Initializes a new instance of the <see cref="ExampleCollectionAttribute"/> class.</summary>
-        internal ExampleCollectionAttribute(ExampleCollectionKind kind, string[] values) { SetupCollection(kind, values); }
+        public ExampleCollectionAttribute(ExampleCollectionKind kind, string[] values) { SetupCollection(kind, values); }
         /// <summary>Initializes a new instance of the <see cref="ExampleCollectionAttribute"/> class.</summary>
-        internal ExampleCollectionAttribute(ExampleCollectionKind kind, bool[] values) { SetupCollection(kind, values); }
+        public ExampleCollectionAttribute(ExampleCollectionKind kind, bool[] values) { SetupCollection(kind, values); }
         /// <summary>Initializes a new instance of the <see cref="ExampleCollectionAttribute"/> class.</summary>
-        internal ExampleCollectionAttribute(ExampleCollectionKind kind, Type[] values) { SetupCollection(kind, values); }
+        public ExampleCollectionAttribute(ExampleCollectionKind kind, Type[] values) { SetupCollection(kind, values); }
         ///// <summary>Initializes a new instance of the <see cref="ExampleCollectionAttribute"/> class.</summary>
-        //internal ExampleCollectionAttribute(ExampleCollectionKind kind, object[] values) { SetupCollection(kind, values); }
+        //public ExampleCollectionAttribute(ExampleCollectionKind kind, object[] values) { SetupCollection(kind, values); }
         /// <summary>Initializes a new instance of the <see cref="ExampleCollectionAttribute"/> class.</summary>
-        internal ExampleCollectionAttribute(ExampleCollectionKind kind, Type elementType, object[] values)
+        public ExampleCollectionAttribute(ExampleCollectionKind kind, Type elementType, object[] values)
         {
             Kind = kind;
 

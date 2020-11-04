@@ -16,7 +16,7 @@ namespace Informapp.InformSystem.WebApi.Models.Http
         /// <summary>
         /// Initializes a new instance of the <see cref="ContentTypeAttribute"/> class.
         /// </summary>
-        internal ContentTypeAttribute(ContentType contentType)
+        public ContentTypeAttribute(ContentType contentType)
         {
             switch (contentType)
             {

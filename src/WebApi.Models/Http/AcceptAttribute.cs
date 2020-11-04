@@ -16,7 +16,7 @@ namespace Informapp.InformSystem.WebApi.Models.Http
         /// <summary>
         /// Initializes a new instance of the <see cref="AcceptAttribute"/> class.
         /// </summary>
-        internal AcceptAttribute(Accept accept)
+        public AcceptAttribute(Accept accept)
         {
             switch (accept)
             {

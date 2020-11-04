@@ -11,7 +11,7 @@ namespace Informapp.InformSystem.WebApi.Models.Http
         /// <summary>
         /// Initializes a new instance of the <see cref="QueryParameterAttribute"/> class.
         /// </summary>
-        internal QueryParameterAttribute()
+        public QueryParameterAttribute()
         {
 
         }

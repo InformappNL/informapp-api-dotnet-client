@@ -19,19 +19,19 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
         public string Query { get; }
 
         /// <summary>Initializes a new instance of the <see cref="ExampleConstantAttribute"/> class.</summary>
-        internal ExampleLocalizedUriAttribute() : this(null, null)
+        public ExampleLocalizedUriAttribute() : this(null, null)
         {
 
         }
 
         /// <summary>Initializes a new instance of the <see cref="ExampleConstantAttribute"/> class.</summary>
-        internal ExampleLocalizedUriAttribute(string path) : this(path, null)
+        public ExampleLocalizedUriAttribute(string path) : this(path, null)
         {
 
         }
 
         /// <summary>Initializes a new instance of the <see cref="ExampleConstantAttribute"/> class.</summary>
-        internal ExampleLocalizedUriAttribute(string path = null, string query = null)
+        public ExampleLocalizedUriAttribute(string path = null, string query = null)
         {
             Path = path;
 
