@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Models
+namespace Informapp.InformSystem.WebApi.Client.Sample
 {
     internal static class Await
     {
@@ -8,7 +8,7 @@ namespace Informapp.InformSystem.WebApi.Models
         internal const bool No = false;
     }
 
-    internal static class WebApiModelsProjectSettings
+    internal static class ProjectSettings
     {
 
     }

@@ -8,7 +8,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp
         internal const bool No = false;
     }
 
-    internal static class WebApiClientRestSharpProjectSettings
+    internal static class ProjectSettings
     {
 
     }

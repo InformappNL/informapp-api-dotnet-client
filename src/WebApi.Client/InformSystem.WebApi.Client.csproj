@@ -169,6 +169,7 @@
     <Compile Include="PathProviders\PathProvider.T1.cs" />
     <Compile Include="PathProviders\PropertyFuncFactory.T1.cs" />
     <Compile Include="PathProviders\PropertyFuncModel.T1.cs" />
+    <Compile Include="ProjectSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryProviders\IQueryProvider.T1.cs" />
     <Compile Include="QueryProviders\QueryProvider.T1.cs" />
@@ -197,7 +198,6 @@
     <Compile Include="Validators\IValidator.T1.cs" />
     <Compile Include="Validators\Validator.T1.cs" />
     <Compile Include="WebApiClientProject.cs" />
-    <Compile Include="WebApiClientProjectSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WebApi.Models\InformSystem.WebApi.Models.csproj">

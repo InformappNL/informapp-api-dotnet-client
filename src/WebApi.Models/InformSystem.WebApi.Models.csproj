@@ -112,6 +112,7 @@
     <Compile Include="Http\UploadFileRequestAttribute.cs" />
     <Compile Include="Http\UploadFileResponseAttribute.cs" />
     <Compile Include="OAuth2\AOuth2Constants.cs" />
+    <Compile Include="ProjectSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Requests\AnonymousAttribute.cs" />
     <Compile Include="Requests\BaseRequest.cs" />
@@ -363,7 +364,6 @@
     <Compile Include="Version2\Filters\StringV2Filter.cs" />
     <Compile Include="Version2\Filters\TimeSpanV2Filter.cs" />
     <Compile Include="WebApiModelsProject.cs" />
-    <Compile Include="WebApiModelsProjectSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="WebApi.Models.xml" />

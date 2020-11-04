@@ -182,10 +182,10 @@
     <Compile Include="Examples\Tests\Values\TestQueryValuesV1Example.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProjectSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Requires\Require.cs" />
     <Compile Include="WebApiClientSampleProject.cs" />
-    <Compile Include="WebApiClientSampleProjectSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
