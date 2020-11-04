@@ -9,10 +9,10 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("InformSystem.WebApi.Models")]
 [assembly: AssemblyDescription("The request and response models used by the API")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Informapp B.V.")]
+//[assembly: AssemblyCompany("Informapp B.V.")]
 [assembly: AssemblyProduct("InformSystem.WebApi.Models")]
-[assembly: AssemblyCopyright("Copyright ©  2018 Informapp B.V.")]
-[assembly: AssemblyTrademark("")]
+//[assembly: AssemblyCopyright("Copyright ©  2018 Informapp B.V.")]
+//[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
