@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFrameworks>netcoreapp3.1;net48</TargetFrameworks>
     <OutputType>Exe</OutputType>
     <RootNamespace>Informapp.InformSystem.WebApi.Client.Sample</RootNamespace>
     <SccProjectName>SAK</SccProjectName>
