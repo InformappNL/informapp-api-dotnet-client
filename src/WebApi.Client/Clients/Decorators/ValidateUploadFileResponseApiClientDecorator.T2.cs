@@ -5,6 +5,7 @@ using Informapp.InformSystem.WebApi.Client.Requires;
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Models.Requests;
 using System;
+using System.Globalization;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -60,11 +61,13 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
                 {
                     if (request.UploadFile.Size != response.UploadFile.Size)
                     {
-                        throw new InvalidOperationException(
-                            string.Format(
-                                "File upload failed, file sizes differ. Local size: {0}, remote size: {1}",
+                        string message = string.Format(
+                            CultureInfo.CurrentCulture,
+                            "File upload failed, file sizes differ. Local size: {0}, remote size: {1}",
                             request.UploadFile.Size,
-                            response.UploadFile.Size));
+                            response.UploadFile.Size);
+
+                        throw new InvalidOperationException(message);
                     }
 
                     if (response.UploadFile.Algorithm.HasValue == true)
@@ -74,11 +77,13 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
                             response.UploadFile.HashBase64,
                             StringComparison.Ordinal) == false)
                         {
-                            throw new InvalidOperationException(
-                                string.Format(
-                                    "File upload failed, hashes differ. Local hash: {0}, remote hash: {1}",
+                            string message = string.Format(
+                                CultureInfo.CurrentCulture,
+                                "File upload failed, hashes differ. Local hash: {0}, remote hash: {1}",
                                 request.UploadFile.HashBase64,
-                                response.UploadFile.HashBase64));
+                                response.UploadFile.HashBase64);
+
+                            throw new InvalidOperationException(message);
                         }
                     }
                 }

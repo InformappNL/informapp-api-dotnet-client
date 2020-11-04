@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 
 namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
 {
@@ -93,7 +94,11 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         /// <returns>An instance of the formatted error message.</returns>
         public override string FormatErrorMessage(string name)
         {
-            string message = string.Format(ErrorMessage, name, Value);
+            string message = string.Format(
+                CultureInfo.CurrentCulture,
+                ErrorMessage, 
+                name, 
+                Value);
 
             return message;
         }
