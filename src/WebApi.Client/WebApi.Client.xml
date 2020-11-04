@@ -1531,21 +1531,6 @@
             Cryptographic hash algorithms
             </summary>
         </member>
-        <member name="F:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind.MD5">
-            <summary>
-            MD5
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind.RIPEMD160">
-            <summary>
-            RIPEMD160
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind.SHA1">
-            <summary>
-            SHA1
-            </summary>
-        </member>
         <member name="F:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind.SHA256">
             <summary>
             SHA256

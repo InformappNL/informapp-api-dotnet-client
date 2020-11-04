@@ -16,18 +16,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.Files
         None = 0,
 
         /// <summary>
-        /// MD5
-        /// </summary>
-        [EnumMember]
-        MD5 = 1,
-
-        /// <summary>
-        /// RIPEMD160
-        /// </summary>
-        [EnumMember]
-        RIPEMD160 = 2,
-
-        /// <summary>
         /// SHA1
         /// </summary>
         [EnumMember]

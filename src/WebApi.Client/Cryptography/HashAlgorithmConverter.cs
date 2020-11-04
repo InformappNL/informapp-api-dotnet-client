@@ -24,21 +24,6 @@ namespace Informapp.InformSystem.WebApi.Client.Cryptography
 #pragma warning disable CA2000 // Dispose objects before losing scope
                 switch (source)
                 {
-                    case HashAlgorithmKind.MD5:
-#pragma warning disable CA5351 // Do Not Use Broken Cryptographic Algorithms
-                        hashAlgorithm = MD5.Create();
-#pragma warning restore CA5351 // Do Not Use Broken Cryptographic Algorithms
-                        break;
-                    case HashAlgorithmKind.RIPEMD160:
-#pragma warning disable CA5350 // Do Not Use Weak Cryptographic Algorithms
-                        hashAlgorithm = RIPEMD160.Create();
-#pragma warning restore CA5350 // Do Not Use Weak Cryptographic Algorithms
-                        break;
-                    case HashAlgorithmKind.SHA1:
-#pragma warning disable CA5350 // Do Not Use Weak Cryptographic Algorithms
-                        hashAlgorithm = SHA1.Create();
-#pragma warning restore CA5350 // Do Not Use Weak Cryptographic Algorithms
-                        break;
                     case HashAlgorithmKind.SHA256:
                         hashAlgorithm = SHA256.Create();
                         break;

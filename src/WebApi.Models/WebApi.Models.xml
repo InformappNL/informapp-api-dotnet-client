@@ -5957,16 +5957,6 @@
             None
             </summary>
         </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.MD5">
-            <summary>
-            MD5
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.RIPEMD160">
-            <summary>
-            RIPEMD160
-            </summary>
-        </member>
         <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.SHA1">
             <summary>
             SHA1
@@ -6646,16 +6636,6 @@
         <member name="F:Informapp.InformSystem.WebApi.Models.Version2.Files.FileV2HashAlgorithm.None">
             <summary>
             None
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version2.Files.FileV2HashAlgorithm.MD5">
-            <summary>
-            MD5
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version2.Files.FileV2HashAlgorithm.RIPEMD160">
-            <summary>
-            RIPEMD160
             </summary>
         </member>
         <member name="F:Informapp.InformSystem.WebApi.Models.Version2.Files.FileV2HashAlgorithm.SHA1">

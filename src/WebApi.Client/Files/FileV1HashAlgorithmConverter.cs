@@ -27,15 +27,6 @@ namespace Informapp.InformSystem.WebApi.Client.Files
                     case FileV1HashAlgorithm.None:
                         algorithm = null;
                         break;
-                    case FileV1HashAlgorithm.MD5:
-                        algorithm = HashAlgorithmKind.MD5;
-                        break;
-                    case FileV1HashAlgorithm.RIPEMD160:
-                        algorithm = HashAlgorithmKind.RIPEMD160;
-                        break;
-                    case FileV1HashAlgorithm.SHA1:
-                        algorithm = HashAlgorithmKind.SHA1;
-                        break;
                     case FileV1HashAlgorithm.SHA256:
                         algorithm = HashAlgorithmKind.SHA256;
                         break;
