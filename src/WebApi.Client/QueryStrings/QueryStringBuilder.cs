@@ -1,14 +1,14 @@
 ﻿using Informapp.InformSystem.WebApi.Client.Arguments;
 using Informapp.InformSystem.WebApi.Client.HashCodes;
+using Microsoft.AspNetCore.Http.Extensions;
+using Microsoft.AspNetCore.WebUtilities;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
 using System.Globalization;
 using System.Linq;
-using System.Web;
 
 namespace Informapp.InformSystem.WebApi.Client.QueryStrings
 {
@@ -33,7 +33,7 @@ namespace Informapp.InformSystem.WebApi.Client.QueryStrings
 
         private static readonly IEqualityComparer<string> _comparer = new Comparer();
 
-        private readonly NameValueCollection _collection;
+        private readonly QueryBuilder _builder = new QueryBuilder();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="QueryStringBuilder"/> class.
@@ -49,7 +49,15 @@ namespace Informapp.InformSystem.WebApi.Client.QueryStrings
         /// <param name="query">The query string to parse.</param>
         public QueryStringBuilder(string query)
         {
-            _collection = HttpUtility.ParseQueryString(query ?? string.Empty);
+            if (string.IsNullOrEmpty(query) == false)
+            {
+                var segements = QueryHelpers.ParseQuery(query);
+
+                foreach (var segment in segements)
+                {
+                    _builder.Add(segment.Key, segment.Value.ToList());
+                }
+            }
         }
 
         /// <summary>
@@ -63,7 +71,7 @@ namespace Informapp.InformSystem.WebApi.Client.QueryStrings
             Argument.NotNull(key, nameof(key));
             Argument.NotNull(value, nameof(value));
 
-            _collection.Add(key, value);
+            _builder.Add(key, value);
 
             return this;
         }
@@ -83,7 +91,7 @@ namespace Informapp.InformSystem.WebApi.Client.QueryStrings
             {
                 foreach (var item in dictionary)
                 {
-                    _collection.Add(item.Key, item.Value);
+                    _builder.Add(item.Key, item.Value);
                 }
             }
 
@@ -159,7 +167,19 @@ namespace Informapp.InformSystem.WebApi.Client.QueryStrings
         /// <returns>The query string</returns>
         public override string ToString()
         {
-            return _collection.ToString();
+            string query = string.Empty;
+
+            if (_builder.Any())
+            {
+                query = _builder.ToQueryString().Value;
+
+                if (query.Length > 0)
+                {
+                    query = query.Substring(1);
+                }
+            }
+
+            return query;
         }
 
         private class Comparer : IEqualityComparer<string>
