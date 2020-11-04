@@ -31,7 +31,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMember
 
             if (x == null || y == null)
             {
-                return false;
+                return (x == null && y == null);
             }
 
             if (x.AppGroupId == y.AppGroupId &&
@@ -39,8 +39,10 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMember
             {
                 return true;
             }
-
-            return false;
+            else
+            {
+                return false;
+            }
         }
 
         /// <summary>
@@ -51,27 +53,27 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMember
         /// <exception cref="ArgumentNullException"><paramref name="obj"/> is null</exception>
         public int GetHashCode(RemoveAppGroupMemberV1RequestAppGroupMember obj)
         {
-            if (obj == null)
+            if (obj != null)
             {
-                throw new ArgumentNullException(nameof(obj));
+                unchecked
+                {
+                    int hash = 17;
+
+                    if (obj.AppGroupId.HasValue == true)
+                    {
+                        hash = hash * 23 + obj.AppGroupId.GetHashCode();
+                    }
+
+                    if (obj.AppUserId.HasValue == true)
+                    {
+                        hash = hash * 23 + obj.AppUserId.GetHashCode();
+                    }
+
+                    return hash;
+                }
             }
 
-            unchecked
-            {
-                int hash = 17;
-
-                if (obj.AppGroupId.HasValue == true)
-                {
-                    hash = hash * 23 + obj.AppGroupId.GetHashCode();
-                }
-
-                if (obj.AppUserId.HasValue == true)
-                {
-                    hash = hash * 23 + obj.AppUserId.GetHashCode();
-                }
-
-                return hash;
-            }
+            return 0;
         }
     }
 }
