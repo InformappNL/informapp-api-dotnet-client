@@ -1477,6 +1477,45 @@
             <param name="source">The source value</param>
             <returns>The <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> containing the converted value</returns>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider">
+            <summary>
+            Implementation of <see cref="T:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ICredentialsProvider"/> to retrieve credentials from app settings.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider.GetUserName">
+            <summary>
+            Get the username
+            </summary>
+            <returns>The username</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider.GetPassword">
+            <summary>
+            Get the password
+            </summary>
+            <returns>The password</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ICredentialsProvider">
+            <summary>
+            Interface to provide credentials for the api
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ICredentialsProvider.GetUserName">
+            <summary>
+            Get the username
+            </summary>
+            <returns>The username</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ICredentialsProvider.GetPassword">
+            <summary>
+            Get the password
+            </summary>
+            <returns>The password</returns>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Cryptography.HashAlgorithmConverter">
             <summary>
             Implementation of <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.IConverter`2"/>
@@ -1584,45 +1623,6 @@
             <param name="stream">The input to compute the hash code for.</param>
             <param name="cancellationToken">The token to monitor for cancellation requests.</param>
             <returns>A task that represents the asynchronous compute operation. The value of the task's <see cref="P:System.Threading.Tasks.Task`1.Result"/> parameter contains the computed hash code.</returns>
-        </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider">
-            <summary>
-            Implementation of <see cref="T:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ICredentialsProvider"/> to retrieve credentials from app settings.
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider"/> class.
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider.GetUserName">
-            <summary>
-            Get the username
-            </summary>
-            <returns>The username</returns>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ConfigurationCredentialsProvider.GetPassword">
-            <summary>
-            Get the password
-            </summary>
-            <returns>The password</returns>
-        </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ICredentialsProvider">
-            <summary>
-            Interface to provide credentials for the api
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ICredentialsProvider.GetUserName">
-            <summary>
-            Get the username
-            </summary>
-            <returns>The username</returns>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.CredentialsProviders.ICredentialsProvider.GetPassword">
-            <summary>
-            Get the password
-            </summary>
-            <returns>The password</returns>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.DataAnnotations.AbsoluteUriAttribute">
             <summary>
