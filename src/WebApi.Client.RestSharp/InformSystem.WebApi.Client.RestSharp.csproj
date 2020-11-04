@@ -91,9 +91,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\cleanup.config">
-      <Link>cleanup.config</Link>
-    </None>
     <None Include="..\ProjectRules.ruleset">
       <Link>ProjectRules.ruleset</Link>
     </None>
