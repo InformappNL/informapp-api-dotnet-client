@@ -62,7 +62,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
             return response;
         }
 
-        private void SetContentModel(ApiResponse<TResponse> response)
+        private static void SetContentModel(ApiResponse<TResponse> response)
         {
             if (response.ContentModel == null &&
                 response.StatusCode.HasValue == true &&

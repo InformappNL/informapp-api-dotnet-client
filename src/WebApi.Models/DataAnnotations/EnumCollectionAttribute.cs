@@ -114,7 +114,12 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
             return IsValid;
         }
 
-        private class Set<T>
+        private interface ISet<T>
+        {
+            bool Contains(T key);
+        }
+
+        private class Set<T> : ISet<T>
         {
             private static readonly HashSet<T> _hashSet = GetHashSet();
 

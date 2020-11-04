@@ -61,7 +61,7 @@ namespace Informapp.InformSystem.WebApi.Client.Validators
             }
         }
 
-        private void ValidateInstance(object instance)
+        private static void ValidateInstance(object instance)
         {
             var context = new ValidationContext(instance, null, null);
 
