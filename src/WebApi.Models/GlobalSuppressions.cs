@@ -7,6 +7,10 @@ namespace Informapp
 {
     internal static class GlobalSuppressions
     {
-        public const string ResourceNameSpace = nameof(Informapp) + "." + nameof(InformSystem) + "." + nameof(InformSystem.WebApi) + "." + nameof(InformSystem.WebApi.Models);
+        public const string ResourceNameSpace =
+            nameof(Informapp) + "." +
+            nameof(InformSystem) + "." +
+            nameof(InformSystem.WebApi) + "." +
+            nameof(InformSystem.WebApi.Models);
     }
 }
