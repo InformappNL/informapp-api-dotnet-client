@@ -9,7 +9,7 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
     public abstract class ExampleAttribute : Attribute
     {
         /// <summary>Initializes a new instance of the <see cref="ExampleAttribute"/> class.</summary>
-        internal ExampleAttribute()
+        protected ExampleAttribute()
         {
 
         }
