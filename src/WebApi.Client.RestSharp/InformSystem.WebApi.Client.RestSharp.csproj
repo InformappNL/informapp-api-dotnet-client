@@ -35,7 +35,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>WebApi.Client.RestSharp.xml</DocumentationFile>
-    <CodeAnalysisRuleSet>InformSystem.WebApi.Client.RestSharp.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\projectrules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -45,7 +45,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>WebApi.Client.RestSharp.xml</DocumentationFile>
-    <CodeAnalysisRuleSet>InformSystem.WebApi.Client.RestSharp.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\projectrules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -103,8 +103,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\ProjectRules.ruleset">
+      <Link>ProjectRules.ruleset</Link>
+    </None>
     <None Include="App.config" />
-    <None Include="InformSystem.WebApi.Client.RestSharp.ruleset" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>

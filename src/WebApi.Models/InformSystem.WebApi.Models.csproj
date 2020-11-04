@@ -35,7 +35,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>WebApi.Models.xml</DocumentationFile>
-    <CodeAnalysisRuleSet>InformSystem.WebApi.Models.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\projectrules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -45,7 +45,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>WebApi.Models.xml</DocumentationFile>
-    <CodeAnalysisRuleSet>InformSystem.WebApi.Models.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\projectrules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -372,8 +372,10 @@
     <Content Include="WebApi.Models.xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\ProjectRules.ruleset">
+      <Link>ProjectRules.ruleset</Link>
+    </None>
     <None Include="App.config" />
-    <None Include="InformSystem.WebApi.Models.ruleset" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

@@ -36,7 +36,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>WebApi.Client.Sample.xml</DocumentationFile>
-    <CodeAnalysisRuleSet>InformSystem.WebApi.Client.Sample.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\projectrules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,7 +47,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>WebApi.Client.Sample.xml</DocumentationFile>
-    <CodeAnalysisRuleSet>InformSystem.WebApi.Client.Sample.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\projectrules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>
@@ -191,11 +191,13 @@
     <Compile Include="WebApiClientSampleProject.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\ProjectRules.ruleset">
+      <Link>ProjectRules.ruleset</Link>
+    </None>
     <None Include="App.config" />
     <None Include="AppSettings.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="InformSystem.WebApi.Client.Sample.ruleset" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
