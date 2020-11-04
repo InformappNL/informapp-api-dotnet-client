@@ -44,7 +44,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorat
 
             var client = _clientFactory.Create(request);
 
-            client.UseSerializer(_serializer);
+            client.UseSerializer(() => _serializer);
 
             return client;
         }
