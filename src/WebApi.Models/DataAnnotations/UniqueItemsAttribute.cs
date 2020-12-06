@@ -97,7 +97,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
                     ignoreCase = true;
                     break;
                 default:
-                    throw new InvalidOperationException("Unsupported comparison: " + comparison);
+                    throw new ArgumentException("Unsupported comparison: " + comparison, nameof(comparison));
             }
 
             IgnoreCase = ignoreCase;
