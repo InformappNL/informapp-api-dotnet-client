@@ -15,7 +15,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
 
         private static async Task Main()
         {
-            CancellationToken cancellationToken;
+            var cancellationToken = default(CancellationToken);
 
             try
             {
