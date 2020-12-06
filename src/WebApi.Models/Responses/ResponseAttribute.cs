@@ -20,6 +20,9 @@ namespace Informapp.InformSystem.WebApi.Models.Responses
         /// </summary>
         public Type Model { get; }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ResponseAttribute"/> class.
+        /// </summary>
         public ResponseAttribute(
             HttpStatusCode statusCode,
             Type model)

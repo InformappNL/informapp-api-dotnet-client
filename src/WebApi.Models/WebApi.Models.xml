@@ -1468,6 +1468,11 @@
             The model type
             </summary>
         </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Responses.ResponseAttribute.#ctor(System.Net.HttpStatusCode,System.Type)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.Responses.ResponseAttribute"/> class.
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Responses.ResponseHeaderConstants">
             <summary>
             Response header constants
