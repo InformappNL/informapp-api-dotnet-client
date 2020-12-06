@@ -32,7 +32,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
                 return true;
             }
 
-            if (value is string str && Uri.TryCreate(str, UriKind.Absolute, out uri))
+            if (value is string str && Uri.TryCreate(str, UriKind.Absolute, out _))
             {
                 return true;
             }

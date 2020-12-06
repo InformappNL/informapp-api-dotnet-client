@@ -109,7 +109,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
             {
                 message = string.Format(
                     CultureInfo.InvariantCulture,
-                    "The file name must be between {1} and {2} characters in length",
+                    "The file name must be between {0} and {1} characters in length",
                     MinimumLength, MaximumLength);
             }
             else

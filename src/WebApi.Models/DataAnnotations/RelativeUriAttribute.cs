@@ -34,7 +34,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
                 return true;
             }
 
-            if (value is string str && Uri.TryCreate(str, UriKind.Relative, out uri))
+            if (value is string str && Uri.TryCreate(str, UriKind.Relative, out _))
             {
                 return true;
             }

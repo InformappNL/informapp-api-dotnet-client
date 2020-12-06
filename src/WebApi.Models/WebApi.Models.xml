@@ -1338,11 +1338,6 @@
             Path pattern
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Http.PathAttribute.Arguments">
-            <summary>
-            Path arguments
-            </summary>
-        </member>
         <member name="M:Informapp.InformSystem.WebApi.Models.Http.PathAttribute.#ctor(System.String)">
             <summary>
             Create instance with the specified pattern
@@ -1350,17 +1345,6 @@
             <param name="pattern">Path pattern</param>
             <exception cref="T:System.ArgumentNullException"><paramref name="pattern"/> is null</exception>
             <exception cref="T:System.ArgumentException"><paramref name="pattern"/> is empty</exception>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Models.Http.PathAttribute.#ctor(System.String,System.String[])">
-            <summary>
-            Create instance with the specified pattern and arguments
-            </summary>
-            <param name="pattern">Path pattern</param>
-            <param name="arguments">Path arguments</param>
-            <exception cref="T:System.ArgumentNullException"><paramref name="pattern"/> is null</exception>
-            <exception cref="T:System.ArgumentNullException"><paramref name="arguments"/> is null</exception>
-            <exception cref="T:System.ArgumentException"><paramref name="pattern"/> is empty</exception>
-            <exception cref="T:System.ArgumentException"><paramref name="arguments"/> is empty</exception>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Http.PathParameterAttribute">
             <summary>
