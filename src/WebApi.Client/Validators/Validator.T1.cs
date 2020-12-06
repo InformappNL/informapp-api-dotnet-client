@@ -112,37 +112,6 @@ namespace Informapp.InformSystem.WebApi.Client.Validators
             }
         }
 
-        private void ValidateFields(object instance, int nextDepth, int maxDepth)
-        {
-            var type = instance.GetType();
-
-            if (type.IsClass == false)
-            {
-                return;
-            }
-
-            var fields = type.GetFields(BindingFlags.Instance | BindingFlags.Public)
-                .Where(x => x.FieldType.IsClass == true || x.FieldType.IsInterface == true)
-                .Where(x => x.FieldType != typeof(string))
-                .Where(x => x.FieldType != typeof(Uri))
-                .Where(x => x.FieldType.IsPrimitive == false)
-                .Where(x => x.FieldType.IsEnum == false)
-                .Where(x => x.FieldType.IsValueType == false)
-                .ToList();
-
-            foreach (var field in fields)
-            {
-                var value = field.GetValue(instance);
-
-                if (value == null)
-                {
-                    continue;
-                }
-
-                ValidatePropertyValue(value, nextDepth, maxDepth);
-            }
-        }
-
         private void ValidatePropertyValue(object instance, int nextDepth, int maxDepth)
         {
             if (instance is IEnumerable collection)

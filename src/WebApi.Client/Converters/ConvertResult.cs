@@ -85,7 +85,7 @@ namespace Informapp.InformSystem.WebApi.Client.Converters
         /// <returns>A new instance of <see cref="ConvertResult{T}"/></returns>
         public static ConvertResult<T> Empty<T>()
         {
-            return new ConvertResult<T>(default(T), hasValue: false);
+            return new ConvertResult<T>(default, hasValue: false);
         }
 
         /// <summary>

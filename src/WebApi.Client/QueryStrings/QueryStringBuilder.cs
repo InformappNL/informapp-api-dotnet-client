@@ -21,12 +21,15 @@ namespace Informapp.InformSystem.WebApi.Client.QueryStrings
 
         private static JsonSerializer GetSerializer()
         {
-            var serializer = new JsonSerializer();
+            var contractResolver = new QueryStringContractResolver();
 
-            serializer.NullValueHandling = NullValueHandling.Ignore;
-            serializer.DateParseHandling = DateParseHandling.None;
+            var serializer = new JsonSerializer
+            {
+                NullValueHandling = NullValueHandling.Ignore,
+                DateParseHandling = DateParseHandling.None,
 
-            serializer.ContractResolver = new QueryStringContractResolver();
+                ContractResolver = contractResolver,
+            };
 
             return serializer;
         }

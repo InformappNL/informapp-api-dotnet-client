@@ -58,7 +58,7 @@ namespace Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators
                 Require.NotNull(expiresIn, nameof(expiresIn));
 
                 // Lower expiration to reduce the chance of using an expired token
-                expiresIn = expiresIn * 0.9D;
+                expiresIn *= 0.9D;
 
                 var now = _dateTimeProvider.UtcNow;
 
