@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D8C6774D-2C39-40F4-9BB3-5696F1CFC8AF}"
 	ProjectSection(SolutionItems) = preProject
-		src\cleanup.config = src\cleanup.config
+		src\Cleanup.targets = src\Cleanup.targets
 		src\Directory.Build.targets = src\Directory.Build.targets
 		src\ProjectRules.ruleset = src\ProjectRules.ruleset
 		src\SharedAssemblyInfo.cs = src\SharedAssemblyInfo.cs
@@ -27,7 +27,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D8C6774D-2C3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{07CBDED1-DB37-42E9-B22F-B4B96097C332}"
 	ProjectSection(SolutionItems) = preProject
-		samples\cleanup.config = samples\cleanup.config
+		samples\Cleanup.targets = samples\Cleanup.targets
 		samples\Directory.Build.targets = samples\Directory.Build.targets
 		samples\ProjectRules.ruleset = samples\ProjectRules.ruleset
 		samples\SharedAssemblyInfo.cs = samples\SharedAssemblyInfo.cs
