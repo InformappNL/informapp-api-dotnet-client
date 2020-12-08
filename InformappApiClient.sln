@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformSystem.WebApi.Client", "src\WebApi.Client\InformSystem.WebApi.Client.csproj", "{A6B89D51-0541-4236-9A0C-3AF9C5300E52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InformSystem.WebApi.Client", "src\WebApi.Client\InformSystem.WebApi.Client.csproj", "{A6B89D51-0541-4236-9A0C-3AF9C5300E52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformSystem.WebApi.Client.RestSharp", "src\WebApi.Client.RestSharp\InformSystem.WebApi.Client.RestSharp.csproj", "{C5EB5B12-420F-47FD-9089-2B2EC188F7CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InformSystem.WebApi.Client.RestSharp", "src\WebApi.Client.RestSharp\InformSystem.WebApi.Client.RestSharp.csproj", "{C5EB5B12-420F-47FD-9089-2B2EC188F7CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformSystem.WebApi.Models", "src\WebApi.Models\InformSystem.WebApi.Models.csproj", "{7CF0120C-2F63-408C-B761-0F4946F0E0D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InformSystem.WebApi.Models", "src\WebApi.Models\InformSystem.WebApi.Models.csproj", "{7CF0120C-2F63-408C-B761-0F4946F0E0D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformSystem.WebApi.Client.Sample", "samples\WebApi.Client.Sample\InformSystem.WebApi.Client.Sample.csproj", "{EC0ECB70-5F32-4F7A-B42E-63C82DAF08C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InformSystem.WebApi.Client.Sample", "samples\WebApi.Client.Sample\InformSystem.WebApi.Client.Sample.csproj", "{EC0ECB70-5F32-4F7A-B42E-63C82DAF08C0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C5E76A68-26DB-481E-9470-22A29DECE90B}"
 	ProjectSection(SolutionItems) = preProject
