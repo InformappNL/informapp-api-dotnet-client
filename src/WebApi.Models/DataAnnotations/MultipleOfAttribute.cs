@@ -96,8 +96,8 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         {
             string message = string.Format(
                 CultureInfo.CurrentCulture,
-                ErrorMessage, 
-                name, 
+                ErrorMessage,
+                name,
                 Value);
 
             return message;
