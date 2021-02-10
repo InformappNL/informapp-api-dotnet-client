@@ -52,9 +52,10 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.Up
 @"File to upload.
 The file must be an xslx file containing one work sheet.
 The first row must contain the names of the columns.
-The first column must be named Id and contain unique values.
+The column named Id is optional, it will be added if not present, and must contain unique values.
 The names of columns may only contain: a-z, A-Z, and 0-9.
-The Id values may only contain: a-z, A-Z, 0-9, and the character -";
+The Id values may only contain: a-z, A-Z, 0-9, and the character '-'.
+The records in the datasource will be text sorted by Id value.";
 
         /// <summary>
         /// Allowed file types
