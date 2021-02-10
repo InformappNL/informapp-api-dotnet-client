@@ -32,5 +32,10 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
 
         internal const int MinOrder = 0;
         internal const int MaxOrder = int.MaxValue;
+
+        internal const decimal MaxDecimal = 99999999999999999999.99999999M;
+        internal const decimal MinDecimal = -99999999999999999999.99999999M;
+        internal const string MaxDecimalString = "99999999999999999999.99999999";
+        internal const string MinDecimalString = "-99999999999999999999.99999999";
     }
 }

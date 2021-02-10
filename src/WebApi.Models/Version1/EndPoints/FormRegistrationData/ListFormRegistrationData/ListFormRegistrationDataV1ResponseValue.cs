@@ -39,6 +39,10 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         /// </summary>
         [DataMember]
         [ExampleString(ExampleStringKind.Decimal, "7.5")]
+        [Range(
+            typeof(decimal),
+            FormRegistrationDataV1Constants.MinDecimalString,
+            FormRegistrationDataV1Constants.MaxDecimalString)]
         public decimal? Decimal { get; set; }
 
         /// <summary>
