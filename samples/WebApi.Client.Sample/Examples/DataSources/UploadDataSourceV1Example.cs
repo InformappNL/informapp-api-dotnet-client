@@ -68,6 +68,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources
             var stream = new MemoryStream();
 
             using (var package = new ExcelPackage())
+            // Safe to dispose sheet, since it is disposed after saving to stream
             using (var sheet = package.Workbook.Worksheets.Add(WorkSheetName))
             {
                 package.Compatibility.IsWorksheets1Based = false;
