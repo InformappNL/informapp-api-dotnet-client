@@ -260,13 +260,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version2.Filters
         [ExampleMember]
         public T? LessThanOrEqual { get; set; }
 
-        /// <summary>
-        /// Has value
-        /// </summary>
-        [DataMember]
-        [ExampleValue(true)]
-        public bool? HasValue { get; set; }
-
 
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]

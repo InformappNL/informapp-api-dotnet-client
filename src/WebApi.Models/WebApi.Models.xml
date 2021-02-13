@@ -6066,29 +6066,14 @@
             DateTimeOffset filter
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.DateTimeOffsetV1Filter.GreaterThan">
-            <summary>
-            Greater than
-            </summary>
-        </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.DateTimeOffsetV1Filter.GreaterThanOrEqual">
             <summary>
             Greater than or equal
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.DateTimeOffsetV1Filter.LessThan">
-            <summary>
-            Less than
-            </summary>
-        </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.DateTimeOffsetV1Filter.LessThanOrEqual">
             <summary>
             Less than or equal
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.DateTimeOffsetV1Filter.HasValue">
-            <summary>
-            Has value
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Filters.EnumV1Filter`1">
@@ -6097,34 +6082,9 @@
             </summary>
             <typeparam name="T"></typeparam>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.EnumV1Filter`1.Kind">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.EnumV1Filter`1.Equal">
             <summary>
-            Kind
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.EnumV1Filter`1.Values">
-            <summary>
-            Values
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.EnumV1Filter`1.HasValue">
-            <summary>
-            Has value
-            </summary>
-        </member>
-        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Filters.EnumV1FilterKind">
-            <summary>
-            Enum filter kind
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Filters.EnumV1FilterKind.Any">
-            <summary>
-            Any
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Filters.EnumV1FilterKind.None">
-            <summary>
-            None
+            Equal
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Filters.GuidV1Filter">
@@ -6132,19 +6092,9 @@
             Guid filter
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.GuidV1Filter.ValuesContains">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.GuidV1Filter.Equal">
             <summary>
-            Filter records with (true) or without (false) a value from Values
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.GuidV1Filter.Values">
-            <summary>
-            Values
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.GuidV1Filter.HasValue">
-            <summary>
-            Has value
+            Equal
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Filters.IdV1Filter">
@@ -6155,11 +6105,6 @@
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.IdV1Filter.Equal">
             <summary>
             Equal
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.IdV1Filter.HasValue">
-            <summary>
-            Has value
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Filters.SByteV1Filter">
@@ -6243,11 +6188,6 @@
             Less than or equal
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.NumericV1Filter`1.HasValue">
-            <summary>
-            Has value
-            </summary>
-        </member>
         <member name="M:Informapp.InformSystem.WebApi.Models.Version1.Filters.NumericV1Filter`1.Add(System.String,System.Object)">
             <summary>
             Add example
@@ -6270,11 +6210,6 @@
             String filter
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.StringV1Filter.Contains">
-            <summary>
-            Contains
-            </summary>
-        </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.StringV1Filter.Equal">
             <summary>
             Equals
@@ -6285,24 +6220,9 @@
             Starts with
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.StringV1Filter.EndsWith">
-            <summary>
-            Ends with
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.StringV1Filter.HasValue">
-            <summary>
-            Has value
-            </summary>
-        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.Filters.TimeSpanV1Filter">
             <summary>
             TimeSpan filter
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.TimeSpanV1Filter.GreaterThan">
-            <summary>
-            Greater than
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.TimeSpanV1Filter.GreaterThanOrEqual">
@@ -6310,19 +6230,9 @@
             Greater than or equal
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.TimeSpanV1Filter.LessThan">
-            <summary>
-            Less than
-            </summary>
-        </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.TimeSpanV1Filter.LessThanOrEqual">
             <summary>
             Less than or equal
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.TimeSpanV1Filter.HasValue">
-            <summary>
-            Has value
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version2.Constants.Version2Constants">
@@ -6747,29 +6657,14 @@
             DateTimeOffset filter
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.DateTimeOffsetV2Filter.GreaterThan">
-            <summary>
-            Greater than
-            </summary>
-        </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.DateTimeOffsetV2Filter.GreaterThanOrEqual">
             <summary>
             Greater than or equal
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.DateTimeOffsetV2Filter.LessThan">
-            <summary>
-            Less than
-            </summary>
-        </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.DateTimeOffsetV2Filter.LessThanOrEqual">
             <summary>
             Less than or equal
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.DateTimeOffsetV2Filter.HasValue">
-            <summary>
-            Has value
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version2.Filters.EnumV2Filter`1">
@@ -6778,34 +6673,9 @@
             </summary>
             <typeparam name="T"></typeparam>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.EnumV2Filter`1.Kind">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.EnumV2Filter`1.Equal">
             <summary>
-            Kind
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.EnumV2Filter`1.Values">
-            <summary>
-            Values
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.EnumV2Filter`1.HasValue">
-            <summary>
-            Has value
-            </summary>
-        </member>
-        <member name="T:Informapp.InformSystem.WebApi.Models.Version2.Filters.EnumV2FilterKind">
-            <summary>
-            Enum filter kind
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version2.Filters.EnumV2FilterKind.Any">
-            <summary>
-            Any
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version2.Filters.EnumV2FilterKind.None">
-            <summary>
-            None
+            Equal
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version2.Filters.GuidV2Filter">
@@ -6813,19 +6683,9 @@
             Guid filter
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.GuidV2Filter.ValuesContains">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.GuidV2Filter.Equal">
             <summary>
-            Filter records with (true) or without (false) a value from Values
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.GuidV2Filter.Values">
-            <summary>
-            Values
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.GuidV2Filter.HasValue">
-            <summary>
-            Has value
+            Equal
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version2.Filters.IdV2Filter">
@@ -6836,11 +6696,6 @@
         <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.IdV2Filter.Equal">
             <summary>
             Equal
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.IdV2Filter.HasValue">
-            <summary>
-            Has value
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version2.Filters.SByteV2Filter">
@@ -6924,11 +6779,6 @@
             Less than or equal
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.NumericV2Filter`1.HasValue">
-            <summary>
-            Has value
-            </summary>
-        </member>
         <member name="M:Informapp.InformSystem.WebApi.Models.Version2.Filters.NumericV2Filter`1.Add(System.String,System.Object)">
             <summary>
             Add example
@@ -6951,11 +6801,6 @@
             String filter
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.StringV2Filter.Contains">
-            <summary>
-            Contains
-            </summary>
-        </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.StringV2Filter.Equal">
             <summary>
             Equals
@@ -6966,24 +6811,9 @@
             Starts with
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.StringV2Filter.EndsWith">
-            <summary>
-            Ends with
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.StringV2Filter.HasValue">
-            <summary>
-            Has value
-            </summary>
-        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version2.Filters.TimeSpanV2Filter">
             <summary>
             TimeSpan filter
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.TimeSpanV2Filter.GreaterThan">
-            <summary>
-            Greater than
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.TimeSpanV2Filter.GreaterThanOrEqual">
@@ -6991,19 +6821,9 @@
             Greater than or equal
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.TimeSpanV2Filter.LessThan">
-            <summary>
-            Less than
-            </summary>
-        </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.TimeSpanV2Filter.LessThanOrEqual">
             <summary>
             Less than or equal
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.TimeSpanV2Filter.HasValue">
-            <summary>
-            Has value
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.WebApiModelsProject">

@@ -17,6 +17,5 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.Filters
         [DataMember]
         [ExampleString(ExampleStringKind.Guid, "D16F1006-0DF3-4D8F-9111-AAB7FEA69259")]
         public Guid? Equal { get; set; }
-
     }
 }

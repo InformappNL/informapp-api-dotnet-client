@@ -11,17 +11,16 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.Filters
         {
             if (ExampleAttributeConfiguration.Enabled == true)
             {
-                var values = Enum.GetValues(typeof(T))
+                var value = Enum.GetValues(typeof(T))
                     .OfType<T>()
-                    .Take(2)
-                    .ToList();
+                    .FirstOrDefault();
 
                 var example = new EnumV1Filter<T>
                 {
-                    Values = values,
+                    Equal = value,
                 };
 
-                _container.Add(nameof(example.Values), example.Values);
+                _container.Add(nameof(example.Equal), example.Equal);
             }
         }
 

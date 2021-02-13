@@ -11,13 +11,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.Filters
     public class StringV1Filter
     {
         /// <summary>
-        /// Contains
-        /// </summary>
-        [DataMember]
-        [ExampleValue("string")]
-        public string Contains { get; set; }
-
-        /// <summary>
         /// Equals
         /// </summary>
         [DataMember]
@@ -30,19 +23,5 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.Filters
         [DataMember]
         [ExampleValue("string")]
         public string StartsWith { get; set; }
-
-        /// <summary>
-        /// Ends with
-        /// </summary>
-        [DataMember]
-        [ExampleValue("string")]
-        public string EndsWith { get; set; }
-
-        /// <summary>
-        /// Has value
-        /// </summary>
-        [DataMember]
-        [ExampleValue(true)]
-        public bool? HasValue { get; set; }
     }
 }
