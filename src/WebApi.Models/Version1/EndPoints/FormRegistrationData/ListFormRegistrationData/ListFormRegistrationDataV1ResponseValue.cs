@@ -1,4 +1,5 @@
-﻿using Informapp.InformSystem.WebApi.Models.ExampleValues;
+﻿using Informapp.InformSystem.WebApi.Models.DataAnnotations;
+using Informapp.InformSystem.WebApi.Models.ExampleValues;
 using Informapp.InformSystem.WebApi.Models.Version1.Constants;
 using System;
 using System.ComponentModel.DataAnnotations;
@@ -38,11 +39,10 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         /// Decimal
         /// </summary>
         [DataMember]
-        [ExampleString(ExampleStringKind.Decimal, "7.5")]
-        [Range(
-            typeof(decimal),
+        [DecimalRange(
             FormRegistrationDataV1Constants.MinDecimalString,
             FormRegistrationDataV1Constants.MaxDecimalString)]
+        [ExampleString(ExampleStringKind.Decimal, "7.5")]
         public decimal? Decimal { get; set; }
 
         /// <summary>
