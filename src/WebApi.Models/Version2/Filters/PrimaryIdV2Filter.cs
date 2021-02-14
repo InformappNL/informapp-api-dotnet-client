@@ -14,7 +14,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version2.Filters
         /// <summary>
         /// Equal
         /// </summary>
-        [DataMember]
+        [DataMember(Name = FilterV2Constants.Equal)]
         [ExampleString(ExampleStringKind.Guid, "FC4225C2-B86C-4CE7-8D8B-69199C6CF1F1")]
         public Guid? Equal { get; set; }
     }

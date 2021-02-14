@@ -16,7 +16,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.Filters
         /// <summary>
         /// Equal
         /// </summary>
-        [DataMember]
+        [DataMember(Name = FilterV1Constants.Equal)]
         [ExampleMember]
         public T? Equal { get; set; }
     }

@@ -249,14 +249,14 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.Filters
         /// <summary>
         /// Greater than or equal
         /// </summary>
-        [DataMember]
+        [DataMember(Name = FilterV1Constants.GreaterThanOrEqual)]
         [ExampleMember]
         public T? GreaterThanOrEqual { get; set; }
 
         /// <summary>
         /// Less than or equal
         /// </summary>
-        [DataMember]
+        [DataMember(Name = FilterV1Constants.LessThanOrEqual)]
         [ExampleMember]
         public T? LessThanOrEqual { get; set; }
 
