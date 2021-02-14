@@ -103,7 +103,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
 
                 Create<ListFormRegistrationEmailV1Example>(true),
 
-                Create<ListFormRegistrationDataV1Example>(true),
+                Create<ListFormRegistrationDataForRegistrationV1Example>(true),
             };
 
             return examples;
