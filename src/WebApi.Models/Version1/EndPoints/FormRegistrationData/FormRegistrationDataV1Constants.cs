@@ -6,6 +6,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         private const string Route = "api/v1/forms/registrations/data";
 
         internal const string ListRoute = Route;
+        internal const string ListRouteForRegistration = Route + "/{" + nameof(ListFormRegistrationDataForRegistrationV1Request.FormRegistrationId) + "}";
 
         // Max length on requests
         internal const int RequestNameLength = 100;

@@ -3490,6 +3490,236 @@
             Value
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Request">
+            <summary>
+            List form registration data for registration request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Request.FormRegistrationId">
+            <summary>
+            Form registration id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Request.Select">
+            <summary>
+            Select columns
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Request.PageNumber">
+            <summary>
+            Page number
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Request.PageSize">
+            <summary>
+            Number of records per page
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Response">
+            <summary>
+            List form registration data for registration response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Response.FormRegistrationDataElements">
+            <summary>
+            List of form registration data element
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Response.Total">
+            <summary>
+            Total number of records matching the request
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseElement">
+            <summary>
+            Form registration data element
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseElement.FormRegistrationDataElementId">
+            <summary>
+            Form registration data element Id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseElement.ParentFormRegistrationDataElementId">
+            <summary>
+            Parent form registration data element Id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseElement.Depth">
+            <summary>
+            Depth of the element within a form registration, starting at one.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseElement.Index">
+            <summary>
+            Zero based index of the element when the parent element is of kind array.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseElement.Order">
+            <summary>
+            Order of the element within a form registration, starting at zero.
+            
+            Order is unique within a form registration.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseElement.Kind">
+            <summary>
+            Kind of element
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseElement.Name">
+            <summary>
+            Name of the element
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseElement.FullName">
+            <summary>
+            FullName is a dot separated list of element names starting from the root of the tree to this element.
+            
+            Arrays are represented with square brackets (i.e. []).
+            
+            Fields that have been filled multiple times (e.g. fields on subforms, multi-select fields) will have the same fullname.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseElement.Path">
+            <summary>
+            Path is a dot separated list of element names starting from the root of the tree to this element.
+            
+            Array items are represented with the index between square brackets (e.g. [1]).
+            
+            Path is unique within a form registration.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseElement.Value">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseValue">
+            <summary>
+            Form registration data value
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseValue.Text">
+            <summary>
+            The text value as entered on the form
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseValue.Boolean">
+            <summary>
+            Boolean
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseValue.Integer">
+            <summary>
+            Integer
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseValue.Decimal">
+            <summary>
+            Decimal
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseValue.Date">
+            <summary>
+            Date
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseValue.Time">
+            <summary>
+            Time
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseValue.Uuid">
+            <summary>
+            Uuid
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select">
+            <summary>
+            Select columns
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select.All">
+            <summary>
+            All
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select.ParentFormRegistrationDataElementId">
+            <summary>
+            ParentFormRegistrationDataElementId
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select.Depth">
+            <summary>
+            Depth
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select.Index">
+            <summary>
+            Index
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select.Order">
+            <summary>
+            Order
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select.Kind">
+            <summary>
+            Kind
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select.Path">
+            <summary>
+            Path
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select.ValueText">
+            <summary>
+            Value text
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select.ValueBoolean">
+            <summary>
+            Value boolean
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select.ValueInteger">
+            <summary>
+            Value integer
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select.ValueDecimal">
+            <summary>
+            Value decimal
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select.ValueDate">
+            <summary>
+            Value date
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select.ValueTime">
+            <summary>
+            Value time
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select.ValueUuid">
+            <summary>
+            Value UUID
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select.FullName">
+            <summary>
+            FullName
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Filter">
             <summary>
             List form registration data request filter
