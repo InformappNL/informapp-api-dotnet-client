@@ -6,6 +6,7 @@ using Informapp.InformSystem.WebApi.Models.Responses;
 using Informapp.InformSystem.WebApi.Models.Sorting;
 using Informapp.InformSystem.WebApi.Models.Version1.Constants;
 using Informapp.InformSystem.WebApi.Models.Version1.Errors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -19,6 +20,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
     /// </summary>
     [DataContract(Namespace = Version1Constants.Namespace)]
     [HttpMethod(HttpMethod.Get)]
+    [Obsolete("Superseeded by " + nameof(ListFormRegistrationDataForRegistrationV1Request))]
     [Path(FormRegistrationDataV1Constants.ListRoute)]
     [Response(HttpStatusCode.BadRequest, typeof(BadRequestV1Response))]
     [Response(HttpStatusCode.Forbidden, typeof(ForbiddenV1Response))]
