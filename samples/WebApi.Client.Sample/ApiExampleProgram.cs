@@ -3,7 +3,6 @@ using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers;
-using Informapp.InformSystem.WebApi.Client.Sample.Examples.BusinessGroupCredits;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.BusinessGroups;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Customers;
@@ -87,7 +86,6 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
                 Create<RemoveAppGroupMemberV1Example>(false),
 
                 Create<ListBusinessGroupV1Example>(true),
-                Create<ListBusinessGroupCreditCreditV1Example>(true),
 
                 Create<ListCustomerV1Example>(true),
 
