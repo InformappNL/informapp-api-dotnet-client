@@ -2073,16 +2073,6 @@
             List app group request filter
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.ListAppGroup.ListAppGroupV1Filter.Name">
-            <summary>
-            Filter records by name
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.ListAppGroup.ListAppGroupV1Filter.Description">
-            <summary>
-            Filter records by description
-            </summary>
-        </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.ListAppGroup.ListAppGroupV1Filter.BusinessGroupId">
             <summary>
             Filter records by business group id
@@ -2350,11 +2340,6 @@
             List app user request filter
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.ListAppUser.ListAppUserV1Filter.Email">
-            <summary>
-            Filter records by email
-            </summary>
-        </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.ListAppUser.ListAppUserV1Filter.BusinessGroupId">
             <summary>
             Filter records by business group id
@@ -2515,21 +2500,6 @@
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Filter">
             <summary>
             List business group credit request filter
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Filter.Name">
-            <summary>
-            Filter records by name
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Filter.Description">
-            <summary>
-            Filter records by description
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Filter.Number">
-            <summary>
-            Filter records by number
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupCredits.ListBusinessGroupCredit.ListBusinessGroupCreditV1Filter.CustomerId">
@@ -2697,21 +2667,6 @@
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroups.ListBusinessGroup.ListBusinessGroupV1Filter">
             <summary>
             List business group request filter
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroups.ListBusinessGroup.ListBusinessGroupV1Filter.Name">
-            <summary>
-            Filter records by name
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroups.ListBusinessGroup.ListBusinessGroupV1Filter.Description">
-            <summary>
-            Filter records by description
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroups.ListBusinessGroup.ListBusinessGroupV1Filter.Number">
-            <summary>
-            Filter records by number
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroups.ListBusinessGroup.ListBusinessGroupV1Filter.CustomerId">
@@ -2914,21 +2869,6 @@
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Customers.ListCustomer.ListCustomerV1Filter">
             <summary>
             List customer request filter
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Customers.ListCustomer.ListCustomerV1Filter.Name">
-            <summary>
-            Filter records by name
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Customers.ListCustomer.ListCustomerV1Filter.Description">
-            <summary>
-            Filter records by description
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Customers.ListCustomer.ListCustomerV1Filter.Number">
-            <summary>
-            Filter records by number
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Customers.ListCustomer.ListCustomerV1Filter.CreateDate">
@@ -3171,16 +3111,6 @@
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Filter">
             <summary>
             List data source request filter
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Filter.Name">
-            <summary>
-            Filter records by name
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Filter.Description">
-            <summary>
-            Filter records by description
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Filter.BusinessGroupId">
@@ -3735,76 +3665,6 @@
             Filter records by form id
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Filter.SerialNumber">
-            <summary>
-            Filter records by serial number
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Filter.RegistrationDate">
-            <summary>
-            Filter records by registration date
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Filter.Depth">
-            <summary>
-            Filter records by depth
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Filter.Index">
-            <summary>
-            Filter records by index
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Filter.Order">
-            <summary>
-            Filter records by order
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Filter.Name">
-            <summary>
-            Filter records by name
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Filter.FullName">
-            <summary>
-            Filter records by fullname
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Filter.Path">
-            <summary>
-            Filter records by path
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Filter.Text">
-            <summary>
-            Filter records by text
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Filter.Integer">
-            <summary>
-            Filter records by integer
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Filter.Decimal">
-            <summary>
-            Filter records by decimal
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Filter.Date">
-            <summary>
-            Filter records by date
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Filter.Time">
-            <summary>
-            Filter records by time
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Filter.Uuid">
-            <summary>
-            Filter records by uuid
-            </summary>
-        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Request">
             <summary>
             List form registration data request
@@ -4092,11 +3952,6 @@
             Filter records by form id
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmails.ListFormRegistrationEmail.ListFormRegistrationEmailV1Filter.SerialNumber">
-            <summary>
-            Filter records by serial number
-            </summary>
-        </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmails.ListFormRegistrationEmail.ListFormRegistrationEmailV1Filter.RegistrationDate">
             <summary>
             Filter records by registration date
@@ -4227,31 +4082,6 @@
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1Filter">
             <summary>
             List form registration stats request filter
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1Filter.Name">
-            <summary>
-            Filter records by name
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1Filter.Description">
-            <summary>
-            Filter records by description
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1Filter.Number">
-            <summary>
-            Filter records by number
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1Filter.RegistrationCount">
-            <summary>
-            Filter records by registration count
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1Filter.HighestSerialNumber">
-            <summary>
-            Filter records by highest serial number
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1Filter.BusinessGroupId">
@@ -4651,21 +4481,6 @@
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Forms.ListForm.ListFormV1Filter">
             <summary>
             List form request filter
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Forms.ListForm.ListFormV1Filter.Name">
-            <summary>
-            Filter records by name
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Forms.ListForm.ListFormV1Filter.Description">
-            <summary>
-            Filter records by description
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Forms.ListForm.ListFormV1Filter.Number">
-            <summary>
-            Filter records by number
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Forms.ListForm.ListFormV1Filter.BusinessGroupId">

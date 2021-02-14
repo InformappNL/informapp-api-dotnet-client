@@ -11,36 +11,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
     public class ListFormRegistrationStatsV1Filter
     {
         /// <summary>
-        /// Filter records by name
-        /// </summary>
-        [DataMember]
-        public StringV1Filter Name { get; set; }
-
-        /// <summary>
-        /// Filter records by description
-        /// </summary>
-        [DataMember]
-        public StringV1Filter Description { get; set; }
-
-        /// <summary>
-        /// Filter records by number
-        /// </summary>
-        [DataMember]
-        public StringV1Filter Number { get; set; }
-
-        /// <summary>
-        /// Filter records by registration count
-        /// </summary>
-        [DataMember]
-        public Int32V1Filter RegistrationCount { get; set; }
-
-        /// <summary>
-        /// Filter records by highest serial number
-        /// </summary>
-        [DataMember]
-        public Int32V1Filter HighestSerialNumber { get; set; }
-
-        /// <summary>
         /// Filter records by business group id
         /// </summary>
         [DataMember]

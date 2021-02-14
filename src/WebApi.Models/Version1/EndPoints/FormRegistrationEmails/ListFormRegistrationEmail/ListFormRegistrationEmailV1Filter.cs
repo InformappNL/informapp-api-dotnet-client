@@ -23,12 +23,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         public IdV1Filter FormId { get; set; }
 
         /// <summary>
-        /// Filter records by serial number
-        /// </summary>
-        [DataMember]
-        public Int32V1Filter SerialNumber { get; set; }
-
-        /// <summary>
         /// Filter records by registration date
         /// </summary>
         [DataMember]

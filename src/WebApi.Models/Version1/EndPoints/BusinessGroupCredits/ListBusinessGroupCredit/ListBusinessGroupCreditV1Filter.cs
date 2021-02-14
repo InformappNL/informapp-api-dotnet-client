@@ -11,24 +11,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroupC
     public class ListBusinessGroupCreditV1Filter
     {
         /// <summary>
-        /// Filter records by name
-        /// </summary>
-        [DataMember]
-        public StringV1Filter Name { get; set; }
-
-        /// <summary>
-        /// Filter records by description
-        /// </summary>
-        [DataMember]
-        public StringV1Filter Description { get; set; }
-
-        /// <summary>
-        /// Filter records by number
-        /// </summary>
-        [DataMember]
-        public StringV1Filter Number { get; set; }
-
-        /// <summary>
         /// Filter records by customer id
         /// </summary>
         [DataMember]

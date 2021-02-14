@@ -11,24 +11,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Forms.ListForm
     public class ListFormV1Filter
     {
         /// <summary>
-        /// Filter records by name
-        /// </summary>
-        [DataMember]
-        public StringV1Filter Name { get; set; }
-
-        /// <summary>
-        /// Filter records by description
-        /// </summary>
-        [DataMember]
-        public StringV1Filter Description { get; set; }
-
-        /// <summary>
-        /// Filter records by number
-        /// </summary>
-        [DataMember]
-        public StringV1Filter Number { get; set; }
-
-        /// <summary>
         /// Filter records by business group id
         /// </summary>
         [DataMember]

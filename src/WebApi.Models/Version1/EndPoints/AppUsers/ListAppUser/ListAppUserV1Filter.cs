@@ -11,12 +11,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.ListA
     public class ListAppUserV1Filter
     {
         /// <summary>
-        /// Filter records by email
-        /// </summary>
-        [DataMember]
-        public StringV1Filter Email { get; set; }
-
-        /// <summary>
         /// Filter records by business group id
         /// </summary>
         [DataMember]
