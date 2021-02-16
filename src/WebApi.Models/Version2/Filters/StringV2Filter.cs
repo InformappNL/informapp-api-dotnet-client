@@ -13,7 +13,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version2.Filters
         /// <summary>
         /// Equals
         /// </summary>
-        [DataMember(Name = FilterV2Constants.Equal)]
+        [DataMember]
         [ExampleValue("string")]
         public string Equal { get; set; }
 

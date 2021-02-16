@@ -14,14 +14,14 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.Filters
         /// <summary>
         /// Greater than or equal
         /// </summary>
-        [DataMember(Name = FilterV1Constants.GreaterThanOrEqual)]
+        [DataMember]
         [ExampleConstant(ExampleConstantKind.TimeSpanMinValue)]
         public TimeSpan? GreaterThanOrEqual { get; set; }
 
         /// <summary>
         /// Less than or equal
         /// </summary>
-        [DataMember(Name = FilterV1Constants.LessThanOrEqual)]
+        [DataMember]
         [ExampleConstant(ExampleConstantKind.TimeSpanMaxValue)]
         public TimeSpan? LessThanOrEqual { get; set; }
     }
