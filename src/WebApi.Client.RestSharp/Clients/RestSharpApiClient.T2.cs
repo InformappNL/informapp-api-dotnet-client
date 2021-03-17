@@ -151,11 +151,12 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
                     })
                     .ToList();
 
-                response.Headers = new ResponseHeaders(headers);
+                response.Headers = new ResponseHeaders(headers)
+                {
+                    ContentLength = apiResponse.ContentLength,
 
-                response.Headers.ContentLength = apiResponse.ContentLength;
-
-                response.Headers.ContentType = apiResponse.ContentType;
+                    ContentType = apiResponse.ContentType
+                };
 
                 SetContentDispositionHeader(response, apiResponse);
             }
