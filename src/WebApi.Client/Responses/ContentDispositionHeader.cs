@@ -35,8 +35,8 @@ namespace Informapp.InformSystem.WebApi.Client.Responses
         /// </summary>
         public string DispositionType
         {
-            get { return _contentDisposition.DispositionType; }
-            set { _contentDisposition.DispositionType = value; }
+            get => _contentDisposition.DispositionType;
+            set => _contentDisposition.DispositionType = value;
         }
 
         /// <summary>
@@ -44,8 +44,8 @@ namespace Informapp.InformSystem.WebApi.Client.Responses
         /// </summary>
         public string FileName
         {
-            get { return _contentDisposition.FileName; }
-            set { _contentDisposition.FileName = value; }
+            get => _contentDisposition.FileName;
+            set => _contentDisposition.FileName = value;
         }
 
         /// <summary>
