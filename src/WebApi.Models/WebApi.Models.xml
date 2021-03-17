@@ -4941,6 +4941,61 @@
             Revoke form instruction response
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Users.ListUser.ListInformAppUserV1Request">
+            <summary>
+            List user request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Users.ListUser.ListInformAppUserV1Request.BusinessGroupId">
+            <summary>
+            Business group id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Users.ListUser.ListInformAppUserV1Request.PageNumber">
+            <summary>
+            Page number
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Users.ListUser.ListInformAppUserV1Request.PageSize">
+            <summary>
+            Number of records per page
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Users.ListUser.ListInformAppUserV1Response">
+            <summary>
+            List user response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Users.ListUser.ListInformAppUserV1Response.Users">
+            <summary>
+            List of users
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Users.ListUser.ListInformAppUserV1Response.Total">
+            <summary>
+            Total number of records matching the request
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Users.ListUser.ListInformAppUserV1ResponseUser">
+            <summary>
+            User
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Users.ListUser.ListInformAppUserV1ResponseUser.UserId">
+            <summary>
+            Instruction id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Users.ListUser.ListInformAppUserV1ResponseUser.AppUserId">
+            <summary>
+            App user id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Users.ListUser.ListInformAppUserV1ResponseUser.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog.CreateLogV1Request">
             <summary>
             Create log request
