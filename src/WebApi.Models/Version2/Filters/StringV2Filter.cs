@@ -11,7 +11,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version2.Filters
     public class StringV2Filter
     {
         /// <summary>
-        /// Equals
+        /// Equal
         /// </summary>
         [DataMember]
         [ExampleValue("string")]

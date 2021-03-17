@@ -6669,7 +6669,7 @@
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.StringV1Filter.Equal">
             <summary>
-            Equals
+            Equal
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.Filters.StringV1Filter.StartsWith">
@@ -7260,7 +7260,7 @@
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.StringV2Filter.Equal">
             <summary>
-            Equals
+            Equal
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version2.Filters.StringV2Filter.StartsWith">
