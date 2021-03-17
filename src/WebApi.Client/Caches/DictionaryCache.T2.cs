@@ -49,7 +49,7 @@ namespace Informapp.InformSystem.WebApi.Client.Caches
         {
             Argument.Required(key, nameof(key));
 
-            _dictionary.Remove(key);
+            _ = _dictionary.Remove(key);
         }
 
         /// <summary>

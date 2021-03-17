@@ -274,7 +274,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.Filters
         {
             if (ExampleAttributeConfiguration.Enabled == true)
             {
-                _container.Add(name, value);
+                _ = _container.Add(name, value);
             }
         }
 

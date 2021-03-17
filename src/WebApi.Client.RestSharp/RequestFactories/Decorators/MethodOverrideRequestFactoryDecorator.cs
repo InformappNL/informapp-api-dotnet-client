@@ -54,7 +54,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decora
             {
                 request.Context.Method = method;
 
-                apiRequest.AddHeader(HttpMethodOverride.HeaderName, method.Value.ToString());
+                _ = apiRequest.AddHeader(HttpMethodOverride.HeaderName, method.Value.ToString());
             }
 
             return apiRequest;

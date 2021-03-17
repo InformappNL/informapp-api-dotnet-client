@@ -22,7 +22,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.L
                     Dictionary = dictionary,
                 };
 
-                _container.Add(nameof(example.Dictionary), example.Dictionary);
+                _ = _container.Add(nameof(example.Dictionary), example.Dictionary);
             }
         }
 

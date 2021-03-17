@@ -58,7 +58,7 @@ namespace Informapp.InformSystem.WebApi.Client.Clients.Decorators
 
             if (response.Model != null)
             {
-                _disposableResources.TryRegisterForDisposal(response.Model);
+                _ = _disposableResources.TryRegisterForDisposal(response.Model);
             }
 
             if (response.DownloadFile != null &&

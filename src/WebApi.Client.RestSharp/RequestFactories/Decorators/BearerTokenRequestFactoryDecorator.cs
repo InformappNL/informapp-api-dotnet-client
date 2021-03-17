@@ -43,7 +43,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decora
 
                 string value = AOuth2Constants.AuthorizationHeaderValuePrefix + ' ' + request.BearerToken.GetToken();
 
-                apiRequest.AddParameter(name, value, ParameterType.HttpHeader);
+                _ = apiRequest.AddParameter(name, value, ParameterType.HttpHeader);
             }
 
             return apiRequest;

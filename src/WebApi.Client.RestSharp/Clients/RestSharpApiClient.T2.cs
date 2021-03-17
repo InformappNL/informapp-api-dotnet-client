@@ -94,13 +94,13 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
                 apiRequest.AdvancedResponseWriter = (stream, httpResponse) => SetDownloadFile(downloadFile, stream, httpResponse);
             }
 
-            apiRequest.AddHeader(HttpRequestHeaderConstants.CacheControl, "no-cache");
+            _ = apiRequest.AddHeader(HttpRequestHeaderConstants.CacheControl, "no-cache");
 
             if (request.IsFileUpload == true)
             {
                 client.ConfigureWebRequest(x => x.AllowWriteStreamBuffering = false);
 
-                apiRequest.AddFile(
+                _ = apiRequest.AddFile(
                     request.UploadFile.ParameterName,
                     request.UploadFile.File.CopyTo,
                     request.UploadFile.FileName,
@@ -172,7 +172,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
                 {
                     case null:
                     case Models.Http.ContentType.Json:
-                        apiRequest.AddJsonBody(request.Model);
+                        _ = apiRequest.AddJsonBody(request.Model);
                         break;
                     case Models.Http.ContentType.FormUrlEncoded:
                         AddFormUrlEncodedBody(request, apiRequest);
@@ -189,7 +189,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
                 .Add(request.Model)
                 .ToString();
 
-            apiRequest.AddParameter(
+            _ = apiRequest.AddParameter(
                 ContentTypeConstants.Application.FormUrlEncoded,
                 encoded,
                 ContentTypeConstants.Application.FormUrlEncoded,

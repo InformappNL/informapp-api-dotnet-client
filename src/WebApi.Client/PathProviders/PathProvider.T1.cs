@@ -87,7 +87,7 @@ namespace Informapp.InformSystem.WebApi.Client.PathProviders
                         pathValue = string.Format(CultureInfo.InvariantCulture, "{0}", value);
                     }
 
-                    builder.Replace('{' + property.Name + '}', pathValue);
+                    _ = builder.Replace('{' + property.Name + '}', pathValue);
                 }
 
                 path = builder.ToString();

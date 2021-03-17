@@ -41,7 +41,7 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
             }
             finally
             {
-                _semaphoreSlim.Release();
+                _ = _semaphoreSlim.Release();
             }
         }
 

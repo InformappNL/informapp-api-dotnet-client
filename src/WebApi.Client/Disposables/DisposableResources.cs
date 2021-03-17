@@ -37,7 +37,7 @@ namespace Informapp.InformSystem.WebApi.Client.Disposables
         {
             Argument.NotNull(resource, nameof(resource));
 
-            ThrowIfDisposed();
+            _ = ThrowIfDisposed();
 
             _resources.Add(resource);
         }

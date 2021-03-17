@@ -11,7 +11,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.Up
         {
             if (ExampleAttributeConfiguration.Enabled == true)
             {
-                _container.Add(nameof(File), GetFileExample());
+                _ = _container.Add(nameof(File), GetFileExample());
             }
         }
 

@@ -33,7 +33,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
                 .GetMethod(nameof(SetupWithDefaultComparer), BindingFlags.Instance | BindingFlags.NonPublic)
                 .MakeGenericMethod(value);
 
-            method.Invoke(this, null);
+            _ = method.Invoke(this, null);
 
             IgnoreCase = ignoreCase;
         }
@@ -51,7 +51,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
                 .GetMethod(nameof(SetupWithComparer), BindingFlags.Instance | BindingFlags.NonPublic)
                 .MakeGenericMethod(value, comparer);
 
-            method.Invoke(this, null);
+            _ = method.Invoke(this, null);
 
             IgnoreCase = ignoreCase;
         }
@@ -106,7 +106,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
                 .GetMethod(nameof(Setup), BindingFlags.Instance | BindingFlags.NonPublic)
                 .MakeGenericMethod(typeof(string), typeof(IEqualityComparer<string>));
 
-            method.Invoke(this, new[] { comparer });
+            _ = method.Invoke(this, new[] { comparer });
         }
 
         private Func<object, bool> _isValid;

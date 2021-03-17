@@ -20,7 +20,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version2.Errors
                     ModelState = modelState,
                 };
 
-                _container.Add(nameof(example.ModelState), example.ModelState);
+                _ = _container.Add(nameof(example.ModelState), example.ModelState);
             }
         }
 

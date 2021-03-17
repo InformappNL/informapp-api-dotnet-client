@@ -20,7 +20,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version2.Filters
                     Equal = value,
                 };
 
-                _container.Add(nameof(example.Equal), example.Equal);
+                _ = _container.Add(nameof(example.Equal), example.Equal);
             }
         }
 

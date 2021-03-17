@@ -50,7 +50,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories
             var apiRequest = new RestRequest(resource, method.Value);
 
             // Set default content type to JSON, override using a decorator and AddOrUpdateParameter method
-            apiRequest.AddHeader(HttpRequestHeaderConstants.Accept, ContentTypeConstants.Application.Json);
+            _ = apiRequest.AddHeader(HttpRequestHeaderConstants.Accept, ContentTypeConstants.Application.Json);
 
             return apiRequest;
         }

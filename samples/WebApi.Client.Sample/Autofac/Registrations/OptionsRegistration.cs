@@ -41,7 +41,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
 
             var options = Options.Create(configuration);
 
-            builder.Register(x => options)
+            _ = builder.Register(x => options)
                 .SingleInstance();
 
             builder.RegisterDecorator<ValidateOptionsDecorator<TOptions>, IOptions<TOptions>>();
