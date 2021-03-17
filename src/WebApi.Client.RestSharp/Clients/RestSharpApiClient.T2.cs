@@ -171,10 +171,10 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
                 switch (request.Context.ContentType)
                 {
                     case null:
-                    case Models.Http.ContentType.Json:
+                    case ContentType.Json:
                         _ = apiRequest.AddJsonBody(request.Model);
                         break;
-                    case Models.Http.ContentType.FormUrlEncoded:
+                    case ContentType.FormUrlEncoded:
                         AddFormUrlEncodedBody(request, apiRequest);
                         break;
                     default:
