@@ -6403,11 +6403,6 @@
             None
             </summary>
         </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.SHA1">
-            <summary>
-            SHA1
-            </summary>
-        </member>
         <member name="F:Informapp.InformSystem.WebApi.Models.Version1.Files.FileV1HashAlgorithm.SHA256">
             <summary>
             SHA256
@@ -6992,11 +6987,6 @@
         <member name="F:Informapp.InformSystem.WebApi.Models.Version2.Files.FileV2HashAlgorithm.None">
             <summary>
             None
-            </summary>
-        </member>
-        <member name="F:Informapp.InformSystem.WebApi.Models.Version2.Files.FileV2HashAlgorithm.SHA1">
-            <summary>
-            SHA1
             </summary>
         </member>
         <member name="F:Informapp.InformSystem.WebApi.Models.Version2.Files.FileV2HashAlgorithm.SHA256">

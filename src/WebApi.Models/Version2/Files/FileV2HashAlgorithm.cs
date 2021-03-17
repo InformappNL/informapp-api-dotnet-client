@@ -16,12 +16,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version2.Files
         None = 0,
 
         /// <summary>
-        /// SHA1
-        /// </summary>
-        [EnumMember]
-        SHA1 = 3,
-
-        /// <summary>
         /// SHA256
         /// </summary>
         [EnumMember]
