@@ -1,4 +1,5 @@
-﻿using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource;
+﻿using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.DownloadDataSource;
+using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource;
 
 namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources
 {
@@ -6,7 +7,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources
     {
         private const string Route = "api/v1/datasources";
 
-        internal const string DownloadRoute = Route + "/file/{" + nameof(UploadDataSourceV1Request.DataSourceId) + "}";
+        internal const string DownloadRoute = Route + "/file/{" + nameof(DownloadDataSourceV1Request.DataSourceId) + "}";
         internal const string ListRoute = Route;
         internal const string UploadRoute = Route + "/file/{" + nameof(UploadDataSourceV1Request.DataSourceId) + "}";
 
