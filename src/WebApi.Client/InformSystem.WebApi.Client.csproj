@@ -22,11 +22,6 @@
     <Content Include="WebApi.Client.xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\ProjectRules.ruleset">
-      <Link>ProjectRules.ruleset</Link>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
     <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="5.0.3">

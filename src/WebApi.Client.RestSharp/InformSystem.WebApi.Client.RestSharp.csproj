@@ -20,11 +20,6 @@
     <ProjectReference Include="..\WebApi.Models\InformSystem.WebApi.Models.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\ProjectRules.ruleset">
-      <Link>ProjectRules.ruleset</Link>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="WebApi.Client.RestSharp.xml" />
   </ItemGroup>
   <ItemGroup>

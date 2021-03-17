@@ -16,11 +16,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\ProjectRules.ruleset">
-      <Link>ProjectRules.ruleset</Link>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\src\WebApi.Client.RestSharp\InformSystem.WebApi.Client.RestSharp.csproj" />
     <ProjectReference Include="..\..\src\WebApi.Client\InformSystem.WebApi.Client.csproj" />
     <ProjectReference Include="..\..\src\WebApi.Models\InformSystem.WebApi.Models.csproj" />
