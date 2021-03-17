@@ -34,7 +34,7 @@ namespace Informapp.InformSystem.WebApi.Client.BearerTokenProviders
 
             if (x == null || y == null)
             {
-                return (x == null && y == null);
+                return x == null && y == null;
             }
 
             if (x.EndPoint == y.EndPoint &&

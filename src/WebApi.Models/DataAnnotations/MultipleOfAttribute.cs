@@ -46,42 +46,42 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
 
             if (value is sbyte numbersByte)
             {
-                return (numbersByte % Value == 0);
+                return numbersByte % Value == 0;
             }
 
             if (value is byte numberByte)
             {
-                return (numberByte % Value == 0);
+                return numberByte % Value == 0;
             }
 
             if (value is short numberInt16)
             {
-                return (numberInt16 % Value == 0);
+                return numberInt16 % Value == 0;
             }
 
             if (value is ushort numberUInt16)
             {
-                return (numberUInt16 % Value == 0);
+                return numberUInt16 % Value == 0;
             }
 
             if (value is int numberInt)
             {
-                return (numberInt % Value == 0);
+                return numberInt % Value == 0;
             }
 
             if (value is uint numberUInt)
             {
-                return (numberUInt % Value == 0);
+                return numberUInt % Value == 0;
             }
 
             if (value is long numberLong)
             {
-                return (numberLong % Value == 0);
+                return numberLong % Value == 0;
             }
 
             if (value is ulong numberULong)
             {
-                return (numberULong % (ulong)Value == 0);
+                return numberULong % (ulong)Value == 0;
             }
 
             return false;

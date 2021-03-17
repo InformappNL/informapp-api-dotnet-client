@@ -32,7 +32,7 @@ namespace Informapp.InformSystem.WebApi.Client.Caches.Decorators
         /// <summary>
         /// The cached items
         /// </summary>
-        public IEnumerable<KeyValuePair<TKey, TValue>> Items { get { return _cache.Items; } }
+        public IEnumerable<KeyValuePair<TKey, TValue>> Items => _cache.Items;
 
         /// <summary>
         /// Adds an element with the provided key and value to the <see cref="ICache{TKey, TValue}"/>

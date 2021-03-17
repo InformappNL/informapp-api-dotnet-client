@@ -40,9 +40,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
             }
         }
 
-#pragma warning disable IDE0051 // Remove unused private members
         private static UploadTestFileV1Request GetInMemoryFileRequest()
-#pragma warning restore IDE0051 // Remove unused private members
         {
             var stream = new MemoryStream();
 

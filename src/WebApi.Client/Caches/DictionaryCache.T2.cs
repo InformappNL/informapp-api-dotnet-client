@@ -26,7 +26,7 @@ namespace Informapp.InformSystem.WebApi.Client.Caches
         /// <summary>
         /// The cached items
         /// </summary>
-        public IEnumerable<KeyValuePair<TKey, TValue>> Items { get { return _dictionary; } }
+        public IEnumerable<KeyValuePair<TKey, TValue>> Items => _dictionary;
 
         /// <summary>
         /// Adds an element with the provided key and value to the cache"/>

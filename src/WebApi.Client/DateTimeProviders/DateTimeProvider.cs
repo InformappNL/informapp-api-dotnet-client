@@ -19,6 +19,6 @@ namespace Informapp.InformSystem.WebApi.Client.DateTimeProviders
         /// Gets a <see cref="DateTimeOffset"/> object whose date and time are set to the current
         /// Coordinated Universal Time (UTC) date and time and whose offset is <see cref="TimeSpan.Zero"/>.
         /// </summary>
-        public DateTimeOffset UtcNow { get { return DateTimeOffset.UtcNow; } }
+        public DateTimeOffset UtcNow => DateTimeOffset.UtcNow;
     }
 }

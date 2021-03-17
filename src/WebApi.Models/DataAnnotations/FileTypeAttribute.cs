@@ -20,7 +20,7 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         /// <summary>
         /// The allowed file extensions
         /// </summary>
-        public IEnumerable<string> Extensions { get { return new ReadOnlyCollection<string>(_extensions); } }
+        public IEnumerable<string> Extensions => new ReadOnlyCollection<string>(_extensions);
 
         /// <summary>
         /// Initializes a new instance of the <see cref="FileNameLengthAttribute"/> class.

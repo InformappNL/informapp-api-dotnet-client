@@ -56,12 +56,6 @@ namespace Informapp.InformSystem.WebApi.Client.Requests
         public Accept? Accept { get; set; }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private string DebuggerDisplay
-        {
-            get
-            {
-                return string.Format(CultureInfo.InvariantCulture, "Context: {0} {1}{2}", Method, EndPoint, Path);
-            }
-        }
+        private string DebuggerDisplay => string.Format(CultureInfo.InvariantCulture, "Context: {0} {1}{2}", Method, EndPoint, Path);
     }
 }

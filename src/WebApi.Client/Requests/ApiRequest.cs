@@ -65,16 +65,10 @@ namespace Informapp.InformSystem.WebApi.Client.Requests
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private string DebuggerDisplay
-        {
-            get
-            {
-                return string.Format(CultureInfo.InvariantCulture,
-                    "Request: {0} {1}{2}",
-                    Context?.Method,
-                    Context?.EndPoint,
-                    Context?.Path);
-            }
-        }
+        private string DebuggerDisplay => string.Format(CultureInfo.InvariantCulture,
+            "Request: {0} {1}{2}",
+            Context?.Method,
+            Context?.EndPoint,
+            Context?.Path);
     }
 }

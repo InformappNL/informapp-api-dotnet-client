@@ -70,15 +70,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Serializers
         /// <summary>
         /// Supported content types
         /// </summary>
-#pragma warning disable CA1819 // Properties should not return arrays - defined by interface IRestSerializer
-        public string[] SupportedContentTypes
-#pragma warning restore CA1819 // Properties should not return arrays
-        {
-            get
-            {
-                return new[] { ContentTypeConstants.Application.Json };
-            }
-        }
+        public string[] SupportedContentTypes => new[] { ContentTypeConstants.Application.Json };
 
         /// <summary>
         /// Content type

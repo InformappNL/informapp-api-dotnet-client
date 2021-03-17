@@ -22,18 +22,9 @@ namespace Informapp.InformSystem.WebApi.Client.Responses
         /// <summary>
         /// Has value
         /// </summary>
-        public bool HasValue
-        {
-            get { return string.IsNullOrEmpty(Value) == false; }
-        }
+        public bool HasValue => string.IsNullOrEmpty(Value) == false;
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private string DebuggerDisplay
-        {
-            get
-            {
-                return string.Format(CultureInfo.InvariantCulture, "Header: {0}={1}", Name, Value);
-            }
-        }
+        private string DebuggerDisplay => string.Format(CultureInfo.InvariantCulture, "Header: {0}={1}", Name, Value);
     }
 }

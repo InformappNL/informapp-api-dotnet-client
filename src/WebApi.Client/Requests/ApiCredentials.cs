@@ -22,7 +22,7 @@ namespace Informapp.InformSystem.WebApi.Client.Requests
         /// Returns true when a password is set, null otherwise
         /// </summary>
         [Required]
-        public bool? HasPassword { get { return string.IsNullOrEmpty(Password) == false ? true : default(bool?); } }
+        public bool? HasPassword => string.IsNullOrEmpty(Password) == false ? true : default(bool?);
 
         /// <summary>
         /// The password
@@ -54,15 +54,9 @@ namespace Informapp.InformSystem.WebApi.Client.Requests
         public CredentialsKind Kind { get; set; }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private string DebuggerDisplay
-        {
-            get
-            {
-                return string.Format(CultureInfo.InvariantCulture, "Credentials: {0} = {1}, {2} = {3}",
-                    nameof(Username), Username,
-                    nameof(HasPassword), HasPassword);
-            }
-        }
+        private string DebuggerDisplay => string.Format(CultureInfo.InvariantCulture, "Credentials: {0} = {1}, {2} = {3}",
+            nameof(Username), Username,
+            nameof(HasPassword), HasPassword);
 
         /// <summary>
         /// Determines whether the specified object is valid.

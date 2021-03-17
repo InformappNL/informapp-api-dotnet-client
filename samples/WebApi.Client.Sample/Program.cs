@@ -19,11 +19,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
 
             try
             {
-#pragma warning disable CA1508 // Avoid dead conditional code
                 using (var source = new CancellationTokenSource())
                 using (var handler = new ConsoleCancellationEventHandler(source))
                 using (var container = AutofacContainerFactory.Create())
-#pragma warning restore CA1508 // Avoid dead conditional code
                 {
                     Console.WriteLine("Press enter to run examples");
                     _ = Console.ReadLine();
@@ -41,9 +39,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
             {
                 Console.WriteLine("Cancelled.");
             }
-#pragma warning disable CA1031 // Do not catch general exception types
             catch (Exception ex)
-#pragma warning restore CA1031 // Do not catch general exception types
             {
                 Console.WriteLine("An exception was thrown:");
                 Console.WriteLine(ex);
