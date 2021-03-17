@@ -13,6 +13,7 @@ using Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationEmail
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrations;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationStats;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Forms;
+using Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Logs;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Pings;
@@ -104,6 +105,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
                 Create<ListFormRegistrationEmailV1Example>(true),
 
                 Create<ListFormRegistrationDataForRegistrationV1Example>(true),
+
+                Create<ListInformAppFormInstructionV1Example>(false),
+                Create<CreateInformAppFormInstructionV1Example>(false),
+                Create<CompleteInformAppFormInstructionV1Example>(false),
+                Create<RevokeInformAppFormInstructionV1Example>(false),
             };
 
             return examples;

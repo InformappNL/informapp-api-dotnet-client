@@ -4625,6 +4625,322 @@
             Sort by last update date descending
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CompleteInstruction.CompleteInformAppFormInstructionV1Request">
+            <summary>
+            Complete form instruction request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CompleteInstruction.CompleteInformAppFormInstructionV1Request.FormId">
+            <summary>
+            Form id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CompleteInstruction.CompleteInformAppFormInstructionV1Request.InstructionId">
+            <summary>
+            Instruction id
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CompleteInstruction.CompleteInformAppFormInstructionV1Response">
+            <summary>
+            Complete form instruction response
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CreateInstruction.CreateInformAppFormInstructionV1Request">
+            <summary>
+            Create form instruction request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CreateInstruction.CreateInformAppFormInstructionV1Request.FormId">
+            <summary>
+            Form id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CreateInstruction.CreateInformAppFormInstructionV1Request.Message">
+            <summary>
+            Message
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CreateInstruction.CreateInformAppFormInstructionV1Request.InformationDate">
+            <summary>
+            Information date
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CreateInstruction.CreateInformAppFormInstructionV1Request.FormData">
+            <summary>
+            Form data
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CreateInstruction.CreateInformAppFormInstructionV1Request.PublishDate">
+            <summary>
+            Publish date
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CreateInstruction.CreateInformAppFormInstructionV1Request.Recipients">
+            <summary>
+            Recipients
+            Value can be an email adres or a user id
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CreateInstruction.CreateInformAppFormInstructionV1Response">
+            <summary>
+            Create form instruction response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CreateInstruction.CreateInformAppFormInstructionV1Response.InstructionId">
+            <summary>
+            Instruction id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CreateInstruction.CreateInformAppFormInstructionV1Response.Recipients">
+            <summary>
+            Recipients
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CreateInstruction.CreateInformAppFormInstructionV1Response.Message">
+            <summary>
+            Message
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CreateInstruction.CreateInformAppFormInstructionV1Response.Status">
+            <summary>
+            Status
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CreateInstruction.CreateInformAppFormInstructionV1Response.CreationDate">
+            <summary>
+            Creation date
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CreateInstruction.CreateInformAppFormInstructionV1Response.PublishDate">
+            <summary>
+            Publish date
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CreateInstruction.CreateInformAppFormInstructionV1Response.InformationDate">
+            <summary>
+            Information date
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.InstructionV1Status">
+            <summary>
+            The instruction status
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.InstructionV1Status.InProgress">
+            <summary>
+            InProgress
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.InstructionV1Status.Completed">
+            <summary>
+            Completed
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.InstructionV1Status.Revoked">
+            <summary>
+            Revoked
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.InstructionV1Status.Declined">
+            <summary>
+            Declined
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Filter">
+            <summary>
+            List form instruction request filter
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Filter.CreationDateMin">
+            <summary>
+            Creation date min
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Filter.CreationDateMax">
+            <summary>
+            Creation date max
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Filter.PublishDateMin">
+            <summary>
+            Publish date min
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Filter.PublishDateMax">
+            <summary>
+            Publish date max
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Filter.Message">
+            <summary>
+            Message
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Filter.Status">
+            <summary>
+            Status
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Request">
+            <summary>
+            List form instruction request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Request.FormId">
+            <summary>
+            Form id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Request.Filter">
+            <summary>
+            Filter records
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Request.Sort">
+            <summary>
+            Sort records
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Request.PageNumber">
+            <summary>
+            Page number
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Request.PageSize">
+            <summary>
+            Number of records per page
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Response">
+            <summary>
+            List form instruction response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Response.Instructions">
+            <summary>
+            List of form instructions
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Response.Total">
+            <summary>
+            Total number of records matching the request
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1ResponseInstruction">
+            <summary>
+            Form instruction
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1ResponseInstruction.InstructionId">
+            <summary>
+            Instruction id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1ResponseInstruction.Message">
+            <summary>
+            Message
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1ResponseInstruction.CreateDate">
+            <summary>
+            Create date
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1ResponseInstruction.PublishDate">
+            <summary>
+            Publish date
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1ResponseInstruction.InformationDate">
+            <summary>
+            Information date
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1ResponseInstruction.Status">
+            <summary>
+            Status
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1ResponseInstruction.Recipients">
+            <summary>
+            Recipients
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Sort">
+            <summary>
+            Sort form instructions
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Sort.CreateDate">
+            <summary>
+            Sort create date ascending
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Sort.CreateDateDesc">
+            <summary>
+            Sort create date ascending
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Sort.PublishDate">
+            <summary>
+            Sort publish date ascending
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Sort.PublishDateDesc">
+            <summary>
+            Sort publish date ascending
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Sort.InformationDate">
+            <summary>
+            Sort information date ascending
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Sort.InformationDateDesc">
+            <summary>
+            Sort information date ascending
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Sort.Status">
+            <summary>
+            Sort status ascending
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Sort.StatusDesc">
+            <summary>
+            Sort status ascending
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Sort.Message">
+            <summary>
+            Sort message ascending
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Sort.MessageDesc">
+            <summary>
+            Sort message ascending
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.RevokeInstruction.RevokeInformAppFormInstructionV1Request">
+            <summary>
+            Revoke form instruction request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.RevokeInstruction.RevokeInformAppFormInstructionV1Request.FormId">
+            <summary>
+            Form id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.RevokeInstruction.RevokeInformAppFormInstructionV1Request.InstructionId">
+            <summary>
+            Instruction id
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.RevokeInstruction.RevokeInformAppFormInstructionV1Response">
+            <summary>
+            Revoke form instruction response
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog.CreateLogV1Request">
             <summary>
             Create log request
