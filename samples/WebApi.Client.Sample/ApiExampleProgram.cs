@@ -5,6 +5,7 @@ using Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.BusinessGroups;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients;
+using Informapp.InformSystem.WebApi.Client.Sample.Examples.Countries;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Customers;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.FormDataNames;
@@ -61,6 +62,8 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
                 Create<OAuth2TokenV1Example>(true),
                 Create<EnvironmentOAuth2TokenV1Example>(true),
                 Create<OAuth2TokenV2Example>(false),
+
+                Create<ListCountryV1Example>(true),
 
                 Create<CreateLogV1Example>(true),
 

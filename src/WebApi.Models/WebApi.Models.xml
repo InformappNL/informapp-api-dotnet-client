@@ -2699,6 +2699,56 @@
             Sort by last update date descending
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Countries.ListCountry.ListCountryV1Request">
+            <summary>
+            List country request
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Countries.ListCountry.ListCountryV1Response">
+            <summary>
+            List country response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Countries.ListCountry.ListCountryV1Response.Countries">
+            <summary>
+            List of countries
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Countries.ListCountry.ListCountryV1Response.Total">
+            <summary>
+            Total number of records matching the request
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Countries.ListCountry.ListCountryV1ResponseCountry">
+            <summary>
+            List country item response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Countries.ListCountry.ListCountryV1ResponseCountry.CountryId">
+            <summary>
+            Country Id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Countries.ListCountry.ListCountryV1ResponseCountry.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Countries.ListCountry.ListCountryV1ResponseCountry.Alpha2Code">
+            <summary>
+            Alpha 2 code
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Countries.ListCountry.ListCountryV1ResponseCountry.Alpha3Code">
+            <summary>
+            Alpha 3 code
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Countries.ListCountry.ListCountryV1ResponseCountry.NumericCode">
+            <summary>
+            Numeric code
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Customers.ListCustomer.ListCustomerV1Filter">
             <summary>
             List customer request filter
