@@ -7,6 +7,7 @@ using Informapp.InformSystem.WebApi.Client.Sample.Examples.BusinessGroups;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Customers;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources;
+using Informapp.InformSystem.WebApi.Client.Sample.Examples.FormDataNames;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationData;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationEmails;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrations;
@@ -94,6 +95,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
                 Create<DownloadDataSourceV1Example>(false),
 
                 Create<ListFormV1Example>(true),
+                Create<ListFormDataNameV1Example>(true),
 
                 Create<ListFormRegistrationStatsV1Example>(true),
 

@@ -3233,6 +3233,118 @@
             Size
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1Request">
+            <summary>
+            List form data name request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1Request.FormId">
+            <summary>
+            Form id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1Request.Select">
+            <summary>
+            Select columns
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1Request.PageNumber">
+            <summary>
+            Page number
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1Request.PageSize">
+            <summary>
+            Number of records per page
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1Response">
+            <summary>
+            List form data name response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1Response.FormDataNames">
+            <summary>
+            List of form data names
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1Response.Total">
+            <summary>
+            Total number of records matching the request
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1ResponseFormDataName">
+            <summary>
+            Form data name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1ResponseFormDataName.FormDataNameId">
+            <summary>
+            Form data name Id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1ResponseFormDataName.ParentFormDataNameId">
+            <summary>
+            Parent form data name Id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1ResponseFormDataName.Depth">
+            <summary>
+            Depth of the data name, starting at one.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1ResponseFormDataName.IsArray">
+            <summary>
+            Indicates whether the data name is an array
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1ResponseFormDataName.Name">
+            <summary>
+            The data name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1ResponseFormDataName.FullName">
+            <summary>
+            FullName is a dot separated list of data names starting from the root of the form to this dataname.
+            
+            Arrays are represented with square brackets (i.e. []).
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1Select">
+            <summary>
+            Select columns
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1Select.All">
+            <summary>
+            All
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1Select.ParentFormDataNameId">
+            <summary>
+            ParentFormDataNameId
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1Select.Depth">
+            <summary>
+            Depth
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1Select.IsArray">
+            <summary>
+            IsArray
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1Select.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1Select.FullName">
+            <summary>
+            FullName
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.FormRegistrationDataV1Kind">
             <summary>
             The kind of data
