@@ -1,5 +1,4 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
-
+﻿
 namespace Informapp.InformSystem.WebApi.Client.Decorators
 {
     /// <summary>
@@ -15,8 +14,6 @@ namespace Informapp.InformSystem.WebApi.Client.Decorators
         /// <param name="decorated">The instance being decorated</param>
         public Decorator(T decorated)
         {
-            Argument.NotNull(decorated, nameof(decorated));
-
             Decorating = decorated;
         }
 
