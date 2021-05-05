@@ -4,6 +4,7 @@ using System.Collections;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Reflection;
+using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Validators
 {
@@ -102,6 +103,7 @@ namespace Informapp.InformSystem.WebApi.Client.Validators
                 .Where(x => x.PropertyType.IsPrimitive == false)
                 .Where(x => x.PropertyType.IsEnum == false)
                 .Where(x => x.PropertyType.IsValueType == false)
+                .Where(x => typeof(Task).IsAssignableFrom(x.PropertyType) == false)
                 .ToList();
 
             foreach (var property in properties)
