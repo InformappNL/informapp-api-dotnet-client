@@ -114,7 +114,9 @@ namespace Informapp.InformSystem.WebApi.Client.QueryStrings
                 return null;
             }
 
+#pragma warning disable IDE0019 // Use pattern matching
             var jToken = obj as JToken;
+#pragma warning restore IDE0019 // Use pattern matching
 
             if (jToken == null)
             {

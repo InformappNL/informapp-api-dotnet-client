@@ -28,8 +28,10 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
 
         public async Task Execute(CancellationToken cancellationToken)
         {
+#pragma warning disable IDE0063 // Use simple 'using' statement
             using (var model = GetInMemoryFileRequest())
             //using (var model = GetFileFromFileSystem())
+#pragma warning restore IDE0063 // Use simple 'using' statement
             {
                 var request = ApiRequest.Create(model);
 

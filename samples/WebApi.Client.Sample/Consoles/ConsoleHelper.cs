@@ -14,7 +14,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Consoles
 
             var stream = Console.OpenStandardInput(bufferSize);
 
+#pragma warning disable CA2000 // Dispose objects before losing scope
             var reader = new StreamReader(stream, Console.InputEncoding, detectEncodingFromByteOrderMarks: false, bufferSize);
+#pragma warning restore CA2000 // Dispose objects before losing scope
 
             Console.SetIn(reader);
         }

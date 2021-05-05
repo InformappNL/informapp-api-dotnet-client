@@ -75,8 +75,10 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.Up
         [IgnoreDataMember]
         string IUploadFileV1Request.ContentType
         {
+#pragma warning disable CA1033 // Interface methods should be callable by child types
             get => _request.ContentType;
             set => _request.ContentType = value;
+#pragma warning restore CA1033 // Interface methods should be callable by child types
         }
 
         /// <summary>

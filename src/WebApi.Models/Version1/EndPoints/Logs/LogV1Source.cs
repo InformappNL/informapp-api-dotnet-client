@@ -7,7 +7,9 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs
     /// Application kind
     /// </summary>
     [DataContract(Namespace = Version1Constants.Namespace)]
+#pragma warning disable CA1008 // Enums should have zero value
     public enum LogV1Source
+#pragma warning restore CA1008 // Enums should have zero value
     {
         /// <summary>
         /// Web UI

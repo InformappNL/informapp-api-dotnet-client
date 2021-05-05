@@ -101,7 +101,9 @@ namespace Informapp.InformSystem.WebApi.Models.Arguments
 
         private static bool IsNull<T>(T instance)
         {
+#pragma warning disable IDE0041 // Use 'is null' check
             return ReferenceEquals(null, instance);
+#pragma warning restore IDE0041 // Use 'is null' check
         }
 
         private static void ThrowNull(string parameterName)

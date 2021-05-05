@@ -17,18 +17,18 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
 
         private static async Task Main()
         {
-            var cancellationToken = default(CancellationToken);
-
             try
             {
+#pragma warning disable IDE0063 // Use simple 'using' statement
                 using (var source = new CancellationTokenSource())
                 using (var handler = new ConsoleCancellationEventHandler(source))
                 using (var container = AutofacContainerFactory.Create())
+#pragma warning restore IDE0063 // Use simple 'using' statement
                 {
                     Console.WriteLine("Press enter to run examples");
                     _ = Console.ReadLine();
 
-                    cancellationToken = source.Token;
+                    var cancellationToken = source.Token;
 
                     var program = new ApiExampleProgram(container);
 
@@ -37,11 +37,13 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
                         .ConfigureAwait(Await.Default);
                 }
             }
-            catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested == true)
+            catch (OperationCanceledException)
             {
                 Console.WriteLine("Cancelled.");
             }
+#pragma warning disable CA1031 // Do not catch general exception types
             catch (Exception ex)
+#pragma warning restore CA1031 // Do not catch general exception types
             {
                 Console.WriteLine("An exception was thrown:");
                 Console.WriteLine(ex);

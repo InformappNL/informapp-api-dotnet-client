@@ -7,7 +7,9 @@ namespace Informapp.InformSystem.WebApi.Models.ExampleValues
     /// <summary>
     /// Example stream interface
     /// </summary>
+#pragma warning disable CA1711 // Identifiers should not have incorrect suffix
     public interface IExampleStream
+#pragma warning restore CA1711 // Identifiers should not have incorrect suffix
     {
         /// <summary>
         /// Gets the length of the stream in bytes.

@@ -25,7 +25,9 @@ namespace Informapp.InformSystem.WebApi.Client.Requests
         /// Get the bearer token
         /// </summary>
         /// <returns>The bearer token</returns>
+#pragma warning disable CA1024 // Use properties where appropriate
         public string GetToken()
+#pragma warning restore CA1024 // Use properties where appropriate
         {
             return Token;
         }

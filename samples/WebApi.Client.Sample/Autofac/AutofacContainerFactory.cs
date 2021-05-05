@@ -62,10 +62,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac
                     .InstancePerLifetimeScope();
             }
 
-            using (var container = builder.Build())
-            {
-                return container.Resolve<IList<IAutofacRegistration>>();
-            }
+            using var container = builder.Build();
+
+            return container.Resolve<IList<IAutofacRegistration>>();
         }
     }
 }

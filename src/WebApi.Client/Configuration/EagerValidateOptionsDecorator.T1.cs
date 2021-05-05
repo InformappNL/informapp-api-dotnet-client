@@ -9,7 +9,7 @@ namespace Informapp.InformSystem.WebApi.Client.Configuration
     /// Used to validate retrieved configured <typeparamref name="T"/> instances.
     /// </summary>
     /// <typeparam name="T">The type of options being requested.</typeparam>
-    public class EagerValidateOptionsDecorator<T> : Decorator<IOptions<T>>, 
+    public class EagerValidateOptionsDecorator<T> : Decorator<IOptions<T>>,
         IOptions<T>
 
         where T : class, new()

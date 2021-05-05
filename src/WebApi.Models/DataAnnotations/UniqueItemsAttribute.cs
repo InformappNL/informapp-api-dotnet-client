@@ -39,7 +39,9 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         }
 
         /// <summary>Initializes a new instance of the <see cref="UniqueItemsAttribute"/> class.</summary>
+#pragma warning disable CA1019 // Define accessors for attribute arguments
         public UniqueItemsAttribute(Type value) : this(value, default(bool?)) { }
+#pragma warning restore CA1019 // Define accessors for attribute arguments
         /// <summary>Initializes a new instance of the <see cref="UniqueItemsAttribute"/> class.</summary>
         public UniqueItemsAttribute(Type value, bool ignoreCase) : this(value, (bool?)ignoreCase) { }
 
@@ -57,14 +59,18 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         }
 
         /// <summary>Initializes a new instance of the <see cref="UniqueItemsAttribute"/> class.</summary>
+#pragma warning disable CA1019 // Define accessors for attribute arguments
         public UniqueItemsAttribute(Type value, Type comparer) : this(value, comparer, default(bool?)) { }
+#pragma warning restore CA1019 // Define accessors for attribute arguments
         /// <summary>Initializes a new instance of the <see cref="UniqueItemsAttribute"/> class.</summary>
         public UniqueItemsAttribute(Type value, Type comparer, bool ignoreCase) : this(value, comparer, (bool?)ignoreCase) { }
 
 
 
         /// <summary>Initializes a new instance of the <see cref="UniqueItemsAttribute"/> class.</summary>
+#pragma warning disable CA1019 // Define accessors for attribute arguments
         public UniqueItemsAttribute(StringComparison comparison) : this()
+#pragma warning restore CA1019 // Define accessors for attribute arguments
         {
             IEqualityComparer<string> comparer;
 

@@ -38,8 +38,11 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
 
         private string _errorMessageValues;
 
+#pragma warning disable CA1019 // Define accessors for attribute arguments
+
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
         public AllowedValuesAttribute(byte value) { SetupStruct(new[] { value }); }
+
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
         public AllowedValuesAttribute(byte[] values) { SetupStruct(values); }
 
@@ -110,6 +113,8 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
 
         /// <summary>Initializes a new instance of the <see cref="AllowedValuesAttribute"/> class.</summary>
         public AllowedValuesAttribute(object[] values) { SetupObject(values); }
+
+#pragma warning restore CA1019 // Define accessors for attribute arguments
 
         private void SetupClass<T>(IReadOnlyList<T> values)
             where T : class

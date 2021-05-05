@@ -278,7 +278,9 @@ namespace Informapp.InformSystem.WebApi.Models.Version2.Filters
             }
         }
 
+#pragma warning disable CA1033 // Interface methods should be callable by child types
         object IExampleMemberProvider.GetExample(string name)
+#pragma warning restore CA1033 // Interface methods should be callable by child types
         {
             return _container.GetExample(name);
         }

@@ -12,7 +12,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
 {
     internal class TestQueryValuesV1Example : IExample
     {
-        private readonly TestQueryValuesV1Comparer _comparer = new TestQueryValuesV1Comparer();
+        private readonly TestQueryValuesV1Comparer _comparer = new();
 
         private readonly IApiClient<TestQueryValuesV1Request, TestQueryValuesV1Response> _client;
 

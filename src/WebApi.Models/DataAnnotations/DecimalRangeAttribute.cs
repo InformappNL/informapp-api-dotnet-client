@@ -35,7 +35,9 @@ namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
         /// <param name="maximum">
         /// Specifies the maximum value allowed for the data field value.
         /// </param>
+#pragma warning disable CA1019 // Define accessors for attribute arguments
         public DecimalRangeAttribute(string minimum, string maximum)
+#pragma warning restore CA1019 // Define accessors for attribute arguments
         {
             if (decimal.TryParse(minimum, out decimal decimalMinimum) == false)
             {

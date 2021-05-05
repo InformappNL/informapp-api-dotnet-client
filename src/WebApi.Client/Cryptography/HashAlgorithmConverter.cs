@@ -24,13 +24,19 @@ namespace Informapp.InformSystem.WebApi.Client.Cryptography
                 switch (source)
                 {
                     case HashAlgorithmKind.SHA256:
+#pragma warning disable CA2000 // Dispose objects before losing scope
                         hashAlgorithm = SHA256.Create();
+#pragma warning restore CA2000 // Dispose objects before losing scope
                         break;
                     case HashAlgorithmKind.SHA384:
+#pragma warning disable CA2000 // Dispose objects before losing scope
                         hashAlgorithm = SHA384.Create();
+#pragma warning restore CA2000 // Dispose objects before losing scope
                         break;
                     case HashAlgorithmKind.SHA512:
+#pragma warning disable CA2000 // Dispose objects before losing scope
                         hashAlgorithm = SHA512.Create();
+#pragma warning restore CA2000 // Dispose objects before losing scope
                         break;
                     default:
                         throw new ArgumentException("Unsupported value", nameof(source));

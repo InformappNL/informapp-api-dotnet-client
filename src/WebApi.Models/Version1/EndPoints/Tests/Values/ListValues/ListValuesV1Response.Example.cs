@@ -29,7 +29,9 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.L
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static readonly ExampleValuesContainer _container = new ExampleValuesContainer();
 
+#pragma warning disable CA1033 // Interface methods should be callable by child types
         object IExampleMemberProvider.GetExample(string name)
+#pragma warning restore CA1033 // Interface methods should be callable by child types
         {
             return _container.GetExample(name);
         }

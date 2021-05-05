@@ -18,7 +18,9 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.Up
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static readonly ExampleValuesContainer _container = new ExampleValuesContainer();
 
+#pragma warning disable CA1033 // Interface methods should be callable by child types
         object IExampleMemberProvider.GetExample(string name)
+#pragma warning restore CA1033 // Interface methods should be callable by child types
         {
             return _container.GetExample(name);
         }
@@ -41,7 +43,9 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.Up
             return file;
         }
 
+#pragma warning disable IDE0051 // Remove unused private members
         private static void Assignable(UploadTestFileV1Request request)
+#pragma warning restore IDE0051 // Remove unused private members
         {
             request.File = GetFileExample();
         }

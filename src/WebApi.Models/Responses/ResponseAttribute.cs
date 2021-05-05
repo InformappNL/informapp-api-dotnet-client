@@ -38,8 +38,9 @@ namespace Informapp.InformSystem.WebApi.Models.Responses
 
             Model = model;
         }
-
+#pragma warning disable CA1502 // Rewrite or refactor the code to decrease its complexity.
         private static bool IsValid(HttpStatusCode statusCode)
+#pragma warning restore CA1502
         {
             switch (statusCode)
             {

@@ -33,7 +33,9 @@ namespace Informapp.InformSystem.WebApi.Client.Requests
         /// Get password
         /// </summary>
         /// <returns>The password</returns>
+#pragma warning disable CA1024 // Use properties where appropriate
         public string GetPassword()
+#pragma warning restore CA1024 // Use properties where appropriate
         {
             return Password;
         }
