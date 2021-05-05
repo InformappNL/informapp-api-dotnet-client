@@ -2871,6 +2871,86 @@
             Aborted
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Validators.IValidator">
+            <summary>
+            Abstraction for <see cref="T:System.ComponentModel.DataAnnotations.Validator"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.IValidator.TryValidateObject(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult})">
+            <summary>
+            Determines whether the specified object is valid using the validation context and validation results collection.
+            </summary>
+            <param name="instance">The object to validate.</param>
+            <param name="validationContext">The context that describes the object to validate.</param>
+            <param name="validationResults">A collection to hold each failed validation.</param>
+            <returns>true if the object validates; otherwise, false.</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.IValidator.TryValidateObject(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult},System.Boolean)">
+            <summary>
+            Determines whether the specified object is valid using the validation context,
+            validation results collection, and a value that specifies whether to validate
+            all properties.
+            </summary>
+            <param name="instance">The object to validate.</param>
+            <param name="validationContext">The context that describes the object to validate.</param>
+            <param name="validationResults">A collection to hold each failed validation.</param>
+            <param name="validateAllProperties">true to validate all properties; if false, only required attributes are validated.</param>
+            <returns>true if the object validates; otherwise, false.</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.IValidator.TryValidateProperty(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult})">
+            <summary>
+            Validates the property.
+            </summary>
+            <param name="value">The value to validate.</param>
+            <param name="validationContext">The context that describes the property to validate.</param>
+            <param name="validationResults">A collection to hold each failed validation.</param>
+            <returns>true if the property validates; otherwise, false.</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.IValidator.TryValidateValue(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult},System.Collections.Generic.IEnumerable{System.ComponentModel.DataAnnotations.ValidationAttribute})">
+            <summary>
+            Returns a value that indicates whether the specified value is valid with the
+            specified attributes.
+            </summary>
+            <param name="value">The value to validate.</param>
+            <param name="validationContext">The context that describes the object to validate.</param>
+            <param name="validationResults">A collection to hold failed validations.</param>
+            <param name="validationAttributes">The validation attributes.</param>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.IValidator.ValidateObject(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            Determines whether the specified object is valid using the validation context.
+            </summary>
+            <param name="instance">The object to validate.</param>
+            <param name="validationContext">The context that describes the object to validate.</param>
+            <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">The object is not valid.</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.IValidator.ValidateObject(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Boolean)">
+            <summary>
+            Determines whether the specified object is valid using the validation context,
+            and a value that specifies whether to validate all properties.
+            </summary>
+            <param name="instance">The object to validate.</param>
+            <param name="validationContext">The context that describes the object to validate.</param>
+            <param name="validateAllProperties">true to validate all properties; otherwise, false.</param>
+            <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">The object is not valid.</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.IValidator.ValidateProperty(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            Validates the property.
+            </summary>
+            <param name="value">The value to validate.</param>
+            <param name="validationContext">The context that describes the property to validate.</param>
+            <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">The value parameter is not valid.</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.IValidator.ValidateValue(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.IEnumerable{System.ComponentModel.DataAnnotations.ValidationAttribute})">
+            <summary>
+            Validates the specified attributes.
+            </summary>
+            <param name="value">The value to validate.</param>
+            <param name="validationContext">The context that describes the object to validate.</param>
+            <param name="validationAttributes">The validation attributes.</param>
+            <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">The value parameter does not validate with the <paramref name="validationAttributes"/> parameter.</exception>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Validators.IValidator`1">
             <summary>
             Validator interface
@@ -2889,7 +2969,7 @@
             </summary>
             <typeparam name="T">The type of object to validate</typeparam>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.Validator`1.#ctor">
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.Validator`1.#ctor(Informapp.InformSystem.WebApi.Client.Validators.IValidator)">
             <summary>
             Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.Validator"/> class.
             </summary>
@@ -2899,6 +2979,87 @@
             Validate object
             </summary>
             <param name="instance">The instance to validate</param>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Validators.ValidatorWrapper">
+            <summary>
+            Wrapper for <see cref="T:System.ComponentModel.DataAnnotations.Validator"/>
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.ValidatorWrapper.TryValidateObject(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult})">
+            <summary>
+            Determines whether the specified object is valid using the validation context and validation results collection.
+            </summary>
+            <param name="instance">The object to validate.</param>
+            <param name="validationContext">The context that describes the object to validate.</param>
+            <param name="validationResults">A collection to hold each failed validation.</param>
+            <returns>true if the object validates; otherwise, false.</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.ValidatorWrapper.TryValidateObject(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult},System.Boolean)">
+            <summary>
+            Determines whether the specified object is valid using the validation context,
+            validation results collection, and a value that specifies whether to validate
+            all properties.
+            </summary>
+            <param name="instance">The object to validate.</param>
+            <param name="validationContext">The context that describes the object to validate.</param>
+            <param name="validationResults">A collection to hold each failed validation.</param>
+            <param name="validateAllProperties">true to validate all properties; if false, only required attributes are validated.</param>
+            <returns>true if the object validates; otherwise, false.</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.ValidatorWrapper.TryValidateProperty(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult})">
+            <summary>
+            Validates the property.
+            </summary>
+            <param name="value">The value to validate.</param>
+            <param name="validationContext">The context that describes the property to validate.</param>
+            <param name="validationResults">A collection to hold each failed validation.</param>
+            <returns>true if the property validates; otherwise, false.</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.ValidatorWrapper.TryValidateValue(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult},System.Collections.Generic.IEnumerable{System.ComponentModel.DataAnnotations.ValidationAttribute})">
+            <summary>
+            Returns a value that indicates whether the specified value is valid with the
+            specified attributes.
+            </summary>
+            <param name="value">The value to validate.</param>
+            <param name="validationContext">The context that describes the object to validate.</param>
+            <param name="validationResults">A collection to hold failed validations.</param>
+            <param name="validationAttributes">The validation attributes.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.ValidatorWrapper.ValidateObject(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            Determines whether the specified object is valid using the validation context.
+            </summary>
+            <param name="instance">The object to validate.</param>
+            <param name="validationContext">The context that describes the object to validate.</param>
+            <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">The object is not valid.</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.ValidatorWrapper.ValidateObject(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Boolean)">
+            <summary>
+            Determines whether the specified object is valid using the validation context,
+            and a value that specifies whether to validate all properties.
+            </summary>
+            <param name="instance">The object to validate.</param>
+            <param name="validationContext">The context that describes the object to validate.</param>
+            <param name="validateAllProperties">true to validate all properties; otherwise, false.</param>
+            <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">The object is not valid.</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.ValidatorWrapper.ValidateProperty(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)">
+            <summary>
+            Validates the property.
+            </summary>
+            <param name="value">The value to validate.</param>
+            <param name="validationContext">The context that describes the property to validate.</param>
+            <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">The value parameter is not valid.</exception>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Validators.ValidatorWrapper.ValidateValue(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.IEnumerable{System.ComponentModel.DataAnnotations.ValidationAttribute})">
+            <summary>
+            Validates the specified attributes.
+            </summary>
+            <param name="value">The value to validate.</param>
+            <param name="validationContext">The context that describes the object to validate.</param>
+            <param name="validationAttributes">The validation attributes.</param>
+            <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">The value parameter does not validate with the <paramref name="validationAttributes"/> parameter.</exception>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.WebApiClientProject">
             <summary>

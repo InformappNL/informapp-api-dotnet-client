@@ -16,12 +16,17 @@ namespace Informapp.InformSystem.WebApi.Client.Validators
     {
         private const int MaxDepth = 30;
 
+        private readonly IValidator _validator;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="Validator"/> class.
         /// </summary>
-        public Validator()
+        public Validator(
+            IValidator validator)
         {
+            Argument.NotNull(validator, nameof(validator));
 
+            _validator = validator;
         }
 
         /// <summary>
@@ -61,12 +66,12 @@ namespace Informapp.InformSystem.WebApi.Client.Validators
             }
         }
 
-        private static void ValidateInstance(object instance)
+        private void ValidateInstance(object instance)
         {
             var context = new ValidationContext(instance, null, null);
 
             // Throws an exception when instance is invalid.
-            Validator.ValidateObject(instance, context, validateAllProperties: true);
+            _validator.ValidateObject(instance, context, validateAllProperties: true);
         }
 
         private void ValidateCollection(IEnumerable collection, int nextDepth, int maxDepth)

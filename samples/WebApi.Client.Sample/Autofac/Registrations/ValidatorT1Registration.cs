@@ -7,7 +7,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
     /// <summary>
     /// Register dependencies in Autofac
     /// </summary>
-    public class ValidatorRegistration : IAutofacRegistration
+    public class ValidatorT1Registration : IAutofacRegistration
     {
         /// <summary>
         /// Register dependencies in Autofac
@@ -17,8 +17,8 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            _ = builder.RegisterType<ValidatorWrapper>()
-                .As<IValidator>()
+            _ = builder.RegisterGeneric(typeof(Validator<>))
+                .As(typeof(IValidator<>))
                 .InstancePerLifetimeScope();
         }
     }

@@ -335,7 +335,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
         private static IValidator<T> GetValidator<T>()
             where T : class
         {
-            return new Validator<T>();
+            return new Validator<T>(new ValidatorWrapper());
         }
     }
 }

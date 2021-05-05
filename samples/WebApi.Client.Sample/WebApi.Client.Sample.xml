@@ -378,6 +378,17 @@
             </summary>
             <param name="builder">The builder</param>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.ValidatorT1Registration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations.ValidatorT1Registration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Sample.BearerTokenProviders.LogToConsoleBearerTokenProviderDecorator`1">
             <summary>
             Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.BearerTokenProviders.IBearerTokenProvider`1"/> to log to console
