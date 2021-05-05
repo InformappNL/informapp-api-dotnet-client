@@ -35,16 +35,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.E
         public Guid? IntegrationExportId { get; set; }
 
         /// <summary>
-        /// Attempt number
-        /// </summary>
-        [BodyParameter]
-        [DataMember]
-        [ExampleValue(IntegrationExportV1Constants.MinAttemptNumber)]
-        [Range(IntegrationExportV1Constants.MinAttemptNumber, IntegrationExportV1Constants.MaxAttemptNumber)]
-        [Required]
-        public int? AttemptNumber { get; set; }
-
-        /// <summary>
         /// Message
         /// </summary>
         [BodyParameter]

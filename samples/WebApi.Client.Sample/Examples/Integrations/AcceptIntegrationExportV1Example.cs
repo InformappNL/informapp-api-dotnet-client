@@ -25,12 +25,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations
         {
             var integrationExportId = Guid.Parse("64064995-E24B-4C38-8DCA-DD32C29793AB");
 
-            var attemptNumber = 1;
-
             var request = new AcceptIntegrationExportV1Request
             {
                 IntegrationExportId = integrationExportId,
-                AttemptNumber = attemptNumber,
             };
 
             var response = await _client

@@ -5056,11 +5056,6 @@
             Integration export id
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.AcceptIntegrationExportV1Request.AttemptNumber">
-            <summary>
-            Attempt number
-            </summary>
-        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.AcceptIntegrationExportV1Response">
             <summary>
             Accept integration export response
@@ -5194,11 +5189,6 @@
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.RejectIntegrationExportV1Request.IntegrationExportId">
             <summary>
             Integration export id
-            </summary>
-        </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.RejectIntegrationExportV1Request.AttemptNumber">
-            <summary>
-            Attempt number
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.RejectIntegrationExportV1Request.Message">

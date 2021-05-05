@@ -30,7 +30,6 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations
             var request = new RejectIntegrationExportV1Request
             {
                 IntegrationExportId = integrationExportId,
-                AttemptNumber = attemptNumber,
                 Message = "Not configured for this integration",
             };
 
