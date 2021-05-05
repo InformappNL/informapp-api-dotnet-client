@@ -9,10 +9,16 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions
 {
-    internal class CompleteInformAppFormInstructionV1Example : IExample
+    /// <summary>
+    /// Example for complete form instruction
+    /// </summary>
+    public class CompleteInformAppFormInstructionV1Example : IExample
     {
         private readonly IApiClient<CompleteInformAppFormInstructionV1Request, CompleteInformAppFormInstructionV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CompleteInformAppFormInstructionV1Example"/> class.
+        /// </summary>
         public CompleteInformAppFormInstructionV1Example(
             IApiClient<CompleteInformAppFormInstructionV1Request, CompleteInformAppFormInstructionV1Response> client)
         {
@@ -21,6 +27,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instruc
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var formId = Guid.Parse("2fa22553-0587-459b-b81f-b474c448a3f3");

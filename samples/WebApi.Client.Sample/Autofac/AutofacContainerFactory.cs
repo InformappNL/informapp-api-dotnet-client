@@ -8,7 +8,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac
     /// <summary>
     /// Autofac container factory class
     /// </summary>
-    internal static class AutofacContainerFactory
+    public static class AutofacContainerFactory
     {
         /// <summary>
         /// Create Autofac container
@@ -62,9 +62,12 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac
                     .InstancePerLifetimeScope();
             }
 
-            using var container = builder.Build();
-
-            return container.Resolve<IList<IAutofacRegistration>>();
+#pragma warning disable IDE0063 // Use simple 'using' statement
+            using (var container = builder.Build())
+#pragma warning restore IDE0063 // Use simple 'using' statement
+            {
+                return container.Resolve<IList<IAutofacRegistration>>();
+            }
         }
     }
 }

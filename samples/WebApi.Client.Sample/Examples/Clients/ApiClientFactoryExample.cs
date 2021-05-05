@@ -14,10 +14,13 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
     /// <summary>
     /// Example using the factory
     /// </summary>
-    internal class ApiClientFactoryExample : IExample
+    public class ApiClientFactoryExample : IExample
     {
         private readonly IOptions<ApiConfiguration> _options;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ApiClientFactoryExample"/> class.
+        /// </summary>
         public ApiClientFactoryExample(
             IOptions<ApiConfiguration> options)
         {
@@ -26,6 +29,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
             _options = options;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var factory = new ApiClientFactory(_options);

@@ -21,10 +21,16 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
 {
-    internal class RestSharpExample : IExample
+    /// <summary>
+    /// Example using RestSharp client
+    /// </summary>
+    public class RestSharpExample : IExample
     {
         private readonly IOptions<ApiConfiguration> _options;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="RestSharpExample"/> class.
+        /// </summary>
         public RestSharpExample(
             IOptions<ApiConfiguration> options)
         {
@@ -33,6 +39,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
             _options = options;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var getValuesRequest = new ListValuesV1Request();
@@ -50,7 +61,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
             Require.NotNull(putValuesResponse, nameof(putValuesResponse));
         }
 
-        public async Task<IRestResponse<TResponse>> Run<TRequest, TResponse>(TRequest model, CancellationToken cancellationToken)
+        private async Task<IRestResponse<TResponse>> Run<TRequest, TResponse>(TRequest model, CancellationToken cancellationToken)
             where TRequest : class, IRequest<TResponse>
             where TResponse : class
         {

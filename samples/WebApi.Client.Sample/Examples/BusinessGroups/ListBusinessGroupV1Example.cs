@@ -8,10 +8,16 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.BusinessGroups
 {
-    internal class ListBusinessGroupV1Example : IExample
+    /// <summary>
+    /// Example for list business group
+    /// </summary>
+    public class ListBusinessGroupV1Example : IExample
     {
         private readonly IApiClient<ListBusinessGroupV1Request, ListBusinessGroupV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ListBusinessGroupV1Example"/> class.
+        /// </summary>
         public ListBusinessGroupV1Example(
             IApiClient<ListBusinessGroupV1Request, ListBusinessGroupV1Response> client)
         {
@@ -20,6 +26,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.BusinessGroups
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var request = new ListBusinessGroupV1Request

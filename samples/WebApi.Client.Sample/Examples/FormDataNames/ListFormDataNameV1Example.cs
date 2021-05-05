@@ -11,12 +11,18 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.FormDataNames
 {
-    internal class ListFormDataNameV1Example : IExample
+    /// <summary>
+    /// Example for list form data name
+    /// </summary>
+    public class ListFormDataNameV1Example : IExample
     {
         private readonly IApiClient<ListFormV1Request, ListFormV1Response> _formClient;
 
         private readonly IApiClient<ListFormDataNameV1Request, ListFormDataNameV1Response> _formDataNameClient;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ListFormDataNameV1Example"/> class.
+        /// </summary>
         public ListFormDataNameV1Example(
             IApiClient<ListFormV1Request, ListFormV1Response> formClient,
             IApiClient<ListFormDataNameV1Request, ListFormDataNameV1Response> formDataNameClient)
@@ -29,6 +35,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.FormDataNames
             _formDataNameClient = formDataNameClient;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var formId = await GetFormId(cancellationToken)

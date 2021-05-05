@@ -9,10 +9,16 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
 {
-    internal class DeleteAppGroupV1Example : IExample
+    /// <summary>
+    /// Example for delete app group
+    /// </summary>
+    public class DeleteAppGroupV1Example : IExample
     {
         private readonly IApiClient<DeleteAppGroupV1Request, DeleteAppGroupV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DeleteAppGroupV1Example"/> class.
+        /// </summary>
         public DeleteAppGroupV1Example(
             IApiClient<DeleteAppGroupV1Request, DeleteAppGroupV1Response> client)
         {
@@ -21,6 +27,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var request = new DeleteAppGroupV1Request

@@ -5,7 +5,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac
     /// <summary>
     /// Interface to register dependencies with Autofac
     /// </summary>
-    internal interface IAutofacRegistration
+    public interface IAutofacRegistration
     {
         /// <summary>
         /// Register dependencies

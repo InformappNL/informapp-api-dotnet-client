@@ -12,7 +12,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
     /// <summary>
     /// Register dependencies in Autofac
     /// </summary>
-    internal class BearerTokenProviderRegistration : IAutofacRegistration
+    public class BearerTokenProviderRegistration : IAutofacRegistration
     {
         private readonly IAssemblyProvider _assemblyProvider;
 

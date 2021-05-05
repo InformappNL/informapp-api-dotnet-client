@@ -11,10 +11,16 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations
 {
-    internal class CreateIntegrationUserHeartbeatV1Example : IExample
+    /// <summary>
+    /// Example for create integration user heartbeat
+    /// </summary>
+    public class CreateIntegrationUserHeartbeatV1Example : IExample
     {
         private readonly IApiClient<CreateIntegrationUserHeartbeatV1Request, CreateIntegrationUserHeartbeatV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CreateIntegrationUserHeartbeatV1Example"/> class.
+        /// </summary>
         public CreateIntegrationUserHeartbeatV1Example(
             IApiClient<CreateIntegrationUserHeartbeatV1Request, CreateIntegrationUserHeartbeatV1Response> client)
         {
@@ -23,6 +29,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var datasources = new[]

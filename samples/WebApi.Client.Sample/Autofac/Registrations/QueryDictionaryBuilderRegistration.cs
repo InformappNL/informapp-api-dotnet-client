@@ -7,7 +7,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
     /// <summary>
     /// Register dependencies in Autofac
     /// </summary>
-    internal class QueryDictionaryBuilderRegistration : IAutofacRegistration
+    public class QueryDictionaryBuilderRegistration : IAutofacRegistration
     {
         /// <summary>
         /// Register dependencies in Autofac

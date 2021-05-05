@@ -13,7 +13,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.BearerTokenProviders
     /// <summary>
     /// Decorator class for <see cref="IBearerTokenProvider{T}"/> to log to console
     /// </summary>
-    internal class LogToConsoleBearerTokenProviderDecorator<T> : Decorator<IBearerTokenProvider<T>>,
+    public class LogToConsoleBearerTokenProviderDecorator<T> : Decorator<IBearerTokenProvider<T>>,
         IBearerTokenProvider<T>
 
         where T : class

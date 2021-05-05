@@ -7,7 +7,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
     /// <summary>
     /// Register dependencies in Autofac
     /// </summary>
-    internal class MimeMapperRegistration : IAutofacRegistration
+    public class MimeMapperRegistration : IAutofacRegistration
     {
         /// <summary>
         /// Register dependencies in Autofac

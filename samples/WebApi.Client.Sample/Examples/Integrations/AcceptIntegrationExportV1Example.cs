@@ -9,10 +9,16 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations
 {
-    internal class AcceptIntegrationExportV1Example : IExample
+    /// <summary>
+    /// Example for accept integration export
+    /// </summary>
+    public class AcceptIntegrationExportV1Example : IExample
     {
         private readonly IApiClient<AcceptIntegrationExportV1Request, AcceptIntegrationExportV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AcceptIntegrationExportV1Example"/> class.
+        /// </summary>
         public AcceptIntegrationExportV1Example(
             IApiClient<AcceptIntegrationExportV1Request, AcceptIntegrationExportV1Response> client)
         {
@@ -21,6 +27,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var integrationExportId = Guid.Parse("64064995-E24B-4C38-8DCA-DD32C29793AB");

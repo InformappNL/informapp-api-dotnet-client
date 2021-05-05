@@ -7,7 +7,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
     /// <summary>
     /// Register dependencies in Autofac
     /// </summary>
-    internal class UploadFileResponseMapperRegistration : IAutofacRegistration
+    public class UploadFileResponseMapperRegistration : IAutofacRegistration
     {
         /// <summary>
         /// Register dependencies in Autofac

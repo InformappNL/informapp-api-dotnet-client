@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations
 {
-    internal class DownloadIntegrationExportV1Example : IExample
+    /// <summary>
+    /// Example for download integration export
+    /// </summary>
+    public class DownloadIntegrationExportV1Example : IExample
     {
         // Set integration export id
         private const string IntegrationExportId = "A0125378-7C02-40C4-9B21-1908871FC2DE";
@@ -18,6 +21,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations
 
         private readonly IApiClient<DownloadIntegrationExportV1Request, DownloadIntegrationExportV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DownloadIntegrationExportV1Example"/> class.
+        /// </summary>
         public DownloadIntegrationExportV1Example(
             IApiClient<DownloadIntegrationExportV1Request, DownloadIntegrationExportV1Response> client)
         {
@@ -26,6 +32,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var integrationExportId = Guid.Parse(IntegrationExportId);

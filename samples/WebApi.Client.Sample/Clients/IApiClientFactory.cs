@@ -6,7 +6,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
     /// <summary>
     /// Factory interface to create instances of <see cref="IApiClient{TRequest, TResponse}"/>
     /// </summary>
-    internal interface IApiClientFactory
+    public interface IApiClientFactory
     {
         /// <summary>
         /// Create instace of <see cref="IApiClient{TRequest, TResponse}"/>

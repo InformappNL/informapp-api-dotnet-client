@@ -14,10 +14,13 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
     /// <summary>
     /// Example using the api client facade
     /// </summary>
-    internal class ApiClientExample : IExample
+    public class ApiClientExample : IExample
     {
         private readonly IOptions<ApiConfiguration> _options;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ApiClientExample"/> class.
+        /// </summary>
         public ApiClientExample(
             IOptions<ApiConfiguration> options)
         {
@@ -26,6 +29,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
             _options = options;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var client = new ApiClient<ListValuesV1Request, ListValuesV1Response>(_options);

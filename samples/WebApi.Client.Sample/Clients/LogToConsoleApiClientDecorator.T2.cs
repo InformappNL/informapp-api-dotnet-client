@@ -15,7 +15,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
     /// <summary>
     /// Decorator class for <see cref="IApiClient{TRequest, TResponse}"/> to log to console
     /// </summary>
-    internal class LogToConsoleApiClientDecorator<TRequest, TResponse> : Decorator<IApiClient<TRequest, TResponse>>,
+    public class LogToConsoleApiClientDecorator<TRequest, TResponse> : Decorator<IApiClient<TRequest, TResponse>>,
         IApiClient<TRequest, TResponse>
 
         where TRequest : class, IRequest<TResponse>

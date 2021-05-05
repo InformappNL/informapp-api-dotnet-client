@@ -7,7 +7,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
     /// <summary>
     /// Register dependencies in Autofac
     /// </summary>
-    internal class PathProviderRegistration : IAutofacRegistration
+    public class PathProviderRegistration : IAutofacRegistration
     {
         /// <summary>
         /// Register dependencies in Autofac

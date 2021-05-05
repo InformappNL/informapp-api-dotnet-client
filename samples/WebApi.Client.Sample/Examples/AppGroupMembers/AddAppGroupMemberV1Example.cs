@@ -8,10 +8,16 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers
 {
-    internal class AddAppGroupMemberV1Example : IExample
+    /// <summary>
+    /// Example for add app group member
+    /// </summary>
+    public class AddAppGroupMemberV1Example : IExample
     {
         private readonly IApiClient<AddAppGroupMemberV1Request, AddAppGroupMemberV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AddAppGroupMemberV1Example"/> class.
+        /// </summary>
         public AddAppGroupMemberV1Example(
             IApiClient<AddAppGroupMemberV1Request, AddAppGroupMemberV1Response> client)
         {
@@ -20,6 +26,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var members = new[]

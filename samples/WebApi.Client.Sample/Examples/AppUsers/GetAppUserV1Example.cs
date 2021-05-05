@@ -12,12 +12,18 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers
 {
-    internal class GetAppUserV1Example : IExample
+    /// <summary>
+    /// Example for get app user
+    /// </summary>
+    public class GetAppUserV1Example : IExample
     {
         private readonly IApiClient<ListAppUserV1Request, ListAppUserV1Response> _listClient;
 
         private readonly IApiClient<GetAppUserV1Request, GetAppUserV1Response> _getClient;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GetAppUserV1Example"/> class.
+        /// </summary>
         public GetAppUserV1Example(
             IApiClient<ListAppUserV1Request, ListAppUserV1Response> listClient,
             IApiClient<GetAppUserV1Request, GetAppUserV1Response> getClient)
@@ -30,6 +36,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers
             _getClient = getClient;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             // Obtain an app user id using a list request

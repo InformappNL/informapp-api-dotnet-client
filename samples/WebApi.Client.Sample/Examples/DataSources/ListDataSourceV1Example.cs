@@ -8,10 +8,16 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources
 {
-    internal class ListDataSourceV1Example : IExample
+    /// <summary>
+    /// Example for list data source
+    /// </summary>
+    public class ListDataSourceV1Example : IExample
     {
         private readonly IApiClient<ListDataSourceV1Request, ListDataSourceV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ListDataSourceV1Example"/> class.
+        /// </summary>
         public ListDataSourceV1Example(
             IApiClient<ListDataSourceV1Request, ListDataSourceV1Response> client)
         {
@@ -20,6 +26,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var request = new ListDataSourceV1Request

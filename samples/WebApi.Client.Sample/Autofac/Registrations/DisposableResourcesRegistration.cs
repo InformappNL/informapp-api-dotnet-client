@@ -7,7 +7,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
     /// <summary>
     /// Register dependencies in Autofac
     /// </summary>
-    internal class DisposableResourcesRegistration : IAutofacRegistration
+    public class DisposableResourcesRegistration : IAutofacRegistration
     {
         /// <summary>
         /// Register dependencies in Autofac

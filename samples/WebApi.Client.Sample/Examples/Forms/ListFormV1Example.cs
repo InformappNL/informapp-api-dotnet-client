@@ -8,10 +8,16 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Forms
 {
-    internal class ListFormV1Example : IExample
+    /// <summary>
+    /// Example for list form
+    /// </summary>
+    public class ListFormV1Example : IExample
     {
         private readonly IApiClient<ListFormV1Request, ListFormV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ListFormV1Example"/> class.
+        /// </summary>
         public ListFormV1Example(
             IApiClient<ListFormV1Request, ListFormV1Response> client)
         {
@@ -20,6 +26,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Forms
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var request = new ListFormV1Request

@@ -8,7 +8,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
     /// <summary>
     /// Register dependencies in Autofac
     /// </summary>
-    internal class SerializerRegistration : IAutofacRegistration
+    public class SerializerRegistration : IAutofacRegistration
     {
         /// <summary>
         /// Register dependencies in Autofac

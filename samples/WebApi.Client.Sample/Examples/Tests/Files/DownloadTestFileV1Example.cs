@@ -9,12 +9,18 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
 {
-    internal class DownloadTestFileV1Example : IExample
+    /// <summary>
+    /// Example for download test file
+    /// </summary>
+    public class DownloadTestFileV1Example : IExample
     {
         private const int BufferSize = 1024 * 16;
 
         private readonly IApiClient<DownloadTestFileV1Request, DownloadTestFileV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DownloadTestFileV1Example"/> class.
+        /// </summary>
         public DownloadTestFileV1Example(
             IApiClient<DownloadTestFileV1Request, DownloadTestFileV1Response> client)
         {
@@ -23,6 +29,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var request = new DownloadTestFileV1Request

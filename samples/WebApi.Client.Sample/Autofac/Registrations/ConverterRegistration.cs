@@ -9,7 +9,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
     /// <summary>
     /// Register dependencies in Autofac
     /// </summary>
-    internal class ConverterRegistration : IAutofacRegistration
+    public class ConverterRegistration : IAutofacRegistration
     {
         private readonly IAssemblyProvider _assemblyProvider;
 

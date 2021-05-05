@@ -7,7 +7,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
     /// <summary>
     /// Register dependencies in Autofac
     /// </summary>
-    internal class DateTimeProviderRegistration : IAutofacRegistration
+    public class DateTimeProviderRegistration : IAutofacRegistration
     {
         /// <summary>
         /// Register dependencies in Autofac

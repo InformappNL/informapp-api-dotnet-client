@@ -9,7 +9,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
     /// <summary>
     /// Register dependencies in Autofac
     /// </summary>
-    internal class RequestFactoryRegistration : IAutofacRegistration
+    public class RequestFactoryRegistration : IAutofacRegistration
     {
         /// <summary>
         /// Register dependencies in Autofac

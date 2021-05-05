@@ -11,12 +11,18 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2
 {
-    internal class OAuth2TokenV2Example : IExample
+    /// <summary>
+    /// Example for OAuth2 token
+    /// </summary>
+    public class OAuth2TokenV2Example : IExample
     {
         private readonly IApiClient<OAuth2TokenV2Request, OAuth2TokenV2Response> _client;
 
         private readonly IOptions<ApiConfiguration> _options;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="OAuth2TokenV2Example"/> class.
+        /// </summary>
         public OAuth2TokenV2Example(
             IApiClient<OAuth2TokenV2Request, OAuth2TokenV2Response> client,
             IOptions<ApiConfiguration> options)
@@ -29,6 +35,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2
             _options = options;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             string username = _options.Value.UserName;

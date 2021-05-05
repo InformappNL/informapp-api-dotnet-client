@@ -9,10 +9,16 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
 {
-    internal class EditAppGroupV1Example : IExample
+    /// <summary>
+    /// Example for edit app group
+    /// </summary>
+    public class EditAppGroupV1Example : IExample
     {
         private readonly IApiClient<EditAppGroupV1Request, EditAppGroupV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="EditAppGroupV1Example"/> class.
+        /// </summary>
         public EditAppGroupV1Example(
             IApiClient<EditAppGroupV1Request, EditAppGroupV1Response> client)
         {
@@ -21,6 +27,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var request = new EditAppGroupV1Request

@@ -11,12 +11,18 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationData
 {
-    internal class ListFormRegistrationDataForRegistrationV1Example : IExample
+    /// <summary>
+    /// Example for list form registration data
+    /// </summary>
+    public class ListFormRegistrationDataForRegistrationV1Example : IExample
     {
         private readonly IApiClient<ListFormRegistrationV1Request, ListFormRegistrationV1Response> _registrationClient;
 
         private readonly IApiClient<ListFormRegistrationDataForRegistrationV1Request, ListFormRegistrationDataForRegistrationV1Response> _registrationDataClient;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ListFormRegistrationDataForRegistrationV1Example"/> class.
+        /// </summary>
         public ListFormRegistrationDataForRegistrationV1Example(
             IApiClient<ListFormRegistrationV1Request, ListFormRegistrationV1Response> registrationClient,
             IApiClient<ListFormRegistrationDataForRegistrationV1Request, ListFormRegistrationDataForRegistrationV1Response> registrationDataClient)
@@ -29,6 +35,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationD
             _registrationDataClient = registrationDataClient;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var registrationId = await GetRegistrationId(cancellationToken)

@@ -9,10 +9,16 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions
 {
-    internal class ListInformAppFormInstructionV1Example : IExample
+    /// <summary>
+    /// Example for list form instruction
+    /// </summary>
+    public class ListInformAppFormInstructionV1Example : IExample
     {
         private readonly IApiClient<ListInformAppFormInstructionV1Request, ListInformAppFormInstructionV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ListInformAppFormInstructionV1Example"/> class.
+        /// </summary>
         public ListInformAppFormInstructionV1Example(
             IApiClient<ListInformAppFormInstructionV1Request, ListInformAppFormInstructionV1Response> client)
         {
@@ -21,6 +27,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instruc
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var formId = Guid.Parse("2fa22553-0587-459b-b81f-b474c448a3f3");

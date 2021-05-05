@@ -9,10 +9,16 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Countries
 {
-    internal class ListCountryV1Example : IExample
+    /// <summary>
+    /// Example for list country
+    /// </summary>
+    public class ListCountryV1Example : IExample
     {
         private readonly IApiClient<ListCountryV1Request, ListCountryV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ListCountryV1Example"/> class.
+        /// </summary>
         public ListCountryV1Example(
             IApiClient<ListCountryV1Request, ListCountryV1Response> client)
         {
@@ -21,6 +27,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Countries
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var model = new ListCountryV1Request

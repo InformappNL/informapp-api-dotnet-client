@@ -12,12 +12,18 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
 {
-    internal class GetAppGroupV1Example : IExample
+    /// <summary>
+    /// Example for get app group
+    /// </summary>
+    public class GetAppGroupV1Example : IExample
     {
         private readonly IApiClient<ListAppGroupV1Request, ListAppGroupV1Response> _listClient;
 
         private readonly IApiClient<GetAppGroupV1Request, GetAppGroupV1Response> _getClient;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GetAppGroupV1Example"/> class.
+        /// </summary>
         public GetAppGroupV1Example(
             IApiClient<ListAppGroupV1Request, ListAppGroupV1Response> listClient,
             IApiClient<GetAppGroupV1Request, GetAppGroupV1Response> getClient)
@@ -30,6 +36,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups
             _getClient = getClient;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             // Obtain an app group id using a list request

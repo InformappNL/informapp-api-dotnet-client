@@ -10,7 +10,10 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
 {
-    internal class UploadTestFileV1Example : IExample
+    /// <summary>
+    /// Example for upload test file
+    /// </summary>
+    public class UploadTestFileV1Example : IExample
     {
         private const int BufferSize = 1024 * 16;
 
@@ -18,6 +21,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
 
         private readonly IApiClient<UploadTestFileV1Request, UploadTestFileV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UploadTestFileV1Example"/> class.
+        /// </summary>
         public UploadTestFileV1Example(
             IApiClient<UploadTestFileV1Request, UploadTestFileV1Response> client)
         {
@@ -26,6 +32,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
 #pragma warning disable IDE0063 // Use simple 'using' statement

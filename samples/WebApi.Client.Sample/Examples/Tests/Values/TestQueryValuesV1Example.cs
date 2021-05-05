@@ -10,12 +10,18 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
 {
-    internal class TestQueryValuesV1Example : IExample
+    /// <summary>
+    /// Example for test query values
+    /// </summary>
+    public class TestQueryValuesV1Example : IExample
     {
         private readonly TestQueryValuesV1Comparer _comparer = new();
 
         private readonly IApiClient<TestQueryValuesV1Request, TestQueryValuesV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TestQueryValuesV1Example"/> class.
+        /// </summary>
         public TestQueryValuesV1Example(
             IApiClient<TestQueryValuesV1Request, TestQueryValuesV1Response> client)
         {
@@ -24,6 +30,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var model = CreateRequest();

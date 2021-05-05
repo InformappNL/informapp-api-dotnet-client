@@ -16,7 +16,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
     /// </summary>
     /// <typeparam name="TRequest">The request type</typeparam>
     /// <typeparam name="TResponse">The response type</typeparam>
-    internal class ApiClient<TRequest, TResponse> : IApiClient<TRequest, TResponse>
+    public class ApiClient<TRequest, TResponse> : IApiClient<TRequest, TResponse>
         where TRequest : class, IRequest<TResponse>
         where TResponse : class, new()
     {

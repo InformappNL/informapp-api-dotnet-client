@@ -9,7 +9,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
     /// <summary>
     /// Register dependencies in Autofac
     /// </summary>
-    internal class BearerTokenCacheRegistration : IAutofacRegistration
+    public class BearerTokenCacheRegistration : IAutofacRegistration
     {
         /// <summary>
         /// Register dependencies in Autofac

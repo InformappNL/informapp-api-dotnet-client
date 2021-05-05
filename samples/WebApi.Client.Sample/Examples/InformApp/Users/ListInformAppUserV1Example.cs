@@ -9,10 +9,16 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Users
 {
-    internal class ListInformAppUserV1Example : IExample
+    /// <summary>
+    /// Example for list app user
+    /// </summary>
+    public class ListInformAppUserV1Example : IExample
     {
         private readonly IApiClient<ListInformAppUserV1Request, ListInformAppUserV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ListInformAppUserV1Example"/> class.
+        /// </summary>
         public ListInformAppUserV1Example(
             IApiClient<ListInformAppUserV1Request, ListInformAppUserV1Response> client)
         {
@@ -21,6 +27,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Users
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var businessGroupId = Guid.Parse("edc7c3f4-47b4-44ba-b8d6-017a178ad910");

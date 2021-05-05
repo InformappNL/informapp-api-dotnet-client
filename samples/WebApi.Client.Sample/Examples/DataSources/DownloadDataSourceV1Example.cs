@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources
 {
-    internal class DownloadDataSourceV1Example : IExample
+    /// <summary>
+    /// Example for download data source
+    /// </summary>
+    public class DownloadDataSourceV1Example : IExample
     {
         // Set datasource id
         private const string DataSourceId = "eca97d10-fb59-4e04-8832-3892d46f6861";
@@ -18,6 +21,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources
 
         private readonly IApiClient<DownloadDataSourceV1Request, DownloadDataSourceV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DownloadDataSourceV1Example"/> class.
+        /// </summary>
         public DownloadDataSourceV1Example(
             IApiClient<DownloadDataSourceV1Request, DownloadDataSourceV1Response> client)
         {
@@ -26,6 +32,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var dataSourceId = Guid.Parse(DataSourceId);

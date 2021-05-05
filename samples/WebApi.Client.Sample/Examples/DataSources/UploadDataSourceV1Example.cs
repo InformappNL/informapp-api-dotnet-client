@@ -13,13 +13,19 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources
 {
-    internal class UploadDataSourceV1Example : IExample
+    /// <summary>
+    /// Example for upload data source
+    /// </summary>
+    public class UploadDataSourceV1Example : IExample
     {
         // Set datasource id
         private const string DataSourceId = "eca97d10-fb59-4e04-8832-3892d46f6861";
 
         private readonly IApiClient<UploadDataSourceV1Request, UploadDataSourceV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UploadDataSourceV1Example"/> class.
+        /// </summary>
         public UploadDataSourceV1Example(
             IApiClient<UploadDataSourceV1Request, UploadDataSourceV1Response> client)
         {
@@ -28,6 +34,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             using (var model = GetRequest())

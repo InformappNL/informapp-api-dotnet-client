@@ -9,10 +9,16 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers
 {
-    internal class CreateAppUserV1Example : IExample
+    /// <summary>
+    /// Example for create app user
+    /// </summary>
+    public class CreateAppUserV1Example : IExample
     {
         private readonly IApiClient<CreateAppUserV1Request, CreateAppUserV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CreateAppUserV1Example"/> class.
+        /// </summary>
         public CreateAppUserV1Example(
             IApiClient<CreateAppUserV1Request, CreateAppUserV1Response> client)
         {
@@ -21,6 +27,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var request = new CreateAppUserV1Request

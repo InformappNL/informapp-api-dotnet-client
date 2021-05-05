@@ -468,15 +468,850 @@
             <param name="cancellationToken">The cancellation token</param>
             <returns>The response</returns>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers.AddAppGroupMemberV1Example">
+            <summary>
+            Example for add app group member
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers.AddAppGroupMemberV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMembers.AddAppGroupMember.AddAppGroupMemberV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMembers.AddAppGroupMember.AddAppGroupMemberV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers.AddAppGroupMemberV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers.AddAppGroupMemberV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers.ListAppGroupMemberV1Example">
+            <summary>
+            Example for list app group member
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers.ListAppGroupMemberV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMembers.ListAppGroupMember.ListAppGroupMemberV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMembers.ListAppGroupMember.ListAppGroupMemberV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers.ListAppGroupMemberV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers.ListAppGroupMemberV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers.RemoveAppGroupMemberV1Example">
+            <summary>
+            Example for remote app group member
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers.RemoveAppGroupMemberV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMembers.RemoveAppGroupMember.RemoveAppGroupMemberV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMembers.RemoveAppGroupMember.RemoveAppGroupMemberV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers.RemoveAppGroupMemberV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroupMembers.RemoveAppGroupMemberV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.CreateAppGroupV1Example">
+            <summary>
+            Example for create app group
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.CreateAppGroupV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.CreateAppGroup.CreateAppGroupV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.CreateAppGroup.CreateAppGroupV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.CreateAppGroupV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.CreateAppGroupV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.DeleteAppGroupV1Example">
+            <summary>
+            Example for delete app group
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.DeleteAppGroupV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.DeleteAppGroup.DeleteAppGroupV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.DeleteAppGroup.DeleteAppGroupV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.DeleteAppGroupV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.DeleteAppGroupV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.EditAppGroupV1Example">
+            <summary>
+            Example for edit app group
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.EditAppGroupV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.EditAppGroup.EditAppGroupV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.EditAppGroup.EditAppGroupV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.EditAppGroupV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.EditAppGroupV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.GetAppGroupV1Example">
+            <summary>
+            Example for get app group
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.GetAppGroupV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.ListAppGroup.ListAppGroupV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.ListAppGroup.ListAppGroupV1Response},Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.GetAppGroup.GetAppGroupV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.GetAppGroup.GetAppGroupV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.GetAppGroupV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.GetAppGroupV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.ListAppGroupV1Example">
+            <summary>
+            Example for list app group
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.ListAppGroupV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.ListAppGroup.ListAppGroupV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.ListAppGroup.ListAppGroupV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.ListAppGroupV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppGroups.ListAppGroupV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers.CreateAppUserV1Example">
+            <summary>
+            Example for create app user
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers.CreateAppUserV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.CreateAppUser.CreateAppUserV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.CreateAppUser.CreateAppUserV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers.CreateAppUserV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers.CreateAppUserV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers.DeleteAppUserV1Example">
+            <summary>
+            Example for delete app user
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers.DeleteAppUserV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.DeleteAppUser.DeleteAppUserV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.DeleteAppUser.DeleteAppUserV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers.DeleteAppUserV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers.DeleteAppUserV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers.GetAppUserV1Example">
+            <summary>
+            Example for get app user
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers.GetAppUserV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.ListAppUser.ListAppUserV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.ListAppUser.ListAppUserV1Response},Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.GetAppUser.GetAppUserV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.GetAppUser.GetAppUserV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers.GetAppUserV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers.GetAppUserV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers.ListAppUserV1Example">
+            <summary>
+            Example for list app user
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers.ListAppUserV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.ListAppUser.ListAppUserV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.ListAppUser.ListAppUserV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers.ListAppUserV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers.ListAppUserV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.BusinessGroups.ListBusinessGroupV1Example">
+            <summary>
+            Example for list business group
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.BusinessGroups.ListBusinessGroupV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroups.ListBusinessGroup.ListBusinessGroupV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroups.ListBusinessGroup.ListBusinessGroupV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.BusinessGroups.ListBusinessGroupV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.BusinessGroups.ListBusinessGroupV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients.ApiClientExample">
             <summary>
             Example using the api client facade
             </summary>
         </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients.ApiClientExample.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.WebApi.Client.Configuration.ApiConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients.ApiClientExample"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients.ApiClientExample.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients.ApiClientFactoryExample">
             <summary>
             Example using the factory
             </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients.ApiClientFactoryExample.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.WebApi.Client.Configuration.ApiConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients.ApiClientFactoryExample"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients.ApiClientFactoryExample.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients.DependencyInjectionExample">
+            <summary>
+            Example using dependency injection
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients.DependencyInjectionExample.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients.DependencyInjectionExample"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients.DependencyInjectionExample.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients.RestSharpExample">
+            <summary>
+            Example using RestSharp client
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients.RestSharpExample.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.WebApi.Client.Configuration.ApiConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients.RestSharpExample"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients.RestSharpExample.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Countries.ListCountryV1Example">
+            <summary>
+            Example for list country
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Countries.ListCountryV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Countries.ListCountry.ListCountryV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Countries.ListCountry.ListCountryV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Countries.ListCountryV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Countries.ListCountryV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Customers.ListCustomerV1Example">
+            <summary>
+            Example for list customer
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Customers.ListCustomerV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Customers.ListCustomer.ListCustomerV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Customers.ListCustomer.ListCustomerV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Customers.ListCustomerV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Customers.ListCustomerV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources.DownloadDataSourceV1Example">
+            <summary>
+            Example for download data source
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources.DownloadDataSourceV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.DownloadDataSource.DownloadDataSourceV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.DownloadDataSource.DownloadDataSourceV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources.DownloadDataSourceV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources.DownloadDataSourceV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources.ListDataSourceV1Example">
+            <summary>
+            Example for list data source
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources.ListDataSourceV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.ListDataSource.ListDataSourceV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources.ListDataSourceV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources.ListDataSourceV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources.UploadDataSourceV1Example">
+            <summary>
+            Example for upload data source
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources.UploadDataSourceV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources.UploadDataSourceV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources.UploadDataSourceV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormDataNames.ListFormDataNameV1Example">
+            <summary>
+            Example for list form data name
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormDataNames.ListFormDataNameV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Forms.ListForm.ListFormV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Forms.ListForm.ListFormV1Response},Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormDataNames.ListFormDataNameV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormDataNames.ListFormDataNameV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormDataNames.ListFormDataNameV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Example">
+            <summary>
+            Example for list form registration data
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrations.ListFormRegistration.ListFormRegistrationV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrations.ListFormRegistration.ListFormRegistrationV1Response},Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationEmails.ListFormRegistrationEmailV1Example">
+            <summary>
+            Example for list form registration email
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationEmails.ListFormRegistrationEmailV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmails.ListFormRegistrationEmail.ListFormRegistrationEmailV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmails.ListFormRegistrationEmail.ListFormRegistrationEmailV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationEmails.ListFormRegistrationEmailV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationEmails.ListFormRegistrationEmailV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationStats.ListFormRegistrationStatsV1Example">
+            <summary>
+            Example for list form registration stats
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationStats.ListFormRegistrationStatsV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats.ListFormRegistrationStats.ListFormRegistrationStatsV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationStats.ListFormRegistrationStatsV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationStats.ListFormRegistrationStatsV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrations.ListFormRegistrationV1Example">
+            <summary>
+            Example for list form registration
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrations.ListFormRegistrationV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrations.ListFormRegistration.ListFormRegistrationV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrations.ListFormRegistration.ListFormRegistrationV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrations.ListFormRegistrationV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrations.ListFormRegistrationV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Forms.ListFormV1Example">
+            <summary>
+            Example for list form
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Forms.ListFormV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Forms.ListForm.ListFormV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Forms.ListForm.ListFormV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Forms.ListFormV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Forms.ListFormV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.IExample">
+            <summary>
+            Interface for examples
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.IExample.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions.CompleteInformAppFormInstructionV1Example">
+            <summary>
+            Example for complete form instruction
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions.CompleteInformAppFormInstructionV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CompleteInstruction.CompleteInformAppFormInstructionV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CompleteInstruction.CompleteInformAppFormInstructionV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions.CompleteInformAppFormInstructionV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions.CompleteInformAppFormInstructionV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions.CreateInformAppFormInstructionV1Example">
+            <summary>
+            Example for create form instruction
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions.CreateInformAppFormInstructionV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CreateInstruction.CreateInformAppFormInstructionV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CreateInstruction.CreateInformAppFormInstructionV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions.CreateInformAppFormInstructionV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions.CreateInformAppFormInstructionV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions.ListInformAppFormInstructionV1Example">
+            <summary>
+            Example for list form instruction
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions.ListInformAppFormInstructionV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction.ListInformAppFormInstructionV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions.ListInformAppFormInstructionV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions.ListInformAppFormInstructionV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions.RevokeInformAppFormInstructionV1Example">
+            <summary>
+            Example for revoke instruction
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions.RevokeInformAppFormInstructionV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.RevokeInstruction.RevokeInformAppFormInstructionV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.RevokeInstruction.RevokeInformAppFormInstructionV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions.RevokeInformAppFormInstructionV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions.RevokeInformAppFormInstructionV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Users.ListInformAppUserV1Example">
+            <summary>
+            Example for list app user
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Users.ListInformAppUserV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Users.ListUser.ListInformAppUserV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Users.ListUser.ListInformAppUserV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Users.ListInformAppUserV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Users.ListInformAppUserV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.AcceptIntegrationExportV1Example">
+            <summary>
+            Example for accept integration export
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.AcceptIntegrationExportV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.AcceptIntegrationExportV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.AcceptIntegrationExportV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.AcceptIntegrationExportV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.AcceptIntegrationExportV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.CreateIntegrationUserHeartbeatV1Example">
+            <summary>
+            Example for create integration user heartbeat
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.CreateIntegrationUserHeartbeatV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.CreateIntegrationUserHeartbeatV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.CreateIntegrationUserHeartbeatV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.DownloadIntegrationExportV1Example">
+            <summary>
+            Example for download integration export
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.DownloadIntegrationExportV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.DownloadIntegrationExportV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.DownloadIntegrationExportV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.DownloadIntegrationExportV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.DownloadIntegrationExportV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.ListIntegrationExportQueuedForMeV1Example">
+            <summary>
+            Example for list integration export
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.ListIntegrationExportQueuedForMeV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.ListIntegrationExportQueuedForMeV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.ListIntegrationExportQueuedForMeV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.RejectIntegrationExportV1Example">
+            <summary>
+            Example for reject integration export
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.RejectIntegrationExportV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.RejectIntegrationExportV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.RejectIntegrationExportV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.RejectIntegrationExportV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.RejectIntegrationExportV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.ReportIntegrationExportV1Example">
+            <summary>
+            Example for report integration export
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.ReportIntegrationExportV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ReportIntegrationExportV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ReportIntegrationExportV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.ReportIntegrationExportV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.ReportIntegrationExportV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Logs.CreateLogV1Example">
+            <summary>
+            Example for create log
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Logs.CreateLogV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog.CreateLogV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog.CreateLogV1Response},Informapp.InformSystem.WebApi.Client.DateTimeProviders.IDateTimeProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Logs.CreateLogV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Logs.CreateLogV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2.EnvironmentOAuth2TokenV1Example">
+            <summary>
+            Example for environment OAuth2 token
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2.EnvironmentOAuth2TokenV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.EnvironmentOAuth2Token.EnvironmentOAuth2TokenV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.EnvironmentOAuth2Token.EnvironmentOAuth2TokenV1Response},Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.WebApi.Client.Configuration.ApiConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2.EnvironmentOAuth2TokenV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2.EnvironmentOAuth2TokenV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2.OAuth2TokenV1Example">
+            <summary>
+            Example for OAuth2 token
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2.OAuth2TokenV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.OAuth2Token.OAuth2TokenV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.OAuth2Token.OAuth2TokenV1Response},Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.WebApi.Client.Configuration.ApiConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2.OAuth2TokenV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2.OAuth2TokenV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2.OAuth2TokenV2Example">
+            <summary>
+            Example for OAuth2 token
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2.OAuth2TokenV2Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version2.EndPoints.OAuth2.OAuth2Token.OAuth2TokenV2Request,Informapp.InformSystem.WebApi.Models.Version2.EndPoints.OAuth2.OAuth2Token.OAuth2TokenV2Response},Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.WebApi.Client.Configuration.ApiConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2.OAuth2TokenV2Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2.OAuth2TokenV2Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Pings.PingV1Example">
+            <summary>
+            Example for ping
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Pings.PingV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Pings.PingV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Pings.PingV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Pings.PingV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Pings.PingV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files.DownloadTestFileV1Example">
+            <summary>
+            Example for download test file
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files.DownloadTestFileV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile.DownloadTestFileV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files.DownloadTestFileV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files.DownloadTestFileV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files.UploadTestFileV1Example">
+            <summary>
+            Example for upload test file
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files.UploadTestFileV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile.UploadTestFileV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files.UploadTestFileV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files.UploadTestFileV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values.ListValuesV1Example">
+            <summary>
+            Example for list values
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values.ListValuesV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues.ListValuesV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values.ListValuesV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values.ListValuesV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values.TestBodyValuesV1Example">
+            <summary>
+            Example for test body values
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values.TestBodyValuesV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues.TestBodyValuesV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values.TestBodyValuesV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values.TestBodyValuesV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values.TestQueryValuesV1Example">
+            <summary>
+            Example for test query values
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values.TestQueryValuesV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues.TestQueryValuesV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values.TestQueryValuesV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values.TestQueryValuesV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Requires.Require">
             <summary>

@@ -11,12 +11,18 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
 {
-    internal class TestBodyValuesV1Example : IExample
+    /// <summary>
+    /// Example for test body values
+    /// </summary>
+    public class TestBodyValuesV1Example : IExample
     {
         private readonly TestBodyValuesV1Comparer _comparer = new();
 
         private readonly IApiClient<TestBodyValuesV1Request, TestBodyValuesV1Response> _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TestBodyValuesV1Example"/> class.
+        /// </summary>
         public TestBodyValuesV1Example(
             IApiClient<TestBodyValuesV1Request, TestBodyValuesV1Response> client)
         {
@@ -25,6 +31,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
             _client = client;
         }
 
+        /// <summary>
+        /// Execute example
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             var model = CreateRequest();
