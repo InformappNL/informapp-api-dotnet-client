@@ -90,8 +90,10 @@ The records in the datasource will be text sorted by Id value.";
         [IgnoreDataMember]
         string IUploadFileV1Request.ContentType
         {
+#pragma warning disable CA1033 // Interface methods should be callable by child types
             get => _request.ContentType;
             set => _request.ContentType = value;
+#pragma warning restore CA1033 // Interface methods should be callable by child types
         }
 
         /// <summary>
@@ -138,9 +140,17 @@ The records in the datasource will be text sorted by Id value.";
         /// </summary>
         public void Dispose()
         {
-            _request.Dispose();
+            Dispose(true);
 
             GC.SuppressFinalize(this);
+        }
+
+        /// <summary>
+        /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+        /// </summary>
+        protected virtual void Dispose(bool disposing)
+        {
+            _request.Dispose();
         }
     }
 }

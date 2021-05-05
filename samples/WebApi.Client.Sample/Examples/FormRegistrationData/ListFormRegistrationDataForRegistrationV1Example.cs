@@ -74,7 +74,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationD
 
             var filter = new ListFormRegistrationV1Filter
             {
-                
+
             };
 
             var select = new[]

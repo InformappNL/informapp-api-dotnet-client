@@ -31,7 +31,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMember
 
             if (x == null || y == null)
             {
-                return (x == null && y == null);
+                return x == null && y == null;
             }
 
             if (x.AppGroupId == y.AppGroupId &&
@@ -61,12 +61,12 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMember
 
                     if (obj.AppGroupId.HasValue == true)
                     {
-                        hash = hash * 23 + obj.AppGroupId.GetHashCode();
+                        hash = (hash * 23) + obj.AppGroupId.GetHashCode();
                     }
 
                     if (obj.AppUserId.HasValue == true)
                     {
-                        hash = hash * 23 + obj.AppUserId.GetHashCode();
+                        hash = (hash * 23) + obj.AppUserId.GetHashCode();
                     }
 
                     return hash;

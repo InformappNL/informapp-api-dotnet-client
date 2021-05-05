@@ -9,7 +9,9 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Inst
     /// </summary>
     [DataContract(Namespace = Version1Constants.Namespace)]
     [SortEnum]
+#pragma warning disable CA1008 // Enums should have zero value
     public enum ListInformAppFormInstructionV1Sort
+#pragma warning restore CA1008 // Enums should have zero value
     {
         /// <summary>
         /// Sort create date ascending

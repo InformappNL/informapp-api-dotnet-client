@@ -7,7 +7,9 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
     /// The kind of data
     /// </summary>
     [DataContract(Namespace = Version1Constants.Namespace)]
+#pragma warning disable CA1008 // Enums should have zero value
     public enum FormRegistrationDataV1Kind
+#pragma warning restore CA1008 // Enums should have zero value
     {
         /// <summary>
         /// Dictionary

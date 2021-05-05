@@ -10,14 +10,16 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Inst
         {
             if (ExampleAttributeConfiguration.Enabled == true)
             {
-                _container.Add(nameof(Recipients), GetRecipientsExample());
+                _ = _container.Add(nameof(Recipients), GetRecipientsExample());
             }
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static readonly ExampleValuesContainer _container = new ExampleValuesContainer();
 
+#pragma warning disable CA1033 // Interface methods should be callable by child types
         object IExampleMemberProvider.GetExample(string name)
+#pragma warning restore CA1033 // Interface methods should be callable by child types
         {
             return _container.GetExample(name);
         }
@@ -33,7 +35,9 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Inst
             return recipients;
         }
 
+#pragma warning disable IDE0051 // Remove unused private members
         private static void Assignable(ListInformAppFormInstructionV1ResponseInstruction request)
+#pragma warning restore IDE0051 // Remove unused private members
         {
             request.Recipients = GetRecipientsExample();
         }

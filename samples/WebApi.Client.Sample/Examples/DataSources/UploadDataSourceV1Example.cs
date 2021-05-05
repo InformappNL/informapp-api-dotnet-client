@@ -41,7 +41,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources
         /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
+#pragma warning disable IDE0063 // Use simple 'using' statement
             using (var model = GetRequest())
+#pragma warning restore IDE0063 // Use simple 'using' statement
             {
                 var request = ApiRequest.Create(model);
 
@@ -114,7 +116,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources
             {
                 int column = i + 1;
 
+#pragma warning disable IDE0063 // Use simple 'using' statement
                 using (var cell = sheet.Cells[Row: 1, column])
+#pragma warning restore IDE0063 // Use simple 'using' statement
                 {
                     cell.Value = names[i];
                 }

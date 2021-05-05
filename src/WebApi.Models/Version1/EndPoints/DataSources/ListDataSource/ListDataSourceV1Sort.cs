@@ -9,7 +9,9 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.Li
     /// </summary>
     [DataContract(Namespace = Version1Constants.Namespace)]
     [SortEnum]
+#pragma warning disable CA1008 // Enums should have zero value
     public enum ListDataSourceV1Sort
+#pragma warning restore CA1008 // Enums should have zero value
     {
         /// <summary>
         /// Sort by name ascending

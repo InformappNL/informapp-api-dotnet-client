@@ -13,6 +13,8 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
     [DataContract(Namespace = Version1Constants.Namespace)]
     public class ListFormRegistrationDataForRegistrationV1ResponseValue
     {
+#pragma warning disable CA1720 // Identifier contains type name
+
         /// <summary>
         /// The text value as entered on the form
         /// </summary>
@@ -65,5 +67,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         [DataMember]
         [ExampleString(ExampleStringKind.Guid, "77D0A315-3C8B-4B2B-97E3-5A2038798474")]
         public Guid? Uuid { get; set; }
+
+#pragma warning restore CA1720 // Identifier contains type name
     }
 }

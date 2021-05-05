@@ -3263,6 +3263,11 @@
             Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
             </summary>
         </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Request.Dispose(System.Boolean)">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Response">
             <summary>
             Upload data source file response
@@ -5107,6 +5112,11 @@
             </summary>
         </member>
         <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.DownloadIntegrationExportV1Response.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.DownloadIntegrationExportV1Response.Dispose(System.Boolean)">
             <summary>
             Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
             </summary>

@@ -18,14 +18,16 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.E
         {
             if (ExampleAttributeConfiguration.Enabled == true)
             {
-                _container.Add(nameof(File), GetFileExample());
+                _ = _container.Add(nameof(File), GetFileExample());
             }
         }
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private static readonly ExampleValuesContainer _container = new ExampleValuesContainer();
 
+#pragma warning disable CA1033 // Interface methods should be callable by child types
         object IExampleMemberProvider.GetExample(string name)
+#pragma warning restore CA1033 // Interface methods should be callable by child types
         {
             return _container.GetExample(name);
         }
@@ -48,7 +50,9 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.E
             return file;
         }
 
+#pragma warning disable IDE0051 // Remove unused private members
         private static void Assignable(DownloadIntegrationExportV1Response response)
+#pragma warning restore IDE0051 // Remove unused private members
         {
             response.File = GetFileExample();
         }

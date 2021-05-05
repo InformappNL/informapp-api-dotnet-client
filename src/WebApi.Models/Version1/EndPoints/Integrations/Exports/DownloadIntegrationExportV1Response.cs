@@ -75,9 +75,17 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.E
         /// </summary>
         public void Dispose()
         {
-            _response.Dispose();
+            Dispose(true);
 
             GC.SuppressFinalize(this);
+        }
+
+        /// <summary>
+        /// Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+        /// </summary>
+        protected virtual void Dispose(bool disposing)
+        {
+            _response.Dispose();
         }
     }
 }

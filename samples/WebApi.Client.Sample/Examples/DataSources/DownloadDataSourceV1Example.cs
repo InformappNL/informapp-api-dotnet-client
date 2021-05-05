@@ -73,12 +73,16 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources
 
                 int read;
 
+#pragma warning disable CA1835 // Prefer the 'Memory'-based overloads for 'ReadAsync' and 'WriteAsync'
                 while ((read = await stream
                     .ReadAsync(buffer, 0, buffer.Length, cancellationToken)
+#pragma warning restore CA1835 // Prefer the 'Memory'-based overloads for 'ReadAsync' and 'WriteAsync'
                     .ConfigureAwait(Await.Default)) > 0)
                 {
+#pragma warning disable CA1835 // Prefer the 'Memory'-based overloads for 'ReadAsync' and 'WriteAsync'
                     await fileStream
                         .WriteAsync(buffer, 0, read, cancellationToken)
+#pragma warning restore CA1835 // Prefer the 'Memory'-based overloads for 'ReadAsync' and 'WriteAsync'
                         .ConfigureAwait(Await.Default);
 
                     bytesWritten += read;
@@ -89,7 +93,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources
                     .ConfigureAwait(Await.Default);
             }
 
+#pragma warning disable CA1303 // Do not pass literals as localized parameters
             Console.WriteLine("Saved download file to {0} ({1:n0} bytes)", path, bytesWritten);
+#pragma warning restore CA1303 // Do not pass literals as localized parameters
 
             if (response.Headers.ContentLength != bytesWritten)
             {

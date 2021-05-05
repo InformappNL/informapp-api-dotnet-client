@@ -42,7 +42,9 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instruc
                 "58e213fcf1396c37ce86ba1a",
             };
 
-            var formData = new Dictionary<string, object>();
+#pragma warning disable IDE0028 // Simplify collection initialization
+            var formData = new Dictionary<string, object>(StringComparer.Ordinal);
+#pragma warning restore IDE0028 // Simplify collection initialization
 
             formData.Add("newText", "test 123");
             formData.Add("date", "2021-03-10");
