@@ -16,6 +16,7 @@ using Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationStats
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Forms;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Instructions;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Users;
+using Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Logs;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.OAuth2;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Pings;
@@ -116,6 +117,13 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
                 Create<RevokeInformAppFormInstructionV1Example>(false),
 
                 Create<ListInformAppUserV1Example>(false),
+
+                Create<AcceptIntegrationExportV1Example>(false),
+                Create<CreateIntegrationUserHeartbeatV1Example>(false),
+                Create<DownloadIntegrationExportV1Example>(false),
+                Create<RejectIntegrationExportV1Example>(false),
+                Create<ReportIntegrationExportV1Example>(false),
+                Create<ListIntegrationExportQueuedForMeV1Example>(false),
             };
 
             return examples;

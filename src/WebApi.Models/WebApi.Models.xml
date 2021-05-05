@@ -5046,6 +5046,311 @@
             Email
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.AcceptIntegrationExportV1Request">
+            <summary>
+            Accept integration export request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.AcceptIntegrationExportV1Request.IntegrationExportId">
+            <summary>
+            Integration export id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.AcceptIntegrationExportV1Request.AttemptNumber">
+            <summary>
+            Attempt number
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.AcceptIntegrationExportV1Response">
+            <summary>
+            Accept integration export response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.AcceptIntegrationExportV1Response.IntegrationExportLogId">
+            <summary>
+            Integration export log id
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.DownloadIntegrationExportV1Request">
+            <summary>
+            Download integration export request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.DownloadIntegrationExportV1Request.IntegrationExportId">
+            <summary>
+            Integration export Id
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.DownloadIntegrationExportV1Response">
+            <summary>
+            Download integration export response
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.DownloadIntegrationExportV1Response.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.DownloadIntegrationExportV1Response"/> class.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.DownloadIntegrationExportV1Response.ContentType">
+            <summary>
+            Content type
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.DownloadIntegrationExportV1Response.File">
+            <summary>
+            File
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.DownloadIntegrationExportV1Response.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.DownloadIntegrationExportV1Response.Size">
+            <summary>
+            Size
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.DownloadIntegrationExportV1Response.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.DownloadIntegrationExportV1Result">
+            <summary>
+            Download integration export result
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.DownloadIntegrationExportV1Result.Success">
+            <summary>
+            Success
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.DownloadIntegrationExportV1Result.Failed">
+            <summary>
+            Failed
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1Request">
+            <summary>
+            List integration export queued for me request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1Request.PageNumber">
+            <summary>
+            Page number
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1Request.PageSize">
+            <summary>
+            Number of records per page
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1Response">
+            <summary>
+            List integration export queued for me response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1Response.Exports">
+            <summary>
+            List of integration exports
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1Response.Total">
+            <summary>
+            Total number of records matching the request
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1ResponseExport">
+            <summary>
+            Integration export
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1ResponseExport.IntegrationExportId">
+            <summary>
+            Integration export Id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1ResponseExport.IntegrationId">
+            <summary>
+            Integration Id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1ResponseExport.AttemptNumber">
+            <summary>
+            Attempt number
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1ResponseExport.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.RejectIntegrationExportV1Request">
+            <summary>
+            Reject integration export request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.RejectIntegrationExportV1Request.IntegrationExportId">
+            <summary>
+            Integration export id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.RejectIntegrationExportV1Request.AttemptNumber">
+            <summary>
+            Attempt number
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.RejectIntegrationExportV1Request.Message">
+            <summary>
+            Message
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.RejectIntegrationExportV1Response">
+            <summary>
+            Reject integration export response
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ReportIntegrationExportV1Request">
+            <summary>
+            Report integration export request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ReportIntegrationExportV1Request.IntegrationExportId">
+            <summary>
+            Integration export id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ReportIntegrationExportV1Request.IntegrationExportLogId">
+            <summary>
+            Integration export log id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ReportIntegrationExportV1Request.Result">
+            <summary>
+            Result
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ReportIntegrationExportV1Request.Duration">
+            <summary>
+            Duration in milliseconds
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ReportIntegrationExportV1Request.Message">
+            <summary>
+            Message
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ReportIntegrationExportV1Request.Exception">
+            <summary>
+            Exception
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ReportIntegrationExportV1Response">
+            <summary>
+            Report integration export response
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request">
+            <summary>
+            Create integration user heartbeat request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request.Configuration">
+            <summary>
+            Configuration
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request.Version">
+            <summary>
+            Version
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request.Drives">
+            <summary>
+            Drives
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request.DataSourceEnabled">
+            <summary>
+            Data source enabled
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request.DataSources">
+            <summary>
+            Data sources
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request.IntegrationEnabled">
+            <summary>
+            Integration enabled
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request.IntegrationDefaultEnabled">
+            <summary>
+            Integration default enabled
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request.Integrations">
+            <summary>
+            Integrations
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1RequestDataSource">
+            <summary>
+            DataSource
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1RequestDataSource.DataSourceId">
+            <summary>
+            DataSource Id
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1RequestDrive">
+            <summary>
+            Drive
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1RequestDrive.Path">
+            <summary>
+            Path
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1RequestDrive.AvailableFreeSpace">
+            <summary>
+            The amount of available free space to the user on a drive, in bytes
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1RequestDrive.TotalFreeSpace">
+            <summary>
+            The total amount of free space available on a drive, in bytes
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1RequestDrive.TotalSize">
+            <summary>
+            The total size of storage space on a drive, in bytes
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1RequestIntegration">
+            <summary>
+            Integration
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1RequestIntegration.IntegrationId">
+            <summary>
+            Integration Id
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Response">
+            <summary>
+            Create integration user heartbeat response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Response.IntegrationUserHeartbeatId">
+            <summary>
+            Integration user heartbeat id
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs.CreateLog.CreateLogV1Request">
             <summary>
             Create log request
