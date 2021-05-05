@@ -45,6 +45,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
                 .SingleInstance();
 
             builder.RegisterDecorator<ValidateOptionsDecorator<TOptions>, IOptions<TOptions>>();
+            builder.RegisterDecorator<EagerValidateOptionsDecorator<TOptions>, IOptions<TOptions>>();
         }
     }
 }

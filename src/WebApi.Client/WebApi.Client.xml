@@ -1356,9 +1356,25 @@
             The password
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Configuration.EagerValidateOptionsDecorator`1">
+            <summary>
+            Used to validate retrieved configured <typeparamref name="T"/> instances.
+            </summary>
+            <typeparam name="T">The type of options being requested.</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Configuration.EagerValidateOptionsDecorator`1.#ctor(Microsoft.Extensions.Options.IOptions{`0},Informapp.InformSystem.WebApi.Client.Validators.IValidator{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Configuration.EagerValidateOptionsDecorator`1"/> class and validates options.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Configuration.EagerValidateOptionsDecorator`1.Value">
+            <summary>
+            The default configured <typeparamref name="T"/> instance
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Configuration.ValidateOptionsDecorator`1">
             <summary>
-            Used to validate retrieve configured <typeparamref name="TOptions"/> instances.
+            Used to validate retrieved configured <typeparamref name="TOptions"/> instances.
             </summary>
             <typeparam name="TOptions">The type of options being requested.</typeparam>
         </member>

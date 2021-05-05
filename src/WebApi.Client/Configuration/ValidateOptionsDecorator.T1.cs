@@ -6,7 +6,7 @@ using Microsoft.Extensions.Options;
 namespace Informapp.InformSystem.WebApi.Client.Configuration
 {
     /// <summary>
-    /// Used to validate retrieve configured <typeparamref name="TOptions"/> instances.
+    /// Used to validate retrieved configured <typeparamref name="TOptions"/> instances.
     /// </summary>
     /// <typeparam name="TOptions">The type of options being requested.</typeparam>
     public class ValidateOptionsDecorator<TOptions> : Decorator<IOptions<TOptions>>,
