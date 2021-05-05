@@ -1,7 +1,7 @@
 ﻿using Autofac;
+using Informapp.InformSystem.WebApi.Client.Assemblies;
 using Informapp.InformSystem.WebApi.Client.Converters;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
-using System;
 using System.Linq;
 
 namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
@@ -11,6 +11,19 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
     /// </summary>
     internal class ConverterRegistration : IAutofacRegistration
     {
+        private readonly IAssemblyProvider _assemblyProvider;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ConverterRegistration"/> class.
+        /// </summary>
+        public ConverterRegistration(
+            IAssemblyProvider assemblyProvider)
+        {
+            Argument.NotNull(assemblyProvider, nameof(assemblyProvider));
+
+            _assemblyProvider = assemblyProvider;
+        }
+
         /// <summary>
         /// Register dependencies in Autofac
         /// </summary>
@@ -19,7 +32,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            var types = AppDomain.CurrentDomain.GetAssemblies()
+            var types = _assemblyProvider.GetLocalAssemblies()
                 .SelectMany(x => x.GetTypes())
                 .Where(x => x.IsClass == true)
                 .Where(x => x.IsGenericType == false)

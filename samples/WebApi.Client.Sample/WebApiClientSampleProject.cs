@@ -1,4 +1,6 @@
-﻿
+﻿using Informapp.InformSystem.WebApi.Client.RestSharp;
+using Informapp.InformSystem.WebApi.Models;
+
 namespace Informapp.InformSystem.WebApi.Client.Sample
 {
     /// <summary>
@@ -9,6 +11,11 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
         /// <summary>
         /// Dummy method, calling this will load its assembly
         /// </summary>
-        public static void Load() { }
+        public static void Load()
+        {
+            WebApiClientProject.Load();
+            WebApiModelsProject.Load();
+            WebApiClientRestSharpProject.Load();
+        }
     }
 }

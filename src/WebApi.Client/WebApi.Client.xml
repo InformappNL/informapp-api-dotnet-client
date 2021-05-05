@@ -55,6 +55,33 @@
             <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
             <exception cref="T:System.ArgumentException"><paramref name="instance"/> is empty</exception>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Assemblies.AssemblyProvider">
+            <summary>
+            Assembly provider class
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Assemblies.AssemblyProvider.#ctor(System.Collections.Generic.IReadOnlyList{System.Reflection.Assembly})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Assemblies.AssemblyProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Assemblies.AssemblyProvider.GetLocalAssemblies">
+            <summary>
+            Retrieve a list of local assemblies
+            </summary>
+            <returns>The list of local assemblies</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Assemblies.IAssemblyProvider">
+            <summary>
+            Assembly provider interface
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Assemblies.IAssemblyProvider.GetLocalAssemblies">
+            <summary>
+            Retrieve a list of local assemblies
+            </summary>
+            <returns>The list of local assemblies</returns>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.AttributeProviders.AttributeProvider">
             <summary>
             Static factory class for creating instances of <see cref="T:Informapp.InformSystem.WebApi.Client.AttributeProviders.IAttributeProvider`2"/>

@@ -1,5 +1,5 @@
 ﻿using Autofac;
-using System;
+using Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -34,12 +34,22 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac
         /// Get collection of registrations to register with Autofac
         /// </summary>
         /// <returns>Collection of registrations</returns>
-        private static IEnumerable<IAutofacRegistration> GetRegistrations()
+        private static IList<IAutofacRegistration> GetRegistrations()
         {
             var builder = new ContainerBuilder();
 
-            var types = AppDomain.CurrentDomain.GetAssemblies()
-                .SelectMany(x => x.GetTypes())
+            var registrations = new IAutofacRegistration[]
+            {
+                new AssemblyProviderRegistration(),
+            };
+
+            foreach (var registration in registrations)
+            {
+                registration.Register(builder);
+            }
+
+            var types = typeof(WebApiClientSampleProject).Assembly
+                .GetTypes()
                 .Where(x => x.IsClass == true)
                 .Where(x => x.IsAbstract == false)
                 .Where(x => typeof(IAutofacRegistration).IsAssignableFrom(x))
@@ -54,9 +64,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac
 
             using (var container = builder.Build())
             {
-                var registrations = container.Resolve<IEnumerable<IAutofacRegistration>>();
-
-                return registrations;
+                return container.Resolve<IList<IAutofacRegistration>>();
             }
         }
     }

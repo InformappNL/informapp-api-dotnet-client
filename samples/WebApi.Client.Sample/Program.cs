@@ -10,6 +10,8 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
     {
         static Program()
         {
+            WebApiClientSampleProject.Load();
+
             ConsoleHelper.SetInputBufferSize(1024);
         }
 

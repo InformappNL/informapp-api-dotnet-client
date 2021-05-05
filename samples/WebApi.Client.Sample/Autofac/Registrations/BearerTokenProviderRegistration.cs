@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Informapp.InformSystem.WebApi.Client.Assemblies;
 using Informapp.InformSystem.WebApi.Client.BearerTokenProviders;
 using Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators;
 using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
@@ -13,6 +14,19 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
     /// </summary>
     internal class BearerTokenProviderRegistration : IAutofacRegistration
     {
+        private readonly IAssemblyProvider _assemblyProvider;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="BearerTokenProviderRegistration"/> class.
+        /// </summary>
+        public BearerTokenProviderRegistration(
+            IAssemblyProvider assemblyProvider)
+        {
+            Argument.NotNull(assemblyProvider, nameof(assemblyProvider));
+
+            _assemblyProvider = assemblyProvider;
+        }
+
         /// <summary>
         /// Register dependencies in Autofac
         /// </summary>
@@ -37,7 +51,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
                 typeof(EnsureSuccessBearerTokenProviderDecorator<>),
             };
 
-            var types = AppDomain.CurrentDomain.GetAssemblies()
+            var types = _assemblyProvider.GetLocalAssemblies()
                 .SelectMany(x => x.GetTypes())
                 .Where(x => x.IsClass == true)
                 .Where(x => x.IsGenericType == false)
