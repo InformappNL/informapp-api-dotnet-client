@@ -136,7 +136,7 @@ namespace Informapp.InformSystem.WebApi.Client.HashCodes
         {
             unchecked
             {
-                return hashCode * multiplication + instance.GetHashCode();
+                return (hashCode * multiplication) + instance.GetHashCode();
             }
         }
 
@@ -144,7 +144,7 @@ namespace Informapp.InformSystem.WebApi.Client.HashCodes
         {
             unchecked
             {
-                return hashCode * multiplication + comparer.GetHashCode(instance);
+                return (hashCode * multiplication) + comparer.GetHashCode(instance);
             }
         }
 
@@ -152,7 +152,7 @@ namespace Informapp.InformSystem.WebApi.Client.HashCodes
         {
             unchecked
             {
-                return hashCode * multiplication + 0;
+                return (hashCode * multiplication) + 0;
             }
         }
     }
