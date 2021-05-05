@@ -9,6 +9,7 @@
     <SccProvider>SAK</SccProvider>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <DocumentationFile>WebApi.Client.RestSharp.xml</DocumentationFile>
+    <AssemblyName>InformSystem.WebApi.Client.RestSharp</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\SharedAssemblyInfo.cs">
