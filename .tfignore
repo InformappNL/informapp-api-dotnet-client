@@ -45,3 +45,5 @@
 !\packages\repositories.config
 .vs\
 .git\
+
+appsettings.private.json
