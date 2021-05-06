@@ -1,0 +1,2962 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InformSystem.IntegrationTool.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Applications.ApiAvailableApplicationDecorator">
+            <summary>
+            Api available application decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.ApiAvailableApplicationDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Applications.IApplication,Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Pings.PingV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Pings.PingV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Applications.ApiAvailableApplicationDecorator"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.ApiAvailableApplicationDecorator.Run(System.Threading.CancellationToken)">
+            <summary>
+            Run the application
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task to run</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Applications.Application">
+            <summary>
+            Application
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.Application.#ctor(System.Collections.Generic.IReadOnlyList{Informapp.InformSystem.IntegrationTool.Core.Jobs.IJob})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Applications.Application"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.Application.Run(System.Threading.CancellationToken)">
+            <summary>
+            Run the application
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task to run</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Applications.CancelledApplicationDecorator">
+            <summary>
+            Cancelled application decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.CancelledApplicationDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Applications.IApplication,Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Applications.CancelledApplicationDecorator"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.CancelledApplicationDecorator.Run(System.Threading.CancellationToken)">
+            <summary>
+            Run the application
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task to run</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Applications.CleanDownloadFolderApplicationDecorator">
+            <summary>
+            Clean download folder application decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.CleanDownloadFolderApplicationDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Applications.IApplication,Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration},Informapp.InformSystem.IntegrationTool.Core.Commands.ICommandHandler{Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder.CleanupDownloadFolderCommand,Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder.CleanupDownloadFolderCommandResult})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Applications.CleanDownloadFolderApplicationDecorator"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.CleanDownloadFolderApplicationDecorator.Run(System.Threading.CancellationToken)">
+            <summary>
+            Run the application
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task to run</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Applications.DataContextApplicationDecorator">
+            <summary>
+            Data context application decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.DataContextApplicationDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Applications.IApplication,Informapp.InformSystem.IntegrationTool.Core.DataContexts.IDataContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Applications.DataContextApplicationDecorator"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.DataContextApplicationDecorator.Run(System.Threading.CancellationToken)">
+            <summary>
+            Run the application
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task to run</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Applications.ErrorApplicationDecorator">
+            <summary>
+            Error application decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.ErrorApplicationDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Applications.IApplication,Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Applications.ErrorApplicationDecorator"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.ErrorApplicationDecorator.Run(System.Threading.CancellationToken)">
+            <summary>
+            Run the application
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task to run</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Applications.HeartbeatApplicationDecorator">
+            <summary>
+            Heartbeat application decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.HeartbeatApplicationDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Applications.IApplication,Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration},Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request},Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Applications.HeartbeatApplicationDecorator"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.HeartbeatApplicationDecorator.Run(System.Threading.CancellationToken)">
+            <summary>
+            Run the application
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task to run</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Applications.IApplication">
+            <summary>
+            Application abstraction
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.IApplication.Run(System.Threading.CancellationToken)">
+            <summary>
+            Run the application
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task to run</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Applications.Log4NetApplicationDecorator">
+            <summary>
+            Log4net application decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.Log4NetApplicationDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Applications.IApplication)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Applications.Log4NetApplicationDecorator"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.Log4NetApplicationDecorator.Run(System.Threading.CancellationToken)">
+            <summary>
+            Run the application
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task to run</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Applications.LogApplicationDecorator">
+            <summary>
+            Log application decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.LogApplicationDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Applications.IApplication,Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Applications.LogApplicationDecorator"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.LogApplicationDecorator.Run(System.Threading.CancellationToken)">
+            <summary>
+            Run the application
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task to run</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Applications.SingleInstanceApplicationDecorator">
+            <summary>
+            Single instance application decorator
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Applications.SingleInstanceApplicationDecorator.MutaxName">
+            <summary>
+            Mutax name
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.SingleInstanceApplicationDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Applications.IApplication)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Applications.SingleInstanceApplicationDecorator"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.SingleInstanceApplicationDecorator.Run(System.Threading.CancellationToken)">
+            <summary>
+            Run the application
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task to run</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Clients.LogApiClientDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to log on request
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Clients.LogApiClientDecorator`2.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Clients.LogApiClientDecorator`2"/> class.
+            </summary>
+            <param name="apiClient">The instance to decorate</param>
+            <param name="logger">The logger instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Clients.LogApiClientDecorator`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+            <summary>
+            Log and execute request
+            </summary>
+            <param name="request">The request</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder.CleanupDownloadFolderCommand">
+            <summary>
+            Command to initiate cleanup for the download folder
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder.CleanupDownloadFolderCommandHandler">
+            <summary>
+            Command handler for cleaning up the download folder
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder.CleanupDownloadFolderCommandHandler.#ctor(System.IO.Abstractions.IDirectoryInfoFactory,Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder.CleanupDownloadFolderCommandHandler"/> class
+            </summary>
+            <param name="directoryInfoFactory">Injected directory info factory</param>
+            <param name="integrationConfiguration">Injected configuration</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder.CleanupDownloadFolderCommandHandler.Handle(Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder.CleanupDownloadFolderCommand,System.Threading.CancellationToken)">
+            <summary>
+            Handles the cleanup process
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns></returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder.CleanupDownloadFolderCommandResult">
+            <summary>
+            Result after cleanup
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder.CleanupDownloadFolderCommandResult.Result">
+            <summary>
+            If the cleanup was successful this will have the value Success
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder.CleanupDownloadFolderCommandResult.FilesDeleted">
+            <summary>
+            The amount of files that were deleted
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder.CleanupDownloadFolderCommandResult.FilesNotDeleted">
+            <summary>
+            The amount of files that were not deleted
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder.CleanupDownloadFolderCommandResultKind">
+            <summary>
+            Enum for cleanup result
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder.CleanupDownloadFolderCommandResultKind.Success">
+            <summary>
+            Cleanup was successful
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.ICommand`1">
+            <summary>
+            Generic ICommand interface
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.ICommandHandler`2">
+            <summary>
+            Generic ICommandHandler interface
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Commands.ICommandHandler`2.Handle(`0,System.Threading.CancellationToken)">
+            <summary>
+            Generic handle task
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The resonse</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommand">
+            <summary>
+            Command to initiate moving a file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommand.Source">
+            <summary>
+            The file that will be moved
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommand.Destination">
+            <summary>
+            The destination of the source file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommand.BackupIsRequired">
+            <summary>
+            If a backup has to be made when replacing a file, this needs to be set to true
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommand.Backup">
+            <summary>
+            Where the backup will be placed
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommand.Overwrite">
+            <summary>
+            If the file can be overwritten this has to be set to true
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommandHandler">
+            <summary>
+            Command handler for moving a file
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommandHandler.#ctor(Informapp.InformSystem.IntegrationTool.Core.IO.IDirectoryCreator,System.IO.Abstractions.IFileInfoFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommandHandler"/> class
+            </summary>
+            <param name="directoryCreator">Injected directory creator</param>
+            <param name="fileInfoFactory">Injected file info factory</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommandHandler.Handle(Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommand,System.Threading.CancellationToken)">
+            <summary>
+            Handles the moving of the file
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns></returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommandResult">
+            <summary>
+            Result after moving the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommandResult.Result">
+            <summary>
+            If moving the file was successful this will have the value Success
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommandResult.FileOverwritten">
+            <summary>
+            The amount of files that were overwritten
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommandResult.BackupFileSize">
+            <summary>
+            The file size of the backup that was made
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommandResultKind">
+            <summary>
+            Enum for move file result
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommandResultKind.Success">
+            <summary>
+            Moving the file was successful
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommand">
+            <summary>
+            Command to save a file received from an export
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommand.IntegrationExportId">
+            <summary>
+            Id of the export
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommand.File">
+            <summary>
+            Stream of the received file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommand.FileName">
+            <summary>
+            Name of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommand.FileSize">
+            <summary>
+            Size of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommand.DestinationFolder">
+            <summary>
+            Where the file will be saved
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommand.BackupFolder">
+            <summary>
+            Backup folder where a copy of the file that will be replaced will be made
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommand.Overwrite">
+            <summary>
+            If the file can be overwritten this has to be set to true
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommandHandler">
+            <summary>
+            Command handler for saving a file received from an export
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommandHandler.#ctor(Informapp.InformSystem.IntegrationTool.Core.Commands.ICommandHandler{Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams.WriteFileFromStreamCommand,Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams.WriteFileFromStreamCommandResult},Informapp.InformSystem.IntegrationTool.Core.Commands.ICommandHandler{Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommand,Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommandResult},Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactoryCommand,Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactoryCommandResult})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommandHandler"/> class
+            </summary>
+            <param name="writeFileHandler">Injected write file handler</param>
+            <param name="moveFileHandler">Injected move file handler</param>
+            <param name="factory">Factory for values that can be copied to the command result</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommandHandler.Handle(Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommand,System.Threading.CancellationToken)">
+            <summary>
+            Handles saving the file and moving it to the correct place
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns></returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommandResult">
+            <summary>
+            Result after saving the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommandResult.Result">
+            <summary>
+            If saving the file was successful this will have the value Success
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommandResult.FileOverwritten">
+            <summary>
+            The amount of files that were overwritten
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommandResult.BackupFileName">
+            <summary>
+            The file name of the backup that was made
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommandResult.BackupFileSize">
+            <summary>
+            The file size of the backup that was made
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommandResultKind">
+            <summary>
+            Enum for save file result
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommandResultKind.Success">
+            <summary>
+            Saving the file was successful
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommandResultKind.Failed">
+            <summary>
+            Saving the file failed
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile.UploadDataSourceFileCommand">
+            <summary>
+            Command to initiate uploading a datasource file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile.UploadDataSourceFileCommand.Path">
+            <summary>
+            Path of the file that will be uploaded
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile.UploadDataSourceFileCommand.DataSourceId">
+            <summary>
+            DataSource Id
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile.UploadDataSourceFileCommandHandler">
+            <summary>
+            Command handler for uploading a datasource file
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile.UploadDataSourceFileCommandHandler.#ctor(Informapp.InformSystem.IntegrationTool.Core.Queries.IQueryHandler{Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath.CreateStreamFromPathQuery,Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath.CreateStreamFromPathQueryResult},Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploader{Informapp.InformSystem.IntegrationTool.Core.Uploaders.DataSourceFiles.DataSourceFileUploadCommand})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile.UploadDataSourceFileCommandHandler"/> class.
+            </summary>
+            <param name="queryHandler">Injected query handler</param>
+            <param name="uploader">Injected uploader</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile.UploadDataSourceFileCommandHandler.Handle(Informapp.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile.UploadDataSourceFileCommand,System.Threading.CancellationToken)">
+            <summary>
+            Handles creating the create stream from path query and uploading the datasource file 
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile.UploadDataSourceFileCommandResult">
+            <summary>
+            Upload datasource file command result
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile.UploadDataSourceFileCommandResult.Result">
+            <summary>
+            If uploading the file was successful this will have the value Success
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile.UploadDataSourceFileCommandResultKind">
+            <summary>
+            Enum for upload datasource file result
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile.UploadDataSourceFileCommandResultKind.Success">
+            <summary>
+            Uploading the file was successful
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.ValidateCommandHandlerDecorator`2">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Commands.ICommandHandler`2"/> to validate command on execution
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Commands.ValidateCommandHandlerDecorator`2.#ctor(Informapp.InformSystem.IntegrationTool.Core.Commands.ICommandHandler{`0,`1},Informapp.InformSystem.WebApi.Client.Validators.IValidator{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Commands.ValidateCommandHandlerDecorator`2"/> class.
+            </summary>
+            <param name="commandHandler">The instance to decorate</param>
+            <param name="validator">The validator to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Commands.ValidateCommandHandlerDecorator`2.Handle(`0,System.Threading.CancellationToken)">
+            <summary>
+            Validate and execute command if valid
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams.WriteFileFromStreamCommand">
+            <summary>
+            Command to initiate writing a file from a stream
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams.WriteFileFromStreamCommand.Path">
+            <summary>
+            The path where the file will be written
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams.WriteFileFromStreamCommand.FileName">
+            <summary>
+            Name of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams.WriteFileFromStreamCommand.File">
+            <summary>
+            Stream of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams.WriteFileFromStreamCommand.Size">
+            <summary>
+            Size of the file
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams.WriteFileFromStreamCommandHandler">
+            <summary>
+            Command handler for writing a file from a stream
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams.WriteFileFromStreamCommandHandler.#ctor(Informapp.InformSystem.IntegrationTool.Core.IO.IDirectoryCreator,System.IO.Abstractions.IPath,System.IO.Abstractions.IFileStreamFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams.WriteFileFromStreamCommandHandler"/> class
+            </summary>
+            <param name="directoryCreator">Injected directory creator</param>
+            <param name="path">Injected path</param>
+            /// <param name="fileStreamFactory">Injected file stream factory</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams.WriteFileFromStreamCommandHandler.Handle(Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams.WriteFileFromStreamCommand,System.Threading.CancellationToken)">
+            <summary>
+            Handles writing a file from a stream
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns></returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams.WriteFileFromStreamCommandResult">
+            <summary>
+            Result after write file command has been executed
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams.WriteFileFromStreamCommandResult.Result">
+            <summary>
+            If writing the file was successful this will have the value Success
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams.WriteFileFromStreamCommandResult.BytesWritten">
+            <summary>
+            Amount of bytes written
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams.WriteFileFromStreamCommandResultKind">
+            <summary>
+            Enum for write file from stream result
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams.WriteFileFromStreamCommandResultKind.Success">
+            <summary>
+            Writing the file was successful
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Configurations.CleanupFolderConfiguration">
+            <summary>
+            Cleanup folder configuration class
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.CleanupFolderConfiguration.Enabled">
+            <summary>
+            Clean up enabled true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.CleanupFolderConfiguration.Folders">
+            <summary>
+            List of folder to clean up
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Configurations.CleanupFolderConfigurationFolder">
+            <summary>
+            Folder configuration for clean up
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.CleanupFolderConfigurationFolder.Folder">
+            <summary>
+            Folder path
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.CleanupFolderConfigurationFolder.Enabled">
+            <summary>
+            Cleanup is enabled for this folder true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.CleanupFolderConfigurationFolder.MaxAgeInDays">
+            <summary>
+            Maximum file age
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.CleanupFolderConfigurationFolder.Extensions">
+            <summary>
+            List of file extensions that are allowed to be cleaned up
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Configurations.DataSourceConfiguration">
+            <summary>
+            Datasource configuration class
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.DataSourceConfiguration.Enabled">
+            <summary>
+            Data source enabled or disabled
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.DataSourceConfiguration.DataFile">
+            <summary>
+            The file for persistent data storage
+            Application needs write and read access to this file
+            This setting is required
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.DataSourceConfiguration.MaxFileAge">
+            <summary>
+            The maximum amount of time since a file was last uploaded 
+            When a file has not changed but was uploaded longer ago it is uploaded again, hopefully minimizing the effects when things went wrong 
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.DataSourceConfiguration.MaxFileHashAge">
+            <summary>
+            The maximum amount of time in minutes since a hash was calculated and compared for a file 
+            Primary way to detect changes to a file is to store and compare its size, creation time and lastwrite time 
+            Unfortunately this is not a watertight way as a file can change without a change to its size. Furthermore Windows may not always update the lastwrite time 
+            The hash for a file is also stored, to minimize system load the hash is only calculated and compared when the stored hash is older 
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.DataSourceConfiguration.DataSources">
+            <summary>
+            Data sources
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Configurations.DataSourceConfigurationDataSource">
+            <summary>
+            Datasource configuration for specific datasource
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.DataSourceConfigurationDataSource.Description">
+            <summary>
+            The description of datasource
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.DataSourceConfigurationDataSource.File">
+            <summary>
+            The datasource excel file
+            Application needs read access to this file
+            Example "C:\\files\\datasource.xlsx"
+            This setting is required
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.DataSourceConfigurationDataSource.DataSourceId">
+            <summary>
+            The ID of the datasource in InformSystem
+            Type is GUID
+            Example "10E5DDEB-ACF7-45D8-82AB-444C78F96E33"
+            This setting is required
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.DataSourceConfigurationDataSource.Enabled">
+            <summary>
+            Set to true to enable uploading, false to disable (default)
+            This setting is required
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Configurations.IIntegrationConfiguration">
+            <summary>
+            Integration configuration interface
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IIntegrationConfiguration.Enabled">
+            <summary>
+            Integration is enabled true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IIntegrationConfiguration.Folder">
+            <summary>
+            Folder where the integration will put the files
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IIntegrationConfiguration.BackupFolder">
+            <summary>
+            Folder where a backup will be placed when a file is overwritten and backup is enabled
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IIntegrationConfiguration.Overwrite">
+            <summary>
+            OVerwriting files is allowed true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IIntegrationConfiguration.Extensions">
+            <summary>
+            List of extensions allowed to download/overwrite
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration">
+            <summary>
+            Integration configuration class
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration.Enabled">
+            <summary>
+            Integration is enabled true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration.HeartbeatEnabled">
+            <summary>
+            Heartbeat is enabled true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration.DriveInfoUploadEnabled">
+            <summary>
+            Drive info upload is enabled true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration.DownloadFolder">
+            <summary>
+            Path where the files will be downloaded
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration.CleanDownloadFolder">
+            <summary>
+            Cleanup download folder is enabled true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration.Default">
+            <summary>
+            Default values for the integration
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration.Integrations">
+            <summary>
+            List of integrations
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfigurationDefault">
+            <summary>
+            Default configuration for integration
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfigurationDefault.Enabled">
+            <summary>
+            Default configuration is enabled true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfigurationDefault.Folder">
+            <summary>
+            Default folder for integration
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfigurationDefault.BackupFolder">
+            <summary>
+            Default backup folder for integration
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfigurationDefault.Overwrite">
+            <summary>
+            Default overwrite files is enabled true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfigurationDefault.Extensions">
+            <summary>
+            List of allowed extentions for default integration
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfigurationIntegration">
+            <summary>
+            Configuration for non default integration
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfigurationIntegration.Description">
+            <summary>
+            Description of the integration
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfigurationIntegration.Enabled">
+            <summary>
+            Integration is enabled true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfigurationIntegration.IntegrationId">
+            <summary>
+            Integration Id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfigurationIntegration.Folder">
+            <summary>
+            Folder where the files will be placed after download
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfigurationIntegration.BackupFolder">
+            <summary>
+            Backup folder where files will be placed if the file will be overwritten and backup is enabled
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfigurationIntegration.Overwrite">
+            <summary>
+            Overwrite file is enabled true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfigurationIntegration.Extensions">
+            <summary>
+            List of allowed extensions
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.DataContexts.DataContext">
+            <summary>
+            Data context class
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.DataContexts.DataContext.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.DataSourceConfiguration},System.IO.Abstractions.IPath,Informapp.InformSystem.IntegrationTool.Core.IO.IDirectoryCreator,System.IO.Abstractions.IFileInfoFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.DataContexts.DataContext"/> class
+            </summary>
+            <param name="configuration">Injected datasource configuration</param>
+            <param name="path">Injected file path provider</param>
+            <param name="directoryCreator">Injected directory creator</param>
+            <param name="fileInfoFactory">file info factory</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.DataContexts.DataContext.Open(System.Threading.CancellationToken)">
+            <summary>
+            Open file 
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.DataContexts.DataContext.Files">
+            <summary>
+            List of file models
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.DataContexts.DataContext.SaveChanges(System.Threading.CancellationToken)">
+            <summary>
+            Save changes to data context
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.DataContexts.DataContext.Dispose(System.Boolean)">
+            <summary>
+            Dispose stream is disposing is true
+            </summary>
+            <param name="disposing">Disposing boolean</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.DataContexts.DataContext.Dispose">
+            <summary>
+            Set dispose boolean to true
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.DataContexts.IDataContext">
+            <summary>
+            Data context interface
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.DataContexts.IDataContext.Open(System.Threading.CancellationToken)">
+            <summary>
+            Open data context
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>Data context file</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.DataContexts.IDataContext.SaveChanges(System.Threading.CancellationToken)">
+            <summary>
+            Save changes to data context file
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns></returns>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.DataContexts.IDataContext.Files">
+            <summary>
+            List of data context files
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Enums.UnexpectedEnumValueException">
+            <summary>
+            Unexpected enum value exception class
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Enums.UnexpectedEnumValueException.#ctor">
+            <summary>
+            Base unexpected enum value exception
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Enums.UnexpectedEnumValueException.#ctor(System.String)">
+            <summary>
+            Base unexpected enum value exception with message string
+            </summary>
+            <param name="message">The message string</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Enums.UnexpectedEnumValueException.#ctor(System.String,System.Exception)">
+            <summary>
+            Base unexpected enum value exception with message string and inner exception
+            </summary>
+            <param name="message">The message string</param>
+            <param name="innerException">The inner exception</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Enums.UnexpectedEnumValueException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Base unexpected enum value exception with serialization info and streaming context
+            </summary>
+            <param name="info">The serialization info</param>
+            <param name="context">The streaming context</param>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Enums.UnexpectedEnumValueException.EnumType">
+            <summary>
+            Type of enum
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Enums.UnexpectedEnumValueException.Value">
+            <summary>
+            Value of the enum
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Enums.UnexpectedEnumValueException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Sets serialization info with information about exception and adds enum type and value
+            </summary>
+            <param name="info">The serialization info</param>
+            <param name="context">The streaming context</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Enums.UnexpectedEnumValueException.Create``1(``0)">
+            <summary>
+            Create new unexpected enum value exception for type T
+            </summary>
+            <typeparam name="T">The type</typeparam>
+            <param name="value">The value</param>
+            <returns>New unexpected enum value exception</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Enums.UnexpectedEnumValueException.Create``1(System.Nullable{``0})">
+            <summary>
+            Create new unexpected enum value exception for type T, where T is nullable
+            </summary>
+            <typeparam name="T">The type</typeparam>
+            <param name="value">The value</param>
+            <returns>New unexpected enum value exception</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Enums.UnexpectedEnumValueException.Throw``1(``0)">
+            <summary>
+            Throws new unexpected enum value exception for type T
+            </summary>
+            <typeparam name="T">The type</typeparam>
+            <param name="value">The value</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Enums.UnexpectedEnumValueException.Throw``1(System.Nullable{``0})">
+            <summary>
+            Throws new unexpected enum value exception for type nullable T
+            </summary>
+            <typeparam name="T">The type</typeparam>
+            <param name="value">The value</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationReport">
+            <summary>
+            Heartbeat configuration report
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationReport.Configuration">
+            <summary>
+            Configuration
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationReportFactory">
+            <summary>
+            Heartbeat configuration report factory
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationReportFactory.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.DataSourceConfiguration},Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration},Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.CleanupFolderConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationReportFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationReportFactory.Create">
+            <summary>
+            Create heartbeat configuration report.
+            </summary>
+            <returns>The created instance of heartbeat configuration report.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDataSourceReport">
+            <summary>
+            Heartbeat datasource report
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDataSourceReport.DataSourceEnabled">
+            <summary>
+            Datasource enabled
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDataSourceReport.DataSources">
+            <summary>
+            Datasources
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDataSourceReportFactory">
+            <summary>
+            Heartbeat datasource report factory
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDataSourceReportFactory.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.DataSourceConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDataSourceReportFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDataSourceReportFactory.Create">
+            <summary>
+            Create heartbeat datasource report.
+            </summary>
+            <returns>The created instance of heartbeat datasource report.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDriveInfoFactory">
+            <summary>
+            Heartbeat drive info factory
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDriveInfoFactory.#ctor(System.IO.Abstractions.IDriveInfoFactory,Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDriveInfoFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDriveInfoFactory.Create">
+            <summary>
+            Create heartbeat drive info report.
+            </summary>
+            <returns>The created instance of heartbeat drive info report.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDriveInfoReport">
+            <summary>
+            Heartbeat drive info report
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDriveInfoReport.Drives">
+            <summary>
+            Drives
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReport">
+            <summary>
+            Heartbeat integration report
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReport.IntegrationEnabled">
+            <summary>
+            Integration enabled
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReport.IntegrationDefaultEnabled">
+            <summary>
+            Integration default enabled
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReport.Integrations">
+            <summary>
+            Integrations
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReportFactory">
+            <summary>
+            Heartbeat integration report factory
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReportFactory.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReportFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReportFactory.Create">
+            <summary>
+            Create heartbeat integration report.
+            </summary>
+            <returns>The created instance of heartbeat integration report.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactory">
+            <summary>
+            Factory for creating a heartbeat request
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactory.#ctor(Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationReport},Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDriveInfoReport},Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDataSourceReport},Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReport})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactory"/> class.
+            </summary>
+            <param name="configurationFactory">The configuration report factory</param>
+            <param name="driveFactory">The drive report factory</param>
+            <param name="dataSourceFactory">The datasource report factory</param>
+            <param name="integrationFactory">The integration report factory</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactory.Create">
+            <summary>
+            Creates the heartbeat request
+            </summary>
+            <returns>The heartbeat request</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory`1">
+            <summary>
+            Generic IFactory interface
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory`1.Create">
+            <summary>
+            Create factory instance of type T
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory`2">
+            <summary>
+            Generic IFactory interface
+            </summary>
+            <typeparam name="TCommand"></typeparam>
+            <typeparam name="TResult"></typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory`2.Create(`0)">
+            <summary>
+            Create factory instance for type TCommand
+            </summary>
+            <param name="command">The command</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactory">
+            <summary>
+            Save integration export file factory
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactory.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration},Informapp.InformSystem.WebApi.Client.DateTimeProviders.IDateTimeProvider,System.IO.Abstractions.IPath)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactory.Create(Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactoryCommand)">
+            <summary>
+            Creates the save integration export file factory command result
+            </summary>
+            <param name="command">The command</param>
+            <returns>The save integration export file command result</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactoryCommand">
+            <summary>
+            Command for the save integration export file factory
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactoryCommand.IntegrationExportId">
+            <summary>
+            Integration export Id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactoryCommand.IntegrationFolder">
+            <summary>
+            Folder where the file for the integration will be placed
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactoryCommand.FileName">
+            <summary>
+            Name of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactoryCommand.IntegrationBackupFolder">
+            <summary>
+            Folder where the backup files for the integration will be placed
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactoryCommandResult">
+            <summary>
+            Result for save integration export file factory
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactoryCommandResult.DownloadPath">
+            <summary>
+            Path where the file will be downloaded
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactoryCommandResult.DownloadFileName">
+            <summary>
+            Name of the file that will be downloaded
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactoryCommandResult.DownloadFolder">
+            <summary>
+            Folder where the file will be downloaded
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactoryCommandResult.IntegrationPath">
+            <summary>
+            Path of the integration export file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactoryCommandResult.BackupPath">
+            <summary>
+            Path of the backup file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactoryCommandResult.BackupFileName">
+            <summary>
+            Name of the backup file
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.AcceptDownloadIntegrationExportCommandHandlerDecorator">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.IDownloadIntegrationExportCommandHandler"/> to accept a download
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.AcceptDownloadIntegrationExportCommandHandlerDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Integrations.IDownloadIntegrationExportCommandHandler,Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.AcceptIntegrationExportV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.AcceptIntegrationExportV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.AcceptDownloadIntegrationExportCommandHandlerDecorator"/> class.
+            </summary>
+            <param name="handler">The instance to decorate</param>
+            <param name="client">The client instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.AcceptDownloadIntegrationExportCommandHandlerDecorator.Handle(Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommand,System.Threading.CancellationToken)">
+            <summary>
+            Handle command
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.ConfigurationDownloadIntegrationExportCommandHandlerDecorator">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.IDownloadIntegrationExportCommandHandler"/> to set configuration and accept download
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.ConfigurationDownloadIntegrationExportCommandHandlerDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Integrations.IDownloadIntegrationExportCommandHandler,Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.ConfigurationDownloadIntegrationExportCommandHandlerDecorator"/> class
+            </summary>
+            <param name="handler">The instance to decorate</param>
+            <param name="configuration">The configuration instance to decorate</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.ConfigurationDownloadIntegrationExportCommandHandlerDecorator.Handle(Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommand,System.Threading.CancellationToken)">
+            <summary>
+            Set configuration and accept download
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommand">
+            <summary>
+            Command for initiating the download of an integration export file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommand.IntegrationExportId">
+            <summary>
+            Integration Export Id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommand.IntegrationId">
+            <summary>
+            Integration Id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommand.FileName">
+            <summary>
+            The name of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommand.IntegrationExportLogId">
+            <summary>
+            Integration Export Log Id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommand.Configuration">
+            <summary>
+            Interface for the configuration of the download tool
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommand.Accept">
+            <summary>
+            Accept the download true/false
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommandHandler">
+            <summary>
+            Command handler for downloading an integration export
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommandHandler.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.DownloadIntegrationExportV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.DownloadIntegrationExportV1Response},Informapp.InformSystem.IntegrationTool.Core.Commands.ICommandHandler{Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommand,Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile.SaveIntegrationExportFileCommandResult})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommandHandler"/> class
+            </summary>
+            <param name="client">Injected api client</param>
+            <param name="handler">Injected command handler</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommandHandler.Handle(Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommand,System.Threading.CancellationToken)">
+            <summary>
+            Handles downloading the integration export
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommandResult">
+            <summary>
+            Result after downloading integration export
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommandResult.Success">
+            <summary>
+            If the download was successful this will be true
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommandResult.Message">
+            <summary>
+            If something happend like an exception it will be logged here
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommandResult.Exception">
+            <summary>
+            If an exception was thrown it will be logged here
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.ErrorDownloadIntegrationExportCommandHandlerDecorator">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.IDownloadIntegrationExportCommandHandler"/> to log the exception if one was thrown
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.ErrorDownloadIntegrationExportCommandHandlerDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Integrations.IDownloadIntegrationExportCommandHandler)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.ErrorDownloadIntegrationExportCommandHandlerDecorator"/> class.
+            </summary>
+            <param name="handler">Injected command handler</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.ErrorDownloadIntegrationExportCommandHandlerDecorator.Handle(Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommand,System.Threading.CancellationToken)">
+            <summary>
+            Set error in result
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.FileExtensionValidator">
+            <summary>
+            Validates the file extension
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.FileExtensionValidator.#ctor(System.IO.Abstractions.IPath)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.FileExtensionValidator"/> class.
+            </summary>
+            <param name="path">Injected file path provider</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.FileExtensionValidator.ValidateObject(Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommand)">
+            <summary>
+            Validates the file extension of the provided file
+            </summary>
+            <param name="instance">The command instance</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.FileNameValidator">
+            <summary>
+            Validates the file name
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.FileNameValidator.#ctor(System.IO.Abstractions.IPath,System.IO.Abstractions.IFileInfoFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.FileNameValidator"/> class.
+            </summary>
+            <param name="filePathProvider">Injected file path provider</param>
+            <param name="path">Injected file info factory</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.FileNameValidator.ValidateObject(Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommand)">
+            <summary>
+            Validates the file name of the provided file
+            </summary>
+            <param name="instance">The command instance</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.IDownloadIntegrationExportCommandHandler">
+            <summary>
+            Interface for download integration export command handler
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.IDownloadIntegrationExportCommandHandler.Handle(Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommand,System.Threading.CancellationToken)">
+            <summary>
+            Handle download integration export command
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.RejectDownloadIntegrationExportCommandHandlerDecorator">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.IDownloadIntegrationExportCommandHandler"/> to reject a download from integration export
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.RejectDownloadIntegrationExportCommandHandlerDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Integrations.IDownloadIntegrationExportCommandHandler,Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.RejectIntegrationExportV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.RejectIntegrationExportV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.RejectDownloadIntegrationExportCommandHandlerDecorator"/> class.
+            </summary>
+            <param name="handler">Injected command handler</param>
+            <param name="apiClient">Injected api client</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.RejectDownloadIntegrationExportCommandHandlerDecorator.Handle(Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommand,System.Threading.CancellationToken)">
+            <summary>
+            Reject download integration export
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.ReportDownloadIntegrationExportCommandHandlerDecorator">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.IDownloadIntegrationExportCommandHandler"/> to report status for a download from integration export
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.ReportDownloadIntegrationExportCommandHandlerDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Integrations.IDownloadIntegrationExportCommandHandler,Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ReportIntegrationExportV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ReportIntegrationExportV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.ReportDownloadIntegrationExportCommandHandlerDecorator"/> class.
+            </summary>
+            <param name="handler">Injected command handler</param>
+            <param name="client">Injected api client</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.ReportDownloadIntegrationExportCommandHandlerDecorator.Handle(Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommand,System.Threading.CancellationToken)">
+            <summary>
+            Report status back to api
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.SanitiseFileNameDownloadIntegrationExportCommandHandlerDecorator">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.IDownloadIntegrationExportCommandHandler"/> to sanitise the filename
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.SanitiseFileNameDownloadIntegrationExportCommandHandlerDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Integrations.IDownloadIntegrationExportCommandHandler,System.IO.Abstractions.IPath)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.SanitiseFileNameDownloadIntegrationExportCommandHandlerDecorator"/> class.
+            </summary>
+            <param name="handler">Injected command handler</param>
+            <param name="path">Injected path</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.SanitiseFileNameDownloadIntegrationExportCommandHandlerDecorator.Handle(Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommand,System.Threading.CancellationToken)">
+            <summary>
+            Sanitise filename and execute command
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.ValidateDownloadIntegrationExportCommandHandlerDecorator">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.IDownloadIntegrationExportCommandHandler"/> to validate download integration export command
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.ValidateDownloadIntegrationExportCommandHandlerDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Integrations.IDownloadIntegrationExportCommandHandler,Informapp.InformSystem.WebApi.Client.Validators.IValidator{Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommand})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Integrations.ValidateDownloadIntegrationExportCommandHandlerDecorator"/> class.
+            </summary>
+            <param name="handler">Injected command handler</param>
+            <param name="validator">Injected command validator</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Integrations.ValidateDownloadIntegrationExportCommandHandlerDecorator.Handle(Informapp.InformSystem.IntegrationTool.Core.Integrations.DownloadIntegrationExportCommand,System.Threading.CancellationToken)">
+            <summary>
+            Validate download integration export command
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationToolCoreProject">
+            <summary>
+            Integration tool core project class
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationToolCoreProject.Load">
+            <summary>
+            Load project
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IO.DirectoryCreator">
+            <summary>
+            Directory creator class
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.DirectoryCreator.#ctor(System.IO.Abstractions.IDirectoryInfoFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.IO.DirectoryCreator"/> class
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.DirectoryCreator.CreateDirectory(System.String)">
+            <summary>
+            Starts creation of a new directory at the provided path
+            </summary>
+            <param name="path">Path string</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.DirectoryCreator.CreateDirectoryAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Creates a new directory async
+            </summary>
+            <param name="path">Path string</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>Completed task</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.DirectoryCreator.CreateDirectoryInternal(System.String)">
+            <summary>
+            Creates the new directory at the provided path
+            </summary>
+            <param name="path">Path string</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IO.DirectoryInfoFactory">
+            <summary>
+            Directory info factory
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.DirectoryInfoFactory.#ctor(System.IO.Abstractions.IFileSystem)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.IO.DirectoryInfoFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.DirectoryInfoFactory.FromDirectoryName(System.String)">
+            <summary>
+            Create a IDirectoryInfo instance from a directory name.
+            </summary>
+            <param name="directoryName">The directory name.</param>
+            <returns>The created IDirectoryInfo instance.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IO.DriveInfoFactory">
+            <summary>
+            Drive info factory
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.DriveInfoFactory.#ctor(System.IO.Abstractions.IFileSystem)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.IO.DriveInfoFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.DriveInfoFactory.FromDriveName(System.String)">
+            <summary>
+            Create a IDriveInfo instance from a drive name.
+            </summary>
+            <param name="driveName">The drive name.</param>
+            <returns>The created IDriveInfo instance.</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.DriveInfoFactory.GetDrives">
+            <summary>
+            Retrieve a list of drives.
+            </summary>
+            <returns>The list of drives.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IO.FileInfoFactory">
+            <summary>
+            File info factory
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.FileInfoFactory.#ctor(System.IO.Abstractions.IFileSystem)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.IO.FileInfoFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.FileInfoFactory.FromFileName(System.String)">
+            <summary>
+            Create a IFileInstance from a filename.
+            </summary>
+            <param name="fileName">A string specifying the file on which to create the IFileInfo.</param>
+            <returns>The created IFileInfo instance.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IO.FileModel">
+            <summary>
+            File model class
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.IO.FileModel.UploadNeeded">
+            <summary>
+            If upload is needed for the file this will be true
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.IO.FileModel.Path">
+            <summary>
+            The path of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.IO.FileModel.LastUploadDate">
+            <summary>
+            Date time offset when the file was last uploaded
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.IO.FileModel.Size">
+            <summary>
+            Size of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.IO.FileModel.Hash">
+            <summary>
+            Hash of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.IO.FileModel.CreationTimeUtc">
+            <summary>
+            Date time when the file was created in UTC
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.IO.FileModel.LastWriteTimeUtc">
+            <summary>
+            Date time when the file was last written to in UTC
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.IO.FileModel.LastHashCheckDate">
+            <summary>
+            Date time offset when hash check was last done
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.IO.FileModel.Attempts">
+            <summary>
+            Amount of upload attempts
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IO.FileStreamFactory">
+            <summary>
+            File stream factory
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.FileStreamFactory.#ctor(System.IO.Abstractions.IFileSystem)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.IO.FileStreamFactory"/> class
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.FileStreamFactory.Create(System.String,System.IO.FileMode)">
+            <summary>
+            Create stream
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.FileStreamFactory.Create(System.String,System.IO.FileMode,System.IO.FileAccess)">
+            <summary>
+            Create stream
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.FileStreamFactory.Create(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)">
+            <summary>
+            Create stream
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.FileStreamFactory.Create(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32)">
+            <summary>
+            Create stream
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.FileStreamFactory.Create(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32,System.IO.FileOptions)">
+            <summary>
+            Create stream
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.FileStreamFactory.Create(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32,System.Boolean)">
+            <summary>
+            Create stream
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.FileStreamFactory.Create(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess)">
+            <summary>
+            Create stream
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.FileStreamFactory.Create(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess,System.Int32)">
+            <summary>
+            Create stream
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.FileStreamFactory.Create(Microsoft.Win32.SafeHandles.SafeFileHandle,System.IO.FileAccess,System.Int32,System.Boolean)">
+            <summary>
+            Create stream
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.FileStreamFactory.Create(System.IntPtr,System.IO.FileAccess)">
+            <summary>
+            Create stream
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.FileStreamFactory.Create(System.IntPtr,System.IO.FileAccess,System.Boolean)">
+            <summary>
+            Create stream
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.FileStreamFactory.Create(System.IntPtr,System.IO.FileAccess,System.Boolean,System.Int32)">
+            <summary>
+            Create stream
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.FileStreamFactory.Create(System.IntPtr,System.IO.FileAccess,System.Boolean,System.Int32,System.Boolean)">
+            <summary>
+            Create stream
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IO.IDirectoryCreator">
+            <summary>
+            Directory creator interface
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.IDirectoryCreator.CreateDirectory(System.String)">
+            <summary>
+            Starts the creation of a directory
+            </summary>
+            <param name="path">String of the directory path</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IO.IDirectoryCreator.CreateDirectoryAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Starts the creation of a directory async
+            </summary>
+            <param name="path">String of the directory path</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>Completed task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.CleanFolderJob">
+            <summary>
+            Clean folder job
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.CleanFolderJob.#ctor(Informapp.InformSystem.IntegrationTool.Core.Jobs.IJobHandler{Informapp.InformSystem.IntegrationTool.Core.Jobs.CleanFolderJob})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.CleanFolderJob"/> class.
+            </summary>
+            <param name="handler">Injected job handler</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.CleanFolderJob.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute the clean folder job
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.CleanFolderJobHandler">
+            <summary>
+            Clean folder hangfire job handler
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.CleanFolderJobHandler.#ctor(Informapp.InformSystem.IntegrationTool.Core.Queries.IQueryHandler{Informapp.InformSystem.IntegrationTool.Core.Queries.ListCleanFolderFile.ListCleanFolderFileQuery,Informapp.InformSystem.IntegrationTool.Core.Queries.ListCleanFolderFile.ListCleanFolderFileQueryResult})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.CleanFolderJobHandler"/> class.
+            </summary>
+            <param name="queryHandler">Injected query handler</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.CleanFolderJobHandler.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute clean folder job
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.DownloadIntegrationExportJob">
+            <summary>
+            Download integration export hangfire job
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.DownloadIntegrationExportJob.#ctor(Informapp.InformSystem.IntegrationTool.Core.Jobs.IJobHandler{Informapp.InformSystem.IntegrationTool.Core.Jobs.DownloadIntegrationExportJob})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.DownloadIntegrationExportJob"/> class.
+            </summary>
+            <param name="handler">Injected job handler</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.DownloadIntegrationExportJob.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute download integration export job
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.DownloadIntegrationExportJobHandler">
+            <summary>
+            Download integration export hangfire job handler
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Jobs.DownloadIntegrationExportJobHandler.PageSize">
+            <summary>
+            Request page size
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Jobs.DownloadIntegrationExportJobHandler.MaxLoops">
+            <summary>
+            Maximum number of loops
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Jobs.DownloadIntegrationExportJobHandler.MaxExceptionCount">
+            <summary>
+            Maximum number of exceptions
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.DownloadIntegrationExportJobHandler.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1Response},Informapp.InformSystem.IntegrationTool.Core.Integrations.IDownloadIntegrationExportCommandHandler,Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.DownloadIntegrationExportJobHandler"/> class.
+            </summary>
+            <param name="apiClient">Injected api client</param>
+            <param name="commandHandler">Injected command handler</param>
+            <param name="integrationConfiguration">Injected integration configuration</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.DownloadIntegrationExportJobHandler.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute download integration export hangfire job
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.ErrorJobHandlerDecorator`1">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.IJobHandler`1"/> to log the error that was thrown in the hangfire job handler
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.ErrorJobHandlerDecorator`1.#ctor(Informapp.InformSystem.IntegrationTool.Core.Jobs.IJobHandler{`0},Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.ErrorJobHandlerDecorator`1"/> class.
+            </summary>
+            <param name="handler">Injected job handler</param>
+            <param name="logger">Injected application logger</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.ErrorJobHandlerDecorator`1.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Log error that was thrown in a hangfire job
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.IJob">
+            <summary>
+            Hangfire job interface
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.IJob.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute job
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.IJobHandler`1">
+            <summary>
+            Generic hangfire job handler interface
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.IJobHandler`1.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute job handler
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.LogJobHandlerDecorator`1">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.IJobHandler`1"/> to log the execution of a job
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.LogJobHandlerDecorator`1.#ctor(Informapp.InformSystem.IntegrationTool.Core.Jobs.IJobHandler{`0},Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.LogJobHandlerDecorator`1"/> class.
+            </summary>
+            <param name="handler">Injected job handler</param>
+            <param name="logger">Injected application logger</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.LogJobHandlerDecorator`1.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute log
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.UploadDataSourceFileJob">
+            <summary>
+            Upload datasource file hangfire job
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.UploadDataSourceFileJob.#ctor(Informapp.InformSystem.IntegrationTool.Core.Jobs.IJobHandler{Informapp.InformSystem.IntegrationTool.Core.Jobs.UploadDataSourceFileJob})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.UploadDataSourceFileJob"/> class.
+            </summary>
+            <param name="handler">Injected hangfire job handler</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.UploadDataSourceFileJob.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute upload datasource file hangfire job
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.UploadDataSourceFileJobHandler">
+            <summary>
+            Upload datasource file hangfire job handler
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.UploadDataSourceFileJobHandler.#ctor(Informapp.InformSystem.IntegrationTool.Core.Commands.ICommandHandler{Informapp.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile.UploadDataSourceFileCommand,Informapp.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile.UploadDataSourceFileCommandResult},Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.DataSourceConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.UploadDataSourceFileJobHandler"/> class.
+            </summary>
+            <param name="commandHandler">Injected command handler</param>
+            <param name="configuration">Injected datasource configuration</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.UploadDataSourceFileJobHandler.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute upload datasource file hangfire job
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions">
+            <summary>
+            Application logger extension methods
+            </summary>
+            <summary>
+            Application logger extension methods for debug
+            </summary>
+            <summary>
+            Application logger extension methods for error
+            </summary>
+            <summary>
+            Application logger extension methods for fatal
+            </summary>
+            <summary>
+            Application logger extension methods for info
+            </summary>
+            <summary>
+            Application logger extension methods for log
+            </summary>
+            <summary>
+            Application logger extension methods for warn
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.Debug(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.String)">
+            <summary>
+            Add message to the log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="message">The message string</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.Debug(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.Exception,System.String)">
+            <summary>
+            Add message and exception to the log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="exception">The thrown exception</param>
+            <param name="message">The message string</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.DebugFormat(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.String,System.Object[])">
+            <summary>
+            Add format string and additional arguments to log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="format">The format string</param>
+            <param name="args">Additional arguments</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.DebugFormat(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.Exception,System.String,System.Object[])">
+            <summary>
+            Add exception, format string and additional arguments to log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="exception">The thrown exception</param>
+            <param name="format">The format string</param>
+            <param name="args">Additional arguments</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.Error(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.String)">
+            <summary>
+            Add message to the log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="message">The message string</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.Error(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.Exception,System.String)">
+            <summary>
+            Add message and exception to the log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="exception">The thrown exception</param>
+            <param name="message">The message string</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.ErrorFormat(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.String,System.Object[])">
+            <summary>
+            Add format string and additional arguments to log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="format">The format string</param>
+            <param name="args">Additional arguments</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.ErrorFormat(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.Exception,System.String,System.Object[])">
+            <summary>
+            Add exception, format string and additional arguments to log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="exception">The thrown exception</param>
+            <param name="format">The format string</param>
+            <param name="args">Additional arguments</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.Fatal(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.String)">
+            <summary>
+            Add message to the log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="message">The message string</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.Fatal(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.Exception,System.String)">
+            <summary>
+            Add message and exception to the log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="exception">The thrown exception</param>
+            <param name="message">The message string</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.FatalFormat(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.String,System.Object[])">
+            <summary>
+            Add format string and additional arguments to log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="format">The format string</param>
+            <param name="args">Additional arguments</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.FatalFormat(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.Exception,System.String,System.Object[])">
+            <summary>
+            Add exception, format string and additional arguments to log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="exception">The thrown exception</param>
+            <param name="format">The format string</param>
+            <param name="args">Additional arguments</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.Info(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.String)">
+            <summary>
+            Add message to the log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="message">The message string</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.Info(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.Exception,System.String)">
+            <summary>
+            Add message and exception to the log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="exception">The thrown exception</param>
+            <param name="message">The message string</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.InfoFormat(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.String,System.Object[])">
+            <summary>
+            Add format string and additional arguments to log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="format">The format string</param>
+            <param name="args">Additional arguments</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.InfoFormat(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.Exception,System.String,System.Object[])">
+            <summary>
+            Add exception, format string and additional arguments to log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="exception">The thrown exception</param>
+            <param name="format">The format string</param>
+            <param name="args">Additional arguments</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.Log(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,Informapp.InformSystem.IntegrationTool.Core.Loggers.LogLevel,System.String)">
+            <summary>
+            Add message to the log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="level">The log level</param>
+            <param name="message">The message string</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.Log(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,Informapp.InformSystem.IntegrationTool.Core.Loggers.LogLevel,System.Exception,System.String)">
+            <summary>
+            Add message and exception to the log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="level">The log level</param>
+            <param name="exception">The thrown exception</param>
+            <param name="message">The message string</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.Log(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,Informapp.InformSystem.IntegrationTool.Core.Loggers.LogLevel,System.String,System.Object[])">
+            <summary>
+            Add format string and additional arguments to log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="level">The log level</param>
+            <param name="format">The format string</param>
+            <param name="args">Additional arguments</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.Log(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,Informapp.InformSystem.IntegrationTool.Core.Loggers.LogLevel,System.Exception,System.String,System.Object[])">
+            <summary>
+            Add exception, format string and additional arguments to log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="level">The log level</param>
+            <param name="exception">The thrown exception</param>
+            <param name="format">The format string</param>
+            <param name="args">Additional arguments</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.Warn(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.String)">
+            <summary>
+            Add message to the log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="message">The message string</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.Warn(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.Exception,System.String)">
+            <summary>
+            Add message and exception to the log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="exception">The thrown exception</param>
+            <param name="message">The message string</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.WarnFormat(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.String,System.Object[])">
+            <summary>
+            Add format string and additional arguments to log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="format">The format string</param>
+            <param name="args">Additional arguments</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.WarnFormat(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.Exception,System.String,System.Object[])">
+            <summary>
+            Add exception, format string and additional arguments to log
+            </summary>
+            <param name="logger">The application logger</param>
+            <param name="exception">The thrown exception</param>
+            <param name="format">The format string</param>
+            <param name="args">Additional arguments</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger">
+            <summary>
+            Interface for application logger
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger.IsDebugEnabled">
+            <summary>
+            Is debug enabled true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger.IsErrorEnabled">
+            <summary>
+            Is error enabled true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger.IsFatalEnabled">
+            <summary>
+            Is fatal enabled true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger.IsInfoEnabled">
+            <summary>
+            Is info enabled true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger.IsWarnEnabled">
+            <summary>
+            Is warn enabled true/false
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger.IsEnabledFor(Informapp.InformSystem.IntegrationTool.Core.Loggers.LogLevel)">
+            <summary>
+            Is logging enabled for specific log level true/false
+            </summary>
+            <param name="level"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger.Log(Informapp.InformSystem.IntegrationTool.Core.Loggers.LogEntry)">
+            <summary>
+            Log entry
+            </summary>
+            <param name="entry"></param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogEntry">
+            <summary>
+            Log entry class
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogEntry.Level">
+            <summary>
+            Log level for log entry
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogEntry.Format">
+            <summary>
+            Log format string
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogEntry.Args">
+            <summary>
+            Additional arguments
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogEntry.Exception">
+            <summary>
+            The exception that was throw
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogEntry.#ctor(Informapp.InformSystem.IntegrationTool.Core.Loggers.LogLevel,System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogEntry"/> class.
+            </summary>
+            <param name="level">Injected log level</param>
+            <param name="format">Injected format string</param>
+            <param name="args">Injected additional arguments</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogEntry.#ctor(Informapp.InformSystem.IntegrationTool.Core.Loggers.LogLevel,System.String,System.Object[],System.Exception)">
+            <summary>
+            Fill in log entry
+            </summary>
+            <param name="level">Log level for log entry</param>
+            <param name="format">Log format string</param>
+            <param name="args">Additional arguments</param>
+            <param name="exception">The exception that was throw</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Loggers.Logger">
+            <summary>
+            Logger class
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.Logger.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Loggers.Logger"/> class.
+            </summary>
+            <param name="name">Injected name string</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.Logger.#ctor(log4net.ILog)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Loggers.Logger"/> class.
+            </summary>
+            <param name="logger">Injected logger</param>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.Logger.IsDebugEnabled">
+            <summary>
+            Set debug logging enabled true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.Logger.IsErrorEnabled">
+            <summary>
+            Set error logging enabled true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.Logger.IsFatalEnabled">
+            <summary>
+            Set fatal logging enabled true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.Logger.IsInfoEnabled">
+            <summary>
+            Set info logging enabled true/false
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.Logger.IsWarnEnabled">
+            <summary>
+            Set warn logging enabled true/false
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.Logger.IsEnabledFor(Informapp.InformSystem.IntegrationTool.Core.Loggers.LogLevel)">
+            <summary>
+            Check if loglevel is enabled
+            </summary>
+            <param name="level"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.Logger.Log(Informapp.InformSystem.IntegrationTool.Core.Loggers.LogEntry)">
+            <summary>
+            Make log from log entry
+            </summary>
+            <param name="entry">The log entry</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogLevel">
+            <summary>
+            Enum for different log levels
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogLevel.Off">
+            <summary>
+            Logging off
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogLevel.Fatal">
+            <summary>
+            Fatal logging
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogLevel.Error">
+            <summary>
+            Error logging
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogLevel.Warn">
+            <summary>
+            Warn logging
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogLevel.Info">
+            <summary>
+            Info logging
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogLevel.Debug">
+            <summary>
+            Debug logging
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Providers.GuidProvider">
+            <summary>
+            Provides a new guid
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Providers.GuidProvider.NewGuid">
+            <summary>
+            Creates new guid
+            </summary>
+            <returns>New Guid</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Providers.IGuidProvider">
+            <summary>
+            Interface for guid provider
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Providers.IGuidProvider.NewGuid">
+            <summary>
+            Create new guid
+            </summary>
+            <returns>New Guid</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath.CreateStreamFromPathQuery">
+            <summary>
+            Query to initiate making a stream from a file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath.CreateStreamFromPathQuery.Path">
+            <summary>
+            Path of the file
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath.CreateStreamFromPathQueryHandler">
+            <summary>
+            Query handler for making a stream from a file
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath.CreateStreamFromPathQueryHandler.#ctor(System.IO.Abstractions.IPath,System.IO.Abstractions.IFileInfoFactory,System.IO.Abstractions.IFileStreamFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath.CreateStreamFromPathQueryHandler"/> class
+            </summary>
+            <param name="path">Injected file path provider</param>
+            <param name="fileInfoFactory">Injected file info factory</param>
+            /// <param name="fileStreamFactory">Injected file stream factory</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath.CreateStreamFromPathQueryHandler.Handle(Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath.CreateStreamFromPathQuery,System.Threading.CancellationToken)">
+            <summary>
+            Handles creating a stream from the provided file
+            </summary>
+            <param name="query">The query</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath.CreateStreamFromPathQueryResult">
+            <summary>
+            Result after making a stream from the provided file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath.CreateStreamFromPathQueryResult.File">
+            <summary>
+            Stream of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath.CreateStreamFromPathQueryResult.FileName">
+            <summary>
+            Name of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath.CreateStreamFromPathQueryResult.Path">
+            <summary>
+            Path of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath.CreateStreamFromPathQueryResult.Size">
+            <summary>
+            Size of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath.CreateStreamFromPathQueryResult.CreationTimeUtc">
+            <summary>
+            When the stream was created
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath.CreateStreamFromPathQueryResult.LastWriteTimeUtc">
+            <summary>
+            Last time the file was written to
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath.CreateStreamFromPathQueryResult.Dispose">
+            <summary>
+            Dispose the file
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload.FileNeedsUploadQuery">
+            <summary>
+            Query to check if a file needs to be uploaded
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload.FileNeedsUploadQuery.File">
+            <summary>
+            Stream of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload.FileNeedsUploadQuery.Path">
+            <summary>
+            Path of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload.FileNeedsUploadQuery.FileName">
+            <summary>
+            Name of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload.FileNeedsUploadQuery.Size">
+            <summary>
+            Size of the files
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload.FileNeedsUploadQuery.CreationTimeUtc">
+            <summary>
+            DateTime when file was created
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload.FileNeedsUploadQuery.LastWriteTimeUtc">
+            <summary>
+            DateTime when file was last written to
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload.FileNeedsUploadQueryHandler">
+            <summary>
+            Query handler for checking if a file needs to be uploaded
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload.FileNeedsUploadQueryHandler.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.DataSourceConfiguration},Informapp.InformSystem.IntegrationTool.Core.DataContexts.IDataContext,Informapp.InformSystem.WebApi.Client.DateTimeProviders.IDateTimeProvider,Informapp.InformSystem.IntegrationTool.Core.Queries.IQueryHandler{Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile.HashFileQuery,Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile.HashFileQueryResult})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload.FileNeedsUploadQueryHandler"/> class
+            </summary>
+            <param name="configuration">Injected datasource configuration</param>
+            <param name="dataContext">Injected data context</param>
+            <param name="dateTimeProvider">Injected date time provider</param>
+            <param name="hashFileQueryHandler">Injected hash file query handler</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload.FileNeedsUploadQueryHandler.Handle(Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload.FileNeedsUploadQuery,System.Threading.CancellationToken)">
+            <summary>
+            Handles the checking if the file needs to be uploaded
+            </summary>
+            <param name="query">The query</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload.FileNeedsUploadQueryResult">
+            <summary>
+            Result after checking if a file needs to be uploaded
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload.FileNeedsUploadQueryResult.FileNeedsUpload">
+            <summary>
+            File needs to be uploaded true/false
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile.HashFileQuery">
+            <summary>
+            Query to hash the provided file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile.HashFileQuery.File">
+            <summary>
+            Stream of the file
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile.HashFileQueryHandler">
+            <summary>
+            query handler for the hashing of the provided file
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile.HashFileQueryHandler.#ctor(Informapp.InformSystem.WebApi.Client.Cryptography.IHasher)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile.HashFileQueryHandler"/> class
+            </summary>
+            <param name="hasher">Injected hasher</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile.HashFileQueryHandler.Handle(Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile.HashFileQuery,System.Threading.CancellationToken)">
+            <summary>
+            Handles the hashing of the file
+            </summary>
+            <param name="query">The query</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>Hash of the file</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile.HashFileQueryResult">
+            <summary>
+            Result after hashing the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile.HashFileQueryResult.Hash">
+            <summary>
+            Hash string of the file
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Queries.IQuery`1">
+            <summary>
+            Generic query interface
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Queries.IQueryHandler`2">
+            <summary>
+            Generic query handler interface
+            </summary>
+            <typeparam name="TQuery">The query</typeparam>
+            <typeparam name="TResult">The result</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Queries.IQueryHandler`2.Handle(`0,System.Threading.CancellationToken)">
+            <summary>
+            Handle the query
+            </summary>
+            <param name="query">The query</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The result</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Queries.ListCleanFolderFile.ListCleanFolderFileQuery">
+            <summary>
+            Query to list files that will be cleaned up
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Queries.ListCleanFolderFile.ListCleanFolderFileQueryHandler">
+            <summary>
+            Query handler for making a list of files that will be cleaned up
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Queries.ListCleanFolderFile.ListCleanFolderFileQueryHandler.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.CleanupFolderConfiguration},System.IO.Abstractions.IDirectoryInfoFactory,Informapp.InformSystem.WebApi.Client.DateTimeProviders.IDateTimeProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Queries.ListCleanFolderFile.ListCleanFolderFileQueryHandler"/> class
+            </summary>
+            <param name="configuration">Injected cleanup folder configuration</param>
+            <param name="directoryInfoFactory">Injected directory info factory</param>
+            <param name="dateTimeProvider">Injected date time provider</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Queries.ListCleanFolderFile.ListCleanFolderFileQueryHandler.Handle(Informapp.InformSystem.IntegrationTool.Core.Queries.ListCleanFolderFile.ListCleanFolderFileQuery,System.Threading.CancellationToken)">
+            <summary>
+            Handles creating the list
+            </summary>
+            <param name="query">The query</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>List of files</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Queries.ListCleanFolderFile.ListCleanFolderFileQueryResult">
+            <summary>
+            Result after making a list of files that will be cleaned up
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Queries.ListCleanFolderFile.ListCleanFolderFileQueryResult.Files">
+            <summary>
+            The list of files
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Queries.ValidateQueryHandlerDecorator`2">
+            <summary>
+            Validate the provided query
+            </summary>
+            <typeparam name="TQuery">The query</typeparam>
+            <typeparam name="TResult">The result</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Queries.ValidateQueryHandlerDecorator`2.#ctor(Informapp.InformSystem.IntegrationTool.Core.Queries.IQueryHandler{`0,`1},Informapp.InformSystem.WebApi.Client.Validators.IValidator{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Queries.ValidateQueryHandlerDecorator`2"/> class
+            </summary>
+            <param name="queryHandler">Injected query handler</param>
+            <param name="validator">Injected query validator</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Queries.ValidateQueryHandlerDecorator`2.Handle(`0,System.Threading.CancellationToken)">
+            <summary>
+            Handle validating the provided query
+            </summary>
+            <param name="query">The query</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Requires.Require">
+            <summary>
+            Generic Require{T} methods
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Requires.Require.Required``1(``0,System.String)">
+            <summary>
+            Require T, T can not be null
+            </summary>
+            <typeparam name="T">Type</typeparam>
+            <param name="instance">Actual value for T</param>
+            <param name="parameterName">Name of the parameter</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Requires.Require.NotNull``1(``0,System.String)">
+            <summary>
+            T can not be null
+            </summary>
+            <typeparam name="T">Type</typeparam>
+            <param name="instance">Actual value for T</param>
+            <param name="parameterName">Name of the parameter</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Requires.Require.NotNull``1(System.Nullable{``0},System.String)">
+            <summary>
+            T can not be null, but T is nullable
+            </summary>
+            <typeparam name="T">Type</typeparam>
+            <param name="instance">Actual value for T</param>
+            <param name="parameterName">Name of the parameter</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Requires.Require.NotNullOrEmpty(System.String,System.String)">
+            <summary>
+            String can not be null or empty
+            </summary>
+            <param name="instance">String value</param>
+            <param name="parameterName">Parameter name</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Requires.Require.Assignable``2">
+            <summary>
+            Check if TSource is assignable to TTarget
+            </summary>
+            <typeparam name="TSource">Type of source</typeparam>
+            <typeparam name="TTarget">Type of target</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Requires.Require.MustBeTrue``1(``0,System.Boolean,System.String,System.String)">
+            <summary>
+            Condition on T must be true
+            </summary>
+            <typeparam name="T">Type</typeparam>
+            <param name="instance">Actual value for T</param>
+            <param name="condition">Condition that has to be true with value of T</param>
+            <param name="parameterName">Name of the parameter</param>
+            <param name="conditionName">Name of the condition</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Resources.ExceptionResource">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Resources.ExceptionResource.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Resources.ExceptionResource.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Resources.ExceptionResource.AggregateJobException">
+            <summary>
+              Looks up a localized string similar to One or more exceptions occured while executing job.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Resources.ExceptionResource.ApiUnavailable">
+            <summary>
+              Looks up a localized string similar to API unavailable.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Resources.ExceptionResource.ConfigurationKeyNotFoundOrEmpty">
+            <summary>
+              Looks up a localized string similar to Configuration key {0} is not defined or empty.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Resources.ExceptionResource.ProgramAlreadyRunning">
+            <summary>
+              Looks up a localized string similar to Program already running..
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Resources.LogResource">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Resources.LogResource.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Resources.LogResource.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Resources.LogResource.ApplicationError">
+            <summary>
+              Looks up a localized string similar to Error running application.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Resources.LogResource.Finished">
+            <summary>
+              Looks up a localized string similar to Finished.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Resources.LogResource.OperationCancellled">
+            <summary>
+              Looks up a localized string similar to Cancelled..
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Resources.LogResource.Starting">
+            <summary>
+              Looks up a localized string similar to Starting.
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.CheckUploadNeededUploaderDecorator`1">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploader`1"/> to check if an upload is needed
+            </summary>
+            <typeparam name="TCommand">Type of command</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Uploaders.CheckUploadNeededUploaderDecorator`1.#ctor(Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploader{`0},Informapp.InformSystem.IntegrationTool.Core.Queries.IQueryHandler{Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload.FileNeedsUploadQuery,Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload.FileNeedsUploadQueryResult})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.CheckUploadNeededUploaderDecorator`1"/> class
+            </summary>
+            <param name="uploader">Injected file uploader</param>
+            <param name="queryHandler">Injected query handler</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Uploaders.CheckUploadNeededUploaderDecorator`1.Upload(`0,System.Threading.CancellationToken)">
+            <summary>
+            Uploads the file if the check finds that upload is needed
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.DataSourceFiles.DataSourceFileUploadCommand">
+            <summary>
+            Command to initiate datasource file upload
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Uploaders.DataSourceFiles.DataSourceFileUploadCommand.DataSourceId">
+            <summary>
+            Datasource Id
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.DataSourceFiles.DataSourceFileUploader">
+            <summary>
+            Datasource file uploader
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Uploaders.DataSourceFiles.DataSourceFileUploader.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource.UploadDataSourceV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.DataSourceFiles.DataSourceFileUploader"/> class
+            </summary>
+            <param name="apiClient">Injected api client</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Uploaders.DataSourceFiles.DataSourceFileUploader.Upload(Informapp.InformSystem.IntegrationTool.Core.Uploaders.DataSourceFiles.DataSourceFileUploadCommand,System.Threading.CancellationToken)">
+            <summary>
+            Uploads the file that is set up for the datasource
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploadCommand">
+            <summary>
+            Upload command interface
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploadCommand.File">
+            <summary>
+            Stream of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploadCommand.Path">
+            <summary>
+            Path of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploadCommand.FileName">
+            <summary>
+            Name of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploadCommand.Size">
+            <summary>
+            Size of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploadCommand.CreationTimeUtc">
+            <summary>
+            DateTime of when the file was created
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploadCommand.LastWriteTimeUtc">
+            <summary>
+            DateTime of when the file was last written to
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploader`1">
+            <summary>
+            Generic interface for Uploader{TCommand}
+            </summary>
+            <typeparam name="TCommand"></typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploader`1.Upload(`0,System.Threading.CancellationToken)">
+            <summary>
+            Initiates upload for {TCommand}
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploadResult">
+            <summary>
+            Interface for upload result
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploadResult.Success">
+            <summary>
+            If upload was successful this will be true
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.LogUploaderDecorator`1">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploader`1"/> to log upload has started
+            </summary>
+            <typeparam name="TCommand">Type of command</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Uploaders.LogUploaderDecorator`1.#ctor(Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploader{`0},Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.LogUploaderDecorator`1"/> class
+            </summary>
+            <param name="uploader">Injected uploader</param>
+            <param name="logger">Injected application logger</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Uploaders.LogUploaderDecorator`1.Upload(`0,System.Threading.CancellationToken)">
+            <summary>
+            Logs upload has started and continues with uploading
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>Upload continues</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.SaveResultUploaderDecorator`1">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploader`1"/> to save the result of the completed or failed upload
+            </summary>
+            <typeparam name="TCommand">Type of command</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Uploaders.SaveResultUploaderDecorator`1.#ctor(Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploader{`0},Informapp.InformSystem.IntegrationTool.Core.DataContexts.IDataContext,Informapp.InformSystem.WebApi.Client.DateTimeProviders.IDateTimeProvider,Informapp.InformSystem.IntegrationTool.Core.Queries.IQueryHandler{Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile.HashFileQuery,Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile.HashFileQueryResult})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.SaveResultUploaderDecorator`1"/> class
+            </summary>
+            <param name="uploader">Injected uploader</param>
+            <param name="dataContext">Injected data context</param>
+            <param name="dateTimeProvider">Injected date time provider</param>
+            <param name="hashFileQueryHandler">Injected hash file query handler</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Uploaders.SaveResultUploaderDecorator`1.Upload(`0,System.Threading.CancellationToken)">
+            <summary>
+            Saves the result of the upload
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The upload result</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.UploadCommandBase">
+            <summary>
+            Base class for upload command
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Uploaders.UploadCommandBase.File">
+            <summary>
+            Stream of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Uploaders.UploadCommandBase.Path">
+            <summary>
+            Path of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Uploaders.UploadCommandBase.FileName">
+            <summary>
+            Name of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Uploaders.UploadCommandBase.Size">
+            <summary>
+            Size of the file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Uploaders.UploadCommandBase.CreationTimeUtc">
+            <summary>
+            DateTime of when the file was created
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Uploaders.UploadCommandBase.LastWriteTimeUtc">
+            <summary>
+            DateTime of when the file was last written to
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.UploadResult">
+            <summary>
+            Upload result class
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Uploaders.UploadResult.Success">
+            <summary>
+            If the upload was sucessful this will be true
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Validators.CompositeValidator`1">
+            <summary>
+            Composite validator class
+            </summary>
+            <typeparam name="T">Type to be validated</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Validators.CompositeValidator`1.#ctor(System.Collections.Generic.IReadOnlyList{Informapp.InformSystem.WebApi.Client.Validators.IValidator{`0}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Validators.CompositeValidator`1"/> class
+            </summary>
+            <param name="validators">Injected validator</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Validators.CompositeValidator`1.ValidateObject(`0)">
+            <summary>
+            Goes through the list of validators and executes the validation
+            </summary>
+            <param name="instance">The instance</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.VersionConstants">
+            <summary>
+            Version constant of the tool
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.VersionConstants.Version">
+            <summary>
+            Version of the tool
+            </summary>
+        </member>
+    </members>
+</doc>

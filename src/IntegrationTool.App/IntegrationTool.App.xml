@@ -1,0 +1,656 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IntegrationTool</name>
+    </assembly>
+    <members>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.AppStart.DefaultAssemblyProvider">
+            <summary>
+            Default assembly provider implementation
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.AppStart.DefaultAssemblyProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.App.AppStart.DefaultAssemblyProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.AppStart.DefaultAssemblyProvider.GetLocalAssemblies">
+            <summary>
+            Retrieve a list of local assemblies
+            </summary>
+            <returns>The list of local assemblies</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.AutofacContainerFactory">
+            <summary>
+            Factory for Autofac container
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.AutofacContainerFactory.Create">
+            <summary>
+            Create Autofac container
+            </summary>
+            <returns>The Autofac container</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.IAutofacRegistration">
+            <summary>
+            Abstraction to register services with Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.IAutofacRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ApiClientRegistration">
+            <summary>
+            Register api client in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ApiClientRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ApplicationLoggerRegistration">
+            <summary>
+            Register application logger in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ApplicationLoggerRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ApplicationRegistration">
+            <summary>
+            Register application in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ApplicationRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.AssemblyProviderRegistration">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.AssemblyProviderRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.BearerTokenCacheRegistration">
+            <summary>
+            Register bearer token cache in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.BearerTokenCacheRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.BearerTokenProviderRegistration">
+            <summary>
+            Register bearer token provider in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.BearerTokenProviderRegistration.#ctor(Informapp.InformSystem.WebApi.Client.Assemblies.IAssemblyProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.BearerTokenProviderRegistration"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.BearerTokenProviderRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ClientCacheRegistration">
+            <summary>
+            Register client cache in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ClientCacheRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ClientFactoryRegistration">
+            <summary>
+            Register client cache factory in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ClientFactoryRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.CommandHandlerRegistration">
+            <summary>
+            Register comand handlers in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.CommandHandlerRegistration.#ctor(Informapp.InformSystem.WebApi.Client.Assemblies.IAssemblyProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.CommandHandlerRegistration"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.CommandHandlerRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ConverterRegistration">
+            <summary>
+            Register converters in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ConverterRegistration.#ctor(Informapp.InformSystem.WebApi.Client.Assemblies.IAssemblyProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ConverterRegistration"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ConverterRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.DataContextRegistration">
+            <summary>
+            Register data context in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.DataContextRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.DateTimeProviderRegistration">
+            <summary>
+            Register datetime provider in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.DateTimeProviderRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.DirectoryCreatorRegistration">
+            <summary>
+            Register directory creator in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.DirectoryCreatorRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.DirectoryInfoFactoryRegistration">
+            <summary>
+            Register directory info factory in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.DirectoryInfoFactoryRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.DisposableResourcesRegistration">
+            <summary>
+            Register disposable resources in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.DisposableResourcesRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.DownloadFileMapperRegistration">
+            <summary>
+            Register download file mapper in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.DownloadFileMapperRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.DownloadIntegrationExportCommandHandlerRegistration">
+            <summary>
+            Register download integration export command handler in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.DownloadIntegrationExportCommandHandlerRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.DriveInfoFactoryRegistration">
+            <summary>
+            Register drive info factory in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.DriveInfoFactoryRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FactoryT1Registration">
+            <summary>
+            Register factories in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FactoryT1Registration.#ctor(Informapp.InformSystem.WebApi.Client.Assemblies.IAssemblyProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FactoryT1Registration"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FactoryT1Registration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FactoryT2Registration">
+            <summary>
+            Register factories in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FactoryT2Registration.#ctor(Informapp.InformSystem.WebApi.Client.Assemblies.IAssemblyProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FactoryT2Registration"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FactoryT2Registration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FileInfoFactoryRegistration">
+            <summary>
+            Register file info factory in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FileInfoFactoryRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FileStreamFactoryRegistration">
+            <summary>
+            Register file stream factory in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FileStreamFactoryRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FileSystemRegistration">
+            <summary>
+            Register directory info factory in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FileSystemRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.GuidProviderRegistration">
+            <summary>
+            Register guid provider in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.GuidProviderRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.HasherRegisteration">
+            <summary>
+            Register hasher in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.HasherRegisteration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.JobHandlerRegistration">
+            <summary>
+            Register job handlers in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.JobHandlerRegistration.#ctor(Informapp.InformSystem.WebApi.Client.Assemblies.IAssemblyProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.JobHandlerRegistration"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.JobHandlerRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.JobRegistration">
+            <summary>
+            Register jobs in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.JobRegistration.#ctor(Informapp.InformSystem.WebApi.Client.Assemblies.IAssemblyProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.JobRegistration"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.JobRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.MethodProviderRegistration">
+            <summary>
+            Register method provider in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.MethodProviderRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.MimeMapperRegistration">
+            <summary>
+            Register mime mapper in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.MimeMapperRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.OptionsRegistration">
+            <summary>
+            Register options in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.OptionsRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.PathProviderRegistration">
+            <summary>
+            Register path provider in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.PathProviderRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FilePathProviderRegistration">
+            <summary>
+            Register path in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FilePathProviderRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.QueryDictionaryBuilderRegistration">
+            <summary>
+            Register query dictionary builder in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.QueryDictionaryBuilderRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.QueryHandlerRegistration">
+            <summary>
+            Register query handlers in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.QueryHandlerRegistration.#ctor(Informapp.InformSystem.WebApi.Client.Assemblies.IAssemblyProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.QueryHandlerRegistration"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.QueryHandlerRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.QueryProviderRegistration">
+            <summary>
+            Register query provider in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.QueryProviderRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.QueryStringBuilderFactoryRegistration">
+            <summary>
+            Register query string builder factory in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.QueryStringBuilderFactoryRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.RequestFactoryRegistration">
+            <summary>
+            Register request factory in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.RequestFactoryRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.SerializerRegistration">
+            <summary>
+            Register serializer in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.SerializerRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.UploaderRegistration">
+            <summary>
+            Register uploader in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.UploaderRegistration.#ctor(Informapp.InformSystem.WebApi.Client.Assemblies.IAssemblyProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.UploaderRegistration"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.UploaderRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.UploadFileRequestMapperRegistration">
+            <summary>
+            Register upload file request mapper in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.UploadFileRequestMapperRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.UploadFileResponseMapperRegistration">
+            <summary>
+            Register upload file response mapper in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.UploadFileResponseMapperRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ValidatorRegistration">
+            <summary>
+            Register validators in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ValidatorRegistration.#ctor(Informapp.InformSystem.WebApi.Client.Assemblies.IAssemblyProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ValidatorRegistration"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ValidatorRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.CancellationEventHandler">
+            <summary>
+            Cancellation event handler
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.CancellationEventHandler.#ctor(System.Threading.CancellationTokenSource)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.App.CancellationEventHandler"/> class.
+            </summary>
+            <param name="source">The cancellation token source</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.CancellationEventHandler.Dispose(System.Boolean)">
+            <summary>
+            Releases the unmanaged resources used and optionally releases the managed resources.
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.CancellationEventHandler.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.ClientFactories.UserAgentClientFactoryDecorator">
+            <summary>
+            User agent client factory decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.ClientFactories.UserAgentClientFactoryDecorator.#ctor(Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.App.CancellationEventHandler"/> class.
+            </summary>
+            <param name="clientFactory">The decorated clientfactory</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.ClientFactories.UserAgentClientFactoryDecorator.Create(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest)">
+            <summary>
+            Create rest client and set the user agent
+            </summary>
+            <param name="request">The request instance</param>
+            <returns>The rest client instance</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.ConsoleApplication">
+            <summary>
+            Console application
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.ConsoleApplication.Run(System.Threading.CancellationToken)">
+            <summary>
+            Run the application
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The Task to run</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.IntegrationToolAppProject">
+            <summary>
+            Dummy class to reference this assembly
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.IntegrationToolAppProject.Load">
+            <summary>
+            Dummy method, calling this will load its assembly
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Resources.MessageResource">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.App.Resources.MessageResource.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.App.Resources.MessageResource.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.App.Resources.MessageResource.CancellationRequest">
+            <summary>
+              Looks up a localized string similar to Cancellation requested.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.App.Resources.MessageResource.ExceptionThrown">
+            <summary>
+              Looks up a localized string similar to An exception was thrown:.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.App.Resources.MessageResource.PressEnterToExit">
+            <summary>
+              Looks up a localized string similar to Press enter to exit.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.App.Resources.MessageResource.PressEnterToStart">
+            <summary>
+              Looks up a localized string similar to Press enter to run program.
+            </summary>
+        </member>
+    </members>
+</doc>
