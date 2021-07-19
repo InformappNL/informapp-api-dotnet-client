@@ -30,7 +30,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUse
         /// </summary>
         [BodyParameter]
         [DataMember]
-        [ExampleValue("todo")]
+        [ExampleValue("{ \"DataSources\": { .. }, \"Integrations\": { .. }, \"CleanupFolder\": { .. } }")]
         [MaxLength(IntegrationUserHeartbeatV1Constants.ConfigurationLength)]
         [Required]
         public string Configuration { get; set; }
