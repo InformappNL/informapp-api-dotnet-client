@@ -1,4 +1,4 @@
-﻿using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments.Download;
+﻿using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmailFiles.Download;
 
 namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmailFiles
 {
@@ -6,6 +6,6 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
     {
         private const string Route = "/api/v1/forms/registrations/emails/files";
 
-        internal const string DownloadRoute = Route + "/{" + nameof(DownloadFormRegistrationAttachmentV1Request.FormRegistrationAttachmentId) + "}";
+        internal const string DownloadRoute = Route + "/{" + nameof(DownloadFormRegistrationEmailFileV1Request.FormRegistrationEmailFileId) + "}";
     }
 }

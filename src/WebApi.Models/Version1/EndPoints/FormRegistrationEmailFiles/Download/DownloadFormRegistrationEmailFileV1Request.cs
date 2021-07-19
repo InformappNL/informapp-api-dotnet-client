@@ -31,7 +31,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         /// </summary>
         [ExampleString(ExampleStringKind.Guid, "6A799CB1-D22D-4307-99C1-1D8CE3F9FC37")]
         [IgnoreDataMember]
-        //[PathParameter]
+        [PathParameter]
         [Required]
         public Guid? FormRegistrationEmailFileId { get; set; }
     }
