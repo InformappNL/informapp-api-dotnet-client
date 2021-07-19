@@ -104,5 +104,11 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         /// </summary>
         [EnumMember]
         FullName = 16,
+
+        /// <summary>
+        /// Value FormRegistrationAttachmentId     
+        /// </summary>
+        [EnumMember]
+        ValueFormRegistrationAttachmentId = 17,
     }
 }

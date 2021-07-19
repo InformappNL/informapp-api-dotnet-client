@@ -68,6 +68,13 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         [ExampleString(ExampleStringKind.Guid, "77D0A315-3C8B-4B2B-97E3-5A2038798474")]
         public Guid? Uuid { get; set; }
 
+        /// <summary>
+        /// Form registration attachment id
+        /// </summary>
+        [DataMember]
+        [ExampleString(ExampleStringKind.Guid, "4BE4F694-FC83-45BE-A936-060F1754F72A")]
+        public Guid? FormRegistrationAttachmentId { get; set; }
+
 #pragma warning restore CA1720 // Identifier contains type name
     }
 }

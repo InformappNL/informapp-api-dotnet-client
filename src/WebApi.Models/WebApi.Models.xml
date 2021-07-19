@@ -3565,6 +3565,11 @@
             Uuid
             </summary>
         </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1ResponseValue.FormRegistrationAttachmentId">
+            <summary>
+            Form registration attachment id
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select">
             <summary>
             Select columns
@@ -3648,6 +3653,11 @@
         <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select.FullName">
             <summary>
             FullName
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationDataForRegistrationV1Select.ValueFormRegistrationAttachmentId">
+            <summary>
+            Value FormRegistrationAttachmentId     
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Filter">
