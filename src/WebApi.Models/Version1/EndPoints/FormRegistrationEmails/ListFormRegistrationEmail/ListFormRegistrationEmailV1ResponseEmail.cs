@@ -33,5 +33,11 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         /// </summary>
         [DataMember]
         public IReadOnlyList<ListFormRegistrationEmailV1ResponseRecipient> EmailRecipients { get; set; }
+
+        /// <summary>
+        /// File Ids
+        /// </summary>
+        [DataMember]
+        public IReadOnlyList<ListFormRegistrationEmailV1ResponseFile> Files { get; set; }
     }
 }

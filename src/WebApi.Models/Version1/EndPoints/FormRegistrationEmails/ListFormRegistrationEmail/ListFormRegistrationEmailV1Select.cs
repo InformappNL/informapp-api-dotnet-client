@@ -26,5 +26,11 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         /// </summary>
         [EnumMember]
         EmailRecipients = 2,
+
+        /// <summary>
+        /// EmailFiles
+        /// </summary>
+        [EnumMember]
+        EmailFiles = 3,
     }
 }

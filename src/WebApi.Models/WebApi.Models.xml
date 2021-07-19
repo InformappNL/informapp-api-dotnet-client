@@ -4079,6 +4079,21 @@
             Email recipients
             </summary>
         </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmails.ListFormRegistrationEmail.ListFormRegistrationEmailV1ResponseEmail.Files">
+            <summary>
+            File Ids
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmails.ListFormRegistrationEmail.ListFormRegistrationEmailV1ResponseFile">
+            <summary>
+            Form registration file
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmails.ListFormRegistrationEmail.ListFormRegistrationEmailV1ResponseFile.FileId">
+            <summary>
+            File Id
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmails.ListFormRegistrationEmail.ListFormRegistrationEmailV1ResponseRecipient">
             <summary>
             Form registration email recipient
@@ -4107,6 +4122,11 @@
         <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmails.ListFormRegistrationEmail.ListFormRegistrationEmailV1Select.EmailRecipients">
             <summary>
             EmailRecipients
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmails.ListFormRegistrationEmail.ListFormRegistrationEmailV1Select.EmailFiles">
+            <summary>
+            EmailFiles
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmails.ListFormRegistrationEmail.ListFormRegistrationEmailV1Sort">
