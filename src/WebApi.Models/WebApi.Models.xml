@@ -3400,6 +3400,51 @@
             FullName
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments.Download.DownloadFormRegistrationAttachmentV1Request">
+            <summary>
+            Download data source file request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments.Download.DownloadFormRegistrationAttachmentV1Request.FormRegistrationAttachmentId">
+            <summary>
+            Form Registration Attachment Id
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments.Download.DownloadFormRegistrationAttachmentV1Response">
+            <summary>
+            Download form registrations attachment file response
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments.Download.DownloadFormRegistrationAttachmentV1Response.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments.Download.DownloadFormRegistrationAttachmentV1Response"/> class.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments.Download.DownloadFormRegistrationAttachmentV1Response.ContentType">
+            <summary>
+            Content type
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments.Download.DownloadFormRegistrationAttachmentV1Response.File">
+            <summary>
+            File
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments.Download.DownloadFormRegistrationAttachmentV1Response.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments.Download.DownloadFormRegistrationAttachmentV1Response.Size">
+            <summary>
+            Size
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments.Download.DownloadFormRegistrationAttachmentV1Response.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.FormRegistrationDataV1Kind">
             <summary>
             The kind of data

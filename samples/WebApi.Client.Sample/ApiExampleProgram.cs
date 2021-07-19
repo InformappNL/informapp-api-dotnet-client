@@ -9,6 +9,7 @@ using Informapp.InformSystem.WebApi.Client.Sample.Examples.Countries;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.Customers;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.DataSources;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.FormDataNames;
+using Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationAttachments;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationData;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationEmails;
 using Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrations;
@@ -110,6 +111,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
                 Create<ListFormRegistrationEmailV1Example>(true),
 
                 Create<ListFormRegistrationDataForRegistrationV1Example>(true),
+                Create<DownloadFormRegistrationAttachmentV1Example>(false),
 
                 Create<ListInformAppFormInstructionV1Example>(false),
                 Create<CreateInformAppFormInstructionV1Example>(false),
