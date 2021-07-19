@@ -3402,7 +3402,7 @@
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments.Download.DownloadFormRegistrationAttachmentV1Request">
             <summary>
-            Download data source file request
+            Download form registration attachment file request
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments.Download.DownloadFormRegistrationAttachmentV1Request.FormRegistrationAttachmentId">
@@ -3990,6 +3990,51 @@
         <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData.ListFormRegistrationDataV1Sort.RegistrationDateDesc">
             <summary>
             Sort by registration date descending
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmailFiles.Download.DownloadFormRegistrationEmailFileV1Request">
+            <summary>
+            Download form registration email file request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmailFiles.Download.DownloadFormRegistrationEmailFileV1Request.FormRegistrationEmailFileId">
+            <summary>
+            Form Registration Email File Id
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmailFiles.Download.DownloadFormRegistrationEmailFileV1Response">
+            <summary>
+            Download form registrations email file response
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmailFiles.Download.DownloadFormRegistrationEmailFileV1Response.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmailFiles.Download.DownloadFormRegistrationEmailFileV1Response"/> class.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmailFiles.Download.DownloadFormRegistrationEmailFileV1Response.ContentType">
+            <summary>
+            Content type
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmailFiles.Download.DownloadFormRegistrationEmailFileV1Response.File">
+            <summary>
+            File
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmailFiles.Download.DownloadFormRegistrationEmailFileV1Response.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmailFiles.Download.DownloadFormRegistrationEmailFileV1Response.Size">
+            <summary>
+            Size
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmailFiles.Download.DownloadFormRegistrationEmailFileV1Response.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmails.ListFormRegistrationEmail.ListFormRegistrationEmailV1Filter">

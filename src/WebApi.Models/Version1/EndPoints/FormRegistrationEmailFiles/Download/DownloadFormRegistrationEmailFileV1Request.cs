@@ -9,30 +9,30 @@ using System.ComponentModel.DataAnnotations;
 using System.Net;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments.Download
+namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationEmailFiles.Download
 {
     /// <summary>
-    /// Download form registration attachment file request
+    /// Download form registration email file request
     /// </summary>
     [Accept(Accept.OctetStream)]
     [DataContract(Namespace = Version1Constants.Namespace)]
     [DownloadFileRequest]
     [HttpMethod(HttpMethod.Get)]
-    [Path(FormRegistrationAttachmentV1Constants.DownloadRoute)]
+    [Path(FormRegistrationEmailFileV1Constants.DownloadRoute)]
     [Response(HttpStatusCode.BadRequest, typeof(BadRequestV1Response))]
     [Response(HttpStatusCode.Forbidden, typeof(ForbiddenV1Response))]
     [Response(HttpStatusCode.InternalServerError, typeof(InternalServerErrorV1Response))]
     [Response(HttpStatusCode.Unauthorized, typeof(UnauthorizedV1Response))]
-    public class DownloadFormRegistrationAttachmentV1Request : BaseRequest,
-        IRequest<DownloadFormRegistrationAttachmentV1Response>
+    public class DownloadFormRegistrationEmailFileV1Request : BaseRequest,
+        IRequest<DownloadFormRegistrationEmailFileV1Response>
     {
         /// <summary>
-        /// Form Registration Attachment Id
+        /// Form Registration Email File Id
         /// </summary>
-        [ExampleString(ExampleStringKind.Guid, "D3B00DDE-27F5-448B-817D-776D3073E04D")]
+        [ExampleString(ExampleStringKind.Guid, "6A799CB1-D22D-4307-99C1-1D8CE3F9FC37")]
         [IgnoreDataMember]
-        [PathParameter]
+        //[PathParameter]
         [Required]
-        public Guid? FormRegistrationAttachmentId { get; set; }
+        public Guid? FormRegistrationEmailFileId { get; set; }
     }
 }
