@@ -540,15 +540,26 @@
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ValidatorRegistration">
             <summary>
-            Register validators in Autofac
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ValidatorRegistration.#ctor(Informapp.InformSystem.WebApi.Client.Assemblies.IAssemblyProvider)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ValidatorRegistration"/> class.
+            Register dependencies in Autofac
             </summary>
         </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ValidatorRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register dependencies in Autofac
+            </summary>
+            <param name="builder">The builder</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ValidatorT1Registration">
+            <summary>
+            Register validators in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ValidatorT1Registration.#ctor(Informapp.InformSystem.WebApi.Client.Assemblies.IAssemblyProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ValidatorT1Registration"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.ValidatorT1Registration.Register(Autofac.ContainerBuilder)">
             <summary>
             Register services in Autofac
             </summary>
