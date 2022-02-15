@@ -47,10 +47,7 @@ namespace Informapp.InformSystem.WebApi.Client.Responses
         public static async Task<T> ThrowIfFailed<T>(this Task<T> response)
             where T : ApiResponse
         {
-            if (response == null)
-            {
-                throw new ArgumentNullException(nameof(response));
-            }
+            Argument.NotNull(response, nameof(response));
 
             var result = await response
                 .ConfigureAwait(Await.Default);
