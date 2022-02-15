@@ -52,7 +52,8 @@ namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
 
             var decorators = new[]
             {
-                typeof(ValidateQueryHandlerDecorator<,>)
+                typeof(ValidateQueryHandlerDecorator<,>),
+                typeof(DebugQueryHandlerDecorator<,>),
             };
 
             foreach (var decorator in decorators)

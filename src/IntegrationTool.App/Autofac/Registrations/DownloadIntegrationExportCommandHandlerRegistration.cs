@@ -27,6 +27,7 @@ namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
             builder.RegisterDecorator<RejectDownloadIntegrationExportCommandHandlerDecorator, IDownloadIntegrationExportCommandHandler>();
             builder.RegisterDecorator<SanitiseFileNameDownloadIntegrationExportCommandHandlerDecorator, IDownloadIntegrationExportCommandHandler>();
             builder.RegisterDecorator<ConfigurationDownloadIntegrationExportCommandHandlerDecorator, IDownloadIntegrationExportCommandHandler>();
+            builder.RegisterDecorator<DebugDownloadIntegrationExportCommandHandlerDecorator, IDownloadIntegrationExportCommandHandler>();
         }
     }
 }

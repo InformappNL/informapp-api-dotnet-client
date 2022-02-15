@@ -1558,6 +1558,26 @@
             <param name="cancellationToken">The cancellation token</param>
             <returns>The response</returns>
         </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationExports.DebugDownloadIntegrationExportCommandHandlerDecorator">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationExports.IDownloadIntegrationExportCommandHandler"/> to log debug information
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationExports.DebugDownloadIntegrationExportCommandHandlerDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.IntegrationExports.IDownloadIntegrationExportCommandHandler,Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationExports.ConfigurationDownloadIntegrationExportCommandHandlerDecorator"/> class
+            </summary>
+            <param name="handler">The instance to decorate</param>
+            <param name="logger">The logger</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationExports.DebugDownloadIntegrationExportCommandHandlerDecorator.Handle(Informapp.InformSystem.IntegrationTool.Core.IntegrationExports.DownloadIntegrationExportCommand,System.Threading.CancellationToken)">
+            <summary>
+            Log debug information
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationExports.DownloadIntegrationExportCommand">
             <summary>
             Command for initiating the download of an integration export file
@@ -3285,6 +3305,27 @@
             <param name="command">The command</param>
             <param name="cancellationToken">The cancellation token</param>
             <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.DebugUploaderDecorator`1">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploader`1"/> to log debug information
+            </summary>
+            <typeparam name="TCommand">Type of command</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Uploaders.DebugUploaderDecorator`1.#ctor(Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploader{`0},Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.LogUploaderDecorator`1"/> class
+            </summary>
+            <param name="uploader">Injected uploader</param>
+            <param name="logger">Injected application logger</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Uploaders.DebugUploaderDecorator`1.Upload(`0,System.Threading.CancellationToken)">
+            <summary>
+            Log debug information
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>Upload continues</returns>
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploadCommand">
             <summary>

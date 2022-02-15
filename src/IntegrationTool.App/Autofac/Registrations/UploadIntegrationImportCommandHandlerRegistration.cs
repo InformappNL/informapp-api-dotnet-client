@@ -25,6 +25,7 @@ namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
             builder.RegisterDecorator<ReportUploadIntegrationImportDecorator, IUploadIntegrationImportCommandHandler>();
             builder.RegisterDecorator<StartUploadIntegrationImportDecorator, IUploadIntegrationImportCommandHandler>();
             builder.RegisterDecorator<MoveFileUploadIntegrationImportDecorator, IUploadIntegrationImportCommandHandler>();
+            builder.RegisterDecorator<DebugUploadIntegrationImportDecorator, IUploadIntegrationImportCommandHandler>();
         }
     }
 }
