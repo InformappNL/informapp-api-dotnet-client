@@ -93,6 +93,8 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
 
                 string queueFolder = _configuration.Value.QueueFolder;
 
+                string orignalFileName = fileInfo.Name;
+
                 string fileName = string.Format(
                     CultureInfo.InvariantCulture,
                     "{0}_{1:yyyyMMddHHmmssfff}_{2}{3}",
@@ -113,6 +115,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
                     {
                         IntegrationId = command.IntegrationId,
                         File = filePath,
+                        FileName = orignalFileName,
                         FileSize = size,
                         Hash = null,
                         VersionId = versionId,
@@ -166,6 +169,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
                             {
                                 IntegrationId = command.IntegrationId,
                                 File = filePath,
+                                FileName = orignalFileName,
                                 FileSize = size,
                                 Hash = hash,
                                 VersionId = versionId,

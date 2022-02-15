@@ -65,7 +65,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
                 {
                     IntegrationImportId = command.IntegrationImportId,
                     File = queryResult.File,
-                    FileName = queryResult.FileName,
+                    FileName = integrationImport.FileName,
                     Size = queryResult.Size,
                 };
 

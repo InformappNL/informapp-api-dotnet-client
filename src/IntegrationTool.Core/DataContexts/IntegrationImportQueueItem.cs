@@ -8,6 +8,8 @@ namespace Informapp.InformSystem.IntegrationTool.Core.DataContexts
 
         public string File { get; set; }
 
+        public string FileName { get; set; }
+
         public long? FileSize { get; set; }
 
         public string Hash { get; set; }
