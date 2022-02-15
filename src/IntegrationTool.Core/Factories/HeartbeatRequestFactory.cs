@@ -13,7 +13,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
 
         private readonly IFactory<HeartbeatDataSourceReport> _dataSourceFactory;
 
-        private readonly IFactory<HeartbeatIntegrationReport> _integrationFactory;
+        private readonly IFactory<HeartbeatIntegrationExportReport> _integrationExportFactory;
+
+        private readonly IFactory<HeartbeatIntegrationImportReport> _integrationImportFactory;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="HeartbeatRequestFactory"/> class.
@@ -21,17 +23,20 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
         /// <param name="configurationFactory">The configuration report factory</param>
         /// <param name="driveFactory">The drive report factory</param>
         /// <param name="dataSourceFactory">The datasource report factory</param>
-        /// <param name="integrationFactory">The integration report factory</param>
+        /// <param name="integrationExportFactory">The integration export report factory</param>
+        /// <param name="integrationImportFactory">The integration import report factory</param>
         public HeartbeatRequestFactory(
             IFactory<HeartbeatConfigurationReport> configurationFactory,
             IFactory<HeartbeatDriveInfoReport> driveFactory,
             IFactory<HeartbeatDataSourceReport> dataSourceFactory,
-            IFactory<HeartbeatIntegrationReport> integrationFactory)
+            IFactory<HeartbeatIntegrationExportReport> integrationExportFactory,
+            IFactory<HeartbeatIntegrationImportReport> integrationImportFactory)
         {
             Argument.NotNull(configurationFactory, nameof(configurationFactory));
             Argument.NotNull(driveFactory, nameof(driveFactory));
             Argument.NotNull(dataSourceFactory, nameof(dataSourceFactory));
-            Argument.NotNull(integrationFactory, nameof(integrationFactory));
+            Argument.NotNull(integrationExportFactory, nameof(integrationExportFactory));
+            Argument.NotNull(integrationImportFactory, nameof(integrationImportFactory));
 
             _configurationFactory = configurationFactory;
 
@@ -39,7 +44,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
 
             _dataSourceFactory = dataSourceFactory;
 
-            _integrationFactory = integrationFactory;
+            _integrationExportFactory = integrationExportFactory;
+
+            _integrationImportFactory = integrationImportFactory;
         }
 
         /// <summary>
@@ -56,7 +63,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
 
             var dataSourceReport = _dataSourceFactory.Create();
 
-            var integrationReport = _integrationFactory.Create();
+            var integrationExportReport = _integrationExportFactory.Create();
+
+            var integrationImportReport = _integrationImportFactory.Create();
 
             var request = new CreateIntegrationUserHeartbeatV1Request
             {
@@ -69,9 +78,12 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
                 DataSourceEnabled = dataSourceReport.DataSourceEnabled,
                 DataSources = dataSourceReport.DataSources,
 
-                IntegrationEnabled = integrationReport.IntegrationEnabled,
-                IntegrationDefaultEnabled = integrationReport.IntegrationDefaultEnabled,
-                Integrations = integrationReport.Integrations,
+                IntegrationEnabled = integrationExportReport.Enabled,
+                IntegrationDefaultEnabled = integrationExportReport.DefaultEnabled,
+                Integrations = integrationExportReport.IntegrationExports,
+
+                IntegrationImportEnabled = integrationImportReport.Enabled,
+                IntegrationImports = integrationImportReport.IntegrationImports,
             };
 
             return request;

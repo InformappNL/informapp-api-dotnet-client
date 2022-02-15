@@ -1269,55 +1269,87 @@
             Drives
             </summary>
         </member>
-        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReport">
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationExportReport">
             <summary>
-            Heartbeat integration report
+            Heartbeat integration export report
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReport.IntegrationEnabled">
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationExportReport.Enabled">
             <summary>
-            Integration enabled
+            Integration export enabled
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReport.IntegrationDefaultEnabled">
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationExportReport.DefaultEnabled">
             <summary>
-            Integration default enabled
+            Integration export default enabled
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReport.Integrations">
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationExportReport.IntegrationExports">
             <summary>
-            Integrations
+            Integration exports
             </summary>
         </member>
-        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReportFactory">
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationExportReportFactory">
             <summary>
-            Heartbeat integration report factory
+            Heartbeat integration export report factory
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReportFactory.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationExportConfiguration})">
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationExportReportFactory.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationExportConfiguration})">
             <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReportFactory"/> class.
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationExportReportFactory"/> class.
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReportFactory.Create">
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationExportReportFactory.Create">
             <summary>
-            Create heartbeat integration report.
+            Create heartbeat integration export report.
             </summary>
-            <returns>The created instance of heartbeat integration report.</returns>
+            <returns>The created instance of heartbeat integration export report.</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationImportReport">
+            <summary>
+            Heartbeat integration import report
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationImportReport.Enabled">
+            <summary>
+            Integration import enabled
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationImportReport.IntegrationImports">
+            <summary>
+            Integration imports
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationImportReportFactory">
+            <summary>
+            Heartbeat integration import factory
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationImportReportFactory.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationImportConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationImportReportFactory"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationImportReportFactory.Create">
+            <summary>
+            Create heartbeat integration import report.
+            </summary>
+            <returns>The created instance of heartbeat integration import report.</returns>
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactory">
             <summary>
             Factory for creating a heartbeat request
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactory.#ctor(Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationReport},Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDriveInfoReport},Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDataSourceReport},Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReport})">
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactory.#ctor(Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationReport},Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDriveInfoReport},Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDataSourceReport},Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationExportReport},Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationImportReport})">
             <summary>
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactory"/> class.
             </summary>
             <param name="configurationFactory">The configuration report factory</param>
             <param name="driveFactory">The drive report factory</param>
             <param name="dataSourceFactory">The datasource report factory</param>
-            <param name="integrationFactory">The integration report factory</param>
+            <param name="integrationExportFactory">The integration export report factory</param>
+            <param name="integrationImportFactory">The integration import report factory</param>
         </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactory.Create">
             <summary>

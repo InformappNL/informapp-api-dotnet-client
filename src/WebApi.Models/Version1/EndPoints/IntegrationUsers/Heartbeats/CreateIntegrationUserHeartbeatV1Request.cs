@@ -4,6 +4,7 @@ using Informapp.InformSystem.WebApi.Models.Requests;
 using Informapp.InformSystem.WebApi.Models.Responses;
 using Informapp.InformSystem.WebApi.Models.Version1.Constants;
 using Informapp.InformSystem.WebApi.Models.Version1.Errors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
@@ -30,7 +31,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUse
         /// </summary>
         [BodyParameter]
         [DataMember]
-        [ExampleValue("{ \"DataSources\": { .. }, \"Integrations\": { .. }, \"CleanupFolder\": { .. } }")]
+        [ExampleValue("{ \"DataContext\": { .. }, \"DataSources\": { .. }, \"Integrations\": { .. }, \"IntegrationExports\": { .. }, \"IntegrationImports\": { .. }, \"CleanupFolder\": { .. } }")]
         [MaxLength(IntegrationUserHeartbeatV1Constants.ConfigurationLength)]
         [Required]
         public string Configuration { get; set; }
@@ -68,9 +69,10 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUse
         [DataMember]
         [Required]
         public IReadOnlyList<CreateIntegrationUserHeartbeatV1RequestDataSource> DataSources { get; set; }
+            = Array.Empty<CreateIntegrationUserHeartbeatV1RequestDataSource>();
 
         /// <summary>
-        /// Integration enabled
+        /// Integration export enabled
         /// </summary>
         [BodyParameter]
         [DataMember]
@@ -79,7 +81,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUse
         public bool? IntegrationEnabled { get; set; }
 
         /// <summary>
-        /// Integration default enabled
+        /// Integration export default enabled
         /// </summary>
         [BodyParameter]
         [DataMember]
@@ -88,11 +90,30 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUse
         public bool? IntegrationDefaultEnabled { get; set; }
 
         /// <summary>
-        /// Integrations
+        /// Integration exports
         /// </summary>
         [BodyParameter]
         [DataMember]
         [Required]
         public IReadOnlyList<CreateIntegrationUserHeartbeatV1RequestIntegration> Integrations { get; set; }
+            = Array.Empty<CreateIntegrationUserHeartbeatV1RequestIntegration>();
+
+        /// <summary>
+        /// Integration import enabled
+        /// </summary>
+        [BodyParameter]
+        [DataMember]
+        [ExampleValue(true)]
+        //[Required]
+        public bool? IntegrationImportEnabled { get; set; } = false;
+
+        /// <summary>
+        /// Integration imports
+        /// </summary>
+        [BodyParameter]
+        [DataMember]
+        //[Required]
+        public IReadOnlyList<CreateIntegrationUserHeartbeatV1RequestIntegrationImport> IntegrationImports { get; set; }
+            = Array.Empty<CreateIntegrationUserHeartbeatV1RequestIntegrationImport>();
     }
 }

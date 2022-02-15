@@ -7,16 +7,16 @@ using System.Runtime.Serialization;
 namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats
 {
     /// <summary>
-    /// Integration export
+    /// Integration import
     /// </summary>
     [DataContract(Namespace = Version1Constants.Namespace)]
-    public class CreateIntegrationUserHeartbeatV1RequestIntegration
+    public class CreateIntegrationUserHeartbeatV1RequestIntegrationImport
     {
         /// <summary>
         /// Integration Id
         /// </summary>
         [DataMember]
-        [ExampleString(ExampleStringKind.Guid, "F7A7D62F-BA5B-42BF-B432-77E47D0F51FC")]
+        [ExampleString(ExampleStringKind.Guid, "2DCC6E59-8430-4A7A-806C-6FD0987D353E")]
         [Required]
         public Guid? IntegrationId { get; set; }
     }

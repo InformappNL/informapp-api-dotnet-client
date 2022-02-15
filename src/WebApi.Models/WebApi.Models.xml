@@ -5603,17 +5603,27 @@
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request.IntegrationEnabled">
             <summary>
-            Integration enabled
+            Integration export enabled
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request.IntegrationDefaultEnabled">
             <summary>
-            Integration default enabled
+            Integration export default enabled
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request.Integrations">
             <summary>
-            Integrations
+            Integration exports
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request.IntegrationImportEnabled">
+            <summary>
+            Integration import enabled
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request.IntegrationImports">
+            <summary>
+            Integration imports
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1RequestDataSource">
@@ -5653,10 +5663,20 @@
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1RequestIntegration">
             <summary>
-            Integration
+            Integration export
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1RequestIntegration.IntegrationId">
+            <summary>
+            Integration Id
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1RequestIntegrationImport">
+            <summary>
+            Integration import
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1RequestIntegrationImport.IntegrationId">
             <summary>
             Integration Id
             </summary>
