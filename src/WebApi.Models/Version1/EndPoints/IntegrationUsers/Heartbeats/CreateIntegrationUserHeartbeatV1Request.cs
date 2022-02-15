@@ -115,5 +115,23 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUse
         //[Required]
         public IReadOnlyList<CreateIntegrationUserHeartbeatV1RequestIntegrationImport> IntegrationImports { get; set; }
             = Array.Empty<CreateIntegrationUserHeartbeatV1RequestIntegrationImport>();
+
+        /// <summary>
+        /// Syntess integration export enabled
+        /// </summary>
+        [BodyParameter]
+        [DataMember]
+        [ExampleValue(true)]
+        //[Required]
+        public bool? SyntessIntegrationExportEnabled { get; set; } = false;
+
+        /// <summary>
+        /// Syntess Integration exports
+        /// </summary>
+        [BodyParameter]
+        [DataMember]
+        //[Required]
+        public IReadOnlyList<CreateIntegrationUserHeartbeatV1RequestSyntessIntegrationExport> SyntessIntegrationExports { get; set; }
+            = Array.Empty<CreateIntegrationUserHeartbeatV1RequestSyntessIntegrationExport>();
     }
 }

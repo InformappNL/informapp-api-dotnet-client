@@ -5984,6 +5984,16 @@
             Integration imports
             </summary>
         </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request.SyntessIntegrationExportEnabled">
+            <summary>
+            Syntess integration export enabled
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request.SyntessIntegrationExports">
+            <summary>
+            Syntess Integration exports
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1RequestDataSource">
             <summary>
             DataSource
@@ -6037,6 +6047,16 @@
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1RequestIntegrationImport.IntegrationId">
             <summary>
             Integration Id
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1RequestSyntessIntegrationExport">
+            <summary>
+            Syntess integration export
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1RequestSyntessIntegrationExport.SyntessIntegrationExportId">
+            <summary>
+            Syntess integration export id
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Response">
