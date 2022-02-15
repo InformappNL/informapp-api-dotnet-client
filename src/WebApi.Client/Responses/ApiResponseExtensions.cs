@@ -22,7 +22,17 @@ namespace Informapp.InformSystem.WebApi.Client.Responses
 
             if (response.IsSuccessful == false)
             {
-                throw new InvalidOperationException("The request failed.");
+                const string message = "The request failed.";
+
+                if (response.ErrorException != null)
+                {
+                    throw new InvalidOperationException(message, response.ErrorException);
+                }
+
+                else
+                {
+                    throw new InvalidOperationException(message);
+                }
             }
 
             return response;

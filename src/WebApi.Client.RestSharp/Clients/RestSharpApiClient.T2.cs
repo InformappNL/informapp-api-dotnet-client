@@ -124,6 +124,7 @@ namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
                 RestResponse = apiResponse,
 
                 IsSuccessful = apiResponse.IsSuccessful,
+                ErrorException = apiResponse.ErrorException,
                 StatusCode = apiResponse.StatusCode,
                 ResponseStatus = _converter.Convert(apiResponse.ResponseStatus)
                     .ThrowIfNoValue()

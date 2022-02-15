@@ -2674,6 +2674,11 @@
             Success
             </summary>
         </member>
+        <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse.ErrorException">
+            <summary>
+            Exceptions thrown during the request, if any.
+            </summary>
+        </member>
         <member name="P:Informapp.InformSystem.WebApi.Client.Responses.ApiResponse.Headers">
             <summary>
             Headers

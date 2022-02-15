@@ -45,7 +45,16 @@ namespace Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators
 
             if (tokenResponse.Response.IsSuccessful != true)
             {
-                throw new ApiClientException("Failed to acquire access token");
+                const string message = "Failed to acquire access token";
+
+                if (tokenResponse.Response.ErrorException != null)
+                {
+                    throw new ApiClientException(message, tokenResponse.Response.ErrorException);
+                }
+                else
+                {
+                    throw new ApiClientException(message);
+                }
             }
 
             return tokenResponse;

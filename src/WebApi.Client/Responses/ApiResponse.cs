@@ -39,6 +39,11 @@ namespace Informapp.InformSystem.WebApi.Client.Responses
         public bool IsSuccessful { get; set; }
 
         /// <summary>
+        /// Exceptions thrown during the request, if any.
+        /// </summary>
+        public Exception ErrorException { get; set; }
+
+        /// <summary>
         /// Headers
         /// </summary>
         public ResponseHeaders Headers { get; set; }
