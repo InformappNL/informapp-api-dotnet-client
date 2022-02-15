@@ -39,6 +39,7 @@ namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
                 typeof(SaveResultUploaderDecorator<>),
                 typeof(LogUploaderDecorator<>),
                 typeof(CheckUploadNeededUploaderDecorator<>),
+                typeof(LogExceptionUploaderDecorator<>),
                 typeof(DebugUploaderDecorator<>),
             };
 

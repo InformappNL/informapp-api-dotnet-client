@@ -53,6 +53,7 @@ namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
             var decorators = new[]
             {
                 typeof(InterceptorFactoryDecorator<,>),
+                typeof(LogExceptionFactoryDecorator<,>),
                 typeof(DebugFactoryDecorator<,>),
             };
 

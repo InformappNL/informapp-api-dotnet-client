@@ -20,7 +20,7 @@ namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
                 .As<IApplicationLogger>()
                 .InstancePerLifetimeScope();
 
-            builder.RegisterDecorator<ErrorApplicationLoggerDecorator, IApplicationLogger>();
+            builder.RegisterDecorator<LogExceptionApplicationLoggerDecorator, IApplicationLogger>();
         }
     }
 }

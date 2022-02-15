@@ -23,6 +23,7 @@ namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
             builder.RegisterDecorator<SaveQueueIntegrationImportDecorator, IQueueIntegrationImportCommandHandler>();
             builder.RegisterDecorator<RollbackQueueIntegrationImportDecorator, IQueueIntegrationImportCommandHandler>();
             builder.RegisterDecorator<ValidateQueueIntegrationImportDecorator, IQueueIntegrationImportCommandHandler>();
+            builder.RegisterDecorator<LogExceptionQueueIntegrationImportDecorator, IQueueIntegrationImportCommandHandler>();
             builder.RegisterDecorator<DebugQueueIntegrationImportDecorator, IQueueIntegrationImportCommandHandler>();
         }
     }

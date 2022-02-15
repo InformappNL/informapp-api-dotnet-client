@@ -3,12 +3,12 @@ using System;
 
 namespace Informapp.InformSystem.IntegrationTool.Core.Loggers
 {
-    public class ErrorApplicationLoggerDecorator : Decorator<IApplicationLogger>,
+    public class LogExceptionApplicationLoggerDecorator : Decorator<IApplicationLogger>,
         IApplicationLogger
     {
         private readonly IApplicationLogger _logger;
 
-        public ErrorApplicationLoggerDecorator(
+        public LogExceptionApplicationLoggerDecorator(
             IApplicationLogger logger) : base(logger)
         {
             Argument.NotNull(logger, nameof(logger));
