@@ -2,7 +2,7 @@
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports;
 using Informapp.InformSystem.IntegrationTool.Core.Configurations;
-using Informapp.InformSystem.IntegrationTool.Core.Integrations;
+using Informapp.InformSystem.IntegrationTool.Core.IntegrationExports;
 using Informapp.InformSystem.IntegrationTool.Core.Requires;
 using Informapp.InformSystem.IntegrationTool.Core.Resources;
 using Microsoft.Extensions.Options;

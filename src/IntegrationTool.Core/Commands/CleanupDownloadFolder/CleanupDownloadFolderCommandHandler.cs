@@ -16,7 +16,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFo
     {
         private readonly IDirectoryInfoFactory _directoryInfoFactory;
 
-        private readonly IOptions<IntegrationConfiguration> _integrationConfiguration;
+        private readonly IOptions<IntegrationExportConfiguration> _integrationConfiguration;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CleanupDownloadFolderCommandHandler"/> class
@@ -25,7 +25,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFo
         /// <param name="integrationConfiguration">Injected configuration</param>
         public CleanupDownloadFolderCommandHandler(
             IDirectoryInfoFactory directoryInfoFactory,
-            IOptions<IntegrationConfiguration> integrationConfiguration)
+            IOptions<IntegrationExportConfiguration> integrationConfiguration)
         {
             Argument.NotNull(integrationConfiguration, nameof(integrationConfiguration));
             Argument.NotNull(directoryInfoFactory, nameof(directoryInfoFactory));

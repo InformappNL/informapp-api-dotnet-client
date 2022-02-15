@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 namespace Informapp.InformSystem.IntegrationTool.Core.DataContexts
 {
     /// <summary>
-    /// Data context class
+    /// Data context implementation
     /// </summary>
     public class DataContext : IDataContext,
         IDisposable
@@ -28,7 +28,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.DataContexts
 
         private bool _open;
 
-        private readonly IOptions<DataSourceConfiguration> _configuration;
+        private readonly IOptions<DataContextConfiguration> _configuration;
 
         private readonly IPath _path;
 
@@ -39,12 +39,12 @@ namespace Informapp.InformSystem.IntegrationTool.Core.DataContexts
         /// <summary>
         /// Initializes a new instance of the <see cref="DataContext"/> class
         /// </summary>
-        /// <param name="configuration">Injected datasource configuration</param>
-        /// <param name="path">Injected file path provider</param>
-        /// <param name="directoryCreator">Injected directory creator</param>
+        /// <param name="configuration">configuration</param>
+        /// <param name="path">path</param>
+        /// <param name="directoryCreator">directory creator</param>
         /// <param name="fileInfoFactory">file info factory</param>
         public DataContext(
-            IOptions<DataSourceConfiguration> configuration,
+            IOptions<DataContextConfiguration> configuration,
             IPath path,
             IDirectoryCreator directoryCreator,
             IFileInfoFactory fileInfoFactory)
@@ -63,16 +63,12 @@ namespace Informapp.InformSystem.IntegrationTool.Core.DataContexts
             _fileInfoFactory = fileInfoFactory;
         }
 
-        /// <summary>
-        /// Open file 
-        /// </summary>
-        /// <param name="cancellationToken">The cancellation token</param>
-        /// <returns>The response</returns>
+        /// <inheritdoc/>
         public async Task Open(CancellationToken cancellationToken)
         {
             if (_open == false)
             {
-                string path = _configuration.Value.DataFile;
+                string path = _configuration.Value.File;
 
                 string dir = _path.GetDirectoryName(path);
 
@@ -87,40 +83,45 @@ namespace Informapp.InformSystem.IntegrationTool.Core.DataContexts
 
                 _stream = fileInfo.Open(FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.None);
 
-                using (var reader = new StreamReader(_stream, _encoding, detectEncodingFromByteOrderMarks: false, BufferSize, leaveOpen: true))
-                {
-                    string content = await reader
-                        .ReadToEndAsync()
-                        .ConfigureAwait(Await.Default);
-
-                    cancellationToken.ThrowIfCancellationRequested();
-
-                    DataModel model = null;
-
-                    try
-                    {
-                        model = JsonConvert.DeserializeObject<DataModel>(content);
-                    }
-                    catch (JsonSerializationException)
-                    {
-                        model = new DataModel();
-                    }
-
-                    if (model == null)
-                    {
-                        model = new DataModel();
-                    }
-
-                    if (model.Files == null)
-                    {
-                        model.Files = new List<FileModel>();
-                    }
-
-                    _model = model;
-                }
+                await Load(cancellationToken)
+                    .ConfigureAwait(Await.Default);
 
                 _open = true;
             }
+        }
+
+        private async Task Load(CancellationToken cancellationToken)
+        {
+            _ = _stream.Seek(0, SeekOrigin.Begin);
+
+            using (var reader = new StreamReader(_stream, _encoding, detectEncodingFromByteOrderMarks: false, BufferSize, leaveOpen: true))
+            {
+                string content = await reader
+                    .ReadToEndAsync()
+                    .ConfigureAwait(Await.Default);
+
+                cancellationToken.ThrowIfCancellationRequested();
+
+                DataModel model = null;
+
+                try
+                {
+                    model = JsonConvert.DeserializeObject<DataModel>(content);
+                }
+                catch (JsonSerializationException)
+                {
+                    model = new DataModel();
+                }
+
+                if (model == null)
+                {
+                    model = new DataModel();
+                }
+
+                _model = model;
+            }
+
+            _ = _stream.Seek(0, SeekOrigin.Begin);
         }
 
         private void ThrowIfNotOpen()
@@ -131,29 +132,45 @@ namespace Informapp.InformSystem.IntegrationTool.Core.DataContexts
             }
         }
 
-        /// <summary>
-        /// List of file models
-        /// </summary>
-        public IList<FileModel> Files
+        /// <inheritdoc/>
+        public IList<DataSource> DataSources
         {
             get
             {
                 ThrowIfNotOpen();
 
-                return _model.Files;
+                return _model.DataSources;
             }
         }
 
-        /// <summary>
-        /// Save changes to data context
-        /// </summary>
-        /// <param name="cancellationToken">The cancellation token</param>
-        /// <returns>The response</returns>
+        /// <inheritdoc/>
+        public IDictionary<Guid?, IntegrationImport> IntegrationImports
+        {
+            get
+            {
+                ThrowIfNotOpen();
+
+                return _model.IntegrationImports;
+            }
+        }
+
+        /// <inheritdoc/>
+        public IList<IntegrationImportQueueItem> IntegrationImportQueue
+        {
+            get
+            {
+                ThrowIfNotOpen();
+
+                return _model.IntegrationImportQueue;
+            }
+        }
+
+        /// <inheritdoc/>
         public async Task SaveChanges(CancellationToken cancellationToken)
         {
             ThrowIfNotOpen();
 
-            _stream.Position = 0;
+            _ = _stream.Seek(0, SeekOrigin.Begin);
             _stream.SetLength(0);
 
             using (var writer = new StreamWriter(_stream, _encoding, BufferSize, leaveOpen: true))
@@ -170,6 +187,16 @@ namespace Informapp.InformSystem.IntegrationTool.Core.DataContexts
                     .FlushAsync()
                     .ConfigureAwait(Await.Default);
             }
+
+            _ = _stream.Seek(0, SeekOrigin.Begin);
+        }
+
+        /// <inheritdoc/>
+        public Task Rollback(CancellationToken cancellationToken)
+        {
+            ThrowIfNotOpen();
+
+            return Load(cancellationToken);
         }
 
         #region IDisposable Support
@@ -196,9 +223,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.DataContexts
             }
         }
 
-        /// <summary>
-        /// Set dispose boolean to true
-        /// </summary>
+        /// <inheritdoc/>
         public void Dispose()
         {
             Dispose(true);

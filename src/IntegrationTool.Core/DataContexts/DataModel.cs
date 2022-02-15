@@ -1,11 +1,17 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.IO;
+﻿using System;
 using System.Collections.Generic;
 
 namespace Informapp.InformSystem.IntegrationTool.Core.DataContexts
 {
     internal class DataModel
     {
-        public IList<FileModel> Files { get; set; }
-            = new List<FileModel>();
+        public IList<DataSource> DataSources { get; }
+            = new List<DataSource>();
+
+        public IDictionary<Guid?, IntegrationImport> IntegrationImports { get; }
+            = new Dictionary<Guid?, IntegrationImport>();
+
+        public IList<IntegrationImportQueueItem> IntegrationImportQueue { get; }
+            = new List<IntegrationImportQueueItem>();
     }
 }

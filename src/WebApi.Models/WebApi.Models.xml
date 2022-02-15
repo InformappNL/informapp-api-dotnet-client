@@ -5371,6 +5371,196 @@
             Report integration export response
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.IntegrationImportV1Constants">
+            <summary>
+            Integration import constants
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.IntegrationImportV1Constants.ExceptionLength">
+            <summary>
+            Maximum length for exception
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.ReportIntegrationImportV1Request">
+            <summary>
+            Report integration import request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.ReportIntegrationImportV1Request.IntegrationImportId">
+            <summary>
+            Integration import id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.ReportIntegrationImportV1Request.Result">
+            <summary>
+            Result
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.ReportIntegrationImportV1Request.Duration">
+            <summary>
+            Duration in milliseconds
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.ReportIntegrationImportV1Request.Message">
+            <summary>
+            Message
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.ReportIntegrationImportV1Request.Exception">
+            <summary>
+            Exception
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.ReportIntegrationImportV1Response">
+            <summary>
+            Report integration import response
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.StartIntegrationImportV1Request">
+            <summary>
+            Start integration import request
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.StartIntegrationImportV1Request.IntegrationId">
+            <summary>
+            Integration id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.StartIntegrationImportV1Request.RemoteImportId">
+            <summary>
+            Remote import id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.StartIntegrationImportV1Request.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.StartIntegrationImportV1Request.FileSize">
+            <summary>
+            File size
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.StartIntegrationImportV1Request.FileDate">
+            <summary>
+            File date
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.StartIntegrationImportV1Response">
+            <summary>
+            Start integration import response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.StartIntegrationImportV1Response.IntegrationImportId">
+            <summary>
+            Integration import id
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Request">
+            <summary>
+            Upload integration import file request
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Request.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Request"/> class.
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Request.FileParameterName">
+            <summary>
+            File parameter name
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Request.FileParamaterDescription">
+            <summary>
+            File parameter description
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Request.AllowedFileTypes">
+            <summary>
+            Allowed file types
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Request.MaxFileNameLength">
+            <summary>
+            Max file name length
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Request.MaxFileSize">
+            <summary>
+            Max file size in bytes
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Request.IntegrationImportId">
+            <summary>
+            Integration import Id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Request.Informapp#InformSystem#WebApi#Models#Version1#Files#IUploadFileV1Request#ContentType">
+            <summary>
+            Content type
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Request.File">
+            <summary>
+            File stream
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Request.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Request.Size">
+            <summary>
+            Size
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Request.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Request.Dispose(System.Boolean)">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Response">
+            <summary>
+            Upload integration import file response
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Response.Algorithm">
+            <summary>
+            Algorithm
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Response.Hash">
+            <summary>
+            Hash
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Response.Size">
+            <summary>
+            Size
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Result">
+            <summary>
+            Download integration export result
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Result.Success">
+            <summary>
+            Success
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Result.Failed">
+            <summary>
+            Failed
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request">
             <summary>
             Create integration user heartbeat request

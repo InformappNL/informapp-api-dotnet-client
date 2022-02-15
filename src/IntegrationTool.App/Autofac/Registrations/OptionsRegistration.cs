@@ -37,8 +37,11 @@ namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
             var configurationRoot = configurationBuilder.Build();
 
             RegisterSection<ApiConfiguration>(builder, configurationRoot, "InformSystemApi");
+            RegisterSection<DataContextConfiguration>(builder, configurationRoot, "DataContext");
             RegisterSection<DataSourceConfiguration>(builder, configurationRoot, "DataSources");
             RegisterSection<IntegrationConfiguration>(builder, configurationRoot, "Integrations");
+            RegisterSection<IntegrationExportConfiguration>(builder, configurationRoot, "IntegrationExports");
+            RegisterSection<IntegrationImportConfiguration>(builder, configurationRoot, "IntegrationImports");
             RegisterSection<CleanupFolderConfiguration>(builder, configurationRoot, "CleanupFolders");
         }
 

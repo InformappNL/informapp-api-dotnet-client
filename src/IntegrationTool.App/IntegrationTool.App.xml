@@ -363,11 +363,6 @@
             Register jobs in Autofac
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.JobRegistration.#ctor(Informapp.InformSystem.WebApi.Client.Assemblies.IAssemblyProvider)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.JobRegistration"/> class.
-            </summary>
-        </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.JobRegistration.Register(Autofac.ContainerBuilder)">
             <summary>
             Register services in Autofac
@@ -478,6 +473,17 @@
             </summary>
             <param name="builder">The container builder instance to use</param>
         </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.QueueIntegrationImportCommandHandlerRegistration">
+            <summary>
+            Register queue integration import command handler in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.QueueIntegrationImportCommandHandlerRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.RequestFactoryRegistration">
             <summary>
             Register request factory in Autofac
@@ -533,6 +539,17 @@
             </summary>
         </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.UploadFileResponseMapperRegistration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.UploadIntegrationImportCommandHandlerRegistration">
+            <summary>
+            Register upload integration import command handler in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.UploadIntegrationImportCommandHandlerRegistration.Register(Autofac.ContainerBuilder)">
             <summary>
             Register services in Autofac
             </summary>

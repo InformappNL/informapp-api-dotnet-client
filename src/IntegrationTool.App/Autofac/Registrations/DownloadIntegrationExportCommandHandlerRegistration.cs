@@ -1,5 +1,5 @@
 ﻿using Autofac;
-using Informapp.InformSystem.IntegrationTool.Core.Integrations;
+using Informapp.InformSystem.IntegrationTool.Core.IntegrationExports;
 
 namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
 {

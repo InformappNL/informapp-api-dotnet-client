@@ -11,7 +11,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
     /// </summary>
     public class SaveIntegrationExportFileFactory : IFactory<SaveIntegrationExportFileFactoryCommand, SaveIntegrationExportFileFactoryCommandResult>
     {
-        private readonly IOptions<IntegrationConfiguration> _integrationConfiguration;
+        private readonly IOptions<IntegrationExportConfiguration> _integrationConfiguration;
 
         private readonly IDateTimeProvider _dateTimeProvider;
 
@@ -21,13 +21,13 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
         /// Initializes a new instance of the <see cref="SaveIntegrationExportFileFactory"/> class.
         /// </summary>
         public SaveIntegrationExportFileFactory(
-            IOptions<IntegrationConfiguration> integrationConfiguration,
+            IOptions<IntegrationExportConfiguration> integrationConfiguration,
             IDateTimeProvider dateTimeProvider,
             IPath path)
         {
+            Argument.NotNull(integrationConfiguration, nameof(integrationConfiguration));
             Argument.NotNull(dateTimeProvider, nameof(dateTimeProvider));
             Argument.NotNull(path, nameof(path));
-            Argument.NotNull(integrationConfiguration, nameof(integrationConfiguration));
 
             _integrationConfiguration = integrationConfiguration;
 

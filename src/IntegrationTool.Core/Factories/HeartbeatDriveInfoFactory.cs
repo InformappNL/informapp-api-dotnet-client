@@ -17,19 +17,25 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
 
         private readonly IOptions<IntegrationConfiguration> _integrationConfiguration;
 
+        private readonly IOptions<IntegrationExportConfiguration> _integrationExportConfiguration;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="HeartbeatDriveInfoFactory"/> class.
         /// </summary>
         public HeartbeatDriveInfoFactory(
             IDriveInfoFactory driveInfoFactory,
-            IOptions<IntegrationConfiguration> integrationConfiguration)
+            IOptions<IntegrationConfiguration> integrationConfiguration,
+            IOptions<IntegrationExportConfiguration> integrationExportConfiguration)
         {
             Argument.NotNull(driveInfoFactory, nameof(driveInfoFactory));
             Argument.NotNull(integrationConfiguration, nameof(integrationConfiguration));
+            Argument.NotNull(integrationExportConfiguration, nameof(integrationExportConfiguration));
 
             _driveInfoFactory = driveInfoFactory;
 
             _integrationConfiguration = integrationConfiguration;
+
+            _integrationExportConfiguration = integrationExportConfiguration;
         }
 
         /// <summary>
@@ -40,20 +46,21 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
         {
             var report = new HeartbeatDriveInfoReport();
 
-            var integrationConfiguration = _integrationConfiguration.Value;
+            var configuration = _integrationConfiguration.Value;
+            var exportConfiguration = _integrationExportConfiguration.Value;
 
-            if (integrationConfiguration.DriveInfoUploadEnabled == true)
+            if (configuration.DriveInfoUploadEnabled == true)
             {
-                var folders = integrationConfiguration
-                    .Integrations
+                var folders = exportConfiguration
+                    .IntegrationExports
                     .Where(x => x.Enabled == true)
                     .Select(x => x.Folder)
                     .ToList();
 
-                if (integrationConfiguration.Default != null &&
-                    integrationConfiguration.Default.Enabled == true)
+                if (exportConfiguration.Default != null &&
+                    exportConfiguration.Default.Enabled == true)
                 {
-                    folders.Add(integrationConfiguration.Default.Folder);
+                    folders.Add(exportConfiguration.Default.Folder);
                 }
 
                 var comparer = StringComparer.Ordinal;

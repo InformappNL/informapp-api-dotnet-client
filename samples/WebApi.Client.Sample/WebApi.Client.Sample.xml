@@ -1188,6 +1188,57 @@
             <param name="cancellationToken">The cancellation token</param>
             <returns>The task</returns>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.ReportIntegrationImportV1Example">
+            <summary>
+            Example for report integration import
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.ReportIntegrationImportV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.ReportIntegrationImportV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.ReportIntegrationImportV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.ReportIntegrationImportV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.ReportIntegrationImportV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.StartIntegrationImportV1Example">
+            <summary>
+            Example for accept integration export
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.StartIntegrationImportV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.StartIntegrationImportV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.StartIntegrationImportV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.StartIntegrationImportV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations.StartIntegrationImportV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.IntegrationImports.UploadIntegrationImportV1Example">
+            <summary>
+            Example for upload integration import
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.IntegrationImports.UploadIntegrationImportV1Example.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.UploadIntegrationImportV1Response})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.IntegrationImports.UploadIntegrationImportV1Example"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Client.Sample.Examples.IntegrationImports.UploadIntegrationImportV1Example.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute example
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Client.Sample.Examples.Logs.CreateLogV1Example">
             <summary>
             Example for create log

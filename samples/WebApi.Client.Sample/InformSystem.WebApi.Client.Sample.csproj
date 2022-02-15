@@ -12,6 +12,9 @@
     <AssemblyName>InformSystem.WebApi.Client.Sample</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Examples\Integrations\example.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="..\SharedAssemblyInfo.cs">
       <Link>Properties\SharedAssemblyInfo.cs</Link>
     </Compile>
@@ -26,6 +29,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="WebApi.Client.Sample.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Examples\Integrations\example.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Autofac">

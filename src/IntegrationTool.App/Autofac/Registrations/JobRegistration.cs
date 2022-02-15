@@ -1,7 +1,5 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.Assemblies;
 using Informapp.InformSystem.IntegrationTool.Core.Jobs;
-using System.Linq;
 
 namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
@@ -10,19 +8,6 @@ namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
     /// </summary>
     public class JobRegistration : IAutofacRegistration
     {
-        private readonly IAssemblyProvider _assemblyProvider;
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="JobRegistration"/> class.
-        /// </summary>
-        public JobRegistration(
-            IAssemblyProvider assemblyProvider)
-        {
-            Argument.NotNull(assemblyProvider, nameof(assemblyProvider));
-
-            _assemblyProvider = assemblyProvider;
-        }
-
         /// <summary>
         /// Register services in Autofac
         /// </summary>
@@ -31,23 +16,19 @@ namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            var service = typeof(IJob);
+            RegisterJob<UploadDataSourceFileJob>(builder);
+            RegisterJob<DownloadIntegrationExportJob>(builder);
+            RegisterJob<QueueIntegrationImportJob>(builder);
+            RegisterJob<UploadIntegrationImportJob>(builder);
+            RegisterJob<CleanFolderJob>(builder);
+        }
 
-            var types = _assemblyProvider.GetLocalAssemblies()
-                .SelectMany(x => x.GetTypes())
-                .Where(x => x.IsClass == true)
-                .Where(x => x.IsPublic == true)
-                .Where(x => x.IsAbstract == false)
-                .Where(x => x.IsGenericType == false)
-                .Where(x => typeof(IJob).IsAssignableFrom(x))
-                .ToArray();
-
-            foreach (var type in types)
-            {
-                _ = builder.RegisterType(type)
-                    .As<IJob>()
-                    .InstancePerLifetimeScope();
-            }
+        private static void RegisterJob<T>(ContainerBuilder builder)
+            where T : IJob
+        {
+            _ = builder.RegisterType<T>()
+                .As<IJob>()
+                .InstancePerLifetimeScope();
         }
     }
 }

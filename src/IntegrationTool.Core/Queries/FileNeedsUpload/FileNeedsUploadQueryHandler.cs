@@ -64,7 +64,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload
 
             var queryResult = new FileNeedsUploadQueryResult();
 
-            var file = _dataContext.Files
+            var file = _dataContext.DataSources
                 .Where(x => string.Equals(query.Path, x.Path, StringComparison.OrdinalIgnoreCase) == true)
                 .FirstOrDefault();
 

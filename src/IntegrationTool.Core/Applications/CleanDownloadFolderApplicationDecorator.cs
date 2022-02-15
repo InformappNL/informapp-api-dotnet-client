@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.IntegrationTool.Core.Commands;
+﻿using Informapp.InformSystem.IntegrationTool.Core.Commands;
 using Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder;
 using Informapp.InformSystem.IntegrationTool.Core.Configurations;
 using Informapp.InformSystem.IntegrationTool.Core.Requires;
+using Informapp.InformSystem.WebApi.Client.Decorators;
 using Microsoft.Extensions.Options;
 using System.Threading;
 using System.Threading.Tasks;
@@ -17,7 +17,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Applications
     {
         private readonly IApplication _application;
 
-        private readonly IOptions<IntegrationConfiguration> _integrationConfiguration;
+        private readonly IOptions<IntegrationExportConfiguration> _integrationConfiguration;
 
         private readonly ICommandHandler<CleanupDownloadFolderCommand, CleanupDownloadFolderCommandResult> _cleanupCommandHandler;
 
@@ -26,7 +26,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Applications
         /// </summary>
         public CleanDownloadFolderApplicationDecorator(
             IApplication application,
-            IOptions<IntegrationConfiguration> integrationConfiguration,
+            IOptions<IntegrationExportConfiguration> integrationConfiguration,
             ICommandHandler<CleanupDownloadFolderCommand, CleanupDownloadFolderCommandResult> cleanupCommandHandler) : base(application)
         {
             Argument.NotNull(application, nameof(application));

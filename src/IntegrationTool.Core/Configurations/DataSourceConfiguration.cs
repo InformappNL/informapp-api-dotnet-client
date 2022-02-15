@@ -16,14 +16,6 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Configurations
         public bool? Enabled { get; set; } = false;
 
         /// <summary>
-        /// The file for persistent data storage
-        /// Application needs write and read access to this file
-        /// This setting is required
-        /// </summary>
-        [Required]
-        public string DataFile { get; set; } = ".\\data.json";
-
-        /// <summary>
         /// The maximum amount of time since a file was last uploaded 
         /// When a file has not changed but was uploaded longer ago it is uploaded again, hopefully minimizing the effects when things went wrong 
         /// </summary>

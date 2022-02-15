@@ -1,7 +1,6 @@
 ﻿using Informapp.InformSystem.WebApi.Client.DateTimeProviders;
 using Informapp.InformSystem.WebApi.Client.Decorators;
 using Informapp.InformSystem.IntegrationTool.Core.DataContexts;
-using Informapp.InformSystem.IntegrationTool.Core.IO;
 using Informapp.InformSystem.IntegrationTool.Core.Queries;
 using Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile;
 using System;
@@ -71,19 +70,19 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Uploaders
 
             var now = _dateTimeProvider.UtcNow;
 
-            var file = _dataContext.Files
+            var file = _dataContext.DataSources
                 .Where(x => string.Equals(command.Path, x.Path, StringComparison.OrdinalIgnoreCase) == true)
                 .FirstOrDefault();
 
             if (file == null)
             {
-                file = new FileModel
+                file = new DataSource
                 {
                     Path = command.Path,
                     Attempts = 0,
                 };
 
-                _dataContext.Files.Add(file);
+                _dataContext.DataSources.Add(file);
             }
 
             if (file.Attempts.HasValue == false)
