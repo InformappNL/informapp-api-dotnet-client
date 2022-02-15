@@ -1,4 +1,5 @@
 ﻿using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats;
+using System;
 using System.Collections.Generic;
 
 namespace Informapp.InformSystem.IntegrationTool.Core.Factories
@@ -12,5 +13,6 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
         /// Drives
         /// </summary>
         public IReadOnlyList<CreateIntegrationUserHeartbeatV1RequestDrive> Drives { get; set; }
+            = Array.Empty<CreateIntegrationUserHeartbeatV1RequestDrive>();
     }
 }
