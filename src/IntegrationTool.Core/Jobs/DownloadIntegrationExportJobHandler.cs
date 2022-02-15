@@ -36,28 +36,28 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Jobs
 
         private readonly IDownloadIntegrationExportCommandHandler _commandHandler;
 
-        private readonly IOptions<IntegrationConfiguration> _integrationConfiguration;
+        private readonly IOptions<IntegrationExportConfiguration> _configuration;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DownloadIntegrationExportJobHandler"/> class.
         /// </summary>
         /// <param name="apiClient">Injected api client</param>
         /// <param name="commandHandler">Injected command handler</param>
-        /// <param name="integrationConfiguration">Injected integration configuration</param>
+        /// <param name="configuration">Injected integration configuration</param>
         public DownloadIntegrationExportJobHandler(
             IApiClient<ListIntegrationExportQueuedForMeV1Request, ListIntegrationExportQueuedForMeV1Response> apiClient,
             IDownloadIntegrationExportCommandHandler commandHandler,
-            IOptions<IntegrationConfiguration> integrationConfiguration)
+            IOptions<IntegrationExportConfiguration> configuration)
         {
             Argument.NotNull(apiClient, nameof(apiClient));
             Argument.NotNull(commandHandler, nameof(commandHandler));
-            Argument.NotNull(integrationConfiguration, nameof(integrationConfiguration));
+            Argument.NotNull(configuration, nameof(configuration));
 
             _apiClient = apiClient;
 
             _commandHandler = commandHandler;
 
-            _integrationConfiguration = integrationConfiguration;
+            _configuration = configuration;
         }
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Jobs
 
             var exceptions = new List<Exception>(4);
 
-            var configuration = _integrationConfiguration.Value;
+            var configuration = _configuration.Value;
 
             Require.NotNull(configuration, nameof(configuration));
 

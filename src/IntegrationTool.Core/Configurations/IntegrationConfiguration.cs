@@ -8,12 +8,6 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Configurations
     public class IntegrationConfiguration
     {
         /// <summary>
-        /// Integration is enabled true/false
-        /// </summary>
-        [Required]
-        public bool? Enabled { get; set; }
-
-        /// <summary>
         /// Heartbeat is enabled true/false
         /// </summary>
         [Required]

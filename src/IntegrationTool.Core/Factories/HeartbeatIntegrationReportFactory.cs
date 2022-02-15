@@ -10,21 +10,15 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
     /// </summary>
     public class HeartbeatIntegrationReportFactory : IFactory<HeartbeatIntegrationReport>
     {
-        private readonly IOptions<IntegrationConfiguration> _integrationConfiguration;
-
         private readonly IOptions<IntegrationExportConfiguration> _integrationExportConfiguration;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="HeartbeatIntegrationReportFactory"/> class.
         /// </summary>
         public HeartbeatIntegrationReportFactory(
-            IOptions<IntegrationConfiguration> integrationConfiguration,
             IOptions<IntegrationExportConfiguration> integrationExportConfiguration)
         {
-            Argument.NotNull(integrationConfiguration, nameof(integrationConfiguration));
             Argument.NotNull(integrationExportConfiguration, nameof(integrationExportConfiguration));
-
-            _integrationConfiguration = integrationConfiguration;
 
             _integrationExportConfiguration = integrationExportConfiguration;
         }
@@ -35,10 +29,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
         /// <returns>The created instance of heartbeat integration report.</returns>
         public HeartbeatIntegrationReport Create()
         {
-            var integrationConfiguration = _integrationConfiguration.Value;
             var integrationExportConfiguration = _integrationExportConfiguration.Value;
 
-            bool enabled = integrationConfiguration.Enabled ?? false;
+            bool enabled = integrationExportConfiguration.Enabled ?? false;
 
             bool defaultEnabled = integrationExportConfiguration.Default?.Enabled ?? false;
 

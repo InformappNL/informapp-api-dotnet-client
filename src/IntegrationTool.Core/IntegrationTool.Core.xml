@@ -784,11 +784,6 @@
             Integration configuration class
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration.Enabled">
-            <summary>
-            Integration is enabled true/false
-            </summary>
-        </member>
         <member name="P:Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration.HeartbeatEnabled">
             <summary>
             Heartbeat is enabled true/false
@@ -1299,7 +1294,7 @@
             Heartbeat integration report factory
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReportFactory.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration},Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationExportConfiguration})">
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReportFactory.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationExportConfiguration})">
             <summary>
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationReportFactory"/> class.
             </summary>
@@ -2149,13 +2144,13 @@
             Maximum number of exceptions
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.DownloadIntegrationExportJobHandler.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1Response},Informapp.InformSystem.IntegrationTool.Core.IntegrationExports.IDownloadIntegrationExportCommandHandler,Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration})">
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.DownloadIntegrationExportJobHandler.#ctor(Informapp.InformSystem.WebApi.Client.Clients.IApiClient{Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1Request,Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1Response},Informapp.InformSystem.IntegrationTool.Core.IntegrationExports.IDownloadIntegrationExportCommandHandler,Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationExportConfiguration})">
             <summary>
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.DownloadIntegrationExportJobHandler"/> class.
             </summary>
             <param name="apiClient">Injected api client</param>
             <param name="commandHandler">Injected command handler</param>
-            <param name="integrationConfiguration">Injected integration configuration</param>
+            <param name="configuration">Injected integration configuration</param>
         </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.DownloadIntegrationExportJobHandler.Execute(System.Threading.CancellationToken)">
             <summary>
