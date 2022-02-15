@@ -1980,7 +1980,7 @@
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.CreateAppGroup.CreateAppGroupV1Response.Location">
             <summary>
-            Location of created environment
+            Location of created app group
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.DeleteAppGroup.DeleteAppGroupV1Request">

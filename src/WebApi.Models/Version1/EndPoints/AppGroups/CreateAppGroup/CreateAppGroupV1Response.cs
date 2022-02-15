@@ -22,7 +22,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.Crea
         public Guid? AppGroupId { get; set; }
 
         /// <summary>
-        /// Location of created environment
+        /// Location of created app group
         /// </summary>
         [DataMember]
         [DataType(DataType.Url)]
