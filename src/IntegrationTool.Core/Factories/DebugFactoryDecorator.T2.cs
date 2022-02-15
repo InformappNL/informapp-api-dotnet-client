@@ -3,6 +3,9 @@ using Informapp.InformSystem.WebApi.Client.Decorators;
 
 namespace Informapp.InformSystem.IntegrationTool.Core.Factories
 {
+    /// <summary>
+    /// Debug factory decorator
+    /// </summary>
     public class DebugFactoryDecorator<TCommand, TResult> : Decorator<IFactory<TCommand, TResult>>,
         IFactory<TCommand, TResult>
 
@@ -13,6 +16,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
 
         private readonly IApplicationLogger _logger;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DebugFactoryDecorator{TCommand, TResult}"/> class.
+        /// </summary>
         public DebugFactoryDecorator(
             IFactory<TCommand, TResult> factory,
             IApplicationLogger logger) : base(factory)
@@ -25,6 +31,10 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
             _logger = logger;
         }
 
+        /// <summary>
+        /// Create instance
+        /// </summary>
+        /// <param name="command">The command</param>
         public TResult Create(TCommand command)
         {
             bool enabled = _logger.IsDebugEnabled;

@@ -3,6 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
 {
+    /// <summary>
+    /// Queue integration import command
+    /// </summary>
     public class QueueIntegrationImportCommand
     {
         /// <summary>

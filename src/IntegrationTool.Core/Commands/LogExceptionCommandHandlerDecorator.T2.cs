@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.IntegrationTool.Core.Commands
 {
+    /// <summary>
+    /// Log exception command handler decorator
+    /// </summary>
     public class LogExceptionCommandHandlerDecorator<TCommand, TResult> : Decorator<ICommandHandler<TCommand, TResult>>,
         ICommandHandler<TCommand, TResult>
 
@@ -16,6 +19,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Commands
 
         private readonly IApplicationLogger _logger;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LogExceptionCommandHandlerDecorator{TCommand, TResult}"/> class.
+        /// </summary>
         public LogExceptionCommandHandlerDecorator(
             ICommandHandler<TCommand, TResult> handler,
             IApplicationLogger logger) : base(handler)
@@ -28,6 +34,12 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Commands
             _logger = logger;
         }
 
+        /// <summary>
+        /// Handle the command and return the result
+        /// </summary>
+        /// <param name="command">The command</param>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The result</returns>
         public Task<TResult> Handle(
             TCommand command,
             CancellationToken cancellationToken)

@@ -4,18 +4,18 @@ using System.Threading.Tasks;
 namespace Informapp.InformSystem.IntegrationTool.Core.Uploaders
 {
     /// <summary>
-    /// Generic interface for Uploader{TCommand}
+    /// Generic uploader abstraction
     /// </summary>
-    /// <typeparam name="TCommand"></typeparam>
+    /// <typeparam name="TCommand">The type of command</typeparam>
     public interface IUploader<TCommand>
         where TCommand : class, IUploadCommand
     {
         /// <summary>
-        /// Initiates upload for {TCommand}
+        /// Handle the command
         /// </summary>
         /// <param name="command">The command</param>
         /// <param name="cancellationToken">The cancellation token</param>
-        /// <returns>The response</returns>
+        /// <returns>The upload result</returns>
         Task<IUploadResult> Upload(TCommand command, CancellationToken cancellationToken);
     }
 }

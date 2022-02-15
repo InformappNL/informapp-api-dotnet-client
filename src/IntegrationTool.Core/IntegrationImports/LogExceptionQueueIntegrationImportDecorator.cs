@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
 {
+    /// <summary>
+    /// Log exception queue integration import decorator
+    /// </summary>
     public class LogExceptionQueueIntegrationImportDecorator : Decorator<IQueueIntegrationImportCommandHandler>,
         IQueueIntegrationImportCommandHandler
     {
@@ -13,6 +16,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
 
         private readonly IApplicationLogger _logger;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LogExceptionQueueIntegrationImportDecorator"/> class.
+        /// </summary>
         public LogExceptionQueueIntegrationImportDecorator(
             IQueueIntegrationImportCommandHandler handler,
             IApplicationLogger logger) : base(handler)
@@ -25,6 +31,12 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
             _logger = logger;
         }
 
+        /// <summary>
+        /// Handle the command
+        /// </summary>
+        /// <param name="command">The command</param>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The command result</returns>
         public Task<QueueIntegrationImportCommandResult> Handle(
             QueueIntegrationImportCommand command,
             CancellationToken cancellationToken)

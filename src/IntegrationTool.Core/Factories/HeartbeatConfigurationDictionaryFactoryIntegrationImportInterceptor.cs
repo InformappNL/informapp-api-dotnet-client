@@ -3,12 +3,21 @@ using Microsoft.Extensions.Options;
 
 namespace Informapp.InformSystem.IntegrationTool.Core.Factories
 {
+    /// <summary>
+    /// Heartbeat configuration dictionary factory integration import interceptor
+    /// </summary>
     public class HeartbeatConfigurationDictionaryFactoryIntegrationImportInterceptor : IFactoryInterceptor<HeartbeatConfigurationDictionary>
     {
+        /// <summary>
+        /// Configuration key
+        /// </summary>
         public const string Key = "IntegrationImports";
 
         private readonly IOptions<IntegrationImportConfiguration> _configuration;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="HeartbeatConfigurationDictionaryFactoryIntegrationImportInterceptor"/> class.
+        /// </summary>
         public HeartbeatConfigurationDictionaryFactoryIntegrationImportInterceptor(
             IOptions<IntegrationImportConfiguration> configuration)
         {
@@ -17,6 +26,10 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
             _configuration = configuration;
         }
 
+        /// <summary>
+        /// Intercept the created instance
+        /// </summary>
+        /// <param name="result">The created instance</param>
         public void Created(HeartbeatConfigurationDictionary result)
         {
             Argument.NotNull(result, nameof(result));

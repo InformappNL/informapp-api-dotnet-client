@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
 {
+    /// <summary>
+    /// Rollback queue integration import decorator
+    /// </summary>
     public class RollbackQueueIntegrationImportDecorator : Decorator<IQueueIntegrationImportCommandHandler>,
         IQueueIntegrationImportCommandHandler
     {
@@ -13,6 +16,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
 
         private readonly IDataContext _dataContext;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="RollbackQueueIntegrationImportDecorator"/> class.
+        /// </summary>
         public RollbackQueueIntegrationImportDecorator(
             IQueueIntegrationImportCommandHandler handler,
             IDataContext dataContext) : base(handler)
@@ -22,7 +28,12 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
             _dataContext = dataContext;
         }
 
-        /// <inheritdoc/>
+        /// <summary>
+        /// Handle the command
+        /// </summary>
+        /// <param name="command">The command</param>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The command result</returns>
         public async Task<QueueIntegrationImportCommandResult> Handle(
             QueueIntegrationImportCommand command,
             CancellationToken cancellationToken)

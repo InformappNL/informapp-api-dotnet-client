@@ -4,6 +4,9 @@ using System;
 
 namespace Informapp.InformSystem.IntegrationTool.Core.Factories
 {
+    /// <summary>
+    /// Log exception factory decorator
+    /// </summary>
     public class LogExceptionFactoryDecorator<T> : Decorator<IFactory<T>>,
         IFactory<T>
     {
@@ -11,6 +14,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
 
         private readonly IApplicationLogger _logger;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LogExceptionFactoryDecorator{T}"/> class.
+        /// </summary>
         public LogExceptionFactoryDecorator(
             IFactory<T> factory,
             IApplicationLogger logger) : base(factory)
@@ -23,6 +29,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
             _logger = logger;
         }
 
+        /// <summary>
+        /// Create instance
+        /// </summary>
         public T Create()
         {
             if (_logger.IsErrorEnabled)

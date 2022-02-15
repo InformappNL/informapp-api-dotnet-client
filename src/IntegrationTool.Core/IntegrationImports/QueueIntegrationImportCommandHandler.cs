@@ -17,6 +17,9 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
 {
+    /// <summary>
+    /// Queue integration import command handler
+    /// </summary>
     public class QueueIntegrationImportCommandHandler : IQueueIntegrationImportCommandHandler
     {
         private readonly IDataContext _dataContext;
@@ -35,6 +38,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
 
         private readonly IOptions<IntegrationImportConfiguration> _configuration;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="QueueIntegrationImportCommandHandler"/> class.
+        /// </summary>
         public QueueIntegrationImportCommandHandler(
             IDataContext dataContext,
             IFileInfoFactory fileInfoFactory,
@@ -62,7 +68,12 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
             _configuration = configuration;
         }
 
-        /// <inheritdoc/>
+        /// <summary>
+        /// Handle the command
+        /// </summary>
+        /// <param name="command">The command</param>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The command result</returns>
         public async Task<QueueIntegrationImportCommandResult> Handle(
             QueueIntegrationImportCommand command,
             CancellationToken cancellationToken)

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
 {
+    /// <summary>
+    /// Log exception upload integration import decorator
+    /// </summary>
     public class LogExceptionUploadIntegrationImportDecorator : Decorator<IUploadIntegrationImportCommandHandler>,
         IUploadIntegrationImportCommandHandler
     {
@@ -13,6 +16,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
 
         private readonly IApplicationLogger _logger;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LogExceptionUploadIntegrationImportDecorator"/> class.
+        /// </summary>
         public LogExceptionUploadIntegrationImportDecorator(
             IUploadIntegrationImportCommandHandler handler,
             IApplicationLogger logger) : base(handler)
@@ -25,6 +31,12 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
             _logger = logger;
         }
 
+        /// <summary>
+        /// Handle the command
+        /// </summary>
+        /// <param name="command">The command</param>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The result</returns>
         public Task<UploadIntegrationImportCommandResult> Handle(
             UploadIntegrationImportCommand command,
             CancellationToken cancellationToken)

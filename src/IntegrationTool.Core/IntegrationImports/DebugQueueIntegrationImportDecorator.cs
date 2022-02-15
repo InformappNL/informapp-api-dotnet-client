@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
 {
+    /// <summary>
+    /// Debug queue integration import decorator
+    /// </summary>
     public class DebugQueueIntegrationImportDecorator : Decorator<IQueueIntegrationImportCommandHandler>,
         IQueueIntegrationImportCommandHandler
     {
@@ -12,6 +15,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
 
         private readonly IApplicationLogger _logger;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DebugQueueIntegrationImportDecorator"/> class.
+        /// </summary>
         public DebugQueueIntegrationImportDecorator(
             IQueueIntegrationImportCommandHandler handler,
             IApplicationLogger logger) : base(handler)
@@ -24,6 +30,12 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
             _logger = logger;
         }
 
+        /// <summary>
+        /// Handle the command
+        /// </summary>
+        /// <param name="command">The command</param>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The command result</returns>
         public Task<QueueIntegrationImportCommandResult> Handle(
             QueueIntegrationImportCommand command,
             CancellationToken cancellationToken)

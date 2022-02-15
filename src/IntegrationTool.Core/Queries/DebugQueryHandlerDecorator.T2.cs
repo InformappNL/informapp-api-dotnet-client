@@ -5,6 +5,11 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.IntegrationTool.Core.Queries
 {
+    /// <summary>
+    /// Debug query handler decorator
+    /// </summary>
+    /// <typeparam name="TQuery">The type of query</typeparam>
+    /// <typeparam name="TResult">The type of result</typeparam>
     public class DebugQueryHandlerDecorator<TQuery, TResult> : Decorator<IQueryHandler<TQuery, TResult>>,
         IQueryHandler<TQuery, TResult>
 
@@ -15,6 +20,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Queries
 
         private readonly IApplicationLogger _logger;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DebugQueryHandlerDecorator{TQuery, TResult}"/> class
+        /// </summary>
         public DebugQueryHandlerDecorator(
             IQueryHandler<TQuery, TResult> handler,
             IApplicationLogger logger) : base(handler)
@@ -27,6 +35,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Queries
             _logger = logger;
         }
 
+        /// <inheritdoc/>
         public Task<TResult> Handle(TQuery query, CancellationToken cancellationToken)
         {
             if (_logger.IsDebugEnabled)

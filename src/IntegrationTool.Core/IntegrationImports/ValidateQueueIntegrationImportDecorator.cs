@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
 {
+    /// <summary>
+    /// Validate queue integration import decorator
+    /// </summary>
     public class ValidateQueueIntegrationImportDecorator : Decorator<IQueueIntegrationImportCommandHandler>,
         IQueueIntegrationImportCommandHandler
     {
@@ -12,6 +15,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
 
         private readonly IValidator<QueueIntegrationImportCommand> _validator;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ValidateQueueIntegrationImportDecorator"/> class.
+        /// </summary>
         public ValidateQueueIntegrationImportDecorator(
             IQueueIntegrationImportCommandHandler handler,
             IValidator<QueueIntegrationImportCommand> validator) : base(handler)

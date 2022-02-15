@@ -5,6 +5,10 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.IntegrationTool.Core.Jobs
 {
+    /// <summary>
+    /// Swallow exception job handler decorator
+    /// </summary>
+    /// <typeparam name="T">The type of job</typeparam>
     public class SwallowExceptionJobHandlerDecorator<T> : Decorator<IJobHandler<T>>,
         IJobHandler<T>
 
@@ -12,6 +16,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Jobs
     {
         private readonly IJobHandler<T> _handler;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SwallowExceptionJobHandlerDecorator{T}"/> class.
+        /// </summary>
         public SwallowExceptionJobHandlerDecorator(
             IJobHandler<T> handler) : base(handler)
         {
@@ -20,6 +27,11 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Jobs
             _handler = handler;
         }
 
+        /// <summary>
+        /// Execute job
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task</returns>
         public async Task Execute(CancellationToken cancellationToken)
         {
             try

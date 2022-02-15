@@ -2,46 +2,46 @@
 namespace Informapp.InformSystem.IntegrationTool.Core.Loggers
 {
     /// <summary>
-    /// Interface for application logger
+    /// Logger abstraction
     /// </summary>
     public interface IApplicationLogger
     {
         /// <summary>
-        /// Is debug enabled true/false
+        /// Debug enabled
         /// </summary>
         bool IsDebugEnabled { get; }
 
         /// <summary>
-        /// Is error enabled true/false
+        /// Error enabled
         /// </summary>
         bool IsErrorEnabled { get; }
 
         /// <summary>
-        /// Is fatal enabled true/false
+        /// Fatal enabled
         /// </summary>
         bool IsFatalEnabled { get; }
 
         /// <summary>
-        /// Is info enabled true/false
+        /// Info enabled
         /// </summary>
         bool IsInfoEnabled { get; }
 
         /// <summary>
-        /// Is warn enabled true/false
+        /// Warn enabled
         /// </summary>
         bool IsWarnEnabled { get; }
 
         /// <summary>
-        /// Is logging enabled for specific log level true/false
+        /// Enabled for a given log level
         /// </summary>
         /// <param name="level"></param>
         /// <returns></returns>
         bool IsEnabledFor(LogLevel level);
 
         /// <summary>
-        /// Log entry
+        /// Log
         /// </summary>
-        /// <param name="entry"></param>
+        /// <param name="entry">The content to log</param>
         void Log(LogEntry entry);
     }
 }

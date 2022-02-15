@@ -3,8 +3,14 @@ using System.Collections.Generic;
 
 namespace Informapp.InformSystem.IntegrationTool.Core.Factories
 {
+    /// <summary>
+    /// Heartbeat configuration dictionary factory
+    /// </summary>
     public class HeartbeatConfigurationDictionaryFactory : IFactory<HeartbeatConfigurationDictionary>
     {
+        /// <summary>
+        /// Create instance
+        /// </summary>
         public HeartbeatConfigurationDictionary Create()
         {
             var configuration = new Dictionary<string, object>(StringComparer.Ordinal);

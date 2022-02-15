@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 namespace Informapp.InformSystem.IntegrationTool.Core.Queries
 {
     /// <summary>
-    /// Validate the provided query
+    /// Validate query handler decorator
     /// </summary>
-    /// <typeparam name="TQuery">The query</typeparam>
-    /// <typeparam name="TResult">The result</typeparam>
+    /// <typeparam name="TQuery">The type of query</typeparam>
+    /// <typeparam name="TResult">The type of result</typeparam>
     public class ValidateQueryHandlerDecorator<TQuery, TResult> :
         Decorator<IQueryHandler<TQuery, TResult>>,
         IQueryHandler<TQuery, TResult>
@@ -24,8 +24,6 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Queries
         /// <summary>
         /// Initializes a new instance of the <see cref="ValidateQueryHandlerDecorator{TQuery, TResult}"/> class
         /// </summary>
-        /// <param name="queryHandler">Injected query handler</param>
-        /// <param name="validator">Injected query validator</param>
         public ValidateQueryHandlerDecorator(
             IQueryHandler<TQuery, TResult> queryHandler,
             IValidator<TQuery> validator) : base(queryHandler)
@@ -35,12 +33,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Queries
             _validator = validator;
         }
 
-        /// <summary>
-        /// Handle validating the provided query
-        /// </summary>
-        /// <param name="query">The query</param>
-        /// <param name="cancellationToken">The cancellation token</param>
-        /// <returns>The response</returns>
+        /// <inheritdoc/>
         public Task<TResult> Handle(TQuery query, CancellationToken cancellationToken)
         {
             Argument.NotNull(query, nameof(query));

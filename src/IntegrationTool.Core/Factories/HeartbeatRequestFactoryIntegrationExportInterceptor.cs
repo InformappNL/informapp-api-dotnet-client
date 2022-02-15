@@ -2,10 +2,16 @@
 
 namespace Informapp.InformSystem.IntegrationTool.Core.Factories
 {
+    /// <summary>
+    /// Heartbeat request factory integration export interceptor
+    /// </summary>
     public class HeartbeatRequestFactoryIntegrationExportInterceptor : IFactoryInterceptor<CreateIntegrationUserHeartbeatV1Request>
     {
         private readonly IFactory<HeartbeatIntegrationExportReport> _factory;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="HeartbeatRequestFactoryIntegrationExportInterceptor"/> class.
+        /// </summary>
         public HeartbeatRequestFactoryIntegrationExportInterceptor(
             IFactory<HeartbeatIntegrationExportReport> factory)
         {
@@ -14,6 +20,10 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
             _factory = factory;
         }
 
+        /// <summary>
+        /// Intercept the created instance
+        /// </summary>
+        /// <param name="result">The created instance</param>
         public void Created(CreateIntegrationUserHeartbeatV1Request result)
         {
             Argument.NotNull(result, nameof(result));

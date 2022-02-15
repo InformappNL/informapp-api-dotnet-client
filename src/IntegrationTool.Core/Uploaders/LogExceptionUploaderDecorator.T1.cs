@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.IntegrationTool.Core.Uploaders
 {
+    /// <summary>
+    /// Log Exception uploader decorator
+    /// </summary>
+    /// <typeparam name="TCommand">The type of command</typeparam>
     public class LogExceptionUploaderDecorator<TCommand> : Decorator<IUploader<TCommand>>,
         IUploader<TCommand>
 
@@ -15,6 +19,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Uploaders
 
         private readonly IApplicationLogger _logger;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LogExceptionUploaderDecorator{TCommand}"/> class
+        /// </summary>
         public LogExceptionUploaderDecorator(
             IUploader<TCommand> uploader,
             IApplicationLogger logger) : base(uploader)
@@ -27,6 +34,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Uploaders
             _logger = logger;
         }
 
+        /// <inheritdoc/>
         public Task<IUploadResult> Upload(
             TCommand command,
             CancellationToken cancellationToken)

@@ -5,14 +5,17 @@ using System.ComponentModel.DataAnnotations;
 namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
 {
     /// <summary>
-    /// Command for initiating the upload of an integration import file
+    /// Upload integration import command
     /// </summary>
     public class UploadIntegrationImportCommand
     {
+        /// <summary>
+        /// Item
+        /// </summary>
         public IntegrationImportQueueItem Item { get; set; }
 
         /// <summary>
-        /// Integration Import Id
+        /// Integration import id
         /// </summary>
         [Required]
         public Guid? IntegrationImportId { get; set; }

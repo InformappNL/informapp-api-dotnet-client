@@ -191,6 +191,23 @@
             <param name="cancellationToken">The cancellation token</param>
             <returns>The task to run</returns>
         </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Applications.SwallowExceptionApplicationDecorator">
+            <summary>
+            Swallow exception application decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.SwallowExceptionApplicationDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Applications.IApplication)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Applications.SwallowExceptionApplicationDecorator"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.SwallowExceptionApplicationDecorator.Run(System.Threading.CancellationToken)">
+            <summary>
+            Run the application
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task to run</returns>
+        </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Clients.LogApiClientDecorator`2">
             <summary>
             Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to log on request
@@ -266,6 +283,24 @@
             Cleanup was successful
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.DebugCommandHandlerDecorator`2">
+            <summary>
+            Debug command handler decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Commands.DebugCommandHandlerDecorator`2.#ctor(Informapp.InformSystem.IntegrationTool.Core.Commands.ICommandHandler{`0,`1},Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Commands.DebugCommandHandlerDecorator`2"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Commands.DebugCommandHandlerDecorator`2.Handle(`0,System.Threading.CancellationToken)">
+            <summary>
+            Handle the command and return the result
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The result</returns>
+        </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.ICommand`1">
             <summary>
             Generic ICommand interface
@@ -273,16 +308,34 @@
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.ICommandHandler`2">
             <summary>
-            Generic ICommandHandler interface
+            Generic command handler abstraction
             </summary>
         </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.Commands.ICommandHandler`2.Handle(`0,System.Threading.CancellationToken)">
             <summary>
-            Generic handle task
+            Handle the command and return the result
             </summary>
             <param name="command">The command</param>
             <param name="cancellationToken">The cancellation token</param>
-            <returns>The resonse</returns>
+            <returns>The result</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.LogExceptionCommandHandlerDecorator`2">
+            <summary>
+            Log exception command handler decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Commands.LogExceptionCommandHandlerDecorator`2.#ctor(Informapp.InformSystem.IntegrationTool.Core.Commands.ICommandHandler{`0,`1},Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Commands.LogExceptionCommandHandlerDecorator`2"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Commands.LogExceptionCommandHandlerDecorator`2.Handle(`0,System.Threading.CancellationToken)">
+            <summary>
+            Handle the command and return the result
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The result</returns>
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile.MoveFileCommand">
             <summary>
@@ -1109,6 +1162,46 @@
             Hash of the file
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.DataContexts.IntegrationImportQueueItem">
+            <summary>
+            Integration import queue item
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.DataContexts.IntegrationImportQueueItem.IntegrationId">
+            <summary>
+            Integration id
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.DataContexts.IntegrationImportQueueItem.File">
+            <summary>
+            File
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.DataContexts.IntegrationImportQueueItem.FileName">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.DataContexts.IntegrationImportQueueItem.FileSize">
+            <summary>
+            File size
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.DataContexts.IntegrationImportQueueItem.FileDate">
+            <summary>
+            File date
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.DataContexts.IntegrationImportQueueItem.Hash">
+            <summary>
+            Hash
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.DataContexts.IntegrationImportQueueItem.FileVersionId">
+            <summary>
+            File version id
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Enums.UnexpectedEnumValueException">
             <summary>
             Unexpected enum value exception class
@@ -1185,6 +1278,188 @@
             </summary>
             <typeparam name="T">The type</typeparam>
             <param name="value">The value</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.DebugFactoryDecorator`1">
+            <summary>
+            Debug factory decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.DebugFactoryDecorator`1.#ctor(Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{`0},Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.DebugFactoryDecorator`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.DebugFactoryDecorator`1.Create">
+            <summary>
+            Create instance
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.DebugFactoryDecorator`2">
+            <summary>
+            Debug factory decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.DebugFactoryDecorator`2.#ctor(Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{`0,`1},Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.DebugFactoryDecorator`2"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.DebugFactoryDecorator`2.Create(`0)">
+            <summary>
+            Create instance
+            </summary>
+            <param name="command">The command</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionary">
+            <summary>
+            Heartbeat configuration dictionary
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionary.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionary"/> class.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionary.Configuration">
+            <summary>
+            Configuration
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactory">
+            <summary>
+            Heartbeat configuration dictionary factory
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactory.Create">
+            <summary>
+            Create instance
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryCleanupFolderInterceptor">
+            <summary>
+            Heatbeat configuration dictionary factory cleanup folder interceptor
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryCleanupFolderInterceptor.Key">
+            <summary>
+            Configuration key
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryCleanupFolderInterceptor.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.CleanupFolderConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryCleanupFolderInterceptor"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryCleanupFolderInterceptor.Created(Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionary)">
+            <summary>
+            Intercept the created instance
+            </summary>
+            <param name="result">The created instance</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryDataContextInterceptor">
+            <summary>
+            Heartbeat configuration dictionary factory datacontext interceptor
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryDataContextInterceptor.Key">
+            <summary>
+            Configuration key
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryDataContextInterceptor.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.DataContextConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryCleanupFolderInterceptor"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryDataContextInterceptor.Created(Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionary)">
+            <summary>
+            Intercept the created instance
+            </summary>
+            <param name="result">The created instance</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryDataSourceInterceptor">
+            <summary>
+            Heartbeat configuration dictionary factory datasource interceptor
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryDataSourceInterceptor.Key">
+            <summary>
+            Configuration key
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryDataSourceInterceptor.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.DataSourceConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryDataSourceInterceptor"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryDataSourceInterceptor.Created(Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionary)">
+            <summary>
+            Intercept the created instance
+            </summary>
+            <param name="result">The created instance</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryIntegrationExportInterceptor">
+            <summary>
+            Heartbeat configuration dictionary factory integration export interceptor
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryIntegrationExportInterceptor.Key">
+            <summary>
+            Configuration key
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryIntegrationExportInterceptor.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationExportConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryIntegrationExportInterceptor"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryIntegrationExportInterceptor.Created(Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionary)">
+            <summary>
+            Intercept the created instance
+            </summary>
+            <param name="result">The created instance</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryIntegrationImportInterceptor">
+            <summary>
+            Heartbeat configuration dictionary factory integration import interceptor
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryIntegrationImportInterceptor.Key">
+            <summary>
+            Configuration key
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryIntegrationImportInterceptor.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationImportConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryIntegrationImportInterceptor"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryIntegrationImportInterceptor.Created(Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionary)">
+            <summary>
+            Intercept the created instance
+            </summary>
+            <param name="result">The created instance</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryIntegrationInterceptor">
+            <summary>
+            Heartbeat configuration dictionary factory integration interceptor
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryIntegrationInterceptor.Key">
+            <summary>
+            Configuration key
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryIntegrationInterceptor.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryIntegrationInterceptor"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionaryFactoryIntegrationInterceptor.Created(Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionary)">
+            <summary>
+            Intercept the created instance
+            </summary>
+            <param name="result">The created instance</param>
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationReport">
             <summary>
@@ -1352,6 +1627,86 @@
             </summary>
             <returns>The heartbeat request</returns>
         </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryConfigurationInterceptor">
+            <summary>
+            Heartbeat request factory configuration interceptor
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryConfigurationInterceptor.#ctor(Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationReport})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryConfigurationInterceptor"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryConfigurationInterceptor.Created(Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request)">
+            <summary>
+            Intercept the created instance
+            </summary>
+            <param name="result">The created instance</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryDataSourceInterceptor">
+            <summary>
+            Heartbeat request factory datasource interceptor
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryDataSourceInterceptor.#ctor(Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDataSourceReport})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryDataSourceInterceptor"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryDataSourceInterceptor.Created(Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request)">
+            <summary>
+            Intercept the created instance
+            </summary>
+            <param name="result">The created instance</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryDriveInterceptor">
+            <summary>
+            Heartbeat request factory drive info interceptor
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryDriveInterceptor.#ctor(Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDriveInfoReport})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryDriveInterceptor"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryDriveInterceptor.Created(Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request)">
+            <summary>
+            Intercept the created instance
+            </summary>
+            <param name="result">The created instance</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryIntegrationExportInterceptor">
+            <summary>
+            Heartbeat request factory integration export interceptor
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryIntegrationExportInterceptor.#ctor(Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationExportReport})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryIntegrationExportInterceptor"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryIntegrationExportInterceptor.Created(Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request)">
+            <summary>
+            Intercept the created instance
+            </summary>
+            <param name="result">The created instance</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryIntegrationImportInterceptor">
+            <summary>
+            Heartbeat request factory integration import interceptor
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryIntegrationImportInterceptor.#ctor(Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationImportReport})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryIntegrationImportInterceptor"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactoryIntegrationImportInterceptor.Created(Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats.CreateIntegrationUserHeartbeatV1Request)">
+            <summary>
+            Intercept the created instance
+            </summary>
+            <param name="result">The created instance</param>
+        </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory`1">
             <summary>
             Factory abstraction
@@ -1440,6 +1795,37 @@
             <summary>
             Create instance and execute the interceptors
             </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.LogExceptionFactoryDecorator`1">
+            <summary>
+            Log exception factory decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.LogExceptionFactoryDecorator`1.#ctor(Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{`0},Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.LogExceptionFactoryDecorator`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.LogExceptionFactoryDecorator`1.Create">
+            <summary>
+            Create instance
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.LogExceptionFactoryDecorator`2">
+            <summary>
+            Log exception factory decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.LogExceptionFactoryDecorator`2.#ctor(Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{`0,`1},Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.LogExceptionFactoryDecorator`2"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.LogExceptionFactoryDecorator`2.Create(`0)">
+            <summary>
+            Create instance
+            </summary>
+            <param name="command">The command</param>
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactory">
             <summary>
@@ -1800,6 +2186,42 @@
             <param name="cancellationToken">The cancellation token</param>
             <returns>The response</returns>
         </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.DebugQueueIntegrationImportDecorator">
+            <summary>
+            Debug queue integration import decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.DebugQueueIntegrationImportDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.IQueueIntegrationImportCommandHandler,Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.DebugQueueIntegrationImportDecorator"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.DebugQueueIntegrationImportDecorator.Handle(Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.QueueIntegrationImportCommand,System.Threading.CancellationToken)">
+            <summary>
+            Handle the command
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The command result</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.DebugUploadIntegrationImportDecorator">
+            <summary>
+            Debug upload integration import decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.DebugUploadIntegrationImportDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.IUploadIntegrationImportCommandHandler,Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.DebugUploadIntegrationImportDecorator"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.DebugUploadIntegrationImportDecorator.Handle(Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.UploadIntegrationImportCommand,System.Threading.CancellationToken)">
+            <summary>
+            Handle the command
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The result</returns>
+        </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.ErrorUploadIntegrationImportDecorator">
             <summary>
             Decorator class for <see cref="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.IUploadIntegrationImportCommandHandler"/> to log the exception if one was thrown
@@ -1819,18 +2241,67 @@
             <param name="cancellationToken">The cancellation token</param>
             <returns>The response</returns>
         </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.IQueueIntegrationImportCommandHandler">
+            <summary>
+            Queue integration import command handler abstraction
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.IQueueIntegrationImportCommandHandler.Handle(Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.QueueIntegrationImportCommand,System.Threading.CancellationToken)">
+            <summary>
+            Handle the command
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The command result</returns>
+        </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.IUploadIntegrationImportCommandHandler">
             <summary>
-            Interface for download integration export command handler
+            Upload integration import command handler abstraction
             </summary>
         </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.IUploadIntegrationImportCommandHandler.Handle(Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.UploadIntegrationImportCommand,System.Threading.CancellationToken)">
             <summary>
-            Handle download integration export command
+            Handle the command
             </summary>
             <param name="command">The command</param>
             <param name="cancellationToken">The cancellation token</param>
-            <returns>The response</returns>
+            <returns>The result</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.LogExceptionQueueIntegrationImportDecorator">
+            <summary>
+            Log exception queue integration import decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.LogExceptionQueueIntegrationImportDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.IQueueIntegrationImportCommandHandler,Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.LogExceptionQueueIntegrationImportDecorator"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.LogExceptionQueueIntegrationImportDecorator.Handle(Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.QueueIntegrationImportCommand,System.Threading.CancellationToken)">
+            <summary>
+            Handle the command
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The command result</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.LogExceptionUploadIntegrationImportDecorator">
+            <summary>
+            Log exception upload integration import decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.LogExceptionUploadIntegrationImportDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.IUploadIntegrationImportCommandHandler,Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.LogExceptionUploadIntegrationImportDecorator"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.LogExceptionUploadIntegrationImportDecorator.Handle(Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.UploadIntegrationImportCommand,System.Threading.CancellationToken)">
+            <summary>
+            Handle the command
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The result</returns>
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.MoveFileUploadIntegrationImportDecorator">
             <summary>
@@ -1854,6 +2325,11 @@
             <param name="cancellationToken">The cancellation token</param>
             <returns>The response</returns>
         </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.QueueIntegrationImportCommand">
+            <summary>
+            Queue integration import command
+            </summary>
+        </member>
         <member name="P:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.QueueIntegrationImportCommand.IntegrationId">
             <summary>
             Integration id
@@ -1869,8 +2345,28 @@
             Move file
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.QueueIntegrationImportCommandHandler">
+            <summary>
+            Queue integration import command handler
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.QueueIntegrationImportCommandHandler.#ctor(Informapp.InformSystem.IntegrationTool.Core.DataContexts.IDataContext,System.IO.Abstractions.IFileInfoFactory,Informapp.InformSystem.IntegrationTool.Core.Queries.IQueryHandler{Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile.HashFileQuery,Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile.HashFileQueryResult},Informapp.InformSystem.IntegrationTool.Core.Commands.ICommandHandler{Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams.WriteFileFromStreamCommand,Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams.WriteFileFromStreamCommandResult},System.IO.Abstractions.IPath,Informapp.InformSystem.IntegrationTool.Core.Providers.IGuidProvider,Informapp.InformSystem.WebApi.Client.DateTimeProviders.IDateTimeProvider,Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationImportConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.QueueIntegrationImportCommandHandler"/> class.
+            </summary>
+        </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.QueueIntegrationImportCommandHandler.Handle(Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.QueueIntegrationImportCommand,System.Threading.CancellationToken)">
-            <inheritdoc/>
+            <summary>
+            Handle the command
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The command result</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.QueueIntegrationImportCommandResult">
+            <summary>
+            Queue integration import command result
+            </summary>
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.ReportUploadIntegrationImportDecorator">
             <summary>
@@ -1892,11 +2388,41 @@
             <param name="cancellationToken">The cancellation token</param>
             <returns>The response</returns>
         </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.RollbackQueueIntegrationImportDecorator">
+            <summary>
+            Rollback queue integration import decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.RollbackQueueIntegrationImportDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.IQueueIntegrationImportCommandHandler,Informapp.InformSystem.IntegrationTool.Core.DataContexts.IDataContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.RollbackQueueIntegrationImportDecorator"/> class.
+            </summary>
+        </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.RollbackQueueIntegrationImportDecorator.Handle(Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.QueueIntegrationImportCommand,System.Threading.CancellationToken)">
-            <inheritdoc/>
+            <summary>
+            Handle the command
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The command result</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.SaveQueueIntegrationImportDecorator">
+            <summary>
+            Save queue integration import decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.SaveQueueIntegrationImportDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.IQueueIntegrationImportCommandHandler,Informapp.InformSystem.IntegrationTool.Core.DataContexts.IDataContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.SaveQueueIntegrationImportDecorator"/> class.
+            </summary>
         </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.SaveQueueIntegrationImportDecorator.Handle(Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.QueueIntegrationImportCommand,System.Threading.CancellationToken)">
-            <inheritdoc/>
+            <summary>
+            Handle the command
+            </summary>
+            <param name="command">The command</param>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The command result</returns>
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.StartUploadIntegrationImportDecorator">
             <summary>
@@ -1921,12 +2447,17 @@
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.UploadIntegrationImportCommand">
             <summary>
-            Command for initiating the upload of an integration import file
+            Upload integration import command
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.UploadIntegrationImportCommand.Item">
+            <summary>
+            Item
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.UploadIntegrationImportCommand.IntegrationImportId">
             <summary>
-            Integration Import Id
+            Integration import id
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.UploadIntegrationImportCommandHandler">
@@ -1967,6 +2498,16 @@
         <member name="P:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.UploadIntegrationImportCommandResult.Exception">
             <summary>
             If an exception was thrown it will be logged here
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.ValidateQueueIntegrationImportDecorator">
+            <summary>
+            Validate queue integration import decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.ValidateQueueIntegrationImportDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.IQueueIntegrationImportCommandHandler,Informapp.InformSystem.WebApi.Client.Validators.IValidator{Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.QueueIntegrationImportCommand})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.ValidateQueueIntegrationImportDecorator"/> class.
             </summary>
         </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.ValidateQueueIntegrationImportDecorator.Handle(Informapp.InformSystem.IntegrationTool.Core.IntegrationImports.QueueIntegrationImportCommand,System.Threading.CancellationToken)">
@@ -2286,16 +2827,16 @@
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.IJobHandler`1">
             <summary>
-            Generic hangfire job handler interface
+            Generic job handler abstraction
             </summary>
-            <typeparam name="T"></typeparam>
+            <typeparam name="T">The type of job</typeparam>
         </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.IJobHandler`1.Execute(System.Threading.CancellationToken)">
             <summary>
-            Execute job handler
+            Execute job
             </summary>
             <param name="cancellationToken">The cancellation token</param>
-            <returns>The response</returns>
+            <returns>The task</returns>
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.LogExceptionJobHandlerDecorator`1">
             <summary>
@@ -2371,6 +2912,24 @@
             </summary>
             <param name="cancellationToken">The cancellation token</param>
             <returns></returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.SwallowExceptionJobHandlerDecorator`1">
+            <summary>
+            Swallow exception job handler decorator
+            </summary>
+            <typeparam name="T">The type of job</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.SwallowExceptionJobHandlerDecorator`1.#ctor(Informapp.InformSystem.IntegrationTool.Core.Jobs.IJobHandler{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.SwallowExceptionJobHandlerDecorator`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.SwallowExceptionJobHandlerDecorator`1.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Execute job
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task</returns>
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.UploadDataSourceFileJob">
             <summary>
@@ -2680,46 +3239,46 @@
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger">
             <summary>
-            Interface for application logger
+            Logger abstraction
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger.IsDebugEnabled">
             <summary>
-            Is debug enabled true/false
+            Debug enabled
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger.IsErrorEnabled">
             <summary>
-            Is error enabled true/false
+            Error enabled
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger.IsFatalEnabled">
             <summary>
-            Is fatal enabled true/false
+            Fatal enabled
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger.IsInfoEnabled">
             <summary>
-            Is info enabled true/false
+            Info enabled
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger.IsWarnEnabled">
             <summary>
-            Is warn enabled true/false
+            Warn enabled
             </summary>
         </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger.IsEnabledFor(Informapp.InformSystem.IntegrationTool.Core.Loggers.LogLevel)">
             <summary>
-            Is logging enabled for specific log level true/false
+            Enabled for a given log level
             </summary>
             <param name="level"></param>
             <returns></returns>
         </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger.Log(Informapp.InformSystem.IntegrationTool.Core.Loggers.LogEntry)">
             <summary>
-            Log entry
+            Log
             </summary>
-            <param name="entry"></param>
+            <param name="entry">The content to log</param>
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogEntry">
             <summary>
@@ -2762,6 +3321,37 @@
             <param name="format">Log format string</param>
             <param name="args">Additional arguments</param>
             <param name="exception">The exception that was throw</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogExceptionApplicationLoggerDecorator">
+            <summary>
+            Log exception application logger decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogExceptionApplicationLoggerDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogExceptionApplicationLoggerDecorator"/> class.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogExceptionApplicationLoggerDecorator.IsDebugEnabled">
+            <inheritdoc/>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogExceptionApplicationLoggerDecorator.IsErrorEnabled">
+            <inheritdoc/>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogExceptionApplicationLoggerDecorator.IsFatalEnabled">
+            <inheritdoc/>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogExceptionApplicationLoggerDecorator.IsInfoEnabled">
+            <inheritdoc/>
+        </member>
+        <member name="P:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogExceptionApplicationLoggerDecorator.IsWarnEnabled">
+            <inheritdoc/>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogExceptionApplicationLoggerDecorator.IsEnabledFor(Informapp.InformSystem.IntegrationTool.Core.Loggers.LogLevel)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.LogExceptionApplicationLoggerDecorator.Log(Informapp.InformSystem.IntegrationTool.Core.Loggers.LogEntry)">
+            <inheritdoc/>
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Loggers.Logger">
             <summary>
@@ -2946,6 +3536,21 @@
             Dispose the file
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Queries.DebugQueryHandlerDecorator`2">
+            <summary>
+            Debug query handler decorator
+            </summary>
+            <typeparam name="TQuery">The type of query</typeparam>
+            <typeparam name="TResult">The type of result</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Queries.DebugQueryHandlerDecorator`2.#ctor(Informapp.InformSystem.IntegrationTool.Core.Queries.IQueryHandler{`0,`1},Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Queries.DebugQueryHandlerDecorator`2"/> class
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Queries.DebugQueryHandlerDecorator`2.Handle(`0,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload.FileNeedsUploadQuery">
             <summary>
             Query to check if a file needs to be uploaded
@@ -3109,27 +3714,35 @@
             The list of files
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Queries.LogExceptionQueryHandlerDecorator`2">
+            <summary>
+            Log exception query handler decorator
+            </summary>
+            <typeparam name="TQuery">The type of query</typeparam>
+            <typeparam name="TResult">The type of result</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Queries.LogExceptionQueryHandlerDecorator`2.#ctor(Informapp.InformSystem.IntegrationTool.Core.Queries.IQueryHandler{`0,`1},Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Queries.LogExceptionQueryHandlerDecorator`2"/> class
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Queries.LogExceptionQueryHandlerDecorator`2.Handle(`0,System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Queries.ValidateQueryHandlerDecorator`2">
             <summary>
-            Validate the provided query
+            Validate query handler decorator
             </summary>
-            <typeparam name="TQuery">The query</typeparam>
-            <typeparam name="TResult">The result</typeparam>
+            <typeparam name="TQuery">The type of query</typeparam>
+            <typeparam name="TResult">The type of result</typeparam>
         </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.Queries.ValidateQueryHandlerDecorator`2.#ctor(Informapp.InformSystem.IntegrationTool.Core.Queries.IQueryHandler{`0,`1},Informapp.InformSystem.WebApi.Client.Validators.IValidator{`0})">
             <summary>
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Queries.ValidateQueryHandlerDecorator`2"/> class
             </summary>
-            <param name="queryHandler">Injected query handler</param>
-            <param name="validator">Injected query validator</param>
         </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.Queries.ValidateQueryHandlerDecorator`2.Handle(`0,System.Threading.CancellationToken)">
-            <summary>
-            Handle validating the provided query
-            </summary>
-            <param name="query">The query</param>
-            <param name="cancellationToken">The cancellation token</param>
-            <returns>The response</returns>
+            <inheritdoc/>
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Requires.Require">
             <summary>
@@ -3364,17 +3977,17 @@
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploader`1">
             <summary>
-            Generic interface for Uploader{TCommand}
+            Generic uploader abstraction
             </summary>
-            <typeparam name="TCommand"></typeparam>
+            <typeparam name="TCommand">The type of command</typeparam>
         </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploader`1.Upload(`0,System.Threading.CancellationToken)">
             <summary>
-            Initiates upload for {TCommand}
+            Handle the command
             </summary>
             <param name="command">The command</param>
             <param name="cancellationToken">The cancellation token</param>
-            <returns>The response</returns>
+            <returns>The upload result</returns>
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploadResult">
             <summary>
@@ -3385,6 +3998,20 @@
             <summary>
             If upload was successful this will be true
             </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.LogExceptionUploaderDecorator`1">
+            <summary>
+            Log Exception uploader decorator
+            </summary>
+            <typeparam name="TCommand">The type of command</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Uploaders.LogExceptionUploaderDecorator`1.#ctor(Informapp.InformSystem.IntegrationTool.Core.Uploaders.IUploader{`0},Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.LogExceptionUploaderDecorator`1"/> class
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Uploaders.LogExceptionUploaderDecorator`1.Upload(`0,System.Threading.CancellationToken)">
+            <inheritdoc/>
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Uploaders.LogUploaderDecorator`1">
             <summary>

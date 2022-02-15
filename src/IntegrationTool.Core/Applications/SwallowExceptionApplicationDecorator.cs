@@ -5,11 +5,17 @@ using System.Threading.Tasks;
 
 namespace Informapp.InformSystem.IntegrationTool.Core.Applications
 {
+    /// <summary>
+    /// Swallow exception application decorator
+    /// </summary>
     public class SwallowExceptionApplicationDecorator : Decorator<IApplication>,
         IApplication
     {
         private readonly IApplication _application;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SwallowExceptionApplicationDecorator"/> class.
+        /// </summary>
         public SwallowExceptionApplicationDecorator(
             IApplication application) : base(application)
         {
@@ -18,6 +24,11 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Applications
             _application = application;
         }
 
+        /// <summary>
+        /// Run the application
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token</param>
+        /// <returns>The task to run</returns>
         public async Task Run(CancellationToken cancellationToken)
         {
             try
