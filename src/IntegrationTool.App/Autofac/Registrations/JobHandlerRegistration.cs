@@ -53,7 +53,8 @@ namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
             var decorators = new[]
             {
                 typeof(LogJobHandlerDecorator<>),
-                typeof(ErrorJobHandlerDecorator<>),
+                typeof(LogExceptionJobHandlerDecorator<>),
+                typeof(SwallowExceptionJobHandlerDecorator<>),
             };
 
             foreach (var decorator in decorators)

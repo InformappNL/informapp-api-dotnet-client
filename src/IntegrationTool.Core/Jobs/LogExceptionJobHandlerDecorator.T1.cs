@@ -9,7 +9,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Jobs
     /// <summary>
     /// Decorator class for <see cref="IJobHandler{T}"/> to log the error that was thrown in the hangfire job handler
     /// </summary>
-    public class ErrorJobHandlerDecorator<T> : Decorator<IJobHandler<T>>,
+    public class LogExceptionJobHandlerDecorator<T> : Decorator<IJobHandler<T>>,
         IJobHandler<T>
 
         where T : IJob
@@ -19,11 +19,11 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Jobs
         private readonly IApplicationLogger _logger;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ErrorJobHandlerDecorator{T}"/> class.
+        /// Initializes a new instance of the <see cref="LogExceptionJobHandlerDecorator{T}"/> class.
         /// </summary>
         /// <param name="handler">Injected job handler</param>
         /// <param name="logger">Injected application logger</param>
-        public ErrorJobHandlerDecorator(
+        public LogExceptionJobHandlerDecorator(
             IJobHandler<T> handler,
             IApplicationLogger logger) : base(handler)
         {
@@ -40,7 +40,19 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Jobs
         /// </summary>
         /// <param name="cancellationToken">The cancellation token</param>
         /// <returns>The response</returns>
-        public async Task Execute(CancellationToken cancellationToken)
+        public Task Execute(CancellationToken cancellationToken)
+        {
+            if (_logger.IsErrorEnabled)
+            {
+                return ExecuteWithErrorLogging(cancellationToken);
+            }
+            else
+            {
+                return _handler.Execute(cancellationToken);
+            }
+        }
+
+        private async Task ExecuteWithErrorLogging(CancellationToken cancellationToken)
         {
             try
             {
@@ -56,10 +68,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Jobs
             catch (Exception ex)
 #pragma warning restore CA1031 // Do not catch general exception types
             {
-                if (_logger.IsErrorEnabled == true)
-                {
-                    _logger.ErrorFormat(ex, "Error executing {0}", typeof(T).Name);
-                }
+                _logger.ErrorFormat(ex, "Error executing {0}", typeof(T).Name);
+
+                throw;
             }
         }
     }

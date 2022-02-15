@@ -89,23 +89,6 @@
             <param name="cancellationToken">The cancellation token</param>
             <returns>The task to run</returns>
         </member>
-        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Applications.ErrorApplicationDecorator">
-            <summary>
-            Error application decorator
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.ErrorApplicationDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Applications.IApplication,Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Applications.ErrorApplicationDecorator"/> class.
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.ErrorApplicationDecorator.Run(System.Threading.CancellationToken)">
-            <summary>
-            Run the application
-            </summary>
-            <param name="cancellationToken">The cancellation token</param>
-            <returns>The task to run</returns>
-        </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Applications.HeartbeatApplicationDecorator">
             <summary>
             Heartbeat application decorator
@@ -163,6 +146,23 @@
             </summary>
         </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.LogApplicationDecorator.Run(System.Threading.CancellationToken)">
+            <summary>
+            Run the application
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The task to run</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Applications.LogExceptionApplicationDecorator">
+            <summary>
+            Error application decorator
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.LogExceptionApplicationDecorator.#ctor(Informapp.InformSystem.IntegrationTool.Core.Applications.IApplication,Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Applications.LogExceptionApplicationDecorator"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Applications.LogExceptionApplicationDecorator.Run(System.Threading.CancellationToken)">
             <summary>
             Run the application
             </summary>
@@ -2272,25 +2272,6 @@
             <param name="cancellationToken">The cancellation token</param>
             <returns>The response</returns>
         </member>
-        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.ErrorJobHandlerDecorator`1">
-            <summary>
-            Decorator class for <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.IJobHandler`1"/> to log the error that was thrown in the hangfire job handler
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.ErrorJobHandlerDecorator`1.#ctor(Informapp.InformSystem.IntegrationTool.Core.Jobs.IJobHandler{`0},Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
-            <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.ErrorJobHandlerDecorator`1"/> class.
-            </summary>
-            <param name="handler">Injected job handler</param>
-            <param name="logger">Injected application logger</param>
-        </member>
-        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.ErrorJobHandlerDecorator`1.Execute(System.Threading.CancellationToken)">
-            <summary>
-            Log error that was thrown in a hangfire job
-            </summary>
-            <param name="cancellationToken">The cancellation token</param>
-            <returns>The response</returns>
-        </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.IJob">
             <summary>
             Hangfire job interface
@@ -2312,6 +2293,25 @@
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.IJobHandler`1.Execute(System.Threading.CancellationToken)">
             <summary>
             Execute job handler
+            </summary>
+            <param name="cancellationToken">The cancellation token</param>
+            <returns>The response</returns>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.LogExceptionJobHandlerDecorator`1">
+            <summary>
+            Decorator class for <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.IJobHandler`1"/> to log the error that was thrown in the hangfire job handler
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.LogExceptionJobHandlerDecorator`1.#ctor(Informapp.InformSystem.IntegrationTool.Core.Jobs.IJobHandler{`0},Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Jobs.LogExceptionJobHandlerDecorator`1"/> class.
+            </summary>
+            <param name="handler">Injected job handler</param>
+            <param name="logger">Injected application logger</param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Jobs.LogExceptionJobHandlerDecorator`1.Execute(System.Threading.CancellationToken)">
+            <summary>
+            Log error that was thrown in a hangfire job
             </summary>
             <param name="cancellationToken">The cancellation token</param>
             <returns>The response</returns>

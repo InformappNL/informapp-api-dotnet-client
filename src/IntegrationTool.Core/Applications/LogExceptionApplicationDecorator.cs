@@ -10,7 +10,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Applications
     /// <summary>
     /// Error application decorator
     /// </summary>
-    public class ErrorApplicationDecorator : Decorator<IApplication>,
+    public class LogExceptionApplicationDecorator : Decorator<IApplication>,
         IApplication
     {
         private readonly IApplication _application;
@@ -18,9 +18,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Applications
         private readonly IApplicationLogger _logger;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ErrorApplicationDecorator"/> class.
+        /// Initializes a new instance of the <see cref="LogExceptionApplicationDecorator"/> class.
         /// </summary>
-        public ErrorApplicationDecorator(
+        public LogExceptionApplicationDecorator(
             IApplication application,
             IApplicationLogger logger) : base(application)
         {
@@ -37,7 +37,19 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Applications
         /// </summary>
         /// <param name="cancellationToken">The cancellation token</param>
         /// <returns>The task to run</returns>
-        public async Task Run(CancellationToken cancellationToken)
+        public Task Run(CancellationToken cancellationToken)
+        {
+            if (_logger.IsFatalEnabled == true)
+            {
+                return RunWithErrorLogging(cancellationToken);
+            }
+            else
+            {
+                return _application.Run(cancellationToken);
+            }
+        }
+
+        private async Task RunWithErrorLogging(CancellationToken cancellationToken)
         {
             try
             {
@@ -49,10 +61,9 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Applications
             catch (Exception ex)
 #pragma warning restore CA1031 // Do not catch general exception types
             {
-                if (_logger.IsFatalEnabled == true)
-                {
-                    _logger.Fatal(ex, LogResource.ApplicationError);
-                }
+                _logger.Fatal(ex, LogResource.ApplicationError);
+
+                throw;
             }
         }
     }

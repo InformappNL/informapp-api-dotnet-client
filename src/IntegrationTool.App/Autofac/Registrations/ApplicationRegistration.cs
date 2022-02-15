@@ -34,7 +34,9 @@ namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
 
             builder.RegisterDecorator<LogApplicationDecorator, IApplication>();
 
-            builder.RegisterDecorator<ErrorApplicationDecorator, IApplication>();
+            builder.RegisterDecorator<LogExceptionApplicationDecorator, IApplication>();
+
+            builder.RegisterDecorator<SwallowExceptionApplicationDecorator, IApplication>();
 
             builder.RegisterDecorator<Log4NetApplicationDecorator, IApplication>();
         }
