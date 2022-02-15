@@ -13,6 +13,8 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationExports
     public class ReportDownloadIntegrationExportCommandHandlerDecorator : Decorator<IDownloadIntegrationExportCommandHandler>,
         IDownloadIntegrationExportCommandHandler
     {
+        private const int ExceptionLength = IntegrationExportV1Constants.ExceptionLength;
+
         private readonly IDownloadIntegrationExportCommandHandler _handler;
 
         private readonly IApiClient<ReportIntegrationExportV1Request, ReportIntegrationExportV1Response> _client;
@@ -58,6 +60,11 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationExports
             if (commandResult.Exception != null)
             {
                 exception = commandResult.Exception.ToString();
+
+                if (exception.Length > ExceptionLength)
+                {
+                    exception = exception.Substring(0, ExceptionLength);
+                }
             }
 
             var request = new ReportIntegrationExportV1Request

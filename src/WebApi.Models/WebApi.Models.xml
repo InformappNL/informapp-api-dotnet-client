@@ -5256,6 +5256,16 @@
             Failed
             </summary>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.IntegrationExportV1Constants">
+            <summary>
+            Integration export constants
+            </summary>
+        </member>
+        <member name="F:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.IntegrationExportV1Constants.ExceptionLength">
+            <summary>
+            Maximum length for exception
+            </summary>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports.ListIntegrationExportQueuedForMeV1Request">
             <summary>
             List integration export queued for me request

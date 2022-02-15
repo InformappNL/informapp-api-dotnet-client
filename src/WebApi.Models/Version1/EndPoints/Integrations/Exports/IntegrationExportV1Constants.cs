@@ -1,7 +1,10 @@
 ﻿
 namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports
 {
-    internal static class IntegrationExportV1Constants
+    /// <summary>
+    /// Integration export constants
+    /// </summary>
+    public static class IntegrationExportV1Constants
     {
         private const string Route = "/api/v1/integrations/exports";
 
@@ -20,7 +23,11 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.E
         internal const int MaxDurationNumber = int.MaxValue;
 
         internal const int MessageLength = 2048;
-        internal const int ExceptionLength = 16000;
+
+        /// <summary>
+        /// Maximum length for exception
+        /// </summary>
+        public const int ExceptionLength = 16000;
 
         internal const int MaxFileNameLength = 2 * 260;
     }
