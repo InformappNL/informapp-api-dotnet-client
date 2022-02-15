@@ -19,9 +19,9 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Form.Instructi
         /// Form instruction id
         /// </summary>
         [DataMember]
-        [ExampleValue("5cbf0039a6feee2523549291")]
+        [ExampleString(ExampleStringKind.Guid, "CDF6A94B-E2CF-4DAF-9902-7D02F406B9DF")]
         [MaxLength(FormInstructionV1Constants.ResponseInstructionIdLength)]
-        public string FormInstructionId { get; set; }
+        public Guid? FormInstructionId { get; set; }
 
         /// <summary>
         /// Message
