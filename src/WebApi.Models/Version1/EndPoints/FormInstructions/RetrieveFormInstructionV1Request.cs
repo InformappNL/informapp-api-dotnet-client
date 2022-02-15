@@ -25,7 +25,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
         IRequest<RetrieveFormInstructionV1Response>
     {
         /// <summary>
-        /// App group Id
+        /// Form instruction Id
         /// </summary>
         [ExampleString(ExampleStringKind.Guid, "FEF0C5CE-8141-478E-A0B3-CBA1CC322981")]
         [IgnoreDataMember]

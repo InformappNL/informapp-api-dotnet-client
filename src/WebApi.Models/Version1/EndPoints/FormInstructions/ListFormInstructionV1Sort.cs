@@ -14,7 +14,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
 #pragma warning restore CA1008 // Enums should have zero value
     {
         /// <summary>
-        /// Sort create date ascending
+        /// Sort by create date ascending
         /// </summary>
         [EnumMember]
         [SortDirection(SortDirection.Asc)]
@@ -22,7 +22,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
         CreateDate = 1,
 
         /// <summary>
-        /// Sort create date ascending
+        /// Sort by create date ascending
         /// </summary>
         [EnumMember]
         [SortDirection(SortDirection.Desc)]
@@ -30,7 +30,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
         CreateDateDesc = -CreateDate,
 
         /// <summary>
-        /// Sort publish date ascending
+        /// Sort by publish date ascending
         /// </summary>
         [EnumMember]
         [SortDirection(SortDirection.Asc)]
@@ -38,7 +38,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
         PublishDate = 2,
 
         /// <summary>
-        /// Sort publish date ascending
+        /// Sort by publish date ascending
         /// </summary>
         [EnumMember]
         [SortDirection(SortDirection.Desc)]
@@ -46,7 +46,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
         PublishDateDesc = -PublishDate,
 
         /// <summary>
-        /// Sort information date ascending
+        /// Sort by information date ascending
         /// </summary>
         [EnumMember]
         [SortDirection(SortDirection.Asc)]
@@ -54,7 +54,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
         InformationDate = 3,
 
         /// <summary>
-        /// Sort information date ascending
+        /// Sort by information date ascending
         /// </summary>
         [EnumMember]
         [SortDirection(SortDirection.Desc)]
@@ -62,7 +62,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
         InformationDateDesc = -InformationDate,
 
         /// <summary>
-        /// Sort status ascending
+        /// Sort by status ascending
         /// </summary>
         [EnumMember]
         [SortDirection(SortDirection.Asc)]
@@ -70,7 +70,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
         Status = 4,
 
         /// <summary>
-        /// Sort status ascending
+        /// Sort by status ascending
         /// </summary>
         [EnumMember]
         [SortDirection(SortDirection.Desc)]

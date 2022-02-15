@@ -23,7 +23,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
         public Guid? FormInstructionId { get; set; }
 
         /// <summary>
-        /// Form Instruction Id
+        /// Form Id
         /// </summary>
         [DataMember]
         [ExampleString(ExampleStringKind.Guid, "EE1F7957-3402-45DC-93E4-6689B7E26776")]
@@ -67,7 +67,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
         public DateTimeOffset? PublishDate { get; set; }
 
         /// <summary>
-        /// Form Instruction Users
+        /// App users
         /// </summary>
         [DataMember]
         [ExampleMemberProvider(typeof(RetrieveFormInstructionV1Response), nameof(AppUserIds))]

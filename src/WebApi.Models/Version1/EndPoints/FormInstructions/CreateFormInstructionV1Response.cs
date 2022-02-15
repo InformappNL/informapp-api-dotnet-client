@@ -27,7 +27,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
         /// </summary>
         [DataMember]
         [DataType(DataType.Url)]
-        [ExampleString(ExampleStringKind.AbsoluteUri, "https://localhost/api/v1/forms/instructions/B123A61D-27CC-469B-92A4-4248B583D641")]
+        [ExampleString(ExampleStringKind.AbsoluteUri, "https://localhost/api/v1/forms/instructions/4B663902-8B23-47FE-BEDC-4A5D4A669401")]
         [Required]
         public Uri Location { get; set; }
     }

@@ -70,8 +70,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
         public DateTimeOffset? PublishDate { get; set; }
 
         /// <summary>
-        /// Recipients
-        /// Value has to be a user id
+        /// App user Ids
         /// </summary>
         [BodyParameter]
         [DataMember]

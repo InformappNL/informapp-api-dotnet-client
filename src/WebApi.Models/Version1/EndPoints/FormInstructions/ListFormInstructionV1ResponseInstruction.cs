@@ -9,7 +9,7 @@ using System.Runtime.Serialization;
 namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructions
 {
     /// <summary>
-    /// List form instruction
+    /// Form instruction
     /// </summary>
     [DataContract(Namespace = Version1Constants.Namespace)]
     public partial class ListFormInstructionV1ResponseInstruction
@@ -60,7 +60,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
         public FormInstructionV1Status? Status { get; set; }
 
         /// <summary>
-        /// Recipients
+        /// App users
         /// </summary>
         [DataMember]
         [ExampleMemberProvider(typeof(ListFormInstructionV1ResponseInstruction), nameof(AppUserIds))]

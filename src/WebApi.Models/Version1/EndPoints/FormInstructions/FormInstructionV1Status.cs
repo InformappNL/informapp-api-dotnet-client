@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructions
 {
     /// <summary>
-    /// The instruction status
+    /// Form instruction status
     /// </summary>
     [DataContract(Namespace = Version1Constants.Namespace)]
     public enum FormInstructionV1Status
