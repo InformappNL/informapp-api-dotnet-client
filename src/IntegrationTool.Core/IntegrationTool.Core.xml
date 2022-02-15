@@ -2617,15 +2617,6 @@
             <param name="format">The format string</param>
             <param name="args">Additional arguments</param>
         </member>
-        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.Serialize``1(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,System.Nullable{``0})">
-            <summary>
-            Serialize an instance
-            </summary>
-            <typeparam name="T">The type of object to serialize</typeparam>
-            <param name="logger">The logger instance</param>
-            <param name="value">The instance to serialize</param>
-            <returns>The serialized value</returns>
-        </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.Loggers.ApplicationLoggerExtensions.Serialize``1(Informapp.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger,``0)">
             <summary>
             Serialize an instance
