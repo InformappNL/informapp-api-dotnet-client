@@ -22,6 +22,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
         [ExampleString(ExampleStringKind.Guid, "EE1F7957-3402-45DC-93E4-6689B7E26776")]
         [Required]
         public Guid? FormInstructionId { get; set; }
+
         /// <summary>
         /// Form Instruction Id
         /// </summary>
@@ -31,19 +32,17 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
         public Guid? FormId { get; set; }
 
         /// <summary>
-        /// Email
+        /// Message
         /// </summary>
         [DataMember]
-        [EmailAddress]
         [ExampleValue("Please fill out this report")]
         [MaxLength(FormInstructionV1Constants.ResponseMessageLength)]
         public string Message { get; set; }
 
         /// <summary>
-        /// Email
+        /// Form data
         /// </summary>
         [DataMember]
-        [EmailAddress]
         [ExampleValue("Form JSON")]
         public string FormData { get; set; }
 

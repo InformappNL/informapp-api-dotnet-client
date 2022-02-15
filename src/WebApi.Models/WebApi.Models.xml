@@ -4066,12 +4066,12 @@
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructions.GetFormInstruction.GetFormInstructionV1Response.Message">
             <summary>
-            Email
+            Message
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructions.GetFormInstruction.GetFormInstructionV1Response.FormData">
             <summary>
-            Email
+            Form data
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructions.GetFormInstruction.GetFormInstructionV1Response.CreateDate">
