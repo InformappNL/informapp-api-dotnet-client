@@ -22,7 +22,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Loggers
 
             if (value != null)
             {
-                serialized = JsonConvert.SerializeObject(value);
+                serialized = JsonConvert.SerializeObject(value, Formatting.Indented);
             }
 
             return serialized;
