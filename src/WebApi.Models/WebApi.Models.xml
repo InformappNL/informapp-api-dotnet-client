@@ -403,6 +403,38 @@
             <param name="name">The name to include in the formatted message.</param>
             <returns>An instance of the formatted error message.</returns>
         </member>
+        <member name="T:Informapp.InformSystem.WebApi.Models.DataAnnotations.JsonDeserializeAttribute">
+            <summary>
+            Specifies that a string field must be in valid Json format.
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.DataAnnotations.JsonDeserializeAttribute.Type">
+            <summary>
+            Type of object that will be validated
+            </summary>
+        </member>
+        <member name="P:Informapp.InformSystem.WebApi.Models.DataAnnotations.JsonDeserializeAttribute.TypeDescription">
+            <summary>
+            Type description of object that will be validated
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.DataAnnotations.JsonDeserializeAttribute.#ctor(System.Type,System.String)">
+            <summary>Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Models.DataAnnotations.JsonDeserializeAttribute"/> class.</summary>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.DataAnnotations.JsonDeserializeAttribute.IsValid(System.Object)">
+            <summary>
+            Determines whether the specified value of the object is valid.
+            </summary>
+            <param name="value">The value of the object to validate.</param>
+            <returns>true if the specified value is valid; otherwise, false.</returns>
+        </member>
+        <member name="M:Informapp.InformSystem.WebApi.Models.DataAnnotations.JsonDeserializeAttribute.FormatErrorMessage(System.String)">
+            <summary>
+            Applies formatting to an error message, based on the data field where the error occurred.
+            </summary>
+            <param name="name">The name to include in the formatted message.</param>
+            <returns>An instance of the formatted error message.</returns>
+        </member>
         <member name="T:Informapp.InformSystem.WebApi.Models.DataAnnotations.MaxItemsAttribute">
             <summary>
             Specifies the maximum number of items in an <see cref="T:System.Collections.IEnumerable"/> allowed in a property or field.

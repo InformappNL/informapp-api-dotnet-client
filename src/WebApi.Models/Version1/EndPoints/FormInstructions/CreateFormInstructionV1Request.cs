@@ -58,6 +58,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
         [BodyParameter]
         [DataMember]
         [ExampleMemberProvider(typeof(CreateFormInstructionV1Request), nameof(FormData))]
+        [JsonDeserialize(typeof(Dictionary<string, object>), "Dictionary<string, object>")]
         public string FormData { get; set; }
 
         /// <summary>
