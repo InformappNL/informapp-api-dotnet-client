@@ -80,7 +80,7 @@
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
     <PackageReference Include="System.ComponentModel.Composition" Version="5.0.0" />
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
-    <PackageReference Include="System.IO.Abstractions" Version="16.0.6" />
+    <PackageReference Include="System.IO.Abstractions" Version="16.0.7" />
   </ItemGroup>
   <Target Name="CreateAppSettingsJsonBeforeBuild" AfterTargets="BeforeBuild">
     <Copy SourceFiles="$(ProjectDir)\appsettings.default.json" DestinationFiles="$(ProjectDir)\appsettings.private.json" Condition="!Exists('$(ProjectDir)\appsettings.private.json')" />
