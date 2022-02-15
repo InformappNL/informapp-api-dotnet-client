@@ -31,7 +31,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
                 string productName = typeof(T).Name;
 
                 _logger.DebugFormat(
-                    "Created  {0} :\r\n{1}",
+                    "Created {0} :\r\n{1}",
                     productName,
                     _logger.Serialize(created));
             }
