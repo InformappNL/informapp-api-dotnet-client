@@ -2,6 +2,7 @@
 using Informapp.InformSystem.IntegrationTool.Core.Configurations;
 using Microsoft.Extensions.Options;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO.Abstractions;
 using System.Linq;
@@ -19,23 +20,29 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
 
         private readonly IOptions<IntegrationExportConfiguration> _integrationExportConfiguration;
 
+        private readonly IOptions<IntegrationImportConfiguration> _integrationImportConfiguration;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="HeartbeatDriveInfoFactory"/> class.
         /// </summary>
         public HeartbeatDriveInfoFactory(
             IDriveInfoFactory driveInfoFactory,
             IOptions<IntegrationConfiguration> integrationConfiguration,
-            IOptions<IntegrationExportConfiguration> integrationExportConfiguration)
+            IOptions<IntegrationExportConfiguration> integrationExportConfiguration,
+            IOptions<IntegrationImportConfiguration> integrationImportConfiguration)
         {
             Argument.NotNull(driveInfoFactory, nameof(driveInfoFactory));
             Argument.NotNull(integrationConfiguration, nameof(integrationConfiguration));
             Argument.NotNull(integrationExportConfiguration, nameof(integrationExportConfiguration));
+            Argument.NotNull(integrationImportConfiguration, nameof(integrationImportConfiguration));
 
             _driveInfoFactory = driveInfoFactory;
 
             _integrationConfiguration = integrationConfiguration;
 
             _integrationExportConfiguration = integrationExportConfiguration;
+
+            _integrationImportConfiguration = integrationImportConfiguration;
         }
 
         /// <summary>
@@ -47,25 +54,18 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
             var report = new HeartbeatDriveInfoReport();
 
             var configuration = _integrationConfiguration.Value;
-            var exportConfiguration = _integrationExportConfiguration.Value;
 
             if (configuration.DriveInfoUploadEnabled == true)
             {
-                var folders = exportConfiguration
-                    .IntegrationExports
-                    .Where(x => x.Enabled == true)
-                    .Select(x => x.Folder)
-                    .ToList();
+                var paths = new List<string>();
 
-                if (exportConfiguration.Default != null &&
-                    exportConfiguration.Default.Enabled == true)
-                {
-                    folders.Add(exportConfiguration.Default.Folder);
-                }
+                AddIntegrationExportFolders(paths);
+                AddIntegrationExportDefaultFolder(paths);
+                AddIntegrationImportFiles(paths);
 
                 var comparer = StringComparer.Ordinal;
 
-                var drives = folders
+                var drives = paths
                     .Where(x => string.IsNullOrEmpty(x) == false)
                     .Distinct(comparer)
                     .OrderBy(x => x, comparer)
@@ -86,6 +86,43 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
             }
 
             return report;
+        }
+
+        private void AddIntegrationExportFolders(List<string> paths)
+        {
+            var configuration = _integrationExportConfiguration.Value;
+
+            var folders = configuration
+                .IntegrationExports
+                .Where(x => x.Enabled == true)
+                .Select(x => x.Folder)
+                .ToList();
+
+            paths.AddRange(folders);
+        }
+
+        private void AddIntegrationExportDefaultFolder(List<string> paths)
+        {
+            var configuration = _integrationExportConfiguration.Value;
+
+            if (configuration.Default != null &&
+                configuration.Default.Enabled == true)
+            {
+                paths.Add(configuration.Default.Folder);
+            }
+        }
+
+        private void AddIntegrationImportFiles(List<string> paths)
+        {
+            var configuration = _integrationImportConfiguration.Value;
+
+            var files = configuration
+                .IntegrationImports
+                .Where(x => x.Enabled == true)
+                .Select(x => x.File)
+                .ToList();
+
+            paths.AddRange(files);
         }
 
         [DebuggerStepThrough]

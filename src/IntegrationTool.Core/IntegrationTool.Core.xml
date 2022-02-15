@@ -1253,7 +1253,7 @@
             Heartbeat drive info factory
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDriveInfoFactory.#ctor(System.IO.Abstractions.IDriveInfoFactory,Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration},Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationExportConfiguration})">
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDriveInfoFactory.#ctor(System.IO.Abstractions.IDriveInfoFactory,Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration},Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationExportConfiguration},Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationImportConfiguration})">
             <summary>
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDriveInfoFactory"/> class.
             </summary>
