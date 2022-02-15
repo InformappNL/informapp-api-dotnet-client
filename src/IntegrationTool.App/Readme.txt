@@ -10,7 +10,7 @@ Doel van de tool:
 
 De tool heeft nodig:
 
-    Internet toegang het adres van de web API via HTTPS.
+    Internet toegang tot het adres van de web API via HTTPS.
    
     Leesrechten op de installatie map.
     Schrijf- en leesrechten op map .\AppData voor data opslag (locatie instelbaar in AppSettings.config).
