@@ -1341,15 +1341,10 @@
             Factory for creating a heartbeat request
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactory.#ctor(Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationReport},Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDriveInfoReport},Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatDataSourceReport},Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationExportReport},Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatIntegrationImportReport})">
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactory.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactory"/> class.
             </summary>
-            <param name="configurationFactory">The configuration report factory</param>
-            <param name="driveFactory">The drive report factory</param>
-            <param name="dataSourceFactory">The datasource report factory</param>
-            <param name="integrationExportFactory">The integration export report factory</param>
-            <param name="integrationImportFactory">The integration import report factory</param>
         </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatRequestFactory.Create">
             <summary>
