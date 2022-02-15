@@ -9,10 +9,10 @@ using System.Runtime.Serialization;
 namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructions
 {
     /// <summary>
-    /// Get Form Instruction response
+    /// Retrieve form instruction response
     /// </summary>
     [DataContract(Namespace = Version1Constants.Namespace)]
-    public partial class GetFormInstructionV1Response : BaseResponse
+    public partial class RetrieveFormInstructionV1Response : BaseResponse
     {
         /// <summary>
         /// Form Instruction Id
@@ -70,7 +70,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
         /// Form Instruction Users
         /// </summary>
         [DataMember]
-        [ExampleMemberProvider(typeof(GetFormInstructionV1Response), nameof(AppUserIds))]
+        [ExampleMemberProvider(typeof(RetrieveFormInstructionV1Response), nameof(AppUserIds))]
         public IReadOnlyList<Guid?> AppUserIds { get; set; }
             = Array.Empty<Guid?>();
     }

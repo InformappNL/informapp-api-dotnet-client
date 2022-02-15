@@ -5,9 +5,9 @@ using System.Diagnostics;
 
 namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructions
 {
-    public partial class GetFormInstructionV1Response : IExampleMemberProvider
+    public partial class RetrieveFormInstructionV1Response : IExampleMemberProvider
     {
-        static GetFormInstructionV1Response()
+        static RetrieveFormInstructionV1Response()
         {
             if (ExampleAttributeConfiguration.Enabled == true)
             {
@@ -37,7 +37,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
         }
 
 #pragma warning disable IDE0051 // Remove unused private members
-        private static void Assignable(GetFormInstructionV1Response request)
+        private static void Assignable(RetrieveFormInstructionV1Response request)
 #pragma warning restore IDE0051 // Remove unused private members
         {
             request.AppUserIds = GetRecipientsExample();

@@ -12,7 +12,7 @@ using System.Runtime.Serialization;
 namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructions
 {
     /// <summary>
-    /// Get Form Instruction
+    /// Retrieve form instruction request
     /// </summary>
     [DataContract(Namespace = Version1Constants.Namespace)]
     [HttpMethod(HttpMethod.Get)]
@@ -21,8 +21,8 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
     [Response(HttpStatusCode.Forbidden, typeof(ForbiddenV1Response))]
     [Response(HttpStatusCode.InternalServerError, typeof(InternalServerErrorV1Response))]
     [Response(HttpStatusCode.Unauthorized, typeof(UnauthorizedV1Response))]
-    public class GetFormInstructionV1Request : BaseRequest,
-        IRequest<GetFormInstructionV1Response>
+    public class RetrieveFormInstructionV1Request : BaseRequest,
+        IRequest<RetrieveFormInstructionV1Response>
     {
         /// <summary>
         /// App group Id

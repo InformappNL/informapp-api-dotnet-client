@@ -9,7 +9,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructio
         internal const string CreateRoute = Route + "{" + nameof(CreateFormInstructionV1Request.FormId) + "}";
         internal const string ListRoute = Route + "{" + nameof(ListFormInstructionV1Request.FormId) + "}";
         internal const string RevokeRoute = Route + "{" + nameof(RevokeFormInstructionV1Request.FormInstructionId) + "}/revoke";
-        internal const string GetRoute = Route + "/{" + nameof(GetFormInstructionV1Request.FormInstructionId) + "}";
+        internal const string GetRoute = Route + "/{" + nameof(RetrieveFormInstructionV1Request.FormInstructionId) + "}";
 
         internal const int MaxEmailLength = 250;
         internal const int MaxRecipientLength = 50;
