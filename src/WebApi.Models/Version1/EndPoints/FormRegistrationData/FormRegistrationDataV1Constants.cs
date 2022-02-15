@@ -9,12 +9,12 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrati
         internal const string ListRouteForRegistration = Route + "/{" + nameof(ListFormRegistrationDataForRegistrationV1Request.FormRegistrationId) + "}";
 
         // Max length on requests
-        internal const int RequestNameLength = 100;
+        internal const int RequestNameLength = 800;
         internal const int RequestPathLength = 800;
         internal const int RequestTextLength = 10000;
 
         // Max length on results
-        internal const int ResponseNameLength = 100 * 2;
+        internal const int ResponseNameLength = 800 * 2;
         internal const int ResponseFullNameLength = 800 * 2;
         internal const int ResponsePathLength = 800 * 2;
         internal const int ResponseTextLength = 10000 * 2;
