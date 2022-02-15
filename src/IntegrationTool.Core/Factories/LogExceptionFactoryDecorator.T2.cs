@@ -39,7 +39,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
                     string commandName = typeof(TCommand).Name;
                     string productName = typeof(TResult).Name;
 
-                    _logger.DebugFormat(
+                    _logger.ErrorFormat(
                         ex,
                         "Error creating {0} from {1} \r\n{2}",
                         productName,

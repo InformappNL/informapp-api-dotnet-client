@@ -35,7 +35,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.Factories
                 {
                     string productName = typeof(T).Name;
 
-                    _logger.DebugFormat(
+                    _logger.ErrorFormat(
                         ex,
                         "Error creating {0}",
                         productName);
