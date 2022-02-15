@@ -1201,7 +1201,7 @@
             Heartbeat configuration report factory
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationReportFactory.#ctor(Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.DataContextConfiguration},Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.DataSourceConfiguration},Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationConfiguration},Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationExportConfiguration},Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.IntegrationImportConfiguration},Microsoft.Extensions.Options.IOptions{Informapp.InformSystem.IntegrationTool.Core.Configurations.CleanupFolderConfiguration})">
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationReportFactory.#ctor(Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationDictionary})">
             <summary>
             Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.HeartbeatConfigurationReportFactory"/> class.
             </summary>
