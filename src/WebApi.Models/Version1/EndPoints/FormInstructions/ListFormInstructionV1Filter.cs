@@ -1,11 +1,10 @@
 ﻿using Informapp.InformSystem.WebApi.Models.DataAnnotations;
 using Informapp.InformSystem.WebApi.Models.ExampleValues;
 using Informapp.InformSystem.WebApi.Models.Version1.Constants;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions;
 using Informapp.InformSystem.WebApi.Models.Version1.Filters;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Form.Instructions.ListInstruction
+namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructions
 {
     /// <summary>
     /// List form instruction request filter

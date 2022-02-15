@@ -1,10 +1,5 @@
-﻿using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Form.Instructions.CompleteInstruction;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Form.Instructions.CreateInstruction;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Form.Instructions.ListInstruction;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Form.Instructions.RevokeInstruction;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructions.GetFormInstruction;
-
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Form.Instructions
+﻿
+namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructions
 {
     internal static class FormInstructionV1Constants
     {

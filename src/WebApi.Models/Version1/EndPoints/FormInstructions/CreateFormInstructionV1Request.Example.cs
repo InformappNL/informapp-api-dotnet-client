@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Form.Instructions.CreateInstruction
+namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructions
 {
     public partial class CreateFormInstructionV1Request : IExampleMemberProvider
     {

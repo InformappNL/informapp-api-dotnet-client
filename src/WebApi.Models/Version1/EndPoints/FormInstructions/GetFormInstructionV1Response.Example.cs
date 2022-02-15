@@ -3,11 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Form.Instructions.ListInstruction
+namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructions
 {
-    public partial class ListFormInstructionV1ResponseInstruction : IExampleMemberProvider
+    public partial class GetFormInstructionV1Response : IExampleMemberProvider
     {
-        static ListFormInstructionV1ResponseInstruction()
+        static GetFormInstructionV1Response()
         {
             if (ExampleAttributeConfiguration.Enabled == true)
             {
@@ -37,7 +37,7 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Form.Instructi
         }
 
 #pragma warning disable IDE0051 // Remove unused private members
-        private static void Assignable(ListFormInstructionV1ResponseInstruction request)
+        private static void Assignable(GetFormInstructionV1Response request)
 #pragma warning restore IDE0051 // Remove unused private members
         {
             request.AppUserIds = GetRecipientsExample();

@@ -9,7 +9,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Net;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Form.Instructions.CompleteInstruction
+namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructions
 {
     /// <summary>
     /// Complete form instruction request

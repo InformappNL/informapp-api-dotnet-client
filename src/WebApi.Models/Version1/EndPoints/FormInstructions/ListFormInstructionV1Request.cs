@@ -5,7 +5,6 @@ using Informapp.InformSystem.WebApi.Models.Requests;
 using Informapp.InformSystem.WebApi.Models.Responses;
 using Informapp.InformSystem.WebApi.Models.Sorting;
 using Informapp.InformSystem.WebApi.Models.Version1.Constants;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructions.List;
 using Informapp.InformSystem.WebApi.Models.Version1.Errors;
 using System;
 using System.Collections.Generic;
@@ -14,7 +13,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Net;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Form.Instructions.ListInstruction
+namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructions
 {
     /// <summary>
     /// List form instruction request

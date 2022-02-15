@@ -9,25 +9,25 @@ using System.ComponentModel.DataAnnotations;
 using System.Net;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Form.Instructions.RevokeInstruction
+namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormInstructions
 {
     /// <summary>
-    /// Revoke form instruction request
+    /// Get Form Instruction
     /// </summary>
     [DataContract(Namespace = Version1Constants.Namespace)]
-    [HttpMethod(HttpMethod.Put)]
-    [Path(FormInstructionV1Constants.RevokeRoute)]
+    [HttpMethod(HttpMethod.Get)]
+    [Path(FormInstructionV1Constants.GetRoute)]
     [Response(HttpStatusCode.BadRequest, typeof(BadRequestV1Response))]
     [Response(HttpStatusCode.Forbidden, typeof(ForbiddenV1Response))]
     [Response(HttpStatusCode.InternalServerError, typeof(InternalServerErrorV1Response))]
     [Response(HttpStatusCode.Unauthorized, typeof(UnauthorizedV1Response))]
-    public class RevokeFormInstructionV1Request : BaseRequest,
-        IRequest<RevokeFormInstructionV1Response>
+    public class GetFormInstructionV1Request : BaseRequest,
+        IRequest<GetFormInstructionV1Response>
     {
         /// <summary>
-        /// Form instruction id
+        /// App group Id
         /// </summary>
-        [ExampleString(ExampleStringKind.Guid, "4E0B06C7-C8BC-4816-AAB3-F1716A4B2413")]
+        [ExampleString(ExampleStringKind.Guid, "FEF0C5CE-8141-478E-A0B3-CBA1CC322981")]
         [IgnoreDataMember]
         [PathParameter]
         [Required]
