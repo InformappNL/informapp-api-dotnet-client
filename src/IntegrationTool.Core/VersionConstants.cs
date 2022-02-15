@@ -9,6 +9,6 @@ namespace Informapp.InformSystem.IntegrationTool.Core
         /// <summary>
         /// Version of the tool
         /// </summary>
-        public const string Version = "IntegrationTool 2.0.2 2021-11-18 1301";
+        public const string Version = "IntegrationTool 2.0.3 2021-12-30 2011";
     }
 }
