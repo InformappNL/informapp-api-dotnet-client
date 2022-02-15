@@ -5436,9 +5436,9 @@
             Integration id
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.StartIntegrationImportV1Request.RemoteImportId">
+        <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.StartIntegrationImportV1Request.FileVersionId">
             <summary>
-            Remote import id
+            File version id
             </summary>
         </member>
         <member name="P:Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports.StartIntegrationImportV1Request.FileName">

@@ -58,7 +58,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
 
             var fileInfo = _fileInfoFactory.FromFileName(integrationImport.File);
 
-            var remoteImportId = integrationImport.VersionId;
+            var remoteImportId = integrationImport.FileVersionId;
 
             var request = new StartIntegrationImportV1Request
             {
@@ -66,7 +66,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
                 FileName = fileInfo.Name,
                 FileDate = integrationImport.FileDate,
                 FileSize = fileInfo.Length,
-                RemoteImportId = remoteImportId
+                FileVersionId = remoteImportId
             };
 
             var response = await _client

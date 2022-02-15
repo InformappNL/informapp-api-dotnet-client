@@ -35,13 +35,13 @@ namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.I
         public Guid? IntegrationId { get; set; }
 
         /// <summary>
-        /// Remote import id
+        /// File version id
         /// </summary>
         [BodyParameter]
         [DataMember]
         [ExampleString(ExampleStringKind.Guid, "9AA13EF5-8547-4C75-BAD0-B9AF033EE552")]
         [Required]
-        public Guid? RemoteImportId { get; set; }
+        public Guid? FileVersionId { get; set; }
 
         /// <summary>
         /// File name

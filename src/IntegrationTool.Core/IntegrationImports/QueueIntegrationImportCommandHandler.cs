@@ -121,7 +121,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
                         FileSize = size,
                         FileDate = fileDate,
                         Hash = null,
-                        VersionId = versionId,
+                        FileVersionId = versionId,
                     };
 
                     _dataContext.IntegrationImportQueue.Add(queueItem);
@@ -176,7 +176,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
                                 FileSize = size,
                                 FileDate = fileDate,
                                 Hash = hash,
-                                VersionId = versionId,
+                                FileVersionId = versionId,
                             };
 
                             _dataContext.IntegrationImportQueue.Add(queueItem);

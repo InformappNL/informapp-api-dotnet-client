@@ -44,7 +44,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Integrations
             var request = new StartIntegrationImportV1Request
             {
                 IntegrationId = integrationId,
-                RemoteImportId = remoteImportGuid,
+                FileVersionId = remoteImportGuid,
                 FileName = fileName,
                 FileSize = fileSize,
                 FileDate = fileDate,

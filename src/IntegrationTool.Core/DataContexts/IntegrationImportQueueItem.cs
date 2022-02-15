@@ -16,6 +16,6 @@ namespace Informapp.InformSystem.IntegrationTool.Core.DataContexts
 
         public string Hash { get; set; }
 
-        public Guid? VersionId { get; set; }
+        public Guid? FileVersionId { get; set; }
     }
 }
