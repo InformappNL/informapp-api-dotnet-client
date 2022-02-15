@@ -1,16 +1,16 @@
 ﻿namespace Informapp.InformSystem.IntegrationTool.Core.Factories
 {
     /// <summary>
-    /// Generic IFactory interface
+    /// Factory abstraction
     /// </summary>
-    /// <typeparam name="TCommand"></typeparam>
-    /// <typeparam name="TResult"></typeparam>
+    /// <typeparam name="TCommand">The type of command</typeparam>
+    /// <typeparam name="TResult">The type of object to create</typeparam>
     public interface IFactory<TCommand, TResult>
         where TCommand : class
         where TResult : class
     {
         /// <summary>
-        /// Create factory instance for type TCommand
+        /// Create instance
         /// </summary>
         /// <param name="command">The command</param>
         TResult Create(TCommand command);

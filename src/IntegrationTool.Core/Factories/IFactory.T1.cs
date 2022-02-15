@@ -1,12 +1,13 @@
 ﻿namespace Informapp.InformSystem.IntegrationTool.Core.Factories
 {
     /// <summary>
-    /// Generic IFactory interface
+    /// Factory abstraction
     /// </summary>
+    /// <typeparam name="T">The type of object to create</typeparam>
     public interface IFactory<T>
     {
         /// <summary>
-        /// Create factory instance of type T
+        /// Create instance
         /// </summary>
         T Create();
     }

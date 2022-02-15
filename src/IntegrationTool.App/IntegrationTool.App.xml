@@ -255,6 +255,38 @@
             </summary>
             <param name="builder">The container builder instance to use</param>
         </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FactoryInterceptorT1Registration">
+            <summary>
+            Register factor interceptors in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FactoryInterceptorT1Registration.#ctor(Informapp.InformSystem.WebApi.Client.Assemblies.IAssemblyProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FactoryInterceptorT1Registration"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FactoryInterceptorT1Registration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FactoryInterceptorT2Registration">
+            <summary>
+            Register factory interceptors in Autofac
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FactoryInterceptorT2Registration.#ctor(Informapp.InformSystem.WebApi.Client.Assemblies.IAssemblyProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FactoryInterceptorT2Registration"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FactoryInterceptorT2Registration.Register(Autofac.ContainerBuilder)">
+            <summary>
+            Register services in Autofac
+            </summary>
+            <param name="builder">The container builder instance to use</param>
+        </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations.FactoryT1Registration">
             <summary>
             Register factories in Autofac

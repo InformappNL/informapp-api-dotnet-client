@@ -6,16 +6,16 @@ using System.Linq;
 namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
-    /// Register factories in Autofac
+    /// Register factory interceptors in Autofac
     /// </summary>
-    public class FactoryT2Registration : IAutofacRegistration
+    public class FactoryInterceptorT2Registration : IAutofacRegistration
     {
         private readonly IAssemblyProvider _assemblyProvider;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="FactoryT2Registration"/> class.
+        /// Initializes a new instance of the <see cref="FactoryInterceptorT2Registration"/> class.
         /// </summary>
-        public FactoryT2Registration(
+        public FactoryInterceptorT2Registration(
             IAssemblyProvider assemblyProvider)
         {
             Argument.NotNull(assemblyProvider, nameof(assemblyProvider));
@@ -31,7 +31,7 @@ namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
         {
             Argument.NotNull(builder, nameof(builder));
 
-            var serviceType = typeof(IFactory<,>);
+            var serviceType = typeof(IFactoryInterceptor<,>);
 
             var types = _assemblyProvider.GetLocalAssemblies()
                 .SelectMany(x => x.GetTypes())
@@ -48,16 +48,6 @@ namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
                 _ = builder.RegisterType(implementor)
                     .As(service)
                     .InstancePerLifetimeScope();
-            }
-
-            var decorators = new[]
-            {
-                typeof(InterceptorFactoryDecorator<,>),
-            };
-
-            foreach (var decorator in decorators)
-            {
-                builder.RegisterGenericDecorator(decorator, serviceType);
             }
         }
     }

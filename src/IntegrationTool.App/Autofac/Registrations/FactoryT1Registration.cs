@@ -49,6 +49,16 @@ namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
                     .As(service)
                     .InstancePerLifetimeScope();
             }
+
+            var decorators = new[]
+            {
+                typeof(InterceptorFactoryDecorator<>),
+            };
+
+            foreach (var decorator in decorators)
+            {
+                builder.RegisterGenericDecorator(decorator, serviceType);
+            }
         }
     }
 }

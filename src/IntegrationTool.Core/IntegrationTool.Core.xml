@@ -1359,26 +1359,92 @@
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory`1">
             <summary>
-            Generic IFactory interface
+            Factory abstraction
             </summary>
+            <typeparam name="T">The type of object to create</typeparam>
         </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory`1.Create">
             <summary>
-            Create factory instance of type T
+            Create instance
             </summary>
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory`2">
             <summary>
-            Generic IFactory interface
+            Factory abstraction
             </summary>
-            <typeparam name="TCommand"></typeparam>
-            <typeparam name="TResult"></typeparam>
+            <typeparam name="TCommand">The type of command</typeparam>
+            <typeparam name="TResult">The type of object to create</typeparam>
         </member>
         <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory`2.Create(`0)">
             <summary>
-            Create factory instance for type TCommand
+            Create instance
             </summary>
             <param name="command">The command</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.IFactoryInterceptor`1">
+            <summary>
+            Factory interceptor abstraction
+            </summary>
+            <typeparam name="T">The type of object</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.IFactoryInterceptor`1.Created(`0)">
+            <summary>
+            Intercept the created instance
+            </summary>
+            <param name="result">The created instance</param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.IFactoryInterceptor`2">
+            <summary>
+            Factory interceptor abstraction
+            </summary>
+            <typeparam name="TCommand">The type of command</typeparam>
+            <typeparam name="TResult">The type of object to create</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.IFactoryInterceptor`2.Creating(`0)">
+            <summary>
+            Intercept the creation
+            </summary>
+            <param name="command"></param>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.IFactoryInterceptor`2.Created(`0,`1)">
+            <summary>
+            Intercept the created instance
+            </summary>
+            <param name="command"></param>
+            <param name="result"></param>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.InterceptorFactoryDecorator`1">
+            <summary>
+            Interceptor factory decorator
+            </summary>
+            <typeparam name="T">The type of object to create</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.InterceptorFactoryDecorator`1.#ctor(Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{`0},System.Collections.Generic.IReadOnlyList{Informapp.InformSystem.IntegrationTool.Core.Factories.IFactoryInterceptor{`0}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.InterceptorFactoryDecorator`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.InterceptorFactoryDecorator`1.Create">
+            <summary>
+            Create instance and execute the interceptors
+            </summary>
+        </member>
+        <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.InterceptorFactoryDecorator`2">
+            <summary>
+            Interceptor factory decorator
+            </summary>
+            <typeparam name="TCommand">The type of command</typeparam>
+            <typeparam name="TResult">The type of object to create</typeparam>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.InterceptorFactoryDecorator`2.#ctor(Informapp.InformSystem.IntegrationTool.Core.Factories.IFactory{`0,`1},System.Collections.Generic.IReadOnlyList{Informapp.InformSystem.IntegrationTool.Core.Factories.IFactoryInterceptor{`0,`1}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Informapp.InformSystem.IntegrationTool.Core.Factories.InterceptorFactoryDecorator`2"/> class.
+            </summary>
+        </member>
+        <member name="M:Informapp.InformSystem.IntegrationTool.Core.Factories.InterceptorFactoryDecorator`2.Create(`0)">
+            <summary>
+            Create instance and execute the interceptors
+            </summary>
         </member>
         <member name="T:Informapp.InformSystem.IntegrationTool.Core.Factories.SaveIntegrationExportFileFactory">
             <summary>
