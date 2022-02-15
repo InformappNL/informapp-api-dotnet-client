@@ -12,6 +12,8 @@ namespace Informapp.InformSystem.IntegrationTool.Core.DataContexts
 
         public long? FileSize { get; set; }
 
+        public DateTimeOffset? FileDate { get; set; }
+
         public string Hash { get; set; }
 
         public Guid? VersionId { get; set; }

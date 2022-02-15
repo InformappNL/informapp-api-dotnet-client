@@ -64,7 +64,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
             {
                 IntegrationId = integrationImport.IntegrationId,
                 FileName = fileInfo.Name,
-                FileDate = fileInfo.LastWriteTimeUtc,
+                FileDate = integrationImport.FileDate,
                 FileSize = fileInfo.Length,
                 RemoteImportId = remoteImportId
             };
