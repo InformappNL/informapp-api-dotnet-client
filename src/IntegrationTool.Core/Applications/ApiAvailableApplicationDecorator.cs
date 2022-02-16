@@ -1,4 +1,4 @@
-using Informapp.InformSystem.IntegrationTool.Core.Resources;
+﻿using Informapp.InformSystem.IntegrationTool.Core.Resources;
 using Informapp.InformSystem.WebApi.Client.Clients;
 using Informapp.InformSystem.WebApi.Client.Decorators;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Pings;

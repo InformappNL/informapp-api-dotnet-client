@@ -1,4 +1,4 @@
-using Informapp.InformSystem.WebApi.Client.BearerTokenProviders;
+﻿using Informapp.InformSystem.WebApi.Client.BearerTokenProviders;
 using Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators;
 using Informapp.InformSystem.WebApi.Client.Caches;
 using Informapp.InformSystem.WebApi.Client.Clients;

@@ -1,4 +1,4 @@
-using Informapp.InformSystem.IntegrationTool.Core.Loggers;
+﻿using Informapp.InformSystem.IntegrationTool.Core.Loggers;
 using Informapp.InformSystem.WebApi.Client.Decorators;
 using System;
 using System.Threading;

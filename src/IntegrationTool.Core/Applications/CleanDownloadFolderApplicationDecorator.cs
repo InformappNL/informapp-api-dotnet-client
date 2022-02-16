@@ -1,4 +1,4 @@
-using Informapp.InformSystem.IntegrationTool.Core.Commands;
+﻿using Informapp.InformSystem.IntegrationTool.Core.Commands;
 using Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder;
 using Informapp.InformSystem.IntegrationTool.Core.Configurations;
 using Informapp.InformSystem.IntegrationTool.Core.Requires;

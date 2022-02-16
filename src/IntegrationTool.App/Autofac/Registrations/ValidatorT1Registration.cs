@@ -1,4 +1,4 @@
-using Autofac;
+﻿using Autofac;
 using Informapp.InformSystem.IntegrationTool.Core.Validators;
 using Informapp.InformSystem.WebApi.Client.Assemblies;
 using Informapp.InformSystem.WebApi.Client.Validators;
