@@ -106,7 +106,7 @@ namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
 
                 string orignalFileName = fileInfo.Name;
 
-                var fileDate = fileInfo.LastWriteTimeUtc;
+                var fileDate = new DateTimeOffset(fileInfo.LastWriteTimeUtc, TimeSpan.Zero);
 
                 string fileName = string.Format(
                     CultureInfo.InvariantCulture,
