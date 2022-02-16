@@ -1,10 +1,10 @@
-﻿using Informapp.InformSystem.WebApi.Client.Clients;
+﻿using Informapp.InformSystem.IntegrationTool.Core.Configurations;
+using Informapp.InformSystem.IntegrationTool.Core.Factories;
+using Informapp.InformSystem.IntegrationTool.Core.Requires;
+using Informapp.InformSystem.WebApi.Client.Clients;
 using Informapp.InformSystem.WebApi.Client.Decorators;
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats;
-using Informapp.InformSystem.IntegrationTool.Core.Configurations;
-using Informapp.InformSystem.IntegrationTool.Core.Factories;
-using Informapp.InformSystem.IntegrationTool.Core.Requires;
 using Microsoft.Extensions.Options;
 using System.Threading;
 using System.Threading.Tasks;

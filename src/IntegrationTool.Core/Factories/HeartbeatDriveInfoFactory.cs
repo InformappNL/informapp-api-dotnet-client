@@ -1,5 +1,5 @@
-﻿using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats;
-using Informapp.InformSystem.IntegrationTool.Core.Configurations;
+﻿using Informapp.InformSystem.IntegrationTool.Core.Configurations;
+using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;

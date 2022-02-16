@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.Configuration.UserSecrets;
+using Microsoft.Extensions.Configuration.UserSecrets;
 using System;
 using System.Reflection;
 using System.Resources;

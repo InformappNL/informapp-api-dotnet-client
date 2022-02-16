@@ -1,8 +1,8 @@
 ﻿using Autofac;
+using Informapp.InformSystem.IntegrationTool.Core.Clients;
 using Informapp.InformSystem.WebApi.Client.Clients;
 using Informapp.InformSystem.WebApi.Client.Clients.Decorators;
 using Informapp.InformSystem.WebApi.Client.RestSharp.Clients;
-using Informapp.InformSystem.IntegrationTool.Core.Clients;
 using System;
 
 namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations

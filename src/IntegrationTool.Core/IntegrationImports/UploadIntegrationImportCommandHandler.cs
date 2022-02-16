@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports;
-using Informapp.InformSystem.IntegrationTool.Core.Queries;
+﻿using Informapp.InformSystem.IntegrationTool.Core.Queries;
 using Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath;
 using Informapp.InformSystem.IntegrationTool.Core.Requires;
+using Informapp.InformSystem.WebApi.Client.Clients;
+using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports;
 using System.Threading;
 using System.Threading.Tasks;
 

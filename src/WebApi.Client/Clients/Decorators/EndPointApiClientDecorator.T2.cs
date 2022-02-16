@@ -1,5 +1,5 @@
-﻿using Informapp.InformSystem.WebApi.Client.Configuration;
 using Informapp.InformSystem.WebApi.Client.Arguments;
+using Informapp.InformSystem.WebApi.Client.Configuration;
 using Informapp.InformSystem.WebApi.Client.Decorators;
 using Informapp.InformSystem.WebApi.Client.Requests;
 using Informapp.InformSystem.WebApi.Client.Responses;

@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Client.Configuration;
 using Informapp.InformSystem.WebApi.Client.BearerTokenProviders;
 using Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators;
 using Informapp.InformSystem.WebApi.Client.Caches;
 using Informapp.InformSystem.WebApi.Client.Clients;
 using Informapp.InformSystem.WebApi.Client.Clients.Decorators;
+using Informapp.InformSystem.WebApi.Client.Configuration;
 using Informapp.InformSystem.WebApi.Client.Converters;
 using Informapp.InformSystem.WebApi.Client.Cryptography;
 using Informapp.InformSystem.WebApi.Client.DateTimeProviders;

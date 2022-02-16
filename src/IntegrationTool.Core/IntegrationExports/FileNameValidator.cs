@@ -1,5 +1,5 @@
-﻿using Informapp.InformSystem.WebApi.Client.Validators;
-using Informapp.InformSystem.IntegrationTool.Core.Requires;
+﻿using Informapp.InformSystem.IntegrationTool.Core.Requires;
+using Informapp.InformSystem.WebApi.Client.Validators;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.IO.Abstractions;

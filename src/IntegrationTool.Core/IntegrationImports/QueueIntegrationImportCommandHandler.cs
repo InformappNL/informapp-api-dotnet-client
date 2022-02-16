@@ -1,5 +1,4 @@
-﻿using Informapp.InformSystem.WebApi.Client.DateTimeProviders;
-using Informapp.InformSystem.IntegrationTool.Core.Commands;
+﻿using Informapp.InformSystem.IntegrationTool.Core.Commands;
 using Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams;
 using Informapp.InformSystem.IntegrationTool.Core.Configurations;
 using Informapp.InformSystem.IntegrationTool.Core.DataContexts;
@@ -7,6 +6,7 @@ using Informapp.InformSystem.IntegrationTool.Core.Enums;
 using Informapp.InformSystem.IntegrationTool.Core.Providers;
 using Informapp.InformSystem.IntegrationTool.Core.Queries;
 using Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile;
+using Informapp.InformSystem.WebApi.Client.DateTimeProviders;
 using Microsoft.Extensions.Options;
 using System;
 using System.Globalization;

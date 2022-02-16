@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Client.Decorators;
+﻿using Informapp.InformSystem.IntegrationTool.Core;
+using Informapp.InformSystem.WebApi.Client.Decorators;
 using Informapp.InformSystem.WebApi.Client.Requests;
 using Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories;
-using Informapp.InformSystem.IntegrationTool.Core;
 using RestSharp;
 
 namespace Informapp.InformSystem.IntegrationTool.App.ClientFactories

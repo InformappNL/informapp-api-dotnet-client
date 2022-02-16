@@ -1,6 +1,6 @@
-﻿using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.IntegrationTool.Core.Loggers;
+﻿using Informapp.InformSystem.IntegrationTool.Core.Loggers;
 using Informapp.InformSystem.IntegrationTool.Core.Resources;
+using Informapp.InformSystem.WebApi.Client.Decorators;
 using System.Threading;
 using System.Threading.Tasks;
 

@@ -1,10 +1,10 @@
-﻿using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Client.Responses;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports;
-using Informapp.InformSystem.IntegrationTool.Core.Configurations;
+﻿using Informapp.InformSystem.IntegrationTool.Core.Configurations;
 using Informapp.InformSystem.IntegrationTool.Core.IntegrationExports;
 using Informapp.InformSystem.IntegrationTool.Core.Requires;
 using Informapp.InformSystem.IntegrationTool.Core.Resources;
+using Informapp.InformSystem.WebApi.Client.Clients;
+using Informapp.InformSystem.WebApi.Client.Responses;
+using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;

@@ -1,7 +1,7 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.Configuration;
 using Informapp.InformSystem.IntegrationTool.Core.Configurations;
 using Informapp.InformSystem.IntegrationTool.Core.Requires;
+using Informapp.InformSystem.WebApi.Client.Configuration;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using System.IO;

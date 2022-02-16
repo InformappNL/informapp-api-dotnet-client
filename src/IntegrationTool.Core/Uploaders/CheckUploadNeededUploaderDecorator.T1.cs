@@ -1,6 +1,6 @@
-﻿using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.IntegrationTool.Core.Queries;
+﻿using Informapp.InformSystem.IntegrationTool.Core.Queries;
 using Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload;
+using Informapp.InformSystem.WebApi.Client.Decorators;
 using System.Threading;
 using System.Threading.Tasks;
 

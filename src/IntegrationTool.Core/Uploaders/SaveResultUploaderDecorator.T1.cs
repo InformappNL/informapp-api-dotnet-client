@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Client.DateTimeProviders;
-using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.IntegrationTool.Core.DataContexts;
+﻿using Informapp.InformSystem.IntegrationTool.Core.DataContexts;
 using Informapp.InformSystem.IntegrationTool.Core.Queries;
 using Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile;
+using Informapp.InformSystem.WebApi.Client.DateTimeProviders;
+using Informapp.InformSystem.WebApi.Client.Decorators;
 using System;
 using System.Linq;
 using System.Threading;

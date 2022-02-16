@@ -1,6 +1,6 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.Assemblies;
 using Informapp.InformSystem.IntegrationTool.Core.Uploaders;
+using Informapp.InformSystem.WebApi.Client.Assemblies;
 using System;
 using System.Linq;
 

@@ -1,5 +1,5 @@
-﻿using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.IntegrationTool.Core.DataContexts;
+﻿using Informapp.InformSystem.IntegrationTool.Core.DataContexts;
+using Informapp.InformSystem.WebApi.Client.Decorators;
 using System.Threading;
 using System.Threading.Tasks;
 

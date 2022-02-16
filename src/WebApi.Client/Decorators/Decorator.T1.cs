@@ -1,4 +1,3 @@
-﻿
 namespace Informapp.InformSystem.WebApi.Client.Decorators
 {
     /// <summary>

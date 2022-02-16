@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Client.Clients;
+﻿using Informapp.InformSystem.IntegrationTool.Core.Loggers;
+using Informapp.InformSystem.WebApi.Client.Clients;
 using Informapp.InformSystem.WebApi.Client.Decorators;
 using Informapp.InformSystem.WebApi.Client.Requests;
 using Informapp.InformSystem.WebApi.Client.Responses;
 using Informapp.InformSystem.WebApi.Models.Requests;
-using Informapp.InformSystem.IntegrationTool.Core.Loggers;
 using System.Threading;
 using System.Threading.Tasks;
 

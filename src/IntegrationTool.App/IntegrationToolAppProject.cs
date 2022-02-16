@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Client;
+﻿using Informapp.InformSystem.IntegrationTool.Core;
+using Informapp.InformSystem.WebApi.Client;
 using Informapp.InformSystem.WebApi.Client.RestSharp;
 using Informapp.InformSystem.WebApi.Models;
-using Informapp.InformSystem.IntegrationTool.Core;
 
 namespace Informapp.InformSystem.IntegrationTool.App
 {

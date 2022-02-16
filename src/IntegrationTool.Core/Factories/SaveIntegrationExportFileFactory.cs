@@ -1,5 +1,5 @@
-﻿using Informapp.InformSystem.WebApi.Client.DateTimeProviders;
-using Informapp.InformSystem.IntegrationTool.Core.Configurations;
+﻿using Informapp.InformSystem.IntegrationTool.Core.Configurations;
+using Informapp.InformSystem.WebApi.Client.DateTimeProviders;
 using Microsoft.Extensions.Options;
 using System.Globalization;
 using System.IO.Abstractions;

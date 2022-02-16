@@ -1,6 +1,6 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.Assemblies;
 using Informapp.InformSystem.IntegrationTool.App.AppStart;
+using Informapp.InformSystem.WebApi.Client.Assemblies;
 
 namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
