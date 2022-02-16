@@ -6,7 +6,7 @@ namespace Informapp.InformSystem.WebApi.Client.Sample
     /// <summary>
     /// Dummy class to reference this assembly
     /// </summary>
-    public static class WebApiClientSampleProject
+    public sealed class WebApiClientSampleProject
     {
         /// <summary>
         /// Dummy method, calling this will load its assembly
