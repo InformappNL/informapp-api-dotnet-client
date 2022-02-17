@@ -9,9 +9,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("InformSystem.WebApi.Client.RestSharp")]
 [assembly: AssemblyDescription("RestSharp implementation of the API client")]
 [assembly: AssemblyConfiguration("")]
-//[assembly: AssemblyCompany("Informapp B.V.")]
+//[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("InformSystem.WebApi.Client.RestSharp")]
-//[assembly: AssemblyCopyright("Copyright ©  2018 Informapp B.V.")]
+//[assembly: AssemblyCopyright("")]
 //[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

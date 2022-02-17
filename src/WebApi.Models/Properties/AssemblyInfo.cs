@@ -9,9 +9,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("InformSystem.WebApi.Models")]
 [assembly: AssemblyDescription("The request and response models used by the API")]
 [assembly: AssemblyConfiguration("")]
-//[assembly: AssemblyCompany("Informapp B.V.")]
+//[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("InformSystem.WebApi.Models")]
-//[assembly: AssemblyCopyright("Copyright ©  2018 Informapp B.V.")]
+//[assembly: AssemblyCopyright("")]
 //[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

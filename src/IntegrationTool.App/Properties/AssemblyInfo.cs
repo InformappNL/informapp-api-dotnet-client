@@ -8,11 +8,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("InformSystem.IntegrationTool.App")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("The integration tool")]
 [assembly: AssemblyConfiguration("")]
 //[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("InformSystem.IntegrationTool.App")]
-//[assembly: AssemblyCopyright("Copyright ©  2020")]
+//[assembly: AssemblyCopyright("")]
 //[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

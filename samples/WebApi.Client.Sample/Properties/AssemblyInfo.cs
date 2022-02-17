@@ -9,9 +9,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("InformSystem.WebApi.Client.Sample")]
 [assembly: AssemblyDescription("Sample project how to use the API client")]
 [assembly: AssemblyConfiguration("")]
-//[assembly: AssemblyCompany("Informapp B.V.")]
+//[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("InformSystem.WebApi.Client.Sample")]
-//[assembly: AssemblyCopyright("Copyright ©  2018 Informapp B.V.")]
+//[assembly: AssemblyCopyright("")]
 //[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
