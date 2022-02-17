@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Loggers;
-using Informapp.InformSystem.WebApi.Client.Decorators;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Loggers;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
 using System;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Factories
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Factories
 {
     /// <summary>
     /// Log exception factory decorator

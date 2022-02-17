@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Models.ExampleValues;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.ExampleValues;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.Errors
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.Errors
 {
     public partial class BadRequestV1Response : IExampleMemberProvider
     {

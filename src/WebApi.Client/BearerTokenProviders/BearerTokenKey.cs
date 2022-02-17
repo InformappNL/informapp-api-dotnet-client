@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
 using System;
 
-namespace Informapp.InformSystem.WebApi.Client.BearerTokenProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.BearerTokenProviders
 {
     /// <summary>
     /// DTO class to act as key for caching bearer tokens

@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Configurations;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Configurations;
 using Microsoft.Extensions.Options;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Factories
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Factories
 {
     /// <summary>
     /// Heatbeat configuration dictionary factory cleanup folder interceptor

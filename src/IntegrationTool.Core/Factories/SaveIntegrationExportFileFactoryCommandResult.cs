@@ -1,4 +1,4 @@
-﻿namespace Informapp.InformSystem.IntegrationTool.Core.Factories
+﻿namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Factories
 {
     /// <summary>
     /// Result for save integration export file factory

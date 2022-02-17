@@ -1,15 +1,15 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Configurations;
-using Informapp.InformSystem.IntegrationTool.Core.DataContexts;
-using Informapp.InformSystem.IntegrationTool.Core.IntegrationImports;
-using Informapp.InformSystem.IntegrationTool.Core.Requires;
-using Informapp.InformSystem.IntegrationTool.Core.Resources;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Configurations;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.DataContexts;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationImports;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Requires;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Resources;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Jobs
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Jobs
 {
     /// <summary>
     /// Upload integration import job handler

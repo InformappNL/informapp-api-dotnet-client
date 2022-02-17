@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
-using Informapp.InformSystem.WebApi.Client.Responses;
-using Informapp.InformSystem.WebApi.Models.Requests;
-using Informapp.InformSystem.WebApi.Models.Version1.Files;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Responses;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Requests;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.Files;
 
-namespace Informapp.InformSystem.WebApi.Client.Files
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Files
 {
     /// <summary>
     /// Download file mapper class for version 1 responses

@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Informapp.InformSystem.WebApi.Client.Assemblies
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Assemblies
 {
     /// <summary>
     /// Assembly provider class

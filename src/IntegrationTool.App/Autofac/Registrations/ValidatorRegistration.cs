@@ -1,7 +1,7 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.Validators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Validators;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register dependencies in Autofac

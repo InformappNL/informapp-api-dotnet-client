@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Informapp.InformSystem.WebApi.Models.Version2.Files
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version2.Files
 {
     internal static class UploadFileV2Request
     {

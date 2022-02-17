@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.IntegrationTool.Core.Factories
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Factories
 {
     /// <summary>
     /// Factory interceptor abstraction

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.MoveFile
 {
     /// <summary>
     /// Command to initiate moving a file

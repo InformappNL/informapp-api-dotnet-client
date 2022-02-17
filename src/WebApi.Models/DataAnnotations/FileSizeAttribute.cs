@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 using System.IO;
 
-namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.DataAnnotations
 {
     /// <summary>
     /// File size validation attribute class

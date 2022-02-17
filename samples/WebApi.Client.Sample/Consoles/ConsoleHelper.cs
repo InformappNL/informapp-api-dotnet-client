@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Consoles
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Consoles
 {
     internal static class ConsoleHelper
     {

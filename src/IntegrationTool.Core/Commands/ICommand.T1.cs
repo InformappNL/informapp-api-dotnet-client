@@ -1,4 +1,4 @@
-﻿namespace Informapp.InformSystem.IntegrationTool.Core.Commands
+﻿namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands
 {
     /// <summary>
     /// Generic ICommand interface

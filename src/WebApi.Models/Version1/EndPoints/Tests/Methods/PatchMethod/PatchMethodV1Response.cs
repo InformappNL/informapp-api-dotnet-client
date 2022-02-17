@@ -1,10 +1,10 @@
-﻿using Informapp.InformSystem.WebApi.Models.ExampleValues;
-using Informapp.InformSystem.WebApi.Models.Http;
-using Informapp.InformSystem.WebApi.Models.Requests;
-using Informapp.InformSystem.WebApi.Models.Version1.Constants;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.ExampleValues;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Http;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Requests;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.Constants;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Methods.PatchMethod
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Methods.PatchMethod
 {
     /// <summary>
     /// Patch method response

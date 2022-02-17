@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Client.Exceptions
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Exceptions
 {
     /// <summary>
     /// Represents errors that occur during API requests

@@ -1,7 +1,7 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.Disposables;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Disposables;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register disposable resources in Autofac

@@ -1,12 +1,12 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Resources;
-using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Pings;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Resources;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Pings;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Applications
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Applications
 {
     /// <summary>
     /// Api available application decorator

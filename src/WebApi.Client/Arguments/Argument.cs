@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
-namespace Informapp.InformSystem.WebApi.Client.Arguments
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Arguments
 {
     /// <summary>
     /// Static class with methods to ensure conditions for arguments are true

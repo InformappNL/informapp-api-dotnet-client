@@ -1,4 +1,4 @@
-﻿namespace Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile
+﻿namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile
 {
     /// <summary>
     /// Enum for save file result

@@ -1,7 +1,7 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.MimeMappers;
+using ConnectedDevelopment.InformSystem.WebApi.Client.MimeMappers;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register mime mapper in Autofac

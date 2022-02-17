@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Informapp.InformSystem.WebApi.Models.Version2.Files
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version2.Files
 {
     /// <summary>
     /// Upload file request

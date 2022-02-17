@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Informapp.InformSystem.WebApi.Models.Requests
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Requests
 {
     /// <summary>
     /// Specify a request can be done anonymously

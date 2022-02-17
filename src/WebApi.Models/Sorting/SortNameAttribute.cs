@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Models.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Arguments;
 using System;
 
-namespace Informapp.InformSystem.WebApi.Models.Sorting
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Sorting
 {
     /// <summary>
     /// Set sort name

@@ -1,13 +1,13 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.Caches;
-using Informapp.InformSystem.WebApi.Client.Caches.Decorators;
-using Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories;
-using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Caches;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Caches.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Arguments;
 using RestSharp;
 using System;
 using System.Collections.Concurrent;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Autofac.Registrations
 {
     /// <summary>
     /// Register dependencies in Autofac

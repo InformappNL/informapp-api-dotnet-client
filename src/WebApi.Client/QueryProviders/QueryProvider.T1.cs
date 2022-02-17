@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
-using Informapp.InformSystem.WebApi.Client.DictionaryBuilders;
-using Informapp.InformSystem.WebApi.Client.QueryStrings;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.DictionaryBuilders;
+using ConnectedDevelopment.InformSystem.WebApi.Client.QueryStrings;
 using System;
 
-namespace Informapp.InformSystem.WebApi.Client.QueryStringProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.QueryStringProviders
 {
     /// <summary>
     /// Retrieve query string for a class

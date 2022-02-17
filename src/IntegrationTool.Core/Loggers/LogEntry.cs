@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Loggers
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Loggers
 {
     /// <summary>
     /// Log entry class

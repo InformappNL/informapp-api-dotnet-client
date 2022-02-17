@@ -1,10 +1,10 @@
-﻿using Informapp.InformSystem.IntegrationTool.App.Resources;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.App.Resources;
 using System;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.App
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App
 {
     internal static class Program
     {

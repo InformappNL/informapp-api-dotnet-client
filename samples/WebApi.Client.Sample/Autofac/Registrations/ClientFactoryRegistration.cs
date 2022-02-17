@@ -1,10 +1,10 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories;
-using Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators;
-using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Arguments;
 using System;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Autofac.Registrations
 {
     /// <summary>
     /// Register dependencies in Autofac

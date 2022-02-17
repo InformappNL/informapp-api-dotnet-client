@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Client.RestSharp
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp
 {
     internal static class Await
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Informapp.InformSystem.WebApi.Client.DictionaryBuilders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.DictionaryBuilders
 {
     /// <summary>
     /// Generic interface to build a dictionary from an object

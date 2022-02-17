@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Models.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Arguments;
 using Newtonsoft.Json;
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.DataAnnotations
 {
     /// <summary>
     /// Specifies that a string field must be in valid Json format.

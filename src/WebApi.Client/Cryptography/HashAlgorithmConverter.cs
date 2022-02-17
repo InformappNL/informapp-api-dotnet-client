@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Client.Converters;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Converters;
 using System;
 using System.Security.Cryptography;
 
-namespace Informapp.InformSystem.WebApi.Client.Cryptography
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Cryptography
 {
     /// <summary>
     /// Implementation of <see cref="IConverter{TSource, TResult}"/>

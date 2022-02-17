@@ -1,10 +1,10 @@
 ﻿using Autofac;
-using Informapp.InformSystem.IntegrationTool.App.Autofac;
-using Informapp.InformSystem.IntegrationTool.Core.Applications;
+using ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Applications;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.App
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App
 {
     /// <summary>
     /// Console application

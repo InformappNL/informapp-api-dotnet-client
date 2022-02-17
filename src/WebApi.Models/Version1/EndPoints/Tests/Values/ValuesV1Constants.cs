@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values
 {
     internal static class ValuesV1Constants
     {

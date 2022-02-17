@@ -1,10 +1,10 @@
-﻿using Informapp.InformSystem.WebApi.Models.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Arguments;
 using System;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Models.ExampleValues
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.ExampleValues
 {
     internal class ExampleStream : ExampleStreamBase,
         IExampleStream,

@@ -1,11 +1,11 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
-using Informapp.InformSystem.WebApi.Client.Decorators;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
 using System;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.Streams
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Streams
 {
     internal abstract class StreamDecoratorBase<T> : Stream,
         IDecorator<Stream>,

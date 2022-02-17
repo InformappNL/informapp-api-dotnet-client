@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Applications
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Applications
 {
     /// <summary>
     /// Application abstraction

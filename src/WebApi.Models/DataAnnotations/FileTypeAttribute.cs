@@ -1,4 +1,4 @@
-﻿using Informapp.InformSystem.WebApi.Models.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Arguments;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -7,7 +7,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.DataAnnotations
 {
     /// <summary>
     /// File type validation attribute class

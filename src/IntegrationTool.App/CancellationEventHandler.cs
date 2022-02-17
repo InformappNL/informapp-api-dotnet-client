@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.IntegrationTool.App.Resources;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.App.Resources;
 using System;
 using System.Threading;
 
-namespace Informapp.InformSystem.IntegrationTool.App
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App
 {
     /// <summary>
     /// Cancellation event handler

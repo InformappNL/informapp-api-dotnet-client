@@ -1,5 +1,5 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Configurations;
-using Informapp.InformSystem.IntegrationTool.Core.IO;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Configurations;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.IO;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using System;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.DataContexts
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.DataContexts
 {
     /// <summary>
     /// Data context implementation

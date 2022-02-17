@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Client.Decorators
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Decorators
 {
     /// <summary>
     /// Generic Interface for decorators

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile
 {
     /// <summary>
     /// Result after saving the file

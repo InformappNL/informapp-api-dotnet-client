@@ -1,6 +1,6 @@
-﻿using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Factories
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Factories
 {
     /// <summary>
     /// Factory for creating a heartbeat request

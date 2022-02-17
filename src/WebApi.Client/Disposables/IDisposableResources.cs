@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Informapp.InformSystem.WebApi.Client.Disposables
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Disposables
 {
     /// <summary>
     /// Represents a collection of <see cref="IDisposable"/> resources

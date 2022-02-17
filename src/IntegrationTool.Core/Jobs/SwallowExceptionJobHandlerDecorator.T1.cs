@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Client.Decorators;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Jobs
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Jobs
 {
     /// <summary>
     /// Swallow exception job handler decorator

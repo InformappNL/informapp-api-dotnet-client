@@ -1,16 +1,16 @@
-﻿using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Client.Requests;
-using Informapp.InformSystem.WebApi.Client.Responses;
-using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
-using Informapp.InformSystem.WebApi.Client.Sample.Requires;
-using Informapp.InformSystem.WebApi.Models.Http;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.GetAppUser;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.ListAppUser;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Requests;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Responses;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Requires;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Http;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.GetAppUser;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.ListAppUser;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.AppUsers
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Examples.AppUsers
 {
     /// <summary>
     /// Example for get app user

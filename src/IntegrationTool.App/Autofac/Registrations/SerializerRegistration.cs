@@ -1,9 +1,9 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.RestSharp.Serializers;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Serializers;
 
 using RestSharp.Serialization;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register serializer in Autofac

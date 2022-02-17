@@ -1,8 +1,8 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.PathProviders;
+using ConnectedDevelopment.InformSystem.WebApi.Client.PathProviders;
 
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register path provider in Autofac

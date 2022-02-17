@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Models.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Arguments;
 using System.Collections.Generic;
 
-namespace Informapp.InformSystem.WebApi.Models.ExampleValues
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.ExampleValues
 {
     internal class ExampleValuesContainer : IExampleMemberProvider
     {

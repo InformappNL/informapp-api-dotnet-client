@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Models.Version2.Constants
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version2.Constants
 {
     internal static class Version2Examples
     {

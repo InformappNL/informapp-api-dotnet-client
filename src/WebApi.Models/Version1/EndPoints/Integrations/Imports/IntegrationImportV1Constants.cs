@@ -1,5 +1,5 @@
 ﻿#pragma warning disable //CA1716 Rename namespace
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports
 #pragma warning restore //CA1716 Rename namespace
 {
     /// <summary>

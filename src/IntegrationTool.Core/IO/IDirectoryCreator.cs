@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IO
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IO
 {
     /// <summary>
     /// Directory creator interface

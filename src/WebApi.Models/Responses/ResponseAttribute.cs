@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Models.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Arguments;
 using System;
 using System.Net;
 
-namespace Informapp.InformSystem.WebApi.Models.Responses
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Responses
 {
     /// <summary>
     /// Indicates per <see cref="HttpStatusCode"/> the model type

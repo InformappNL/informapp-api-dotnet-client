@@ -1,10 +1,10 @@
-﻿using Informapp.InformSystem.WebApi.Client.Requests;
-using Informapp.InformSystem.WebApi.Client.Responses;
-using Informapp.InformSystem.WebApi.Models.Requests;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Requests;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Responses;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Requests;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.Clients
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Clients
 {
     /// <summary>
     /// Generic interface for API client

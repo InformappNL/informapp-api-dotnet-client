@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Models.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Arguments;
 using System;
 
-namespace Informapp.InformSystem.WebApi.Models.Http
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Http
 {
     /// <summary>
     /// Set path for a request class

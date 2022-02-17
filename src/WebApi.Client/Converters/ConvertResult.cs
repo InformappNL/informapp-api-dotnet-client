@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Client.Converters
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Converters
 {
     /// <summary>
     /// Static class aiding in creation of <see cref="ConvertResult{T}"/> objects

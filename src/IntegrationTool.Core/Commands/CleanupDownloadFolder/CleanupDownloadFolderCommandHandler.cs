@@ -1,4 +1,4 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Configurations;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Configurations;
 using Microsoft.Extensions.Options;
 using System;
 using System.IO;
@@ -7,7 +7,7 @@ using System.Security;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder
 {
     /// <summary>
     /// Command handler for cleaning up the download folder

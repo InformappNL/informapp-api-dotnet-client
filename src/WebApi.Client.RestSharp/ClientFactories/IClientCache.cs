@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Client.Caches;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Caches;
 using RestSharp;
 using System;
 
-namespace Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories
 {
     /// <summary>
     /// Cache clients

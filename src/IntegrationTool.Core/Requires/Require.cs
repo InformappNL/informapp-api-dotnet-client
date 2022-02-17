@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Requires
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Requires
 {
     /// <summary>
     /// Generic Require{T} methods

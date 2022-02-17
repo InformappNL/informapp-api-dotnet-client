@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Informapp.InformSystem.WebApi.Client.DataAnnotations
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.DataAnnotations
 {
     /// <summary>
     /// Specifies that a string or URI field must be a relative URI.

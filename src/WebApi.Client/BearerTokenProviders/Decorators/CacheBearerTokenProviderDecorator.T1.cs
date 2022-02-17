@@ -1,13 +1,13 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
-using Informapp.InformSystem.WebApi.Client.Converters;
-using Informapp.InformSystem.WebApi.Client.DateTimeProviders;
-using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.WebApi.Client.Requests;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Converters;
+using ConnectedDevelopment.InformSystem.WebApi.Client.DateTimeProviders;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Requests;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.BearerTokenProviders.Decorators
 {
     /// <summary>
     /// Decorator class for <see cref="IBearerTokenProvider{T}"/> to cache bearer tokens

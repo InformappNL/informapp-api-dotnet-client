@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
-using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.WebApi.Client.Validators;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Validators;
 using Microsoft.Extensions.Options;
 
-namespace Informapp.InformSystem.WebApi.Client.Configuration
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Configuration
 {
     /// <summary>
     /// Used to validate retrieved configured <typeparamref name="TOptions"/> instances.

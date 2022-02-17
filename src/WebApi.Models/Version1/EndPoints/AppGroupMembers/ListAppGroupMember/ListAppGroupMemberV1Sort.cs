@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Models.Sorting;
-using Informapp.InformSystem.WebApi.Models.Version1.Constants;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Sorting;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.Constants;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMembers.ListAppGroupMember
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMembers.ListAppGroupMember
 {
     /// <summary>
     /// Sort app group members

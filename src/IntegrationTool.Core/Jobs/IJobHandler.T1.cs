@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Jobs
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Jobs
 {
     /// <summary>
     /// Generic job handler abstraction

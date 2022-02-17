@@ -1,7 +1,7 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.MethodProviders;
+using ConnectedDevelopment.InformSystem.WebApi.Client.MethodProviders;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register method provider in Autofac

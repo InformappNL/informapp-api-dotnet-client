@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 
-namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.DataAnnotations
 {
     /// <summary>
     /// Require unique items on <see cref="IEnumerable{T}"/> properties and fields

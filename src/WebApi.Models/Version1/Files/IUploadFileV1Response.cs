@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Models.Version1.Files
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.Files
 {
     /// <summary>
     /// Upload file response

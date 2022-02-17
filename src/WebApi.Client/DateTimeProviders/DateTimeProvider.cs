@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Informapp.InformSystem.WebApi.Client.DateTimeProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.DateTimeProviders
 {
     /// <summary>
     /// Implementation of <see cref="IDateTimeProvider"/>

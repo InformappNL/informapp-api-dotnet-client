@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Models.Version1.Constants;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.Constants;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData
 {
     /// <summary>
     /// The kind of data

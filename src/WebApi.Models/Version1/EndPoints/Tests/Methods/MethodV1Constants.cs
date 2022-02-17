@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Methods
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Methods
 {
     internal static class MethodV1Constants
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationStats
 {
     internal static class FormRegistrationStatsV1Constants
     {

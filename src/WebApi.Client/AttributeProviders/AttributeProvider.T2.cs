@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Informapp.InformSystem.WebApi.Client.AttributeProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.AttributeProviders
 {
     /// <summary>
     /// Generic provider interface to retrieve class level attributes

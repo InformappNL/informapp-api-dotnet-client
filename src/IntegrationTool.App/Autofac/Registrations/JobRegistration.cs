@@ -1,7 +1,7 @@
 ﻿using Autofac;
-using Informapp.InformSystem.IntegrationTool.Core.Jobs;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Jobs;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register jobs in Autofac

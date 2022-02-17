@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Models.Version1.Constants;
-using Informapp.InformSystem.WebApi.Models.Version1.Filters;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.Constants;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.Filters;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData.ListFormRegistrationData
 {
     /// <summary>
     /// List form registration data request filter

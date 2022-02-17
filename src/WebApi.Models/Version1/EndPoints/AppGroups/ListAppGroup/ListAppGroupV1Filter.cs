@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Models.Version1.Constants;
-using Informapp.InformSystem.WebApi.Models.Version1.Filters;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.Constants;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.Filters;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.ListAppGroup
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.ListAppGroup
 {
     /// <summary>
     /// List app group request filter

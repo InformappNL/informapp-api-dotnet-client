@@ -1,7 +1,7 @@
 ﻿using Autofac;
 using System.IO.Abstractions;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register path in Autofac

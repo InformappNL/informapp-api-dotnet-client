@@ -1,13 +1,13 @@
-﻿using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Client.Responses;
-using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Responses;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.DownloadTestFile;
 using System;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Examples.Tests.Files
 {
     /// <summary>
     /// Example for download test file

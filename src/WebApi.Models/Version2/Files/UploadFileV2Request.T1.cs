@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Informapp.InformSystem.WebApi.Models.Version2.Files
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version2.Files
 {
     internal class UploadFileV2Request<T> : IUploadFileV2Request
         where T : class, IDisposable

@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.WebApi.Client.Validators;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Validators;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationImports
 {
     /// <summary>
     /// Validate queue integration import decorator

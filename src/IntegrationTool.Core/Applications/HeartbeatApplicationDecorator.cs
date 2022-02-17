@@ -1,15 +1,15 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Configurations;
-using Informapp.InformSystem.IntegrationTool.Core.Factories;
-using Informapp.InformSystem.IntegrationTool.Core.Requires;
-using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.WebApi.Client.Responses;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Configurations;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Factories;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Requires;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Responses;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats;
 using Microsoft.Extensions.Options;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Applications
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Applications
 {
     /// <summary>
     /// Heartbeat application decorator

@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
 using System;
 using System.Collections.Generic;
 
-namespace Informapp.InformSystem.WebApi.Client.Disposables
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Disposables
 {
     /// <summary>
     /// Represents a collection of <see cref="IDisposable"/> resources

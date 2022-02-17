@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Uploaders.DataSourceFiles
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Uploaders.DataSourceFiles
 {
     /// <summary>
     /// Command to initiate datasource file upload

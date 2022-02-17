@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Logs
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Logs
 {
     internal static class LogV1Constants
     {

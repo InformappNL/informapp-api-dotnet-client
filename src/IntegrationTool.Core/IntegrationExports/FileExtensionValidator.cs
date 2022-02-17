@@ -1,12 +1,12 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Collections;
-using Informapp.InformSystem.IntegrationTool.Core.Requires;
-using Informapp.InformSystem.WebApi.Client.Validators;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Collections;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Requires;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Validators;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.IO.Abstractions;
 using System.Linq;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationExports
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationExports
 {
     /// <summary>
     /// Validates the file extension

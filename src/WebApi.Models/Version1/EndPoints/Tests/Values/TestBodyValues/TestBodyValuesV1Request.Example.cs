@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Models.ExampleValues;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.ExampleValues;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues
 {
     public partial class TestBodyValuesV1Request : IExampleMemberProvider
     {

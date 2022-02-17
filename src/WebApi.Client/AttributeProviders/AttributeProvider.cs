@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
-using Informapp.InformSystem.WebApi.Client.Requires;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Requires;
 using System;
 
-namespace Informapp.InformSystem.WebApi.Client.AttributeProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.AttributeProviders
 {
     /// <summary>
     /// Static factory class for creating instances of <see cref="IAttributeProvider{TType, TAttribute}"/>

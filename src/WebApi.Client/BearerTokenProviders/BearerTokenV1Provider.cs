@@ -1,13 +1,13 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
-using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Client.Requests;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.OAuth2Token;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Requests;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.OAuth2Token;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.BearerTokenProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.BearerTokenProviders
 {
     /// <summary>
     /// Provider class for bearer tokens

@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Forms
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Forms
 {
     internal static class FormV1Constants
     {

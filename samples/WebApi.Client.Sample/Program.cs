@@ -1,10 +1,10 @@
-﻿using Informapp.InformSystem.WebApi.Client.Sample.Autofac;
-using Informapp.InformSystem.WebApi.Client.Sample.Consoles;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Autofac;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Consoles;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample
 {
     internal static class Program
     {

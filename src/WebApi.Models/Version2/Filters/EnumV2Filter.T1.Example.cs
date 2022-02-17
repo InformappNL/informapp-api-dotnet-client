@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Models.ExampleValues;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.ExampleValues;
 using System;
 using System.Diagnostics;
 using System.Linq;
 
-namespace Informapp.InformSystem.WebApi.Models.Version2.Filters
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version2.Filters
 {
     public partial class EnumV2Filter<T> : IExampleMemberProvider
     {

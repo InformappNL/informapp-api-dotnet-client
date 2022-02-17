@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Models.Sorting
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Sorting
 {
     /// <summary>
     /// Sort direction

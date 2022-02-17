@@ -1,6 +1,6 @@
 ﻿using System.IO.Abstractions;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IO
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IO
 {
     /// <summary>
     /// File info factory

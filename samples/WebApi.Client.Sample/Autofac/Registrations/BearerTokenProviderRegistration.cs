@@ -1,13 +1,13 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.Assemblies;
-using Informapp.InformSystem.WebApi.Client.BearerTokenProviders;
-using Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators;
-using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
-using Informapp.InformSystem.WebApi.Client.Sample.BearerTokenProviders;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Assemblies;
+using ConnectedDevelopment.InformSystem.WebApi.Client.BearerTokenProviders;
+using ConnectedDevelopment.InformSystem.WebApi.Client.BearerTokenProviders.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.BearerTokenProviders;
 using System;
 using System.Linq;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Autofac.Registrations
 {
     /// <summary>
     /// Register dependencies in Autofac

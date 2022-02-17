@@ -1,11 +1,11 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Enums;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Enums;
 using log4net;
 using System;
 using System.Globalization;
 
 // http://www.codeproject.com/Articles/140911/log-net-Tutorial
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Loggers
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Loggers
 {
     /// <summary>
     /// Logger class

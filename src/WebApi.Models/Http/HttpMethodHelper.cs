@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Informapp.InformSystem.WebApi.Models.Http
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Http
 {
     /// <summary>
     /// Static helper class for <see cref="HttpMethod"/>

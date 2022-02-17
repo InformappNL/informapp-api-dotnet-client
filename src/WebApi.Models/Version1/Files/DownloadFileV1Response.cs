@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.Files
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.Files
 {
     internal static class DownloadFileV1Response
     {

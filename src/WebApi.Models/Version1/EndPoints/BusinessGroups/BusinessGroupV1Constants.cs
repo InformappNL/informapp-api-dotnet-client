@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroups
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.BusinessGroups
 {
     internal static class BusinessGroupV1Constants
     {

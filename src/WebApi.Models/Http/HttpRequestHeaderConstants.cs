@@ -1,4 +1,4 @@
-﻿namespace Informapp.InformSystem.WebApi.Models.Http
+﻿namespace ConnectedDevelopment.InformSystem.WebApi.Models.Http
 {
     // Source: https://stackoverflow.com/questions/11037004/are-there-any-constants-for-the-default-http-headers
     /// <summary>

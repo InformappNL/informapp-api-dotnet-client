@@ -1,12 +1,12 @@
-﻿using Informapp.InformSystem.WebApi.Models.ExampleValues;
-using Informapp.InformSystem.WebApi.Models.Requests;
-using Informapp.InformSystem.WebApi.Models.Version1.Constants;
-using Informapp.InformSystem.WebApi.Models.Version1.Files;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.ExampleValues;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Requests;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.Constants;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.Files;
 using System;
 using System.IO;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports
 {
     /// <summary>
     /// Download integration export response

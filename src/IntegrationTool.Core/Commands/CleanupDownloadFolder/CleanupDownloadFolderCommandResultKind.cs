@@ -1,4 +1,4 @@
-﻿namespace Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder
+﻿namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder
 {
     /// <summary>
     /// Enum for cleanup result

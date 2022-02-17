@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Client.Converters
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Converters
 {
     /// <summary>
     /// Generic interface for converting values to another type

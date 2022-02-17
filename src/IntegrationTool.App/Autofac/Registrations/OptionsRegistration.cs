@@ -1,12 +1,12 @@
 ﻿using Autofac;
-using Informapp.InformSystem.IntegrationTool.Core.Configurations;
-using Informapp.InformSystem.IntegrationTool.Core.Requires;
-using Informapp.InformSystem.WebApi.Client.Configuration;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Configurations;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Requires;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Configuration;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using System.IO;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register options in Autofac

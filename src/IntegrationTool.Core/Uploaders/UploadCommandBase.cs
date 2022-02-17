@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Uploaders
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Uploaders
 {
     /// <summary>
     /// Base class for upload command

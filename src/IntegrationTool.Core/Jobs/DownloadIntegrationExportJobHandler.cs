@@ -1,17 +1,17 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Configurations;
-using Informapp.InformSystem.IntegrationTool.Core.IntegrationExports;
-using Informapp.InformSystem.IntegrationTool.Core.Requires;
-using Informapp.InformSystem.IntegrationTool.Core.Resources;
-using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Client.Responses;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Configurations;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationExports;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Requires;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Resources;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Responses;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Jobs
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Jobs
 {
     /// <summary>
     /// Download integration export hangfire job handler

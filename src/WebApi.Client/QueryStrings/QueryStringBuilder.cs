@@ -1,5 +1,5 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
-using Informapp.InformSystem.WebApi.Client.HashCodes;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.HashCodes;
 using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.WebUtilities;
 using Newtonsoft.Json;
@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 
-namespace Informapp.InformSystem.WebApi.Client.QueryStrings
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.QueryStrings
 {
     /// <summary>
     /// Build a query string

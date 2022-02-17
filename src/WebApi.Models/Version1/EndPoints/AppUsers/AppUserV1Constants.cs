@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.DeleteAppUser;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.GetAppUser;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.DeleteAppUser;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers.GetAppUser;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.AppUsers
 {
     internal static class AppUserV1Constants
     {

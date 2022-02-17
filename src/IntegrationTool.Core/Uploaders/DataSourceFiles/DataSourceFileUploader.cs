@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Uploaders.DataSourceFiles
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Uploaders.DataSourceFiles
 {
     /// <summary>
     /// Datasource file uploader

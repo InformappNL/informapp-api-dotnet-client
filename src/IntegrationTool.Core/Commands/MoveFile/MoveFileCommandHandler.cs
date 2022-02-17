@@ -1,11 +1,11 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.IO;
-using Informapp.InformSystem.IntegrationTool.Core.Requires;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.IO;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Requires;
 using System.IO;
 using System.IO.Abstractions;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.MoveFile
 {
     /// <summary>
     /// Command handler for moving a file

@@ -1,10 +1,10 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile;
-using Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams;
-using Informapp.InformSystem.IntegrationTool.Core.Factories;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.MoveFile;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Factories;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile
 {
     /// <summary>
     /// Command handler for saving a file received from an export

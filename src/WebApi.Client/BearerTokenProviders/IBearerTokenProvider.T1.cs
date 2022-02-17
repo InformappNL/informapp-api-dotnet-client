@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Client.Requests;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Requests;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.BearerTokenProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.BearerTokenProviders
 {
     /// <summary>
     /// Provider generic interface for bearer tokens

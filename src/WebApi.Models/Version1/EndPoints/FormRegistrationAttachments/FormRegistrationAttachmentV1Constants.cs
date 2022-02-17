@@ -1,6 +1,6 @@
-﻿using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments.Download;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments.Download;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments
 {
     internal static class FormRegistrationAttachmentV1Constants
     {

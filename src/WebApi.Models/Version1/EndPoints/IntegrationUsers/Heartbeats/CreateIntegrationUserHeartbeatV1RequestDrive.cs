@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Models.ExampleValues;
-using Informapp.InformSystem.WebApi.Models.Version1.Constants;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.ExampleValues;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.Constants;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.IntegrationUsers.Heartbeats
 {
     /// <summary>
     /// Drive

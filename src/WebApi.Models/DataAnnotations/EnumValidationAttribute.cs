@@ -1,10 +1,10 @@
-﻿using Informapp.InformSystem.WebApi.Models.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Arguments;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 
-namespace Informapp.InformSystem.WebApi.Models.DataAnnotations
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.DataAnnotations
 {
     /// <summary>
     /// Enum validation attribute class

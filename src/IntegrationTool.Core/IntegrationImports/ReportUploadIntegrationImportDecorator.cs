@@ -1,11 +1,11 @@
-﻿using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationImports
 {
     /// <summary>
     /// Decorator class for <see cref="IUploadIntegrationImportCommandHandler"/> to report status for an upload from integration import

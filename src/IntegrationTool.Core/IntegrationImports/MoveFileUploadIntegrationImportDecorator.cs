@@ -1,11 +1,11 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Configurations;
-using Informapp.InformSystem.WebApi.Client.Decorators;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Configurations;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
 using Microsoft.Extensions.Options;
 using System.IO.Abstractions;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationImports
 {
     /// <summary>
     /// Decorator class for <see cref="IUploadIntegrationImportCommandHandler"/> to move file after upload

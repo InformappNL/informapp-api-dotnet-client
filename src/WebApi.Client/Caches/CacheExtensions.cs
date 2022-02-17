@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
 using System;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.Caches
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Caches
 {
     /// <summary>
     /// Extensions for <see cref="ICache{TKey, TValue}"/>

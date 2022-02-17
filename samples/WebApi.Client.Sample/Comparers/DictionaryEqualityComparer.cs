@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Comparers
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Comparers
 {
     internal class DictionaryEqualityComparer
     {

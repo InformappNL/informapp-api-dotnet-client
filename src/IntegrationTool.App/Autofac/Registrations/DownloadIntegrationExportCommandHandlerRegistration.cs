@@ -1,7 +1,7 @@
 ﻿using Autofac;
-using Informapp.InformSystem.IntegrationTool.Core.IntegrationExports;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationExports;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register download integration export command handler in Autofac

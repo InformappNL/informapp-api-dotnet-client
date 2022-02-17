@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.IO;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile
 {
     /// <summary>
     /// Command to save a file received from an export

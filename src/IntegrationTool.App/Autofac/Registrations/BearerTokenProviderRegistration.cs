@@ -1,11 +1,11 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.Assemblies;
-using Informapp.InformSystem.WebApi.Client.BearerTokenProviders;
-using Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Assemblies;
+using ConnectedDevelopment.InformSystem.WebApi.Client.BearerTokenProviders;
+using ConnectedDevelopment.InformSystem.WebApi.Client.BearerTokenProviders.Decorators;
 using System;
 using System.Linq;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register bearer token provider in Autofac

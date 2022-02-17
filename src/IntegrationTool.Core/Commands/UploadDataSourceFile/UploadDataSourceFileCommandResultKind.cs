@@ -1,4 +1,4 @@
-﻿namespace Informapp.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile
+﻿namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile
 {
     /// <summary>
     /// Enum for upload datasource file result

@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Client.Cryptography;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Cryptography;
 using System.IO;
 
-namespace Informapp.InformSystem.WebApi.Client.Requests
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Requests
 {
     /// <summary>
     /// Api upload file request

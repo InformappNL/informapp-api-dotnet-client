@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationImports
 {
     /// <summary>
     /// Result after uploading integration import

@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Models.Version2.EndPoints.OAuth2
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version2.EndPoints.OAuth2
 {
     /// <summary>
     /// OAuth constants

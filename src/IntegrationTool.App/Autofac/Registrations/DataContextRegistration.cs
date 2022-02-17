@@ -1,7 +1,7 @@
 ﻿using Autofac;
-using Informapp.InformSystem.IntegrationTool.Core.DataContexts;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.DataContexts;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register data context in Autofac

@@ -1,12 +1,12 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.Configuration;
-using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
-using Informapp.InformSystem.WebApi.Client.Sample.Requires;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Configuration;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Requires;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using System.IO;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Autofac.Registrations
 {
     /// <summary>
     /// Register dependencies in Autofac

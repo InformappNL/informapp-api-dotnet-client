@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Requests
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Requests
 {
     /// <summary>
     /// Base request

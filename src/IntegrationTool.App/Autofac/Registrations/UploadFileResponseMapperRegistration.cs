@@ -1,8 +1,8 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.Files;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Files;
 
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register upload file response mapper in Autofac

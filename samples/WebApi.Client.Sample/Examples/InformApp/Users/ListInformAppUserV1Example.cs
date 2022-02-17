@@ -1,13 +1,13 @@
-﻿using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Client.Responses;
-using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
-using Informapp.InformSystem.WebApi.Client.Sample.Requires;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Users.ListUser;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Responses;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Requires;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Users.ListUser;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.InformApp.Users
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Examples.InformApp.Users
 {
     /// <summary>
     /// Example for list app user

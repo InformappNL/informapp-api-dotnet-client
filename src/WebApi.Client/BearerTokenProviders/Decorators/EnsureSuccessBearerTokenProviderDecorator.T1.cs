@@ -1,11 +1,11 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
-using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.WebApi.Client.Exceptions;
-using Informapp.InformSystem.WebApi.Client.Requests;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Exceptions;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Requests;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.BearerTokenProviders.Decorators
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.BearerTokenProviders.Decorators
 {
     /// <summary>
     /// Decorator class for <see cref="IBearerTokenProvider{T}"/> to ensure an access token is returned

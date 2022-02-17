@@ -1,11 +1,11 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Configurations;
-using Informapp.InformSystem.WebApi.Client.Decorators;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Configurations;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
 using Microsoft.Extensions.Options;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationExports
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationExports
 {
     /// <summary>
     /// Decorator class for <see cref="IDownloadIntegrationExportCommandHandler"/> to set configuration and accept download

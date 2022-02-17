@@ -1,11 +1,11 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace Informapp.InformSystem.WebApi.Client.DictionaryBuilders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.DictionaryBuilders
 {
     /// <summary>
     /// Build a dictionary from an object

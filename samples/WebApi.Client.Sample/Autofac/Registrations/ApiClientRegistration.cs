@@ -1,12 +1,12 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Client.Clients.Decorators;
-using Informapp.InformSystem.WebApi.Client.RestSharp.Clients;
-using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
-using Informapp.InformSystem.WebApi.Client.Sample.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Clients.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Clients;
 using System;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Autofac.Registrations
 {
     /// <summary>
     /// Register dependencies in Autofac

@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.WebApi.Client.Validators;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Validators;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Queries
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries
 {
     /// <summary>
     /// Validate query handler decorator

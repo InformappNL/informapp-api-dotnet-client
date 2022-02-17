@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Factories
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Factories
 {
     /// <summary>
     /// Command for the save integration export file factory

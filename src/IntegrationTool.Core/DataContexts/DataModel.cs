@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.DataContexts
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.DataContexts
 {
     internal class DataModel
     {

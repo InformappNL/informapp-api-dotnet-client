@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace Informapp.InformSystem.WebApi.Client.Responses
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Responses
 {
     /// <summary>
     /// Api download file response

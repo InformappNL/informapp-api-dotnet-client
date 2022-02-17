@@ -1,10 +1,10 @@
 ﻿using Autofac;
-using Informapp.InformSystem.IntegrationTool.Core.Uploaders;
-using Informapp.InformSystem.WebApi.Client.Assemblies;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Uploaders;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Assemblies;
 using System;
 using System.Linq;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register uploader in Autofac

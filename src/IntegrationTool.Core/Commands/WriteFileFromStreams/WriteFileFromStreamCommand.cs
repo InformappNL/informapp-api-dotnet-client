@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.IO;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams
 {
     /// <summary>
     /// Command to initiate writing a file from a stream

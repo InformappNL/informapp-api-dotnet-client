@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
 using System.Collections.Generic;
 
-namespace Informapp.InformSystem.WebApi.Client.Caches
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Caches
 {
     /// <summary>
     /// Cache base

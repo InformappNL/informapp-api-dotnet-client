@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace Informapp.InformSystem.WebApi.Client.Streams
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Streams
 {
     internal class ControlDisposalStreamDecorator : StreamDecoratorBase<ControlDisposalStreamDecorator>
     {

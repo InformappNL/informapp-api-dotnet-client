@@ -1,10 +1,10 @@
-﻿using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.WebApi.Client.Requests;
-using Informapp.InformSystem.WebApi.Client.RestSharp.Arguments;
-using Informapp.InformSystem.WebApi.Models.OAuth2;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Requests;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Models.OAuth2;
 using RestSharp;
 
-namespace Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators
 {
     /// <summary>
     /// Decorator class for <see cref="IRequestFactory"/> to set bearer token

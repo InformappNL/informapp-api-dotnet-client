@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Client.Responses;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Responses;
 using System;
 
-namespace Informapp.InformSystem.WebApi.Client.BearerTokenProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.BearerTokenProviders
 {
     /// <summary>
     /// Bearer token model class

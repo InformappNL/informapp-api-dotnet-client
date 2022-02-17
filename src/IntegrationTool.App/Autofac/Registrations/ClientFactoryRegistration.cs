@@ -1,10 +1,10 @@
 ﻿using Autofac;
-using Informapp.InformSystem.IntegrationTool.App.ClientFactories;
-using Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories;
-using Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators;
+using ConnectedDevelopment.InformSystem.IntegrationTool.App.ClientFactories;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators;
 using System;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register client cache factory in Autofac

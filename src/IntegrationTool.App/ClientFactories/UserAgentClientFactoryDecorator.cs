@@ -1,10 +1,10 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core;
-using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.WebApi.Client.Requests;
-using Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Requests;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories;
 using RestSharp;
 
-namespace Informapp.InformSystem.IntegrationTool.App.ClientFactories
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.ClientFactories
 {
     /// <summary>
     /// User agent client factory decorator

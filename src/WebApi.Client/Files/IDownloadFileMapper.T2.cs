@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Client.Responses;
-using Informapp.InformSystem.WebApi.Models.Requests;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Responses;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Requests;
 
-namespace Informapp.InformSystem.WebApi.Client.Files
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Files
 {
     /// <summary>
     /// Download file mapper interface

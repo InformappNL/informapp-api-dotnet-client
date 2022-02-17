@@ -1,10 +1,10 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.BearerTokenProviders;
-using Informapp.InformSystem.WebApi.Client.Caches;
-using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.BearerTokenProviders;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Caches;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Arguments;
 using System.Collections.Concurrent;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Autofac.Registrations
 {
     /// <summary>
     /// Register dependencies in Autofac

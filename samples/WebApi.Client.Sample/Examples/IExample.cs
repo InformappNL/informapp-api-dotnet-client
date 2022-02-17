@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Examples
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Examples
 {
     /// <summary>
     /// Interface for examples

@@ -1,7 +1,7 @@
 ﻿using Autofac;
-using Informapp.InformSystem.IntegrationTool.Core.Loggers;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Loggers;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register application logger in Autofac

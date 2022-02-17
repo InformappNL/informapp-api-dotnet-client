@@ -1,7 +1,7 @@
 ﻿using Autofac;
-using Informapp.InformSystem.IntegrationTool.Core.IntegrationImports;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationImports;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register upload integration import command handler in Autofac

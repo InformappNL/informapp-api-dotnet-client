@@ -1,12 +1,12 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Commands;
-using Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams;
-using Informapp.InformSystem.IntegrationTool.Core.Configurations;
-using Informapp.InformSystem.IntegrationTool.Core.DataContexts;
-using Informapp.InformSystem.IntegrationTool.Core.Enums;
-using Informapp.InformSystem.IntegrationTool.Core.Providers;
-using Informapp.InformSystem.IntegrationTool.Core.Queries;
-using Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile;
-using Informapp.InformSystem.WebApi.Client.DateTimeProviders;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Configurations;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.DataContexts;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Enums;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Providers;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries.HashFile;
+using ConnectedDevelopment.InformSystem.WebApi.Client.DateTimeProviders;
 using Microsoft.Extensions.Options;
 using System;
 using System.Globalization;
@@ -15,7 +15,7 @@ using System.IO.Abstractions;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationImports
 {
     /// <summary>
     /// Queue integration import command handler

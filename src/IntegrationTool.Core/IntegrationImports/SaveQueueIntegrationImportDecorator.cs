@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.DataContexts;
-using Informapp.InformSystem.WebApi.Client.Decorators;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.DataContexts;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationImports
 {
     /// <summary>
     /// Save queue integration import decorator

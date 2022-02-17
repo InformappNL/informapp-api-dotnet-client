@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMembers.AddAppGroupMember
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.AppGroupMembers.AddAppGroupMember
 {
     /// <summary>
     /// Represents a <see cref="AddAppGroupMemberV1RequestAppGroupMember"/> comparison operation

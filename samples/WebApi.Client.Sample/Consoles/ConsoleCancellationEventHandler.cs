@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Arguments;
 using System;
 using System.Threading;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Consoles
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Consoles
 {
     internal class ConsoleCancellationEventHandler : IDisposable
     {

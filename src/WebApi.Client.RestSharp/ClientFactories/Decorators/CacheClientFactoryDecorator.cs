@@ -1,11 +1,11 @@
-﻿using Informapp.InformSystem.WebApi.Client.Caches;
-using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.WebApi.Client.Requests;
-using Informapp.InformSystem.WebApi.Client.RestSharp.Arguments;
-using Informapp.InformSystem.WebApi.Client.RestSharp.Requires;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Caches;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Requests;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Requires;
 using RestSharp;
 
-namespace Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators
 {
     /// <summary>
     /// Decorator class for <see cref="IClientFactory"/> to cache client

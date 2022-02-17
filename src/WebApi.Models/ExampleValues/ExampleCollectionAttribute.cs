@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace Informapp.InformSystem.WebApi.Models.ExampleValues
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.ExampleValues
 {
     /// <summary>
     /// Example collection attribute

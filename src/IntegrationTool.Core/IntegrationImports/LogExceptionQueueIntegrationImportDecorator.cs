@@ -1,10 +1,10 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Loggers;
-using Informapp.InformSystem.WebApi.Client.Decorators;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Loggers;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationImports
 {
     /// <summary>
     /// Log exception queue integration import decorator

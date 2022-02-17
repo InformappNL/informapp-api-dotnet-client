@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationExports
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationExports
 {
     /// <summary>
     /// Interface for download integration export command handler

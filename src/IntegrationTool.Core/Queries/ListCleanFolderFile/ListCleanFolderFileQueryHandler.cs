@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Collections;
-using Informapp.InformSystem.IntegrationTool.Core.Configurations;
-using Informapp.InformSystem.IntegrationTool.Core.Requires;
-using Informapp.InformSystem.WebApi.Client.DateTimeProviders;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Collections;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Configurations;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Requires;
+using ConnectedDevelopment.InformSystem.WebApi.Client.DateTimeProviders;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Queries.ListCleanFolderFile
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries.ListCleanFolderFile
 {
     /// <summary>
     /// Query handler for making a list of files that will be cleaned up

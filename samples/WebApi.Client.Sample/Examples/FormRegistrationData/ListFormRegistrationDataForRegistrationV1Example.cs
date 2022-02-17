@@ -1,15 +1,15 @@
-﻿using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Client.Responses;
-using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
-using Informapp.InformSystem.WebApi.Client.Sample.Requires;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrations.ListFormRegistration;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Responses;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Requires;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationData;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrations.ListFormRegistration;
 using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationData
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Examples.FormRegistrationData
 {
     /// <summary>
     /// Example for list form registration data

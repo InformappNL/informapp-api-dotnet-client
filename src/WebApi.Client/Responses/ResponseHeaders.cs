@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Informapp.InformSystem.WebApi.Client.Responses
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Responses
 {
     /// <summary>
     /// Collection of response headers

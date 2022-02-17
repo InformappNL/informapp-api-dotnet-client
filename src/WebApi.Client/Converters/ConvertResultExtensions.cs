@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
 using System;
 
-namespace Informapp.InformSystem.WebApi.Client.Converters
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Converters
 {
     /// <summary>
     /// Static class holding extensions for <see cref="ConvertResult{T}"/>

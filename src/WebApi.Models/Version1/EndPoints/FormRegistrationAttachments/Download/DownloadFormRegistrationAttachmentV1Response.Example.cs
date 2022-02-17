@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Models.ExampleValues;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.ExampleValues;
 using System.Diagnostics;
 using System.IO;
 using System.Text;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments.Download
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.FormRegistrationAttachments.Download
 {
     public partial class DownloadFormRegistrationAttachmentV1Response : IExampleMemberProvider
     {

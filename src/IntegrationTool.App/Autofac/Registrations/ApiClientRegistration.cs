@@ -1,11 +1,11 @@
 ﻿using Autofac;
-using Informapp.InformSystem.IntegrationTool.Core.Clients;
-using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Client.Clients.Decorators;
-using Informapp.InformSystem.WebApi.Client.RestSharp.Clients;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Clients.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Clients;
 using System;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register api client in Autofac

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Informapp.InformSystem.WebApi.Client.Validators
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Validators
 {
     /// <summary>
     /// Wrapper for <see cref="Validator"/>

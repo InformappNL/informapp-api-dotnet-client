@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
-using Informapp.InformSystem.WebApi.Client.Converters;
-using Informapp.InformSystem.WebApi.Client.Requests;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Converters;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Requests;
 using System;
 
-namespace Informapp.InformSystem.WebApi.Client.BearerTokenProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.BearerTokenProviders
 {
     /// <summary>
     /// Converter class to convert <see cref="ApiRequest"/> to <see cref="BearerTokenKey"/>

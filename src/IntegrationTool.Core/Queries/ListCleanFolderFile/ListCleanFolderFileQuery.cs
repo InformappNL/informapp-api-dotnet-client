@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.IntegrationTool.Core.Queries.ListCleanFolderFile
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries.ListCleanFolderFile
 {
     /// <summary>
     /// Query to list files that will be cleaned up

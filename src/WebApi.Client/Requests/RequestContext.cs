@@ -1,11 +1,11 @@
-﻿using Informapp.InformSystem.WebApi.Client.DataAnnotations;
-using Informapp.InformSystem.WebApi.Models.Http;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.DataAnnotations;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Http;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 using System.Globalization;
 
-namespace Informapp.InformSystem.WebApi.Client.Requests
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Requests
 {
     /// <summary>
     /// Request context class

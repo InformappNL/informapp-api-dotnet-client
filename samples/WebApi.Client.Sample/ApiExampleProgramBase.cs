@@ -1,12 +1,12 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
-using Informapp.InformSystem.WebApi.Client.Sample.Examples;
-using Informapp.InformSystem.WebApi.Client.Sample.Requires;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Examples;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Requires;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample
 {
     internal abstract class ApiExampleProgramBase
     {

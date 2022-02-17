@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.WebApi.Client.Validators;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Validators;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Commands
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands
 {
     /// <summary>
     /// Decorator class for <see cref="ICommandHandler{TCommand, TResult}"/> to validate command on execution

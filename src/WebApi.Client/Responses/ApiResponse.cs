@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net;
 
-namespace Informapp.InformSystem.WebApi.Client.Responses
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Responses
 {
     /// <summary>
     /// DTO class for API response

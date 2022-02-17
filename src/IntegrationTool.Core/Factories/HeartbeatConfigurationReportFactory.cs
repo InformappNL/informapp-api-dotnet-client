@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Factories
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Factories
 {
     /// <summary>
     /// Heartbeat configuration report factory

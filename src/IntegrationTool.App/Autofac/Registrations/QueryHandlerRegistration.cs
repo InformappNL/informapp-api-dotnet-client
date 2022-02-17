@@ -1,9 +1,9 @@
 ﻿using Autofac;
-using Informapp.InformSystem.IntegrationTool.Core.Queries;
-using Informapp.InformSystem.WebApi.Client.Assemblies;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Assemblies;
 using System.Linq;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register query handlers in Autofac

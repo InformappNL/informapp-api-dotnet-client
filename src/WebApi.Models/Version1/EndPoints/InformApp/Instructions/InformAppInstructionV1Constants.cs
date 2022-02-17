@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CompleteInstruction;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.RevokeInstruction;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CompleteInstruction;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.ListInstruction;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.RevokeInstruction;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions
 {
     internal static class InformAppInstructionV1Constants
     {

@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Client.Decorators;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationExports
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationExports
 {
     /// <summary>
     /// Decorator class for <see cref="IDownloadIntegrationExportCommandHandler"/> to log the exception if one was thrown

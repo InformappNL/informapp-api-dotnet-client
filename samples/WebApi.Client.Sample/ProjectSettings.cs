@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Client.Sample
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample
 {
     internal static class Await
     {

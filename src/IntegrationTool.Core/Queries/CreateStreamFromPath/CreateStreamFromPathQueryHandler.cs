@@ -3,7 +3,7 @@ using System.IO.Abstractions;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath
 {
     /// <summary>
     /// Query handler for making a stream from a file

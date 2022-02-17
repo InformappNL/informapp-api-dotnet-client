@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Client.HashCodes;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.HashCodes;
 using System;
 using System.Collections.Generic;
 
-namespace Informapp.InformSystem.WebApi.Client.BearerTokenProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.BearerTokenProviders
 {
     /// <summary>
     /// Represents a <see cref="BearerTokenKey"/> comparison operation

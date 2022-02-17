@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Informapp.InformSystem.WebApi.Models.Http
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Http
 {
     /// <summary>
     /// Indicates the content type to use in ACCEPT header for a request

@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.IntegrationTool.App
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App
 {
     internal static class Await
     {

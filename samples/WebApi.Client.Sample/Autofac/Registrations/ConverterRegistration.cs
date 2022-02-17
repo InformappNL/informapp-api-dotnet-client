@@ -1,10 +1,10 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.Assemblies;
-using Informapp.InformSystem.WebApi.Client.Converters;
-using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Assemblies;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Converters;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Arguments;
 using System.Linq;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Autofac.Registrations
 {
     /// <summary>
     /// Register dependencies in Autofac

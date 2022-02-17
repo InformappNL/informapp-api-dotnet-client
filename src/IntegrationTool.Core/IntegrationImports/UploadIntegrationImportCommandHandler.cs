@@ -1,12 +1,12 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Queries;
-using Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath;
-using Informapp.InformSystem.IntegrationTool.Core.Requires;
-using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Requires;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Imports;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationImports
 {
     /// <summary>
     /// Command handler for uploading an integration import

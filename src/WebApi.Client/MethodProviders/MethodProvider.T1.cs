@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Client.AttributeProviders;
-using Informapp.InformSystem.WebApi.Models.Http;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.AttributeProviders;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Http;
 using System;
 
-namespace Informapp.InformSystem.WebApi.Client.MethodProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.MethodProviders
 {
     /// <summary>
     /// Retrieve method from a class

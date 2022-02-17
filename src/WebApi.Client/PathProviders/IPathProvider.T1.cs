@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Informapp.InformSystem.WebApi.Client.PathProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.PathProviders
 {
     /// <summary>
     /// Generic interface to retrieve path for a class

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile
 {
     /// <summary>
     /// Command to initiate uploading a datasource file

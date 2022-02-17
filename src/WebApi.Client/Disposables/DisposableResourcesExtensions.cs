@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
 using System;
 
-namespace Informapp.InformSystem.WebApi.Client.Disposables
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Disposables
 {
     /// <summary>
     /// Extension methods for <see cref="IDisposableResources"/>

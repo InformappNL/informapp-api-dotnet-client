@@ -1,11 +1,11 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Queries;
-using Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath;
-using Informapp.InformSystem.IntegrationTool.Core.Uploaders;
-using Informapp.InformSystem.IntegrationTool.Core.Uploaders.DataSourceFiles;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Uploaders;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Uploaders.DataSourceFiles;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile
 {
     /// <summary>
     /// Command handler for uploading a datasource file

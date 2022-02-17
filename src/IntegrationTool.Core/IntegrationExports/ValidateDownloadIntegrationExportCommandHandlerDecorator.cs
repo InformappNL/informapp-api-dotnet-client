@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.WebApi.Client.Validators;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Validators;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationExports
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationExports
 {
     /// <summary>
     /// Decorator class for <see cref="IDownloadIntegrationExportCommandHandler"/> to validate download integration export command

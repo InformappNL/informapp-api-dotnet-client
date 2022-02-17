@@ -1,4 +1,4 @@
-﻿namespace Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams
+﻿namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams
 {
     /// <summary>
     /// Enum for write file from stream result

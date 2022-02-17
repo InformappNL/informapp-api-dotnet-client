@@ -1,6 +1,6 @@
-﻿using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Users.ListUser;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Users.ListUser;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Users
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Users
 {
     internal static class InformAppUserV1Constants
     {

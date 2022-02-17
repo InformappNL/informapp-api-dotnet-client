@@ -1,17 +1,17 @@
-﻿using Informapp.InformSystem.WebApi.Client.Configuration;
-using Informapp.InformSystem.WebApi.Client.DictionaryBuilders;
-using Informapp.InformSystem.WebApi.Client.PathProviders;
-using Informapp.InformSystem.WebApi.Client.QueryStringProviders;
-using Informapp.InformSystem.WebApi.Client.QueryStrings;
-using Informapp.InformSystem.WebApi.Client.RestSharp.Serializers;
-using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
-using Informapp.InformSystem.WebApi.Client.Sample.Requires;
-using Informapp.InformSystem.WebApi.Models.Http;
-using Informapp.InformSystem.WebApi.Models.Requests;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.OAuth2Token;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Configuration;
+using ConnectedDevelopment.InformSystem.WebApi.Client.DictionaryBuilders;
+using ConnectedDevelopment.InformSystem.WebApi.Client.PathProviders;
+using ConnectedDevelopment.InformSystem.WebApi.Client.QueryStringProviders;
+using ConnectedDevelopment.InformSystem.WebApi.Client.QueryStrings;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Serializers;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Requires;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Http;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Requests;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.OAuth2.OAuth2Token;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.ListValues;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues;
 using Microsoft.Extensions.Options;
 using RestSharp;
 using RestSharp.Authenticators;
@@ -19,7 +19,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Clients
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Examples.Clients
 {
     /// <summary>
     /// Example using RestSharp client

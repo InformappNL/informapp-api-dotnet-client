@@ -1,10 +1,10 @@
-﻿using Informapp.InformSystem.WebApi.Client.Assemblies;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Assemblies;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace Informapp.InformSystem.IntegrationTool.App.AppStart
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.AppStart
 {
     /// <summary>
     /// Default assembly provider implementation
@@ -22,7 +22,7 @@ namespace Informapp.InformSystem.IntegrationTool.App.AppStart
                 .Where(x => x.FullName.StartsWith("xunit", StringComparison.OrdinalIgnoreCase) == false)
                 .Where(x => x.GetTypes()
                     .Where(t => string.IsNullOrEmpty(t.Namespace) == false)
-                    .Where(t => t.Namespace.StartsWith(nameof(Informapp), StringComparison.OrdinalIgnoreCase))
+                    .Where(t => t.Namespace.StartsWith(nameof(ConnectedDevelopment), StringComparison.OrdinalIgnoreCase))
                     .Any() == true)
                 .ToList();
 

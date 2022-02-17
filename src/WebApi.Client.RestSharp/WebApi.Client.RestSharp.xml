@@ -4,12 +4,12 @@
         <name>InformSystem.WebApi.Client.RestSharp</name>
     </assembly>
     <members>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.Arguments.Argument">
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Arguments.Argument">
             <summary>
             Static class with methods to ensure conditions for arguments are true
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Arguments.Argument.Required``1(``0,System.String)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Arguments.Argument.Required``1(``0,System.String)">
             <summary>
             Ensure an instance is not null
             </summary>
@@ -18,7 +18,7 @@
             <param name="parameterName">The name of the parameter</param>
             <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Arguments.Argument.NotNull``1(``0,System.String)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Arguments.Argument.NotNull``1(``0,System.String)">
             <summary>
             Ensure a reference type instance is not null
             </summary>
@@ -27,7 +27,7 @@
             <param name="parameterName">The name of the parameter</param>
             <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Arguments.Argument.NotNull``1(System.Nullable{``0},System.String)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Arguments.Argument.NotNull``1(System.Nullable{``0},System.String)">
             <summary>
             Ensure an nullable value type instance is not null
             </summary>
@@ -36,7 +36,7 @@
             <param name="parameterName">The name of the parameter</param>
             <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Arguments.Argument.NotNullOrEmpty(System.String,System.String)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Arguments.Argument.NotNullOrEmpty(System.String,System.String)">
             <summary>
             Ensure a string is not null or empty
             </summary>
@@ -45,7 +45,7 @@
             <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
             <exception cref="T:System.ArgumentException"><paramref name="instance"/> is empty</exception>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Arguments.Argument.NotNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0},System.String)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Arguments.Argument.NotNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0},System.String)">
             <summary>
             Ensure a collection is not null or empty
             </summary>
@@ -55,115 +55,115 @@
             <exception cref="T:System.ArgumentNullException"><paramref name="instance"/> is null</exception>
             <exception cref="T:System.ArgumentException"><paramref name="instance"/> is empty</exception>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.ClientCache">
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.ClientCache">
             <summary>
             Cache clients
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.ClientCache.#ctor(Informapp.InformSystem.WebApi.Client.Caches.ICache{System.Uri,RestSharp.IRestClient})">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.ClientCache.#ctor(ConnectedDevelopment.InformSystem.WebApi.Client.Caches.ICache{System.Uri,RestSharp.IRestClient})">
             <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.ClientCache"/> class.
+            Initializes a new instance of the <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.ClientCache"/> class.
             </summary>
             <param name="cache">The cache instance to use</param>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.ClientFactory">
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.ClientFactory">
             <summary>
              Factory class to create instances of <see cref="T:RestSharp.IRestClient"/>
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.ClientFactory.#ctor">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.ClientFactory.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.ClientFactory"/> class.
+            Initializes a new instance of the <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.ClientFactory"/> class.
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.ClientFactory.Create(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.ClientFactory.Create(ConnectedDevelopment.InformSystem.WebApi.Client.Requests.ApiRequest)">
             <summary>
             Create instance of <see cref="T:RestSharp.IRestClient"/>
             </summary>
             <param name="request">The request to create a client for</param>
             <returns>The created instance of <see cref="T:RestSharp.IRestClient"/></returns>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.CacheClientFactoryDecorator">
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.CacheClientFactoryDecorator">
             <summary>
-            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory"/> to cache client
+            Decorator class for <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory"/> to cache client
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.CacheClientFactoryDecorator.#ctor(Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory,Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientCache)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.CacheClientFactoryDecorator.#ctor(ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory,ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientCache)">
             <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.CacheClientFactoryDecorator"/> class.
+            Initializes a new instance of the <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.CacheClientFactoryDecorator"/> class.
             </summary>
             <param name="clientFactory">The instance to decorate</param>
             <param name="cache">The instance to cache client instances</param>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.CacheClientFactoryDecorator.Create(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.CacheClientFactoryDecorator.Create(ConnectedDevelopment.InformSystem.WebApi.Client.Requests.ApiRequest)">
             <summary>
             Create instance of <see cref="T:RestSharp.IRestClient"/> and cache it
             </summary>
             <param name="request">The request to create a client for</param>
             <returns>The created instance of <see cref="T:RestSharp.IRestClient"/></returns>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.RequireHttpsClientFactoryDecorator">
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.RequireHttpsClientFactoryDecorator">
             <summary>
-            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory"/> to require the use of HTTPS
+            Decorator class for <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory"/> to require the use of HTTPS
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.RequireHttpsClientFactoryDecorator.#ctor(Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.RequireHttpsClientFactoryDecorator.#ctor(ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory)">
             <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.RequireHttpsClientFactoryDecorator"/> class.
+            Initializes a new instance of the <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.RequireHttpsClientFactoryDecorator"/> class.
             </summary>
             <param name="clientFactory">The instance to decorate</param>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.RequireHttpsClientFactoryDecorator.Create(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.RequireHttpsClientFactoryDecorator.Create(ConnectedDevelopment.InformSystem.WebApi.Client.Requests.ApiRequest)">
             <summary>
             Create instance of <see cref="T:RestSharp.IRestClient"/> after ensuring HTTPS is used
             </summary>
             <param name="request">The request to create a client for</param>
             <returns>The created instance of <see cref="T:RestSharp.IRestClient"/></returns>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.SerializerClientFactoryDecorator">
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.SerializerClientFactoryDecorator">
             <summary>
-            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory"/> to set serializer
+            Decorator class for <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory"/> to set serializer
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.SerializerClientFactoryDecorator.#ctor(Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory,RestSharp.Serialization.IRestSerializer)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.SerializerClientFactoryDecorator.#ctor(ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory,RestSharp.Serialization.IRestSerializer)">
             <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.SerializerClientFactoryDecorator"/> class.
+            Initializes a new instance of the <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.SerializerClientFactoryDecorator"/> class.
             </summary>
             <param name="clientFactory">The instance to decorate</param>
             <param name="serializer">The serializer</param>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.SerializerClientFactoryDecorator.Create(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.Decorators.SerializerClientFactoryDecorator.Create(ConnectedDevelopment.InformSystem.WebApi.Client.Requests.ApiRequest)">
             <summary>
             Create instance of <see cref="T:RestSharp.IRestClient"/> and set JSON deserializer
             </summary>
             <param name="request">The request to create a client for</param>
             <returns>The created instance of <see cref="T:RestSharp.IRestClient"/></returns>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientCache">
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientCache">
             <summary>
             Cache clients
             </summary>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory">
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory">
             <summary>
             Factory interface to create instances of <see cref="T:RestSharp.IRestClient"/>
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory.Create(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory.Create(ConnectedDevelopment.InformSystem.WebApi.Client.Requests.ApiRequest)">
             <summary>
             Create instance of <see cref="T:RestSharp.IRestClient"/>
             </summary>
             <param name="request">The request to create a client for</param>
             <returns>The created instance of <see cref="T:RestSharp.IRestClient"/></returns>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.Clients.RestSharpApiClient`2">
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Clients.RestSharpApiClient`2">
             <summary>
              Generic RestSharp implementation for API client class
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Clients.RestSharpApiClient`2.#ctor(Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory,Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory,Informapp.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilderFactory,Informapp.InformSystem.WebApi.Client.Converters.IConverter{System.Nullable{RestSharp.ResponseStatus},System.Nullable{Informapp.InformSystem.WebApi.Client.Responses.ResponseStatusCode}},Informapp.InformSystem.WebApi.Client.MimeMappers.IMimeMapper)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Clients.RestSharpApiClient`2.#ctor(ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories.IClientFactory,ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory,ConnectedDevelopment.InformSystem.WebApi.Client.QueryStrings.IQueryStringBuilderFactory,ConnectedDevelopment.InformSystem.WebApi.Client.Converters.IConverter{System.Nullable{RestSharp.ResponseStatus},System.Nullable{ConnectedDevelopment.InformSystem.WebApi.Client.Responses.ResponseStatusCode}},ConnectedDevelopment.InformSystem.WebApi.Client.MimeMappers.IMimeMapper)">
             <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.Clients.RestSharpApiClient`2"/> class.
+            Initializes a new instance of the <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Clients.RestSharpApiClient`2"/> class.
             </summary>
             <param name="clientFactory">The client factory</param>
             <param name="requestFactory">The request factory</param>
@@ -171,7 +171,7 @@
             <param name="converter">The converter</param>
             <param name="mimeMapper">The mime mapper</param>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Clients.RestSharpApiClient`2.Execute(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Clients.RestSharpApiClient`2.Execute(ConnectedDevelopment.InformSystem.WebApi.Client.Requests.ApiRequest{`0},System.Threading.CancellationToken)">
             <summary>
             Execute request
             </summary>
@@ -179,122 +179,122 @@
             <param name="cancellationToken">The cancellation token</param>
             <returns>The response</returns>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.Converters.HttpMethodConverter">
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Converters.HttpMethodConverter">
             <summary>
-            Implementation of <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.IConverter`2"/>
-            to convert <see cref="T:Informapp.InformSystem.WebApi.Models.Http.HttpMethod"/> to <see cref="T:RestSharp.Method"/>
+            Implementation of <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.Converters.IConverter`2"/>
+            to convert <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Models.Http.HttpMethod"/> to <see cref="T:RestSharp.Method"/>
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Converters.HttpMethodConverter.#ctor">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Converters.HttpMethodConverter.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.Converters.HttpMethodConverter"/> class.
+            Initializes a new instance of the <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Converters.HttpMethodConverter"/> class.
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Converters.HttpMethodConverter.Convert(System.Nullable{Informapp.InformSystem.WebApi.Models.Http.HttpMethod})">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Converters.HttpMethodConverter.Convert(System.Nullable{ConnectedDevelopment.InformSystem.WebApi.Models.Http.HttpMethod})">
             <summary>
-            Convert <see cref="T:Informapp.InformSystem.WebApi.Models.Http.HttpMethod"/> to <see cref="T:RestSharp.Method"/>
-            </summary>
-            <param name="source">The source value</param>
-            <returns>The <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> containing the converted value</returns>
-            <exception cref="T:System.ArgumentException">Unsupported value</exception>
-        </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.Converters.ResponseStatusConverter">
-            <summary>
-            Implementation of <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.IConverter`2"/>
-            to convert <see cref="T:RestSharp.ResponseStatus"/> to <see cref="T:Informapp.InformSystem.WebApi.Client.Responses.ResponseStatusCode"/>
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Converters.ResponseStatusConverter.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.Converters.ResponseStatusConverter"/> class.
-            </summary>
-        </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Converters.ResponseStatusConverter.Convert(System.Nullable{RestSharp.ResponseStatus})">
-            <summary>
-            Convert <see cref="T:RestSharp.ResponseStatus"/> to <see cref="T:Informapp.InformSystem.WebApi.Client.Responses.ResponseStatusCode"/>
+            Convert <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Models.Http.HttpMethod"/> to <see cref="T:RestSharp.Method"/>
             </summary>
             <param name="source">The source value</param>
-            <returns>The <see cref="T:Informapp.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> containing the converted value</returns>
+            <returns>The <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> containing the converted value</returns>
             <exception cref="T:System.ArgumentException">Unsupported value</exception>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.AcceptContentTypeRequestFactoryDecorator">
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Converters.ResponseStatusConverter">
             <summary>
-            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory"/> to set accept header
+            Implementation of <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.Converters.IConverter`2"/>
+            to convert <see cref="T:RestSharp.ResponseStatus"/> to <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.Responses.ResponseStatusCode"/>
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.AcceptContentTypeRequestFactoryDecorator.#ctor(Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Converters.ResponseStatusConverter.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.AcceptContentTypeRequestFactoryDecorator"/> class.
+            Initializes a new instance of the <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Converters.ResponseStatusConverter"/> class.
+            </summary>
+        </member>
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Converters.ResponseStatusConverter.Convert(System.Nullable{RestSharp.ResponseStatus})">
+            <summary>
+            Convert <see cref="T:RestSharp.ResponseStatus"/> to <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.Responses.ResponseStatusCode"/>
+            </summary>
+            <param name="source">The source value</param>
+            <returns>The <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.Converters.ConvertResult`1"/> containing the converted value</returns>
+            <exception cref="T:System.ArgumentException">Unsupported value</exception>
+        </member>
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.AcceptContentTypeRequestFactoryDecorator">
+            <summary>
+            Decorator class for <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory"/> to set accept header
+            </summary>
+        </member>
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.AcceptContentTypeRequestFactoryDecorator.#ctor(ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.AcceptContentTypeRequestFactoryDecorator"/> class.
             </summary>
             <param name="requestFactory">The instance to decorate</param>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.AcceptContentTypeRequestFactoryDecorator.Create(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.AcceptContentTypeRequestFactoryDecorator.Create(ConnectedDevelopment.InformSystem.WebApi.Client.Requests.ApiRequest)">
             <summary>
             Create instance of <see cref="T:RestSharp.IRestRequest"/> and set accept header
             </summary>
             <param name="request">The request instance</param>
             <returns>The constructed <see cref="T:RestSharp.IRestRequest"/> instance</returns>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.BearerTokenRequestFactoryDecorator">
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.BearerTokenRequestFactoryDecorator">
             <summary>
-            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory"/> to set bearer token
+            Decorator class for <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory"/> to set bearer token
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.BearerTokenRequestFactoryDecorator.#ctor(Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.BearerTokenRequestFactoryDecorator.#ctor(ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory)">
             <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.BearerTokenRequestFactoryDecorator"/> class.
+            Initializes a new instance of the <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.BearerTokenRequestFactoryDecorator"/> class.
             </summary>
             <param name="requestFactory">The instance to decorate</param>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.BearerTokenRequestFactoryDecorator.Create(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.BearerTokenRequestFactoryDecorator.Create(ConnectedDevelopment.InformSystem.WebApi.Client.Requests.ApiRequest)">
             <summary>
             Create instance of <see cref="T:RestSharp.IRestRequest"/> and set bearer token
             </summary>
             <param name="request">The request instance</param>
             <returns>The constructed <see cref="T:RestSharp.IRestRequest"/> instance</returns>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.MethodOverrideRequestFactoryDecorator">
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.MethodOverrideRequestFactoryDecorator">
             <summary>
-            Decorator class for <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory"/> to override HTTP method
+            Decorator class for <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory"/> to override HTTP method
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.MethodOverrideRequestFactoryDecorator.#ctor(Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.MethodOverrideRequestFactoryDecorator.#ctor(ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory)">
             <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.MethodOverrideRequestFactoryDecorator"/> class.
+            Initializes a new instance of the <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.MethodOverrideRequestFactoryDecorator"/> class.
             </summary>
             <param name="requestFactory">The instance to decorate</param>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.MethodOverrideRequestFactoryDecorator.Create(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators.MethodOverrideRequestFactoryDecorator.Create(ConnectedDevelopment.InformSystem.WebApi.Client.Requests.ApiRequest)">
             <summary>
             Create instance of <see cref="T:RestSharp.IRestRequest"/> and override HTTP method
             </summary>
             <param name="request">The request instance</param>
             <returns>The constructed <see cref="T:RestSharp.IRestRequest"/> instance</returns>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory">
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory">
             <summary>
             Factory interface to create <see cref="T:RestSharp.IRestRequest"/> instances
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory.Create(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.IRequestFactory.Create(ConnectedDevelopment.InformSystem.WebApi.Client.Requests.ApiRequest)">
             <summary>
             Create instance of <see cref="T:RestSharp.IRestRequest"/>
             </summary>
             <param name="request">The request instance</param>
             <returns>The constructed <see cref="T:RestSharp.IRestRequest"/> instance</returns>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.RequestFactory">
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.RequestFactory">
             <summary>
             Factory class to create <see cref="T:RestSharp.IRestRequest"/> instances
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.RequestFactory.#ctor(Informapp.InformSystem.WebApi.Client.Converters.IConverter{System.Nullable{Informapp.InformSystem.WebApi.Models.Http.HttpMethod},System.Nullable{RestSharp.Method}})">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.RequestFactory.#ctor(ConnectedDevelopment.InformSystem.WebApi.Client.Converters.IConverter{System.Nullable{ConnectedDevelopment.InformSystem.WebApi.Models.Http.HttpMethod},System.Nullable{RestSharp.Method}})">
             <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.RequestFactory"/> class.
+            Initializes a new instance of the <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.RequestFactory"/> class.
             </summary>
             <param name="converter"></param>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.RequestFactory.Create(Informapp.InformSystem.WebApi.Client.Requests.ApiRequest)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.RequestFactory.Create(ConnectedDevelopment.InformSystem.WebApi.Client.Requests.ApiRequest)">
             <summary>
             Create instance of <see cref="T:RestSharp.IRestRequest"/>
             </summary>
@@ -302,12 +302,12 @@
             <returns>The constructed <see cref="T:RestSharp.IRestRequest"/> instance</returns>
             <exception cref="T:System.ArgumentNullException"><paramref name="request"/> is null</exception>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.Requires.Require">
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Requires.Require">
             <summary>
             Static class with methods to ensure conditions are true
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Requires.Require.Required``1(``0,System.String)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Requires.Require.Required``1(``0,System.String)">
             <summary>
             Ensure an instance is not null
             </summary>
@@ -316,7 +316,7 @@
             <param name="parameterName">The name of the parameter</param>
             <exception cref="T:System.InvalidOperationException"><paramref name="instance"/> is null</exception>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Requires.Require.NotNull``1(``0,System.String)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Requires.Require.NotNull``1(``0,System.String)">
             <summary>
             Ensure a reference type instance is not null
             </summary>
@@ -325,7 +325,7 @@
             <param name="parameterName">The name of the parameter</param>
             <exception cref="T:System.InvalidOperationException"><paramref name="instance"/> is null</exception>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Requires.Require.NotNull``1(System.Nullable{``0},System.String)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Requires.Require.NotNull``1(System.Nullable{``0},System.String)">
             <summary>
             Ensure an nullable value type instance is not null
             </summary>
@@ -334,54 +334,54 @@
             <param name="parameterName">The name of the parameter</param>
             <exception cref="T:System.InvalidOperationException"><paramref name="instance"/> is null</exception>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Requires.Require.Assignable``2">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Requires.Require.Assignable``2">
             <summary>
             Determines whether an instance of type <typeparamref name="TSource"/> can be assigned to an instance of type <typeparamref name="TTarget"/>.
             </summary>
             <typeparam name="TSource"></typeparam>
             <typeparam name="TTarget"></typeparam>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.Responses.RestSharpApiResponse`1">
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Responses.RestSharpApiResponse`1">
             <summary>
             RestSharp API response class
             </summary>
             <typeparam name="T"></typeparam>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Client.RestSharp.Responses.RestSharpApiResponse`1.RestRequest">
+        <member name="P:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Responses.RestSharpApiResponse`1.RestRequest">
             <summary>
             The RestSharp <see cref="T:RestSharp.IRestRequest"/> instance
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Client.RestSharp.Responses.RestSharpApiResponse`1.RestResponse">
+        <member name="P:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Responses.RestSharpApiResponse`1.RestResponse">
             <summary>
             The RestSharp <see cref="T:RestSharp.IRestResponse`1"/> instance
             </summary>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer">
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer">
             <summary>
             Newtonsoft.Json implementation of <see cref="T:RestSharp.Serialization.IRestSerializer"/>
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.#ctor">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer"/> class.
+            Initializes a new instance of the <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer"/> class.
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.Serialize(System.Object)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.Serialize(System.Object)">
             <summary>
             Serialize object
             </summary>
             <param name="obj">The object to serialize</param>
             <returns>The serialized string</returns>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.Serialize(RestSharp.Parameter)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.Serialize(RestSharp.Parameter)">
             <summary>
             Serialize parameter
             </summary>
             <param name="parameter">The parameter to serialize</param>
             <returns>The serialized string</returns>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.Deserialize``1(RestSharp.IRestResponse)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.Deserialize``1(RestSharp.IRestResponse)">
             <summary>
             Deserialize response
             </summary>
@@ -389,27 +389,27 @@
             <param name="response">The response</param>
             <returns>The deserialized model</returns>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.SupportedContentTypes">
+        <member name="P:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.SupportedContentTypes">
             <summary>
             Supported content types
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.ContentType">
+        <member name="P:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.ContentType">
             <summary>
             Content type
             </summary>
         </member>
-        <member name="P:Informapp.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.DataFormat">
+        <member name="P:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Serializers.JsonNetSerializer.DataFormat">
             <summary>
             Data format
             </summary>
         </member>
-        <member name="T:Informapp.InformSystem.WebApi.Client.RestSharp.WebApiClientRestSharpProject">
+        <member name="T:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.WebApiClientRestSharpProject">
             <summary>
             Dummy class to reference this assembly
             </summary>
         </member>
-        <member name="M:Informapp.InformSystem.WebApi.Client.RestSharp.WebApiClientRestSharpProject.Load">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.WebApiClientRestSharpProject.Load">
             <summary>
             Dummy method, calling this will load its assembly
             </summary>

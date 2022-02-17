@@ -1,4 +1,4 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
 using System;
 using System.Collections;
 using System.ComponentModel.DataAnnotations;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.Validators
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Validators
 {
     /// <summary>
     /// Validator class

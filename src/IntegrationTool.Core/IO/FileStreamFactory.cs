@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using System.IO.Abstractions;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IO
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IO
 {
     /// <summary>
     /// File stream factory

@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.IntegrationTool.Core.Loggers
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Loggers
 {
     /// <summary>
     /// Enum for different log levels

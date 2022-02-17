@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Client.QueryStrings
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.QueryStrings
 {
     /// <summary>
     /// Interface for query string builder

@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
 using System;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.Responses
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Responses
 {
     /// <summary>
     /// Extensions for <see cref="ApiResponse"/>

@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Globalization;
 
-namespace Informapp.InformSystem.WebApi.Client.Requests
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Requests
 {
     /// <summary>
     /// DTO class for bearer token

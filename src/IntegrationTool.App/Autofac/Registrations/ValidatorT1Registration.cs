@@ -1,10 +1,10 @@
 ﻿using Autofac;
-using Informapp.InformSystem.IntegrationTool.Core.Validators;
-using Informapp.InformSystem.WebApi.Client.Assemblies;
-using Informapp.InformSystem.WebApi.Client.Validators;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Validators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Assemblies;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Validators;
 using System.Linq;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register validators in Autofac

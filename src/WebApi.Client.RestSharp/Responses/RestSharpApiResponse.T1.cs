@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Client.Responses;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Responses;
 using RestSharp;
 
-namespace Informapp.InformSystem.WebApi.Client.RestSharp.Responses
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Responses
 {
     /// <summary>
     /// RestSharp API response class

@@ -1,13 +1,13 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Commands;
-using Informapp.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile;
-using Informapp.InformSystem.IntegrationTool.Core.Enums;
-using Informapp.InformSystem.IntegrationTool.Core.Requires;
-using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.SaveIntegrationExportFile;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Enums;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Requires;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Integrations.Exports;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationExports
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationExports
 {
     /// <summary>
     /// Command handler for downloading an integration export

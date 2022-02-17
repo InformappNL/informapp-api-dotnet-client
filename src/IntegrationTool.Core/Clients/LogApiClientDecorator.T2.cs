@@ -1,13 +1,13 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Loggers;
-using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.WebApi.Client.Requests;
-using Informapp.InformSystem.WebApi.Client.Responses;
-using Informapp.InformSystem.WebApi.Models.Requests;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Loggers;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Requests;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Responses;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Requests;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Clients
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Clients
 {
     /// <summary>
     /// Decorator class for <see cref="IApiClient{TRequest, TResponse}"/> to log on request

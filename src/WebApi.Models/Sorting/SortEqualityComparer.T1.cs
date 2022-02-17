@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Informapp.InformSystem.WebApi.Models.Sorting
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Sorting
 {
     /// <summary>
     /// Compare equality for sort enum members

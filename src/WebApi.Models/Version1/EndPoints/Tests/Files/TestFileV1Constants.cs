@@ -1,4 +1,4 @@
-﻿namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files
+﻿namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files
 {
     internal static class TestFileV1Constants
     {

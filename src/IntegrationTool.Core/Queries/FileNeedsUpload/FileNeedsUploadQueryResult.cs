@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload
 {
     /// <summary>
     /// Result after checking if a file needs to be uploaded

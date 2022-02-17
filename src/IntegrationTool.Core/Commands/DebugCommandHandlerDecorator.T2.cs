@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Loggers;
-using Informapp.InformSystem.WebApi.Client.Decorators;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Loggers;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Commands
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands
 {
     /// <summary>
     /// Debug command handler decorator

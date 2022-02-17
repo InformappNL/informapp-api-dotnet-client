@@ -1,13 +1,13 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Commands;
-using Informapp.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder;
-using Informapp.InformSystem.IntegrationTool.Core.Configurations;
-using Informapp.InformSystem.IntegrationTool.Core.Requires;
-using Informapp.InformSystem.WebApi.Client.Decorators;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.CleanupDownloadFolder;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Configurations;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Requires;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
 using Microsoft.Extensions.Options;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Applications
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Applications
 {
     /// <summary>
     /// Clean download folder application decorator

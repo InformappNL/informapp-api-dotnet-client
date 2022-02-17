@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.DownloadDataSource;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.DownloadDataSource;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.DataSources.UploadDataSource;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.DataSources
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.DataSources
 {
     internal static class DataSourceV1Constants
     {

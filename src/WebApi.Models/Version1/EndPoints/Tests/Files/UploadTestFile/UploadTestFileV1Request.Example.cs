@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Models.ExampleValues;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.ExampleValues;
 using System.Diagnostics;
 using System.IO;
 using System.Text;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Files.UploadTestFile
 {
     public partial class UploadTestFileV1Request : IExampleMemberProvider
     {

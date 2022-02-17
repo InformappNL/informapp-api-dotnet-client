@@ -1,15 +1,15 @@
-﻿using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Client.Converters;
-using Informapp.InformSystem.WebApi.Client.MimeMappers;
-using Informapp.InformSystem.WebApi.Client.QueryStrings;
-using Informapp.InformSystem.WebApi.Client.Requests;
-using Informapp.InformSystem.WebApi.Client.Responses;
-using Informapp.InformSystem.WebApi.Client.RestSharp.Arguments;
-using Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories;
-using Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories;
-using Informapp.InformSystem.WebApi.Client.RestSharp.Responses;
-using Informapp.InformSystem.WebApi.Models.Http;
-using Informapp.InformSystem.WebApi.Models.Requests;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Converters;
+using ConnectedDevelopment.InformSystem.WebApi.Client.MimeMappers;
+using ConnectedDevelopment.InformSystem.WebApi.Client.QueryStrings;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Requests;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Responses;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Responses;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Http;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Requests;
 using RestSharp;
 using System;
 using System.IO;
@@ -18,7 +18,7 @@ using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.RestSharp.Clients
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Clients
 {
     /// <summary>
     ///  Generic RestSharp implementation for API client class

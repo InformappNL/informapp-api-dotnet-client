@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Configurations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Configurations
 {
     /// <summary>
     /// Folder configuration for clean up

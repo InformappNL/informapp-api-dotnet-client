@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Informapp.InformSystem.IntegrationTool.App.Resources {
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Informapp.InformSystem.IntegrationTool.App.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Informapp.InformSystem.IntegrationTool.App.Resources.MessageResource", typeof(MessageResource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ConnectedDevelopment.InformSystem.IntegrationTool.App.Resources.MessageResource", typeof(MessageResource).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

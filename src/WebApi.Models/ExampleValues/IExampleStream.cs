@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Models.ExampleValues
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.ExampleValues
 {
     /// <summary>
     /// Example stream interface

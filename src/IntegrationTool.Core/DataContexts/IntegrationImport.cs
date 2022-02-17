@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.DataContexts
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.DataContexts
 {
     /// <summary>
     /// Integration import class

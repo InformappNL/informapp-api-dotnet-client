@@ -1,12 +1,12 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Queries;
-using Informapp.InformSystem.IntegrationTool.Core.Queries.ListCleanFolderFile;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries.ListCleanFolderFile;
 using System;
 using System.IO;
 using System.Security;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Jobs
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Jobs
 {
     /// <summary>
     /// Clean folder hangfire job handler

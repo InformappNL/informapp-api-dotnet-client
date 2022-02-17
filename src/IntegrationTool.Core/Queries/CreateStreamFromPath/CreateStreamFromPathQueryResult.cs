@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries.CreateStreamFromPath
 {
     /// <summary>
     /// Result after making a stream from the provided file

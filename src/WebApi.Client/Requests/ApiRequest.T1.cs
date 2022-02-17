@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Informapp.InformSystem.WebApi.Client.Requests
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Requests
 {
     /// <summary>
     /// Generic DTO class for API requests

@@ -1,4 +1,4 @@
-﻿namespace Informapp.InformSystem.IntegrationTool.Core.Commands.MoveFile
+﻿namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.MoveFile
 {
     /// <summary>
     /// Enum for move file result

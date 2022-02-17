@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Configurations;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Configurations;
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationExports
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationExports
 {
     /// <summary>
     /// Command for initiating the download of an integration export file

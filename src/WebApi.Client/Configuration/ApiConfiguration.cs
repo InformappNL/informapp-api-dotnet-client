@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Models.DataAnnotations;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.DataAnnotations;
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Informapp.InformSystem.WebApi.Client.Configuration
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Configuration
 {
     /// <summary>
     /// API configuration class

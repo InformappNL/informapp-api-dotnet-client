@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Models.Version2.Constants
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version2.Constants
 {
     /// <summary>
     /// Version 2 page size constants

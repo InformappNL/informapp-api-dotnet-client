@@ -1,14 +1,14 @@
-﻿using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Client.Requests;
-using Informapp.InformSystem.WebApi.Client.Responses;
-using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Requests;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Responses;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestQueryValues;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
 {
     /// <summary>
     /// Example for test query values

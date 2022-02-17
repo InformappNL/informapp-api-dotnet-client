@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Client.MimeMappers
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.MimeMappers
 {
     /// <summary>
     /// Maps document extensions to content MIME types.

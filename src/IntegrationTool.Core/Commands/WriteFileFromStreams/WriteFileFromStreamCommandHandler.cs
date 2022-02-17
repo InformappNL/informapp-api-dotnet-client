@@ -1,12 +1,12 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.IO;
-using Informapp.InformSystem.IntegrationTool.Core.Requires;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.IO;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Requires;
 using System;
 using System.IO;
 using System.IO.Abstractions;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.WriteFileFromStreams
 {
     /// <summary>
     /// Command handler for writing a file from a stream

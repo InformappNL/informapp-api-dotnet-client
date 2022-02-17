@@ -1,9 +1,9 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.BearerTokenProviders;
-using Informapp.InformSystem.WebApi.Client.Caches;
+using ConnectedDevelopment.InformSystem.WebApi.Client.BearerTokenProviders;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Caches;
 using System.Collections.Concurrent;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register bearer token cache in Autofac

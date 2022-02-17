@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Client.Requests;
-using Informapp.InformSystem.WebApi.Client.RestSharp.Arguments;
-using Informapp.InformSystem.WebApi.Client.RestSharp.Requires;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Requests;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Requires;
 using RestSharp;
 
-namespace Informapp.InformSystem.WebApi.Client.RestSharp.ClientFactories
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.ClientFactories
 {
     /// <summary>
     ///  Factory class to create instances of <see cref="IRestClient"/>

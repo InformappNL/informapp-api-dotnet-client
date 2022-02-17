@@ -1,11 +1,11 @@
-﻿using Informapp.InformSystem.WebApi.Client.RestSharp.Arguments;
-using Informapp.InformSystem.WebApi.Models.Http;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Http;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using RestSharp;
 using RestSharp.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Client.RestSharp.Serializers
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Serializers
 {
     /// <summary>
     /// Newtonsoft.Json implementation of <see cref="IRestSerializer"/>

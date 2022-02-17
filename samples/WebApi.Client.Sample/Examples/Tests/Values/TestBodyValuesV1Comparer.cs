@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
-using Informapp.InformSystem.WebApi.Client.Sample.Comparers;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Comparers;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Tests.Values.TestBodyValues;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Examples.Tests.Values
 {
     internal class TestBodyValuesV1Comparer
     {

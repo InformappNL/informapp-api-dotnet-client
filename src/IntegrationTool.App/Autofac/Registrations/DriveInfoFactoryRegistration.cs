@@ -1,8 +1,8 @@
 ﻿using Autofac;
-using Informapp.InformSystem.IntegrationTool.Core.IO;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.IO;
 using System.IO.Abstractions;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register drive info factory in Autofac

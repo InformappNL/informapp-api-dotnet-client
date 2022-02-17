@@ -1,14 +1,14 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.DataContexts;
-using Informapp.InformSystem.IntegrationTool.Core.Queries;
-using Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile;
-using Informapp.InformSystem.WebApi.Client.DateTimeProviders;
-using Informapp.InformSystem.WebApi.Client.Decorators;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.DataContexts;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries.HashFile;
+using ConnectedDevelopment.InformSystem.WebApi.Client.DateTimeProviders;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
 using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Uploaders
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Uploaders
 {
     /// <summary>
     /// Decorator class for <see cref="IUploader{TCommand}"/> to save the result of the completed or failed upload

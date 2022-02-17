@@ -1,6 +1,6 @@
-﻿using Informapp.InformSystem.WebApi.Models.Http;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Http;
 
-namespace Informapp.InformSystem.WebApi.Client.MethodProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.MethodProviders
 {
     /// <summary>
     /// Generic interface to retrieve method from a class

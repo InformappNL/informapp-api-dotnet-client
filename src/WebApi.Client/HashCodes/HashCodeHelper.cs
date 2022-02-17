@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Informapp.InformSystem.WebApi.Client.HashCodes
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.HashCodes
 {
     internal static class HashCodeHelper
     {

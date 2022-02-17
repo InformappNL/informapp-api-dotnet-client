@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Client.RestSharp;
-using Informapp.InformSystem.WebApi.Models;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp;
+using ConnectedDevelopment.InformSystem.WebApi.Models;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample
 {
     /// <summary>
     /// Dummy class to reference this assembly

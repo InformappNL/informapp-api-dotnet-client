@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Informapp.InformSystem.WebApi.Models.Http
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Http
 {
     /// <summary>
     /// Specify http method for a request class

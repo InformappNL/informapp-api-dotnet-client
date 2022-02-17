@@ -1,10 +1,10 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Queries;
-using Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload;
-using Informapp.InformSystem.WebApi.Client.Decorators;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Uploaders
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Uploaders
 {
     /// <summary>
     /// Decorator class for <see cref="IUploader{TCommand}"/> to check if an upload is needed

@@ -1,7 +1,7 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.DateTimeProviders;
+using ConnectedDevelopment.InformSystem.WebApi.Client.DateTimeProviders;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register datetime provider in Autofac

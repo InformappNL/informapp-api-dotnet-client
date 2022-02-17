@@ -1,14 +1,14 @@
-﻿using Informapp.InformSystem.WebApi.Client.BearerTokenProviders;
-using Informapp.InformSystem.WebApi.Client.Decorators;
-using Informapp.InformSystem.WebApi.Client.Requests;
-using Informapp.InformSystem.WebApi.Client.Sample.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.BearerTokenProviders;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Requests;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Arguments;
 using System;
 using System.Diagnostics;
 using System.Globalization;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.BearerTokenProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.BearerTokenProviders
 {
     /// <summary>
     /// Decorator class for <see cref="IBearerTokenProvider{T}"/> to log to console

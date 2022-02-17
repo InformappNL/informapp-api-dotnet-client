@@ -1,15 +1,15 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Commands;
-using Informapp.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile;
-using Informapp.InformSystem.IntegrationTool.Core.Configurations;
-using Informapp.InformSystem.IntegrationTool.Core.Requires;
-using Informapp.InformSystem.IntegrationTool.Core.Resources;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands.UploadDataSourceFile;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Configurations;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Requires;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Resources;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Jobs
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Jobs
 {
     /// <summary>
     /// Upload datasource file hangfire job handler

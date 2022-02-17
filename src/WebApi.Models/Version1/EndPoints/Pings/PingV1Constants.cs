@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Pings
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Pings
 {
     internal static class PingV1Constants
     {

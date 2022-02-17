@@ -1,6 +1,6 @@
 ﻿using Autofac;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac
 {
     /// <summary>
     /// Abstraction to register services with Autofac

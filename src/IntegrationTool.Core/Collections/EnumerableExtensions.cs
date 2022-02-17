@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Collections
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Collections
 {
     internal static class EnumerableExtensions
     {

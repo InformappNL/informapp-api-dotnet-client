@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
 using System;
 
-namespace Informapp.InformSystem.WebApi.Client.PathProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.PathProviders
 {
     internal class PropertyFuncModel<T>
     {

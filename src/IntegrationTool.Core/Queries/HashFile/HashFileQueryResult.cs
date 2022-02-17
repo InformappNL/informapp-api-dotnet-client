@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries.HashFile
 {
     /// <summary>
     /// Result after hashing the file

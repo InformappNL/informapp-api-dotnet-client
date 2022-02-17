@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Client.Validators
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Validators
 {
     /// <summary>
     /// Validator interface

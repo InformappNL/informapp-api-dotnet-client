@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Uploaders
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Uploaders
 {
     /// <summary>
     /// Generic uploader abstraction

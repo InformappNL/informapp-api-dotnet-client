@@ -1,6 +1,6 @@
-﻿using Informapp.InformSystem.WebApi.Client.Caches;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Caches;
 
-namespace Informapp.InformSystem.WebApi.Client.BearerTokenProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.BearerTokenProviders
 {
     /// <summary>
     /// Cache bearer tokens

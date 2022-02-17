@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Models.ExampleValues;
-using Informapp.InformSystem.WebApi.Models.Version2.Constants;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.ExampleValues;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version2.Constants;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Version2.Errors
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version2.Errors
 {
     /// <summary>
     /// Version 2 bad request response

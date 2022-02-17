@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
-namespace Informapp
+namespace ConnectedDevelopment
 {
     [DebuggerStepThrough]
     internal static class Argument

@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.WebApi.Client.Converters;
-using Informapp.InformSystem.WebApi.Models.Http;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Converters;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Http;
 using RestSharp;
 using System;
 
-namespace Informapp.InformSystem.WebApi.Client.RestSharp.Converters
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.Converters
 {
     /// <summary>
     /// Implementation of <see cref="IConverter{TSource, TResult}"/>

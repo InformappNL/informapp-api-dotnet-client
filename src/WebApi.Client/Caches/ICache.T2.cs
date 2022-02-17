@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Informapp.InformSystem.WebApi.Client.Caches
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Caches
 {
     /// <summary>
     /// Generic interface for caching objects

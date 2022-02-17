@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <OutputType>Library</OutputType>
-    <RootNamespace>Informapp.InformSystem.WebApi.Models</RootNamespace>
+    <RootNamespace>ConnectedDevelopment.InformSystem.WebApi.Models</RootNamespace>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>

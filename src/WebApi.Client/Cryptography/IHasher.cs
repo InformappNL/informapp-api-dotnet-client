@@ -3,7 +3,7 @@ using System.Security.Cryptography;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.WebApi.Client.Cryptography
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Cryptography
 {
     /// <summary>
     /// Interface to compute hash codes

@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core;
-using Informapp.InformSystem.WebApi.Client;
-using Informapp.InformSystem.WebApi.Client.RestSharp;
-using Informapp.InformSystem.WebApi.Models;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core;
+using ConnectedDevelopment.InformSystem.WebApi.Client;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp;
+using ConnectedDevelopment.InformSystem.WebApi.Models;
 
-namespace Informapp.InformSystem.IntegrationTool.App
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App
 {
     /// <summary>
     /// Dummy class to reference this assembly

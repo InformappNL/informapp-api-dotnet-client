@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Loggers;
-using Informapp.InformSystem.WebApi.Client.Decorators;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Loggers;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationExports
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationExports
 {
     /// <summary>
     /// Decorator class for <see cref="IDownloadIntegrationExportCommandHandler"/> to log debug information

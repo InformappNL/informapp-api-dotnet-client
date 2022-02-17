@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.IntegrationTool.Core.Uploaders
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Uploaders
 {
     /// <summary>
     /// Interface for upload result

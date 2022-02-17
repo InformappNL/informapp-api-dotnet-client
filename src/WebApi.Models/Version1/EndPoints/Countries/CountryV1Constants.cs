@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.Countries
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.Countries
 {
     internal static class CountryV1Constants
     {

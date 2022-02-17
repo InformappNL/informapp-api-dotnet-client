@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Models.Version2.Constants;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Version2.Constants;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Version2.Files
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version2.Files
 {
     /// <summary>
     /// File hash algorithm

@@ -1,10 +1,10 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Configurations;
-using Informapp.InformSystem.WebApi.Client.DateTimeProviders;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Configurations;
+using ConnectedDevelopment.InformSystem.WebApi.Client.DateTimeProviders;
 using Microsoft.Extensions.Options;
 using System.Globalization;
 using System.IO.Abstractions;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Factories
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Factories
 {
     /// <summary>
     /// Save integration export file factory

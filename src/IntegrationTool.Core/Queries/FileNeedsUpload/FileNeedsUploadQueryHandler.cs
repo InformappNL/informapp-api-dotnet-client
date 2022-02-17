@@ -1,14 +1,14 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Configurations;
-using Informapp.InformSystem.IntegrationTool.Core.DataContexts;
-using Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile;
-using Informapp.InformSystem.WebApi.Client.DateTimeProviders;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Configurations;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.DataContexts;
+using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries.HashFile;
+using ConnectedDevelopment.InformSystem.WebApi.Client.DateTimeProviders;
 using Microsoft.Extensions.Options;
 using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload
 {
     /// <summary>
     /// Query handler for checking if a file needs to be uploaded

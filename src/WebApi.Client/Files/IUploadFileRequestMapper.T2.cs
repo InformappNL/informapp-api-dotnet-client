@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Client.Requests;
-using Informapp.InformSystem.WebApi.Models.Requests;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Requests;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Requests;
 
-namespace Informapp.InformSystem.WebApi.Client.Files
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Files
 {
     /// <summary>
     /// Upload file request mapper interface

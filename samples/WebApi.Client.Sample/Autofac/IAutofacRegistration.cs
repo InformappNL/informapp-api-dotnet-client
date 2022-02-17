@@ -1,6 +1,6 @@
 ﻿using Autofac;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Autofac
 {
     /// <summary>
     /// Interface to register dependencies with Autofac

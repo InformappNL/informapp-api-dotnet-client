@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Models.Requests
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Requests
 {
     internal static class RequestConstants
     {

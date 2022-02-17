@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Client.Validators;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Validators;
 using System.Collections.Generic;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Validators
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Validators
 {
     /// <summary>
     /// Composite validator class

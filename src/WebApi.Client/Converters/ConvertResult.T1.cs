@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Client.Converters
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Converters
 {
     /// <summary>
     /// Gerneric class representing the result of a conversion

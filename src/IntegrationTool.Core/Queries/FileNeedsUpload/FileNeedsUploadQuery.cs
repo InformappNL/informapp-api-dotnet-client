@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.IO;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries.FileNeedsUpload
 {
     /// <summary>
     /// Query to check if a file needs to be uploaded

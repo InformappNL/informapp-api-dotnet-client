@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Informapp.InformSystem.WebApi.Client.Sample</RootNamespace>
+    <RootNamespace>ConnectedDevelopment.InformSystem.WebApi.Client.Sample</RootNamespace>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>

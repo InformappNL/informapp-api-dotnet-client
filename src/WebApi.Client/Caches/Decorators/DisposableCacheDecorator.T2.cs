@@ -1,10 +1,10 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
-using Informapp.InformSystem.WebApi.Client.Decorators;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Informapp.InformSystem.WebApi.Client.Caches.Decorators
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Caches.Decorators
 {
     /// <summary>
     /// Decorator for <see cref="ICache{TKey, TValue}"/> to dispose of cached items implementing <see cref="IDisposable"/>

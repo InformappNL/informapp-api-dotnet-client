@@ -1,13 +1,13 @@
-﻿using Informapp.InformSystem.WebApi.Models.DataAnnotations;
-using Informapp.InformSystem.WebApi.Models.ExampleValues;
-using Informapp.InformSystem.WebApi.Models.Requests;
-using Informapp.InformSystem.WebApi.Models.Version1.Constants;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.DataAnnotations;
+using ConnectedDevelopment.InformSystem.WebApi.Models.ExampleValues;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Requests;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.Constants;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CreateInstruction
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.InformApp.Instructions.CreateInstruction
 {
     /// <summary>
     /// Create form instruction response

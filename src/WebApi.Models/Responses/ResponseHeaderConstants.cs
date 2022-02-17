@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Models.Responses
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Responses
 {
     /// <summary>
     /// Response header constants

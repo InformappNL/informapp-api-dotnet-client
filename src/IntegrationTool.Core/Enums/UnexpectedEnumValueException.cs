@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Enums
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Enums
 {
     /// <summary>
     /// Unexpected enum value exception class

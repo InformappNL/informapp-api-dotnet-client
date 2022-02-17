@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Client.QueryStringProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.QueryStringProviders
 {
     /// <summary>
     /// Generic interface to retrieve query string for a class

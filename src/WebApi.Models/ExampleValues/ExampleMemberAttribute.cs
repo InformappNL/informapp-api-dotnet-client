@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Informapp.InformSystem.WebApi.Models.ExampleValues
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.ExampleValues
 {
     /// <summary>
     /// Example member attribute

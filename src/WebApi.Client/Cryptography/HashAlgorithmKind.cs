@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Client.Cryptography
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Cryptography
 {
     /// <summary>
     /// Cryptographic hash algorithms

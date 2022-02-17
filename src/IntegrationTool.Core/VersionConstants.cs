@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.IntegrationTool.Core
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core
 {
     /// <summary>
     /// Version constant of the tool

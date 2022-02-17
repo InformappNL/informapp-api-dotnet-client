@@ -1,9 +1,9 @@
 ﻿using Autofac;
-using Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations;
+using ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac
 {
     /// <summary>
     /// Factory for Autofac container

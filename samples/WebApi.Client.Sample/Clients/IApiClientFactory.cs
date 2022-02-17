@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Client.Clients;
-using Informapp.InformSystem.WebApi.Models.Requests;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Clients;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Requests;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Clients
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Clients
 {
     /// <summary>
     /// Factory interface to create instances of <see cref="IApiClient{TRequest, TResponse}"/>

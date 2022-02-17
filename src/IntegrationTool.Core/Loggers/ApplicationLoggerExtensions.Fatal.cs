@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Loggers
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Loggers
 {
     /// <summary>
     /// Application logger extension methods for fatal

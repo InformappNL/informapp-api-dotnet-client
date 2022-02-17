@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Configurations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Configurations
 {
     /// <summary>
     /// Datasource configuration for specific datasource

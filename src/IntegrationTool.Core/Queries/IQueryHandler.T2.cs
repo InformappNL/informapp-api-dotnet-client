@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Queries
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries
 {
     /// <summary>
     /// Generic query handler interface

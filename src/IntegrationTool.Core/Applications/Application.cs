@@ -1,9 +1,9 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.Jobs;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.Jobs;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Applications
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Applications
 {
     /// <summary>
     /// Application

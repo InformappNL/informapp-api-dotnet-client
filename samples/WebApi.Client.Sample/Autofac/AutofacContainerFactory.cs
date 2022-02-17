@@ -1,9 +1,9 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.Sample.Autofac.Registrations;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Autofac.Registrations;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Autofac
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Autofac
 {
     /// <summary>
     /// Autofac container factory class

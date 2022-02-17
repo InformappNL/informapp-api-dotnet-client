@@ -2,7 +2,7 @@
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace Informapp.InformSystem.WebApi.Client.PathProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.PathProviders
 {
     internal class PropertyFuncFactory<T>
     {

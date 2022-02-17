@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Configurations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Configurations
 {
     /// <summary>
     /// Integration configuration interface

@@ -1,6 +1,6 @@
-﻿using Informapp.InformSystem.WebApi.Models.Http;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Http;
 
-namespace Informapp.InformSystem.WebApi.Client.DictionaryBuilders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.DictionaryBuilders
 {
     /// <summary>
     /// Generic interface to build a dictionary of query string values from an object

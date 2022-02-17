@@ -1,11 +1,11 @@
-﻿using Informapp.InformSystem.WebApi.Client.Cryptography;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Cryptography;
 using System;
 using System.IO;
 using System.Security.Cryptography;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries.HashFile
 {
     /// <summary>
     /// query handler for the hashing of the provided file

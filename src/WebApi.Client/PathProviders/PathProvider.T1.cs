@@ -1,6 +1,6 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
-using Informapp.InformSystem.WebApi.Client.AttributeProviders;
-using Informapp.InformSystem.WebApi.Models.Http;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
+using ConnectedDevelopment.InformSystem.WebApi.Client.AttributeProviders;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Http;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace Informapp.InformSystem.WebApi.Client.PathProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.PathProviders
 {
     /// <summary>
     /// Retrieve path for a class

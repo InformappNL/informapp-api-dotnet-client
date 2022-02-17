@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Providers
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Providers
 {
     /// <summary>
     /// Interface for guid provider

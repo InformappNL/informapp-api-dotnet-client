@@ -1,7 +1,7 @@
-﻿using Informapp.InformSystem.WebApi.Client.Decorators;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Decorators;
 using System;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Loggers
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Loggers
 {
     /// <summary>
     /// Log exception application logger decorator

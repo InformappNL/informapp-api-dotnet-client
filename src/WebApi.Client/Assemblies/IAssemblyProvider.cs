@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Reflection;
 
-namespace Informapp.InformSystem.WebApi.Client.Assemblies
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Assemblies
 {
     /// <summary>
     /// Assembly provider interface

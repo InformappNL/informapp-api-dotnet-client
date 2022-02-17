@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Commands
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Commands
 {
     /// <summary>
     /// Generic command handler abstraction

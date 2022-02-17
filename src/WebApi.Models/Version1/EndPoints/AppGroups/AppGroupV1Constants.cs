@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.DeleteAppGroup;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.EditAppGroup;
-using Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.GetAppGroup;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.DeleteAppGroup;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.EditAppGroup;
+using ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups.GetAppGroup;
 
-namespace Informapp.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.EndPoints.AppGroups
 {
     internal static class AppGroupV1Constants
     {

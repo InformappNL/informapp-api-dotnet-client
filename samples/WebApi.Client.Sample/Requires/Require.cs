@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Globalization;
 
-namespace Informapp.InformSystem.WebApi.Client.Sample.Requires
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Requires
 {
     /// <summary>
     /// Static class with methods to ensure conditions are true

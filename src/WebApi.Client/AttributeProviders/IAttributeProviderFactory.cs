@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Informapp.InformSystem.WebApi.Client.AttributeProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.AttributeProviders
 {
     /// <summary>
     /// Factory interface to create instances of <see cref="IAttributeProvider{TType, TAttribute}"/>

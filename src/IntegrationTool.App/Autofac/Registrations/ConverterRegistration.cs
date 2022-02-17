@@ -1,9 +1,9 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.Assemblies;
-using Informapp.InformSystem.WebApi.Client.Converters;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Assemblies;
+using ConnectedDevelopment.InformSystem.WebApi.Client.Converters;
 using System.Linq;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register converters in Autofac

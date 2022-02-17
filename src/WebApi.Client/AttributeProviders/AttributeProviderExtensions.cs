@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.WebApi.Client.Arguments;
+﻿using ConnectedDevelopment.InformSystem.WebApi.Client.Arguments;
 using System;
 using System.Globalization;
 
-namespace Informapp.InformSystem.WebApi.Client.AttributeProviders
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.AttributeProviders
 {
     /// <summary>
     /// Static class with extension methods for <see cref="IAttributeProvider{TType, TAttribute}"/>

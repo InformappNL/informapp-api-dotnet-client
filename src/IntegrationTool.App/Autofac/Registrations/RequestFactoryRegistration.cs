@@ -1,9 +1,9 @@
 ﻿using Autofac;
-using Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories;
-using Informapp.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories;
+using ConnectedDevelopment.InformSystem.WebApi.Client.RestSharp.RequestFactories.Decorators;
 using System;
 
-namespace Informapp.InformSystem.IntegrationTool.App.Autofac.Registrations
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.App.Autofac.Registrations
 {
     /// <summary>
     /// Register request factory in Autofac

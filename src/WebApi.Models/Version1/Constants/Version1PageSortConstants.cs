@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.WebApi.Models.Version1.Constants
+namespace ConnectedDevelopment.InformSystem.WebApi.Models.Version1.Constants
 {
     /// <summary>
     /// Version 1 page sort constants

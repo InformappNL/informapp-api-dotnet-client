@@ -1,5 +1,5 @@
 ﻿
-namespace Informapp.InformSystem.IntegrationTool.Core.Queries
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries
 {
     /// <summary>
     /// Generic query interface

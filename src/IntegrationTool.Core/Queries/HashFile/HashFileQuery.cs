@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.IO;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.Queries.HashFile
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Queries.HashFile
 {
     /// <summary>
     /// Query to hash the provided file

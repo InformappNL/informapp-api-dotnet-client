@@ -1,8 +1,8 @@
-﻿using Informapp.InformSystem.IntegrationTool.Core.DataContexts;
+﻿using ConnectedDevelopment.InformSystem.IntegrationTool.Core.DataContexts;
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Informapp.InformSystem.IntegrationTool.Core.IntegrationImports
+namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.IntegrationImports
 {
     /// <summary>
     /// Upload integration import command

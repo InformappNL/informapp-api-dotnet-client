@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Informapp.InformSystem.WebApi.Client.Converters
+namespace ConnectedDevelopment.InformSystem.WebApi.Client.Converters
 {
     /// <summary>
     /// Implementation of <see cref="IConverter{TSource, TResult}"/>
