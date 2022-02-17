@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿
+using System.Collections.Generic;
 
 namespace ConnectedDevelopment.InformSystem.WebApi.Client.Caches
 {
