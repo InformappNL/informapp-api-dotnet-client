@@ -10,6 +10,7 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <DocumentationFile>WebApi.Client.xml</DocumentationFile>
     <AssemblyName>InformSystem.WebApi.Client</AssemblyName>
+    <IsPackable>true</IsPackable>
 </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\SharedAssemblyInfo.cs">

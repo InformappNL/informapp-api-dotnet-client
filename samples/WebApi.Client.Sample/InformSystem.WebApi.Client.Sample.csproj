@@ -10,6 +10,7 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <DocumentationFile>WebApi.Client.Sample.xml</DocumentationFile>
     <AssemblyName>InformSystem.WebApi.Client.Sample</AssemblyName>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Examples\Integrations\example.xlsx" />
