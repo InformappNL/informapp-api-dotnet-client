@@ -32,7 +32,7 @@ namespace ConnectedDevelopment.InformSystem.WebApi.Client.Clients.Decorators
 
         private readonly IApiClient<TRequest, TResponse> _apiClient;
 
-        private readonly IEnumerable<IUploadFileResponseMapper<TRequest, TResponse>> _mappers;
+        private readonly IReadOnlyList<IUploadFileResponseMapper<TRequest, TResponse>> _mappers;
 
         private readonly IConverter<HashAlgorithmKind?, HashAlgorithm> _converter;
 
@@ -47,7 +47,7 @@ namespace ConnectedDevelopment.InformSystem.WebApi.Client.Clients.Decorators
         /// <param name="hasher">The hasher</param>
         public UploadFileResponseApiClientDecorator(
             IApiClient<TRequest, TResponse> apiClient,
-            IEnumerable<IUploadFileResponseMapper<TRequest, TResponse>> mappers,
+            IReadOnlyList<IUploadFileResponseMapper<TRequest, TResponse>> mappers,
             IConverter<HashAlgorithmKind?, HashAlgorithm> converter,
             IHasher hasher) : base(apiClient)
         {

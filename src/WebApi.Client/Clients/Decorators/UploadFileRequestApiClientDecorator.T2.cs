@@ -29,7 +29,7 @@ namespace ConnectedDevelopment.InformSystem.WebApi.Client.Clients.Decorators
 
         private readonly IApiClient<TRequest, TResponse> _apiClient;
 
-        private readonly IEnumerable<IUploadFileRequestMapper<TRequest, TResponse>> _mappers;
+        private readonly IReadOnlyList<IUploadFileRequestMapper<TRequest, TResponse>> _mappers;
 
         private readonly IMimeMapper _mimeMapper;
 
@@ -41,7 +41,7 @@ namespace ConnectedDevelopment.InformSystem.WebApi.Client.Clients.Decorators
         /// <param name="mimeMapper">The mime mapper</param>
         public UploadFileRequestApiClientDecorator(
             IApiClient<TRequest, TResponse> apiClient,
-            IEnumerable<IUploadFileRequestMapper<TRequest, TResponse>> mappers,
+            IReadOnlyList<IUploadFileRequestMapper<TRequest, TResponse>> mappers,
             IMimeMapper mimeMapper) : base(apiClient)
         {
             Argument.NotNull(apiClient, nameof(apiClient));

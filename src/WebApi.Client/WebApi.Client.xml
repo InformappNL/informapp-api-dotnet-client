@@ -937,7 +937,7 @@
             Decorator class for <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set the download file on the response model
             </summary>
         </member>
-        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.Clients.Decorators.DownloadFileApiClientDecorator`2.#ctor(ConnectedDevelopment.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},System.Collections.Generic.IEnumerable{ConnectedDevelopment.InformSystem.WebApi.Client.Files.IDownloadFileMapper{`0,`1}})">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.Clients.Decorators.DownloadFileApiClientDecorator`2.#ctor(ConnectedDevelopment.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},System.Collections.Generic.IReadOnlyList{ConnectedDevelopment.InformSystem.WebApi.Client.Files.IDownloadFileMapper{`0,`1}})">
             <summary>
             Initializes a new instance of the <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.Clients.Decorators.DownloadFileApiClientDecorator`2"/> class.
             </summary>
@@ -1191,7 +1191,7 @@
             Decorator class for <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set the upload file on the request
             </summary>
         </member>
-        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.Clients.Decorators.UploadFileRequestApiClientDecorator`2.#ctor(ConnectedDevelopment.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},System.Collections.Generic.IEnumerable{ConnectedDevelopment.InformSystem.WebApi.Client.Files.IUploadFileRequestMapper{`0,`1}},ConnectedDevelopment.InformSystem.WebApi.Client.MimeMappers.IMimeMapper)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.Clients.Decorators.UploadFileRequestApiClientDecorator`2.#ctor(ConnectedDevelopment.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},System.Collections.Generic.IReadOnlyList{ConnectedDevelopment.InformSystem.WebApi.Client.Files.IUploadFileRequestMapper{`0,`1}},ConnectedDevelopment.InformSystem.WebApi.Client.MimeMappers.IMimeMapper)">
             <summary>
             Initializes a new instance of the <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.Clients.Decorators.UploadFileRequestApiClientDecorator`2"/> class.
             </summary>
@@ -1212,7 +1212,7 @@
             Decorator class for <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.Clients.IApiClient`2"/> to set upload file on the response
             </summary>
         </member>
-        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.Clients.Decorators.UploadFileResponseApiClientDecorator`2.#ctor(ConnectedDevelopment.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},System.Collections.Generic.IEnumerable{ConnectedDevelopment.InformSystem.WebApi.Client.Files.IUploadFileResponseMapper{`0,`1}},ConnectedDevelopment.InformSystem.WebApi.Client.Converters.IConverter{System.Nullable{ConnectedDevelopment.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind},System.Security.Cryptography.HashAlgorithm},ConnectedDevelopment.InformSystem.WebApi.Client.Cryptography.IHasher)">
+        <member name="M:ConnectedDevelopment.InformSystem.WebApi.Client.Clients.Decorators.UploadFileResponseApiClientDecorator`2.#ctor(ConnectedDevelopment.InformSystem.WebApi.Client.Clients.IApiClient{`0,`1},System.Collections.Generic.IReadOnlyList{ConnectedDevelopment.InformSystem.WebApi.Client.Files.IUploadFileResponseMapper{`0,`1}},ConnectedDevelopment.InformSystem.WebApi.Client.Converters.IConverter{System.Nullable{ConnectedDevelopment.InformSystem.WebApi.Client.Cryptography.HashAlgorithmKind},System.Security.Cryptography.HashAlgorithm},ConnectedDevelopment.InformSystem.WebApi.Client.Cryptography.IHasher)">
             <summary>
             Initializes a new instance of the <see cref="T:ConnectedDevelopment.InformSystem.WebApi.Client.Clients.Decorators.UploadFileResponseApiClientDecorator`2"/> class.
             </summary>

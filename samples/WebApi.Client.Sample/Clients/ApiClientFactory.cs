@@ -219,7 +219,7 @@ namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Clients
             return new DateTimeProvider();
         }
 
-        private static IEnumerable<IDownloadFileMapper<TRequest, TResponse>> GetDownloadFileMappers<TRequest, TResponse>()
+        private static IReadOnlyList<IDownloadFileMapper<TRequest, TResponse>> GetDownloadFileMappers<TRequest, TResponse>()
             where TRequest : class, IRequest<TResponse>
             where TResponse : class, new()
         {
@@ -306,7 +306,7 @@ namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Clients
             return new StringToGuidConverter();
         }
 
-        private static IEnumerable<IUploadFileRequestMapper<TRequest, TResponse>> GetUploadFileRequestMappers<TRequest, TResponse>()
+        private static IReadOnlyList<IUploadFileRequestMapper<TRequest, TResponse>> GetUploadFileRequestMappers<TRequest, TResponse>()
             where TRequest : class, IRequest<TResponse>
             where TResponse : class, new()
         {
@@ -319,7 +319,7 @@ namespace ConnectedDevelopment.InformSystem.WebApi.Client.Sample.Clients
             return mappers;
         }
 
-        private static IEnumerable<IUploadFileResponseMapper<TRequest, TResponse>> GetUploadFileResponseMappers<TRequest, TResponse>()
+        private static IReadOnlyList<IUploadFileResponseMapper<TRequest, TResponse>> GetUploadFileResponseMappers<TRequest, TResponse>()
             where TRequest : class, IRequest<TResponse>
             where TResponse : class, new()
         {

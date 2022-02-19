@@ -29,7 +29,7 @@ namespace ConnectedDevelopment.InformSystem.WebApi.Client.Clients.Decorators
 
         private readonly IApiClient<TRequest, TResponse> _apiClient;
 
-        private readonly IEnumerable<IDownloadFileMapper<TRequest, TResponse>> _mappers;
+        private readonly IReadOnlyList<IDownloadFileMapper<TRequest, TResponse>> _mappers;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DownloadFileApiClientDecorator{TRequest, TResponse}"/> class.
@@ -38,7 +38,7 @@ namespace ConnectedDevelopment.InformSystem.WebApi.Client.Clients.Decorators
         /// <param name="mappers">The download file mappers</param>
         public DownloadFileApiClientDecorator(
             IApiClient<TRequest, TResponse> apiClient,
-            IEnumerable<IDownloadFileMapper<TRequest, TResponse>> mappers) : base(apiClient)
+            IReadOnlyList<IDownloadFileMapper<TRequest, TResponse>> mappers) : base(apiClient)
         {
             Argument.NotNull(apiClient, nameof(apiClient));
             Argument.NotNullOrEmpty(mappers, nameof(mappers));
