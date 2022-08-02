@@ -2,6 +2,10 @@
   <!--<Import Project="Cleanup.targets" />-->
 
   <ItemGroup>
+    <None Remove="*.csproj.vspscc" />
+  </ItemGroup>  
+  
+  <ItemGroup>
     <AdditionalFiles Include="..\BannedSymbols.txt" />
   </ItemGroup>
 </Project>

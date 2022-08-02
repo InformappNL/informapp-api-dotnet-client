@@ -1,5 +1,10 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <!--<Import Project="Cleanup.targets" />-->
+  
+  <ItemGroup>
+    <None Remove="*.csproj.vspscc" />
+  </ItemGroup>  
+ 
 
   <ItemGroup>
     <AdditionalFiles Include="..\BannedSymbols.txt" />
