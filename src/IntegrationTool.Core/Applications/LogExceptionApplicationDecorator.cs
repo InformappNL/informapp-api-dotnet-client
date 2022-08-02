@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core.Applications
 {
     /// <summary>
-    /// Error application decorator
+    /// Log exception application decorator
     /// </summary>
     public class LogExceptionApplicationDecorator : Decorator<IApplication>,
         IApplication

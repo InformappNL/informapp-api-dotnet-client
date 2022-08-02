@@ -154,7 +154,7 @@
         </member>
         <member name="T:ConnectedDevelopment.InformSystem.IntegrationTool.Core.Applications.LogExceptionApplicationDecorator">
             <summary>
-            Error application decorator
+            Log exception application decorator
             </summary>
         </member>
         <member name="M:ConnectedDevelopment.InformSystem.IntegrationTool.Core.Applications.LogExceptionApplicationDecorator.#ctor(ConnectedDevelopment.InformSystem.IntegrationTool.Core.Applications.IApplication,ConnectedDevelopment.InformSystem.IntegrationTool.Core.Loggers.IApplicationLogger)">
