@@ -8,7 +8,7 @@
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <DocumentationFile>WebApi.Client.RestSharp.xml</DocumentationFile>
+    <DocumentationFile>InformSystem.WebApi.Client.RestSharp.xml</DocumentationFile>
     <AssemblyName>InformSystem.WebApi.Client.RestSharp</AssemblyName>
     <IsPackable>true</IsPackable>
   </PropertyGroup>
@@ -20,9 +20,6 @@
   <ItemGroup>
     <ProjectReference Include="..\WebApi.Client\InformSystem.WebApi.Client.csproj" />
     <ProjectReference Include="..\WebApi.Models\InformSystem.WebApi.Models.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="WebApi.Client.RestSharp.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.CodeAnalysis.BannedApiAnalyzers" Version="3.3.3">

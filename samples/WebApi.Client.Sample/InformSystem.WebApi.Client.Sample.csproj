@@ -8,7 +8,7 @@
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <DocumentationFile>WebApi.Client.Sample.xml</DocumentationFile>
+    <DocumentationFile>InformSystem.WebApi.Client.Sample.xml</DocumentationFile>
     <AssemblyName>InformSystem.WebApi.Client.Sample</AssemblyName>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -29,7 +29,6 @@
     <Content Include="appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="WebApi.Client.Sample.xml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Examples\Integrations\example.xlsx" />

@@ -11,7 +11,7 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <CodeAnalysisRuleSet></CodeAnalysisRuleSet>
     <UserSecretsId>e9dd68bc-834d-46dc-b299-0b9cd7069163</UserSecretsId>
-    <DocumentationFile>IntegrationTool.App.xml</DocumentationFile>
+    <DocumentationFile>InformSystem.IntegrationTool.App.xml</DocumentationFile>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>

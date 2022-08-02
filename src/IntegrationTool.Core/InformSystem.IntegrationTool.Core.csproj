@@ -10,7 +10,7 @@
     <SccProvider>SAK</SccProvider>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <CodeAnalysisRuleSet></CodeAnalysisRuleSet>
-    <DocumentationFile>IntegrationTool.Core.xml</DocumentationFile>
+    <DocumentationFile>InformSystem.IntegrationTool.Core.xml</DocumentationFile>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
