@@ -32,9 +32,6 @@
     <Content Include="Readme.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="..\ProjectRules.ruleset">
-      <Link>ProjectRules.ruleset</Link>
-    </None>
     <None Include="appsettings.default.json" />
     <None Include="appsettings.private.json" />
   </ItemGroup>
