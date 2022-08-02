@@ -9,6 +9,6 @@ namespace ConnectedDevelopment.InformSystem.IntegrationTool.Core
         /// <summary>
         /// Version of the tool
         /// </summary>
-        public const string Version = "IntegrationTool 2.0.3 2021-12-30 2011";
+        public const string Version = "IntegrationTool 2.0.4 2022-06-13 1357";
     }
 }
